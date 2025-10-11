@@ -28,44 +28,38 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: '97,581|法国1 #1'
-  port: 45072
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e0f07617-3252-40a8-970e-062c593576a6
-- alterId: 0
-  cipher: auto
-  name: '97,581|法国2 #1'
+  name: '98,583|法国2 #1'
   port: 45071
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: e0f07617-3252-40a8-970e-062c593576a6
+  uuid: 4eac8617-3c21-45ad-b314-9c9d530d7878
 - alterId: 0
   cipher: auto
-  name: '98,583|法国1-1B #1'
+  name: '98,583|法国1 #1'
   port: 45072
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 0bf1d969-d720-4d78-a73d-a36b5ff4e5cd
+  uuid: 4eac8617-3c21-45ad-b314-9c9d530d7878
 - alterId: 0
   cipher: auto
-  name: '98,583|法国2-1B #1'
-  port: 45071
-  server: xdd.dashuai.cyou
+  name: 219|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
-  uuid: 0bf1d969-d720-4d78-a73d-a36b5ff4e5cd
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: 454,473|🇳🇱NL-51.15.27.48-7998
   password: f8f7aCzcPKbsF8p3
@@ -163,13 +157,15 @@ proxies:
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-cfb
-  name: 454,473|FR-195.154.169.198-0218
+  name: 454,473,587|_06
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 454,473|🇷FR-195.154.185.174-0219
+  country: 🇷FR
+  name: 454,473,587|🇷FR_45
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
@@ -353,7 +349,8 @@ proxies:
       Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇷FR-51.195.119.47-0290
+  country: 🇷 FR
+  name: 473,587| FR_44
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
@@ -515,7 +512,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '473,578,618,627,634,641,723|🇧🇪 比利时 025 #1'
+  name: '473,618,627,634,641,723|🇧🇪 比利时 025 #1'
   network: ws
   port: '443'
   server: 57.128.189.222
@@ -532,7 +529,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '473,578,618,627,634,641,723|🇧🇪 比利时 028 #1'
+  name: '473,618,627,634,641,723|🇧🇪 比利时 028 #1'
   network: ws
   port: '443'
   server: 57.128.189.211
@@ -549,7 +546,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '473,578,618,627,634,641,723|🇧🇪 比利时 030 #1'
+  name: '473,618,627,634,641,723|🇧🇪 比利时 030 #1'
   network: ws
   port: '443'
   server: 57.128.189.143
@@ -651,7 +648,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '473,618,627,634,638,639,641,723|🇬🇧 英国 006 #1'
+  name: '473,524,618,627,634,638,639,641,723|🇬🇧 英国 006 #1'
   network: ws
   port: '80'
   server: 51.68.191.233
@@ -1025,7 +1022,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 473,627,639|3|🇫🇷FR-57.128.189.240-5297
+  name: 473,524,627,639|3|🇫🇷FR-57.128.189.240-5297
   network: ws
   port: 443
   server: 57.128.189.240
@@ -1038,12 +1035,14 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 473,627|🇫🇷FR-51.195.202.129-5318
+- country: 🇫🇷FR
+  name: 473,587,627|🇫🇷FR-51.195.202.129-5318
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '473,627|🇫🇷FR-146.59.55.50-5373 #1'
@@ -1059,12 +1058,14 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 473,627|🇫🇷FR-51.178.42.187-5429
+- country: 🇸US
+  name: 473,587,627|🇫🇷FR-51.178.42.187-5429
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - name: 473,627|🇫🇷FR-23.162.152.30-5910
   password: installshield
   port: 8443
@@ -1385,26 +1386,24 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
 - cipher: aes-256-gcm
-  name: 537,634|yandex-4163
+  name: 537,634|yandex-202
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 578|@v2FreeHub 🇫🇷
-  network: ws
-  port: '80'
-  server: 57.129.132.223
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
+- cipher: chacha20-ietf-poly1305
+  name: 578|AstroVPN_Official-🇫🇷
+  password: tunnel-astrovpn_official-fr
+  port: 8444
+  server: fr-2.stunnel.cc
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 578|[🇫🇷] @Hddify
+  password: tvX1v#NSFP_LG_bJ
+  port: 800
+  server: 212.192.214.159
+  type: ss
 - alterId: 0
   cipher: auto
   name: 604|法国_马赛
@@ -1562,7 +1561,7 @@ proxies:
     path: /linkws
 - country: 🇫🇷FR
   delay: 745
-  name: 623,634|yandex-928
+  name: 623,634|yandex-3338
   password: telegram-id-privatevpns
   port: 22222
   server: 52.47.97.33
@@ -1572,7 +1571,7 @@ proxies:
   udp: true
 - country: 🇫🇷FR
   delay: 2620
-  name: 623,634|yandex-929
+  name: 623,634|yandex-3339
   password: telegram-id-privatevpns
   port: 22222
   server: 15.236.170.222
@@ -1582,7 +1581,7 @@ proxies:
   udp: true
 - country: 🇫🇷FR
   delay: 730
-  name: 623,634|yandex-930
+  name: 623,634|yandex-3340
   password: telegram-id-directvpn
   port: 22223
   server: 15.236.170.222
@@ -1592,7 +1591,7 @@ proxies:
   udp: true
 - country: 🇫🇷FR
   delay: 733
-  name: 623,634|yandex-931
+  name: 623,634|yandex-3341
   password: telegram-id-directvpn
   port: 22223
   server: 35.181.124.105
@@ -1602,7 +1601,7 @@ proxies:
   udp: true
 - country: 🇫🇷FR
   delay: 772
-  name: 623,634|yandex-932
+  name: 623,634|yandex-3342
   password: telegram-id-privatevpns
   port: 22222
   server: 35.181.124.105
@@ -1753,7 +1752,7 @@ proxies:
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 638|🇫🇷FR_48
+- name: '638|🇫🇷FR_48 #1'
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -1874,6 +1873,25 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
+- cipher: rc4-md5
+  name: '719|🇫🇷 FR OVH 01 t.me/txwl666-51 #1'
+  password: LIhcoa
+  port: 20692
+  server: 118.184.136.158
+  type: ss
+- cipher: rc4-md5
+  name: '719|🇫🇷 FR OVH 02 t.me/txwl666-52 #1'
+  password: LIhcoa
+  port: 20692
+  server: 118.184.136.159
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '719|🇫🇷 法国2-645 #1'
+  password: dc9ea653-becc-44f1-95f9-16773a0519e9
+  port: 12039
+  server: fg02.lr9soflhleb.top
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 722|🇫🇷France-法国1
   password: 0305e0ec-ec7e-4770-9aa3-81e3427f91b6

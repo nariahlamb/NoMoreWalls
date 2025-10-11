@@ -1,4 +1,18 @@
 proxies:
+- cipher: aes-128-gcm
+  name: 153,634|yandex-345
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2039
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153,634|yandex-346
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2043
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 454|🇷🇺1 |  5.2MB/s
   password: 0zyDRZ1XmNXaaCAN7KEA8a
@@ -102,13 +116,15 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-45.139.24.24-0234
+  country: 🇺 RU
+  name: 473,578,587|🇺 RU_125
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-185.126.239.250-0315
+  country: 🇧 GB
+  name: 473,587|🇧 GB_51
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -149,7 +165,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,618,634|yandex-4550
+- name: 473,618,634|yandex-4086
   network: ws
   password: vpn
   port: 2025
@@ -343,15 +359,19 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '578,618,641,723|🇷🇺 俄罗斯 067 #1'
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇷🇺 RU_133
   network: tcp
-  port: '11052'
-  server: 45.67.230.79
+  port: 45215
+  server: fa.fxlcn.com
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -687,6 +707,16 @@ proxies:
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
+  name: '618,641,723|🇷🇺 俄罗斯 067 #1'
+  network: tcp
+  port: '11052'
+  server: 45.67.230.79
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
+- alterId: 0
+  cipher: auto
   name: '618,641,723|🇷🇺 俄罗斯 073 #1'
   network: tcp
   port: '2098'
@@ -725,16 +755,6 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 638|🇷🇺 RU_133
-  network: tcp
-  port: 45215
-  server: fa.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - name: '641,723|🇷🇺 俄罗斯 001 #1'
   password: wb6368
   port: 2087
@@ -749,20 +769,28 @@ proxies:
   skip-cert-verify: true
   sni: vkvd127.mycdn.me
   type: trojan
-- name: 656|🇷🇺 RU TGS4 02 t.me/txwl666-57
+- name: '656,719|🇷🇺 RU TGS4 02 t.me/txwl666-57 #1'
   password: 3ea1afbd-a3ec-4bc0-9a0c-8097d326eb94
   port: 45080
   server: 175.29.22.62
   skip-cert-verify: true
   sni: lhca1.bilibili.com
   type: trojan
-- name: 656|🇷🇺 V1-俄罗斯01-713
+- name: '656,719|🇷🇺 V1-俄罗斯01-713 #1'
   password: 68f4b269-6635-451c-b864-40bf50ccbc20
   port: 54001
   server: dy.xgboard2.top
   skip-cert-verify: true
   sni: rus001.yijiasu.xyz
   type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '719|🇷🇺 俄罗斯-641 #1'
+  password: dc9ea653-becc-44f1-95f9-16773a0519e9
+  port: 13105
+  server: els.gnzzrk001.buzz
+  type: ss
+  udp: true
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
