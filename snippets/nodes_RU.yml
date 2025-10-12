@@ -103,14 +103,14 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 473,587|🇷🇺 RU_150
+  name: 473,578,587|🇺 RU_145
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 473,587|🇧 GB_57
+  name: 473,587|🇧 GB_54
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -151,7 +151,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,618,634|yandex-4073
+- name: 473,618,634|yandex-1667
   network: ws
   password: vpn
   port: 2025
@@ -167,22 +167,23 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618|俄罗斯 079
+  name: 473,618,634,641|🇷🇺 俄罗斯 079
   network: ws
-  port: 50826
+  port: '50826'
   server: 45.67.32.147
   skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 718ba477-37a3-4464-9e25-6171eedf44c9
   ws-opts:
     headers:
       Host: wellyoumust.goahead.rf.gd
     path: /multipath
 - cipher: chacha20-ietf-poly1305
-  country: 🇷RU
+  country: 🇺 RU
   delay: 805
-  name: 473,587,591,623,634|yandex-73
+  name: 473,587,623,634|yandex-797
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
@@ -368,17 +369,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 578,618,641|🇷🇺 俄罗斯 067
-  network: tcp
-  port: '11052'
-  server: 45.67.230.79
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
-- alterId: 0
-  cipher: auto
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
@@ -392,6 +382,13 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
+- cipher: aes-256-cfb
+  country: 🇺RU
+  name: 587|🇺RU_149
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 45.89.52.66
+  type: ss
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -727,6 +724,16 @@ proxies:
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
+  name: 618,641|🇷🇺 俄罗斯 067
+  network: tcp
+  port: '11052'
+  server: 45.67.230.79
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
+- alterId: 0
+  cipher: auto
   name: 618,641|🇷🇺 俄罗斯 073
   network: tcp
   port: '2098'
@@ -744,6 +751,13 @@ proxies:
   type: trojan
   ws-opts:
     path: /
+- name: 630,641|电报群：https://t.me/vvkj11
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -765,13 +779,6 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 641|电报群：https://t.me/vvkj11
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: false
-  sni: hsdgbuys.pages.dev
-  type: trojan
 - name: 641|🇷🇺 俄罗斯 039
   password: vpn
   port: 2025
@@ -779,28 +786,20 @@ proxies:
   skip-cert-verify: true
   sni: vkvd127.mycdn.me
   type: trojan
-- name: '656,719|🇷🇺 RU TGS4 02 t.me/txwl666-57 #1'
+- name: 656|🇷🇺 RU TGS4 02 t.me/txwl666-57
   password: 3ea1afbd-a3ec-4bc0-9a0c-8097d326eb94
   port: 45080
   server: 175.29.22.62
   skip-cert-verify: true
   sni: lhca1.bilibili.com
   type: trojan
-- name: '656,719|🇷🇺 V1-俄罗斯01-713 #1'
+- name: 656|🇷🇺 V1-俄罗斯01-648
   password: 68f4b269-6635-451c-b864-40bf50ccbc20
   port: 54001
   server: dy.xgboard2.top
   skip-cert-verify: true
   sni: rus001.yijiasu.xyz
   type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '719|🇷🇺 俄罗斯-641 #1'
-  password: dc9ea653-becc-44f1-95f9-16773a0519e9
-  port: 13105
-  server: els.gnzzrk001.buzz
-  type: ss
-  udp: true
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
