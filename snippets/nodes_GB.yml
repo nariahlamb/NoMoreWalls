@@ -1,25 +1,4 @@
 proxies:
-- cipher: aes-128-gcm
-  name: 153,634|yandex-103
-  password: 7af26eae-63c7-43c8-b335-e3528f790459
-  port: 53
-  server: 123.123.213.213
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 153,634|yandex-154
-  password: 7af26eae-63c7-43c8-b335-e3528f790459
-  port: 2065
-  server: oeulay-o1.ilayernet.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 153,634|yandex-155
-  password: 7af26eae-63c7-43c8-b335-e3528f790459
-  port: 2074
-  server: oeulay-o1.ilayernet.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 226|sd.258.cyou续费地址
   password: 7dbdba19-6a3b-4370-93b1-fb5a89adde0c
@@ -163,7 +142,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇧 GB
-  name: 454,455,473,587|🇬🇧 GB_57
+  name: 454,455,473,587|🇧 GB_47
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -404,8 +383,8 @@ proxies:
       Host: ''
     path: /vmess
 - cipher: aes-256-cfb
-  country: 🇧 GB
-  name: 473,524,587,627,634,656,719|🇬🇧 国 05-361
+  country: 🇬🇧 GB
+  name: 473,524,587,627,634|yandex-1165
   obfs: plain
   obfs-param: ''
   password: f8f7aCzcPKbsF8p3
@@ -675,7 +654,7 @@ proxies:
   port: 8080
   server: 172.99.190.39
   type: ss
-- name: 473,627,634|yandex-4905
+- name: 473,627,634|yandex-4839
   password: 02e653c9-7c93-46a9-999d-11834bd0c577
   port: 443
   server: 132.145.51.172
@@ -817,7 +796,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇧🇬BG
   delay: 585
-  name: 473,578,591,623,634|yandex-1082
+  name: 473,591,623,634|yandex-1054
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 94.156.250.122
@@ -1493,7 +1472,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
 - cipher: aes-256-gcm
-  name: 537,634|yandex-3002
+  name: 537,634|yandex-2937
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 23001
   server: uk001.dogsvip.site
@@ -1691,21 +1670,22 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 578|🇬🇧 UK - telegram
-  password: 7ec3173d-49ad-49c9-95ba-9631df8c7790
-  port: 40008
-  server: 89.213.193.87
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 578|🇬🇧 GB
-  password: u17T3BvpYaaiuW2c
-  port: 443
-  server: series-a2-mec.samanehha.co
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: '578,618,641,723|🇬🇧 英国 002 #1'
+  network: tcp
+  port: '50394'
+  server: 46.250.243.56
+  servername: ''
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
 - cipher: aes-256-cfb
   country: 🇧GB
-  name: 591,634|yandex-644
+  name: 591,634|yandex-1144
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 62.100.205.48
@@ -1941,30 +1921,6 @@ proxies:
   skip-cert-verify: false
   sni: ultimate-civet.adder289.quest
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '618,641,723|🇬🇧 英国 001 #1'
-  network: tcp
-  port: '39674'
-  server: 82.197.69.131
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
-- alterId: 0
-  cipher: auto
-  name: '618,641,723|🇬🇧 英国 002 #1'
-  network: tcp
-  port: '50394'
-  server: 46.250.243.56
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
 - alterId: 0
   cipher: auto
   name: '618,641,723|🇬🇧 英国 007 #1'
@@ -2329,7 +2285,22 @@ proxies:
   skip-cert-verify: false
   sni: kr-qingyun.dwyun.me
   type: trojan
-- name: 656,719|🇬🇧 V1-国01-638
+- alterId: 2
+  cipher: auto
+  name: '656,719|🇬🇧 英国 03-419 #1'
+  network: ws
+  port: 30836
+  server: v36.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- name: 656,719|🇬🇧 V1-国01-476
   password: 68f4b269-6635-451c-b864-40bf50ccbc20
   port: 47001
   server: dy.xgboard2.top
@@ -2337,7 +2308,7 @@ proxies:
   sni: uk001.yijiasu.xyz
   type: trojan
   udp: true
-- name: '656,719|🇬🇧 V1-英国02-639 #1'
+- name: '656,719|🇬🇧 V1-英国02-477 #1'
   password: 68f4b269-6635-451c-b864-40bf50ccbc20
   port: 47002
   server: dy.xgboard2.top
@@ -2362,7 +2333,7 @@ proxies:
   udp: true
   uuid: f3c11ea9-8694-4e45-9373-2d9a8ea9c988
 - cipher: rc4-md5
-  name: '719|🇬🇧 GB OVH 01 t.me/txwl666-53 #1'
+  name: '719|🇬🇧 GB OVH 01 t.me/txwl666-55 #1'
   password: LIhcoa
   port: 20692
   server: 118.184.136.157
