@@ -50,6 +50,13 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- cipher: aes-128-gcm
+  name: 153|德国
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2163
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 454,473,634,648|SS-德国-NF解锁大亚自制剧-ChatGPT-TikTok...
   password: oXGp1+ihlfKg826H
@@ -1093,7 +1100,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,639,641|🇧🇪 比利时 044
+  name: 473,618,627,634,639,641|🇧🇪 比利时 044
   network: ws
   port: '443'
   server: jamekk.org
@@ -1188,7 +1195,7 @@ proxies:
   uuid: b5e4a13b-4f58-4bad-a2d0-279fa7534188
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,639,641|🇧🇪 比利时 050
+  name: 473,618,627,634,639,641|🇧🇪 比利时 050
   network: ws
   port: '443'
   server: pulau.org
@@ -1783,12 +1790,13 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8
-- name: 473,627|🇩🇪DE-165.232.76.102-5318
+- name: 473,587,627|🇩🇪DE-165.232.76.102-5318
   password: 3240d72a-1373-4566-9c6c-68524e4b13fc
   port: 443
   server: es-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 473,627|🇩🇪DE-57.129.25.22-5327
@@ -1909,28 +1917,34 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 473,627,638|🇩🇪DE_40
+- country: 🇪DE
+  name: 473,587,627,638|🇩🇪DE_40
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: de2-full.privateip.net
   type: trojan
-- name: 473,627|🇩🇪DE-159.89.16.218-5349
+  udp: true
+- country: 🇫🇷FR
+  name: 473,587,627|🇩🇪DE-159.89.16.218-5349
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 473,627|🇩🇪DE-51.195.101.222-5351
+  udp: true
+- country: 🇫🇷FR
+  name: 473,587,627|🇩🇪DE-51.195.101.222-5351
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 1
   cipher: auto
-  name: 473,524,627,639|3|🇫🇷FR-141.95.84.11-5442
+  name: 473,627,639|3|🇫🇷FR-141.95.84.11-5442
   network: ws
   port: 443
   server: putihb.org
@@ -2367,7 +2381,7 @@ proxies:
   sni: frtgrpc.mainssh.xyz
   type: trojan
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2788
+  name: 537,634|yandex-5591
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 28001
   server: de001.dogsvip.site
@@ -2507,6 +2521,23 @@ proxies:
   port: 8444
   server: de-1.stunnel.cc
   type: ss
+- alterId: 1
+  cipher: auto
+  country: 🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇪 DE_36
+  network: ws
+  port: 443
+  server: kampong.org
+  servername: kampong.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: kampong.org
+  ws-path: linkvws
 - name: '603|德国_Frankfurt am Main #3'
   network: ws
   password: NISHIKUITAN222
@@ -2772,7 +2803,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇩🇪DE
   delay: 2848
-  name: 623,634|yandex-3905
+  name: 623,634|yandex-5137
   password: wcOMIrXVXsP037gFfycnzg
   port: 2026
   server: sde.bargainoxy.com
@@ -2780,7 +2811,7 @@ proxies:
   udp: true
 - country: 🇩🇪DE
   delay: 1282
-  name: 623,634|yandex-3906
+  name: 623,634|yandex-5138
   password: telegram-id-privatevpns
   port: 22222
   server: 35.157.108.9
@@ -2789,7 +2820,7 @@ proxies:
   type: trojan
   udp: true
 - delay: 953
-  name: 623,634|yandex-3907
+  name: 623,634|yandex-5139
   password: telegram-id-directvpn
   port: 22223
   server: 35.157.108.9
@@ -2799,7 +2830,7 @@ proxies:
   udp: true
 - country: 🇩🇪DE
   delay: 1903
-  name: 623,634|yandex-3908
+  name: 623,634|yandex-5140
   password: telegram-id-directvpn
   port: 22223
   server: 63.179.224.187
@@ -2810,7 +2841,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇦UA
   delay: 2081
-  name: 623,634|yandex-3978
+  name: 623,634|yandex-5210
   password: RFK38Cg7APneSB5cWDcpbm
   port: 443
   server: switcher-nick-croquet.freesocks.work

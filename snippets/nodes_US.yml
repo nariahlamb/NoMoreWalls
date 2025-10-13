@@ -163,6 +163,69 @@ proxies:
   type: vmess
   udp: true
   uuid: c03ac95f-2cfd-4b44-99b1-d9c9580c9630
+- cipher: aes-128-gcm
+  name: 153|美国 A
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 611
+  server: stancsus-alpha.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153|美国 B
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 612
+  server: stancsus-alpha.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153|美国 C
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 613
+  server: stancsus-alpha.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153|美国 D
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 614
+  server: stancsus-alpha.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153|美国 E
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 615
+  server: stancsus-alpha.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153|美国 F
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 594
+  server: standcnus-two.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153|美国 G
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 595
+  server: standcnus-two.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153|美国 H
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 596
+  server: standcnus-two.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153|美国 I
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 597
+  server: standcnus-two.ilayernet.xyz
+  type: ss
+  udp: true
 - name: '156,157|美国03 #1'
   network: ws
   password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
@@ -205,54 +268,6 @@ proxies:
   server: 111.29.57.104
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 218,634|yandex-1436
-  network: ws
-  port: 30804
-  server: v4.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 218,473,618,627,634,641|🇨🇳 中国 070
-  network: ws
-  port: '30832'
-  server: v32.heduian.link
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '218,634,637|12,13|美国|@ripaojiedian #1'
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - alterId: 0
   cipher: auto
   name: 225|美国高速x2
@@ -459,6 +474,24 @@ proxies:
   type: vmess
   udp: true
   uuid: eb186e3b-4c4a-4131-a717-f9c7bda6d80b
+- name: '322|美国03 #13'
+  network: ws
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: us003.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '322|美国04 #13'
+  network: ws
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: us004.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
   name: 454,455,473|🇺🇸US-156.146.38.168-0192
   password: shadowsocks
@@ -541,7 +574,8 @@ proxies:
   server: 139.64.165.101
   type: ss
 - cipher: aes-128-gcm
-  name: 454,455,473|🇸US-156.146.38.167-0193
+  country: 🇺🇸 US
+  name: 454,455,473,587|🇺🇸 US_145
   password: shadowsocks
   port: 443
   server: 156.146.38.167
@@ -1083,7 +1117,7 @@ proxies:
   server: 38.107.226.238
   type: ss
 - cipher: aes-256-cfb
-  name: 454|🇺🇸89 |  14.8MB/s
+  name: 454,587|_01
   password: gYCYXfkUQEs2TaJQ
   port: 9038
   server: 194.116.173.21
@@ -1113,7 +1147,8 @@ proxies:
   server: 156.146.38.169
   type: ss
 - cipher: aes-128-gcm
-  name: 454,455,473|🇺🇸US-156.146.38.170-0194
+  country: 🇸 US
+  name: 454,455,473,587|🇺🇸 US_148
   password: shadowsocks
   port: 443
   server: 156.146.38.170
@@ -1266,7 +1301,8 @@ proxies:
   server: 107.151.182.253
   type: ss
 - cipher: chacha20-ietf
-  name: 454,473|🇬SG-103.36.91.23-5363
+  country: 🇰 HK
+  name: 454,473,587| HK_52
   password: asd123456
   port: 8388
   server: 103.36.91.23
@@ -2080,15 +2116,14 @@ proxies:
       Host: 68.183.129.197
     path: /cctv13/hd.m3u8
 - cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 473,591|🇸US_61
+  name: 473|🇺🇸US-104.192.226.106-0197
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 104.192.226.106
   type: ss
 - alterId: 0
   cipher: auto
-  name: 473,638|🇺🇸 US_175
+  name: '473,638|🇺🇸 US_175 #1'
   network: ws
   port: 45979
   server: 216.167.34.227
@@ -2102,7 +2137,8 @@ proxies:
       Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺🇸US-104.192.226.106-0221
+  country: 🇺🇸 US
+  name: 473,587|🇺 US_142
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 104.192.226.106
@@ -2176,7 +2212,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,524,627,638,639|3|🇺🇸US-192.3.233.216-5438
+  name: 473,627,638,639|3|🇺🇸US-192.3.233.216-5438
   network: ws
   port: 16556
   server: 192.3.233.216
@@ -2220,8 +2256,7 @@ proxies:
       Host: 209.126.84.189
     path: /
 - cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 473,591|🇺🇸US_60
+  name: 473|🇸US-167.88.61.59-0354
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 167.88.61.59
@@ -2483,7 +2518,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,639,641|🇧🇪 比利时 003
+  name: 473,618,627,634,639,641|🇧🇪 比利时 003
   network: ws
   port: '443'
   server: kampong.org
@@ -2534,7 +2569,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,639,641|🇺🇸 美国 021
+  name: 473,618,627,634,639,641|🇺🇸 美国 021
   network: ws
   port: '443'
   server: 209.126.84.189
@@ -2592,7 +2627,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: 473,618,634|yandex-4200
+- name: 473,618,634|yandex-511
   network: ws
   password: iwangjie
   port: 15805
@@ -2641,7 +2676,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,639,641|🇺🇸 美国 260
+  name: 473,618,627,634,639,641|🇺🇸 美国 260
   network: ws
   port: '443'
   server: v2ray.codefyinc.com
@@ -2738,7 +2773,7 @@ proxies:
     path: /dabai
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,639,641|🇺🇸 美国 630
+  name: 473,618,627,634,639,641|🇺🇸 美国 630
   network: ws
   port: '443'
   server: 38.99.82.193
@@ -2979,7 +3014,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
   delay: 579
-  name: 473,623,634|yandex-3959
+  name: 473,623,634|yandex-5191
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: pupas-shirting-unsung.freesocks.work
@@ -5370,7 +5405,7 @@ proxies:
     headers:
       Host: usa-dallas.lvuft.com
     path: /ws
-- name: 473,627,634|yandex-1360
+- name: 473,627,634|yandex-3711
   password: WpfQAbO2wg
   port: 443
   server: 45.9.10.103
@@ -5782,7 +5817,7 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 473,627|🇺🇸US-138.197.16.108-5321
+- name: 473,587,627|🇺🇸US-138.197.16.108-5321
   password: 87ec85ad-8e8e-40a0-9b23-1fa8217c9647
   port: 443
   server: us-full.privateip.net
@@ -5790,7 +5825,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 473,524,627,639|3|🇺🇸US-216.167.34.227-5439
+  name: 473,627,639|3|🇺🇸US-216.167.34.227-5439
   network: ws
   port: 45979
   server: 216.167.34.227
@@ -5805,7 +5840,7 @@ proxies:
     path: /test
 - alterId: 0
   cipher: auto
-  name: 473,524,627,639|3|🇺🇸US-157.254.227.2-5441
+  name: 473,627,639|3|🇺🇸US-157.254.227.2-5441
   network: ws
   port: 443
   server: cpp007-2.facai20250909.com
@@ -5845,56 +5880,70 @@ proxies:
   server: guy-trace-lyric.stark-industries.solutions
   skip-cert-verify: false
   type: trojan
-- name: 473,627|🇺🇸US-154.21.85.65-5456
+- country: 🇺🇸 US
+  name: 473,587,627|🇺🇸US-154.21.85.65-5456
   password: Npgx9nO3OBaZF5yxARYl93lFX08TlR3waDla733az8SqXe3YS3zjESECSZpAw428a6SID
   port: 443
   server: metallic.isquirrel.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 473,627|🇺🇸US-154.17.24.101-5457
+  udp: true
+- country: 🇺🇸 US
+  name: 473,587,627|🇺🇸US-154.17.24.101-5457
   password: RzFSy3laClaxnYCcO3jBEpYgDyZx2CO78IC3X46ATFD73RSSZZTx8yCOKYDOqeD8pSeRa
   port: 28334
   server: sirens.isquirrel.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 473,627|🇺🇸US-154.17.29.153-5458
+  udp: true
+- country: 🇺🇸 US
+  name: 473,587,627|🇺🇸US-154.17.29.153-5458
   password: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl
   port: 443
   server: mintaka.appagent.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 473,627|🇺🇸US-154.17.24.18-5459
+  udp: true
+- country: 🇸 US
+  name: 473,587,627|🇺🇸US-154.17.24.18-5459
   password: D0AASSpCKFjOBSwlwqylnOep8BDlgN3e3RY9S3Op2RaZZ58gID8yY3ej56CSuYacZz3EA
   port: 443
   server: delight.appagent.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 473,627|🇺🇸US-154.17.24.29-5460
+  udp: true
+- country: 🇺🇸 US
+  name: 473,587,627|🇺🇸US-154.17.24.29-5460
   password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
   port: 443
   server: 154.17.24.29
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
-  name: 473|🇺🇸US-23.157.40.101-5465
+  country: 🇺🇸US
+  name: 473,587|🇸US_189
   password: KixLvKzwjekG00rm
   port: 8000
   server: 23.157.40.101
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇺🇸US-23.157.40.101-5466
+  country: 🇺🇸US
+  name: 473,587|🇺🇸US_187
   password: XKFKl2rULjIp74
   port: 8008
   server: 23.157.40.101
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇺🇸US-23.157.40.101-5467
+  country: 🇺🇸US
+  name: 473,587|🇺🇸US_184
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 23.157.40.101
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇸US-23.157.40.101-5468
+  country: 🇺🇸US
+  name: 473,587|🇸US_185
   password: XKFKl2rULjIp74
   port: 8009
   server: 23.157.40.101
@@ -6073,7 +6122,7 @@ proxies:
     path: /test
 - alterId: 0
   cipher: auto
-  name: 473,524,627,639|3|🇺🇸US-149.30.232.103-5871
+  name: 473,627,639|3|🇺🇸US-149.30.232.103-5871
   network: ws
   port: 18393
   server: 149.30.232.103
@@ -6088,7 +6137,7 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 473,524,627,639|3|🇺🇸US-47.253.70.234-5873
+  name: 473,627,639|3|🇺🇸US-47.253.70.234-5873
   network: ws
   port: 45979
   server: 47.253.70.234
@@ -6103,7 +6152,7 @@ proxies:
     path: /test
 - alterId: 0
   cipher: auto
-  name: 473,524,627,639|3|🇺🇸US-149.30.232.103-5874
+  name: 473,627,639|3|🇺🇸US-149.30.232.103-5874
   network: ws
   port: 15097
   server: 149.30.232.103
@@ -11794,86 +11843,71 @@ proxies:
     headers:
       Host: usa-west.xn--4gqza090la383cba657a9rw23a362bz35amu9c.link
     path: /
-- alterId: 0
-  cipher: auto
-  name: 524,609,610,634,638|未知_1013182430
-  network: ws
-  port: '2086'
-  server: s1.db-link03.top
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 25fbcec6-e45a-3a86-977a-12c40bf649ba
-  ws-opts:
-    headers:
-      Host: 817f0470a8cfd0e4e20ec1030d996397.s1.db-link03.top
-    path: /dabai.in?=817f0470a8cfd0e4e20ec1030d996397
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2771
+  name: 537,634|yandex-5574
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 20001
   server: us001.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2772
+  name: 537,634|yandex-5575
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 20002
   server: us002.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2773
+  name: 537,634|yandex-5576
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 20003
   server: us003.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2774
+  name: 537,634|yandex-5577
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 20004
   server: us004.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2775
+  name: 537,634|yandex-5578
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 20005
   server: us005.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2776
+  name: 537,634|yandex-5579
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 20006
   server: us006.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2777
+  name: 537,634|yandex-5580
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 20007
   server: us007.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2778
+  name: 537,634|yandex-5581
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 20008
   server: us008.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2779
+  name: 537,634|yandex-5582
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 20009
   server: us009.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2780
+  name: 537,634|yandex-5583
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 20010
   server: us010.dogsvip.site
@@ -11903,29 +11937,424 @@ proxies:
   port: 8444
   server: us-4.stunnel.cc
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇸 US
+  name: 587|🇸 US_140
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 64.74.163.130
+  type: ss
 - alterId: 0
   cipher: auto
-  country: 🇸US
+  country: 🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 591,638|美国_101318039
+  name: 587,638|美国_101318029
   network: tcp
-  port: '51409'
-  server: 155.254.35.214
+  port: '45231'
+  server: lt.fxlcn.com
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: d2b794b2-3bdc-49e2-827a-1bf9fcba4b1c
-- country: 🇸US
-  name: '591,641|🇺🇸 _美国 #7'
-  password: installshield
-  port: 8443
-  server: 38.180.106.124
-  skip-cert-verify: false
-  sni: 38.180.106.124
-  type: trojan
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇸 US_151
+  network: ws
+  port: 11886
+  server: 47.239.141.74
+  skip-cert-verify: true
+  type: vmess
+  uuid: 0d36b017-6d7c-493d-bb12-55c34faf6efc
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇸 US_152
+  network: ws
+  port: 443
+  server: 15.235.83.227
+  servername: mankadmu.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: mankadmu.com
+  ws-path: /linkvws
+- alterId: 1
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇸 US_153
+  network: ws
+  port: 443
+  server: serkat.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: linkvws
+- alterId: 1
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇸 US_154
+  network: ws
+  port: 443
+  server: masjide.org
+  servername: masjide.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: masjide.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_155
+  network: ws
+  port: 443
+  server: 38.99.82.193
+  servername: tilebani.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: tilebani.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇺🇸 US_171
+  network: tcp
+  port: 45263
+  server: 216.227.168.157
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_157
+  network: ws
+  port: 443
+  server: 15.235.83.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_158
+  network: ws
+  port: 443
+  server: 15.235.50.172
+  servername: baradiha.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: baradiha.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_159
+  network: ws
+  port: 28653
+  server: 47.76.136.178
+  skip-cert-verify: true
+  type: vmess
+  uuid: 836bf0ea-d6db-4d2e-c4b1-4ab28b6fdee6
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_160
+  network: ws
+  port: 45979
+  server: 216.167.34.199
+  skip-cert-verify: true
+  type: vmess
+  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
+  ws-path: /test
+- alterId: 1
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_161
+  network: ws
+  port: 443
+  server: putihb.org
+  servername: putihb.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: putihb.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: '587,638|🇺🇸 US_176 #1'
+  network: tcp
+  port: 45288
+  server: lt.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: '587,638|🇺🇸 US_177 #1'
+  network: tcp
+  port: 45258
+  server: lt.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,618,638,641|🇺🇸 美国 200
+  network: tcp
+  port: '45291'
+  server: lt.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
   udp: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_165
+  network: ws
+  port: 443
+  server: 148.113.176.192
+  servername: fapeng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: fapeng.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇺🇸 US_186
+  network: tcp
+  port: 45247
+  server: fa.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_167
+  network: ws
+  port: 443
+  server: jamekk.org
+  servername: jamekk.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: jamekk.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|美国_101318030
+  network: tcp
+  port: '45287'
+  server: lt.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇺🇸 US_184
+  network: tcp
+  port: 45237
+  server: fa.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,618,638,641|🇺🇸 美国 198
+  network: tcp
+  port: '45235'
+  server: lt.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,618,638,641|🇺🇸 美国 193
+  network: tcp
+  port: '45276'
+  server: lt.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇸 US_172
+  network: ws
+  port: 443
+  server: pulau.org
+  servername: pulau.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: pulau.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇺🇸 US_192
+  network: tcp
+  port: 45294
+  server: lt.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,618,638,641|🇺🇸 美国 028
+  network: tcp
+  port: '30002'
+  server: 38.12.83.217
+  servername: ''
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,618,638,641|🇺🇸 美国 196
+  network: tcp
+  port: '45271'
+  server: lt.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - name: 603|美国_洛杉矶
   network: ws
   password: NISHIKUITAN222
@@ -12631,7 +13060,19 @@ proxies:
     path: /dyajvws
 - alterId: 0
   cipher: auto
-  name: '612|美国 CloudFlare节点 #3'
+  name: 609,610,634|yandex-2284
+  network: ws
+  port: 20522
+  server: 140.235.38.56
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 740f6463-d066-4450-b168-f686013f916f
+  ws-opts:
+    path: /telegram_@sswia
+- alterId: 0
+  cipher: auto
+  name: '612|美国 CloudFlare节点 #2'
   network: ws
   port: 2095
   server: 172.64.194.234
@@ -12644,7 +13085,7 @@ proxies:
     path: /hgcefomn
 - alterId: 0
   cipher: auto
-  name: '612|美国 CloudFlare节点 #4'
+  name: '612|美国 CloudFlare节点 #3'
   network: ws
   port: 8880
   server: 141.101.123.18
@@ -12657,7 +13098,7 @@ proxies:
     path: /qwer
 - alterId: 0
   cipher: auto
-  name: '612|美国 CloudFlare节点 #5'
+  name: '612|美国 CloudFlare节点 #4'
   network: ws
   port: 8080
   server: 198.41.218.144
@@ -12671,7 +13112,7 @@ proxies:
     path: /qwer01
 - alterId: 0
   cipher: auto
-  name: '612|美国 CloudFlare节点 #6'
+  name: '612|美国 CloudFlare节点 #5'
   network: ws
   port: 8080
   server: 162.159.241.157
@@ -12747,19 +13188,6 @@ proxies:
   uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
 - alterId: 0
   cipher: auto
-  name: 618,638,641|🇺🇸 美国 028
-  network: tcp
-  port: '30002'
-  server: 38.12.83.217
-  servername: ''
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: 618,638,641|🇺🇸 美国 035
   network: tcp
   port: '550'
@@ -12797,36 +13225,10 @@ proxies:
   uuid: f21c11fc-0762-4b56-ab98-79d0b8460e7b
 - alterId: 0
   cipher: auto
-  name: 618,638,641|🇺🇸 美国 193
-  network: tcp
-  port: '45276'
-  server: lt.fxlcn.com
-  servername: ''
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
   name: 618,641|🇺🇸 美国 194
   network: tcp
   port: '45246'
   server: ye.fxlcn.com
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: 618,638,641|🇺🇸 美国 196
-  network: tcp
-  port: '45271'
-  server: lt.fxlcn.com
-  servername: ''
   skip-cert-verify: true
   tfo: true
   tls: false
@@ -12847,32 +13249,6 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
-  name: 618,638,641|🇺🇸 美国 198
-  network: tcp
-  port: '45235'
-  server: lt.fxlcn.com
-  servername: ''
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: 618,638,641|🇺🇸 美国 200
-  network: tcp
-  port: '45291'
-  server: lt.fxlcn.com
-  servername: ''
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
   name: 618,641|🇺🇸 美国 201
   network: tcp
   port: '45233'
@@ -12883,7 +13259,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 618,634|yandex-4422
+- name: 618,634|yandex-733
   network: ws
   password: '!!str 123456'
   port: 8443
@@ -12897,7 +13273,7 @@ proxies:
     headers:
       Host: top-azx.pages.dev
     path: /Az1.vpn.33.TOP/?ed=2560
-- name: 618,634|yandex-4424
+- name: 618,634|yandex-735
   network: ws
   password: '!!str 123456'
   port: 8443
@@ -12911,7 +13287,7 @@ proxies:
     headers:
       Host: top-azx.pages.dev
     path: /Az1.vpn.33.TOP/?ed=2560
-- name: 618,634|yandex-4445
+- name: 618,634|yandex-756
   network: ws
   password: '!!str 123456'
   port: 8443
@@ -13050,16 +13426,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 8bbd9d8c-481b-49b6-8029-e4648f2ea31d
-- alterId: 0
-  cipher: auto
-  name: 618,641|🇺🇸 美国 662
-  network: tcp
-  port: '29800'
-  server: 103.124.107.144
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
 - alterId: 0
   cipher: auto
   name: 618,641|🇺🇸 美国 664
@@ -13264,7 +13630,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1746
-  name: 623,634|yandex-3962
+  name: 623,634|yandex-5194
   port: 35500
   server: 148.135.184.84
   skip-cert-verify: true
@@ -13311,7 +13677,7 @@ proxies:
   uuid: 4de15ee9-5248-416a-ad22-dfce1b710119
 - country: 🇨🇳CN
   delay: 1660
-  name: 623,634|yandex-3966
+  name: 623,634|yandex-5198
   password: 253bc477d4e43c209f2d427272968280
   port: 1572
   server: 36.156.102.84
@@ -13605,7 +13971,7 @@ proxies:
   uuid: 8d717e5a-dab5-4b99-af4f-ea29ef8eebed
 - alterId: 0
   cipher: auto
-  name: 630,634,638,641,642,854|美国【机场推荐：https://a0a.xyz/】14
+  name: 630,634,638,641,854|美国【机场推荐：https://a0a.xyz/】14
   network: ws
   port: '443'
   server: bestcdn3.the-best-airport.top
@@ -13634,11 +14000,11 @@ proxies:
     path: /@Malinda6104
 - alterId: 2
   cipher: auto
-  name: 630,634|yandex-2948
+  name: 630,634|yandex-4791
   network: ws
   port: 30829
   server: v29.heduian.link
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -13991,7 +14357,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 638|🇺🇸 US_165
+  name: '638|🇺🇸 US_165 #1'
   network: ws
   port: 443
   server: putihb.org
@@ -14019,7 +14385,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 638|🇺🇸 US_167
+  name: '638|🇺🇸 US_167 #1'
   network: ws
   port: 443
   server: serkat.org
@@ -14033,7 +14399,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 638|🇺🇸 US_168
+  name: '638|🇺🇸 US_168 #1'
   network: ws
   port: 443
   server: masjide.org
@@ -14047,7 +14413,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 638|🇺🇸 US_169
+  name: '638|🇺🇸 US_169 #1'
   network: ws
   port: 443
   server: 38.99.82.193
@@ -14061,7 +14427,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 638|🇺🇸 US_170
+  name: '638|🇺🇸 US_170 #1'
   network: ws
   port: 443
   server: jamekk.org
@@ -14073,16 +14439,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 638|🇺🇸 US_171
-  network: tcp
-  port: 45263
-  server: 216.227.168.157
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
   name: 638|🇺🇸 US_172
@@ -14099,7 +14455,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 638|🇺🇸 US_173
+  name: '638|🇺🇸 US_173 #1'
   network: ws
   port: 443
   server: cpp007-2.facai20250909.com
@@ -14113,27 +14469,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 638|🇺🇸 US_176
-  network: tcp
-  port: 45288
-  server: lt.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: 638|🇺🇸 US_177
-  network: tcp
-  port: 45258
-  server: lt.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: 638|🇺🇸 US_178
+  name: '638|🇺🇸 US_178 #1'
   network: ws
   port: 45979
   server: 216.167.34.199
@@ -14147,7 +14483,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 638|🇺🇸 US_180
+  name: '638|🇺🇸 US_180 #1'
   network: ws
   port: 443
   server: pulau.org
@@ -14161,7 +14497,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 638|🇺🇸 US_181
+  name: '638|🇺🇸 US_181 #1'
   network: ws
   port: 443
   server: 148.113.176.192
@@ -14173,36 +14509,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 638|🇺🇸 US_184
-  network: tcp
-  port: 45237
-  server: fa.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: 638|🇺🇸 US_186
-  network: tcp
-  port: 45247
-  server: fa.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: 638|🇺🇸 US_192
-  network: tcp
-  port: 45294
-  server: lt.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
   name: 638,641|🇺🇸 github.com/freefq - 美国Fastl...
@@ -14288,6 +14594,16 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
+  name: 638|美国_101318039
+  network: tcp
+  port: '51409'
+  server: 155.254.35.214
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d2b794b2-3bdc-49e2-827a-1bf9fcba4b1c
+- alterId: 0
+  cipher: auto
   name: 638|美国_101318342
   network: tcp
   port: '51409'
@@ -14310,26 +14626,6 @@ proxies:
     headers:
       Host: seribus.org
     path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 638|美国_101318029
-  network: tcp
-  port: '45231'
-  server: lt.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: 638|美国_101318030
-  network: tcp
-  port: '45287'
-  server: lt.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - name: 641|🇺🇸 美国 042
   password: iwangjie
   port: 15805
@@ -14863,18 +15159,27 @@ proxies:
     headers:
       Host: linode.sharecentre.xyz
     path: /b472f/
-- name: 642|🇺🇸 美国 23
-  password: trojan
-  port: 443
-  server: 103.116.7.1
+- name: '641|🇺🇸 _美国 #7'
+  password: installshield
+  port: 8443
+  server: 38.180.106.124
   skip-cert-verify: false
-  sni: wahaha.yingyangkuaixian.dpdns.org
+  sni: 38.180.106.124
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 656|🇺🇸 美国 07-330
+  name: 656|🇺🇸 美国 06-264
   network: tcp
-  port: '80'
+  port: '47084'
+  server: entrance04.qqa678.cc
+  tls: false
+  type: vmess
+  uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5
+- alterId: 0
+  cipher: auto
+  name: 656|🇺🇸 美国 13-285
+  network: tcp
+  port: '443'
   server: 132.145.154.72
   tls: false
   type: vmess
@@ -14913,7 +15218,7 @@ proxies:
     headers:
       Host: ef7c2383-03bb-fec2-327b-34f6b2ace7cb.freevpnatm2025.dpdns.org
     path: /e7JS5ETJeA85VyjPCYXwETL
-- name: '674,675|美国03 #14'
+- name: '674,675|美国03 #15'
   network: ws
   password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
   port: 20230
@@ -14922,7 +15227,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '674,675|美国04 #14'
+- name: '674,675|美国04 #15'
   network: ws
   password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
   port: 20230
@@ -15031,20 +15336,16 @@ proxies:
   port: 20692
   server: 118.184.136.145
   type: ss
-- cipher: aes-256-cfb
-  name: '719|🇺🇸 美国 12-270 #1'
-  password: amazonskr05
-  port: 443
-  server: 54.82.229.122
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: '719|🇺🇸 美国 06-264 #1'
+  port: 47084
+  server: entrance04.qqa678.cc
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-- cipher: aes-256-cfb
-  name: '719|🇺🇸 美国 15-324 #1'
-  password: amazonskr05
-  port: 443
-  server: 54.242.126.43
-  type: ss
-  udp: true
+  uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5
 - alterId: 0
   cipher: auto
   http-opts:
@@ -15054,14 +15355,27 @@ proxies:
     method: GET
     path:
     - /
-  name: '719|🇺🇸 美国 07-330 #1'
+  name: '719|🇺🇸 美国 13-285 #1'
   network: http
-  port: 80
+  port: 443
   server: 132.145.154.72
   tls: false
   type: vmess
   udp: true
   uuid: bcb7c581-3c95-4569-a4e7-918141e91ea3
+- name: 719|🇺🇸 美国 17-386
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: koma-yt.pages.dev
+  skip-cert-verify: false
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /tro8sFW1S91B6sZrM1
 - cipher: chacha20-ietf-poly1305
   name: 722|🇺🇸USA-美国1
   password: 0305e0ec-ec7e-4770-9aa3-81e3427f91b6
@@ -15076,7 +15390,7 @@ proxies:
   server: cm2.akaochangnode.xyz
   type: ss
   udp: true
-- name: '764|美国01 #15'
+- name: '764|美国01 #16'
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10819
   server: ppg-us.05vr9nyqg5.download
@@ -15084,7 +15398,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '764|美国02 #15'
+- name: '764|美国02 #16'
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10820
   server: ppg-us.05vr9nyqg5.download
@@ -15092,7 +15406,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '764|美国03 #15'
+- name: '764|美国03 #16'
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10821
   server: ppg-us.05vr9nyqg5.download
@@ -15100,7 +15414,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '764|美国04 #15'
+- name: '764|美国04 #16'
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10822
   server: ppg-us.05vr9nyqg5.download
@@ -15140,7 +15454,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '765|美国01 #16'
+- name: '765|美国01 #17'
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10819
   server: ppg-us.05vr9nyqg5.download
@@ -15148,7 +15462,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '765|美国02 #16'
+- name: '765|美国02 #17'
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10820
   server: ppg-us.05vr9nyqg5.download
@@ -15156,7 +15470,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '765|美国03 #16'
+- name: '765|美国03 #17'
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10821
   server: ppg-us.05vr9nyqg5.download
@@ -15164,7 +15478,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '765|美国04 #16'
+- name: '765|美国04 #17'
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10822
   server: ppg-us.05vr9nyqg5.download
@@ -15209,7 +15523,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.nintendo.eu:193531
+    host: db5fe62.dl.microsoft.de:193531
     mode: tls
   port: 2377
   server: db5fe62.u1.glados-config.com
@@ -15220,7 +15534,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.fastly.net:193531
+    host: db5fe62.dl.microsoft.de:193531
     mode: tls
   port: 2377
   server: db5fe62.u2.glados-config.com
@@ -15231,7 +15545,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.nintendo.de:193531
+    host: db5fe62.dl.microsoft.jp:193531
     mode: tls
   port: 2377
   server: db5fe62.u3.glados-config.com
@@ -15242,7 +15556,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.ch:193531
+    host: db5fe62.dl.microsoft.fi:193531
     mode: tls
   port: 2377
   server: db5fe62.u4.glados-config.com
@@ -15253,7 +15567,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.fi:193531
+    host: db5fe62.dl.nintendo.es:193531
     mode: tls
   port: 2377
   server: db5fe62.u5.glados-config.com
@@ -15264,7 +15578,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.net:193531
+    host: db5fe62.dl.microsoft.dk:193531
     mode: tls
   port: 2377
   server: db5fe62.u6.glados-config.com
@@ -15275,7 +15589,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.net:154948
+    host: feb7fa9.dl.mozilla.net:154948
     mode: tls
   port: 2377
   server: feb7fa9.u1.glados-config.com
@@ -15286,7 +15600,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nvidia.com:154948
+    host: feb7fa9.dl.microsoft.cl:154948
     mode: tls
   port: 2377
   server: feb7fa9.u2.glados-config.com
@@ -15297,7 +15611,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.lv:154948
+    host: feb7fa9.dl.fastly.net:154948
     mode: tls
   port: 2377
   server: feb7fa9.u3.glados-config.com
@@ -15308,7 +15622,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.it:154948
+    host: feb7fa9.dl.microsoft.es:154948
     mode: tls
   port: 2377
   server: feb7fa9.u4.glados-config.com
@@ -15319,7 +15633,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.eu:154948
+    host: feb7fa9.dl.microsoft.fi:154948
     mode: tls
   port: 2377
   server: feb7fa9.u5.glados-config.com
@@ -15330,7 +15644,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.xboxlive.com:154948
+    host: feb7fa9.dl.microsoft.dk:154948
     mode: tls
   port: 2377
   server: feb7fa9.u6.glados-config.com

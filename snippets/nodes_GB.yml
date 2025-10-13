@@ -1,4 +1,25 @@
 proxies:
+- cipher: aes-128-gcm
+  name: 153,634|yandex-2175
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 53
+  server: 123.123.213.213
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153|英国 A
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2065
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153|英国 B
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2074
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 225|sd.258.cyou续费地址
   password: 7dbdba19-6a3b-4370-93b1-fb5a89adde0c
@@ -141,7 +162,8 @@ proxies:
   server: 145.239.6.202
   type: ss
 - cipher: aes-128-gcm
-  name: 454,455,473|🇧GB-141.98.101.178-0243
+  country: 🇬🇧 GB
+  name: 454,455,473,587|🇧 GB_48
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -334,8 +356,7 @@ proxies:
   server: 45.66.134.176
   type: ss
 - cipher: aes-256-cfb
-  country: 🇧GB
-  name: 473,591|🇧GB_11
+  name: 473|🇧GB-62.100.205.48-0196
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 62.100.205.48
@@ -355,8 +376,7 @@ proxies:
       Host: google.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇬BG
-  name: 473,591|🇧BG_05
+  name: 473|🇬🇧GB-94.156.250.122-0237
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 94.156.250.122
@@ -426,7 +446,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,639,641|🇺🇸 美国 027
+  name: 473,618,627,634,639,641|🇺🇸 美国 027
   network: ws
   port: '443'
   server: masjide.org
@@ -663,7 +683,7 @@ proxies:
   port: 8080
   server: 172.99.190.39
   type: ss
-- name: 473,627,634|yandex-1988
+- name: 473,627,634|yandex-4339
   password: 02e653c9-7c93-46a9-999d-11834bd0c577
   port: 443
   server: 132.145.51.172
@@ -795,7 +815,8 @@ proxies:
       Host: ''
     path: /cctv13/hd.m3u8
 - cipher: aes-256-cfb
-  name: 473,627|8J%2BHrPCfh6dHQi02Mi4xMDAuMjA1...
+  country: 🇬🇧 GB
+  name: 473,587,627|8J%2BHrPCfh6dHQi02Mi4xMDAuMjA1...
   obfs: plain
   obfs-param: ''
   password: f8f7aCzcPKbsF8p3
@@ -804,12 +825,14 @@ proxies:
   protocol-param: ''
   server: 62.100.205.48
   type: ssr
-- name: 473,627|🇬🇧GB-198.244.190.189-5350
+- country: 🇷FR
+  name: 473,587,627|🇬🇧GB-198.244.190.189-5350
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 473|GB-172.99.190.87-6389
   password: KixLvKzwjekG00rm
@@ -1480,7 +1503,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2783
+  name: 537,634|yandex-5586
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 23001
   server: uk001.dogsvip.site

@@ -40,7 +40,7 @@ proxies:
   type: hysteria2
   udp: true
 - auth: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
-  name: 76,634|yandex-3792
+  name: 76,634|yandex-5454
   password: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
   port: 3000
   server: ef6b4d-20.9966661.xyz
@@ -49,7 +49,7 @@ proxies:
   type: hysteria2
   udp: true
 - auth: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
-  name: 76,634|yandex-3793
+  name: 76,634|yandex-5455
   password: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
   port: 3000
   server: ef6b4d-20-2.9966661.xyz
@@ -58,7 +58,7 @@ proxies:
   type: hysteria2
   udp: true
 - auth: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
-  name: 76,634|yandex-3794
+  name: 76,634|yandex-5456
   password: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
   port: 3000
   server: ef6b4d-20-3.9966661.xyz
@@ -67,7 +67,7 @@ proxies:
   type: hysteria2
   udp: true
 - auth: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
-  name: 76,634|yandex-3795
+  name: 76,634|yandex-5457
   password: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
   port: 3000
   server: ef6b4d-20-4.9966661.xyz
@@ -76,13 +76,27 @@ proxies:
   type: hysteria2
   udp: true
 - auth: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
-  name: 76,634|yandex-3796
+  name: 76,634|yandex-5458
   password: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
   port: 3000
   server: ef6b4d-20-5.9966661.xyz
   skip-cert-verify: false
   sni: ef6b4d-20.9966661.xyz
   type: hysteria2
+  udp: true
+- cipher: aes-128-gcm
+  name: 153|俄罗斯 A
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2039
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153|俄罗斯 B
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2043
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 454|🇷🇺1 |  5.2MB/s
@@ -289,14 +303,15 @@ proxies:
   server: 45.139.24.24
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇷RU
-  name: 473,591|RU_52
+  country: 🇺 RU
+  name: 473,587| RU_128
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇷🇺RU-185.126.239.250-0360
+  country: 🇧 GB
+  name: 473,587| GB_47
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -337,7 +352,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,618,634|yandex-4441
+- name: 473,618,634|yandex-752
   network: ws
   password: vpn
   port: 2025
@@ -705,6 +720,21 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇷🇺 RU_146
+  network: tcp
+  port: 45215
+  server: fa.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - name: 603|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1453,7 +1483,7 @@ proxies:
       Host: gaosir.unfeeling.sbs
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560security=tls
 - delay: 1655
-  name: 614,615,623,634|yandex-3964
+  name: '614,615,623,634,719|🇺🇸 美国 27-393 #1'
   network: ws
   packet-encoding: ''
   port: 2096
@@ -1462,6 +1492,7 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   ws-opts:
     headers:
@@ -1884,7 +1915,7 @@ proxies:
   type: vless
   udp: true
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 618,634|yandex-4564
+- name: 618,634|yandex-875
   network: ws
   port: 2096
   server: 176.124.223.41
@@ -1899,7 +1930,7 @@ proxies:
       Host: vless.keepfuck.me
     path: /snippets
 - client-fingerprint: chrome
-  name: 618,634|yandex-4594
+  name: 618,634|yandex-905
   network: ws
   port: 2087
   server: 92.243.75.49
@@ -1914,7 +1945,7 @@ proxies:
     headers:
       Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
     path: /snippets?ip=proxyip:port(443)
-- name: 618,634|yandex-4754
+- name: 618,634|yandex-1065
   network: ws
   port: 2096
   server: 195.13.54.253
@@ -1940,7 +1971,7 @@ proxies:
   type: vless
   udp: true
   uuid: 7c63f43f-f526-49bb-b5c8-2be26e11ef00
-- name: 618,634|yandex-4794
+- name: 618,634|yandex-1105
   network: ws
   port: 8443
   server: 92.243.74.239
@@ -1965,7 +1996,7 @@ proxies:
   type: vless
   udp: true
   uuid: 9ac37507-dc17-5313-8125-c6f588c60103
-- name: 618,634|yandex-4835
+- name: 618,634|yandex-1146
   network: ws
   port: 443
   server: 194.76.18.113
@@ -1980,7 +2011,7 @@ proxies:
     headers:
       Host: cj.ylks.xyz
     path: /blue
-- name: 618,634|yandex-4868
+- name: 618,634|yandex-1179
   network: tcp
   port: 443
   server: de04.abvpn.ru
@@ -2133,7 +2164,7 @@ proxies:
   type: vless
   udp: true
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 618,634|yandex-5099
+- name: 618,634|yandex-1410
   network: ws
   port: 2096
   server: 213.219.247.41
@@ -2147,7 +2178,7 @@ proxies:
     headers:
       Host: vless.keepfuck.me
     path: /snippets
-- name: 618,634|yandex-5104
+- name: 618,634|yandex-1415
   network: ws
   port: 8443
   server: 217.30.10.46
@@ -2213,7 +2244,7 @@ proxies:
   type: vless
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 618,634|yandex-5271
+- name: 618,634|yandex-1582
   network: ws
   port: 2096
   server: 185.59.218.54
@@ -2228,7 +2259,7 @@ proxies:
     headers:
       Host: sni.aizrf.com
     path: /snippets
-- name: 618,634|yandex-5272
+- name: 618,634|yandex-1583
   network: ws
   port: 2096
   server: 193.9.49.54
@@ -2243,7 +2274,7 @@ proxies:
     headers:
       Host: sni.aizrf.com
     path: /snippets
-- name: 618,634|yandex-5273
+- name: 618,634|yandex-1584
   network: ws
   port: 2096
   server: 213.241.198.54
@@ -2289,7 +2320,7 @@ proxies:
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
-  name: 618,634|yandex-5383
+  name: 618,634|yandex-1694
   network: ws
   port: 2096
   server: 195.13.44.52
@@ -2304,7 +2335,7 @@ proxies:
       Host: saas.git.cloudns.org
     path: /snippets&freecodes
 - client-fingerprint: chrome
-  name: 618,634|yandex-5549
+  name: 618,634|yandex-1860
   network: ws
   port: 2096
   server: 94.247.142.61
@@ -2329,7 +2360,7 @@ proxies:
   type: vless
   udp: true
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: 618,634|yandex-5625
+- name: 618,634|yandex-1936
   network: ws
   port: 443
   server: 194.87.79.223
@@ -2344,7 +2375,7 @@ proxies:
     headers:
       Host: fei.634676.xyz
     path: /?ed=2560
-- name: 618,634|yandex-5646
+- name: 618,634|yandex-1957
   network: ws
   port: 2053
   server: 89.169.160.84
@@ -2474,16 +2505,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 0888adea-086c-4783-9989-85df86819c1f
-- alterId: 0
-  cipher: auto
-  name: 638|🇷🇺 RU_146
-  network: tcp
-  port: 45215
-  server: fa.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - name: 641|🇷🇺 俄罗斯 039
   password: vpn
   port: 2025
