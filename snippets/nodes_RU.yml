@@ -1,18 +1,4 @@
 proxies:
-- cipher: aes-128-gcm
-  name: 153|俄罗斯 A
-  password: 7af26eae-63c7-43c8-b335-e3528f790459
-  port: 2039
-  server: oeulay-o1.ilayernet.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 153|俄罗斯 B
-  password: 7af26eae-63c7-43c8-b335-e3528f790459
-  port: 2043
-  server: oeulay-o1.ilayernet.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 454|🇷🇺1 |  5.2MB/s
   password: 0zyDRZ1XmNXaaCAN7KEA8a
@@ -117,14 +103,14 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 473,587| RU_129
+  name: 473,578,587|🇺 RU_143
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 473,587| GB_48
+  name: 473,587|🇧 GB_53
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -165,7 +151,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,618,634|yandex-1556
+- name: 473,618,634|yandex-3615
   network: ws
   password: vpn
   port: 2025
@@ -181,7 +167,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,641|🇷🇺 俄罗斯 079
+  name: '473,618,627,634,641,723|🇷🇺 俄罗斯 079 #1'
   network: ws
   port: '50826'
   server: 45.67.32.147
@@ -356,8 +342,8 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇷RU
-  name: 473,587,591,634|yandex-5402
+  country: 🇺 RU
+  name: 473,578,587,634|yandex-2852
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
@@ -383,21 +369,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 578,618,641|🇷🇺 俄罗斯 067
-  network: tcp
-  port: '11052'
-  server: 45.67.230.79
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
-- alterId: 0
-  cipher: auto
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 587,638|🇷🇺 RU_138
+  name: 587,638|🇷🇺 RU_142
   network: tcp
   port: 45215
   server: fa.fxlcn.com
@@ -407,6 +382,13 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
+- cipher: aes-256-cfb
+  country: 🇺RU
+  name: 587|🇺RU_147
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 45.89.52.66
+  type: ss
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -732,16 +714,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '609,610|俄罗斯 V2CROSS.COM #1'
-  network: tcp
-  port: 100
-  server: cpanel.erade32.ir
-  tls: false
-  type: vmess
-  uuid: 0888adea-086c-4783-9989-85df86819c1f
-- alterId: 0
-  cipher: auto
-  name: 618,641|🇷🇺 俄罗斯 066
+  name: '618,641,723|🇷🇺 俄罗斯 066 #1'
   network: tcp
   port: '47555'
   server: 46.29.166.237
@@ -751,7 +724,17 @@ proxies:
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
-  name: 618,641|🇷🇺 俄罗斯 073
+  name: '618,641,723|🇷🇺 俄罗斯 067 #1'
+  network: tcp
+  port: '11052'
+  server: 45.67.230.79
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
+- alterId: 0
+  cipher: auto
+  name: '618,641,723|🇷🇺 俄罗斯 073 #1'
   network: tcp
   port: '2098'
   server: 147.45.51.16
@@ -768,13 +751,15 @@ proxies:
   type: trojan
   ws-opts:
     path: /
-- name: 630,641|电报群：https://t.me/vvkj11
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: false
-  sni: hsdgbuys.pages.dev
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '630,638,641|🇷🇺 俄罗斯 V2CROSS.COM #2'
+  network: tcp
+  port: '100'
+  server: cpanel.erade32.ir
+  tls: false
+  type: vmess
+  uuid: 0888adea-086c-4783-9989-85df86819c1f
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -796,13 +781,35 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 641|🇷🇺 俄罗斯 039
+- name: '641,723|🇷🇺 俄罗斯 039 #1'
   password: vpn
   port: 2025
   server: 109.120.132.80
   skip-cert-verify: true
   sni: vkvd127.mycdn.me
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 641|🇷🇺 俄罗斯(油管:破解资源君2.0)
+  network: ws
+  port: '80'
+  server: www.digitalocean.com
+  tls: false
+  type: vmess
+  uuid: 645fc4e7-e3a3-4e82-8abd-2d71324894c4
+  ws-opts:
+    headers:
+      Host: ssrsub.v01.asuka.buzz
+    path: /api/v3/download.getFile
+- alterId: 0
+  cipher: auto
+  name: '641|🇪🇺 欧洲(油管:破解资源君2.0) #37'
+  network: tcp
+  port: '20001'
+  server: 91.243.82.187
+  tls: true
+  type: vmess
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
 - name: '656,719|🇷🇺 RU TGS4 02 t.me/txwl666-59 #1'
   password: 3ea1afbd-a3ec-4bc0-9a0c-8097d326eb94
   port: 45080
@@ -810,14 +817,6 @@ proxies:
   skip-cert-verify: true
   sni: lhca1.bilibili.com
   type: trojan
-- name: '656,719|🇷🇺 V1-俄罗斯01-603 #1'
-  password: 68f4b269-6635-451c-b864-40bf50ccbc20
-  port: 54001
-  server: dy.xgboard2.top
-  skip-cert-verify: true
-  sni: rus001.yijiasu.xyz
-  type: trojan
-  udp: true
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844

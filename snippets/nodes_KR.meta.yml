@@ -112,7 +112,7 @@ proxies:
   udp: true
 - alterId: 1
   cipher: auto
-  name: 92,473,542,618,627,634,641|🇯🇵 日本 066
+  name: '92,473,542,618,627,634,641,723|🇯🇵 日本 066 #1'
   network: ws
   port: '33333'
   server: 146.56.45.242
@@ -129,7 +129,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 92,473,542,618,627,634,641|🇦🇺 澳大利亚 008
+  name: '92,473,542,618,627,634,641,723|🇦🇺 澳大利亚 008 #1'
   network: ws
   port: '8080'
   server: 129.154.201.240
@@ -146,7 +146,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 92,473,542,618,627,634,641|🇯🇵 日本 070
+  name: '92,473,542,618,627,634,641,723|🇯🇵 日本 070 #1'
   network: ws
   port: '8080'
   server: 146.56.179.139
@@ -163,7 +163,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 92,473,542,618,627,634,641|🇳🇱 荷兰 044
+  name: '92,473,542,618,627,634,641,723|🇳🇱 荷兰 044 #1'
   network: ws
   port: '8080'
   server: 130.162.143.176
@@ -180,7 +180,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 92,473,542,618,627,634,641|🇰🇷 韩国 003
+  name: '92,473,542,618,627,634,641,723|🇰🇷 韩国 003 #1'
   network: ws
   port: '8080'
   server: 140.238.31.168
@@ -197,7 +197,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 92,473,542,618,627,634,641|🇯🇵 日本 072
+  name: '92,473,542,618,627,634,641,723|🇯🇵 日本 072 #1'
   network: ws
   port: '8080'
   server: bst.n48.net
@@ -220,57 +220,60 @@ proxies:
   sni: kr-qingyun.dwyun.me
   type: trojan
   udp: true
-- cipher: aes-128-gcm
-  name: 153|韩国
-  password: 7af26eae-63c7-43c8-b335-e3528f790459
-  port: 700
-  server: zoneasia-one.ilayernet.xyz
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 185|韩国 KR1
+  port: 22212
+  server: kr1.nfsqttt.cn
+  servername: cdn-go.cn
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b9e6b867-d43e-48f8-bfd2-2f8d59c4db00
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 185|韩国 KR2 住宅
+  port: 22213
+  server: kr2.nfsqttt.cn
+  servername: cdn-go.cn
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b9e6b867-d43e-48f8-bfd2-2f8d59c4db00
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '190|韩国 KR1 #1'
+  port: 22212
+  server: kr1.nfsqttt.cn
+  servername: cdn-go.cn
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '190|韩国 KR2 住宅 #1'
+  port: 22213
+  server: kr2.nfsqttt.cn
+  servername: cdn-go.cn
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: 🇸 US
+  name: '296,473,587,634,635|🇰🇷 韩国|@ripaojiedian #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  tfo: false
   type: ss
   udp: true
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 184|韩国 KR1
-  port: 22212
-  server: kr1.nfsqttt.cn
-  servername: cdn-go.cn
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b9e6b867-d43e-48f8-bfd2-2f8d59c4db00
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 184|韩国 KR2 住宅
-  port: 22213
-  server: kr2.nfsqttt.cn
-  servername: cdn-go.cn
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b9e6b867-d43e-48f8-bfd2-2f8d59c4db00
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '189|韩国 KR1 #1'
-  port: 22212
-  server: kr1.nfsqttt.cn
-  servername: cdn-go.cn
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '189|韩国 KR2 住宅 #1'
-  port: 22213
-  server: kr2.nfsqttt.cn
-  servername: cdn-go.cn
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
 - cipher: aes-256-cfb
   name: 454|🇰🇷1 |  8.2MB/s
   password: amazonskr05
@@ -390,9 +393,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 473,627,641|🇰🇷 韩国(油管:破解资源君2.0)
+  name: 473,627|🇰🇷KR-13.124.168.115-0000
   network: ws
-  port: '443'
+  port: 443
   server: 13.124.168.115
   servername: ''
   skip-cert-verify: false
@@ -405,9 +408,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '473,627,641|🇰🇷 韩国(油管:破解资源君2.0) #1'
+  name: '473,627|🇰🇷KR-13.124.168.115-0001 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 13.124.168.115
   servername: ''
   skip-cert-verify: false
@@ -419,20 +422,12 @@ proxies:
       Host: 13.124.168.115
     path: /
 - cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 473,587,591|🇺🇸US_55
+  country: 🇺🇸 US
+  name: 473,587|🇸 US_162
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 473,587,591,634|yandex-5381
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 473,627|🇰🇷KR-152.69.230.170-0514
@@ -465,7 +460,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,641|🇯🇵 日本 007
+  name: '473,618,627,634,641,723|🇯🇵 日本 007 #1'
   network: ws
   port: '443'
   server: 146.56.138.175
@@ -482,7 +477,7 @@ proxies:
     path: /c399917/
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,641|🇰🇷 韩国 004
+  name: '473,618,627,634,641,723|🇰🇷 韩国 004 #1'
   network: ws
   port: '50001'
   server: 220.92.146.161
@@ -498,7 +493,7 @@ proxies:
     path: /qq
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,641|🇰🇷 韩国 005
+  name: '473,618,627,634,641,723|🇰🇷 韩国 005 #1'
   network: ws
   port: '50001'
   server: 125.134.123.178
@@ -863,8 +858,8 @@ proxies:
   server: 3.36.118.190
   type: ss
 - cipher: aes-256-cfb
-  country: 🇷KR
-  name: 473,587,591,634|yandex-5443
+  country: 🇷 KR
+  name: 473,587,634,719|🇰🇷 国家宽 01-386
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -954,7 +949,7 @@ proxies:
   server: 125.141.26.5
   type: ss
 - cipher: aes-256-gcm
-  name: 537,634|yandex-5527
+  name: 537,634|yandex-98
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 21001
   server: kr001.dogsvip.site
@@ -1007,15 +1002,6 @@ proxies:
   skip-cert-verify: true
   sni: any.mjanyt.com
   type: anytls
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇰🇷 KR
-  delay: 617
-  name: 587,623,634|yandex-5124
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  type: ss
   udp: true
 - name: 603|韩国_首尔特别市
   network: ws
@@ -1422,7 +1408,7 @@ proxies:
   sni: humble-rodent.treefrog761.one
   type: trojan
 - client-fingerprint: chrome
-  name: 618,634|yandex-1264
+  name: 618,634|yandex-3323
   network: ws
   packet-addr: false
   packet-encoding: xudp
@@ -1442,7 +1428,7 @@ proxies:
   xudp: true
 - alterId: 0
   cipher: auto
-  name: 618,641|🇰🇷 韩国 006
+  name: '618,641,723|🇰🇷 韩国 006 #1'
   network: tcp
   port: '46418'
   server: 154.223.19.117
@@ -1450,6 +1436,15 @@ proxies:
   tls: false
   type: vmess
   uuid: d1de8433-692d-47fd-9a8d-6ccb02ea39bd
+- cipher: aes-256-cfb
+  country: 🇰🇷 KR
+  delay: 617
+  name: 623,634|yandex-5536
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 625|🇰🇷 韩国 NO2-1A
@@ -1563,7 +1558,7 @@ proxies:
   server: 3.34.192.249
   tfo: false
   type: ss
-- name: 638|韩国_101218069
+- name: 638|韩国_101304069
   password: V3bDL91w89Uh5n65tXawOrHt
   port: 443
   server: starlink-sol.2513142.xyz
@@ -1571,7 +1566,7 @@ proxies:
   sni: www.cloudflare.com
   tls: false
   type: hysteria2
-- name: 638|韩国_101218070
+- name: 638|韩国_101304070
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-sol.2513142.xyz
@@ -1579,7 +1574,7 @@ proxies:
   sni: www.cloudflare.com
   tls: false
   type: hysteria2
-- name: 638|韩国_101218071
+- name: 638|韩国_101304071
   password: dqxLsBV3LitAt8Jwux5IRn7m
   port: 443
   server: starlink-sol.2513142.xyz
@@ -1601,7 +1596,7 @@ proxies:
     path: '%2Fsnippets%2Fip%253Dproxyip.fxxk.dedyn.io%253A443'
 - alterId: 0
   cipher: auto
-  name: 638|韩国_101218055 M64
+  name: 638|韩国_101304055 M64
   network: tcp
   port: '8888'
   server: 146.56.112.110
@@ -1611,7 +1606,7 @@ proxies:
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
 - alterId: 0
   cipher: auto
-  name: 638|韩国_101218054
+  name: 638|韩国_101304054
   network: ws
   port: '443'
   server: seoul.lonxin.net
@@ -1623,7 +1618,7 @@ proxies:
     headers:
       Host: ''
     path: /c399917/
-- name: 656|🇰🇷 韩国 首尔-446
+- name: 656|🇰🇷 韩国 首尔-445
   network: ws
   port: 50000
   server: 106.244.201.248
@@ -1635,7 +1630,7 @@ proxies:
     headers:
       Host: 01.91md.fun
     path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 2-478
+- name: 656|🇰🇷 韩国 首尔 2-477
   network: ws
   port: 54266
   server: 146.56.182.217
@@ -1647,7 +1642,7 @@ proxies:
     headers:
       Host: 01.91md.fun
     path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 3-491
+- name: 656|🇰🇷 韩国 首尔 3-490
   network: ws
   port: 11413
   server: 121.158.194.32
@@ -1659,7 +1654,7 @@ proxies:
     headers:
       Host: 01.91md.fun
     path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 4-500
+- name: 656|🇰🇷 韩国 首尔 4-499
   network: ws
   port: 50000
   server: 121.167.15.173
@@ -1671,7 +1666,7 @@ proxies:
     headers:
       Host: 01.91md.fun
     path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 5-505
+- name: 656|🇰🇷 韩国 首尔 5-504
   network: ws
   port: 50000
   server: 121.168.144.41
@@ -1683,7 +1678,7 @@ proxies:
     headers:
       Host: 01.91md.fun
     path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 6-507
+- name: 656|🇰🇷 韩国 首尔 6-506
   network: ws
   port: 15903
   server: 14.35.29.177
@@ -1695,7 +1690,7 @@ proxies:
     headers:
       Host: 01.91md.fun
     path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 7-517
+- name: 656|🇰🇷 韩国 首尔 7-516
   network: ws
   port: 19413
   server: 121.165.101.69
@@ -1707,7 +1702,7 @@ proxies:
     headers:
       Host: 01.91md.fun
     path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 8-532
+- name: 656|🇰🇷 韩国 首尔 8-531
   network: ws
   port: 13644
   server: 140.238.5.75
@@ -1719,7 +1714,7 @@ proxies:
     headers:
       Host: 01.91md.fun
     path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 9-533
+- name: 656|🇰🇷 韩国 首尔 9-532
   network: ws
   port: 6056
   server: 132.226.21.116
@@ -1731,7 +1726,7 @@ proxies:
     headers:
       Host: 01.91md.fun
     path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 10-545
+- name: 656|🇰🇷 韩国 首尔 10-544
   network: ws
   port: 14041
   server: 123.143.9.5
@@ -1743,7 +1738,7 @@ proxies:
     headers:
       Host: 01.91md.fun
     path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 11-546
+- name: 656|🇰🇷 韩国 首尔 11-545
   network: ws
   port: 20280
   server: 125.130.15.106
@@ -1755,7 +1750,7 @@ proxies:
     headers:
       Host: 01.91md.fun
     path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 12-553
+- name: 656|🇰🇷 韩国 首尔 12-552
   network: ws
   port: 15211
   server: 14.35.29.177
@@ -1767,22 +1762,6 @@ proxies:
     headers:
       Host: 01.91md.fun
     path: '%2F%252F%253Fed%253D2048'
-- name: 656,719|🇰🇷 V1-国01-580
-  password: 68f4b269-6635-451c-b864-40bf50ccbc20
-  port: 45001
-  server: dy.xgboard2.top
-  skip-cert-verify: true
-  sni: kr001.yijiasu.xyz
-  type: trojan
-  udp: true
-- name: '656,719|🇰🇷 V1-韩国02-581 #1'
-  password: 68f4b269-6635-451c-b864-40bf50ccbc20
-  port: 45002
-  server: dy.xgboard2.top
-  skip-cert-verify: true
-  sni: kr002.yijiasu.xyz
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 684|321 韩国
@@ -1867,7 +1846,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 719|🇰🇷 国 -446
+  name: 719|🇰🇷 韩国 -445
   network: ws
   port: 50000
   server: 106.244.201.248
@@ -1883,7 +1862,7 @@ proxies:
     path: /%2F%3Fed%3D2048
 - alterId: 0
   cipher: auto
-  name: '719|🇰🇷 韩国 首尔 2-478 #1'
+  name: '719|🇰🇷 韩国 首尔 2-477 #1'
   network: ws
   port: 54266
   server: 146.56.182.217
@@ -1899,7 +1878,7 @@ proxies:
     path: /%2F%3Fed%3D2048
 - alterId: 0
   cipher: auto
-  name: '719|🇰🇷 韩国 首尔 3-491 #1'
+  name: '719|🇰🇷 韩国 首尔 3-490 #1'
   network: ws
   port: 11413
   server: 121.158.194.32
@@ -1915,7 +1894,7 @@ proxies:
     path: /%2F%3Fed%3D2048
 - alterId: 0
   cipher: auto
-  name: '719|🇰🇷 韩国 首尔 4-500 #1'
+  name: '719|🇰🇷 韩国 首尔 4-499 #1'
   network: ws
   port: 50000
   server: 121.167.15.173
@@ -1931,7 +1910,7 @@ proxies:
     path: /%2F%3Fed%3D2048
 - alterId: 0
   cipher: auto
-  name: '719|🇰🇷 韩国 首尔 5-505 #1'
+  name: '719|🇰🇷 韩国 首尔 5-504 #1'
   network: ws
   port: 50000
   server: 121.168.144.41
@@ -1947,7 +1926,7 @@ proxies:
     path: /%2F%3Fed%3D2048
 - alterId: 0
   cipher: auto
-  name: '719|🇰🇷 韩国 首尔 6-507 #1'
+  name: '719|🇰🇷 韩国 首尔 6-506 #1'
   network: ws
   port: 15903
   server: 14.35.29.177
@@ -1963,7 +1942,7 @@ proxies:
     path: /%2F%3Fed%3D2048
 - alterId: 0
   cipher: auto
-  name: '719|🇰🇷 韩国 首尔 7-517 #1'
+  name: '719|🇰🇷 韩国 首尔 7-516 #1'
   network: ws
   port: 19413
   server: 121.165.101.69
@@ -1979,7 +1958,7 @@ proxies:
     path: /%2F%3Fed%3D2048
 - alterId: 0
   cipher: auto
-  name: '719|🇰🇷 韩国 首尔 8-532 #1'
+  name: '719|🇰🇷 韩国 首尔 8-531 #1'
   network: ws
   port: 13644
   server: 140.238.5.75
@@ -1995,7 +1974,7 @@ proxies:
     path: /%2F%3Fed%3D2048
 - alterId: 0
   cipher: auto
-  name: '719|🇰🇷 韩国 首尔 9-533 #1'
+  name: '719|🇰🇷 韩国 首尔 9-532 #1'
   network: ws
   port: 6056
   server: 132.226.21.116
@@ -2011,7 +1990,7 @@ proxies:
     path: /%2F%3Fed%3D2048
 - alterId: 0
   cipher: auto
-  name: '719|🇰🇷 韩国 首尔 10-545 #1'
+  name: '719|🇰🇷 韩国 首尔 10-544 #1'
   network: ws
   port: 14041
   server: 123.143.9.5
@@ -2027,7 +2006,7 @@ proxies:
     path: /%2F%3Fed%3D2048
 - alterId: 0
   cipher: auto
-  name: '719|🇰🇷 韩国 首尔 11-546 #1'
+  name: '719|🇰🇷 韩国 首尔 11-545 #1'
   network: ws
   port: 20280
   server: 125.130.15.106
@@ -2043,7 +2022,7 @@ proxies:
     path: /%2F%3Fed%3D2048
 - alterId: 0
   cipher: auto
-  name: '719|🇰🇷 韩国 首尔 12-553 #1'
+  name: '719|🇰🇷 韩国 首尔 12-552 #1'
   network: ws
   port: 15211
   server: 14.35.29.177
@@ -2075,9 +2054,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '859|韩国普通线路1 #1'
+  name: '859|韩国普通线路2 #1'
   network: tcp
-  port: '13091'
+  port: '13092'
   server: zz.xiaoqingwa.xyz
   servername: ''
   tls: false
@@ -2085,9 +2064,9 @@ proxies:
   uuid: 09740703-d597-3396-9502-45bb6e293342
 - alterId: 0
   cipher: auto
-  name: '859|韩国普通线路2 #1'
+  name: '859|韩国普通线路1 #1'
   network: tcp
-  port: '13092'
+  port: '13091'
   server: zz.xiaoqingwa.xyz
   servername: ''
   tls: false
