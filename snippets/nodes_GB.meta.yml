@@ -39,12 +39,33 @@ proxies:
   type: vmess
   udp: true
   uuid: 552bc7a9-42d5-4bd1-bd69-111e034990d9
+- cipher: aes-128-gcm
+  name: 153,634|yandex-3242
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 53
+  server: 123.123.213.213
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153,634|yandex-3293
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2065
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153,634|yandex-3294
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2074
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   down: 600
   grpc-opts:
     grpc-service-name: 12306
-  name: 181,634|yandex-5370
+  name: 181,634|yandex-3650
   network: grpc
   password: 2847d524-9ab9-4002-80a7-e9cd9ca3ca8c
   port: 443
@@ -223,7 +244,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇧 GB
-  name: 453,454,472,587| GB_46
+  name: 453,454,472,587|🇬🇧 GB_52
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -765,7 +786,7 @@ proxies:
   port: 8080
   server: 172.99.190.39
   type: ss
-- name: 472,627,634|yandex-4414
+- name: 472,627,634|yandex-2285
   password: 02e653c9-7c93-46a9-999d-11834bd0c577
   port: 443
   server: 132.145.51.172
@@ -932,7 +953,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  country: 🇬🇧 GB
+  country: 🇧 GB
   name: 472,587,627|8J%2BHrPCfh6dHQi02Mi4xMDAuMjA1...
   obfs: plain
   obfs-param: ''
@@ -1724,7 +1745,7 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-185
+  name: 537,634|yandex-3143
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 23001
   server: uk001.dogsvip.site
@@ -1922,49 +1943,12 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
-- alpn:
-  - h2
-  name: 578|🇬🇧 GB 6
-  network: grpc
-  port: 443
-  server: 164.38.155.97
-  servername: pqh24v3.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- alterId: 0
-  cipher: auto
-  name: '578,618,641,723|🇬🇧 英国 002 #1'
-  network: tcp
-  port: '50394'
-  server: 46.250.243.56
-  servername: ''
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
-- alpn:
-  - h2
-  name: 578|🇬🇧 GB 3
-  network: grpc
-  port: 443
-  server: 94.247.142.103
-  servername: pqh23v5.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- alpn:
-  - h2
-  name: 578|🇬🇧 GB 1
-  network: grpc
-  port: 443
-  server: 5.10.245.70
-  servername: pqh36v4.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+- cipher: chacha20-ietf-poly1305
+  name: 578|🇬🇧 UK - telegram
+  password: 7ec3173d-49ad-49c9-95ba-9631df8c7790
+  port: 40008
+  server: 89.213.193.87
+  type: ss
 - name: 603|英国_金丝雀码头
   network: ws
   port: 443
@@ -2553,8 +2537,32 @@ proxies:
   skip-cert-verify: false
   sni: ultimate-civet.adder289.quest
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '618,641,723|🇬🇧 英国 001 #1'
+  network: tcp
+  port: '39674'
+  server: 82.197.69.131
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
+- alterId: 0
+  cipher: auto
+  name: '618,641,723|🇬🇧 英国 002 #1'
+  network: tcp
+  port: '50394'
+  server: 46.250.243.56
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
 - encryption: none
-  name: 618,634|yandex-811
+  name: 618,634|yandex-3961
   network: ws
   port: 80
   server: 51.68.189.39
@@ -2603,7 +2611,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- name: 618,634|yandex-1126
+- name: 618,634|yandex-4276
   network: ws
   port: 2096
   server: 185.156.19.49
@@ -2617,7 +2625,7 @@ proxies:
     headers:
       Host: getsub.saas.classelivre.eu.org
     path: /snippets&freecodes
-- name: 618,634|yandex-1155
+- name: 618,634|yandex-4305
   network: ws
   port: 8880
   server: 25.129.199.251
@@ -2632,7 +2640,7 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /
-- name: 618,634|yandex-1170
+- name: 618,634|yandex-4320
   network: ws
   port: 22222
   server: 51.44.134.210
@@ -2667,7 +2675,7 @@ proxies:
   type: vless
   udp: true
   uuid: b77d5b7a-c15f-40e3-b510-d6b9c45fbc17
-- name: 618,634|yandex-1464
+- name: 618,634|yandex-4614
   network: ws
   port: 2096
   server: 109.176.239.39
@@ -2692,7 +2700,7 @@ proxies:
   tls: false
   type: vmess
   uuid: b2836369-220b-4840-80c4-8cf904c735ee
-- name: 618,634|yandex-1674
+- name: 618,634|yandex-4824
   network: ws
   port: 22222
   server: 3.10.78.149
@@ -2707,7 +2715,7 @@ proxies:
     headers:
       Host: telegram-channel-vlessconfig.sohala.uk
     path: /telegram-channel-vlessconfig-ws
-- name: 618,634|yandex-1675
+- name: 618,634|yandex-4825
   network: ws
   port: 22222
   server: 35.179.21.136
@@ -2732,7 +2740,7 @@ proxies:
   type: vless
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 618,634|yandex-1733
+- name: 618,634|yandex-4883
   network: ws
   port: 22222
   server: 18.135.151.131
@@ -2757,7 +2765,7 @@ proxies:
   tls: false
   type: vmess
   uuid: d5e16b83-7b5c-45ea-d749-d6f6ad214447
-- name: 618,634|yandex-1820
+- name: 618,634|yandex-4970
   network: ws
   port: 443
   server: 151.101.62.102
@@ -2772,7 +2780,7 @@ proxies:
     headers:
       Host: 9x.ru
     path: /Telegram-Xv2ry2-7?ed=1080
-- name: 618,634|yandex-1839
+- name: 618,634|yandex-4989
   network: ws
   port: 2096
   server: 25.129.196.54
@@ -2787,7 +2795,7 @@ proxies:
     headers:
       Host: sni.aizrf.com
     path: /snippets
-- name: 618,634|yandex-1840
+- name: 618,634|yandex-4990
   network: ws
   port: 2096
   server: 25.129.199.54
@@ -2802,7 +2810,7 @@ proxies:
     headers:
       Host: sni.aizrf.com
     path: /snippets
-- name: 618,634|yandex-1857
+- name: 618,634|yandex-5007
   network: ws
   port: 2096
   server: 45.12.31.53
@@ -2831,7 +2839,7 @@ proxies:
       Host: abcd.freewarp.eu.org
     path: /snippets&freecodes+
 - client-fingerprint: chrome
-  name: 618,634|yandex-1965
+  name: 618,634|yandex-5115
   network: ws
   port: 443
   server: d.nl.cdn.maviks.ru
@@ -2861,7 +2869,7 @@ proxies:
     headers:
       Host: krill.xfan01.sbs
     path: /Telegram🇮🇷
-- name: 618,634|yandex-2042
+- name: 618,634|yandex-5192
   network: ws
   port: 8080
   server: 45.85.119.79
@@ -2876,7 +2884,7 @@ proxies:
     headers:
       Host: late-tooth.granzinhannah.workers.dev
     path: /
-- name: 618,634|yandex-2043
+- name: 618,634|yandex-5193
   network: ws
   port: 8880
   server: 45.85.119.79
@@ -2892,7 +2900,7 @@ proxies:
       Host: late-tooth.granzinhannah.workers.dev
     path: /
 - client-fingerprint: chrome
-  name: 618,634|yandex-2113
+  name: 618,634|yandex-5263
   network: ws
   port: 2096
   server: 164.38.155.61
@@ -2907,7 +2915,7 @@ proxies:
       Host: vless.hubp.de
     path: /snippets
 - client-fingerprint: chrome
-  name: 618,634|yandex-2115
+  name: 618,634|yandex-5265
   network: ws
   port: 2096
   server: 77.75.199.61
@@ -2924,7 +2932,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇧🇪BE
   delay: 1106
-  name: 623,634|yandex-330
+  name: 623,634|yandex-115
   password: k1v5g9FefdoO
   port: 8388
   server: 57.129.140.88
@@ -2933,7 +2941,7 @@ proxies:
 - cipher: rc4-md5
   country: 🇬🇧GB
   delay: 682
-  name: 623,634|yandex-331
+  name: 623,634|yandex-116
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 146.70.61.37
@@ -3313,24 +3321,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 64182bc9-d71d-48b1-bf63-19e3a1b02674
-- name: 642|🇬🇧 英国 01
-  password: 571ec94e-613c-430a-93de-397d3d237475
-  port: 22156
-  server: 83.147.17.147
-  skip-cert-verify: true
-  sni: hsyg.huasuan666.top
-  tls: false
-  type: hysteria2
-- name: 642|🇬🇧 英国 04
-  obfs: salamander
-  obfs-password: salamander
-  password: 74f135a0-6ff1-4024-90e7-a6e3f542525a
-  port: 25785
-  server: ukhub.xg-hub.icu
-  skip-cert-verify: true
-  sni: ukhub.xg-hub.icu
-  tls: false
-  type: hysteria2
 - name: 649|韩国-三网优化2
   password: d681df3e-fe9b-4a37-abdf-dcb93682c0da
   port: 44732
