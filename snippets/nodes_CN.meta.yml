@@ -9,7 +9,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: '296,401,473,524,609,610,614,615,617,618,621,627,630,633,634,635,636,637,638,639,641,723|🇨🇳
+  name: '296,401,473,609,610,614,615,617,618,621,627,630,633,634,635,636,637,638,639,641,723|🇨🇳
     中国 001 #1'
   network: ws
   port: '30809'
@@ -35,11 +35,11 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: 401,473,627,638,642|🇭🇰 香港 05
+- name: 401,473,627,638|未知3
   password: e531d1bc-a56f-4e1a-a295-1442369a19c1
   port: 26004
   server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.bilibili.com
   type: trojan
 - alterId: 0
@@ -156,7 +156,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: '473,524,618,627,630,634,638,641,723|🇨🇳 中国 097 #1'
+  name: '473,618,627,630,634,638,641,723|🇨🇳 中国 097 #1'
   network: ws
   port: '30808'
   server: v8.heduian.link
@@ -172,7 +172,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '473,524,618,627,630,634,638,641,723|🇨🇳 中国 090 #1'
+  name: '473,609,610,618,627,630,634,638,641,642,656,719,723|🇨🇳 中国 090 #1'
   network: ws
   port: '30824'
   server: v24.heduian.link
@@ -355,12 +355,12 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: '473,618,627,634,641,723|🇨🇳 中国 030 #1'
+  name: '473,618,627,634,641,642,656,719,723|🇨🇳 中国 030 #1'
   network: ws
   port: '30839'
   server: v39.heduian.link
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
@@ -443,7 +443,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: '473,524,627,630,634,638|美国 #86'
+  name: '473,609,610,627,630,634,638|美国 #86'
   network: ws
   port: '30829'
   server: v29.heduian.link
@@ -2018,58 +2018,22 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
-- name: '524,634,638|🇨🇳_中国 #5'
-  network: tcp
-  port: 29500
-  server: 89.44.242.222
-  tls: false
-  type: vless
-  uuid: 888a20e2-fc3f-4f52-973c-36a6386225b8
-- name: '524,638,656,719|🇮🇷 IR_2 | ⬇️ 2.0MB/s-506 #1'
-  network: tcp
-  port: 46822
-  server: 89.44.242.222
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 44aded6c-a012-452b-8e13-04d5f15a659f
-- client-fingerprint: chrome
-  name: '524,638,656,719|🇮🇷 IR_1 | ⬇️ 1.2MB/s-503 #1'
-  network: tcp
-  port: 29495
-  server: 89.44.242.222
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b
-- alterId: 0
-  cipher: auto
-  name: '524,630,638,641|_中国 #6'
-  network: tcp
-  port: '47084'
-  server: entrance01.qqa678.cc
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8e94ed0e-3717-4c46-aa13-6757a89b392e
 - alterId: 64
   cipher: auto
-  country: 🇨🇳 CN
-  delay: 170
+  country: 🇨🇳CN
+  delay: 200
   h2-opts: {}
   http-opts: {}
-  name: '587,623,638|Github搜索TrojanLinks #11'
+  name: 587,623,638|🇨🇳 CN_37
   network: tcp
-  port: '50002'
-  server: 112.132.215.12
-  servername: ury-unit-c030ehei8.poget71138.workers.dev
+  port: 59003
+  server: 183.236.51.36
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /ivideos.sbs/linkws
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇨🇳CN
@@ -2087,20 +2051,20 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  country: 🇨🇳CN
-  delay: 200
+  country: 🇨🇳 CN
+  delay: 170
   h2-opts: {}
   http-opts: {}
-  name: 587,623,638|🇨🇳 CN_37
+  name: '587,623,638|Github搜索TrojanLinks #11'
   network: tcp
-  port: 59003
-  server: 183.236.51.36
-  servername: ''
+  port: '50002'
+  server: 112.132.215.12
+  servername: ury-unit-c030ehei8.poget71138.workers.dev
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
+  ws-path: /ivideos.sbs/linkws
 - alterId: 64
   cipher: auto
   name: '605,618,641,723|🇨🇳 中国 081 #1'
@@ -2175,7 +2139,7 @@ proxies:
   uuid: 06e10e0b-57ae-48db-a37a-f2fd207e3b11
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇨🇳 中国 026 #1'
+  name: '618,641,656,723|🇨🇳 中国 026 #1'
   network: tcp
   port: '31212'
   server: 47.242.90.210
@@ -3798,6 +3762,25 @@ proxies:
     headers:
       Host: vless.hubp.de
     path: '%2Fsnippets'
+- name: '638,656,719|🇮🇷 IR_2 | ⬇️ 2.0MB/s-366 #1'
+  network: tcp
+  port: 46822
+  server: 89.44.242.222
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 44aded6c-a012-452b-8e13-04d5f15a659f
+- client-fingerprint: chrome
+  name: '638,656,719|🇮🇷 IR_1 | ⬇️ 1.2MB/s-363 #1'
+  network: tcp
+  port: 29495
+  server: 89.44.242.222
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b
 - name: '638|🇨🇳_中国 #6'
   network: ws
   port: 443

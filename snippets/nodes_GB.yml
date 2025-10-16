@@ -39,6 +39,27 @@ proxies:
   type: vmess
   udp: true
   uuid: 552bc7a9-42d5-4bd1-bd69-111e034990d9
+- cipher: aes-128-gcm
+  name: 153,634|yandex-5347
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 53
+  server: 123.123.213.213
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153,634|yandex-5398
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2065
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153,634|yandex-5399
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2074
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 226|sd.258.cyou续费地址
   password: 7dbdba19-6a3b-4370-93b1-fb5a89adde0c
@@ -181,8 +202,8 @@ proxies:
   server: 145.239.6.202
   type: ss
 - cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 454,455,473,587|🇬🇧 GB_59
+  country: 🇬🇧 GB
+  name: 454,455,473,587|🇬🇧 GB_49
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -1700,19 +1721,17 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '578|Channel id: @ShadowProxy66🇬🇧'
-  port: 44023
-  server: 51.38.64.209
+  name: '578,618,641,723|🇬🇧 英国 002 #1'
+  network: tcp
+  port: '50394'
+  server: 46.250.243.56
+  servername: ''
   skip-cert-verify: true
+  tfo: true
   tls: false
   type: vmess
-  uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
-- cipher: chacha20-ietf-poly1305
-  name: 578|🇬🇧 UK - telegram
-  password: 7ec3173d-49ad-49c9-95ba-9631df8c7790
-  port: 40008
-  server: 89.213.193.87
-  type: ss
+  udp: true
+  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
 - alterId: 0
   cipher: auto
   name: 604|英国_倫敦金融城
@@ -1945,30 +1964,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '618,641,723|🇬🇧 英国 001 #1'
-  network: tcp
-  port: '39674'
-  server: 82.197.69.131
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
-- alterId: 0
-  cipher: auto
-  name: '618,641,723|🇬🇧 英国 002 #1'
-  network: tcp
-  port: '50394'
-  server: 46.250.243.56
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
-- alterId: 0
-  cipher: auto
   name: '618,641,723|🇬🇧 英国 007 #1'
   network: tcp
   port: '443'
@@ -2155,13 +2150,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 64182bc9-d71d-48b1-bf63-19e3a1b02674
-- name: 642|🇬🇧 英国 01
-  password: biOrJGlcfX
-  port: 443
-  server: creativecommons.org
+- alterId: 2
+  cipher: auto
+  name: 642,656,719|🇬🇧 国 01-152
+  network: ws
+  port: 30836
+  server: v36.heduian.link
   skip-cert-verify: true
-  sni: ghasem.kotlet.org
-  type: trojan
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - name: 649|韩国-三网优化2
   password: d681df3e-fe9b-4a37-abdf-dcb93682c0da
   port: 44732

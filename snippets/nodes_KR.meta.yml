@@ -212,6 +212,13 @@ proxies:
     headers:
       Host: i1.hdslb.com
     path: /download
+- cipher: aes-128-gcm
+  name: 153,634|yandex-5364
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 700
+  server: zoneasia-one.ilayernet.xyz
+  type: ss
+  udp: true
 - client-fingerprint: edge
   flow: xtls-rprx-vision
   name: 184|韩国 KR1
@@ -819,7 +826,8 @@ proxies:
   server: 3.36.118.190
   type: ss
 - cipher: aes-256-cfb
-  name: 473,634|yandex-5291
+  country: 🇷 KR
+  name: 473,587,634,719|🇰🇷 国家宽 01-179
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -835,7 +843,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇺🇸 US
-  name: 473,587|🇺🇸 US_166
+  name: 473,587|🇸 US_167
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
@@ -992,6 +1000,14 @@ proxies:
   skip-cert-verify: true
   sni: any.mjanyt.com
   type: anytls
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇷 KR
+  name: 587,634|yandex-5088
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
   udp: true
 - name: 603|韩国_首尔特别市
   network: ws
@@ -1639,152 +1655,8 @@ proxies:
   tls: false
   type: hysteria2
   udp: true
-- name: 656|🇰🇷 韩国 首尔-263
-  network: ws
-  port: 50000
-  server: 106.244.201.248
-  servername: 01.91md.fun
-  tls: true
-  type: vless
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 2-295
-  network: ws
-  port: 54266
-  server: 146.56.182.217
-  servername: 01.91md.fun
-  tls: true
-  type: vless
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 3-308
-  network: ws
-  port: 11413
-  server: 121.158.194.32
-  servername: 01.91md.fun
-  tls: true
-  type: vless
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 4-317
-  network: ws
-  port: 50000
-  server: 121.167.15.173
-  servername: 01.91md.fun
-  tls: true
-  type: vless
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 5-322
-  network: ws
-  port: 50000
-  server: 121.168.144.41
-  servername: 01.91md.fun
-  tls: true
-  type: vless
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 6-324
-  network: ws
-  port: 15903
-  server: 14.35.29.177
-  servername: 01.91md.fun
-  tls: true
-  type: vless
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 7-334
-  network: ws
-  port: 19413
-  server: 121.165.101.69
-  servername: 01.91md.fun
-  tls: true
-  type: vless
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 8-349
-  network: ws
-  port: 13644
-  server: 140.238.5.75
-  servername: 01.91md.fun
-  tls: true
-  type: vless
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 9-350
-  network: ws
-  port: 6056
-  server: 132.226.21.116
-  servername: 01.91md.fun
-  tls: true
-  type: vless
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 10-362
-  network: ws
-  port: 14041
-  server: 123.143.9.5
-  servername: 01.91md.fun
-  tls: true
-  type: vless
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 11-363
-  network: ws
-  port: 20280
-  server: 125.130.15.106
-  servername: 01.91md.fun
-  tls: true
-  type: vless
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: '%2F%252F%253Fed%253D2048'
-- name: 656|🇰🇷 韩国 首尔 12-370
-  network: ws
-  port: 15211
-  server: 14.35.29.177
-  servername: 01.91md.fun
-  tls: true
-  type: vless
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: '%2F%252F%253Fed%253D2048'
 - client-fingerprint: randomized
-  name: 656|🇰🇷 KR_8 | ⬇️ 7.0MB/s-430
+  name: 656|🇰🇷 KR_8 | ⬇️ 7.0MB/s-290
   network: ws
   port: 443
   server: www.speedtest.net
@@ -1837,198 +1709,6 @@ proxies:
   port: 20692
   server: 118.184.136.156
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 719|🇰🇷 国 -263
-  network: ws
-  port: 50000
-  server: 106.244.201.248
-  servername: 01.91md.fun
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: /%2F%3Fed%3D2048
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 首尔 2-295 #1'
-  network: ws
-  port: 54266
-  server: 146.56.182.217
-  servername: 01.91md.fun
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: /%2F%3Fed%3D2048
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 首尔 3-308 #1'
-  network: ws
-  port: 11413
-  server: 121.158.194.32
-  servername: 01.91md.fun
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: /%2F%3Fed%3D2048
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 首尔 4-317 #1'
-  network: ws
-  port: 50000
-  server: 121.167.15.173
-  servername: 01.91md.fun
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: /%2F%3Fed%3D2048
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 首尔 5-322 #1'
-  network: ws
-  port: 50000
-  server: 121.168.144.41
-  servername: 01.91md.fun
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: /%2F%3Fed%3D2048
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 首尔 6-324 #1'
-  network: ws
-  port: 15903
-  server: 14.35.29.177
-  servername: 01.91md.fun
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: /%2F%3Fed%3D2048
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 首尔 7-334 #1'
-  network: ws
-  port: 19413
-  server: 121.165.101.69
-  servername: 01.91md.fun
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: /%2F%3Fed%3D2048
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 首尔 8-349 #1'
-  network: ws
-  port: 13644
-  server: 140.238.5.75
-  servername: 01.91md.fun
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: /%2F%3Fed%3D2048
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 首尔 9-350 #1'
-  network: ws
-  port: 6056
-  server: 132.226.21.116
-  servername: 01.91md.fun
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: /%2F%3Fed%3D2048
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 首尔 10-362 #1'
-  network: ws
-  port: 14041
-  server: 123.143.9.5
-  servername: 01.91md.fun
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: /%2F%3Fed%3D2048
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 首尔 11-363 #1'
-  network: ws
-  port: 20280
-  server: 125.130.15.106
-  servername: 01.91md.fun
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: /%2F%3Fed%3D2048
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 首尔 12-370 #1'
-  network: ws
-  port: 15211
-  server: 14.35.29.177
-  servername: 01.91md.fun
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
-  ws-opts:
-    headers:
-      Host: 01.91md.fun
-    path: /%2F%3Fed%3D2048
 - name: 764|韩国01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10836
