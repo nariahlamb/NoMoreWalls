@@ -86,20 +86,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 572acfae-125d-4ec4-8826-47338b1a5926
-- alterId: 0
-  cipher: auto
-  name: 219|🇫🇷 法国
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - cipher: aes-256-cfb
   name: 454,473|🇳🇱NL-51.15.27.48-8074
   password: f8f7aCzcPKbsF8p3
@@ -197,13 +183,15 @@ proxies:
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-cfb
-  name: 454,473|🇷FR-195.154.169.198-0197
+  name: 454,473,587|_16
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 454,473|🇷FR-195.154.185.174-0185
+  country: 🇷FR
+  name: 454,473,587|🇷FR_45
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
@@ -373,7 +361,7 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - alterId: 0
   cipher: auto
-  name: 473,627,638|🇧🇪 BE_29
+  name: '473,627,638|🇧🇪 BE_29 #1'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -462,7 +450,8 @@ proxies:
       Host: 51.68.191.233
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇷FR-51.195.119.47-0317
+  country: 🇷 FR
+  name: 473,587| FR_44
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
@@ -489,12 +478,11 @@ proxies:
       Host: ''
     path: /vmess
 - cipher: aes-256-cfb
-  name: 473,634|yandex-3363
+  name: 473|🇷FR-13.39.112.103-0503
   password: amazonskr05
   port: 443
   server: 13.39.112.103
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 473,627,641|🇳🇴 github.com/freefq - 挪威  40
@@ -848,7 +836,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '473,524,618,627,634,639,641,723|🇩🇪 德国 051 #1'
+  name: '473,618,627,634,639,641,723|🇩🇪 德国 051 #1'
   network: ws
   port: '443'
   server: 141.94.155.229
@@ -864,7 +852,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '473,524,618,627,634,639,641,723|🇫🇷 法国 140 #1'
+  name: '473,618,627,634,639,641,723|🇫🇷 法国 140 #1'
   network: ws
   port: '443'
   server: 91.134.8.93
@@ -880,7 +868,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '473,524,618,627,634,639,641,723|🇫🇷 法国 141 #1'
+  name: '473,618,627,634,639,641,723|🇫🇷 法国 141 #1'
   network: ws
   port: '443'
   server: 146.59.85.226
@@ -896,7 +884,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '473,524,618,627,634,639,641,723|🇧🇪 比利时 050 #1'
+  name: '473,618,627,634,639,641,723|🇧🇪 比利时 050 #1'
   network: ws
   port: '443'
   server: pulau.org
@@ -912,7 +900,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '473,524,618,627,634,639,641,723|🇺🇸 美国 1133 #1'
+  name: '473,618,627,634,639,641,723|🇺🇸 美国 1133 #1'
   network: ws
   port: '443'
   server: putihb.org
@@ -1221,7 +1209,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 473,524,627,639|3|🇫🇷FR-57.128.189.240-5331
+  name: 473,627,639|3|🇫🇷FR-57.128.189.240-5331
   network: ws
   port: 443
   server: 57.128.189.240
@@ -1234,12 +1222,14 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 473,627|🇫🇷FR-51.195.202.129-5350
+- country: 🇷FR
+  name: 473,587,627|🇫🇷FR-51.195.202.129-5350
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 473,627|🇫🇷FR-146.59.55.50-5416
@@ -1255,12 +1245,14 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 473,627|🇫🇷FR-51.178.42.187-5477
+- country: 🇺🇸US
+  name: 473,587,627|🇫🇷FR-51.178.42.187-5477
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 473|🇷FR-13.38.44.116-5521
   password: amazonskr05
@@ -1593,7 +1585,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
 - cipher: aes-256-gcm
-  name: 537,634|yandex-106
+  name: 537,634|yandex-882
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
@@ -1752,7 +1744,7 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇫🇷FR
   delay: 1117
-  name: 623,634|yandex-2828
+  name: 623,634|yandex-107
   password: amazonskr05
   port: 443
   server: 52.47.120.33
@@ -1761,7 +1753,7 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇫🇷FR
   delay: 1106
-  name: 623,634|yandex-2829
+  name: 623,634|yandex-108
   password: amazonskr05
   port: 443
   server: 13.38.71.74
@@ -1770,7 +1762,7 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇫🇷FR
   delay: 1215
-  name: 623,634|yandex-2830
+  name: 623,634|yandex-109
   password: amazonskr05
   port: 443
   server: 13.36.170.248
@@ -1779,7 +1771,7 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇫🇷FR
   delay: 1040
-  name: 623,634|yandex-2831
+  name: 623,634|yandex-110
   password: amazonskr05
   port: 443
   server: 13.36.168.18
@@ -1787,7 +1779,7 @@ proxies:
   udp: true
 - country: 🇫🇷FR
   delay: 1365
-  name: 623,634|yandex-2832
+  name: 623,634|yandex-111
   password: telegram-id-privatevpns
   port: 22222
   server: 15.188.177.243
@@ -1797,7 +1789,7 @@ proxies:
   udp: true
 - country: 🇫🇷FR
   delay: 2115
-  name: 623,634|yandex-2833
+  name: 623,634|yandex-112
   password: telegram-id-directvpn
   port: 22223
   server: 15.188.177.243

@@ -150,7 +150,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: '473,524,618,627,630,634,638,641,723|🇨🇳 中国 097 #1'
+  name: '473,618,627,630,634,638,641,723|🇨🇳 中国 097 #1'
   network: ws
   port: '30808'
   server: v8.heduian.link
@@ -166,12 +166,12 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '473,524,618,627,630,634,641,723|🇨🇳 中国 090 #1'
+  name: '473,618,627,630,634,641,723|🇨🇳 中国 090 #1'
   network: ws
   port: '30824'
   server: v24.heduian.link
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -366,12 +366,12 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: '473,524,627,630,634,638|美国 #85'
+  name: '473,627,630,634,638|美国 #85'
   network: ws
   port: '30829'
   server: v29.heduian.link
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -1928,16 +1928,37 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: '524,630,638|美国 #81'
+  country: 🇨🇳CN
+  delay: 466
+  h2-opts: {}
+  http-opts: {}
+  name: 587,623,638|🇨🇳 CN_37
   network: tcp
-  port: '47084'
-  server: entrance01.qqa678.cc
+  port: 59003
+  server: 183.236.51.36
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 8e94ed0e-3717-4c46-aa13-6757a89b392e
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳 CN
+  delay: 631
+  h2-opts: {}
+  http-opts: {}
+  name: '587,618,623,638,641,723|🇨🇳 中国 104 #1'
+  network: tcp
+  port: '50007'
+  server: 112.132.215.34
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
 - alterId: 64
   cipher: auto
   name: '605,618,641,723|🇨🇳 中国 081 #1'
@@ -2419,20 +2440,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳 CN
-  delay: 631
-  h2-opts: {}
-  http-opts: {}
-  name: '618,623,638,641,723|🇨🇳 中国 104 #1'
-  network: tcp
-  port: '50007'
-  server: 112.132.215.34
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: '618,641,723|🇨🇳 中国 105 #1'
@@ -2719,7 +2726,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇨🇳CN
   delay: 177
-  name: 623,634|yandex-2816
+  name: 623,634|yandex-95
   password: 6hVowjcc82p6Nu9UvOXhhF
   port: 8443
   server: 39.104.68.204
@@ -2735,21 +2742,6 @@ proxies:
   network: tcp
   port: '50002'
   server: 39.100.81.215
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  country: 🇨🇳CN
-  delay: 466
-  h2-opts: {}
-  http-opts: {}
-  name: 623,638|🇨🇳 CN_37
-  network: tcp
-  port: 59003
-  server: 183.236.51.36
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -3467,7 +3459,7 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: '638|🇨🇳_CN_中国 #7'
+  name: '638|🇨🇳_CN_中国 #3'
   network: tcp
   port: '31625'
   server: 154.83.95.26
