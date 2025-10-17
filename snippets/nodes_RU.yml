@@ -1,4 +1,18 @@
 proxies:
+- cipher: aes-128-gcm
+  name: 153,634|yandex-3556
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2039
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153,634|yandex-3557
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2043
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 453|🇷🇺1 |  5.2MB/s
   password: 0zyDRZ1XmNXaaCAN7KEA8a
@@ -102,13 +116,15 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇺RU-45.139.24.24-0261
+  country: 🇺 RU
+  name: 472,586| RU_141
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472,634|yandex-3020
+  country: 🇺 RU
+  name: 472,586,634|yandex-3020
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
@@ -341,7 +357,8 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇺RU-185.126.239.250-5413
+  country: 🇧 GB
+  name: 472,586|🇧 GB_52
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -375,6 +392,42 @@ proxies:
   tls: false
   type: vmess
   uuid: 314185f7-931d-4656-922d-0857e7afd224
+- alterId: 0
+  cipher: auto
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 586,638|🇷🇺 RU_141
+  network: tcp
+  port: 45215
+  server: fa.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- cipher: aes-256-cfb
+  country: 🇺RU
+  name: 586|🇺RU_146
+  password: KnJGad3FqTvjqbaX
+  port: 9014
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 586|🇺RU_147
+  password: PeHSHm5SqEjBuEXE
+  port: 9065
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 586|🇷🇺RU_148
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
+  server: 45.89.52.66
+  type: ss
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -748,16 +801,6 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 638|🇷🇺 RU_141
-  network: tcp
-  port: 45215
-  server: fa.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - name: '641,723|🇷🇺 俄罗斯 001 #1'
   password: wb6368
   port: 2087
