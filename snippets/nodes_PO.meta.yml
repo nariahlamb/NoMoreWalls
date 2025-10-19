@@ -196,7 +196,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  name: 454,473,587|🇪 DE_36
+  name: 454,473,587|🇪 DE_38
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 92.118.205.228
@@ -204,7 +204,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇱PL
-  name: 468,473,587|🇱PL_122
+  name: 468,473,587|🇱PL_137
   password: UTJA57ypk2XKQpnm
   port: 9033
   server: 217.30.10.18
@@ -467,31 +467,70 @@ proxies:
   tls: true
   type: vmess
   uuid: 70073f5e-9182-4f17-8758-5f7b16b241b4
-- name: 656|🇵🇱 波兰 01-49
+- client-fingerprint: chrome
+  name: 656|🇵🇱 波兰 07-14
+  network: ws
+  port: 2087
+  server: 104.27.94.254
+  servername: anime.11160321.xyz
+  tls: true
+  type: vless
+  uuid: 7fc5337c-2639-42d3-b6ad-ff44277098d8
+  ws-opts:
+    headers:
+      Host: anime.11160321.xyz
+    path: '%2Fsocks%3A%2F%2Ftest123%3Atest123%40146.59.12.171%3A1080'
+- name: 656|🇵🇱 波兰 03-88
   network: ws
   port: 443
   server: hl2-free.56idc.pp.ua
   servername: hl2-free.56idc.pp.ua
   tls: true
   type: vless
-  uuid: 111dd9be-c531-476a-9c77-fd1a7f42c0f5
+  uuid: b300b7b5-8fdb-4bf2-9a5a-a7ae1501511e
   ws-opts:
     headers:
       Host: hl2-free.56idc.pp.ua
     path: '%2F'
-- name: 656|🇵🇱 波兰 02-70
+- name: 656|🇵🇱 波兰 08-119
   network: ws
   port: 443
   server: hl2-free.56idc.pp.ua
   servername: hl2-free.56idc.pp.ua
   tls: true
   type: vless
-  uuid: beff8346-0f94-4780-9fb3-643722913aac
+  uuid: 4127d3cd-4cba-4fc6-bcc5-b7ecbf48fcc6
   ws-opts:
     headers:
       Host: hl2-free.56idc.pp.ua
     path: '%2F'
-- name: 719|🇵🇱  01-49
+- name: 656|🇵🇱 波兰 06-139
+  network: ws
+  port: 443
+  server: hl2-free.56idc.pp.ua
+  servername: hl2-free.56idc.pp.ua
+  tls: true
+  type: vless
+  uuid: 71c62ffa-5b60-4673-8d89-40960fcb76ea
+  ws-opts:
+    headers:
+      Host: hl2-free.56idc.pp.ua
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 719|🇵🇱  07-14
+  network: ws
+  port: 2087
+  server: 104.27.94.254
+  servername: anime.11160321.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7fc5337c-2639-42d3-b6ad-ff44277098d8
+  ws-opts:
+    headers:
+      Host: anime.11160321.xyz
+    path: /socks://test123:test123@146.59.12.171:1080
+- name: '719|🇵🇱 波兰 03-88 #1'
   network: ws
   port: 443
   server: hl2-free.56idc.pp.ua
@@ -499,12 +538,12 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 111dd9be-c531-476a-9c77-fd1a7f42c0f5
+  uuid: b300b7b5-8fdb-4bf2-9a5a-a7ae1501511e
   ws-opts:
     headers:
       Host: hl2-free.56idc.pp.ua
     path: /
-- name: '719|🇵🇱 波兰 02-70 #1'
+- name: '719|🇵🇱 波兰 08-119 #1'
   network: ws
   port: 443
   server: hl2-free.56idc.pp.ua
@@ -512,13 +551,26 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: beff8346-0f94-4780-9fb3-643722913aac
+  uuid: 4127d3cd-4cba-4fc6-bcc5-b7ecbf48fcc6
+  ws-opts:
+    headers:
+      Host: hl2-free.56idc.pp.ua
+    path: /
+- name: '719|🇵🇱 波兰 06-139 #1'
+  network: ws
+  port: 443
+  server: hl2-free.56idc.pp.ua
+  servername: hl2-free.56idc.pp.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: 71c62ffa-5b60-4673-8d89-40960fcb76ea
   ws-opts:
     headers:
       Host: hl2-free.56idc.pp.ua
     path: /
 - cipher: aes-128-gcm
-  name: 719|🇵🇱 兰-207
+  name: '719|🇵🇱 波兰-207 #1'
   password: 8143205d-f5cf-46d6-b3c7-019fd8d2931c
   port: 37010
   server: utlamenn.yangliq.com
