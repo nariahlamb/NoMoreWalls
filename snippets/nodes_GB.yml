@@ -19,27 +19,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 6e4e8db7-52e5-43b5-9202-84eaaf92f038
-- cipher: aes-128-gcm
-  name: 153,634|yandex-48
-  password: 7af26eae-63c7-43c8-b335-e3528f790459
-  port: 53
-  server: 123.123.213.213
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 153,634|yandex-99
-  password: 7af26eae-63c7-43c8-b335-e3528f790459
-  port: 2065
-  server: oeulay-o1.ilayernet.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 153,634|yandex-100
-  password: 7af26eae-63c7-43c8-b335-e3528f790459
-  port: 2074
-  server: oeulay-o1.ilayernet.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 226|sd.258.cyou续费地址
   password: 7dbdba19-6a3b-4370-93b1-fb5a89adde0c
@@ -182,8 +161,7 @@ proxies:
   server: 145.239.6.202
   type: ss
 - cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 454,455,473,587|🇧 GB_50
+  name: 454,455,473|🇧GB-141.98.101.178-0248
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -692,7 +670,7 @@ proxies:
   port: 8080
   server: 172.99.190.39
   type: ss
-- name: 473,627,634|yandex-2741
+- name: 473,627,634|yandex-2176
   password: 02e653c9-7c93-46a9-999d-11834bd0c577
   port: 443
   server: 132.145.51.172
@@ -823,17 +801,14 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8
-- country: 🇷FR
-  name: 473,587,627|🇬🇧GB-198.244.190.189-5323
+- name: 473,627|🇬🇧GB-198.244.190.189-5323
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: aes-256-cfb
-  country: 🇬🇧 GB
-  name: 473,587,627|8J%2BHrPCfh6dHQi02Mi4xMDAuMjA1...
+  name: 473,627|8J%2BHrPCfh6dHQi02Mi4xMDAuMjA1...
   obfs: plain
   obfs-param: ''
   password: f8f7aCzcPKbsF8p3
@@ -1512,7 +1487,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
 - cipher: aes-256-gcm
-  name: 537,634|yandex-379
+  name: 537,634|yandex-4900
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 23001
   server: uk001.dogsvip.site
@@ -1664,7 +1639,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-243
+  name: 577,634|yandex-139
   network: ws
   port: 16617
   server: planb.mojcn.com
@@ -1681,7 +1656,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-268
+  name: 577,634|yandex-164
   network: ws
   port: 16645
   server: m.cnmjin.net
@@ -1698,7 +1673,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-269
+  name: 577,634|yandex-165
   network: ws
   port: 16645
   server: t.cnmjcn.cyou
@@ -1713,12 +1688,19 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 578|🇬🇧 UK - telegram
-  password: 7ec3173d-49ad-49c9-95ba-9631df8c7790
-  port: 40008
-  server: 89.213.193.87
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: '578,618,641,723|🇬🇧 英国 002 #1'
+  network: tcp
+  port: '50394'
+  server: 46.250.243.56
+  servername: ''
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
 - alterId: 0
   cipher: auto
   name: 604|英国_倫敦金融城
@@ -1951,43 +1933,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '609,610,618,638,641,723|🇺🇸 美国 036 #1'
-  network: tcp
-  port: '550'
-  server: 51.161.130.101
-  servername: ''
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b592cf1a-d92f-4dbd-9c1d-b76936a1609e
-- alterId: 0
-  cipher: auto
-  name: '618,641,723|🇬🇧 英国 001 #1'
-  network: tcp
-  port: '39674'
-  server: 82.197.69.131
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
-- alterId: 0
-  cipher: auto
-  name: '618,641,723|🇬🇧 英国 002 #1'
-  network: tcp
-  port: '50394'
-  server: 46.250.243.56
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
-- alterId: 0
-  cipher: auto
   name: '618,641,723|🇬🇧 英国 007 #1'
   network: tcp
   port: '443'
@@ -2059,7 +2004,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 638|英国_102018100
+  name: 638|英国_102104100
   network: tcp
   port: '550'
   server: 51.89.166.2
@@ -2287,22 +2232,16 @@ proxies:
   skip-cert-verify: false
   sni: kr-qingyun.dwyun.me
   type: trojan
-- name: 656|🇬🇧 英国 02-4
-  password: d757b1db-0f0a-4c28-aa38-941c5a39df34
-  port: 23100
-  server: n002.xunxunmimisbs.sbs
-  sni: uk01.xxxxyyyysbs.sbs
-  type: trojan
-- name: 656|🇬🇧 英国 04-88
-  password: d757b1db-0f0a-4c28-aa38-941c5a39df34
+- name: 656|🇬🇧 英国 09-28
+  password: f3bcc584-4c80-498a-8229-7350779e1c7a
   port: 23100
   server: n001.xunxunmimisbs.sbs
   sni: uk01.xxxxyyyysbs.sbs
   type: trojan
-- name: 656|🇬🇧 英国 11-134
+- name: 656|🇬🇧 英国 05-79
   password: b9d26f40-0e7f-4298-b1f4-39483fbaa6fa
   port: 44100
-  server: n001.xunxunmimisbs.sbs
+  server: n002.xunxunmimisbs.sbs
   sni: uk01.xxxxyyyysbs.sbs
   type: trojan
 - alterId: 0
