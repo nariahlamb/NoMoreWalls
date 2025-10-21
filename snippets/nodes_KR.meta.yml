@@ -212,6 +212,57 @@ proxies:
     headers:
       Host: i1.hdslb.com
     path: /download
+- cipher: aes-128-gcm
+  name: 153,634|yandex-2918
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 700
+  server: zoneasia-one.ilayernet.xyz
+  type: ss
+  udp: true
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 184|韩国 KR1
+  port: 22212
+  server: kr1.nfsqttt.cn
+  servername: cdn-go.cn
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b9e6b867-d43e-48f8-bfd2-2f8d59c4db00
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 184|韩国 KR2 住宅
+  port: 22213
+  server: kr2.nfsqttt.cn
+  servername: cdn-go.cn
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b9e6b867-d43e-48f8-bfd2-2f8d59c4db00
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '189|韩国 KR1 #1'
+  port: 22212
+  server: kr1.nfsqttt.cn
+  servername: cdn-go.cn
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '189|韩国 KR2 住宅 #1'
+  port: 22213
+  server: kr2.nfsqttt.cn
+  servername: cdn-go.cn
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6ec8d330-21cf-45f9-acd1-c75ff00c6154
 - name: 404|韩国01j
   password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
   port: 8080
@@ -345,68 +396,16 @@ proxies:
   skip-cert-verify: true
   sni: appsvs.shop
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 473,627|🇰🇷KR-64.110.91.13-0007
-  network: ws
-  port: 443
-  server: www.apulnion.com
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 7b8c370d-8610-4988-b0a7-cde74aa0713b
-  ws-opts:
-    headers:
-      Host: www.apulnion.com
-    path: /58a5342f7a/
-- alterId: 0
-  cipher: auto
-  name: 473,627|🇰🇷KR-3.35.214.217-0034
-  network: ws
-  port: 443
-  server: 3.35.214.217
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5282f68b-14ca-4325-a630-d911abf59c54
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 473,627|🇰🇷KR-193.122.119.64-0035
-  network: ws
-  port: 80
-  server: 193.122.119.64
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e
-  ws-opts:
-    headers:
-      Host: dm.toutiao.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 473,627|🇰🇷KR-3.35.214.217-0036
-  network: ws
-  port: 443
-  server: 3.35.214.217
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5282f68b-14ca-4325-a630-d911abf59c54
-  ws-opts:
-    headers:
-      Host: 3.35.214.217
-    path: /
 - cipher: aes-256-cfb
-  name: 473,634|yandex-2723
+  country: 🇺🇸 US
+  name: 473,587|🇺🇸 US_173
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸 US
+  name: 473,587,634|yandex-2723
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
@@ -491,7 +490,7 @@ proxies:
     headers:
       Host: aa.nbee.pp.ua
     path: /qq
-- name: 473,627|🇰🇷KR-138.2.113.248-1163
+- name: 473,627|🇰🇷KR-138.2.113.248-1158
   password: 9c822f05-cfdc-479a-9534-60f3d4127435
   port: 443
   server: 138.2.113.248
@@ -499,7 +498,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 473,627|🇰🇷KR-146.56.162.25-1188
+  name: 473,627|🇰🇷KR-146.56.162.25-1183
   network: ws
   port: 443
   server: 146.56.162.25
@@ -514,7 +513,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 473,627|🇰🇷KR-130.162.141.104-1243
+  name: 473,627|🇰🇷KR-130.162.141.104-1238
   network: ws
   port: 443
   server: 130.162.141.104
@@ -544,7 +543,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 473,627|🇰🇷KR-27.124.8.141-1711
+  name: 473,627|🇰🇷KR-27.124.8.141-1705
   network: ws
   port: 443
   server: 27.124.8.141
@@ -557,7 +556,7 @@ proxies:
     headers:
       Host: ''
     path: /path/220128071100
-- name: 473,627|🇰🇷KR-144.24.76.54-1802
+- name: 473,627|🇰🇷KR-144.24.76.54-1796
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   port: 8443
   server: 144.24.76.54
@@ -566,7 +565,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 473,627|🇰🇷KR-52.78.213.224-1843
+  name: 473,627|🇰🇷KR-52.78.213.224-1837
   network: ws
   port: 80
   server: 52.78.213.224
@@ -581,7 +580,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,627|🇰🇷KR-131.186.24.103-2077
+  name: 473,627|🇰🇷KR-131.186.24.103-2071
   network: ws
   port: 443
   server: 131.186.24.103
@@ -596,7 +595,7 @@ proxies:
     path: /reffs7y26g0ua
 - alterId: 0
   cipher: auto
-  name: 473,627|🇰🇷KR-52.231.200.179-2085
+  name: 473,627|🇰🇷KR-52.231.200.179-2079
   network: ws
   port: 443
   server: fullaccesstokoreannetsubnode1.azurewebsites.net
@@ -611,7 +610,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 473,627|🇰🇷KR-146.56.47.1-2206
+  name: 473,627|🇰🇷KR-146.56.47.1-2200
   network: ws
   port: 443
   server: kr-arm2.018999.xyz
@@ -625,25 +624,25 @@ proxies:
       Host: kr-arm2.018999.xyz
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.201.48.212-2228
+  name: 473|🇷KR-43.201.48.212-2203
   password: amazonskr05
   port: 443
   server: 43.201.48.212
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇷KR-141.164.39.146-2333
+  name: 473|🇷KR-141.164.39.146-2318
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 141.164.39.146
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇷KR-158.247.205.87-2360
+  name: 473|🇷KR-158.247.205.87-2345
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 158.247.205.87
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇷KR-158.247.205.87-2361
+  name: 473|🇷KR-158.247.205.87-2346
   password: pKEW8JPByTVTLtM
   port: 443
   server: 158.247.205.87
@@ -654,7 +653,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 473,627|🇰🇷KR-150.230.249.15-2476
+  name: 473,627|🇰🇷KR-150.230.249.15-2466
   network: http
   port: 46842
   server: 150.230.249.15
@@ -665,7 +664,7 @@ proxies:
   uuid: 4530b5ee-ced4-4e64-9285-1867fc5df7f8
 - alterId: 0
   cipher: auto
-  name: 473,627|🇰🇷KR-152.70.252.218-2521
+  name: 473,627|🇰🇷KR-152.70.252.218-2511
   network: ws
   port: 10020
   server: 152.70.252.218
@@ -680,7 +679,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,627|🇰🇷KR-152.67.218.38-2544
+  name: 473,627|🇰🇷KR-152.67.218.38-2534
   network: ws
   port: 443
   server: 152.67.218.38
@@ -694,80 +693,80 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.200.245.35-2779
+  name: 473|🇷KR-43.200.245.35-2764
   password: amazonskr05
   port: 443
   server: 43.200.245.35
   type: ss
-- name: 473,627|🇰🇷KR-203.210.16.78-2856
+- name: 473,627|🇰🇷KR-203.210.16.78-2846
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.seoulcitygovernment.com.ua
   skip-cert-verify: false
   type: trojan
-- name: 473,627|🇰🇷KR-138.2.113.84-2889
+- name: 473,627|🇰🇷KR-138.2.113.84-2879
   password: b291d129-ee55-4801-a9b8-b5316e5c37b7
   port: 443
   server: 138.2.113.84
   skip-cert-verify: false
   type: trojan
-- name: 473,627|🇰🇷KR-138.2.115.240-2891
+- name: 473,627|🇰🇷KR-138.2.115.240-2881
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   port: 443
   server: 138.2.115.240
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.201.59.8-2911
+  name: 473|🇷KR-43.201.59.8-2896
   password: amazonskr05
   port: 443
   server: 43.201.59.8
   type: ss
-- name: 473,627|🇰🇷KR-203.210.16.78-3067
+- name: 473,627|🇰🇷KR-203.210.16.78-3057
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.seoulcityhall.com.ua
   skip-cert-verify: false
   type: trojan
-- name: 473,627|🇰🇷KR-144.24.72.126-3107
+- name: 473,627|🇰🇷KR-144.24.72.126-3097
   password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a
   port: 443
   server: 144.24.72.126
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.201.47.102-3116
+  name: 473|🇷KR-43.201.47.102-3101
   password: amazonskr05
   port: 443
   server: 43.201.47.102
   type: ss
-- name: 473,627|🇰🇷KR-203.210.16.78-3196
+- name: 473,627|🇰🇷KR-203.210.16.78-3186
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: official.seoulcityhall.com.ua
   skip-cert-verify: false
   type: trojan
-- name: 473,627|🇰🇷KR-146.56.189.146-3662
+- name: 473,627|🇰🇷KR-146.56.189.146-3652
   password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
   port: 443
   server: 146.56.189.146
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.201.57.66-4047
+  name: 473|🇷KR-43.201.57.66-4032
   password: amazonskr05
   port: 443
   server: 43.201.57.66
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.201.86.30-4126
+  name: 473|🇷KR-43.201.86.30-4111
   password: amazonskr05
   port: 443
   server: 43.201.86.30
   type: ss
 - alterId: 0
   cipher: auto
-  name: 473,627|🇰🇷KR-13.125.24.112-4139
+  name: 473,627|🇰🇷KR-13.125.24.112-4129
   network: ws
   port: 49517
   server: 13.125.24.112
@@ -782,7 +781,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,627|🇰🇷KR-13.125.24.112-4144
+  name: 473,627|🇰🇷KR-13.125.24.112-4134
   network: ws
   port: 42517
   server: 13.125.24.112
@@ -795,21 +794,21 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 473,627|🇰🇷KR-3.34.6.217-4166
+- name: 473,627|🇰🇷KR-3.34.6.217-4156
   password: xxoo
   port: 443
   server: 3.34.6.217
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 473|🇷KR-13.125.124.161-4188
+  name: 473|🇷KR-13.125.124.161-4173
   password: amazonskr05
   port: 443
   server: 13.125.124.161
   type: ss
 - alterId: 0
   cipher: auto
-  name: 473,627|🇰🇷KR-152.67.218.38-4749
+  name: 473,627|🇰🇷KR-152.67.218.38-4739
   network: ws
   port: 443
   server: 152.67.218.38
@@ -822,49 +821,42 @@ proxies:
     headers:
       Host: 152.67.218.38
     path: /
-- name: 473,627|🇰🇷KR-150.230.249.20-4839
+- name: 473,627|🇰🇷KR-150.230.249.20-4829
   password: b5fc9fa9-796d-4185-a316-395ecac04a85
   port: 443
   server: 150.230.249.20
   skip-cert-verify: false
   sni: www.gomacau.gq
   type: trojan
-- name: 473,627|🇰🇷KR-146.56.179.67-5096
+- name: 473,627|🇰🇷KR-146.56.179.67-5086
   password: cc05b267-2e17-4e73-92f0-2cf603aa5997
   port: 40005
   server: 146.56.179.67
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 473|🇷KR-3.36.118.190-5189
+  name: 473|🇷KR-3.36.118.190-5174
   password: amazonskr05
   port: 443
   server: 3.36.118.190
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇷KR-154.90.62.168-5410
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
+  name: 473,634|yandex-2855
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
   type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 473,634|yandex-2652
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 473,627|🇰🇷KR-49.128.218.102-5542
-  network: ws
-  port: 20522
-  server: 49.128.218.102
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 283c0af8-eb0f-4556-a78b-0f129de4b620
-  ws-opts:
-    headers:
-      Host: ''
-    path: /telegram_@sswia
-- alterId: 0
-  cipher: auto
-  name: 473,627|🇰🇷KR-54.180.114.77-6308
+  name: 473,627|🇰🇷KR-54.180.114.77-6298
   network: ws
   port: 42517
   server: 54.180.114.77
@@ -878,12 +870,12 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 473|KR-158.247.213.230-6847
+  name: 473|KR-158.247.213.230-6827
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 158.247.213.230
   type: ss
-- name: 473,627|🇰🇷KR-121.78.213.3-7662
+- name: 473,627|🇰🇷KR-121.78.213.3-7652
   password: KLF0qOU0ZZGw5Tnu
   port: 443
   server: 121.78.213.3
@@ -892,7 +884,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 473,627|🇰🇷KR-211.177.40.235-7680
+  name: 473,627|🇰🇷KR-211.177.40.235-7670
   network: ws
   port: 30001
   server: 211.177.40.235
@@ -907,7 +899,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 473,627|🇰🇷KR-1.238.102.214-7681
+  name: 473,627|🇰🇷KR-1.238.102.214-7671
   network: ws
   port: 30001
   server: 1.238.102.214
@@ -920,7 +912,7 @@ proxies:
     headers:
       Host: ''
     path: /vmess
-- name: 473,627|🇰🇷KR-121.78.213.3-7683
+- name: 473,627|🇰🇷KR-121.78.213.3-7673
   password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy
   port: 443
   server: 121.78.213.3
@@ -928,19 +920,19 @@ proxies:
   sni: csharp.protocolbuffer.com
   type: trojan
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.202.49.222-8097
+  name: 473|🇷KR-43.202.49.222-8077
   password: doub.io
   port: 2333
   server: 43.202.49.222
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.201.108.109-8098
+  name: 473|🇷KR-43.201.108.109-8078
   password: amazonskr05
   port: 443
   server: 43.201.108.109
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇷KR-125.141.26.5-8696
+  name: 473|🇷KR-125.141.26.5-8676
   password: qwerREWQ@@
   port: 2003
   server: 125.141.26.5
@@ -1729,6 +1721,76 @@ proxies:
   tls: false
   type: http
   username: afY491o7YfK00koaXQD9kc5WWNQzm4MbB4vBhSpk6KZv-jQ4JZB2ydX3A_SN5gNRoXw609MC0WdYefYZbCn32A==
+- alterId: 0
+  cipher: auto
+  name: 627|🇰🇷KR-49.128.218.102-5532
+  network: ws
+  port: 20522
+  server: 49.128.218.102
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 283c0af8-eb0f-4556-a78b-0f129de4b620
+  ws-opts:
+    headers:
+      Host: ''
+    path: /telegram_@sswia
+- alterId: 0
+  cipher: auto
+  name: 627|🇰🇷KR-3.35.214.217-0036
+  network: ws
+  port: 443
+  server: 3.35.214.217
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5282f68b-14ca-4325-a630-d911abf59c54
+  ws-opts:
+    headers:
+      Host: 3.35.214.217
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 627|🇰🇷KR-193.122.119.64-0035
+  network: ws
+  port: 80
+  server: 193.122.119.64
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e
+  ws-opts:
+    headers:
+      Host: dm.toutiao.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 627|🇰🇷KR-3.35.214.217-0034
+  network: ws
+  port: 443
+  server: 3.35.214.217
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5282f68b-14ca-4325-a630-d911abf59c54
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 627|🇰🇷KR-64.110.91.13-0007
+  network: ws
+  port: 443
+  server: www.apulnion.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 7b8c370d-8610-4988-b0a7-cde74aa0713b
+  ws-opts:
+    headers:
+      Host: www.apulnion.com
+    path: /58a5342f7a/
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -3250,42 +3312,57 @@ proxies:
     headers:
       Host: ''
     path: /c399917/
-- name: 642|🇰🇷 韩国 110
-  obfs: salamander
-  obfs-password: salamander
-  password: 4917b54b-19d5-4208-9706-917d47893c1a
-  port: 20000
-  server: kr1.aeccghuyjftyg.shop
-  skip-cert-verify: true
+- alterId: 0
+  cipher: auto
+  name: 642|🇰🇷 韩国 32
+  network: tcp
+  port: '45075'
+  server: xdd.dashuai.cyou
   tls: false
-  type: hysteria2
-- name: 642|🇰🇷 韩国 059
-  password: 98c1c81c-940e-4d73-bcdd-54093b22635c
+  type: vmess
+  uuid: a5e7601d-14f4-4497-8309-18272c052829
+- alterId: 0
+  cipher: auto
+  name: 642|🇰🇷 韩国 34
+  network: tcp
+  port: '45075'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 38638107-e17c-4283-b0a4-5dc6e4782481
+- alterId: 0
+  cipher: auto
+  name: 642|🇰🇷 韩国 29
+  network: tcp
+  port: '45075'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 75caf243-7fa3-468c-9983-5f1c6a5152b1
+- name: 642|🇰🇷 韩国 50
+  password: b9d26f40-0e7f-4298-b1f4-39483fbaa6fa
   port: 43100
-  server: n001.xunxunmimisbs.sbs
-  skip-cert-verify: false
-  sni: kr01.xxxxyyyysbs.sbs
-  type: trojan
-- name: 642|🇰🇷 韩国 100
-  password: 42772fef-77df-4978-913c-76d272597840
-  port: 22100
-  server: n001.xunxunmimisbs.sbs
-  skip-cert-verify: false
-  sni: kr01.xxxxyyyysbs.sbs
-  type: trojan
-- name: 642|🇰🇷 韩国 091
-  password: 4a20ce1b-3a00-4d7e-bef1-95ff05309597
-  port: 22100
   server: n002.xunxunmimisbs.sbs
   skip-cert-verify: false
   sni: kr01.xxxxyyyysbs.sbs
   type: trojan
-- name: 656|🇰🇷 韩国 71-19
+- alterId: 0
+  cipher: auto
+  name: 642|🇰🇷 韩国 30
+  network: tcp
+  port: '45075'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: bdfb630b-e59d-4677-ace9-5b3972f1f46e
+- name: 656,719|🇰🇷 国 71-19
   password: 52579104-a19f-441c-aa8f-95209521f0b2
   port: 22100
   server: n002.xunxunmimisbs.sbs
+  skip-cert-verify: false
   sni: kr01.xxxxyyyysbs.sbs
   type: trojan
+  udp: true
 - name: 656|🇰🇷 韩国 27-37
   network: ws
   port: 50000
@@ -3310,12 +3387,14 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FTelegram%40freecodes%2F%3Fed%3D2560'
-- name: 656|🇰🇷 韩国 44-47
+- name: '656,719|🇰🇷 韩国 44-47 #1'
   password: b9d26f40-0e7f-4298-b1f4-39483fbaa6fa
   port: 43100
   server: n001.xunxunmimisbs.sbs
+  skip-cert-verify: false
   sni: kr01.xxxxyyyysbs.sbs
   type: trojan
+  udp: true
 - name: 656|🇰🇷 韩国 11-75
   network: ws
   port: 36167
@@ -3340,12 +3419,14 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2Ffreecodes%2F%3Fed%3D2560'
-- name: 656|🇰🇷 韩国 57-80
+- name: '656,719|🇰🇷 韩国 57-80 #1'
   password: 5c0fed39-c97c-469a-a517-04f8e834cd23
   port: 43100
   server: n001.xunxunmimisbs.sbs
+  skip-cert-verify: false
   sni: kr01.xxxxyyyysbs.sbs
   type: trojan
+  udp: true
 - name: 656|🇰🇷 韩国 91-81
   network: ws
   port: 26257
@@ -3370,12 +3451,14 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2Fx%20%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%20%2F%3Fed%3D2560'
-- name: 656|🇰🇷 韩国 47-88
+- name: '656,719|🇰🇷 韩国 47-88 #1'
   password: f3bcc584-4c80-498a-8229-7350779e1c7a
   port: 22100
   server: n001.xunxunmimisbs.sbs
+  skip-cert-verify: false
   sni: kr01.xxxxyyyysbs.sbs
   type: trojan
+  udp: true
 - name: 656|🇰🇷 韩国 21-108
   network: ws
   port: 10031
@@ -3400,12 +3483,14 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FTelegram%40freecodes%2F%3Fed%3D2560'
-- name: 656|🇰🇷 韩国 67-118
+- name: '656,719|🇰🇷 韩国 67-118 #1'
   password: f63016be-c318-462a-ad06-74f30ba530a5
   port: 43100
   server: n001.xunxunmimisbs.sbs
+  skip-cert-verify: false
   sni: kr01.xxxxyyyysbs.sbs
   type: trojan
+  udp: true
 - name: 656|🇰🇷 韩国 13-131
   network: ws
   port: 30067
@@ -3461,6 +3546,217 @@ proxies:
   type: vmess
   udp: true
   uuid: 8775ec53-510a-3033-b4ad-a00d96def8dd
+- name: '719|🇰🇷 韩国 16-20 #1'
+  network: ws
+  port: 50001
+  server: 27.100.229.147
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: gaosir.unfeeling.sbs
+    max-early-data: 2560
+    path: /Telegram🇨🇳@WangCai2/
+- name: '719|🇰🇷 韩国 27-37 #1'
+  network: ws
+  port: 50000
+  server: 14.33.140.80
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: gaosir.unfeeling.sbs
+    max-early-data: 2560
+    path: /Telegram🇨🇳@WangCai2/
+- name: '719|🇰🇷 韩国 69-44 #1'
+  network: ws
+  port: 19413
+  server: 121.165.101.69
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: gaosir.unfeeling.sbs
+    max-early-data: 2560
+    path: /Telegram@freecodes/
+- name: '719|🇰🇷 韩国 56-49 #1'
+  network: ws
+  port: 50001
+  server: 118.91.78.76
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: gaosir.unfeeling.sbs
+    max-early-data: 2560
+    path: /telegram @ /
+- name: '719|🇰🇷 韩国 54-63 #1'
+  network: ws
+  port: 50000
+  server: 14.39.99.235
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: gaosir.unfeeling.sbs
+    max-early-data: 2560
+    path: /telegram @freecodes /
+- name: '719|🇰🇷 韩国 11-75 #1'
+  network: ws
+  port: 36167
+  server: 111.118.118.177
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: gaosir.unfeeling.sbs
+    max-early-data: 2560
+    path: /X@节点狂魔/
+- name: '719|🇰🇷 韩国 86-77 #1'
+  network: ws
+  port: 14443
+  server: 222.113.18.211
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: gaosir.unfeeling.sbs
+    max-early-data: 2560
+    path: /freecodes/
+- name: '719|🇰🇷 韩国 91-81 #1'
+  network: ws
+  port: 26257
+  server: 124.61.52.107
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@节点狂魔/
+- name: '719|🇰🇷 韩国 87-82 #1'
+  network: ws
+  port: 12902
+  server: 121.167.146.253
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: gaosir.unfeeling.sbs
+    max-early-data: 2560
+    path: /x @节点狂魔 /
+- name: '719|🇰🇷 韩国 79-86 #1'
+  network: ws
+  port: 11413
+  server: 121.158.194.32
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: gaosir.unfeeling.sbs
+    max-early-data: 2560
+    path: /x @节点狂魔 /
+- name: '719|🇰🇷 韩国 21-108 #1'
+  network: ws
+  port: 10031
+  server: 202.150.185.128
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: gaosir.unfeeling.sbs
+    max-early-data: 2560
+    path: /Telegram@freecodes/
+- name: '719|🇰🇷 韩国 09-116 #1'
+  network: ws
+  port: 50001
+  server: 182.210.59.164
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: gaosir.unfeeling.sbs
+    max-early-data: 2560
+    path: /Telegram@freecodes/
+- name: '719|🇰🇷 韩国 13-131 #1'
+  network: ws
+  port: 30067
+  server: 112.156.154.95
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: gaosir.unfeeling.sbs
+    max-early-data: 2560
+    path: /X@节点狂魔/
+- alterId: 0
+  cipher: auto
+  name: '719|🇰🇷 韩国 36-146 #1'
+  port: 45076
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 75caf243-7fa3-468c-9983-5f1c6a5152b1
+- cipher: aes-128-gcm
+  name: '719|🇰🇷 韩国-190 #1'
+  password: 8143205d-f5cf-46d6-b3c7-019fd8d2931c
+  port: 35001
+  server: utlamenn.yangliq.com
+  tfo: false
+  type: ss
+  udp: true
 - name: 764|韩国01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10836
