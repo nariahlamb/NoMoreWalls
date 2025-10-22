@@ -68,7 +68,7 @@ proxies:
   uuid: e325323f-8233-444e-8b08-613204072ee2
 - alterId: 0
   cipher: auto
-  name: 217|🇫🇷 法国
+  name: 219|🇫🇷 法国
   network: ws
   port: 30837
   server: v37.heduian.link
@@ -177,13 +177,15 @@ proxies:
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-cfb
-  name: 454,473|FR-195.154.169.198-0246
+  name: 454,473,587|_07
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 454,473|🇷FR-195.154.185.174-0281
+  country: 🇷FR
+  name: 454,473,587|🇷FR_45
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
@@ -455,7 +457,8 @@ proxies:
       Host: jamekk.org
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇷FR-51.195.119.47-0326
+  country: 🇷 FR
+  name: 473,587| FR_44
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
@@ -515,7 +518,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,639,641|🇧🇪 比利时 003
+  name: 473,618,627,634,639,641|🇧🇪 比利时 003
   network: ws
   port: '443'
   server: kampong.org
@@ -634,7 +637,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,578,618,627,634,641|🇧🇪 比利时 025
+  name: 473,618,627,634,641|🇧🇪 比利时 025
   network: ws
   port: '443'
   server: 57.128.189.222
@@ -651,7 +654,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,578,618,627,634,641|🇧🇪 比利时 028
+  name: 473,618,627,634,641|🇧🇪 比利时 028
   network: ws
   port: '443'
   server: 57.128.189.211
@@ -668,7 +671,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,578,618,627,634,641|🇧🇪 比利时 030
+  name: 473,618,627,634,641|🇧🇪 比利时 030
   network: ws
   port: '443'
   server: 57.128.189.143
@@ -770,7 +773,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,638,641|🇬🇧 英国 006
+  name: 473,618,627,634,638,639,641|🇬🇧 英国 006
   network: ws
   port: '80'
   server: 51.68.191.233
@@ -851,7 +854,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,639,641|🇩🇪 德国 051
+  name: 473,618,627,634,639,641|🇩🇪 德国 051
   network: ws
   port: '443'
   server: 141.94.155.229
@@ -867,7 +870,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,639,641|🇫🇷 法国 140
+  name: 473,618,627,634,639,641|🇫🇷 法国 140
   network: ws
   port: '443'
   server: 91.134.8.93
@@ -883,7 +886,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,639,641|🇫🇷 法国 141
+  name: 473,618,627,634,639,641|🇫🇷 法国 141
   network: ws
   port: '443'
   server: 146.59.85.226
@@ -899,7 +902,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,639,641|🇺🇸 美国 1133
+  name: 473,618,627,634,639,641|🇺🇸 美国 1133
   network: ws
   port: '443'
   server: putihb.org
@@ -1184,7 +1187,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 473,524,627,639|3|🇫🇷FR-57.128.189.240-5261
+  name: 473,627,639|3|🇫🇷FR-57.128.189.240-5329
   network: ws
   port: 443
   server: 57.128.189.240
@@ -1212,12 +1215,14 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 473,627|🇫🇷FR-51.195.202.129-5347
+- country: 🇷FR
+  name: 473,587,627|🇫🇷FR-51.195.202.129-5347
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 473,627|🇫🇷FR-146.59.55.50-5409
@@ -1571,26 +1576,12 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
 - cipher: aes-256-gcm
-  name: 537,634|yandex-347
+  name: 537,634|yandex-432
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 578|@v2FreeHub 🇫🇷
-  network: ws
-  port: '80'
-  server: 57.129.132.223
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
 - alterId: 0
   cipher: auto
   name: 604|法国_马赛
@@ -1746,7 +1737,7 @@ proxies:
   uuid: 96db7e57-5314-4560-b708-2446670dfa29
 - country: 🇺🇸US
   delay: 1252
-  name: 623,634|yandex-130
+  name: 623,634|yandex-503
   password: telegram-id-privatevpns
   port: 22222
   server: 51.45.18.222
@@ -1755,7 +1746,7 @@ proxies:
   type: trojan
   udp: true
 - delay: 1606
-  name: 623,634|yandex-131
+  name: 623,634|yandex-504
   password: 5d0d1bf1-f5f1-4e92-b883-2c085d7cd86e
   port: 48100
   server: n002.xunxunmimisbs.sbs
