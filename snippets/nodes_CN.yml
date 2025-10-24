@@ -9,7 +9,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: '296,401,473,614,615,617,618,621,627,630,633,634,635,636,637,638,639,641,723|🇨🇳
+  name: '296,401,473,609,610,614,615,617,618,621,627,630,633,634,635,636,637,638,639,641,723|🇨🇳
     中国 001 #1'
   network: ws
   port: '30809'
@@ -424,7 +424,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: '473,618,627,634,638,641,656,719,723|🇨🇳 中国 034 #1'
+  name: '473,618,627,634,638,641,723|🇨🇳 中国 034 #1'
   network: ws
   port: '30839'
   server: v39.heduian.link
@@ -544,7 +544,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '473,609,610,627,630,634,638|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  name: '473,627,630,634,638|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -1561,7 +1561,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 473,591|Pool__01
+  name: 473|CN-222.186.20.102-5492
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -1881,21 +1881,6 @@ proxies:
   country: 🇳 CN
   h2-opts: {}
   http-opts: {}
-  name: '587,638|Github搜索TrojanLinks #11'
-  network: tcp
-  port: '50002'
-  server: 112.132.215.12
-  servername: ury-unit-c030ehei8.poget71138.workers.dev
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /ivideos.sbs/linkws
-- alterId: 64
-  cipher: auto
-  country: 🇨🇳 CN
-  h2-opts: {}
-  http-opts: {}
   name: 587,638|🇨🇳 CN_28
   network: tcp
   port: 59003
@@ -1906,15 +1891,21 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-path: /
-- country: 🇧🇩BD
-  name: 591|Relay_🇧🇩BD-CN_04
-  password: f418bc36-6fc5-4565-bb1d-b86fa01fea6c
-  port: 31001
-  server: lazy.rsqpq.cn
+- alterId: 64
+  cipher: auto
+  country: 🇳 CN
+  h2-opts: {}
+  http-opts: {}
+  name: '587,638|Github搜索TrojanLinks #11'
+  network: tcp
+  port: '50002'
+  server: 112.132.215.12
+  servername: ury-unit-c030ehei8.poget71138.workers.dev
   skip-cert-verify: true
-  sni: lazy.rsqpq.cn
-  type: trojan
-  udp: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /ivideos.sbs/linkws
 - alterId: 64
   cipher: auto
   name: '605,618,641,723|🇨🇳 中国 085 #1'
@@ -2681,7 +2672,7 @@ proxies:
 - alterId: 64
   cipher: auto
   delay: 439
-  name: 623,634|yandex-02
+  name: 623,634|yandex-240
   port: 59003
   server: 183.236.51.36
   skip-cert-verify: true
@@ -2692,7 +2683,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 128
-  name: 623,634|yandex-03
+  name: 623,634|yandex-241
   port: 30302
   server: 39.107.155.11
   skip-cert-verify: true
@@ -2703,7 +2694,7 @@ proxies:
 - alterId: 64
   cipher: auto
   delay: 330
-  name: 623,634|yandex-04
+  name: 623,634|yandex-242
   port: 50002
   server: 39.100.81.215
   skip-cert-verify: true
@@ -2744,7 +2735,7 @@ proxies:
 - alterId: 64
   cipher: auto
   delay: 188
-  name: 623,634|yandex-06
+  name: 623,634|yandex-244
   port: 50002
   server: 120.26.137.112
   skip-cert-verify: true
@@ -2755,7 +2746,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 179
-  name: 623,634|yandex-07
+  name: 623,634|yandex-245
   port: 50002
   server: 139.129.20.6
   skip-cert-verify: true
@@ -3416,14 +3407,16 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-- name: '638,854|中国【机场推荐：https://a0a.xyz/】3 #1'
+- name: '638,656,719,854|中国【机场推荐：https://a0a.xyz/】3 #1'
   network: tcp
   password: 3c77ad6b-9c9c-4aff-beff-0a16e2cdea15
   port: 13007
   server: 36.141.40.42
+  skip-cert-verify: true
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
-- name: 638|🇨🇳 CN_29
+  udp: true
+- name: '638|🇨🇳 CN_29 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
@@ -3443,10 +3436,13 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- cipher: chacha20-ietf-poly1305
-  name: 719|🇨🇳  25-66
-  password: c34aec21-08c9-4c68-9db6-2137cf36d066
-  port: 27689
-  server: jry.izenny.com
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 719|🇨🇳  03-36
+  port: 45078
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
+  uuid: 866b3e23-6074-4471-ae1d-36767e1d2e08
