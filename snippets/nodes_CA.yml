@@ -58,6 +58,13 @@ proxies:
   udp: true
   uuid: e70ec686-bcdf-402b-9f4d-452b600646d2
 - cipher: aes-128-gcm
+  name: 153,633|yandex-4518
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2055
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
   name: 453|🇨🇦1 |  14.1MB/s
   password: shadowsocks
   port: 443
@@ -65,14 +72,14 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 453,472,586|CA_37
+  name: 453,472,586|CA_34
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇨🇿 CZ
-  name: 453,472,586|🇨🇿 CZ_43
+  country: 🇨 CZ
+  name: 453,472,586|🇨🇿 CZ_39
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
@@ -166,7 +173,7 @@ proxies:
       Host: pulau.org
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 472,586|_02
+  name: 472,586|_04
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -248,7 +255,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 472,577,617,626,633,640|🇺🇸 美国 027
+  name: 472,617,626,633,640|🇺🇸 美国 027
   network: ws
   port: '443'
   server: 15.235.50.172
@@ -941,7 +948,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 472,577,626|🇨🇦CA-148.113.176.192-5434
+  name: 472,626|🇨🇦CA-148.113.176.192-5434
   network: ws
   port: 443
   server: 148.113.176.192
@@ -986,7 +993,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 472,577,626|🇨🇦CA-15.235.83.228-5435
+  name: 472,626|🇨🇦CA-15.235.83.228-5435
   network: ws
   port: 443
   server: 15.235.83.228
@@ -1655,14 +1662,42 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  name: 577|🇨🇦 CA-15.235.50.172-1645
+  network: ws
+  port: 443
+  server: 15.235.50.172
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: baradiha.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: '577|Channel id: @ShadowProxy66🇨🇦'
-  network: tcp
-  port: '42610'
+  port: 42610
   server: 51.79.86.182
-  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
+- alterId: 0
+  cipher: auto
+  name: '577,637|🇺🇸 US_195 #1'
+  network: ws
+  port: 443
+  server: 15.235.83.228
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - name: '602|加拿大_多伦多 #42'
   network: ws
   password: NISHIKUITAN222
@@ -4148,41 +4183,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大 08-51
-  network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 41ebb6c6-a326-4ff8-8663-da275287aa1c
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大 12-95
-  network: tcp
-  port: '45064'
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 6579aeda-0d7b-4f69-8b5a-0848388d850e
-- alterId: 0
-  cipher: auto
-  name: 719|🇨🇦 加 08-51
-  port: 45065
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 41ebb6c6-a326-4ff8-8663-da275287aa1c
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大 12-95 #1'
-  port: 45064
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6579aeda-0d7b-4f69-8b5a-0848388d850e

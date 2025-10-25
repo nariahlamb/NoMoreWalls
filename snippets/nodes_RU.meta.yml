@@ -1,4 +1,18 @@
 proxies:
+- cipher: aes-128-gcm
+  name: 153,633|yandex-4473
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2039
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 153,633|yandex-4474
+  password: 7af26eae-63c7-43c8-b335-e3528f790459
+  port: 2043
+  server: oeulay-o1.ilayernet.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 453|🇷🇺1 |  5.2MB/s
   password: 0zyDRZ1XmNXaaCAN7KEA8a
@@ -199,7 +213,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇷 RU
-  name: 472,586| RU_148
+  name: 472,586|🇷🇺 RU_144
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
@@ -432,7 +446,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 472,586| GB_55
+  name: 472,586|🇧 GB_53
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -626,30 +640,9 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- alpn:
-  - h2
-  name: 577|🇷🇺 RU 1
-  network: grpc
-  port: 443
-  server: 185.59.218.168
-  servername: pqh23v4.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- alterId: 0
-  cipher: auto
-  name: 577,617,640|🇷🇺 俄罗斯 067
-  network: tcp
-  port: '11052'
-  server: 45.67.230.79
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 586|🇷 RU_150
+  name: 586| RU_140
   password: c40641c1f89e7acb
   port: 57456
   server: uk.vpnsparta.pro
@@ -1405,6 +1398,18 @@ proxies:
     path: /
 - client-fingerprint: chrome
   grpc-opts: {}
+  name: 617|俄罗斯 002
+  network: grpc
+  port: 8880
+  server: 185.231.205.5
+  skip-cert-verify: true
+  tfo: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: chrome
+  grpc-opts: {}
   name: 617|俄罗斯 003
   network: grpc
   port: 8880
@@ -1533,6 +1538,16 @@ proxies:
   tls: true
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- encryption: none
+  grpc-opts: {}
+  name: 617|俄罗斯 015
+  network: grpc
+  port: 8880
+  server: 185.236.232.123
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - client-fingerprint: chrome
   grpc-opts: {}
   name: 617|俄罗斯 016
@@ -1924,6 +1939,16 @@ proxies:
   type: vless
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 617|俄罗斯 051
+  network: grpc
+  port: 8880
+  server: 185.231.205.234
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: 617|俄罗斯 052
   network: grpc
   port: 8880
@@ -1948,6 +1973,16 @@ proxies:
   network: grpc
   port: 8880
   server: 185.236.232.157
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+- name: 617|俄罗斯 055
+  network: grpc
+  port: 8880
+  server: 185.236.232.223
   skip-cert-verify: false
   tfo: false
   tls: true
@@ -2077,6 +2112,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
+- alterId: 0
+  cipher: auto
+  name: 617,640|🇷🇺 俄罗斯 067
+  network: tcp
+  port: '11052'
+  server: 45.67.230.79
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - name: 617|俄罗斯 068
   network: grpc
   port: 3479
@@ -2472,7 +2517,7 @@ proxies:
   tls: true
   type: vmess
   uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-- name: 764|俄罗斯01
+- name: 763|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
   server: ppg-other.05vr9nyqg5.download
@@ -2480,7 +2525,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '765|俄罗斯01 #1'
+- name: '764|俄罗斯01 #1'
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10844
   server: ppg-other.05vr9nyqg5.download
@@ -2488,7 +2533,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: '799|俄罗斯 #14'
+- name: '798|俄罗斯 #14'
   password: 927f1be9-7e0e-4905-b0d1-1639e20a4049
   port: 22160
   server: hsels.huasuan666.top
@@ -2496,7 +2541,7 @@ proxies:
   sni: hsels.huasuan666.top
   type: hysteria2
   udp: true
-- name: '800|俄罗斯 #15'
+- name: '799|俄罗斯 #15'
   password: 681b592d-a727-42f2-b91f-797081d0b0c1
   port: 22160
   server: hsels.huasuan666.top
@@ -2504,7 +2549,7 @@ proxies:
   sni: hsels.huasuan666.top
   type: hysteria2
   udp: true
-- name: '802|俄罗斯 #17'
+- name: '801|俄罗斯 #17'
   password: fdbe6695-f3f0-40d7-8099-42b6d9d0c65a
   port: 22160
   server: hsels.huasuan666.top
@@ -2512,7 +2557,7 @@ proxies:
   sni: hsels.huasuan666.top
   type: hysteria2
   udp: true
-- name: '803|俄罗斯 #18'
+- name: '802|俄罗斯 #18'
   password: 366dad01-dd99-47be-92fa-6beddd09fff9
   port: 22160
   server: hsels.huasuan666.top
@@ -2520,7 +2565,7 @@ proxies:
   sni: hsels.huasuan666.top
   type: hysteria2
   udp: true
-- name: '804|俄罗斯 #19'
+- name: '803|俄罗斯 #19'
   password: 8a456f68-46a3-4cd9-892f-35fbf9aef756
   port: 22160
   server: hsels.huasuan666.top
@@ -2528,7 +2573,7 @@ proxies:
   sni: hsels.huasuan666.top
   type: hysteria2
   udp: true
-- name: '805|俄罗斯 #20'
+- name: '804|俄罗斯 #20'
   password: f97899a2-7aa0-4883-b887-a7f1e16a5802
   port: 22160
   server: hsels.huasuan666.top
@@ -2536,7 +2581,7 @@ proxies:
   sni: hsels.huasuan666.top
   type: hysteria2
   udp: true
-- name: '806|俄罗斯 #21'
+- name: '805|俄罗斯 #21'
   password: 23c15759-0c36-4158-a54a-c6ef49025a53
   port: 22160
   server: hsels.huasuan666.top
@@ -2544,7 +2589,7 @@ proxies:
   sni: hsels.huasuan666.top
   type: hysteria2
   udp: true
-- name: '807|俄罗斯 #22'
+- name: '806|俄罗斯 #22'
   password: f8f33da1-c9da-4a22-8dbc-3954dbdf3f19
   port: 22160
   server: hsels.huasuan666.top
@@ -2552,7 +2597,7 @@ proxies:
   sni: hsels.huasuan666.top
   type: hysteria2
   udp: true
-- name: '808|俄罗斯 #23'
+- name: '807|俄罗斯 #23'
   password: cfbb2ce1-2c72-4337-a660-ca6c7cd6791c
   port: 22160
   server: hsels.huasuan666.top
@@ -2560,7 +2605,7 @@ proxies:
   sni: hsels.huasuan666.top
   type: hysteria2
   udp: true
-- name: '809|俄罗斯 #24'
+- name: '808|俄罗斯 #24'
   password: d42599d3-cdb8-49a2-967e-fbad34644b5c
   port: 22160
   server: hsels.huasuan666.top
