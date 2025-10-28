@@ -73,7 +73,7 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 92,542,618,634,641|🇺🇸 美国 288
+  name: '92,542,618,634,641,723|🇺🇸 美国 288 #1'
   network: ws
   port: '8080'
   server: 34.81.49.231
@@ -89,7 +89,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 92,473,542,618,627,634,641|🇨🇳 中国 063
+  name: '92,473,542,618,627,634,641,723|🇨🇳 中国 063 #1'
   network: ws
   port: '28080'
   server: tw-pqshi.vm.331331.xyz
@@ -140,56 +140,56 @@ proxies:
   udp: true
   uuid: 021b84da-8289-4ab0-b96c-d2ef50eb0437
 - cipher: aes-128-gcm
-  name: 153,634|yandex-4873
+  name: 153,634|yandex-3407
   password: 7af26eae-63c7-43c8-b335-e3528f790459
   port: 559
   server: ontwtoo-a.dlayernet.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 153,634|yandex-4898
+  name: 153,634|yandex-3432
   password: 7af26eae-63c7-43c8-b335-e3528f790459
   port: 580
   server: ontwtoo-a.dlayernet.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 153,634|yandex-4899
+  name: 153,634|yandex-3433
   password: 7af26eae-63c7-43c8-b335-e3528f790459
   port: 581
   server: ontwtoo-a.dlayernet.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 153,634|yandex-4900
+  name: 153,634|yandex-3434
   password: 7af26eae-63c7-43c8-b335-e3528f790459
   port: 582
   server: ontwtoo-a.dlayernet.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 153,634|yandex-4901
+  name: 153,634|yandex-3435
   password: 7af26eae-63c7-43c8-b335-e3528f790459
   port: 558
   server: ontwtoo-a.dlayernet.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 153,634|yandex-4902
+  name: 153,634|yandex-3436
   password: 7af26eae-63c7-43c8-b335-e3528f790459
   port: 584
   server: ontwtoo-a.dlayernet.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 153,634|yandex-4903
+  name: 153,634|yandex-3437
   password: 7af26eae-63c7-43c8-b335-e3528f790459
   port: 585
   server: ontwtoo-a.dlayernet.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 153,634|yandex-4904
+  name: 153,634|yandex-3438
   password: 7af26eae-63c7-43c8-b335-e3528f790459
   port: 586
   server: ontwtoo-a.dlayernet.xyz
@@ -197,7 +197,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 226|台湾x1
+  name: 225|台湾x1
   port: 20763
   server: beiyong-.596743944.top
   type: vmess
@@ -503,17 +503,19 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: chacha20-ietf-poly1305
-  name: 473|TW-223.165.4.173-0332
+  country: 🇩 ID
+  name: 473,587| ID_59
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇼TW-154.223.20.79-0373
+  name: 473,587|_12
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   http-opts:
@@ -952,12 +954,14 @@ proxies:
     headers:
       Host: tw3.594888.xyz
     path: /v2ray
-- name: 473,627|🇹🇼TW-211.20.245.139-5354
+- country: 🇨 CN
+  name: 473,587,627|🇹🇼TW-211.20.245.139-5354
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - name: 473,627|🇹🇼TW-36.230.22.62-6382
   password: ED177480-E516-11EA-8B44-BBC4E882BA0B
   port: 20261
@@ -1112,14 +1116,32 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: '617,638|Channel id: @ShadowProxy66🇹🇼 #1'
-  password: 308d37dc-cfe1-4d81-a095-d576f90cf581
-  port: 29854
-  server: 85.237.206.207
-  skip-cert-verify: true
-  sni: www.bing.com
+- name: '614,615|[Vless] TW_speednode_0032 #1'
+  network: ws
+  port: 443
+  server: 167.179.27.92
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
   tls: false
-  type: hysteria2
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /Telegram🇨🇳@WangCai2/?ed=2560security=tls
+- name: '614,615|[Vless] TW_speednode_0033 #1'
+  network: ws
+  port: 443
+  server: 167.179.27.92
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramU0001F1E8U0001F1F3@WangCai2/?ed=2560security=tls
 - name: 625|🇼 台湾02-1C
   password: 214eefed-e20c-444b-ad16-58aa05e70469
   port: 19030
@@ -1889,6 +1911,14 @@ proxies:
     headers:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
+- name: '638|Channel id: @ShadowProxy66🇹🇼'
+  password: 308d37dc-cfe1-4d81-a095-d576f90cf581
+  port: 29854
+  server: 85.237.206.207
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - alpn:
   - h2
   grpc-opts:
@@ -2139,7 +2169,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.nintendo.be:193531
+    host: db5fe62.dl.microsoft.net:193531
     mode: tls
   port: 2377
   server: db5fe62.t1.glados-config.com
@@ -2150,7 +2180,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.nintendo.com:193531
+    host: db5fe62.dl.nintendo.net:193531
     mode: tls
   port: 2377
   server: db5fe62.t2.glados-config.com
@@ -2161,7 +2191,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.hu:193531
+    host: db5fe62.dl.microsoft.com:193531
     mode: tls
   port: 2377
   server: db5fe62.t3.glados-config.com
@@ -2172,7 +2202,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.com:193531
+    host: db5fe62.dl.nintendo.be:193531
     mode: tls
   port: 2377
   server: db5fe62.t4.glados-config.com
@@ -2183,7 +2213,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.blizzard.com:193531
+    host: db5fe62.dl.microsoft.hu:193531
     mode: tls
   port: 2377
   server: db5fe62.t5.glados-config.com
@@ -2194,7 +2224,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.lu:193531
+    host: db5fe62.dl.microsoft.net:193531
     mode: tls
   port: 2377
   server: db5fe62.t6.glados-config.com
@@ -2227,7 +2257,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.jp:154948
+    host: feb7fa9.dl.microsoft.cl:154948
     mode: tls
   port: 2377
   server: feb7fa9.t3.glados-config.com
@@ -2238,7 +2268,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.io:154948
+    host: feb7fa9.dl.nintendo.eu:154948
     mode: tls
   port: 2377
   server: feb7fa9.t4.glados-config.com
@@ -2249,7 +2279,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.fastly.net:154948
+    host: feb7fa9.dl.microsoft.es:154948
     mode: tls
   port: 2377
   server: feb7fa9.t5.glados-config.com
@@ -2260,7 +2290,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.jp:154948
+    host: feb7fa9.dl.microsoft.es:154948
     mode: tls
   port: 2377
   server: feb7fa9.t6.glados-config.com
