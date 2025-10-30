@@ -212,14 +212,7 @@ proxies:
     headers:
       Host: i1.hdslb.com
     path: /download
-- cipher: aes-128-gcm
-  name: 153,634|yandex-45
-  password: 7af26eae-63c7-43c8-b335-e3528f790459
-  port: 700
-  server: zoneasia-one.ilayernet.xyz
-  type: ss
-  udp: true
-- name: 403|韩国01j
+- name: 402|韩国01j
   password: cfa36789-94aa-4c4c-ad06-ab35a8eb9312
   port: 8080
   server: kr01.344233.cc
@@ -227,7 +220,7 @@ proxies:
   sni: kr01.344233.cc
   type: hysteria2
   udp: true
-- name: '405|韩国01j #1'
+- name: '404|韩国01j #1'
   password: a48d9102-3eb4-4576-8de7-482e58bc1a39
   port: 8080
   server: kr01.344233.cc
@@ -406,7 +399,7 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   country: 🇸 US
-  name: 472,587,634|yandex-4607
+  name: 472,587,634|yandex-2845
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
@@ -414,7 +407,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇸 US
-  name: 472,587|🇺🇸 US_151
+  name: 472,587|🇸 US_141
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
@@ -1083,7 +1076,7 @@ proxies:
   server: 125.141.26.5
   type: ss
 - cipher: aes-256-gcm
-  name: 537,634|yandex-290
+  name: 537,634|yandex-307
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 21001
   server: kr001.dogsvip.site
@@ -1138,13 +1131,35 @@ proxies:
   type: anytls
   udp: true
 - cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 587,634|yandex-4536
+  country: 🇰🇷 KR
+  delay: 445
+  name: 587,623,634|yandex-2774
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  country: 🇰🇷 KR
+  delay: 1249
+  name: 587,623,634|yandex-2977
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇷KR
+  h2-opts: {}
+  http-opts: {}
+  name: 591|KR_03
+  network: none
+  port: 443
+  server: 140.238.2.250
+  skip-cert-verify: true
+  type: vmess
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
 - name: 603|韩国_首尔特别市
   network: ws
   port: 8443
@@ -1550,7 +1565,17 @@ proxies:
   sni: humble-rodent.treefrog761.one
   type: trojan
 - client-fingerprint: chrome
-  name: 618,634|yandex-477
+  flow: xtls-rprx-vision
+  name: 617,621,633,639|4|KR_speednode_0002
+  port: 443
+  server: 3.36.62.128
+  servername: www.ebay.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ead2118c-8b60-4805-b264-bb794c8600d0
+- client-fingerprint: chrome
+  name: 618,634|yandex-3352
   network: ws
   packet-addr: false
   packet-encoding: xudp
@@ -1578,7 +1603,7 @@ proxies:
   tls: false
   type: vmess
   uuid: d1de8433-692d-47fd-9a8d-6ccb02ea39bd
-- name: 618,634|yandex-1983
+- name: 618,634|yandex-4858
   network: ws
   port: 30012
   server: 221.140.109.7
@@ -1593,54 +1618,6 @@ proxies:
     headers:
       Host: aa.ylks.xyz
     path: /blue
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 621,633|KR_speednode_0002
-  port: 443
-  server: 3.36.62.128
-  servername: www.ebay.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: ead2118c-8b60-4805-b264-bb794c8600d0
-- alterId: 64
-  cipher: auto
-  country: 🇸🇬SG
-  delay: 746
-  h2-opts: {}
-  http-opts: {}
-  name: 623|韩国 - Anyang-si - Rackip Consul...
-  network: ws
-  port: 443
-  server: 202.79.160.179
-  servername: www.27458729.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      HOST: www.27458729.xyz
-    path: /path/191019072927
-- alterId: 64
-  cipher: auto
-  country: 🇸🇬SG
-  delay: 1011
-  h2-opts: {}
-  http-opts: {}
-  name: '623|韩国 - Anyang-si - Rackip Consul... #1'
-  network: ws
-  port: 443
-  server: 202.79.160.175
-  servername: www.27458729.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      HOST: www.27458729.xyz
-    path: /path/191019072927
 - name: 625|🇷 韩国02-1F
   password: 519dfadd-a967-4a11-a59b-2f0440ca7f9a
   port: 43100
@@ -2116,7 +2093,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: Telegram%40freecodes%2F%3Fed%3D2560
-- name: '638|韩国 #1'
+- name: 638|韩国
   network: ws
   port: 443
   server: 130.162.130.105
@@ -2128,7 +2105,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FTelegram%40freecodes%2F%3Fed%3D2560'
-- name: '638|韩国 #2'
+- name: '638|韩国 #1'
   network: ws
   port: 10041
   server: 211.197.161.123
@@ -2152,7 +2129,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FX%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560'
-- name: '638|韩国 #3'
+- name: '638|韩国 #2'
   network: ws
   port: 18001
   server: 222.113.18.207
@@ -2176,7 +2153,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FTelegram%40freecodes%2F%3Fed%3D2560'
-- name: '638|韩国 #4'
+- name: '638|韩国 #3'
   network: ws
   port: 14443
   server: 222.113.18.211
