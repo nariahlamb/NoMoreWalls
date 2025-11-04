@@ -102,7 +102,8 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇺RU-185.126.239.250-0327
+  country: 🇧 GB
+  name: 472,587|🇧 GB_50
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -143,7 +144,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 472,618,634|yandex-3787
+- name: 472,618,634|yandex-4210
   network: ws
   password: vpn
   port: 2025
@@ -159,7 +160,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 472,618,627,634|yandex-4975
+  name: 472,618,627,634|yandex-5398
   network: ws
   port: 50826
   server: 45.67.32.147
@@ -333,14 +334,17 @@ proxies:
     headers:
       Host: YouTube-aweikeji
     path: /
-- name: 472,627|🇷🇺RU-45.87.155.14-5574
+- country: 🇱LV
+  name: 472,587,627|🇷🇺RU-45.87.155.14-5574
   password: 1518f7ec-f606-4a0f-8a62-2455e0a2b62e
   port: 443
   server: ua-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇷🇺RU-45.159.250.190-5461
+  country: 🇷🇺 RU
+  name: 472,587|🇺 RU_138
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
@@ -416,15 +420,19 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 577,618|俄罗斯 067
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇷🇺 RU_182
   network: tcp
-  port: 11052
-  server: 45.67.230.79
+  port: 45215
+  server: fa.fxlcn.com
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -759,6 +767,15 @@ proxies:
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
+  name: 618|俄罗斯 067
+  network: tcp
+  port: 11052
+  server: 45.67.230.79
+  skip-cert-verify: true
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
+- alterId: 0
+  cipher: auto
   name: 618|俄罗斯 073
   network: tcp
   port: 2098
@@ -768,7 +785,7 @@ proxies:
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
 - cipher: chacha20-ietf
   delay: 863
-  name: 623,634|yandex-5176
+  name: 623,634|yandex-3050
   password: passwd
   plugin: obfs
   plugin-opts:
@@ -816,16 +833,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 638|🇷🇺 RU_182
-  network: tcp
-  port: 45215
-  server: fa.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
   name: 638|俄罗斯联邦_110404048
   network: ws
   port: '35751'
@@ -843,6 +850,13 @@ proxies:
   password: beb0f380-fb3e-4d80-99cf-894eac378c2e
   port: 57304
   server: zf-cm.bgblwow.org
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 719|🇷🇺  01-1466
+  password: d989ff3d46a63f63
+  port: 10081
+  server: 185.22.154.86
   type: ss
   udp: true
 - name: 764|俄罗斯01
