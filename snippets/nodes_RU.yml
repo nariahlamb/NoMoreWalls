@@ -103,14 +103,14 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 472,586| RU_126
+  name: 472,587| RU_128
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 472,586|🇬🇧 GB_47
+  name: 472,587|🇧 GB_48
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -151,7 +151,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 472,618,634|yandex-591
+- name: 472,618,634|yandex-448
   network: ws
   password: vpn
   port: 2025
@@ -167,7 +167,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 472,618,627,634|yandex-1779
+  name: 472,618,627,634|yandex-1636
   network: ws
   port: 50826
   server: 45.67.32.147
@@ -416,6 +416,35 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- alterId: 0
+  cipher: auto
+  delay: 963
+  name: 523,609,610,623,634,719|🇷🇺 斯 | RUS
+  network: ws
+  port: 80
+  server: ru1.nodea6a6.skynode.me
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c3f95b7e-0fc7-3311-9a3d-e34e675632d4
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: node-59-175-206-86.speedtest.cn
+    max-early-data: 2560
+    path: /download
+- alterId: 0
+  cipher: auto
+  name: 578,618|俄罗斯 067
+  network: tcp
+  port: 11052
+  server: 45.67.230.79
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -750,15 +779,6 @@ proxies:
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 067
-  network: tcp
-  port: 11052
-  server: 45.67.230.79
-  skip-cert-verify: true
-  type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
-- alterId: 0
-  cipher: auto
   name: 618|俄罗斯 073
   network: tcp
   port: 2098
@@ -766,23 +786,6 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
-- alterId: 0
-  cipher: auto
-  delay: 963
-  name: 623,634,719|🇷🇺 斯 | RUS
-  network: ws
-  port: 80
-  server: ru1.nodea6a6.skynode.me
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c3f95b7e-0fc7-3311-9a3d-e34e675632d4
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: node-59-175-206-86.speedtest.cn
-    max-early-data: 2560
-    path: /download
 - name: 627|🇷🇺RU-45.82.14.144-0847
   network: ws
   password: vpn
