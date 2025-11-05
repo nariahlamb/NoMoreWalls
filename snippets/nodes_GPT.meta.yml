@@ -1,12 +1,94 @@
 proxies:
 - alpn:
+  - h3h2
+  client-fingerprint: chrome
+  name: '96,579|FI_1|6.4MB/s|GPT⁺ #1'
+  network: ws
+  port: 2096
+  server: www.speedtest.net
+  servername: Jd03Md9Z5o.ZaNtRiVeLoQ.iNfO
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: e999db7a-1b17-4da6-bc37-c9fa24af2e93
+  ws-opts:
+    headers:
+      Host: Jd03Md9Z5o.ZaNtRiVeLoQ.iNfO
+    path: /
+- client-fingerprint: chrome
+  name: '96,579|IT_1|5.1MB/s|GPT⁺ #1'
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: rAyAn-cOnFiG-it-1.pArIsA.DpDnS.OrG
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 48bbb385-8877-4b2d-8f42-d81df401725d
+  ws-opts:
+    headers:
+      Host: rAyAn-cOnFiG-it-1.pArIsA.DpDnS.OrG
+    path: /ws
+- client-fingerprint: chrome
+  name: 96,579,618,634|yandex-827
+  network: ws
+  port: 443
+  server: economist.com
+  servername: revcloud.migacpi.org
+  skip-cert-verify: true
+  tfo: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7d18fc67-1994-4f7e-8ff8-c024223f33bb
+  ws-opts:
+    headers:
+      Host: revcloud.migacpi.org
+    path: /cbde4058-6b81-432b-8689-dd7ce10e479c
+- alpn:
+  - h3h2
+  client-fingerprint: chrome
+  name: '96,579|🇺🇦 UA_1|5.7MB/s|GPT⁺ #1'
+  network: ws
+  port: 443
+  server: 104.26.6.89
+  servername: gb-42123.shenzogmbh.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 5ec3a039-ea63-4bf9-a848-a65c9bfa66f5
+  ws-opts:
+    headers:
+      Host: gb-42123.shenzogmbh.com
+    path: /api/v1
+- alpn:
+  - h3h2
+  client-fingerprint: chrome
+  name: '96,579|🇺🇦 UA_2|6.2MB/s|GPT⁺|NF #1'
+  network: ws
+  port: 443
+  server: 77.37.33.39
+  servername: gb-42123.shenzogmbh.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 5ec3a039-ea63-4bf9-a848-a65c9bfa66f5
+  ws-opts:
+    headers:
+      Host: gb-42123.shenzogmbh.com
+    path: /api/v1
+- alpn:
   - h3
   auth_str: ae845cbd-08fb-4346-929a-e28a6f3960a8
   disable_mtu_discovery: true
   down: 70
   fast-open: true
   name: 791|1印度-ChatGPT
-  port: 7374
+  port: 9536
   ports: 6000-11000
   protocol: udp
   server: in2.shiyuandian.shop
@@ -20,7 +102,7 @@ proxies:
   down: 70
   fast-open: true
   name: 791|2印度-ChatGPT
-  port: 7817
+  port: 9213
   ports: 6000-11000
   protocol: udp
   server: in3.shiyuandian.shop
@@ -34,7 +116,7 @@ proxies:
   down: 70
   fast-open: true
   name: 791|1悉尼-ChatGPT
-  port: 9087
+  port: 8576
   ports: 6000-11000
   protocol: udp
   server: au.shiyuandian.shop
