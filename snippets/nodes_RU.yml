@@ -102,13 +102,15 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|RU-185.126.239.250-0347
+  country: 🇧 GB
+  name: 473,587|🇧 GB_49
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-45.159.250.190-0379
+  country: 🇷🇺 RU
+  name: 473,587|🇷🇺 RU_134
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
@@ -149,7 +151,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,618,634|yandex-3143
+- name: 473,618,634|yandex-633
   network: ws
   password: vpn
   port: 2025
@@ -165,9 +167,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-4331
+  name: 473,618,627,634,723|🇷🇺 俄罗斯 079
   network: ws
-  port: 50826
+  port: '50826'
   server: 45.67.32.147
   servername: ''
   skip-cert-verify: true
@@ -182,7 +184,7 @@ proxies:
 - cipher: aes-256-gcm
   country: 🇷🇺RU
   delay: 761
-  name: 473,623,634|yandex-5144
+  name: 473,623,634|yandex-2269
   password: d989ff3d46a63f63
   port: 10081
   server: 185.22.154.86
@@ -191,7 +193,7 @@ proxies:
 - cipher: aes-256-gcm
   country: 🇷🇺RU
   delay: 630
-  name: 473,623,634|yandex-5147
+  name: 473,623,634|yandex-2272
   password: 9ca2803c16de72cd
   port: 10081
   server: 45.135.135.89
@@ -357,12 +359,14 @@ proxies:
     headers:
       Host: YouTube-aweikeji
     path: /
-- name: 473,627|🇷🇺RU-45.87.155.14-5418
+- country: 🇻LV
+  name: 473,587,627|🇷🇺RU-45.87.155.14-5418
   password: 1518f7ec-f606-4a0f-8a62-2455e0a2b62e
   port: 443
   server: ua-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 473,627|🇷🇺RU-45.67.215.119-8432
@@ -432,17 +436,6 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 578,618|俄罗斯 067
-  network: tcp
-  port: 11052
-  server: 45.67.230.79
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -768,25 +761,37 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 066
+  name: 618,723|🇷🇺 俄罗斯 066
   network: tcp
-  port: 47555
+  port: '47555'
   server: 46.29.166.237
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 073
+  name: 618,723|🇷🇺 俄罗斯 067
   network: tcp
-  port: 2098
+  port: '11052'
+  server: 45.67.230.79
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
+- alterId: 0
+  cipher: auto
+  name: 618,723|🇷🇺 俄罗斯 073
+  network: tcp
+  port: '2098'
   server: 147.45.51.16
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
 - cipher: aes-256-gcm
   delay: 758
-  name: 623,634|yandex-5145
+  name: 623,634|yandex-2270
   password: c5fcdf7829112cb4
   port: 10081
   server: 185.22.154.251
@@ -795,7 +800,7 @@ proxies:
 - cipher: aes-256-gcm
   country: 🇷🇺RU
   delay: 614
-  name: 623,634|yandex-5146
+  name: 623,634|yandex-2271
   password: f34579d0148b2581
   port: 10081
   server: 185.22.154.19
@@ -804,7 +809,7 @@ proxies:
 - cipher: aes-256-gcm
   country: 🇷🇺RU
   delay: 1765
-  name: 623,634|yandex-5148
+  name: 623,634|yandex-2273
   password: 4194ce5b1f36f660
   port: 10810
   server: 45.129.2.145
@@ -884,6 +889,20 @@ proxies:
     headers:
       Host: imafake.locker
     path: /speedtest
+- name: 723|🇷🇺 俄罗斯 001
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
+- name: 723|🇷🇺 俄罗斯 039
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: trojan
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844

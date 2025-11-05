@@ -450,7 +450,7 @@ proxies:
       Host: 3h-poland1.09vpn.com
     path: /vmess/
 - client-fingerprint: chrome
-  name: 618,634|yandex-2890
+  name: 618,634|yandex-380
   network: ws
   port: 2053
   server: 31.133.0.55
@@ -478,7 +478,7 @@ proxies:
   tls: true
   type: vmess
   uuid: bd996dac-3b1c-42a9-b8a1-66b87d0b72ae
-- name: 618,634|yandex-4006
+- name: 618,634|yandex-1496
   network: tcp
   port: 1002
   server: 185.254.220.229
@@ -539,9 +539,40 @@ proxies:
     headers:
       Host: imafake.locker
     path: /speedtest
-- name: 656,719|🇵🇱  | POL-1351
+- name: 656,719|🇵🇱  | POL
   password: 43e02714-3a58-4fa5-8441-5c8f2cc583b5
   port: 23003
   server: tr.node1link.xyz
   sni: sni.eos-suzhou-4.cmecloud.cn
   type: trojan
+- client-fingerprint: chrome
+  name: 656|🇵🇱 波兰 | POL 2
+  network: ws
+  port: 13800
+  server: 23.169.184.28
+  servername: pl.alice.cloudns.pro
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: df3afb84-b065-4223-ae9a-53345dc29c0d
+  ws-opts:
+    headers:
+      Host: pl.alice.cloudns.pro
+    path: '%2Fgseuifghuisgfuiseuifseguif'
+- client-fingerprint: chrome
+  name: 719|🇵🇱  | POL 2
+  network: ws
+  packet-encoding: xudp
+  port: 13800
+  server: 23.169.184.28
+  servername: pl.alice.cloudns.pro
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df3afb84-b065-4223-ae9a-53345dc29c0d
+  ws-opts:
+    headers:
+      Host: pl.alice.cloudns.pro
+    path: /gseuifghuisgfuiseuifseguif
