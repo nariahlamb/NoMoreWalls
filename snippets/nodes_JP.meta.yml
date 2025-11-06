@@ -1488,7 +1488,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   name: '296,401,473,578,614,615,617,621,627,630,633,635,636,638|12,13|美国2|@ripaojiedian
-    #1'
+    #2'
   network: tcp
   password: e4e262d453466988575c397a30562337
   port: 3777
@@ -3284,13 +3284,15 @@ proxies:
   server: 54.199.83.239
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇵JP-35.72.8.162-5482
+  country: 🇵 JP
+  name: 473,587| JP_66
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 10079
   server: ss.027.node-for-bigairport.win
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇯🇵JP-54.249.210.77-5542
+  country: 🇸 US
+  name: 473,587|🇺🇸 US_102
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 36885
   server: ss.031.node-for-bigairport.win
@@ -3936,35 +3938,39 @@ proxies:
   port: 8443
   server: 5.253.41.237
   servername: pq-japan3.09vpn.com
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: eb42c1ce-5ab3-41f0-95ad-80fa467607d9
   ws-opts:
-    path: '%2Fvless%2F'
+    headers:
+      Host: pq-japan3.09vpn.com
+    path: /vless/
 - alterId: 0
   cipher: auto
   country: 🇵JP
   h2-opts: {}
   http-opts: {}
   name: 591|JP_10
-  network: none
-  port: 47591
-  server: 8.216.11.96
-  skip-cert-verify: true
-  type: vmess
-  uuid: 8287ec65-93dc-4052-c39e-e5e310f9b192
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 591|🇵JP_11
   network: tcp
   port: 14760
   server: 45.32.45.45
   skip-cert-verify: true
   type: vmess
   uuid: dbf7a6e4-d518-4f9b-a55e-27ef892ffac1
+- alterId: 0
+  cipher: auto
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 591|🇵JP_11
+  network: none
+  port: 47591
+  server: 8.216.11.96
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8287ec65-93dc-4052-c39e-e5e310f9b192
 - client-fingerprint: random
   name: 603|日本_东京
   network: ws
@@ -5896,7 +5902,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '637|12|🇯🇵 日本4|@ripaojiedian #1'
+  name: '637|12|🇯🇵 日本4|@ripaojiedian #2'
   port: 17233
   server: 81f6bf37-sutj40-svgpxu-y2gs.cm5.p5pv.com
   skip-cert-verify: false
@@ -5935,7 +5941,7 @@ proxies:
   uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
 - alterId: 0
   cipher: auto
-  name: '637|13|日本4|@ripaojiedian #1'
+  name: '637|13|日本4|@ripaojiedian #2'
   network: tcp
   port: 17233
   server: 81f6bf37-sutj40-svgpxu-y2gs.cm5.p5pv.com
@@ -5975,20 +5981,20 @@ proxies:
   sni: www.microsoft.com
   tls: false
   type: hysteria2
-- name: '638|日本|@ripaojiedian #4'
+- name: '638|日本|@ripaojiedian #3'
   password: BxceQaOe
   port: 1924
   server: 36.150.215.239
   skip-cert-verify: true
   type: trojan
-- name: '638|日本3|@ripaojiedian #5'
+- name: '638|日本3|@ripaojiedian #4'
   password: e4e262d453466988575c397a30562337
   port: 4452
   server: 117.172.176.24
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '638|日本2|@ripaojiedian #5'
+- name: '638|日本2|@ripaojiedian #4'
   password: e4e262d453466988575c397a30562337
   port: 316
   server: 160.16.151.196
@@ -6072,21 +6078,21 @@ proxies:
   tls: false
   type: vmess
   uuid: dbf7a6e4-d518-4f9b-a55e-27ef892ffac1
-- name: 642|🇯🇵 日本 42
-  password: 589ee672-936a-4841-9d44-9b9592473cbb
-  port: 24401
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
 - name: 642|🇯🇵 日本 19
-  password: 767ed2b8-9c49-4636-99aa-5c6d4a8e3720
+  password: 7f9ed24d-8716-47d4-9956-af71ddb9f932
   port: 41300
-  server: n001.xunxunmimisbs.sbs
+  server: n002.xunxunmimisbs.sbs
   skip-cert-verify: true
   sni: jp01.xxxxyyyysbs.sbs
   type: trojan
-- name: 642|🇯🇵 日本 59
+- name: 642|🇯🇵 日本 23
+  password: 95276db6-7617-4042-8594-f9e6239c44e5
+  port: 41300
+  server: n002.xunxunmimisbs.sbs
+  skip-cert-verify: true
+  sni: jp01.xxxxyyyysbs.sbs
+  type: trojan
+- name: 642|🇯🇵 日本 22
   password: 72aaf68b-fca5-48fa-9ba3-b0a6fb9990d2
   port: 38508
   ports: 30000-40000
@@ -6095,32 +6101,46 @@ proxies:
   sni: akjp1um.mmaccc.top
   tls: false
   type: hysteria2
-- name: 642|🇯🇵 日本 21
-  password: d85244eb-8a7f-4ae9-a464-efa939e66f53
-  port: 41300
-  server: n001.xunxunmimisbs.sbs
+- name: 642|🇯🇵 日本 39
+  password: 6c343c48-5615-4071-97fd-86012e9b7284
+  port: 24401
+  server: cdnfire.xiaomispeed.com
   skip-cert-verify: true
-  sni: jp01.xxxxyyyysbs.sbs
+  sni: cdnfire.xiaomispeed.com
   type: trojan
+- name: 642|🇯🇵 日本 42
+  password: 72aaf68b-fca5-48fa-9ba3-b0a6fb9990d2
+  port: 38304
+  ports: 30000-40000
+  server: akjp1um.mmaccc.top
+  skip-cert-verify: true
+  sni: akjp1um.mmaccc.top
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 642|🇯🇵 日本 41
-  network: ws
-  port: '2087'
-  server: singgcdn.singgnetworkcdn.com
-  tls: true
+  name: 642|🇯🇵 日本 35
+  network: tcp
+  port: '50189'
+  server: game.jp03.bilibilicloud01.com
+  tls: false
   type: vmess
-  uuid: af671ba7-82f3-4707-bcf5-22929b058b20
-  ws-opts:
-    headers:
-      Host: koto-ku-tokyo-japan-vmess2.easyinternet.one
-    path: /microsoftupdate/TG@pwsair/internetcdn/
-- name: 642|🇯🇵 日本 20
-  password: 767ed2b8-9c49-4636-99aa-5c6d4a8e3720
-  port: 41300
+  uuid: 01064987-9f57-37f6-ab1a-3aba15066686
+- alterId: 0
+  cipher: auto
+  name: 642|🇯🇵 日本 31
+  network: tcp
+  port: '23908'
+  server: vms-1.fgmcx.top
+  tls: false
+  type: vmess
+  uuid: 72aaf68b-fca5-48fa-9ba3-b0a6fb9990d2
+- name: 642|🇯🇵 日本 02
+  password: 9d0fffc0-a74b-44b4-b78e-00e387684f79
+  port: 41001
   server: n002.xunxunmimisbs.sbs
   skip-cert-verify: true
-  sni: jp01.xxxxyyyysbs.sbs
+  sni: jp02.xxxxyyyysbs.sbs
   type: trojan
 - alterId: 0
   cipher: auto
@@ -6215,7 +6235,8 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: '656,719|🇯🇵 JP_6 | ⬇️ 1.5MB/s #1'
+- auth: 7b56a495-39a9-421d-8bed-81fe33b0e365
+  name: '656,719|🇯🇵 日本 50 #1'
   password: 7b56a495-39a9-421d-8bed-81fe33b0e365
   port: 48413
   server: linjp1.jueduibupao.top
@@ -6223,6 +6244,7 @@ proxies:
   sni: linjp1.jueduibupao.top
   tls: false
   type: hysteria2
+  udp: true
 - name: '656,719|🇯🇵 JP_9 | ⬇️ 2.0MB/s #1'
   password: 3807d049-edf7-47f2-af91-b601f89caf88
   port: 30000
@@ -7042,33 +7064,84 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2F%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F'
-- alterId: 0
-  cipher: auto
-  name: 656|🇯🇵 日本 | JPN 10
-  network: tcp
-  port: '50188'
-  server: game.jp02.bilibilicloud01.com
+- name: '656,719|🇯🇵 日本 44 #1'
+  password: 72e1492f-655d-432a-b5b1-e1957b5b2065
+  port: 24401
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+  udp: true
+- name: '656,719|🇯🇵 日本 14 #2'
+  password: 5a27a43b-c50f-4374-85b0-300c4e0a77f2
+  port: 41300
+  server: n002.xunxunmimisbs.sbs
+  skip-cert-verify: true
+  sni: jp01.xxxxyyyysbs.sbs
+  type: trojan
+  udp: true
+- name: '656,719|🇯🇵 日本 06 #1'
+  password: a7bb66bd-973c-424e-90ef-3f2841b2c44f
+  port: 41300
+  server: n002.xunxunmimisbs.sbs
+  skip-cert-verify: true
+  sni: jp01.xxxxyyyysbs.sbs
+  type: trojan
+  udp: true
+- name: 656|🇯🇵 日本 45
+  network: ws
+  port: 2053
+  server: b3.cfyx.20237737.xyz
+  servername: koto-ku-tokyo-japan-vless.easyinternet.one
+  tls: true
+  type: vless
+  uuid: af671ba7-82f3-4707-bcf5-22929b058b20
+  ws-opts:
+    headers:
+      Host: koto-ku-tokyo-japan-vless.easyinternet.one
+    path: '%2FDeepSeek%2FTG%40pwsair%2FDeepSeekapi%2F'
+- name: '656,719|🇯🇵 日本 | JPN 9 #1'
+  password: 6014d394-d093-4eef-b494-79392dcc098c
+  port: 41300
+  server: n001.xunxunmimisbs.sbs
+  skip-cert-verify: true
+  sni: jp01.xxxxyyyysbs.sbs
+  type: trojan
+  udp: true
+- name: '656,719|🇯🇵 日本 | JPN 10 #1'
+  password: 95276db6-7617-4042-8594-f9e6239c44e5
+  port: 41300
+  server: n001.xunxunmimisbs.sbs
+  skip-cert-verify: true
+  sni: jp01.xxxxyyyysbs.sbs
+  type: trojan
+  udp: true
+- name: '656,719|🇯🇵 日本 | JPN 12 #1'
+  password: 6014d394-d093-4eef-b494-79392dcc098c
+  port: 41300
+  server: n002.xunxunmimisbs.sbs
+  skip-cert-verify: true
+  sni: jp01.xxxxyyyysbs.sbs
+  type: trojan
+  udp: true
+- auth: d3da4e16-9bef-4e54-9bd9-960d32740392
+  name: '656,719|🇯🇵 日本 | JPN 13 #1'
+  password: d3da4e16-9bef-4e54-9bd9-960d32740392
+  port: 30000
+  server: jp6.oomz.ru
+  skip-cert-verify: true
+  sni: bing.com
   tls: false
-  type: vmess
-  uuid: 01064987-9f57-37f6-ab1a-3aba15066686
-- alterId: 0
-  cipher: auto
-  name: 656|🇯🇵 日本 | JPN 11
-  network: tcp
-  port: '50001'
-  server: manga.jp01.bilibilicloud01.net
-  tls: false
-  type: vmess
-  uuid: 01064987-9f57-37f6-ab1a-3aba15066686
-- alterId: 0
-  cipher: auto
-  name: 656|🇯🇵 日本 | JPN 12
-  network: tcp
-  port: '58417'
-  server: manga.jp02.bilibilicloud01.net
-  tls: false
-  type: vmess
-  uuid: 01064987-9f57-37f6-ab1a-3aba15066686
+  type: hysteria2
+  udp: true
+- name: '656,719|🇯🇵 日本 | JPN 14 #1'
+  password: 7f9ed24d-8716-47d4-9956-af71ddb9f932
+  port: 41300
+  server: n001.xunxunmimisbs.sbs
+  skip-cert-verify: true
+  sni: jp01.xxxxyyyysbs.sbs
+  type: trojan
+  udp: true
 - client-fingerprint: firefox
   flow: ''
   name: '674,675|日本01 #18'
@@ -7644,75 +7717,52 @@ proxies:
   port: 15097
   server: 13.230.117.32
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 719|🇯🇵  | JPN 9
-  password: 23e2c3eb-8963-4c42-9549-cd44f5a8e425
-  port: 38763
-  server: 01.xunyunnode.sbs
-  type: ss
+- name: '719|🇯🇵 日本 45 #1'
+  network: ws
+  port: 2053
+  server: b3.cfyx.20237737.xyz
+  servername: koto-ku-tokyo-japan-vless.easyinternet.one
+  tls: true
+  type: vless
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '719|🇯🇵 日本 | JPN 10 #1'
-  port: 50188
-  server: game.jp02.bilibilicloud01.com
-  servername: 1111-2222.0011.bbbb-cloud-cdna-apia-gwsd-aaaa-aabb.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 01064987-9f57-37f6-ab1a-3aba15066686
-- alterId: 0
-  cipher: auto
-  name: '719|🇯🇵 日本 | JPN 11 #1'
-  port: 50001
-  server: manga.jp01.bilibilicloud01.net
-  servername: 1111-2222.0005.aaaa-cloud-cdna-apia-gwsd-aaaa-aabb.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 01064987-9f57-37f6-ab1a-3aba15066686
-- alterId: 0
-  cipher: auto
-  name: '719|🇯🇵 日本 | JPN 12 #1'
-  port: 58417
-  server: manga.jp02.bilibilicloud01.net
-  servername: 1111-2222.0006.aaaa-cloud-cdna-apia-gwsd-aaaa-aabb.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 01064987-9f57-37f6-ab1a-3aba15066686
+  uuid: af671ba7-82f3-4707-bcf5-22929b058b20
+  ws-opts:
+    headers:
+      Host: koto-ku-tokyo-japan-vless.easyinternet.one
+    path: /DeepSeek/TG@pwsair/DeepSeekapi/
 - cipher: aes-128-gcm
-  name: '719|🇯🇵 日本 | JPN 13 #1'
-  password: I1qrYxOXxPYCOkhT
-  port: 50179
-  server: jp8.web3sp.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '719|🇯🇵 日本 | JPN 14 #1'
+  name: '719|🇯🇵 日本 15 #2'
   password: I1qrYxOXxPYCOkhT
   port: 50159
   server: jp6.web3sp.com
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: '719|🇯🇵 日本 | JPN 15 #1'
-  password: I1qrYxOXxPYCOkhT
-  port: 50169
-  server: jp7.web3sp.com
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '719|🇯🇵 日本 | JPN 16 #1'
+  name: '719|🇯🇵 日本 | JPN 11 #1'
   password: 9e1464b0-e466-47e5-aaec-e242f346b9f0
-  port: 26329
-  server: xc.xunyunnode.sbs
+  port: 25856
+  server: wa.xunyunnode.sbs
   type: ss
   udp: true
-- name: 719|🇯🇵  | JPN 17
+- name: 719|🇯🇵 日本 | JPN 15
+  password: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
+  port: 27233
+  server: 7f0fc6bd-t5bb40-t6tn6w-jjv2.cm5.oshuawei.com
+  skip-cert-verify: true
+  sni: 7f0fc6bd-t5bb40-t6tn6w-jjv2.cm5.oshuawei.com
+  tls: true
+  type: http
+  username: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
+- name: 719|🇯🇵 日本 | JPN 16
+  password: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
+  port: 443
+  server: dc28b20c-t5bb40-t6tn6w-jjv2.jp4.oshuawei.com
+  skip-cert-verify: true
+  sni: dc28b20c-t5bb40-t6tn6w-jjv2.jp4.oshuawei.com
+  tls: true
+  type: http
+  username: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
+- name: 719|🇯🇵 日本 | JPN 17
   password: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
   port: 443
   server: 7f1b6f4d-t5bb40-tg010c-1r7od.jp.oshuawei.com
@@ -7886,7 +7936,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.xboxlive.com:193531
+    host: db5fe62.dl.mozilla.net:193531
     mode: tls
   port: 2377
   server: db5fe62.j1.glados-config.com
@@ -7908,7 +7958,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.it:193531
+    host: db5fe62.dl.microsoft.md:193531
     mode: tls
   port: 2377
   server: db5fe62.j3.glados-config.com
@@ -7919,7 +7969,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.dk:154948
+    host: feb7fa9.dl.microsoft.cz:154948
     mode: tls
   port: 2377
   server: feb7fa9.j1.glados-config.com
@@ -7930,7 +7980,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.is:154948
+    host: feb7fa9.dl.nvidia.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.j2.glados-config.com
@@ -7941,7 +7991,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.ge:154948
+    host: feb7fa9.dl.microsoft.net:154948
     mode: tls
   port: 2377
   server: feb7fa9.j3.glados-config.com
@@ -7949,7 +7999,7 @@ proxies:
   udp: false
 - name: 791|日本1-HY2协议
   password: ae845cbd-08fb-4346-929a-e28a6f3960a8
-  port: 25433
+  port: 25995
   ports: 22000-27000
   server: jp1.shiyuandian.shop
   skip-cert-verify: true
@@ -7961,7 +8011,7 @@ proxies:
   down: 70
   fast-open: true
   name: 791|1日本-三网优化
-  port: 9863
+  port: 7125
   ports: 6000-11000
   protocol: udp
   server: jp1.shiyuandian.shop
