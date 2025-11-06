@@ -36,27 +36,27 @@ proxies:
   server: 185.126.116.125
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473,578,634,648|SS--NF解锁自制剧-ChatGPT-TikTok-You...
+  name: 473,634,648|SS--NF解锁自制剧-ChatGPT-TikTok-You...
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 204.136.10.115
   type: ss
   udp: true
-- name: 473,627|🇨🇭CH-152.67.71.149-2917
+- name: 473,627|🇨🇭CH-152.67.71.149-2988
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: 473|🇨CH-156.146.62.160-4546
+  name: 473|🇨CH-156.146.62.160-4559
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
 - alterId: 1
   cipher: auto
-  name: 473,627|🇨🇭CH-186.190.215.32-8405
+  name: 473,627|🇨🇭CH-186.190.215.32-8495
   network: ws
   port: 443
   server: 186.190.215.32
@@ -71,7 +71,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: 473,627|🇨🇭CH-186.190.215.75-8469
+  name: 473,627|🇨🇭CH-186.190.215.75-8559
   network: ws
   port: 443
   server: 186.190.215.75
@@ -86,7 +86,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,627|🇨🇭CH-140.238.212.95-8482
+  name: 473,627|🇨🇭CH-140.238.212.95-8572
   network: ws
   port: 443
   server: 140.238.212.95
@@ -101,7 +101,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 473,627|🇨🇭CH-23.166.88.27-8576
+  name: 473,627|🇨🇭CH-23.166.88.27-8666
   network: ws
   port: 443
   server: 23.166.88.27
@@ -115,7 +115,7 @@ proxies:
       Host: 23.166.88.27
     path: /
 - client-fingerprint: chrome
-  name: 618,634|yandex-3188
+  name: 618,634|yandex-3216
   network: ws
   packet-addr: false
   packet-encoding: xudp
@@ -133,17 +133,36 @@ proxies:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
   xudp: true
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: 627|🇨🇭CH-186.190.215.149-8621
-  network: ws
-  port: 443
-  server: 186.190.215.149
-  servername: 186.190.215.149
-  tls: true
+  name: 656|🇨🇭 瑞士 | CHE 2
+  network: tcp
+  port: '21961'
+  server: live.bilibilicloud01.com
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 186.190.215.149
-    path: linkvws
+  uuid: 01064987-9f57-37f6-ab1a-3aba15066686
+- auth: 72aaf68b-fca5-48fa-9ba3-b0a6fb9990d2
+  down: 30
+  name: '656,719|🇨🇭 瑞士 01 #1'
+  password: 72aaf68b-fca5-48fa-9ba3-b0a6fb9990d2
+  port: 27411
+  ports: 20000-40000
+  server: lxbhy2.mmaccc.top
+  skip-cert-verify: true
+  sni: lxbhy2.mmaccc.top
+  tls: false
+  type: hysteria2
+  udp: true
+  up: 30
+- alterId: 0
+  cipher: auto
+  name: '719|🇨🇭 瑞士 | CHE 2 #1'
+  port: 21961
+  server: live.bilibilicloud01.com
+  servername: 1111-2222.0051.bbbb-cloud-cdna-apia-gwsd-aaaa-aabb.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01064987-9f57-37f6-ab1a-3aba15066686
