@@ -102,15 +102,13 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 473,587| RU_88
+  name: 473|RU-45.159.250.190-0393
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 473,587|🇧 GB_49
+  name: 473|🇷🇺RU-185.126.239.250-0410
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -151,7 +149,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,618,634|yandex-506
+- name: 473,618,634|yandex-722
   network: ws
   password: vpn
   port: 2025
@@ -167,7 +165,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-1694
+  name: 473,618,627,634|yandex-1910
   network: ws
   port: 50826
   server: 45.67.32.147
@@ -416,6 +414,17 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 578,618|俄罗斯 067
+  network: tcp
+  port: 11052
+  server: 45.67.230.79
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -750,15 +759,6 @@ proxies:
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 067
-  network: tcp
-  port: 11052
-  server: 45.67.230.79
-  skip-cert-verify: true
-  type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
-- alterId: 0
-  cipher: auto
   name: 618|俄罗斯 073
   network: tcp
   port: 2098
@@ -796,6 +796,40 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
+- name: 638|🇷🇺RU_112
+  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
+  port: 443
+  server: hk-full.privateip.net
+  sni: hk-full.privateip.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 638|俄罗斯联邦_110704036
+  network: ws
+  port: '35751'
+  server: 195.133.52.234
+  servername: imafake.locker
+  tls: true
+  type: vmess
+  uuid: 9631096d-3032-4942-9446-bdf12665682b
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: 638|俄罗斯联邦_110704043
+  network: ws
+  port: '35751'
+  server: 195.133.52.234
+  servername: imafake.locker
+  tls: true
+  type: vmess
+  uuid: e1cc26b3-df0b-477b-afb0-53659a25e978
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
