@@ -102,14 +102,15 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|RU-45.159.250.190-0296
+  country: 🇺 RU
+  name: 473,587| RU_131
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 473,587| GB_42
+  name: 473,587|🇧 GB_45
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -150,7 +151,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,618,634|yandex-3491
+- name: 473,618,634|yandex-3962
   network: ws
   password: vpn
   port: 2025
@@ -166,9 +167,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-4679
+  name: 473,618,627,634,723|🇷🇺 俄罗斯 079
   network: ws
-  port: 50826
+  port: '50826'
   server: 45.67.32.147
   servername: ''
   skip-cert-verify: true
@@ -340,12 +341,14 @@ proxies:
     headers:
       Host: YouTube-aweikeji
     path: /
-- name: 473,627|🇷🇺RU-45.87.155.14-5929
+- country: 🇻LV
+  name: 473,587,627|🇷🇺RU-45.87.155.14-5929
   password: 1518f7ec-f606-4a0f-8a62-2455e0a2b62e
   port: 443
   server: ua-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 473,627|🇷🇺RU-45.67.215.119-8489
@@ -417,9 +420,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 578,618|俄罗斯 067
+  name: 578,618,723|🇷🇺 俄罗斯 067
   network: tcp
-  port: 11052
+  port: '11052'
   server: 45.67.230.79
   servername: ''
   skip-cert-verify: true
@@ -751,20 +754,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 066
+  name: 618,723|🇷🇺 俄罗斯 066
   network: tcp
-  port: 47555
+  port: '47555'
   server: 46.29.166.237
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 073
+  name: 618,723|🇷🇺 俄罗斯 073
   network: tcp
-  port: 2098
+  port: '2098'
   server: 147.45.51.16
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
 - name: 627|🇷🇺RU-45.82.14.144-0823
@@ -797,7 +802,7 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 638|🇷🇺RU_125
+- name: 638|🇷🇺RU_131
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
@@ -805,35 +810,102 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 656,719|🇷🇺  02
+  name: 638|俄罗斯联邦_110804030
   network: ws
-  port: 443
-  server: cg1c08.waimaojd.com
-  servername: cg1c08.waimaojd.com
-  skip-cert-verify: true
+  port: '35751'
+  server: 195.133.52.234
+  servername: imafake.locker
   tls: true
   type: vmess
-  udp: true
-  uuid: d8bb518e-9e03-44bb-8a60-2b50190079ba
+  uuid: 35f332d0-0b05-4cc6-91cb-ec0d4465055f
   ws-opts:
     headers:
-      Host: cg1c08.waimaojd.com
-    path: /api/v1/graphql
+      Host: imafake.locker
+    path: /speedtest
 - alterId: 0
   cipher: auto
-  name: '656,719|🇷🇺 俄罗斯 03 #1'
+  name: 638|俄罗斯联邦_110804031
   network: ws
-  port: 443
-  server: xg1a5.waimaohots.com
-  servername: xg1a5.waimaohots.com
+  port: '35751'
+  server: 195.133.52.234
+  servername: imafake.locker
   tls: true
   type: vmess
-  udp: true
-  uuid: f95da449-747a-4ecc-b4ba-9f0f715a25df
+  uuid: 3786e67a-41eb-4b92-b31e-417e89493b93
   ws-opts:
     headers:
-      Host: xg1a5.waimaohots.com
-    path: /api/v1/graphql
+      Host: imafake.locker
+    path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: 638|俄罗斯联邦_110804033
+  network: ws
+  port: '35751'
+  server: 195.133.52.234
+  servername: imafake.locker
+  tls: true
+  type: vmess
+  uuid: 4ec66d81-9565-4d8e-ae58-2bacfde95f48
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: 638|俄罗斯联邦_110804035
+  network: ws
+  port: '35751'
+  server: 195.133.52.234
+  servername: imafake.locker
+  tls: true
+  type: vmess
+  uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: 638|俄罗斯联邦_110804040
+  network: ws
+  port: '35751'
+  server: 195.133.52.234
+  servername: imafake.locker
+  tls: true
+  type: vmess
+  uuid: c50f9480-2e1d-40db-9458-630e79636663
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: 638|俄罗斯联邦_110804046
+  network: ws
+  port: '35751'
+  server: 195.133.52.234
+  servername: imafake.locker
+  tls: true
+  type: vmess
+  uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
+- name: 723|🇷🇺 俄罗斯 001
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
+- name: 723|🇷🇺 俄罗斯 039
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: trojan
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
