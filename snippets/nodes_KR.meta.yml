@@ -368,8 +368,7 @@ proxies:
   sni: swift.protocolbuffer.com
   type: trojan
 - cipher: aes-256-cfb
-  country: 🇸 US
-  name: 473,587,634|yandex-4941
+  name: 473,634|yandex-4941
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
@@ -812,14 +811,14 @@ proxies:
   server: 3.36.118.190
   type: ss
 - cipher: aes-256-cfb
-  country: 🇺🇸 US
-  name: 473,587|🇺 US_140
+  name: 473|🇷KR-154.90.62.168-5447
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
-  name: '473,634,719|🇰🇷 韩国 | KOR 16 #1'
+  country: 🇷KR
+  name: 473,591,634|yandex-5381
   password: qwerREWQ@@
   port: 37008
   server: 221.139.79.57
@@ -1142,14 +1141,18 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
-- cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 587,634|yandex-5073
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇷KR
+  h2-opts: {}
+  http-opts: {}
+  name: 591|🇷KR_20
+  network: none
+  port: 443
+  server: 140.238.2.250
+  skip-cert-verify: true
+  type: vmess
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
 - name: 603|韩国_首尔特别市
   network: ws
   port: 8443
@@ -1866,13 +1869,15 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 627|🇰🇷KR-221.164.142.10-7893
+  name: '627,656,719|🇭🇰 香港 | HKG 31 #1'
   network: ws
   port: 50001
   server: 221.164.142.10
   servername: aa.nbee.pp.ua
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: ffde381b-4a30-41d4-90eb-151f228b06ea
   ws-opts:
     headers:
@@ -2008,55 +2013,49 @@ proxies:
     path: /c399917/
 - alterId: 0
   cipher: auto
-  name: 642|🇰🇷 韩国 47
+  name: 642|🇰🇷 韩国 10
   network: tcp
   port: '45076'
   server: haa.dashuai.cyou
   tls: false
   type: vmess
-  uuid: d0d69084-a148-46f3-af59-ae50f16ca84b
-- name: '642,656,719|🇰🇷 KR_11 | ⬇️ 1.7MB/s #1'
-  password: 4a6bf640-5c5e-41d3-8078-89a12174cf57
-  port: 30000
-  server: kr2.jueduibupao.top
-  skip-cert-verify: true
-  sni: kr2.jueduibupao.top
-  tls: false
-  type: hysteria2
+  uuid: d1eb2f6d-7017-4682-8394-1a29aebcbb7f
 - alterId: 0
   cipher: auto
-  name: 642|🇰🇷 韩国 03
+  name: 642|🇰🇷 韩国 15
+  network: tcp
+  port: '45076'
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 36968af6-6fba-43ab-84db-adc868f0f567
+- alterId: 0
+  cipher: auto
+  name: 642|🇰🇷 韩国 18
+  network: tcp
+  port: '45076'
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 297d5d2d-ba3d-436d-9bb6-023efa49c083
+- alterId: 0
+  cipher: auto
+  name: 642|🇰🇷 韩国 19
   network: tcp
   port: '45075'
   server: xdd.dashuai.cyou
   tls: false
   type: vmess
-  uuid: c71c64c2-df39-4a0f-97be-267e1da84dfd
-- name: 642|🇰🇷 韩国 35
-  password: 647782ac-9a6e-40f6-bf51-73924cb180f4
-  port: 22100
-  server: n001.xunxunmimisbs.sbs
-  skip-cert-verify: true
-  sni: kr01.xxxxyyyysbs.sbs
-  type: trojan
+  uuid: 6a8b2bab-fd52-4237-aa81-908f42398257
 - alterId: 0
   cipher: auto
-  name: 642|🇰🇷 韩国 05
+  name: 642|🇰🇷 韩国 04
   network: tcp
-  port: '45075'
-  server: xdd.dashuai.cyou
+  port: '45076'
+  server: haa.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 514c13a1-2c3f-49d4-9899-8a6885579ef3
-- alterId: 0
-  cipher: auto
-  name: 642|🇰🇷 韩国 42
-  network: tcp
-  port: '45075'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: d0d69084-a148-46f3-af59-ae50f16ca84b
+  uuid: 46daf2b3-2475-4ec8-b91c-398e8ca867ba
 - name: '656,719|🇰🇷 KR_2 | ⬇️ 3.8MB/s #1'
   password: faa8b629-13ea-4ccd-94dd-ff1615cb1ba1
   port: 30000
@@ -2097,6 +2096,14 @@ proxies:
   server: 6bkr1.6bnw.top
   skip-cert-verify: true
   sni: 6bkr1.6bnw.top
+  tls: false
+  type: hysteria2
+- name: '656,719|🇰🇷 KR_11 | ⬇️ 1.7MB/s #1'
+  password: 4a6bf640-5c5e-41d3-8078-89a12174cf57
+  port: 30000
+  server: kr2.jueduibupao.top
+  skip-cert-verify: true
+  sni: kr2.jueduibupao.top
   tls: false
   type: hysteria2
 - auth: c43e03cf-791b-46df-9251-785d19324763
@@ -2211,76 +2218,40 @@ proxies:
   uuid: 514c13a1-2c3f-49d4-9899-8a6885579ef3
 - alterId: 0
   cipher: auto
-  name: 656|🇰🇷 韩国 | KOR 10
+  name: 656|🇰🇷 韩国 | KOR 5
   network: tcp
   port: '45076'
   server: haa.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 5a84a45f-5811-4e09-af0e-c015736a95ee
+  uuid: 4a5b77fc-48e7-4598-bb14-e6632461c5e0
 - alterId: 0
   cipher: auto
-  name: 656|🇰🇷 韩国 | KOR 11
+  name: 656|🇰🇷 韩国 | KOR 6
   network: tcp
   port: '45075'
   server: xdd.dashuai.cyou
   tls: false
   type: vmess
-  uuid: d0c4defd-fb27-4a16-a08e-59e3e0b94722
+  uuid: 4a5b77fc-48e7-4598-bb14-e6632461c5e0
 - alterId: 0
   cipher: auto
-  name: 656|🇰🇷 韩国 | KOR 12
-  network: tcp
-  port: '45075'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 297d5d2d-ba3d-436d-9bb6-023efa49c083
-- alterId: 0
-  cipher: auto
-  name: 656|🇰🇷 韩国 | KOR 13
-  network: tcp
-  port: '45075'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 5a84a45f-5811-4e09-af0e-c015736a95ee
-- alterId: 0
-  cipher: auto
-  name: 656|🇰🇷 韩国 | KOR 14
+  name: 656|🇰🇷 韩国 | KOR 7
   network: tcp
   port: '45076'
   server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: d0c4defd-fb27-4a16-a08e-59e3e0b94722
-- alterId: 0
-  cipher: auto
-  name: 656|🇰🇷 韩国 | KOR 15
-  network: tcp
-  port: '45075'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: d1eb2f6d-7017-4682-8394-1a29aebcbb7f
-- alterId: 0
-  cipher: auto
-  name: 656|🇰🇷 韩国 | KOR 17
-  network: tcp
-  port: '45075'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 5387d88d-5ebc-42f0-8aa6-e7ec65c58db9
-- alterId: 0
-  cipher: auto
-  name: 656|🇰🇷 韩国 | KOR 18
-  network: tcp
-  port: '45075'
-  server: xdd.dashuai.cyou
   tls: false
   type: vmess
   uuid: ee952ac3-adce-428a-9948-00722abd8a61
+- alterId: 0
+  cipher: auto
+  name: 656|🇰🇷 韩国 | KOR 8
+  network: tcp
+  port: '45076'
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 5387d88d-5ebc-42f0-8aa6-e7ec65c58db9
 - down: 10000
   name: 656,719|🇰🇷 KR-HY2
   password: 2e57a528-9d95-471c-a440-ddcc376a6329
@@ -2721,84 +2692,44 @@ proxies:
   uuid: 514c13a1-2c3f-49d4-9899-8a6885579ef3
 - alterId: 0
   cipher: auto
-  name: '719|🇰🇷 韩国 | KOR 10 #1'
+  name: '719|🇰🇷 韩国 | KOR 5 #1'
   port: 45076
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 5a84a45f-5811-4e09-af0e-c015736a95ee
+  uuid: 4a5b77fc-48e7-4598-bb14-e6632461c5e0
 - alterId: 0
   cipher: auto
-  name: '719|🇰🇷 韩国 | KOR 11 #1'
+  name: '719|🇰🇷 韩国 | KOR 6 #1'
   port: 45075
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: d0c4defd-fb27-4a16-a08e-59e3e0b94722
+  uuid: 4a5b77fc-48e7-4598-bb14-e6632461c5e0
 - alterId: 0
   cipher: auto
-  name: '719|🇰🇷 韩国 | KOR 12 #1'
-  port: 45075
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 297d5d2d-ba3d-436d-9bb6-023efa49c083
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 | KOR 13 #1'
-  port: 45075
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5a84a45f-5811-4e09-af0e-c015736a95ee
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 | KOR 14 #1'
+  name: '719|🇰🇷 韩国 | KOR 7 #1'
   port: 45076
   server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d0c4defd-fb27-4a16-a08e-59e3e0b94722
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 | KOR 15 #1'
-  port: 45075
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d1eb2f6d-7017-4682-8394-1a29aebcbb7f
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 | KOR 17 #1'
-  port: 45075
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5387d88d-5ebc-42f0-8aa6-e7ec65c58db9
-- alterId: 0
-  cipher: auto
-  name: '719|🇰🇷 韩国 | KOR 18 #1'
-  port: 45075
-  server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: ee952ac3-adce-428a-9948-00722abd8a61
+- alterId: 0
+  cipher: auto
+  name: '719|🇰🇷 韩国 | KOR 8 #1'
+  port: 45076
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5387d88d-5ebc-42f0-8aa6-e7ec65c58db9
 - name: 764|韩国01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10836
