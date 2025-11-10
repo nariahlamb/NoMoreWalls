@@ -102,13 +102,15 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|RU-45.159.250.190-0316
+  country: 🇷🇺 RU
+  name: 473,587|🇺 RU_154
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇷🇺RU-185.126.239.250-0328
+  country: 🇧 GB
+  name: 473,587| GB_58
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -149,7 +151,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,618,634|yandex-707
+- name: 473,618,634|yandex-3941
   network: ws
   password: vpn
   port: 2025
@@ -165,7 +167,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-1895
+  name: 473,618,627,634|yandex-5129
   network: ws
   port: 50826
   server: 45.67.32.147
@@ -339,12 +341,14 @@ proxies:
     headers:
       Host: YouTube-aweikeji
     path: /
-- name: 473,627|🇷🇺RU-45.87.155.14-5427
+- country: 🇻LV
+  name: 473,587,627|🇷🇺RU-45.87.155.14-5427
   password: 1518f7ec-f606-4a0f-8a62-2455e0a2b62e
   port: 443
   server: ua-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 473,627|🇷🇺RU-45.67.215.119-8514
@@ -416,6 +420,18 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 524,610,634|yandex-3534
+  network: ''
+  port: 2083
+  server: nl-v2ray.freevmess.com
+  servername: nl-v2ray.freevmess.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c3d066bc-4170-4006-a95c-0012367e8f13
+- alterId: 0
+  cipher: auto
   name: 578,618|俄罗斯 067
   network: tcp
   port: 11052
@@ -425,6 +441,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 314185f7-931d-4656-922d-0857e7afd224
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 587|🇷🇺 RU_153
+  password: EacZIMFwmMCR6dWqN5Ah0c
+  port: 1419
+  server: 194.135.46.13
+  type: ss
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -796,26 +819,12 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 638|🇷🇺RU_121
+- name: 638|🇷🇺RU_153
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
   sni: hk-full.privateip.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 638|俄罗斯联邦_110918032
-  network: ws
-  port: '35751'
-  server: 195.133.52.234
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 3786e67a-41eb-4b92-b31e-417e89493b93
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
 - fast-open: false
   name: '656,719|🇷🇺 RU GISL 01 #1'
   password: c579f616-6a8e-4c76-9124-903d8e675a5b
