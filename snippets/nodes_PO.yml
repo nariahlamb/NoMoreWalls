@@ -194,7 +194,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇱PL
-  name: 467,472,587|🇱PL_142
+  name: 467,472,586|🇱PL_146
   password: UTJA57ypk2XKQpnm
   port: 9033
   server: 217.30.10.18
@@ -202,7 +202,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 472,618,627,634|yandex-310
+  name: 472,617,626,633|yandex-123
   network: ws
   port: 443
   server: 146.59.118.249
@@ -217,7 +217,7 @@ proxies:
     headers:
       Host: fapeng.org
     path: linkvws
-- name: 472,627|🇵🇱PL-51.83.186.142-4308
+- name: 472,626|🇵🇱PL-51.83.186.142-4308
   password: 555034c8-6420-45d0-893c-905c02342150
   port: 80
   server: 51.83.186.142
@@ -303,7 +303,7 @@ proxies:
   server: 217.30.10.70
   type: ss
 - cipher: aes-256-cfb
-  name: 472|🇵🇱PL-217.30.10.18-5665
+  name: 472,586|_12
   password: ueLXVkvh4hckhErQ
   port: 9060
   server: 217.30.10.18
@@ -424,7 +424,19 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 608|波兰_021805014 L0
+  country: 🇱PL
+  h2-opts: {}
+  http-opts: {}
+  name: 590|🇵🇱PL_23
+  network: none
+  port: 35105
+  server: 176.223.131.167
+  skip-cert-verify: true
+  type: vmess
+  uuid: c8926576-1bdb-40e1-cac3-b55938369e0e
+- alterId: 0
+  cipher: auto
+  name: 607|波兰_021805014 L0
   network: ws
   port: '80'
   server: 45.144.48.128
@@ -438,7 +450,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: 608|波兰_021805052
+  name: 607|波兰_021805052
   network: ws
   port: '80'
   server: 3h-poland1.09vpn.com
@@ -454,7 +466,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: ''
-  name: 618,627|🇵🇱PL-128.204.223.42-1103
+  name: 617,626|🇵🇱PL-128.204.223.42-1103
   network: grpc
   port: 27377
   server: 128.204.223.42
@@ -467,7 +479,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: ''
-  name: 618,627|🇵🇱PL-128.204.223.42-1212
+  name: 617,626|🇵🇱PL-128.204.223.42-1212
   network: grpc
   port: 29532
   server: 128.204.223.42
@@ -478,7 +490,7 @@ proxies:
   uuid: 70073f5e-9182-4f17-8758-5f7b16b241b4
 - alterId: 0
   cipher: auto
-  name: 627|🇵🇱PL-146.59.118.250-0240
+  name: 626|🇵🇱PL-146.59.118.250-0240
   network: ws
   port: 443
   server: 146.59.118.250
@@ -491,7 +503,7 @@ proxies:
       Host: lammaland.org
     path: /
 - fast-open: false
-  name: '656,719|🇵🇱 PL Korbank 01 #1'
+  name: '655,718|🇵🇱 PL Korbank 01 #1'
   password: c579f616-6a8e-4c76-9124-903d8e675a5b
   port: 59017
   server: 125.78.88.78
@@ -500,10 +512,33 @@ proxies:
   tfo: false
   type: trojan
 - fast-open: false
-  name: 656,719|🇵🇱  | POL
+  name: 655,718|🇵🇱  | POL
   password: 43e02714-3a58-4fa5-8441-5c8f2cc583b5
   port: 23003
   server: tr.node1link.xyz
   sni: sni.eos-suzhou-4.cmecloud.cn
   tfo: false
   type: trojan
+- name: 655|🇵🇱 波兰 01
+  network: ws
+  password: 49d416e1-4cec-41e1-bff6-3748c466f275
+  port: 8443
+  server: 45.144.48.158
+  sni: joss.dus.biz.id
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joss.dus.biz.id
+    path: '%2FFree-VPN-CF-Geo-Project%2F45.144.48.158%3D8443'
+- name: '718|🇵🇱 波兰 01 #1'
+  network: ws
+  password: 49d416e1-4cec-41e1-bff6-3748c466f275
+  port: 8443
+  server: 45.144.48.158
+  sni: joss.dus.biz.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.dus.biz.id
+    path: /Free-VPN-CF-Geo-Project/45.144.48.158=8443
