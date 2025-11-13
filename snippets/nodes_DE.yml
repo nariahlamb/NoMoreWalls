@@ -2003,25 +2003,31 @@ proxies:
     headers:
       Host: ''
     path: linkvws
-- name: 472,626,637|🇩🇪DE_44
+- country: 🇪DE
+  name: 472,586,626,637|🇩🇪DE_44
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: de2-full.privateip.net
   type: trojan
-- name: 472,626|🇩🇪DE-51.195.101.222-5382
+  udp: true
+- country: 🇷FR
+  name: 472,586,626|🇩🇪DE-51.195.101.222-5382
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 472,626|🇩🇪DE-159.89.16.218-5480
+  udp: true
+- country: 🇸US
+  name: 472,586,626|🇩🇪DE-159.89.16.218-5480
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 472|🇪DE-3.79.57.79-5636
   password: amazonskr05
@@ -2968,6 +2974,40 @@ proxies:
   type: vmess
   udp: true
   uuid: f3d4167e-b15e-4e46-82e9-9286ef93fda7
+- alterId: 0
+  cipher: auto
+  country: 🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 586| DE_45
+  network: ws
+  port: 443
+  server: 141.94.155.224
+  servername: fapeng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: fapeng.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 586|🇪 DE_46
+  network: ws
+  port: 443
+  server: 141.95.126.134
+  servername: jamekk.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: jamekk.org
+  ws-path: linkvws
 - name: '602|德国_Frankfurt am Main #3'
   network: ws
   password: NISHIKUITAN222
@@ -3443,6 +3483,32 @@ proxies:
   type: vmess
   udp: true
   uuid: 553d088c-3dc6-4cd3-a6ab-b9abb624905d
+- grpc-opts:
+    grpc-service-name: fkvip102
+  name: 628,633|yandex-5190
+  network: grpc
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  port: 11789
+  server: fkvip102.qlgq.fun
+  skip-cert-verify: true
+  sni: fkvip102.qlgq.fun
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 628,633|yandex-5273
+  network: ws
+  port: 20011
+  server: htsub-2024.899696998.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: eb9b6d07-8644-437f-a1c5-dbed378d38ed
+  ws-opts:
+    headers:
+      Host: yyyt-de-2024.mofaxw.top
+    path: /2024
 - cipher: chacha20-ietf-poly1305
   name: 636|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -3496,11 +3562,13 @@ proxies:
   uuid: 52c6cfaf-34fb-4e91-9a8d-d4391ab3d8c4
 - alterId: 0
   cipher: auto
-  name: 655,853|【机场推荐：https://a0a.xyz/】38
+  disable-sni: true
+  name: 655,718,853|【机场推荐：https://a0a.xyz/】38
   network: ws
   port: '80'
   server: 141.101.121.26
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
@@ -3511,19 +3579,46 @@ proxies:
       TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
 - alterId: 0
   cipher: auto
-  name: 655|🇩🇪 德国-V6|01 0.5x-1B
+  name: 655|🇩🇪 德国-V6|02 0.5x-1C
   network: tcp
-  port: '22305'
-  server: netcp1.616626.xyz
+  port: '22306'
+  server: netcp2.616626.xyz
   tls: false
   type: vmess
-  uuid: a9e56671-6a59-4de2-b1d2-f4758cd810d7
+  uuid: 45eeea31-a83b-4aeb-adac-a7fdd4c635ac
 - alterId: 0
   cipher: auto
   name: 655|🇩🇪 德国-V6|03 0.5x-1A
   network: tcp
   port: '22307'
   server: netcp3.616626.xyz
+  tls: false
+  type: vmess
+  uuid: a9e56671-6a59-4de2-b1d2-f4758cd810d7
+- alterId: 0
+  cipher: auto
+  name: 655|🇩🇪 德国-V6|03 0.5x-1C
+  network: tcp
+  port: '22307'
+  server: netcp3.616626.xyz
+  tls: false
+  type: vmess
+  uuid: 45eeea31-a83b-4aeb-adac-a7fdd4c635ac
+- alterId: 0
+  cipher: auto
+  name: 655|🇩🇪 德国-V6|01 0.5x-1C
+  network: tcp
+  port: '22305'
+  server: netcp1.616626.xyz
+  tls: false
+  type: vmess
+  uuid: 45eeea31-a83b-4aeb-adac-a7fdd4c635ac
+- alterId: 0
+  cipher: auto
+  name: 655|🇩🇪 德国-V6|01 0.5x-1B
+  network: tcp
+  port: '22305'
+  server: netcp1.616626.xyz
   tls: false
   type: vmess
   uuid: f4938b6f-df6b-469e-a754-ec677e270f5a
@@ -3535,7 +3630,7 @@ proxies:
   server: netcp2.616626.xyz
   tls: false
   type: vmess
-  uuid: a9e56671-6a59-4de2-b1d2-f4758cd810d7
+  uuid: f4938b6f-df6b-469e-a754-ec677e270f5a
 - alterId: 0
   cipher: auto
   name: 655|🇩🇪 德国-V6|01 0.5x-1A
@@ -3544,7 +3639,7 @@ proxies:
   server: netcp1.616626.xyz
   tls: false
   type: vmess
-  uuid: f4938b6f-df6b-469e-a754-ec677e270f5a
+  uuid: a9e56671-6a59-4de2-b1d2-f4758cd810d7
 - alterId: 0
   cipher: auto
   name: 655|🇩🇪 德国-V6|02 0.5x-1A
@@ -3553,7 +3648,7 @@ proxies:
   server: netcp2.616626.xyz
   tls: false
   type: vmess
-  uuid: f4938b6f-df6b-469e-a754-ec677e270f5a
+  uuid: a9e56671-6a59-4de2-b1d2-f4758cd810d7
 - alterId: 0
   cipher: auto
   name: 655|🇩🇪 德国-V6|03 0.5x-1B
@@ -3562,22 +3657,15 @@ proxies:
   server: netcp3.616626.xyz
   tls: false
   type: vmess
-  uuid: a9e56671-6a59-4de2-b1d2-f4758cd810d7
-- name: 655|🇩🇪 德国 | DEU
+  uuid: f4938b6f-df6b-469e-a754-ec677e270f5a
+- fast-open: false
+  name: '655,718|🇩🇪 德国 | DEU #1'
   password: 43e02714-3a58-4fa5-8441-5c8f2cc583b5
   port: 23001
   server: tr.node1link.xyz
   sni: 75.yuanul.com
+  tfo: false
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 655|🇩🇪 德国 | DEU 4
-  network: tcp
-  port: '2021'
-  server: 81.12.33.182
-  tls: false
-  type: vmess
-  uuid: 52c6cfaf-34fb-4e91-9a8d-d4391ab3d8c4
 - alterId: 0
   cipher: auto
   name: 686|A05-德国 倍率:0.01 dh
@@ -3634,6 +3722,78 @@ proxies:
     headers:
       host: v2dh1942-pqivoc.333789.xyz
     path: /hls/cctv5phd.m3u8
+- alterId: 0
+  cipher: auto
+  name: 718|🇩🇪 国-V6|02 0.5x-1C
+  port: 22306
+  server: netcp2.616626.xyz
+  tls: false
+  type: vmess
+  uuid: 45eeea31-a83b-4aeb-adac-a7fdd4c635ac
+- alterId: 0
+  cipher: auto
+  name: '718|🇩🇪 德国-V6|03 0.5x-1A #1'
+  port: 22307
+  server: netcp3.616626.xyz
+  tls: false
+  type: vmess
+  uuid: a9e56671-6a59-4de2-b1d2-f4758cd810d7
+- alterId: 0
+  cipher: auto
+  name: '718|🇩🇪 德国-V6|03 0.5x-1C #1'
+  port: 22307
+  server: netcp3.616626.xyz
+  tls: false
+  type: vmess
+  uuid: 45eeea31-a83b-4aeb-adac-a7fdd4c635ac
+- alterId: 0
+  cipher: auto
+  name: '718|🇩🇪 德国-V6|01 0.5x-1C #1'
+  port: 22305
+  server: netcp1.616626.xyz
+  tls: false
+  type: vmess
+  uuid: 45eeea31-a83b-4aeb-adac-a7fdd4c635ac
+- alterId: 0
+  cipher: auto
+  name: '718|🇩🇪 德国-V6|01 0.5x-1B #1'
+  port: 22305
+  server: netcp1.616626.xyz
+  tls: false
+  type: vmess
+  uuid: f4938b6f-df6b-469e-a754-ec677e270f5a
+- alterId: 0
+  cipher: auto
+  name: '718|🇩🇪 德国-V6|02 0.5x-1B #1'
+  port: 22306
+  server: netcp2.616626.xyz
+  tls: false
+  type: vmess
+  uuid: f4938b6f-df6b-469e-a754-ec677e270f5a
+- alterId: 0
+  cipher: auto
+  name: '718|🇩🇪 德国-V6|01 0.5x-1A #1'
+  port: 22305
+  server: netcp1.616626.xyz
+  tls: false
+  type: vmess
+  uuid: a9e56671-6a59-4de2-b1d2-f4758cd810d7
+- alterId: 0
+  cipher: auto
+  name: '718|🇩🇪 德国-V6|02 0.5x-1A #1'
+  port: 22306
+  server: netcp2.616626.xyz
+  tls: false
+  type: vmess
+  uuid: a9e56671-6a59-4de2-b1d2-f4758cd810d7
+- alterId: 0
+  cipher: auto
+  name: '718|🇩🇪 德国-V6|03 0.5x-1B #1'
+  port: 22307
+  server: netcp3.616626.xyz
+  tls: false
+  type: vmess
+  uuid: f4938b6f-df6b-469e-a754-ec677e270f5a
 - cipher: chacha20-ietf-poly1305
   name: 721|🇩🇪Germany-德国1
   password: 0305e0ec-ec7e-4770-9aa3-81e3427f91b6

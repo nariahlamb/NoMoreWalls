@@ -202,7 +202,8 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 467,472|🇱PL-217.30.10.18-5430
+  country: 🇱PL
+  name: 467,472,586|🇱PL_146
   password: UTJA57ypk2XKQpnm
   port: 9033
   server: 217.30.10.18
@@ -542,11 +543,13 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.site
     path: '%2F%3Fed%3D2560'
-- name: 655|🇵🇱 波兰 | POL
+- fast-open: false
+  name: 655,718|🇵🇱  | POL
   password: 43e02714-3a58-4fa5-8441-5c8f2cc583b5
   port: 23003
   server: tr.node1link.xyz
   sni: sni.eos-suzhou-4.cmecloud.cn
+  tfo: false
   type: trojan
 - name: 655|🇵🇱 |PL|@wxgqlfx|48
   network: ws
@@ -570,3 +573,59 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.site
     path: '%2F%3Fed%3D2560'
+- name: 655|🇵🇱 波兰 | POL 2
+  network: ws
+  password: 49d416e1-4cec-41e1-bff6-3748c466f275
+  port: 8443
+  server: 45.144.48.158
+  skip-cert-verify: true
+  sni: joss.dus.biz.id
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joss.dus.biz.id
+    path: '%2F%252FFree-VPN-CF-Geo-Project%252F45.144.48.158%253D8443'
+- client-fingerprint: randomized
+  fast-open: false
+  name: '718|🇵🇱 |PL|@wxgqlfx|48 #1'
+  network: ws
+  password: 49d416e1-4cec-41e1-bff6-3748c466f275
+  port: 8443
+  server: 45.144.48.158
+  skip-cert-verify: true
+  sni: joss.dus.biz.id
+  tfo: false
+  type: trojan
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/45.144.48.158=8443
+- encryption: none
+  fast-open: false
+  name: '718|🇵🇱 |PL|@wxgqlfx|58 #1'
+  network: ws
+  port: 443
+  server: 91.149.253.249
+  servername: kuangbao.xiejiang.site
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 470df3e9-ff22-485b-94b3-7ad10ef5372a
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kuangbao.xiejiang.site
+    max-early-data: 2560
+    path: /
+- name: 718|🇵🇱 兰 | POL 2
+  network: ws
+  password: 49d416e1-4cec-41e1-bff6-3748c466f275
+  port: 8443
+  server: 45.144.48.158
+  skip-cert-verify: true
+  sni: joss.dus.biz.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.dus.biz.id
+    path: /%2FFree-VPN-CF-Geo-Project%2F45.144.48.158%3D8443

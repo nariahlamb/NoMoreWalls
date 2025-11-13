@@ -1,5 +1,5 @@
 proxies:
-- name: 295,613,614,633|yandex-575
+- name: 295,613,614,633,718|🇷🇺  01
   network: ws
   password: 14d6efcf-b0d3-4054-9d4e-e1347e3ceaa2
   port: 2053
@@ -14,7 +14,7 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/213.159.208.88=2053
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400,577,616,620,632,633,637,655|🇷🇺 俄罗斯 | RUS
+  name: '400,577,616,620,632,633,637,655,718|🇷🇺 俄罗斯 | RUS #1'
   network: tcp
   port: 10012
   reality-opts:
@@ -290,7 +290,7 @@ proxies:
     headers:
       Host: wellyoumust.goahead.rf.gd
     path: /multipath
-- name: 472,626,655|🇷🇺 俄罗斯 | RUS 5
+- name: '472,626,655,718|🇷🇺 俄罗斯 | RUS 5 #1'
   password: 14d6efcf-b0d3-4054-9d4e-e1347e3ceaa2
   port: 2053
   server: 213.159.208.88
@@ -458,13 +458,15 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇺RU-185.126.239.250-5375
+  country: 🇧 GB
+  name: 472,586|🇧 GB_61
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇺RU-45.159.250.190-5432
+  country: 🇷🇺 RU
+  name: 472,586|🇺 RU_148
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
@@ -730,6 +732,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 314185f7-931d-4656-922d-0857e7afd224
+- alterId: 0
+  cipher: auto
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 586,637|美国_111304024
+  network: tcp
+  port: '45245'
+  server: ye.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - name: 602|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -2525,8 +2542,10 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.site
     path: '%2F%3Fed%3D2560'
-- flow: xtls-rprx-vision
-  name: 655|🇷🇺 |RU|@wxgqlfx|59
+- encryption: none
+  fast-open: false
+  flow: xtls-rprx-vision
+  name: '655,718|🇷🇺 |RU|@wxgqlfx|59 #1'
   network: tcp
   port: 10004
   reality-opts:
@@ -2534,7 +2553,9 @@ proxies:
     short-id: abc82912
   server: cdn.cloudconvert.top
   servername: cdn.cloudconvert.top
-  tls: false
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vless
   uuid: 258a5f07-d07e-4de4-90b6-69a0ca34bab7
 - name: 655|🇷🇺 |RU|@wxgqlfx|55
@@ -2549,8 +2570,10 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.site
     path: '%2F%3Fed%3D2560'
-- flow: xtls-rprx-vision
-  name: 655|🇷🇺 |RU|@wxgqlfx|20
+- encryption: none
+  fast-open: false
+  flow: xtls-rprx-vision
+  name: '655,718|🇷🇺 |RU|@wxgqlfx|20 #1'
   network: tcp
   port: 10007
   reality-opts:
@@ -2558,11 +2581,15 @@ proxies:
     short-id: abc82912
   server: cdn.cloudconvert.top
   servername: cdn.cloudconvert.top
-  tls: false
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vless
   uuid: 258a5f07-d07e-4de4-90b6-69a0ca34bab7
-- flow: xtls-rprx-vision
-  name: 655|🇷🇺 |RU|@wxgqlfx|41
+- encryption: none
+  fast-open: false
+  flow: xtls-rprx-vision
+  name: '655,718|🇷🇺 |RU|@wxgqlfx|41 #1'
   network: tcp
   port: 10002
   reality-opts:
@@ -2570,7 +2597,9 @@ proxies:
     short-id: abc82912
   server: cdn.cloudconvert.top
   servername: cdn.cloudconvert.top
-  tls: false
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vless
   uuid: 258a5f07-d07e-4de4-90b6-69a0ca34bab7
 - name: 655|🇷🇺 俄罗斯 01
@@ -2584,6 +2613,60 @@ proxies:
     headers:
       Host: joss.dus.biz.id
     path: '%2FFree-VPN-CF-Geo-Project%2F213.159.208.88%3D2053'
+- encryption: none
+  fast-open: false
+  name: '718|🇷🇺 |RU|@wxgqlfx|55 #1'
+  network: ws
+  port: 2053
+  server: 85.193.91.193
+  servername: kuangbao.xiejiang.site
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 470df3e9-ff22-485b-94b3-7ad10ef5372a
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kuangbao.xiejiang.site
+    max-early-data: 2560
+    path: /
+- encryption: none
+  fast-open: false
+  name: '718|🇷🇺 |RU|@wxgqlfx|49 #1'
+  network: ws
+  port: 2053
+  server: 80.90.187.190
+  servername: kuangbao.xiejiang.site
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 470df3e9-ff22-485b-94b3-7ad10ef5372a
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kuangbao.xiejiang.site
+    max-early-data: 2560
+    path: /
+- encryption: none
+  fast-open: false
+  name: '718|🇷🇺 |RU|@wxgqlfx|52 #1'
+  network: ws
+  port: 8443
+  server: 85.193.91.193
+  servername: kuangbao.xiejiang.site
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 470df3e9-ff22-485b-94b3-7ad10ef5372a
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kuangbao.xiejiang.site
+    max-early-data: 2560
+    path: /
 - name: 763|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
