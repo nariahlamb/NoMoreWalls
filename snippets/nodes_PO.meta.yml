@@ -203,21 +203,21 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇱PL
-  name: 467,472,586|🇱PL_136
+  name: 467,472,586|🇱PL_135
   password: UTJA57ypk2XKQpnm
   port: 9033
   server: 217.30.10.18
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 472,586|_11
+  name: 472,586|_10
   password: GA9KzeEgvfxNrgmM
   port: 9019
   server: 217.30.10.18
   type: ss
 - alterId: 0
   cipher: auto
-  name: 472,617,626,633|yandex-972
+  name: 472,617,626,633|yandex-3428
   network: ws
   port: 443
   server: 146.59.118.249
@@ -294,7 +294,8 @@ proxies:
   server: 217.30.10.70
   type: ss
 - cipher: aes-256-cfb
-  name: 472|🇵🇱PL-217.30.10.70-5587
+  country: 🇱PL
+  name: 472,590|🇵PL_18
   password: FG5ddLsMPbV5CutE
   port: 9050
   server: 217.30.10.70
@@ -468,7 +469,7 @@ proxies:
       Host: 3h-poland1.09vpn.com
     path: /vmess/
 - client-fingerprint: chrome
-  name: 617,633|yandex-1028
+  name: 617,633|yandex-3484
   network: ws
   port: 2053
   server: 31.133.0.55
@@ -496,7 +497,7 @@ proxies:
   tls: true
   type: vmess
   uuid: bd996dac-3b1c-42a9-b8a1-66b87d0b72ae
-- name: 617,633|yandex-2144
+- name: 617,633|yandex-4600
   network: tcp
   port: 1002
   server: 185.254.220.229
@@ -679,7 +680,7 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.site
     path: '%2F%3Fed%3D2560'
-- name: 655,854|【机场推荐：https://a0a.xyz/】40
+- name: 655,853|【机场推荐：https://a0a.xyz/】40
   network: ws
   password: 49d416e1-4cec-41e1-bff6-3748c466f275
   port: 8443
@@ -703,6 +704,18 @@ proxies:
     headers:
       Host: joss.dus.biz.id
     path: '%2FFree-VPN-CF-Geo-Project%2F45.144.48.55%3D2053'
+- name: 655|🇵🇱 波兰 | POL 2
+  network: ws
+  password: 55d19115-ec40-407b-a674-74e6a948347a
+  port: 2053
+  server: 45.144.48.55
+  skip-cert-verify: true
+  sni: joss.dus.biz.id
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joss.dus.biz.id
+    path: '%2F%252FFree-VPN-CF-Geo-Project%252F45.144.48.55%253D2053'
 - client-fingerprint: randomized
   fast-open: false
   name: '718|🇵🇱 |PL|@wxgqlfx|48 #1'
@@ -747,3 +760,16 @@ proxies:
     headers:
       Host: joss.dus.biz.id
     path: /Free-VPN-CF-Geo-Project/45.144.48.55=2053
+- name: 718|🇵🇱 兰 | POL 2
+  network: ws
+  password: 55d19115-ec40-407b-a674-74e6a948347a
+  port: 2053
+  server: 45.144.48.55
+  skip-cert-verify: true
+  sni: joss.dus.biz.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.dus.biz.id
+    path: /%2FFree-VPN-CF-Geo-Project%2F45.144.48.55%3D2053
