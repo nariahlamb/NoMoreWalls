@@ -70,7 +70,7 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: firefox
-  name: '399,578,617,638|14|DE_speednode_0002 #1'
+  name: '399,638|14|DE_speednode_0002 #1'
   port: 9107
   server: 195.254.165.152
   servername: refersion.com
@@ -79,7 +79,7 @@ proxies:
   type: vless
   uuid: 774727ed-1e56-41bd-b55f-28549e21bcc8
 - client-fingerprint: chrome
-  name: '399,578,617,638|14|DE_speednode_0004 #1'
+  name: '399,638|14|DE_speednode_0004 #1'
   port: 29973
   server: 185.161.251.24
   servername: yandex.ru
@@ -2225,23 +2225,19 @@ proxies:
     headers:
       Host: ''
     path: linkvws
-- country: 🇪DE
-  name: 471,587,627,638|🇩🇪DE_46
+- name: 471,627,638|🇩🇪DE_46
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: de2-full.privateip.net
   type: trojan
-  udp: true
-- country: 🇷FR
-  name: 471,587,627|🇩🇪DE-51.195.101.222-5508
+- name: 471,627|🇩🇪DE-51.195.101.222-5508
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: aes-256-gcm
   name: 471|DE-193.108.117.75-6083
   password: PCnnH6SQSnfoS27
@@ -3400,40 +3396,6 @@ proxies:
   tls: false
   type: vless
   uuid: d8adf0be-f928-4cd6-90f0-1b8d70f9e414
-- alterId: 0
-  cipher: auto
-  country: 🇪 DE
-  h2-opts: {}
-  http-opts: {}
-  name: 587|🇪 DE_41
-  network: ws
-  port: 443
-  server: 141.95.126.134
-  servername: jamekk.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: jamekk.org
-  ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇩🇪 DE
-  h2-opts: {}
-  http-opts: {}
-  name: 587|🇪 DE_42
-  network: ws
-  port: 443
-  server: 141.94.155.224
-  servername: fapeng.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: fapeng.org
-  ws-path: linkvws
 - name: 603|德国_Frankfurt am Main
   network: ws
   port: 443
@@ -4987,7 +4949,7 @@ proxies:
   tls: false
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
-- name: '638,656,719|🇸🇰 斯洛伐克 | SVK 2 #1'
+- name: '638,656,719|🇺🇸 ⚡美国 15 #1'
   network: tcp
   port: 7079
   server: sk3.node.ibst.me
@@ -4995,7 +4957,6 @@ proxies:
   tfo: false
   tls: false
   type: vless
-  udp: true
   uuid: a54c3b5a-5f44-4411-8c1e-7bf52a567d7f
 - name: 638|🇩🇪 德国_3
   network: ws
@@ -5162,7 +5123,7 @@ proxies:
       TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '656,719|🇩🇪 DE_1 | ⬇️ 7.5MB/s #1'
+  name: '656,719|🇩🇪 德国 08 #1'
   network: tcp
   port: 17715
   reality-opts:
@@ -5335,6 +5296,22 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.site
     path: '%2F%3Fed%3D2560'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '656,719|🇩🇪 德国 09 #1'
+  network: tcp
+  port: 42318
+  reality-opts:
+    public-key: SA_PJpEORUm3GW0C5tgF-RVgawYYa1Zc5RH4Ay9xnls
+    short-id: ceb34988
+  server: windrunner.fonixapp.org
+  servername: ilovepdf.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d91f1c5d-dfa0-4300-8f0e-e6750e5a2ff6
 - alpn:
   - h3
   client-fingerprint: chrome
@@ -5342,7 +5319,7 @@ proxies:
     host:
     - cho.chonon.sbs
     path: /gdsthjjjvfxsstyyed=443
-  name: 656,719|🇩🇪 ⚡国
+  name: '656,719|🇩🇪 ⚡德国 #1'
   network: h2
   port: 443
   server: wangcai223.cloudflare.182682.xyz
@@ -5354,32 +5331,54 @@ proxies:
   uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
   ws-opts:
     path: '%2Fgdsthjjjvfxsstyy%D8%9Fed%3D443'
-- client-fingerprint: random
+- name: 656|🇩🇪 ⚡德国 2
+  network: ws
+  port: 2082
+  server: www.speedtest.net
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: a6f5aa72-d000-4a05-b175-f18a47f3605a
+  ws-opts:
+    headers:
+      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+    path: '%2F%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn%3Fed%3D2082'
+- grpc-opts:
+    grpc-service-name: '%2F'
+  name: 656|🇫🇷 ⚡法国 3
+  network: grpc
+  port: 8880
+  server: 94.131.110.115
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  client-fingerprint: chrome
   name: 656|🇩🇪 德国 02
   network: ws
   port: 443
-  server: freev2.cloudflare.182682.xyz
-  servername: do-lon1.xhs152.shop
+  server: 172.66.213.38
+  servername: pls.v50m.eu.org
   tls: true
   type: vless
-  uuid: 9813b194-70c9-44df-96c6-25e848b74847
+  uuid: 8685c59b-a192-49e7-aedc-0019c576d766
   ws-opts:
     headers:
-      Host: do-lon1.xhs152.shop
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: 656|🇩🇪 德国 01
+      Host: pls.v50m.eu.org
+    path: '%2F%3Fed%3D2560'
+- name: 656|🇩🇪 德国 06
   network: ws
-  port: 443
-  server: freeyx.cloudflare88.eu.org
-  servername: do-fra1.xhs152.shop
-  tls: true
+  port: 80
+  server: 51.195.92.49
+  tls: false
   type: vless
-  uuid: 9813b194-70c9-44df-96c6-25e848b74847
+  uuid: 2a2d95c5-56f0-455b-a80a-4b920842d886
   ws-opts:
     headers:
-      Host: do-fra1.xhs152.shop
-    path: '%2Fannouncement%3Fed%3D2048'
+      Host: lunavow5d444ef.global.ssl.fastly.net
+    path: '%2F'
 - name: '656,719|🇩🇪 [DE]德国-Frankfurt01 #1'
   password: 4a3d62f2-eaf3-44a7-91dc-cf1259779f48
   port: 11006
@@ -5394,34 +5393,34 @@ proxies:
   sni: de02t.goodyun.buzz
   type: trojan
   udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '656,719|🇩🇪 德国 | DEU 4 #1'
-  network: tcp
-  port: 42318
-  reality-opts:
-    public-key: SA_PJpEORUm3GW0C5tgF-RVgawYYa1Zc5RH4Ay9xnls
-    short-id: ceb34988
-  server: windrunner.fonixapp.org
-  servername: ilovepdf.com
+- client-fingerprint: random
+  name: 656|🇩🇪 德国 | DEU 4
+  network: ws
+  port: 443
+  server: freeyx.cloudflare88.eu.org
+  servername: do-fra1.xhs152.shop
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
-  udp: true
-  uuid: d91f1c5d-dfa0-4300-8f0e-e6750e5a2ff6
-- name: 656|🇩🇪 德国 | DEU 3
-  network: ws
-  port: 2082
-  server: www.speedtest.net
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: a6f5aa72-d000-4a05-b175-f18a47f3605a
+  uuid: 9813b194-70c9-44df-96c6-25e848b74847
   ws-opts:
     headers:
-      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
-    path: '%2F%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn%3Fed%3D2082'
+      Host: do-fra1.xhs152.shop
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: 656|🇩🇪 德国 | DEU 3
+  network: ws
+  port: 443
+  server: freev2.cloudflare.182682.xyz
+  servername: do-lon1.xhs152.shop
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 9813b194-70c9-44df-96c6-25e848b74847
+  ws-opts:
+    headers:
+      Host: do-lon1.xhs152.shop
+    path: '%2Fannouncement%3Fed%3D2048'
 - alterId: 0
   cipher: auto
   name: 687|A05-德国 倍率:0.01 dh
@@ -5641,28 +5640,85 @@ proxies:
       Host: kuangbao.xiejiang.site
     max-early-data: 2560
     path: /
-- client-fingerprint: random
-  name: '719|🇩🇪 德国 02 #1'
+- name: '719|🇩🇪 ⚡德国 2 #1'
   network: ws
-  port: 443
-  server: freev2.cloudflare.182682.xyz
-  servername: do-lon1.xhs152.shop
-  tls: true
+  port: 2082
+  server: www.speedtest.net
+  skip-cert-verify: true
+  tfo: false
+  tls: false
   type: vless
-  udp: true
-  uuid: 9813b194-70c9-44df-96c6-25e848b74847
+  uuid: a6f5aa72-d000-4a05-b175-f18a47f3605a
   ws-opts:
     early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: do-lon1.xhs152.shop
-    max-early-data: 2048
-    path: /announcement
+      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+    max-early-data: 2082
+    path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn
+- grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /
+  name: '719|🇫🇷 ⚡法国 3 #1'
+  network: grpc
+  port: 8880
+  server: 94.131.110.115
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  client-fingerprint: chrome
+  name: '719|🇩🇪 德国 02 #1'
+  network: ws
+  port: 443
+  server: 172.66.213.38
+  servername: pls.v50m.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8685c59b-a192-49e7-aedc-0019c576d766
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: pls.v50m.eu.org
+    max-early-data: 2560
+    path: /
+- name: '719|🇩🇪 德国 06 #1'
+  network: ws
+  port: 80
+  server: 51.195.92.49
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2a2d95c5-56f0-455b-a80a-4b920842d886
+  ws-opts:
+    headers:
+      Host: lunavow5d444ef.global.ssl.fastly.net
+    path: /
+- alpn:
+  - h3
+  congestion-controller: bbr
+  disable-sni: false
+  name: 719|🇩🇪 德国 13
+  password: 5b7124d0-7092-466c-b9fa-c13be64f0cb0
+  port: 15081
+  reduce-rtt: false
+  request-timeout: 0
+  server: detuic.yydzx.xyz
+  sni: detuic.yydzx.xyz
+  type: tuic
+  uuid: 5b7124d0-7092-466c-b9fa-c13be64f0cb0
+  version: 5
 - client-fingerprint: random
-  name: '719|🇩🇪 德国 01 #1'
+  name: '719|🇩🇪 德国 | DEU 4 #1'
   network: ws
   port: 443
   server: freeyx.cloudflare88.eu.org
   servername: do-fra1.xhs152.shop
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   udp: true
@@ -5673,22 +5729,24 @@ proxies:
       Host: do-fra1.xhs152.shop
     max-early-data: 2048
     path: /announcement
-- name: '719|🇩🇪 德国 | DEU 3 #1'
+- client-fingerprint: random
+  name: '719|🇩🇪 德国 | DEU 3 #1'
   network: ws
-  port: 2082
-  server: www.speedtest.net
+  port: 443
+  server: freev2.cloudflare.182682.xyz
+  servername: do-lon1.xhs152.shop
   skip-cert-verify: true
   tfo: false
-  tls: false
+  tls: true
   type: vless
   udp: true
-  uuid: a6f5aa72-d000-4a05-b175-f18a47f3605a
+  uuid: 9813b194-70c9-44df-96c6-25e848b74847
   ws-opts:
     early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
-    max-early-data: 2082
-    path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn
+      Host: do-lon1.xhs152.shop
+    max-early-data: 2048
+    path: /announcement
 - cipher: chacha20-ietf-poly1305
   name: 722|🇩🇪Germany-德国1
   password: 0305e0ec-ec7e-4770-9aa3-81e3427f91b6
@@ -5721,7 +5779,7 @@ proxies:
   udp: true
 - name: 791|德国1-HY2协议
   password: ae845cbd-08fb-4346-929a-e28a6f3960a8
-  port: 26472
+  port: 23064
   ports: 22000-27000
   server: de1.shiyuandian.shop
   type: hysteria2
