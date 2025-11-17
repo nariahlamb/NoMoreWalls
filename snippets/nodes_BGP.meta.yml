@@ -1,7 +1,9 @@
 proxies:
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 656|🇦🇺 悉尼大陆优化BGP线路
+  name: 656,719|🇦🇺 优化BGP
   network: tcp
   port: 1443
   reality-opts:
@@ -9,6 +11,8 @@ proxies:
     short-id: dde50f55d81116
   server: 192.9.162.122
   servername: swdist.apple.com
-  tls: false
+  skip-cert-verify: false
+  tls: true
   type: vless
+  udp: true
   uuid: 7a169e43-ff85-4572-9843-ba7207d07319

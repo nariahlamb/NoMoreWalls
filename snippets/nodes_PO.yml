@@ -200,7 +200,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 473,587|_10
+  name: 473,587|_12
   password: ueLXVkvh4hckhErQ
   port: 9060
   server: 217.30.10.18
@@ -213,7 +213,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-251
+  name: 473,618,627,634|yandex-3571
   network: ws
   port: 443
   server: 146.59.118.249
@@ -455,7 +455,20 @@ proxies:
     headers:
       Host: joss.dus.biz.id
     path: '%2FFree-VPN-CF-Geo-Project%2F45.144.48.158%3D8443'
-- name: 656|🇵🇱 波兰 | POL
+- name: '719|🇵🇱 PL_1 | ⬇️ 6.2MB/s #1'
+  network: ws
+  password: 49d416e1-4cec-41e1-bff6-3748c466f275
+  port: 8443
+  server: 45.144.48.158
+  skip-cert-verify: true
+  sni: joss.dus.biz.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.dus.biz.id
+    path: /Free-VPN-CF-Geo-Project/45.144.48.158=8443
+- name: '719|🇵🇱 PL_2 | ⬇️ 2.8MB/s #1'
   network: ws
   password: 55d19115-ec40-407b-a674-74e6a948347a
   port: 2053
@@ -463,7 +476,6 @@ proxies:
   skip-cert-verify: true
   sni: joss.dus.biz.id
   type: trojan
+  udp: true
   ws-opts:
-    headers:
-      Host: joss.dus.biz.id
-    path: '%2F%252FFree-VPN-CF-Geo-Project%252F45.144.48.55%253D2053'
+    path: /Free-VPN-CF-Geo-Project/45.144.48.55=2053
