@@ -1,4 +1,13 @@
 proxies:
+- auth: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
+  name: 53|🇵🇱 波兰IPV6-01
+  password: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
+  port: 40148
+  server: bl01.sulink.one
+  skip-cert-verify: true
+  sni: bl01.sulink.one
+  type: hysteria2
+  udp: true
 - cipher: aes-256-gcm
   name: 454,473|🇱PL-51.77.53.200-6217
   password: faBAoD54k87UJG7
@@ -194,7 +203,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇱PL
-  name: 468,473,587|🇱PL_134
+  name: 468,473,587|🇱PL_139
   password: UTJA57ypk2XKQpnm
   port: 9033
   server: 217.30.10.18
@@ -202,9 +211,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇫🇷 法国 015
+  name: 473,618,627,634|yandex-474
   network: ws
-  port: '443'
+  port: 443
   server: 146.59.118.249
   servername: ''
   skip-cert-verify: true
@@ -459,7 +468,7 @@ proxies:
       Host: 3h-poland1.09vpn.com
     path: /vmess/
 - client-fingerprint: chrome
-  name: 618,634|yandex-2973
+  name: 618,634|yandex-530
   network: ws
   port: 2053
   server: 31.133.0.55
@@ -487,7 +496,7 @@ proxies:
   tls: true
   type: vmess
   uuid: bd996dac-3b1c-42a9-b8a1-66b87d0b72ae
-- name: 618,634|yandex-4089
+- name: 618,634|yandex-1646
   network: tcp
   port: 1002
   server: 185.254.220.229
@@ -513,11 +522,12 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
   delay: 666
-  name: 623|波兰 - 华沙 - WorkTitans B.V. - 1
+  name: 623,634|yandex-286
   password: 6Ts2ZDTQAf3hkFoB8AFufDwsGrlF4e2t
   port: 443
   server: 45.15.126.19
   type: ss
+  udp: true
 - name: 627,656|🇵🇱 PL_2 | ⬇️ 2.8MB/s
   network: ws
   password: 55d19115-ec40-407b-a674-74e6a948347a
@@ -556,3 +566,27 @@ proxies:
     headers:
       Host: joss.dus.biz.id
     path: '%2FFree-VPN-CF-Geo-Project%2F45.144.48.158%3D8443'
+- name: '719|🇵🇱 PL_1 | ⬇️ 6.2MB/s #1'
+  network: ws
+  password: 49d416e1-4cec-41e1-bff6-3748c466f275
+  port: 8443
+  server: 45.144.48.158
+  skip-cert-verify: true
+  sni: joss.dus.biz.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.dus.biz.id
+    path: /Free-VPN-CF-Geo-Project/45.144.48.158=8443
+- name: '719|🇵🇱 PL_2 | ⬇️ 2.8MB/s #1'
+  network: ws
+  password: 55d19115-ec40-407b-a674-74e6a948347a
+  port: 2053
+  server: 45.144.48.55
+  skip-cert-verify: true
+  sni: joss.dus.biz.id
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/45.144.48.55=2053
