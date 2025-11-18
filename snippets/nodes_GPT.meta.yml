@@ -1,12 +1,38 @@
 proxies:
 - alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  name: '96,579|NL_1|5.6MB/s|GPT⁺|NF|D+ #1'
+  network: ws
+  port: 2096
+  server: sssssssss.zabc.net
+  servername: sssssssss.zabc.net
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 9ea58ce3-e67a-4733-8518-cef0fc3bd626
+  ws-opts:
+    headers:
+      Host: sssssssss.zabc.net
+    path: /api
+- cipher: chacha20-ietf-poly1305
+  name: '96,579|❓Other_1|6.2MB/s|GPT⁺ #1'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)c47ab06:133288
+    mode: tls
+  port: 2377
+  server: 3ce8ee8.hb.gladns.com
+  type: ss
+- alpn:
   - h3
   auth_str: ae845cbd-08fb-4346-929a-e28a6f3960a8
   disable_mtu_discovery: true
   down: 70
   fast-open: true
   name: 791|1印度-ChatGPT
-  port: 8195
+  port: 8066
   ports: 6000-11000
   protocol: udp
   server: in2.shiyuandian.shop
@@ -20,7 +46,7 @@ proxies:
   down: 70
   fast-open: true
   name: 791|2印度-ChatGPT
-  port: 7190
+  port: 7372
   ports: 6000-11000
   protocol: udp
   server: in3.shiyuandian.shop
@@ -34,7 +60,7 @@ proxies:
   down: 70
   fast-open: true
   name: 791|1悉尼-ChatGPT
-  port: 10369
+  port: 9772
   ports: 6000-11000
   protocol: udp
   server: au.shiyuandian.shop
