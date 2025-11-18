@@ -42,78 +42,18 @@ proxies:
   server: 204.136.10.115
   type: ss
   udp: true
-- name: 473,627|🇨🇭CH-152.67.71.149-2873
+- name: 473,627|🇨🇭CH-152.67.71.149-2879
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: 473|🇨CH-156.146.62.160-4450
+  name: 473|🇨CH-156.146.62.160-4380
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
-- alterId: 1
-  cipher: auto
-  name: 473,627|🇨🇭CH-186.190.215.32-8308
-  network: ws
-  port: 443
-  server: 186.190.215.32
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 186.190.215.32
-    path: linkvws
-- alterId: 1
-  cipher: auto
-  name: 473,627|🇨🇭CH-186.190.215.75-8372
-  network: ws
-  port: 443
-  server: 186.190.215.75
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 186.190.215.75
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 473,627|🇨🇭CH-140.238.212.95-8385
-  network: ws
-  port: 443
-  server: 140.238.212.95
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /
-- alterId: 1
-  cipher: auto
-  name: 473,627|🇨🇭CH-23.166.88.27-8479
-  network: ws
-  port: 443
-  server: 23.166.88.27
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 23.166.88.27
-    path: /
 - client-fingerprint: chrome
   name: 618,634|yandex-2942
   network: ws
@@ -133,15 +73,75 @@ proxies:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
   xudp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 638|🇨🇭_瑞士
+- name: 621,633,638,656|🇨🇭 瑞士 | CHE
+  password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
+  port: 443
+  server: 194.87.18.124
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+- alterId: 1
+  cipher: auto
+  name: 627|🇨🇭CH-186.190.215.32-8356
+  network: ws
+  port: 443
+  server: 186.190.215.32
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.32
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: 627|🇨🇭CH-186.190.215.75-8420
+  network: ws
+  port: 443
+  server: 186.190.215.75
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.75
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 627|🇨🇭CH-140.238.212.95-8433
+  network: ws
+  port: 443
+  server: 140.238.212.95
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 627|🇨🇭CH-23.166.88.27-8527
+  network: ws
+  port: 443
+  server: 23.166.88.27
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.166.88.27
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 656|🇨🇭 瑞士 02
   network: tcp
-  port: 8443
-  reality-opts:
-    public-key: cynncQk7kKzEQaExg-
-  server: ru.aliusvpn.ru
-  servername: yandex.net
+  port: '2026'
+  server: 16fa98c4-73b9-ff8a-097f-7171894609db.connection.rest
   tls: false
-  type: vless
-  uuid: f1f6dd91-edb7-479d-8292-777645621d17
+  type: vmess
+  uuid: f0eed2b8-afac-4ebf-8035-24aaddbe8f20
