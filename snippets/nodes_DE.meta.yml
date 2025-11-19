@@ -50,14 +50,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- name: '294,399,473,627,634,638|14|CH_speednode_0001 #1'
-  password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
-  port: 443
-  server: 194.87.18.124
-  skip-cert-verify: true
-  sni: www.bilibili.com
-  type: trojan
-  udp: true
 - auth: 70197404-7b40-45e4-bb9c-8bc8995012ae
   name: '399,614,615,617,621,633,638|10|DE-telegram-@ISVvpn   : یا ... #1'
   password: 70197404-7b40-45e4-bb9c-8bc8995012ae
@@ -2189,15 +2181,13 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- country: 🇪DE
-  name: 473,587,627,638|🇩🇪DE_44
+- name: 473,627,638|🇩🇪DE_44
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: de2-full.privateip.net
   type: trojan
-  udp: true
 - name: 473,627|🇩🇪DE-51.195.101.222-5373
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
@@ -2206,12 +2196,15 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '473,627|🇩🇪DE-5.231.56.98-5505 #1'
+  country: 🇪DE
+  h2-opts: {}
+  http-opts: {}
+  name: '473,591,627|🇩🇪DE-5.231.56.98-5505 #1'
   network: ws
   port: 3721
   server: 5.231.56.98
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 5f2f0765-f331-4d1e-8560-d2fb533dd6fe
@@ -5209,6 +5202,25 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.site
     path: '%2F%3Fed%3D2560'
+- http-opts:
+    headers:
+      Host:
+      - varzesh3.ir
+    method: GET
+    path:
+    - /
+  name: '656,719|🇩🇪 德国 05 #1'
+  network: http
+  port: 33801
+  server: m41a.vip784.com
+  tls: false
+  type: vless
+  udp: true
+  uuid: 423a02e9-2e50-4609-9ea7-572b64226afe
+  ws-opts:
+    headers:
+      Host: varzesh3.ir
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 687|A05-德国 倍率:0.01 dh
@@ -5374,13 +5386,6 @@ proxies:
       Host: kuangbao.xiejiang.site
     max-early-data: 2560
     path: /
-- cipher: aes-256-cfb
-  name: 719|🇩🇪 国 03
-  password: amazonskr05
-  port: 443
-  server: 63.178.13.35
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 722|🇩🇪Germany-德国1
   password: 0305e0ec-ec7e-4770-9aa3-81e3427f91b6
@@ -5411,12 +5416,6 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: 791|德国1-HY2协议
-  password: ae845cbd-08fb-4346-929a-e28a6f3960a8
-  port: 25086
-  ports: 22000-27000
-  server: de1.shiyuandian.shop
-  type: hysteria2
 - name: '799|德国 #14'
   password: 927f1be9-7e0e-4905-b0d1-1639e20a4049
   port: 22155
