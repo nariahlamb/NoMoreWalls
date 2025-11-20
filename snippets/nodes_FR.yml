@@ -66,20 +66,6 @@ proxies:
   type: vmess
   udp: true
   uuid: adec5f30-5c36-4cf7-b0d2-f33fff2f1d00
-- alterId: 0
-  cipher: auto
-  name: 217|🇫🇷 法国
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - cipher: aes-256-cfb
   name: 454,473|🇳🇱NL-51.15.27.48-8865
   password: f8f7aCzcPKbsF8p3
@@ -177,13 +163,15 @@ proxies:
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-cfb
-  name: 454,473|🇫🇷FR-195.154.169.198-0205
+  name: 454,473,587|_09
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 454,473|FR-195.154.185.174-0201
+  country: 🇷FR
+  name: 454,473,587|🇷FR_54
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
@@ -367,7 +355,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 473,627,638|🇧🇪 BE_32
+  name: '473,627,638|🇧🇪 BE_32 #1'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -411,7 +399,8 @@ proxies:
       Host: pelang.org
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇷FR-51.195.119.47-0283
+  country: 🇷 FR
+  name: 473,587| FR_52
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
@@ -454,9 +443,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇩🇪 德国 001
+  name: 473,618,627,634|yandex-3130
   network: ws
-  port: '443'
+  port: 443
   server: 141.95.126.134
   servername: jamekk.org
   skip-cert-verify: true
@@ -471,9 +460,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇫🇷 法国 013
+  name: 473,618,627,634|yandex-3150
   network: ws
-  port: '443'
+  port: 443
   server: 91.134.8.100
   servername: ''
   skip-cert-verify: true
@@ -488,9 +477,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇫🇷 法国 014
+  name: 473,618,627,634|yandex-3156
   network: ws
-  port: '443'
+  port: 443
   server: 146.59.70.146
   servername: yichueng.org
   skip-cert-verify: true
@@ -505,9 +494,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,578,618,627,634,723|🇩🇪 德国 009
+  name: 473,578,618,627,634|yandex-3158
   network: ws
-  port: '443'
+  port: 443
   server: 141.94.155.228
   servername: kampong.org
   skip-cert-verify: true
@@ -522,9 +511,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇫🇷 法国 016
+  name: 473,618,627,634|yandex-3159
   network: ws
-  port: '443'
+  port: 443
   server: 91.134.8.102
   servername: serkat.org
   skip-cert-verify: true
@@ -539,9 +528,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇫🇷 法国 017
+  name: 473,618,627,634|yandex-3160
   network: ws
-  port: '443'
+  port: 443
   server: 91.134.8.92
   servername: yichueng.org
   skip-cert-verify: true
@@ -556,9 +545,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇧🇪 比利时 023
+  name: 473,618,627,634|yandex-3185
   network: ws
-  port: '443'
+  port: 443
   server: 57.128.189.253
   servername: kapelleng.com
   skip-cert-verify: true
@@ -573,9 +562,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,578,618,627,634,723|🇧🇪 比利时 025
+  name: 473,578,618,627,634|yandex-3188
   network: ws
-  port: '443'
+  port: 443
   server: 57.128.189.222
   servername: lammaland.org
   skip-cert-verify: true
@@ -590,9 +579,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,578,618,627,634,723|🇧🇪 比利时 028
+  name: 473,578,618,627,634|yandex-3192
   network: ws
-  port: '443'
+  port: 443
   server: 57.128.189.211
   servername: yichueng.org
   skip-cert-verify: true
@@ -607,9 +596,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,578,618,627,634,723|🇧🇪 比利时 030
+  name: 473,578,618,627,634|yandex-3194
   network: ws
-  port: '443'
+  port: 443
   server: 57.128.189.143
   servername: lammaland.org
   skip-cert-verify: true
@@ -624,9 +613,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇩🇪 德国 014
+  name: 473,618,627,634|yandex-3195
   network: ws
-  port: '443'
+  port: 443
   server: 141.94.155.224
   servername: fapeng.org
   skip-cert-verify: true
@@ -641,9 +630,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇫🇷 法国 021
+  name: 473,618,627,634|yandex-3196
   network: ws
-  port: '443'
+  port: 443
   server: 91.134.8.101
   servername: fapeng.org
   skip-cert-verify: true
@@ -658,9 +647,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇫🇷 法国 022
+  name: 473,618,627,634|yandex-3202
   network: ws
-  port: '443'
+  port: 443
   server: 91.134.8.88
   servername: lammaland.org
   skip-cert-verify: true
@@ -675,9 +664,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇧🇪 比利时 043
+  name: 473,618,627,634|yandex-3330
   network: ws
-  port: '443'
+  port: 443
   server: 57.128.189.227
   servername: ''
   skip-cert-verify: true
@@ -692,9 +681,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,578,618,627,634,723|🇫🇷 法国 051
+  name: 473,578,618,627,634|yandex-3332
   network: ws
-  port: '443'
+  port: 443
   server: 146.59.55.50
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: true
@@ -709,7 +698,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,638,723|🇬🇧 英国 006
+  name: 473,618,627,634,638|法国_112004007 L0
   network: ws
   port: '80'
   server: 51.68.191.233
@@ -726,9 +715,9 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇩🇪 德国 063
+  name: 473,618,627,634|yandex-4073
   network: ws
-  port: '8880'
+  port: 8880
   server: 185.16.110.212
   servername: ''
   skip-cert-verify: true
@@ -742,9 +731,9 @@ proxies:
     path: /dabai
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇫🇷 法国 124
+  name: 473,618,627,634|yandex-4511
   network: ws
-  port: '443'
+  port: 443
   server: 51.77.20.137
   servername: ''
   skip-cert-verify: true
@@ -758,9 +747,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇫🇷 法国 131
+  name: 473,618,627,634|yandex-4567
   network: ws
-  port: '443'
+  port: 443
   server: 193.160.130.245
   servername: ''
   skip-cert-verify: true
@@ -774,9 +763,9 @@ proxies:
     path: /linkws
 - alterId: 1
   cipher: auto
-  name: 473,618,627,634,723|🇺🇸 美国 1009
+  name: 473,618,627,634|yandex-4568
   network: ws
-  port: '443'
+  port: 443
   server: 23.162.152.177
   servername: ''
   skip-cert-verify: true
@@ -790,9 +779,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,723|🇩🇪 德国 051
+  name: 473,524,618,627,634|yandex-4659
   network: ws
-  port: '443'
+  port: 443
   server: 141.94.155.229
   servername: ''
   skip-cert-verify: true
@@ -806,9 +795,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,723|🇫🇷 法国 140
+  name: 473,524,618,627,634|yandex-4733
   network: ws
-  port: '443'
+  port: 443
   server: 91.134.8.93
   servername: ''
   skip-cert-verify: true
@@ -822,9 +811,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634,723|🇫🇷 法国 141
+  name: 473,524,618,627,634|yandex-4734
   network: ws
-  port: '443'
+  port: 443
   server: 146.59.85.226
   servername: ''
   skip-cert-verify: true
@@ -1158,18 +1147,22 @@ proxies:
     headers:
       Host: ''
     path: linkvws
-- name: 473,627|🇫🇷FR-51.195.202.129-5371
+- country: 🇷FR
+  name: 473,587,627|🇫🇷FR-51.195.202.129-5371
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 473,627|🇫🇷FR-51.178.42.187-5372
+  udp: true
+- country: 🇫🇷FR
+  name: 473,587,627|🇫🇷FR-51.178.42.187-5372
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '473,627|🇫🇷FR-146.59.55.50-5435 #1'
@@ -1693,7 +1686,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
 - cipher: aes-256-gcm
-  name: 537,634|yandex-359
+  name: 537,634|yandex-251
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
@@ -1713,6 +1706,19 @@ proxies:
     headers:
       Host: ''
     path: /vmess/
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇷 FR_53
+  network: ws
+  port: 20521
+  server: 45.136.12.37
+  skip-cert-verify: true
+  type: vmess
+  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 604|法国_马赛
@@ -1825,19 +1831,18 @@ proxies:
     path: /xrenvws
 - alterId: 0
   cipher: auto
-  name: 618,723|🇫🇷 法国 018
+  name: 618|法国 018
   network: tcp
-  port: '550'
+  port: 550
   server: 51.38.191.100
   skip-cert-verify: true
   tfo: true
-  tls: false
   type: vmess
   udp: true
   uuid: 96db7e57-5314-4560-b708-2446670dfa29
 - country: 🇫🇷FR
   delay: 1045
-  name: 623,634|yandex-536
+  name: 623,634|yandex-4989
   password: telegram-id-privatevpns
   port: 22222
   server: 13.36.72.124
@@ -1847,7 +1852,7 @@ proxies:
   udp: true
 - country: 🇫🇷FR
   delay: 705
-  name: 623,634|yandex-537
+  name: 623,634|yandex-4990
   password: telegram-id-directvpn
   port: 22223
   server: 13.36.72.124
@@ -2026,13 +2031,13 @@ proxies:
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 638|🇫🇷FR_58
+- name: '638|🇫🇷FR_58 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: 638|🇫🇷FR_57
+- name: '638|🇫🇷FR_57 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -2306,15 +2311,6 @@ proxies:
     path: '%2FFree-VPN-CF-Geo-Project%2F51.38.226.4%3D2053'
 - alterId: 0
   cipher: auto
-  name: 656|🇫🇷 法国 30
-  network: tcp
-  port: '45071'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 19a4bcc3-3bd8-412a-b920-05417062b474
-- alterId: 0
-  cipher: auto
   name: 719|🇫🇷 法2-1E
   port: 45071
   server: xdd.dashuai.cyou
@@ -2407,16 +2403,6 @@ proxies:
     headers:
       Host: joss.dus.biz.id
     path: /Free-VPN-CF-Geo-Project/51.38.226.4=2053
-- alterId: 0
-  cipher: auto
-  name: '719|🇫🇷 法国 30 #1'
-  port: 45071
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 19a4bcc3-3bd8-412a-b920-05417062b474
 - cipher: chacha20-ietf-poly1305
   name: 722|🇫🇷France-法国1
   password: 0305e0ec-ec7e-4770-9aa3-81e3427f91b6
