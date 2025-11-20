@@ -88,15 +88,13 @@ proxies:
   server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇦CA
-  name: 454,473,587|🇦CA_41
+  name: 454,473|🇦CA-142.4.216.225-0228
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇨 CZ
-  name: 454,473,587|🇨 CZ_43
+  name: 454,473|🇨CA-79.127.233.170-0182
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
@@ -135,27 +133,30 @@ proxies:
   type: vmess
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
-- cipher: aes-256-gcm
-  name: 473|CA-134.195.198.95-0030
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 134.195.198.95
-  type: ss
-- cipher: aes-256-gcm
-  name: 473|🇦CA-134.195.198.95-0040
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 134.195.198.95
-  type: ss
-- cipher: aes-256-gcm
-  name: 473|🇨🇦CA-134.195.198.95-0041
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 134.195.198.95
+- alterId: 0
+  cipher: auto
+  name: 473,627|🇨🇦CA-23.162.200.227-0351
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- cipher: aes-256-cfb
+  name: 473|🇦CA-79.127.233.170-0185
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
   type: ss
 - alterId: 0
   cipher: auto
-  name: '473,524,627|🇨🇦CA-134.195.198.147-0166 #2'
+  name: 473,627|🇨🇦CA-134.195.198.147-0166
   network: ws
   port: 443
   server: 134.195.198.147
@@ -168,73 +169,12 @@ proxies:
     headers:
       Host: inna.cfd
     path: /
-- alterId: 0
-  cipher: auto
-  name: 473,627,638|🏁 ZZ_236
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '473,524,627|🇨🇦CA-15.235.85.147-0211 #1'
-  network: ws
-  port: 443
-  server: 15.235.85.147
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: pelang.org
-    path: /
-- cipher: aes-256-cfb
-  name: 473|🇨CA-79.127.233.170-0218
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473,587|_03
+  name: 473|🇨🇦CA-142.4.216.225-0233
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
-- cipher: aes-128-cfb
-  name: 473,627|8J%2BHqPCfh6ZDQS00NS4xNTQuMjA0...
-  obfs: http_post
-  obfs-param: ''
-  password: $$Turb0VPN$$
-  port: '443'
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: ssca.irundns.net
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: 473,627|🇨🇦CA-51.79.102.253-0327
-  network: ws
-  port: 80
-  server: 51.79.102.253
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: 473,627|🇨🇦CA-51.79.102.253-0328
@@ -252,10 +192,25 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,627|🇨🇦CA-23.162.200.227-0351
+  name: 473,627|🇨🇦CA-51.79.102.253-0327
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 473,627|🇨🇦CA-15.235.85.147-0211
   network: ws
   port: 443
-  server: 23.162.200.227
+  server: 15.235.85.147
   servername: ''
   skip-cert-verify: false
   tls: true
@@ -263,31 +218,31 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
+      Host: pelang.org
     path: /
 - cipher: aes-256-gcm
-  name: 473|🇦CA-134.195.196.149-0375
+  name: 473|🇦CA-134.195.196.149-0391
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 134.195.196.149
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇦CA-196.247.59.154-0392
+  name: 473|🇦CA-196.247.59.154-0408
   password: G!yBwPWH3Vao
   port: 800
   server: 196.247.59.154
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.61-0495
+  name: 473|🇦CA-85.208.108.61-0511
   password: XKFKl2rULjIp74
   port: 8008
   server: 85.208.108.61
   type: ss
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-927
+  name: 473,618,627,634,723|🇺🇸 美国 011
   network: ws
-  port: 443
+  port: '443'
   server: 148.113.153.112
   servername: ''
   skip-cert-verify: true
@@ -302,9 +257,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-954
+  name: 473,618,627,634,723|🇺🇸 美国 024
   network: ws
-  port: 443
+  port: '443'
   server: 15.235.85.156
   servername: kampong.org
   skip-cert-verify: true
@@ -319,9 +274,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,578,618,627,634|yandex-998
+  name: 473,578,618,627,634,723|🇺🇸 美国 027
   network: ws
-  port: 443
+  port: '443'
   server: 15.235.50.172
   servername: ''
   skip-cert-verify: true
@@ -336,9 +291,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,578,618,627,634|yandex-1139
+  name: 473,578,618,627,634,723|🇺🇸 美国 143
   network: ws
-  port: 443
+  port: '443'
   server: 15.235.83.227
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: true
@@ -353,9 +308,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-1140
+  name: 473,618,627,634,723|🇺🇸 美国 144
   network: ws
-  port: 443
+  port: '443'
   server: 148.113.153.113
   servername: ''
   skip-cert-verify: true
@@ -370,9 +325,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,578,618,627,634|yandex-1142
+  name: 473,578,618,627,634,723|🇺🇸 美国 146
   network: ws
-  port: 443
+  port: '443'
   server: 158.51.121.63
   servername: ''
   skip-cert-verify: true
@@ -387,9 +342,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-1146
+  name: 473,618,627,634,723|🇺🇸 美国 150
   network: ws
-  port: 443
+  port: '443'
   server: 148.113.153.109
   servername: yichueng.org
   skip-cert-verify: true
@@ -404,9 +359,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,524,618,627,634|yandex-1230
+  name: 473,524,618,627,634,723|🇨🇦 加拿大 003
   network: ws
-  port: 80
+  port: '80'
   server: 51.79.102.253
   servername: ''
   skip-cert-verify: true
@@ -421,9 +376,9 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: 473,524,578,618,627,634|yandex-2137
+  name: 473,524,578,618,627,634,723|🇺🇸 美国 850
   network: ws
-  port: 443
+  port: '443'
   server: 134.195.198.147
   servername: ''
   skip-cert-verify: true
@@ -437,9 +392,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,604,618,627,634|yandex-2199
+  name: 473,604,618,627,634,723|🇺🇸 美国 894
   network: ws
-  port: 443
+  port: '443'
   server: 158.51.121.36
   servername: ''
   skip-cert-verify: true
@@ -453,9 +408,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-2534
+  name: 473,524,618,627,634,723|🇺🇸 美国 1109
   network: ws
-  port: 443
+  port: '443'
   server: 15.235.85.147
   servername: ''
   skip-cert-verify: true
@@ -690,7 +645,7 @@ proxies:
       Host: ''
     path: /linkvws
 - cipher: aes-256-gcm
-  name: 473|🇦CA-198.57.27.218-2476
+  name: 473|🇦CA-198.57.27.218-2473
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 198.57.27.218
@@ -702,181 +657,181 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇦CA-72.140.224.195-2593
+  name: 473|🇦CA-72.140.224.195-2590
   password: G!yBwPWH3Vao
   port: 800
   server: 72.140.224.195
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-2623
+  name: 473|🇦CA-85.208.108.60-2620
   password: XKFKl2rULjIp74
   port: 8009
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-2660
+  name: 473|🇦CA-85.208.108.60-2657
   password: KixLvKzwjekG00rm
   port: 5500
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨CA-85.208.108.60-2677
+  name: 473|🇨CA-85.208.108.60-2674
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-2807
+  name: 473|🇦CA-85.208.108.60-2804
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-2780
+  name: 473|🇦CA-85.208.108.60-2777
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.60-3466
+  name: 473|🇨🇦CA-85.208.108.60-3463
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.60-2824
+  name: 473|🇨🇦CA-85.208.108.60-2821
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.60-2784
+  name: 473|🇨🇦CA-85.208.108.60-2781
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-2785
+  name: 473|🇦CA-85.208.108.60-2782
   password: KixLvKzwjekG00rm
   port: 8080
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-2786
+  name: 473|🇦CA-85.208.108.60-2783
   password: faBAoD54k87UJG7
   port: 2376
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-2787
+  name: 473|🇦CA-85.208.108.60-2784
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.60-2788
+  name: 473|🇨🇦CA-85.208.108.60-2785
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-2789
+  name: 473|🇦CA-85.208.108.60-2786
   password: XKFKl2rULjIp74
   port: 8008
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-2790
+  name: 473|🇦CA-85.208.108.60-2787
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-2792
+  name: 473|🇦CA-85.208.108.60-2789
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨CA-85.208.108.60-4154
+  name: 473|🇨CA-85.208.108.60-4151
   password: Y6R9pAtvxxzmGC
   port: 5000
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.60-2797
+  name: 473|🇨🇦CA-85.208.108.60-2794
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-3480
+  name: 473|🇦CA-85.208.108.60-3477
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-2804
+  name: 473|🇦CA-85.208.108.60-2801
   password: pKEW8JPByTVTLtM
   port: 443
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.60-2811
+  name: 473|🇨🇦CA-85.208.108.60-2808
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-4101
+  name: 473|🇦CA-85.208.108.60-4098
   password: Y6R9pAtvxxzmGC
   port: 8888
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.60-2829
+  name: 473|🇨🇦CA-85.208.108.60-2826
   password: Y6R9pAtvxxzmGC
   port: 5600
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-2835
+  name: 473|🇦CA-85.208.108.60-2832
   password: kDWvXYZoTBcGkC4
   port: 8881
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-2836
+  name: 473|🇦CA-85.208.108.60-2833
   password: e4FCWrgpkji3QY
   port: 9102
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.60-4129
+  name: 473|🇨🇦CA-85.208.108.60-4126
   password: e4FCWrgpkji3QY
   port: 9101
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-2848
+  name: 473|🇦CA-85.208.108.60-2845
   password: zDNVedRFPQexG9v
   port: 6379
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.60-3476
+  name: 473|🇨🇦CA-85.208.108.60-3473
   password: faBAoD54k87UJG7
   port: 2375
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.60-2856
+  name: 473|🇨🇦CA-85.208.108.60-2853
   password: KixLvKzwjekG00rm
   port: 8000
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.20-3455
+  name: 473|🇦CA-85.208.108.20-3452
   password: zDNVedRFPQexG9v
   port: 6379
   server: 85.208.108.20
@@ -897,7 +852,7 @@ proxies:
       Host: ''
     path: /JAGOANSSH/
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.18-3070
+  name: 473|🇨🇦CA-85.208.108.18-3067
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 85.208.108.18
@@ -909,67 +864,67 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.59-3209
+  name: 473|🇨🇦CA-85.208.108.59-3206
   password: XKFKl2rULjIp74
   port: 8009
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.59-3348
+  name: 473|🇦CA-85.208.108.59-3345
   password: zDNVedRFPQexG9v
   port: 6379
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-4105
+  name: 473|🇦CA-85.208.108.60-4102
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-4115
+  name: 473|🇦CA-85.208.108.60-4112
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.61-4458
+  name: 473|🇦CA-85.208.108.61-4455
   password: pKEW8JPByTVTLtM
   port: 443
   server: 85.208.108.61
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.92-4459
+  name: 473|🇨🇦CA-85.208.108.92-4456
   password: pKEW8JPByTVTLtM
   port: 443
   server: 85.208.108.92
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇦CA-196.247.59.156-4634
+  name: 473|🇦CA-196.247.59.156-4631
   password: G!yBwPWH3Vao
   port: 806
   server: 196.247.59.156
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.20-4721
+  name: 473|🇦CA-85.208.108.20-4718
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.20-4722
+  name: 473|🇨🇦CA-85.208.108.20-4719
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.20-4725
+  name: 473|🇦CA-85.208.108.20-4722
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.20-4726
+  name: 473|🇨🇦CA-85.208.108.20-4723
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 85.208.108.20
@@ -1004,7 +959,7 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8
-- name: 473,587,627|🇨🇦CA-148.113.207.224-5338
+- name: 473,627|🇨🇦CA-148.113.207.224-5338
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
   server: ca-full.privateip.net
@@ -1012,11 +967,11 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 473,627|🇨🇦CA-15.235.50.172-5462
+  name: 473,578,627|🇨🇦CA-15.235.83.228-5463
   network: ws
   port: 443
-  server: 15.235.50.172
-  servername: baradiha.com
+  server: 15.235.83.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1027,11 +982,11 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,578,627|🇨🇦CA-15.235.83.228-5463
+  name: 473,627|🇨🇦CA-15.235.50.172-5462
   network: ws
   port: 443
-  server: 15.235.83.228
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  server: 15.235.50.172
+  servername: baradiha.com
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1072,7 +1027,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,627|🇨🇦CA-134.195.198.147-5503
+  name: '473,524,627|🇨🇦CA-134.195.198.147-5503 #1'
   network: ws
   port: 443
   server: 134.195.198.147
@@ -1085,428 +1040,444 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- cipher: aes-128-cfb
+  name: 473,627|8J%2BHqPCfh6ZDQS00NS4xNTQuMjA0...
+  obfs: http_post
+  obfs-param: ''
+  password: $$Turb0VPN$$
+  port: '443'
+  protocol: auth_aes128_md5
+  protocol-param: ''
+  server: ssca.irundns.net
+  type: ssr
 - cipher: aes-256-gcm
-  name: 473|CA-134.195.196.149-6000
+  name: 473|CA-134.195.196.149-6004
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 134.195.196.149
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-134.195.196.149-6001
+  name: 473|🇨🇦CA-134.195.196.149-6005
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 134.195.196.149
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇨🇦CA-196.247.59.154-6007
+  name: 473|🇨🇦CA-196.247.59.154-6011
   password: G!yBwPWH3Vao
   port: 801
   server: 196.247.59.154
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-134.195.196.149-6027
+  name: 473|🇨🇦CA-134.195.196.149-6031
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 134.195.196.149
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-134.195.196.149-6028
+  name: 473|🇦CA-134.195.196.149-6032
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 134.195.196.149
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-134.195.196.85-6029
+  name: 473|🇨🇦CA-134.195.196.85-6033
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 134.195.196.85
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇨🇦CA-196.247.59.154-6030
+  name: 473|🇨🇦CA-196.247.59.154-6034
   password: G!yBwPWH3Vao
   port: 806
   server: 196.247.59.154
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇦CA-196.247.59.154-6032
+  name: 473|🇦CA-196.247.59.154-6036
   password: G!yBwPWH3Vao
   port: 809
   server: 196.247.59.154
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇨🇦CA-196.247.59.154-6033
+  name: 473|🇨🇦CA-196.247.59.154-6037
   password: G!yBwPWH3Vao
   port: 803
   server: 196.247.59.154
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.93-6049
+  name: 473|🇨🇦CA-85.208.108.93-6053
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 85.208.108.93
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-134.195.196.231-6101
+  name: 473|🇦CA-134.195.196.231-6105
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 134.195.196.231
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-134.195.196.230-6102
+  name: 473|🇨🇦CA-134.195.196.230-6106
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 134.195.196.230
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-134.195.196.231-6103
+  name: 473|🇨🇦CA-134.195.196.231-6107
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 134.195.196.231
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-38.111.114.246-6203
+  name: 473|🇦CA-38.111.114.246-6207
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 38.111.114.246
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-38.111.114.246-6204
+  name: 473|🇨🇦CA-38.111.114.246-6208
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 38.111.114.246
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.59-6250
+  name: 473|🇨🇦CA-85.208.108.59-6254
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.60-6251
+  name: 473|🇦CA-85.208.108.60-6255
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.18-6252
+  name: 473|🇨🇦CA-85.208.108.18-6256
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 85.208.108.18
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.59-6254
+  name: 473|🇨🇦CA-85.208.108.59-6258
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.20-6255
+  name: 473|🇦CA-85.208.108.20-6259
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.21-6256
+  name: 473|🇦CA-85.208.108.21-6260
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.59-6257
+  name: 473|🇨🇦CA-85.208.108.59-6261
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.21-6258
+  name: 473|🇦CA-85.208.108.21-6262
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.20-6259
+  name: 473|🇨🇦CA-85.208.108.20-6263
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.21-6260
+  name: 473|🇦CA-85.208.108.21-6264
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.59-6263
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 85.208.108.59
-  type: ss
-- cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.20-6264
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.20-6265
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
   name: 473|🇦CA-85.208.108.59-6267
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 85.208.108.59
+  type: ss
+- cipher: aes-256-gcm
+  name: 473|🇨🇦CA-85.208.108.20-6268
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 85.208.108.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 473|🇨🇦CA-85.208.108.20-6269
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 85.208.108.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 473|🇦CA-85.208.108.59-6271
   password: KixLvKzwjekG00rm
   port: 8000
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.59-6268
+  name: 473|🇨🇦CA-85.208.108.59-6272
   password: XKFKl2rULjIp74
   port: 8008
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.94-6270
+  name: 473|🇦CA-85.208.108.94-6274
   password: KixLvKzwjekG00rm
   port: 8080
   server: 85.208.108.94
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.59-6273
+  name: 473|🇨🇦CA-85.208.108.59-6277
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.59-6278
+  name: 473|🇨🇦CA-85.208.108.59-6282
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.59-6282
+  name: 473|🇦CA-85.208.108.59-6286
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.59-6283
+  name: 473|🇨🇦CA-85.208.108.59-6287
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.21-6285
+  name: 473|🇨🇦CA-85.208.108.21-6289
   password: e4FCWrgpkji3QY
   port: 9102
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.59-6286
+  name: 473|🇦CA-85.208.108.59-6290
   password: e4FCWrgpkji3QY
   port: 9102
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.58-6287
+  name: 473|🇨🇦CA-85.208.108.58-6291
   password: e4FCWrgpkji3QY
   port: 9101
   server: 85.208.108.58
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.94-6289
+  name: 473|🇦CA-85.208.108.94-6293
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 85.208.108.94
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.59-6290
+  name: 473|🇨🇦CA-85.208.108.59-6294
   password: pKEW8JPByTVTLtM
   port: 443
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.59-6291
+  name: 473|🇦CA-85.208.108.59-6295
   password: faBAoD54k87UJG7
   port: 2375
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.59-6293
+  name: 473|🇦CA-85.208.108.59-6297
   password: faBAoD54k87UJG7
   port: 2376
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.59-6295
+  name: 473|🇦CA-85.208.108.59-6299
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.59-6299
+  name: 473|🇨🇦CA-85.208.108.59-6303
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.21-6300
+  name: 473|🇦CA-85.208.108.21-6304
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.20-6301
+  name: 473|🇨🇦CA-85.208.108.20-6305
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.20-6303
+  name: 473|🇨🇦CA-85.208.108.20-6307
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-85.208.108.59-6304
+  name: 473|🇦CA-85.208.108.59-6308
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-85.208.108.59-6306
+  name: 473|🇨🇦CA-85.208.108.59-6310
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨CA-85.208.108.59-6307
+  name: 473|🇨CA-85.208.108.59-6311
   password: e4FCWrgpkji3QY
   port: 9101
   server: 85.208.108.59
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇦CA-196.247.59.154-6449
+  name: 473|🇦CA-196.247.59.154-6453
   password: G!yBwPWH3Vao
   port: 805
   server: 196.247.59.154
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇦CA-196.247.59.156-6454
+  name: 473|🇦CA-196.247.59.156-6458
   password: G!yBwPWH3Vao
   port: 803
   server: 196.247.59.156
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇦CA-196.247.59.154-6455
+  name: 473|🇦CA-196.247.59.154-6459
   password: G!yBwPWH3Vao
   port: 802
   server: 196.247.59.154
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇨🇦CA-196.247.59.156-6456
+  name: 473|🇨🇦CA-196.247.59.156-6460
   password: G!yBwPWH3Vao
   port: 801
   server: 196.247.59.156
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇦CA-196.247.59.156-6457
+  name: 473|🇦CA-196.247.59.156-6461
   password: G!yBwPWH3Vao
   port: 808
   server: 196.247.59.156
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇨🇦CA-196.247.59.156-6460
+  name: 473|🇨🇦CA-196.247.59.156-6464
   password: G!yBwPWH3Vao
   port: 809
   server: 196.247.59.156
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇨🇦CA-196.247.59.156-6463
+  name: 473|🇨🇦CA-196.247.59.156-6467
   password: G!yBwPWH3Vao
   port: 804
   server: 196.247.59.156
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇨🇦CA-51.161.118.38-6465
+  name: 473|🇨🇦CA-51.161.118.38-6469
   password: G!yBwPWH3Vao
   port: 806
   server: 51.161.118.38
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-134.195.196.149-6546
+  name: 473|🇦CA-134.195.196.149-6550
   password: XKFKl2rULjIp74
   port: 8009
   server: 134.195.196.149
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-134.195.198.95-6547
+  name: 473|🇦CA-134.195.198.95-6551
   password: faBAoD54k87UJG7
   port: 2376
   server: 134.195.198.95
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-134.195.196.149-6548
+  name: 473|🇨🇦CA-134.195.196.149-6552
   password: kDWvXYZoTBcGkC4
   port: 8881
   server: 134.195.196.149
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-134.195.198.95-6549
+  name: 473|🇦CA-134.195.198.95-6553
   password: pKEW8JPByTVTLtM
   port: 443
   server: 134.195.198.95
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-134.195.196.149-6550
+  name: 473|🇨🇦CA-134.195.196.149-6554
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 134.195.196.149
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇨🇦CA-134.195.196.143-6551
+  name: 473|🇨🇦CA-134.195.196.143-6555
   password: G!yBwPWH3Vao
   port: 805
   server: 134.195.196.143
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-134.195.196.107-6552
+  name: 473|🇨🇦CA-134.195.196.107-6556
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 134.195.196.107
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇨🇦CA-134.195.196.178-6553
+  name: 473|🇨🇦CA-134.195.196.178-6557
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-134.195.196.149-6555
+  name: 473|🇨🇦CA-134.195.196.149-6559
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 134.195.196.149
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-134.195.196.107-6557
+  name: 473|🇨🇦CA-134.195.196.107-6561
   password: XKFKl2rULjIp74
   port: 8009
   server: 134.195.196.107
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-134.195.198.95-6559
+  name: 473|🇨🇦CA-134.195.198.95-6562
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 134.195.198.95
+  type: ss
+- cipher: aes-256-gcm
+  name: 473|🇨🇦CA-134.195.198.95-6563
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 134.195.198.95
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇨🇦CA-134.195.196.107-6562
+  name: 473|🇨🇦CA-134.195.196.107-6566
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 134.195.196.107
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇦CA-134.195.196.149-6564
+  name: 473|🇦CA-134.195.196.149-6568
   password: KixLvKzwjekG00rm
   port: 8080
   server: 134.195.196.149
@@ -1526,21 +1497,6 @@ proxies:
     headers:
       Host: ''
     path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 473,627|🇨🇦CA-15.235.50.172-7701
-  network: ws
-  port: 443
-  server: 15.235.50.172
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: baradiha.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 473,627|🇨🇦CA-15.235.83.228-7725
@@ -1571,6 +1527,21 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 473,627|🇨🇦CA-15.235.50.172-7701
+  network: ws
+  port: 443
+  server: 15.235.50.172
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: baradiha.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 473,627|🇨🇦CA-23.162.200.94-8323
@@ -1818,19 +1789,6 @@ proxies:
     path: /
   ws-path: /
 - client-fingerprint: chrome
-  name: '578|Channel id: @@proxy_kafee 🇨🇦 #1'
-  network: ws
-  port: 8443
-  server: 104.21.3.219
-  servername: ovhwuxian.pai50288.uk
-  tls: true
-  type: vless
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
-  ws-opts:
-    headers:
-      Host: ovhwuxian.pai50288.uk
-    path: '%2F57ba2ab1'
-- client-fingerprint: chrome
   name: '578|🇨🇦کانفیگ های بیشتر: @customv2r...'
   network: ws
   port: 443
@@ -1843,6 +1801,19 @@ proxies:
     headers:
       Host: iiiiiiiiiiio.huangshang.dpdns.org
     path: '%2FCpMgWdnDWahQyyQCjn8kmnN0ehd'
+- client-fingerprint: chrome
+  name: '578|Channel id: @@proxy_kafee 🇨🇦 #1'
+  network: ws
+  port: 8443
+  server: 104.21.3.219
+  servername: ovhwuxian.pai50288.uk
+  tls: true
+  type: vless
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  ws-opts:
+    headers:
+      Host: ovhwuxian.pai50288.uk
+    path: '%2F57ba2ab1'
 - alterId: 0
   cipher: auto
   name: '578|Channel id: @ShadowProxy66🇨🇦'
@@ -5840,6 +5811,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 40e27384-d837-4076-a7f4-1084b4b807c0
+- alterId: 0
+  cipher: auto
+  name: 627,638|🏁 ZZ_236
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5854,6 +5839,141 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 30
+  network: tcp
+  port: '45064'
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 9772652b-977c-4f77-b397-42fe238b25ae
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 17
+  network: tcp
+  port: '45065'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 048c4bfe-d622-47d2-9f1d-39fe1cdb84e8
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 27
+  network: tcp
+  port: '45065'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: dbfe2c8f-3ae0-47e6-8c82-6a1fe8e3b912
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 10
+  network: tcp
+  port: '45065'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: e709215a-8cf5-48c3-b655-429d9b91ab67
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 25
+  network: tcp
+  port: '45064'
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 82e3059a-9468-4c12-9a12-4e2660bd2634
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 07
+  network: tcp
+  port: '45065'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 62d88865-5a2b-42b1-8101-9be0a1857660
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 04
+  network: tcp
+  port: '45065'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 82e3059a-9468-4c12-9a12-4e2660bd2634
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 29
+  network: tcp
+  port: '45065'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: b703dfc9-ed3e-4cbe-b9fc-6aaff19ce2c0
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 02
+  network: tcp
+  port: '45064'
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 048c4bfe-d622-47d2-9f1d-39fe1cdb84e8
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 12
+  network: tcp
+  port: '45065'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 9772652b-977c-4f77-b397-42fe238b25ae
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 06
+  network: tcp
+  port: '45064'
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: d1b20c5c-9768-4880-b34e-58b15c34f430
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 24
+  network: tcp
+  port: '45064'
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: dbfe2c8f-3ae0-47e6-8c82-6a1fe8e3b912
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 14
+  network: tcp
+  port: '45064'
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 829c0338-23ce-4b17-91dd-e3d5c42c8aef
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 18
+  network: tcp
+  port: '45065'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 829c0338-23ce-4b17-91dd-e3d5c42c8aef
+- alterId: 0
+  cipher: auto
+  name: 642|🇨🇦 加拿大 28
+  network: tcp
+  port: '45064'
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 19a4bcc3-3bd8-412a-b920-05417062b474
 - alterId: 0
   cipher: auto
   name: '649|加拿大1 #2'
@@ -5872,78 +5992,29 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大2-1B
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 656,719|🇨🇦 _1
   network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 597bf884-8841-40ec-8d0b-93de3e7c244e
-- alterId: 0
-  cipher: auto
-  name: '656|🇨🇦 加拿大2-1A #1'
-  network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: df2eafe0-d222-46ba-8272-d7ea46de67f6
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大1-1B
-  network: tcp
-  port: '45064'
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 597bf884-8841-40ec-8d0b-93de3e7c244e
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大1-1D
-  network: tcp
-  port: '45064'
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: ebf33915-b169-48d5-b755-99a1bd8edbd7
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大2-1D
-  network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: ebf33915-b169-48d5-b755-99a1bd8edbd7
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大2-1E
-  network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 9c87c784-22a3-449c-bc94-594bea57063c
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大2-1C
-  network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: b335dc51-85fc-4c90-9b4c-018fc5b8bb1f
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大1-1C
-  network: tcp
-  port: '45064'
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: b335dc51-85fc-4c90-9b4c-018fc5b8bb1f
+  port: 60552
+  reality-opts:
+    public-key: QLOalXjMmrryGjcV7-jMDyWD2E7I23r9A95nqaP0Pho
+    short-id: e62fec30f1a0167e
+  server: 81.19.140.202
+  servername: yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: ad6b2d75-1973-4c0d-8a5f-739f22628ffd
+- name: '656,719|🇨🇦 加拿大_2 #1'
+  network: grpc
+  password: D3OJA7xY5U
+  port: 10785
+  server: 209.200.246.53
+  skip-cert-verify: true
+  sni: cloudflare.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '656|🇨🇦 加拿大1-1E #1'
@@ -5952,7 +6023,79 @@ proxies:
   server: haa.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 9c87c784-22a3-449c-bc94-594bea57063c
+  uuid: 7682d150-9983-47ff-9cff-8d3905fcf493
+- alterId: 0
+  cipher: auto
+  name: 656|🇨🇦 加拿大2-1B
+  network: tcp
+  port: '45065'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: d4ec09af-9cfb-4945-9edd-be5aa0f409b2
+- alterId: 0
+  cipher: auto
+  name: 656|🇨🇦 加拿大1-1D
+  network: tcp
+  port: '45064'
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 2c608b8e-f3d8-4ef4-a8e0-c80c15112266
+- alterId: 0
+  cipher: auto
+  name: 656|🇨🇦 加拿大1-1C
+  network: tcp
+  port: '45064'
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: b023a27d-ed72-4cfd-a63b-d686214cf22d
+- alterId: 0
+  cipher: auto
+  name: 656|🇨🇦 加拿大1-1B
+  network: tcp
+  port: '45064'
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: d4ec09af-9cfb-4945-9edd-be5aa0f409b2
+- alterId: 0
+  cipher: auto
+  name: 656|🇨🇦 加拿大2-1E
+  network: tcp
+  port: '45065'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 7682d150-9983-47ff-9cff-8d3905fcf493
+- alterId: 0
+  cipher: auto
+  name: 656|🇨🇦 加拿大2-1C
+  network: tcp
+  port: '45065'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: b023a27d-ed72-4cfd-a63b-d686214cf22d
+- alterId: 0
+  cipher: auto
+  name: 656|🇨🇦 加拿大2-1D
+  network: tcp
+  port: '45065'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 2c608b8e-f3d8-4ef4-a8e0-c80c15112266
+- alterId: 0
+  cipher: auto
+  name: '656|🇨🇦 加拿大2-1A #1'
+  network: tcp
+  port: '45065'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: b006196b-2c8e-4601-8b72-3968aea78caf
 - alterId: 0
   cipher: auto
   name: 656|🇨🇦 加拿大1-1A
@@ -5961,188 +6104,25 @@ proxies:
   server: haa.dashuai.cyou
   tls: false
   type: vmess
-  uuid: df2eafe0-d222-46ba-8272-d7ea46de67f6
+  uuid: b006196b-2c8e-4601-8b72-3968aea78caf
 - alterId: 0
   cipher: auto
-  name: 656|🇨🇦 加拿大 08
+  name: 656|🇨🇦 加拿大 26
   network: tcp
   port: '45064'
   server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: e6882bd0-21a3-4cbb-b35f-40e188fb5469
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大 22
-  network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: e6882bd0-21a3-4cbb-b35f-40e188fb5469
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大 13
-  network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: e101c38a-672f-47de-a420-0c2df5b0902f
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大 16
-  network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 19a4bcc3-3bd8-412a-b920-05417062b474
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大 05
-  network: tcp
-  port: '45064'
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: e709215a-8cf5-48c3-b655-429d9b91ab67
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大 23
-  network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: c5b6126b-d9f7-4402-b0fb-bda976fa5c62
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大 03
-  network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 83636c0c-f315-4089-8bda-3e419fb054ed
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大 01
-  network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
   tls: false
   type: vmess
   uuid: 1e8b5fbb-e0aa-409b-8ec7-3282657f6853
 - alterId: 0
   cipher: auto
-  name: 656|🇨🇦 加拿大 09
+  name: 656|🇨🇦 加拿大 15
   network: tcp
   port: '45064'
   server: haa.dashuai.cyou
   tls: false
   type: vmess
-  uuid: c5b6126b-d9f7-4402-b0fb-bda976fa5c62
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大 19
-  network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: d1b20c5c-9768-4880-b34e-58b15c34f430
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大 11
-  network: tcp
-  port: '45064'
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: e101c38a-672f-47de-a420-0c2df5b0902f
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大 21
-  network: tcp
-  port: '45064'
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 62d88865-5a2b-42b1-8101-9be0a1857660
-- alterId: 0
-  cipher: auto
-  name: 656|🇨🇦 加拿大 20
-  network: tcp
-  port: '45064'
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 83636c0c-f315-4089-8bda-3e419fb054ed
-- alterId: 0
-  cipher: auto
-  name: 719|🇨🇦 加2-1B
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 597bf884-8841-40ec-8d0b-93de3e7c244e
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大2-1A #2'
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: df2eafe0-d222-46ba-8272-d7ea46de67f6
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大1-1B #1'
-  port: 45064
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 597bf884-8841-40ec-8d0b-93de3e7c244e
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大1-1D #1'
-  port: 45064
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: ebf33915-b169-48d5-b755-99a1bd8edbd7
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大2-1D #1'
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: ebf33915-b169-48d5-b755-99a1bd8edbd7
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大2-1E #1'
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 9c87c784-22a3-449c-bc94-594bea57063c
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大2-1C #1'
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: b335dc51-85fc-4c90-9b4c-018fc5b8bb1f
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大1-1C #1'
-  port: 45064
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: b335dc51-85fc-4c90-9b4c-018fc5b8bb1f
+  uuid: b703dfc9-ed3e-4cbe-b9fc-6aaff19ce2c0
 - alterId: 0
   cipher: auto
   name: '719|🇨🇦 加拿大1-1E #2'
@@ -6150,7 +6130,71 @@ proxies:
   server: haa.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 9c87c784-22a3-449c-bc94-594bea57063c
+  uuid: 7682d150-9983-47ff-9cff-8d3905fcf493
+- alterId: 0
+  cipher: auto
+  name: '719|🇨🇦 加拿大2-1B #1'
+  port: 45065
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: d4ec09af-9cfb-4945-9edd-be5aa0f409b2
+- alterId: 0
+  cipher: auto
+  name: '719|🇨🇦 加拿大1-1D #1'
+  port: 45064
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 2c608b8e-f3d8-4ef4-a8e0-c80c15112266
+- alterId: 0
+  cipher: auto
+  name: '719|🇨🇦 加拿大1-1C #1'
+  port: 45064
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: b023a27d-ed72-4cfd-a63b-d686214cf22d
+- alterId: 0
+  cipher: auto
+  name: '719|🇨🇦 加拿大1-1B #1'
+  port: 45064
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: d4ec09af-9cfb-4945-9edd-be5aa0f409b2
+- alterId: 0
+  cipher: auto
+  name: '719|🇨🇦 加拿大2-1E #1'
+  port: 45065
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 7682d150-9983-47ff-9cff-8d3905fcf493
+- alterId: 0
+  cipher: auto
+  name: '719|🇨🇦 加拿大2-1C #1'
+  port: 45065
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: b023a27d-ed72-4cfd-a63b-d686214cf22d
+- alterId: 0
+  cipher: auto
+  name: '719|🇨🇦 加拿大2-1D #1'
+  port: 45065
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 2c608b8e-f3d8-4ef4-a8e0-c80c15112266
+- alterId: 0
+  cipher: auto
+  name: '719|🇨🇦 加拿大2-1A #2'
+  port: 45065
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: b006196b-2c8e-4601-8b72-3968aea78caf
 - alterId: 0
   cipher: auto
   name: '719|🇨🇦 加拿大1-1A #1'
@@ -6158,124 +6202,23 @@ proxies:
   server: haa.dashuai.cyou
   tls: false
   type: vmess
-  uuid: df2eafe0-d222-46ba-8272-d7ea46de67f6
+  uuid: b006196b-2c8e-4601-8b72-3968aea78caf
 - alterId: 0
   cipher: auto
-  name: '719|🇨🇦 加拿大 08 #1'
+  name: '719|🇨🇦 加拿大 26 #1'
   port: 45064
   server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e6882bd0-21a3-4cbb-b35f-40e188fb5469
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大 22 #1'
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e6882bd0-21a3-4cbb-b35f-40e188fb5469
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大 13 #1'
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e101c38a-672f-47de-a420-0c2df5b0902f
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大 16 #1'
-  port: 45065
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 19a4bcc3-3bd8-412a-b920-05417062b474
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大 05 #1'
-  port: 45064
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e709215a-8cf5-48c3-b655-429d9b91ab67
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大 23 #1'
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c5b6126b-d9f7-4402-b0fb-bda976fa5c62
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大 03 #1'
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 83636c0c-f315-4089-8bda-3e419fb054ed
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大 01 #1'
-  port: 45065
-  server: xdd.dashuai.cyou
   tls: false
   type: vmess
   udp: true
   uuid: 1e8b5fbb-e0aa-409b-8ec7-3282657f6853
 - alterId: 0
   cipher: auto
-  name: '719|🇨🇦 加拿大 09 #1'
-  port: 45064
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c5b6126b-d9f7-4402-b0fb-bda976fa5c62
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大 19 #1'
-  port: 45065
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d1b20c5c-9768-4880-b34e-58b15c34f430
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大 11 #1'
-  port: 45064
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e101c38a-672f-47de-a420-0c2df5b0902f
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大 21 #1'
+  name: '719|🇨🇦 加拿大 15 #1'
   port: 45064
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 62d88865-5a2b-42b1-8101-9be0a1857660
-- alterId: 0
-  cipher: auto
-  name: '719|🇨🇦 加拿大 20 #1'
-  port: 45064
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 83636c0c-f315-4089-8bda-3e419fb054ed
+  uuid: b703dfc9-ed3e-4cbe-b9fc-6aaff19ce2c0
