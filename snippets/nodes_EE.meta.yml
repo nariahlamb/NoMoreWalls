@@ -28,7 +28,7 @@ proxies:
   uuid: 8da3432a-d4da-4f43-801f-342cda5eae9f
 - alterId: 0
   cipher: auto
-  name: 473,627|🇪🇪EE-176.112.146.190-0534
+  name: 473,627|🇪🇪EE-176.112.146.190-0580
   network: ws
   port: 80
   server: 176.112.146.190
@@ -41,7 +41,7 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 473,627|🇪🇪EE-37.252.5.75-1172
+- name: 473,627|🇪🇪EE-37.252.5.75-1218
   password: 3208e968-b862-4e2e-ad90-2b49e7ce7afb
   port: 443
   server: 37.252.5.75
@@ -49,7 +49,7 @@ proxies:
   sni: joss.gpj1.web.id
   type: trojan
 - cipher: aes-256-cfb
-  name: 473|🇪EE-37.252.5.234-4533
+  name: 473|🇪EE-37.252.5.234-4554
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 37.252.5.234
@@ -305,33 +305,23 @@ proxies:
   tls: false
   type: vless
   uuid: d42c146e-2ded-4b4a-8592-6459ac636910
-- name: 656|🇪🇪 |EE|@wxgqlfx|50
-  network: ws
-  port: 8443
-  server: 38.180.164.56
-  servername: kuangbao.xiejiang.site
-  tls: true
-  type: vless
-  uuid: 470df3e9-ff22-485b-94b3-7ad10ef5372a
-  ws-opts:
-    headers:
-      Host: kuangbao.xiejiang.site
-    path: '%2F%3Fed%3D2560'
-- encryption: none
-  fast-open: false
-  name: '719|🇪🇪 |EE|@wxgqlfx|50 #1'
-  network: ws
-  port: 8443
-  server: 38.180.164.56
-  servername: kuangbao.xiejiang.site
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 470df3e9-ff22-485b-94b3-7ad10ef5372a
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kuangbao.xiejiang.site
-    max-early-data: 2560
-    path: /
+- alterId: 0
+  cipher: auto
+  name: 656|🇪🇪 EE HZ 01
+  network: tcp
+  port: '18123'
+  server: 36.141.40.59
+  tls: false
+  type: vmess
+  uuid: 24912953-d8e5-4761-95a0-a707651cc423
+- alterId: 0
+  cipher: auto
+  name: '719|🇪🇪 EE HZ 01 #1'
+  port: 18123
+  server: 36.141.40.59
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 24912953-d8e5-4761-95a0-a707651cc423

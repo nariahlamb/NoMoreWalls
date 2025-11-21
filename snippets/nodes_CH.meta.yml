@@ -1,5 +1,5 @@
 proxies:
-- name: 294|Switzerland_Bern_trojan_1132
+- name: '294,614,615|[Trojan] CH_speednode_0008 #1'
   network: ws
   password: 1a758d17-149a-47f3-9336-d1cc33232cc9
   port: 443
@@ -55,21 +55,21 @@ proxies:
   server: 204.136.10.115
   type: ss
   udp: true
-- name: 473,627|🇨🇭CH-152.67.71.149-2909
+- name: 473,627|🇨🇭CH-152.67.71.149-2972
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: 473|🇨CH-156.146.62.160-4543
+  name: 473|🇨CH-156.146.62.160-4564
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
 - alterId: 1
   cipher: auto
-  name: 473,627|🇨🇭CH-186.190.215.32-8399
+  name: 473,627|🇨🇭CH-186.190.215.32-8455
   network: ws
   port: 443
   server: 186.190.215.32
@@ -84,7 +84,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: 473,627|🇨🇭CH-186.190.215.75-8463
+  name: 473,627|🇨🇭CH-186.190.215.75-8519
   network: ws
   port: 443
   server: 186.190.215.75
@@ -99,7 +99,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,627|🇨🇭CH-140.238.212.95-8476
+  name: 473,627|🇨🇭CH-140.238.212.95-8532
   network: ws
   port: 443
   server: 140.238.212.95
@@ -114,7 +114,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 473,627|🇨🇭CH-23.166.88.27-8570
+  name: 473,627|🇨🇭CH-23.166.88.27-8626
   network: ws
   port: 443
   server: 23.166.88.27
@@ -153,12 +153,18 @@ proxies:
   skip-cert-verify: true
   sni: www.bilibili.com
   type: trojan
-- name: 638|瑞士 - 温特图尔 - 1
-  password: trojan
-  port: 8443
-  server: 45.15.167.19
-  sni: tianjiu.pages.dev
-  type: trojan
+- name: 638|🇨🇭_瑞士
+  network: ws
+  port: 443
+  server: 2.56.176.136
+  servername: bp.hexo.cloudns.ch
+  tls: true
+  type: vless
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  ws-opts:
+    headers:
+      Host: bp.hexo.cloudns.ch
+    path: '%2Fproxyip%3Dproxyip.sg.cmliussss.net'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '638|🇨🇭_CH_瑞士 #1'
@@ -171,3 +177,95 @@ proxies:
   tls: false
   type: vless
   uuid: acacdb17-f35a-43b0-8829-dcf2d8fe76a6
+- alterId: 0
+  cipher: auto
+  name: 656|🇦🇹 AT HOSTHATCH 01
+  network: tcp
+  port: '18129'
+  server: 36.141.40.59
+  tls: false
+  type: vmess
+  uuid: 24912953-d8e5-4761-95a0-a707651cc423
+- alterId: 0
+  cipher: auto
+  name: 656|🇨🇭 CH ORACLE 02
+  network: tcp
+  port: '18946'
+  server: 36.141.40.59
+  tls: false
+  type: vmess
+  uuid: 24912953-d8e5-4761-95a0-a707651cc423
+- alterId: 0
+  cipher: auto
+  name: 656|🇨🇭 CH ASNET 03
+  network: tcp
+  port: '26104'
+  server: 103.181.165.243
+  tls: false
+  type: vmess
+  uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
+- alterId: 0
+  cipher: auto
+  name: 656|🇳🇴 NO HOSTHATCH 01
+  network: tcp
+  port: '18023'
+  server: 36.141.40.59
+  tls: false
+  type: vmess
+  uuid: 24912953-d8e5-4761-95a0-a707651cc423
+- alterId: 0
+  cipher: auto
+  name: '719|🇦🇹 AT HOSTHATCH 01 #1'
+  port: 18129
+  server: 36.141.40.59
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 24912953-d8e5-4761-95a0-a707651cc423
+- cipher: chacha20-ietf-poly1305
+  name: 719|🇨🇭 CH Green 01
+  password: c9fa2bcffa379937679e
+  plugin: obfs
+  plugin-opts:
+    host: cec3d53bba4d2d1e8239.microsoft.com
+    mode: http
+  port: 45582
+  server: 45.251.1.12
+  tfo: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '719|🇨🇭 CH ORACLE 02 #1'
+  port: 18946
+  server: 36.141.40.59
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 24912953-d8e5-4761-95a0-a707651cc423
+- alterId: 0
+  cipher: auto
+  name: '719|🇨🇭 CH ASNET 03 #1'
+  port: 26104
+  server: 103.181.165.243
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
+- alterId: 0
+  cipher: auto
+  name: '719|🇳🇴 NO HOSTHATCH 01 #1'
+  port: 18023
+  server: 36.141.40.59
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 24912953-d8e5-4761-95a0-a707651cc423
