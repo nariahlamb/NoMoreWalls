@@ -1,5 +1,5 @@
 proxies:
-- name: 294,634|yandex-127
+- name: 294,578,614,615,634|yandex-127
   network: ws
   password: d78d48df-b788-4a95-9e9f-77c9b2f69822
   port: 8443
@@ -231,15 +231,15 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 473,587| RU_152
+  country: 🇷🇺 RU
+  name: 473,587|🇺 RU_154
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 473,587|🇧 GB_69
+  name: 473,587|🇧 GB_68
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -706,57 +706,20 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '578,617,621,633,638|14|RU_speednode_0041 #1'
-  port: 8443
-  server: spb.ru.srv.oplcdn.link
-  servername: ign.com
+- name: '578,614,615|[Vless] RU_speednode_0040 #1'
+  network: ws
+  port: 1443
+  server: 81.161.98.228
+  servername: cdn.filterai.ru
   skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d42c146e-2ded-4b4a-8592-6459ac636910
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '578,617,621,633,638|14|RU_speednode_0042 #1'
-  port: 8443
-  server: 193.233.244.196
-  servername: ign.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d42c146e-2ded-4b4a-8592-6459ac636910
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '578,617,621,633,638|14|RU_speednode_0043 #1'
-  port: 8443
-  server: 2-germany.geodema.network
-  servername: eh.vk.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
-- alpn:
-  - h2
-  name: 578|🇷🇺 RU 1
-  network: grpc
-  port: 443
-  server: 185.59.218.168
-  servername: pqh23v4.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- alterId: 0
-  cipher: auto
-  name: 578,618|俄罗斯 067
-  network: tcp
-  port: 11052
-  server: 45.67.230.79
-  servername: ''
-  skip-cert-verify: true
+  tfo: false
   tls: false
-  type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
+  type: vless
+  uuid: 00f02ab2-6f2d-449f-a089-d182a2fac59a
+  ws-opts:
+    headers:
+      Host: cdn.filterai.ru
+    path: /websocketplsecurity=tls
 - alterId: 0
   cipher: auto
   country: 🇺 RU
@@ -1507,6 +1470,48 @@ proxies:
       Host: ''
     path: /
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '617,621,633,638|14|RU_speednode_0041 #1'
+  port: 8443
+  server: spb.ru.srv.oplcdn.link
+  servername: ign.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d42c146e-2ded-4b4a-8592-6459ac636910
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '617,621,633,638|14|RU_speednode_0042 #1'
+  port: 8443
+  server: 193.233.244.196
+  servername: ign.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d42c146e-2ded-4b4a-8592-6459ac636910
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '617,621,633,638|14|RU_speednode_0043 #1'
+  port: 8443
+  server: 2-germany.geodema.network
+  servername: eh.vk.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
+- client-fingerprint: chrome
+  grpc-opts: {}
+  name: 618|俄罗斯 002
+  network: grpc
+  port: 8880
+  server: 185.231.205.5
+  skip-cert-verify: true
+  tfo: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: chrome
   grpc-opts: {}
   name: 618|俄罗斯 003
   network: grpc
@@ -1636,6 +1641,16 @@ proxies:
   tls: true
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- encryption: none
+  grpc-opts: {}
+  name: 618|俄罗斯 015
+  network: grpc
+  port: 8880
+  server: 185.236.232.123
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - client-fingerprint: chrome
   grpc-opts: {}
   name: 618|俄罗斯 016
@@ -2027,6 +2042,16 @@ proxies:
   type: vless
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 618|俄罗斯 051
+  network: grpc
+  port: 8880
+  server: 185.231.205.234
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: 618|俄罗斯 052
   network: grpc
   port: 8880
@@ -2051,6 +2076,16 @@ proxies:
   network: grpc
   port: 8880
   server: 185.236.232.157
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+- name: 618|俄罗斯 055
+  network: grpc
+  port: 8880
+  server: 185.236.232.223
   skip-cert-verify: false
   tfo: false
   tls: true
@@ -2179,6 +2214,15 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
+- alterId: 0
+  cipher: auto
+  name: 618|俄罗斯 067
+  network: tcp
+  port: 11052
+  server: 45.67.230.79
+  skip-cert-verify: true
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - name: 618|俄罗斯 068
   network: grpc
   port: 3479
