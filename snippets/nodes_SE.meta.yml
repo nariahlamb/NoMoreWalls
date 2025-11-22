@@ -245,12 +245,11 @@ proxies:
     path: /google
 - alterId: 0
   cipher: auto
-  name: 618,723|🇸🇪 瑞典 001
+  name: 618|瑞典 001
   network: tcp
-  port: '35500'
+  port: 35500
   server: 148.135.184.84
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 744847f4-8549-4bab-a8e4-6b410d271c16
 - client-fingerprint: firefox
@@ -265,6 +264,29 @@ proxies:
   type: vless
   udp: true
   uuid: 88e35bbb-8cd2-c309-a1e9-551fb1c17a7f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 621,633,638|🇸🇪🚀🚯 opl-[Швеция] [YTnoAds]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: se.srv.oplcdn.link
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d42c146e-2ded-4b4a-8592-6459ac636910
+- client-fingerprint: chrome
+  name: 621,633|SE_speednode_0046
+  port: 13369
+  server: 70.34.214.175
+  servername: cloudflare.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 70ec317d-d66d-4f9d-955a-fcd58678ce4c
 - name: 627|🇸🇪SE-109.120.132.80-0866
   network: ws
   password: vpn
@@ -311,17 +333,6 @@ proxies:
     headers:
       Host: ak.hexo.cloudns.ch
     path: '%2Fproxyip%3Dsjc.o00o.ooo'
-- name: 638|🇸🇪🚀🚯 opl-[Швеция] [YTnoAds]
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  server: se.srv.oplcdn.link
-  servername: ''
-  tls: false
-  type: vless
-  uuid: d42c146e-2ded-4b4a-8592-6459ac636910
 - alterId: 0
   cipher: auto
   name: 656|🇸🇪 SE ORACLE 01

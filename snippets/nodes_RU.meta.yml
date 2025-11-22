@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,578,617,621,633,638|14|RU_speednode_0101 #2'
+  name: '399,578,617,638|14|RU_speednode_0101 #1'
   port: 443
   server: 92.51.38.205
   servername: id.sber.ru
@@ -11,7 +11,7 @@ proxies:
   uuid: acb2c1bd-8f2e-4567-bd06-9243feaacfdc
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,578,617,621,633,638|14|RU_speednode_0102 #2'
+  name: '399,578,617,638|14|RU_speednode_0102 #1'
   port: 443
   server: 85.192.24.131
   servername: web.max.ru
@@ -219,14 +219,14 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 473,587|🇺 RU_144
+  name: 473,587|🇷 RU_151
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 473,587|🇧 GB_58
+  name: 473,587|🇬🇧 GB_58
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -283,9 +283,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇷🇺 俄罗斯 079
+  name: 473,618,627,634|yandex-2000
   network: ws
-  port: '50826'
+  port: 50826
   server: 45.67.32.147
   servername: ''
   skip-cert-verify: true
@@ -705,9 +705,9 @@ proxies:
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
 - alterId: 0
   cipher: auto
-  name: 578,618,723|🇷🇺 俄罗斯 067
+  name: 578,618|俄罗斯 067
   network: tcp
-  port: '11052'
+  port: 11052
   server: 45.67.230.79
   servername: ''
   skip-cert-verify: true
@@ -2142,12 +2142,11 @@ proxies:
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - alterId: 0
   cipher: auto
-  name: 618,723|🇷🇺 俄罗斯 066
+  name: 618|俄罗斯 066
   network: tcp
-  port: '47555'
+  port: 47555
   server: 46.29.166.237
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - name: 618|俄罗斯 068
@@ -2217,12 +2216,11 @@ proxies:
     path: /snippets
 - alterId: 0
   cipher: auto
-  name: 618,723|🇷🇺 俄罗斯 073
+  name: 618|俄罗斯 073
   network: tcp
-  port: '2098'
+  port: 2098
   server: 147.45.51.16
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
 - name: 618|俄罗斯 074
@@ -2446,6 +2444,44 @@ proxies:
   type: vless
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 621,633,638|🇷🇺🚀🚯 opl-[СПб] [YTnoAds]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: spb.ru.srv.oplcdn.link
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d42c146e-2ded-4b4a-8592-6459ac636910
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 621,633,638|🇬🇧 opl-[Великобритания]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 193.233.244.196
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d42c146e-2ded-4b4a-8592-6459ac636910
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 621,633|RU_speednode_0043
+  port: 8443
+  server: 2-germany.geodema.network
+  servername: eh.vk.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
 - name: 627|🇷🇺RU-45.82.14.144-0862
   network: ws
   password: vpn
@@ -2624,17 +2660,6 @@ proxies:
   tls: false
   type: vless
   uuid: d42c146e-2ded-4b4a-8592-6459ac636910
-- name: 638|🇷🇺🚀🚯 opl-[СПб] [YTnoAds]
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  server: spb.ru.srv.oplcdn.link
-  servername: ''
-  tls: false
-  type: vless
-  uuid: d42c146e-2ded-4b4a-8592-6459ac636910
 - name: '638|🇷🇺_俄罗斯 #7'
   network: ws
   port: 9999
@@ -2728,6 +2753,19 @@ proxies:
   tls: true
   type: vless
   uuid: 258a5f07-d07e-4de4-90b6-69a0ca34bab7
+- client-fingerprint: random
+  name: 656|🇷🇺 俄罗斯联邦 01
+  network: ws
+  port: 8443
+  server: 83.147.255.67
+  servername: ak.suoni.nyc.mn
+  tls: true
+  type: vless
+  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
+  ws-opts:
+    headers:
+      Host: ak.suoni.nyc.mn
+    path: '%2Fproxyip%3Dsjc.o00o.ooo'
 - alterId: 0
   cipher: auto
   name: 656|🇷🇺 RU LLC 01
@@ -2749,6 +2787,20 @@ proxies:
   sni: xbly.jgpyjc.top
   type: hysteria2
   udp: true
+- client-fingerprint: random
+  name: 719|🇷🇺  01
+  network: ws
+  port: 8443
+  server: 83.147.255.67
+  servername: ak.suoni.nyc.mn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
+  ws-opts:
+    headers:
+      Host: ak.suoni.nyc.mn
+    path: /proxyip=sjc.o00o.ooo
 - alterId: 0
   cipher: auto
   name: '719|🇷🇺 RU LLC 01 #1'
@@ -2760,20 +2812,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 24912953-d8e5-4761-95a0-a707651cc423
-- name: 723|🇷🇺 俄罗斯 001
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: false
-  sni: hsdgbuys.pages.dev
-  type: trojan
-- name: 723|🇷🇺 俄罗斯 039
-  password: vpn
-  port: 2025
-  server: 109.120.132.80
-  skip-cert-verify: true
-  sni: vkvd127.mycdn.me
-  type: trojan
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
