@@ -1,5 +1,5 @@
 proxies:
-- name: 294,614,615,634|yandex-3465
+- name: 294,614,615,634|yandex-5232
   network: ws
   password: d78d48df-b788-4a95-9e9f-77c9b2f69822
   port: 8443
@@ -116,13 +116,14 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 473,587| GB_69
+  name: 473,524,587| GB_54
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-45.159.250.190-0350
+  country: 🇺 RU
+  name: 473,524,587| RU_147
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
@@ -163,7 +164,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,618,634|yandex-3889
+- name: 473,618,634|yandex-538
   network: ws
   password: vpn
   port: 2025
@@ -179,9 +180,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-5077
+  name: 473,618,627,634,723|🇷🇺 俄罗斯 079
   network: ws
-  port: 50826
+  port: '50826'
   server: 45.67.32.147
   servername: ''
   skip-cert-verify: true
@@ -422,11 +423,24 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- name: 524,634|yandex-4882
+  network: ws
+  password: 35f8e682-54bd-42c7-b537-94a8e4c84bcd
+  port: 443
+  server: 89.110.120.197
+  skip-cert-verify: true
+  sni: joss.gpj1.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj1.web.id
+    path: /Free-VPN-CF-Geo-Project/89.110.120.197=443
 - alterId: 0
   cipher: auto
-  name: 578,618|俄罗斯 067
+  name: 578,618,723|🇷🇺 俄罗斯 067
   network: tcp
-  port: 11052
+  port: '11052'
   server: 45.67.230.79
   servername: ''
   skip-cert-verify: true
@@ -448,6 +462,14 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺RU
+  name: 591,634|yandex-5224
+  password: yDAMsX678XsjsESR4UJlAI
+  port: 42203
+  server: 185.247.184.27
+  type: ss
+  udp: true
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -773,20 +795,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 066
+  name: 618,723|🇷🇺 俄罗斯 066
   network: tcp
-  port: 47555
+  port: '47555'
   server: 46.29.166.237
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 073
+  name: 618,723|🇷🇺 俄罗斯 073
   network: tcp
-  port: 2098
+  port: '2098'
   server: 147.45.51.16
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
 - name: 627|🇷🇺RU-45.82.14.144-0843
@@ -847,6 +871,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 24912953-d8e5-4761-95a0-a707651cc423
+- name: 723|🇷🇺 俄罗斯 001
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
+- name: 723|🇷🇺 俄罗斯 039
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: trojan
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844

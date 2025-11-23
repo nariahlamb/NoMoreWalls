@@ -1,5 +1,5 @@
 proxies:
-- name: 294,614,615,634|yandex-3465
+- name: 294,614,615,634|yandex-5232
   network: ws
   password: d78d48df-b788-4a95-9e9f-77c9b2f69822
   port: 8443
@@ -14,7 +14,7 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/193.233.114.58=8443
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,617,621,633,638|14|RU_speednode_0041 #2'
+  name: '399,578,617,621,633,638|14|RU_speednode_0041 #2'
   port: 8443
   server: spb.ru.srv.oplcdn.link
   servername: ign.com
@@ -24,7 +24,7 @@ proxies:
   uuid: d42c146e-2ded-4b4a-8592-6459ac636910
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,617,621,633,638|14|RU_speednode_0042 #2'
+  name: '399,578,617,621,633,638|14|RU_speednode_0042 #2'
   port: 8443
   server: 193.233.244.196
   servername: ign.com
@@ -34,7 +34,7 @@ proxies:
   uuid: d42c146e-2ded-4b4a-8592-6459ac636910
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,617,621,633,638|14|RU_speednode_0043 #2'
+  name: '399,578,617,621,633,638|14|RU_speednode_0043 #2'
   port: 8443
   server: 2-germany.geodema.network
   servername: eh.vk.com
@@ -242,13 +242,14 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 473,587| GB_69
+  name: 473,524,587| GB_54
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-45.159.250.190-0350
+  country: 🇺 RU
+  name: 473,524,587| RU_147
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
@@ -289,7 +290,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,618,634|yandex-3889
+- name: 473,618,634|yandex-538
   network: ws
   password: vpn
   port: 2025
@@ -305,9 +306,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-5077
+  name: 473,618,627,634,723|🇷🇺 俄罗斯 079
   network: ws
-  port: 50826
+  port: '50826'
   server: 45.67.32.147
   servername: ''
   skip-cert-verify: true
@@ -660,23 +661,36 @@ proxies:
   sni: hsels.huasuan666.top
   type: hysteria2
   udp: true
+- name: 524,634|yandex-4882
+  network: ws
+  password: 35f8e682-54bd-42c7-b537-94a8e4c84bcd
+  port: 443
+  server: 89.110.120.197
+  skip-cert-verify: true
+  sni: joss.gpj1.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj1.web.id
+    path: /Free-VPN-CF-Geo-Project/89.110.120.197=443
 - alpn:
-  - h2
-  - http/1.1
+  - h2%2Chttp%2F1.1
   client-fingerprint: chrome
-  name: '524|🇷🇺_RU_俄罗斯 #1'
+  name: 524|🇷🇺 _RU_俄罗斯 3
   network: ws
   port: 8443
   server: zcreat.ethervpn.fun
   servername: zcreat.ethervpn.fun
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: a47595a8-1add-401a-8189-e6799f8d8628
   ws-opts:
     headers:
       Host: zcreat.ethervpn.fun
-    path: '%2Fwebsocketpl%3Fed%3D2047'
+    path: /websocketpl?ed=2047
 - alpn:
   - h2
   - http/1.1
@@ -737,9 +751,9 @@ proxies:
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
 - alterId: 0
   cipher: auto
-  name: 578,618|俄罗斯 067
+  name: 578,618,723|🇷🇺 俄罗斯 067
   network: tcp
-  port: 11052
+  port: '11052'
   server: 45.67.230.79
   servername: ''
   skip-cert-verify: true
@@ -761,6 +775,14 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺RU
+  name: 591,634|yandex-5224
+  password: yDAMsX678XsjsESR4UJlAI
+  port: 42203
+  server: 185.247.184.27
+  type: ss
+  udp: true
 - name: 603|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1903,7 +1925,7 @@ proxies:
   type: vless
   udp: true
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 618,634|yandex-4012
+- name: 618,634|yandex-661
   network: ws
   port: 2096
   server: 176.124.223.41
@@ -1918,7 +1940,7 @@ proxies:
       Host: vless.keepfuck.me
     path: /snippets
 - client-fingerprint: chrome
-  name: 618,634|yandex-4042
+  name: 618,634|yandex-691
   network: ws
   port: 2087
   server: 92.243.75.49
@@ -1933,7 +1955,7 @@ proxies:
     headers:
       Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
     path: /snippets?ip=proxyip:port(443)
-- name: 618,634|yandex-4202
+- name: 618,634|yandex-851
   network: ws
   port: 2096
   server: 195.13.54.253
@@ -1959,7 +1981,7 @@ proxies:
   type: vless
   udp: true
   uuid: 7c63f43f-f526-49bb-b5c8-2be26e11ef00
-- name: 618,634|yandex-4242
+- name: 618,634|yandex-891
   network: ws
   port: 8443
   server: 92.243.74.239
@@ -1984,7 +2006,7 @@ proxies:
   type: vless
   udp: true
   uuid: 9ac37507-dc17-5313-8125-c6f588c60103
-- name: 618,634|yandex-4283
+- name: 618,634|yandex-932
   network: ws
   port: 443
   server: 194.76.18.113
@@ -1999,7 +2021,7 @@ proxies:
     headers:
       Host: cj.ylks.xyz
     path: /blue
-- name: 618,634|yandex-4316
+- name: 618,634|yandex-965
   network: tcp
   port: 443
   server: de04.abvpn.ru
@@ -2132,7 +2154,7 @@ proxies:
   type: vless
   udp: true
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 618,634|yandex-4547
+- name: 618,634|yandex-1196
   network: ws
   port: 2096
   server: 213.219.247.41
@@ -2146,7 +2168,7 @@ proxies:
     headers:
       Host: vless.keepfuck.me
     path: /snippets
-- name: 618,634|yandex-4552
+- name: 618,634|yandex-1201
   network: ws
   port: 8443
   server: 217.30.10.46
@@ -2174,11 +2196,12 @@ proxies:
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 066
+  name: 618,723|🇷🇺 俄罗斯 066
   network: tcp
-  port: 47555
+  port: '47555'
   server: 46.29.166.237
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - name: 618|俄罗斯 068
@@ -2201,7 +2224,7 @@ proxies:
   type: vless
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 618,634|yandex-4719
+- name: 618,634|yandex-1368
   network: ws
   port: 2096
   server: 185.59.218.54
@@ -2216,7 +2239,7 @@ proxies:
     headers:
       Host: sni.aizrf.com
     path: /snippets
-- name: 618,634|yandex-4720
+- name: 618,634|yandex-1369
   network: ws
   port: 2096
   server: 193.9.49.54
@@ -2231,7 +2254,7 @@ proxies:
     headers:
       Host: sni.aizrf.com
     path: /snippets
-- name: 618,634|yandex-4721
+- name: 618,634|yandex-1370
   network: ws
   port: 2096
   server: 213.241.198.54
@@ -2248,11 +2271,12 @@ proxies:
     path: /snippets
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 073
+  name: 618,723|🇷🇺 俄罗斯 073
   network: tcp
-  port: 2098
+  port: '2098'
   server: 147.45.51.16
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
 - name: 618|俄罗斯 074
@@ -2276,7 +2300,7 @@ proxies:
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
-  name: 618,634|yandex-4831
+  name: 618,634|yandex-1480
   network: ws
   port: 2096
   server: 195.13.44.52
@@ -2291,7 +2315,7 @@ proxies:
       Host: saas.git.cloudns.org
     path: /snippets&freecodes
 - client-fingerprint: chrome
-  name: 618,634|yandex-4997
+  name: 618,634|yandex-1646
   network: ws
   port: 2096
   server: 94.247.142.61
@@ -2316,7 +2340,7 @@ proxies:
   type: vless
   udp: true
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: 618,634|yandex-5070
+- name: 618,634|yandex-1719
   network: ws
   port: 443
   server: 194.87.79.223
@@ -2331,7 +2355,7 @@ proxies:
     headers:
       Host: fei.634676.xyz
     path: /?ed=2560
-- name: 618,634|yandex-5091
+- name: 618,634|yandex-1740
   network: ws
   port: 2053
   server: 89.169.160.84
@@ -2446,7 +2470,7 @@ proxies:
   type: vless
   udp: true
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: 618,634|yandex-5177
+- name: 618,634|yandex-1826
   network: tcp
   port: 443
   server: che-0001-xr.packet-drop-society.net
@@ -2535,7 +2559,7 @@ proxies:
   tls: true
   type: vless
   uuid: 14305246-dc93-4b3c-9f6c-d0b29fa7e4fa
-- name: 638|🇷🇺_俄罗斯
+- name: 638,656|🇩🇪 德国 19
   network: ws
   port: 443
   server: 77.221.157.32
@@ -2574,7 +2598,7 @@ proxies:
     path: '%2Fwebsocketpl%3Fed%3D2047'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '638|🇷🇺_RU_俄罗斯 #4'
+  name: '638|🇷🇺_RU_俄罗斯 #2'
   network: tcp
   port: 443
   reality-opts:
@@ -2587,7 +2611,7 @@ proxies:
   uuid: acb2c1bd-8f2e-4567-bd06-9243feaacfdc
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '638|🇷🇺_RU_俄罗斯 #5'
+  name: '638|🇷🇺_RU_俄罗斯 #3'
   network: tcp
   port: 4249
   reality-opts:
@@ -2609,7 +2633,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '638|🇷🇺_RU_俄罗斯 #6'
+  name: '638|🇷🇺_RU_俄罗斯 #4'
   network: tcp
   port: 443
   reality-opts:
@@ -2701,19 +2725,6 @@ proxies:
   tls: false
   type: vless
   uuid: 258a5f07-d07e-4de4-90b6-69a0ca34bab7
-- client-fingerprint: random
-  name: 656|🇷🇺 俄罗斯 01
-  network: ws
-  port: 2053
-  server: 80.90.187.190
-  servername: ak.suoni.nyc.mn
-  tls: true
-  type: vless
-  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
-  ws-opts:
-    headers:
-      Host: ak.suoni.nyc.mn
-    path: '%2Fproxyip%3Dsjc.o00o.ooo'
 - alterId: 0
   cipher: auto
   name: 656|🇷🇺 RU LLC 01
@@ -2723,6 +2734,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 24912953-d8e5-4761-95a0-a707651cc423
+- name: 723|🇷🇺 俄罗斯 001
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
+- name: 723|🇷🇺 俄罗斯 039
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: trojan
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
