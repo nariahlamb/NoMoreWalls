@@ -34,23 +34,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 7dbdba19-6a3b-4370-93b1-fb5a89adde0c
-- client-fingerprint: firefox
-  flow: ''
-  grpc-opts:
-    grpc-service-name: tj
-  name: '239,240,241,242,243,244,245,246,247|新加坡01|流媒体 #10'
-  network: grpc
-  port: 20230
-  reality-opts:
-    public-key: WEttTimK6Q9qB8cd2AQ8kyDJOVfKAlPIl5E1T7-q0Dw
-    short-id: 1afbe06d
-  server: sg001.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
 - auth: YwuvGJk36B
   name: '399,578,614,615,617,621,633,638|10| - GB - @freeOnlineVPN #2'
   obfs: salamander
@@ -62,7 +45,7 @@ proxies:
   tls: false
   type: hysteria2
 - auth: YwuvGJk36B
-  name: '399,578,614,615,617,621,633|🇬🇧 - GB - @freeOnlineVPN #2 #2'
+  name: '399,578,614,615,617,621,633|🇬🇧@FreakConfig #2'
   obfs: salamander
   obfs-password: khameniiko@smad@ret
   password: YwuvGJk36B
@@ -199,7 +182,8 @@ proxies:
   server: 145.239.6.202
   type: ss
 - cipher: aes-128-gcm
-  name: 454,455,473|🇧GB-141.98.101.178-0256
+  country: 🇬🇧 GB
+  name: 454,455,473,587|🇬🇧 GB_71
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -469,7 +453,7 @@ proxies:
     path: /vmess
 - alterId: 2
   cipher: auto
-  name: 473,618,627,634|yandex-3633
+  name: 473,618,627,634|yandex-3656
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -517,7 +501,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: 473,604,618,627,634|yandex-4846
+  name: 473,604,618,627,634|yandex-4869
   network: ws
   port: 443
   server: 68.168.31.196
@@ -533,7 +517,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,604,618,627,634|yandex-4847
+  name: 473,604,618,627,634|yandex-4870
   network: ws
   port: 443
   server: 68.168.31.242
@@ -549,7 +533,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,604,618,627,634|yandex-5001
+  name: 473,604,618,627,634|yandex-5024
   network: ws
   port: 443
   server: 172.99.190.209
@@ -563,7 +547,7 @@ proxies:
     headers:
       Host: 172.99.190.209
     path: /linkvws
-- name: 473,627,630|🇬🇧 _GB_英国
+- name: '473,627,630|🇺🇸 US美国(mibei77.com 米贝节点分享) #6'
   password: d69e725c-7c7e-4c75-9786-4859b4e0bbc6
   port: 443
   server: 109.169.76.23
@@ -571,12 +555,11 @@ proxies:
   sni: joss.gpj1.web.id
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 473,634|yandex-3440
+  name: 473|GB-45.14.245.2-1442
   password: 17ZDORWIliQHuO6WRGHChXYMzdRtAYVP
   port: 443
   server: 45.14.245.2
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 473,634,648|SS-国-NF解锁英国地区非自制剧-ChatGPT-TikT...
   password: c40641c1f89e7acb
@@ -731,7 +714,7 @@ proxies:
   port: 8080
   server: 172.99.190.39
   type: ss
-- name: 473,627,634|yandex-2498
+- name: 473,627,634|yandex-2479
   password: 02e653c9-7c93-46a9-999d-11834bd0c577
   port: 443
   server: 132.145.51.172
@@ -856,24 +839,30 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8
-- name: 473,627|🇬🇧GB-198.244.190.189-5472
+- country: 🇷FR
+  name: 473,587,627|🇬🇧GB-198.244.190.189-5472
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 473,627|🇬🇧GB-51.38.65.155-5478
+  udp: true
+- country: 🇬🇧 GB
+  name: 473,587,627|🇬🇧GB-51.38.65.155-5478
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: '473,627|🇬🇧GB-46.101.87.178-5479 #1'
+  udp: true
+- country: 🇧GB
+  name: '473,587,627|🇬🇧GB-46.101.87.178-5479 #1'
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 473|GB-172.99.190.87-6451
   password: KixLvKzwjekG00rm
@@ -1344,7 +1333,7 @@ proxies:
     path: /ray
 - alterId: 2
   cipher: auto
-  name: 473,627,634|yandex-2950
+  name: 473,627,634|yandex-2931
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -1787,7 +1776,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
 - cipher: aes-256-gcm
-  name: 537,634|yandex-190
+  name: 537,634|yandex-65
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 23001
   server: uk001.dogsvip.site
@@ -1939,7 +1928,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-517
+  name: 577,634|yandex-411
   network: ws
   port: 16617
   server: planb.mojcn.com
@@ -1956,7 +1945,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-542
+  name: 577,634|yandex-436
   network: ws
   port: 16645
   server: m.cnmjin.net
@@ -1973,7 +1962,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-543
+  name: 577,634|yandex-437
   network: ws
   port: 16645
   server: t.cnmjcn.cyou
@@ -2041,6 +2030,14 @@ proxies:
   tls: true
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
+- country: 🇧 GB
+  name: 587|🇧 GB_75
+  password: dd6dcb10-4683-11f0-ae79-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: 603|英国_金丝雀码头
   network: ws
   port: 443
@@ -2630,7 +2627,7 @@ proxies:
   sni: ultimate-civet.adder289.quest
   type: trojan
 - encryption: none
-  name: 618,634|yandex-3672
+  name: 618,634|yandex-3695
   network: ws
   port: 80
   server: 51.68.189.39
@@ -2680,7 +2677,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- name: 618,634|yandex-3986
+- name: 618,634|yandex-4009
   network: ws
   port: 2096
   server: 185.156.19.49
@@ -2694,7 +2691,7 @@ proxies:
     headers:
       Host: getsub.saas.classelivre.eu.org
     path: /snippets&freecodes
-- name: 618,634|yandex-4015
+- name: 618,634|yandex-4038
   network: ws
   port: 8880
   server: 25.129.199.251
@@ -2709,7 +2706,7 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /
-- name: 618,634|yandex-4030
+- name: 618,634|yandex-4053
   network: ws
   port: 22222
   server: 51.44.134.210
@@ -2744,7 +2741,7 @@ proxies:
   type: vless
   udp: true
   uuid: b77d5b7a-c15f-40e3-b510-d6b9c45fbc17
-- name: 618,634|yandex-4324
+- name: 618,634|yandex-4347
   network: ws
   port: 2096
   server: 109.176.239.39
@@ -2768,7 +2765,7 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: b2836369-220b-4840-80c4-8cf904c735ee
-- name: 618,634|yandex-4534
+- name: 618,634|yandex-4557
   network: ws
   port: 22222
   server: 3.10.78.149
@@ -2783,7 +2780,7 @@ proxies:
     headers:
       Host: telegram-channel-vlessconfig.sohala.uk
     path: /telegram-channel-vlessconfig-ws
-- name: 618,634|yandex-4535
+- name: 618,634|yandex-4558
   network: ws
   port: 22222
   server: 35.179.21.136
@@ -2808,7 +2805,7 @@ proxies:
   type: vless
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 618,634|yandex-4593
+- name: 618,634|yandex-4616
   network: ws
   port: 22222
   server: 18.135.151.131
@@ -2832,7 +2829,7 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: d5e16b83-7b5c-45ea-d749-d6f6ad214447
-- name: 618,634|yandex-4680
+- name: 618,634|yandex-4703
   network: ws
   port: 443
   server: 151.101.62.102
@@ -2847,7 +2844,7 @@ proxies:
     headers:
       Host: 9x.ru
     path: /Telegram-Xv2ry2-7?ed=1080
-- name: 618,634|yandex-4699
+- name: 618,634|yandex-4722
   network: ws
   port: 2096
   server: 25.129.196.54
@@ -2862,7 +2859,7 @@ proxies:
     headers:
       Host: sni.aizrf.com
     path: /snippets
-- name: 618,634|yandex-4700
+- name: 618,634|yandex-4723
   network: ws
   port: 2096
   server: 25.129.199.54
@@ -2877,7 +2874,7 @@ proxies:
     headers:
       Host: sni.aizrf.com
     path: /snippets
-- name: 618,634|yandex-4717
+- name: 618,634|yandex-4740
   network: ws
   port: 2096
   server: 45.12.31.53
@@ -2906,7 +2903,7 @@ proxies:
       Host: abcd.freewarp.eu.org
     path: /snippets&freecodes+
 - client-fingerprint: chrome
-  name: 618,634|yandex-4825
+  name: 618,634|yandex-4848
   network: ws
   port: 443
   server: d.nl.cdn.maviks.ru
@@ -2936,7 +2933,7 @@ proxies:
     headers:
       Host: krill.xfan01.sbs
     path: /Telegram🇮🇷
-- name: 618,634|yandex-4902
+- name: 618,634|yandex-4925
   network: ws
   port: 8080
   server: 45.85.119.79
@@ -2951,7 +2948,7 @@ proxies:
     headers:
       Host: late-tooth.granzinhannah.workers.dev
     path: /
-- name: 618,634|yandex-4903
+- name: 618,634|yandex-4926
   network: ws
   port: 8880
   server: 45.85.119.79
@@ -2967,7 +2964,7 @@ proxies:
       Host: late-tooth.granzinhannah.workers.dev
     path: /
 - client-fingerprint: chrome
-  name: 618,634|yandex-4973
+  name: 618,634|yandex-4996
   network: ws
   port: 2096
   server: 164.38.155.61
@@ -2982,7 +2979,7 @@ proxies:
       Host: vless.hubp.de
     path: /snippets
 - client-fingerprint: chrome
-  name: 618,634|yandex-4975
+  name: 618,634|yandex-4998
   network: ws
   port: 2096
   server: 77.75.199.61
@@ -3579,7 +3576,7 @@ proxies:
   type: vmess
   uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
 - client-fingerprint: random
-  name: 656|🇬🇧 英国 04
+  name: 656|🇬🇧 英国 02
   network: ws
   port: 443
   server: 146.19.230.99
