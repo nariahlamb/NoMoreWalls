@@ -42,21 +42,21 @@ proxies:
   server: 204.136.10.115
   type: ss
   udp: true
-- name: 473,627|🇨🇭CH-152.67.71.149-2992
+- name: 473,627|🇨🇭CH-152.67.71.149-2993
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: 473|🇨CH-156.146.62.160-4564
+  name: 473|🇨CH-156.146.62.160-4549
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
 - alterId: 1
   cipher: auto
-  name: 473,627|🇨🇭CH-186.190.215.32-8510
+  name: 473,627|🇨🇭CH-186.190.215.32-8460
   network: ws
   port: 443
   server: 186.190.215.32
@@ -71,7 +71,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: 473,627|🇨🇭CH-186.190.215.75-8574
+  name: 473,627|🇨🇭CH-186.190.215.75-8524
   network: ws
   port: 443
   server: 186.190.215.75
@@ -86,7 +86,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,627|🇨🇭CH-140.238.212.95-8587
+  name: 473,627|🇨🇭CH-140.238.212.95-8537
   network: ws
   port: 443
   server: 140.238.212.95
@@ -101,7 +101,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 473,627|🇨🇭CH-23.166.88.27-8681
+  name: 473,627|🇨🇭CH-23.166.88.27-8631
   network: ws
   port: 443
   server: 23.166.88.27
@@ -114,20 +114,46 @@ proxies:
     headers:
       Host: 23.166.88.27
     path: /
+- name: '630|🇺🇸 US美国(mibei77.com 米贝节点分享) #22'
+  password: 0311306e-56d4-4aa1-bde5-8cede7fcd3e4
+  port: 443
+  server: 138.124.30.8
+  skip-cert-verify: false
+  sni: joss.gpj1.web.id
+  type: trojan
 - name: 638|瑞士 - 温特图尔 - 1
   password: trojan
   port: 8443
   server: 45.15.167.19
   sni: tianjiu.pages.dev
   type: trojan
-- name: 656|🇨🇭 瑞士 01
-  network: ws
+- name: 642|🇨🇭 瑞士 01
   password: b87a1832-96c8-4291-b273-30a4d68f2629
   port: 443
   server: 91.245.225.69
+  skip-cert-verify: false
+  sni: joss.gpj1.web.id
+  type: trojan
+- name: '656|🇨🇭 瑞士 01 #1'
+  network: ws
+  password: 8d047125-8467-4724-bb62-ef64405dca78
+  port: 443
+  server: 91.192.102.92
   sni: joss.gpj1.web.id
   type: trojan
   ws-opts:
     headers:
       Host: joss.gpj1.web.id
-    path: '%2FFree-VPN-CF-Geo-Project%2F91.245.225.69%3D443'
+    path: '%2FFree-VPN-CF-Geo-Project%2F91.192.102.92%3D443'
+- name: 719|🇨🇭  01
+  network: ws
+  password: 8d047125-8467-4724-bb62-ef64405dca78
+  port: 443
+  server: 91.192.102.92
+  sni: joss.gpj1.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj1.web.id
+    path: /Free-VPN-CF-Geo-Project/91.192.102.92=443
