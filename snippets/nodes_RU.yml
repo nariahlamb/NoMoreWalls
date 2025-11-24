@@ -103,14 +103,14 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 473,587| RU_138
+  name: 473,587|🇺 RU_146
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 473,587|🇬🇧 GB_56
+  country: 🇬🇧 GB
+  name: 473,587|🇧 GB_60
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
@@ -151,7 +151,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,618,634|yandex-708
+- name: 473,618,634|yandex-3851
   network: ws
   password: vpn
   port: 2025
@@ -167,9 +167,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇷🇺 俄罗斯 079
+  name: 473,618,627,634|yandex-5039
   network: ws
-  port: '50826'
+  port: 50826
   server: 45.67.32.147
   servername: ''
   skip-cert-verify: true
@@ -412,9 +412,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 578,618,723|🇷🇺 俄罗斯 067
+  name: 578,618|俄罗斯 067
   network: tcp
-  port: '11052'
+  port: 11052
   server: 45.67.230.79
   servername: ''
   skip-cert-verify: true
@@ -426,9 +426,9 @@ proxies:
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 587,638|美国_112318029
+  name: 587,638|🇷🇺 RU_150
   network: tcp
-  port: '45245'
+  port: 45245
   server: ye.fxlcn.com
   servername: ''
   skip-cert-verify: true
@@ -438,7 +438,7 @@ proxies:
   ws-path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺RU
-  name: 591|🇺RU_27
+  name: 591|🇷🇺RU_23
   password: yDAMsX678XsjsESR4UJlAI
   port: 42203
   server: 185.247.184.27
@@ -768,22 +768,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 618,723|🇷🇺 俄罗斯 066
+  name: 618|俄罗斯 066
   network: tcp
-  port: '47555'
+  port: 47555
   server: 46.29.166.237
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
-  name: 618,723|🇷🇺 俄罗斯 073
+  name: 618|俄罗斯 073
   network: tcp
-  port: '2098'
+  port: 2098
   server: 147.45.51.16
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
 - name: 627|🇷🇺RU-45.82.14.144-0843
@@ -795,6 +793,13 @@ proxies:
   type: trojan
   ws-opts:
     path: /
+- name: 630,638|🇺🇸US美国18
+  password: 1a758d17-149a-47f3-9336-d1cc33232cc9
+  port: 443
+  server: 91.103.253.193
+  skip-cert-verify: false
+  sni: joss.gpj1.web.id
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -823,17 +828,28 @@ proxies:
   server: 46.29.161.237
   sni: 46.29.161.237
   type: trojan
-- name: 638|YouTube顺丰资源 俄罗斯256
-  password: Aimer
-  port: 2096
-  server: 5.182.84.22
-  sni: epge.muarua.filegear-sg.me
+- name: '638|🇷🇺_RU_俄罗斯 #2'
+  network: ws
+  password: d78d48df-b788-4a95-9e9f-77c9b2f69822
+  port: 8443
+  server: 193.233.114.58
+  sni: joss.gpj1.web.id
   type: trojan
-- name: 638|🇷🇺RU_149
+  ws-opts:
+    headers:
+      Host: joss.gpj1.web.id
+    path: '%2FFree-VPN-CF-Geo-Project%2F193.233.114.58%3D8443'
+- name: 638|🇷🇺RU_151
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
   sni: hk-full.privateip.net
+  type: trojan
+- name: 638|俄罗斯 - 多莫傑多沃 - 1
+  password: trojan
+  port: 2055
+  server: 37.77.106.57
+  sni: tianjiu.pages.dev
   type: trojan
 - alterId: 0
   cipher: auto
@@ -943,20 +959,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 6545537a-0d6f-44c7-80c5-6b43049bea89
-- name: 723|🇷🇺 俄罗斯 001
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: false
-  sni: hsdgbuys.pages.dev
-  type: trojan
-- name: 723|🇷🇺 俄罗斯 039
-  password: vpn
-  port: 2025
-  server: 109.120.132.80
-  skip-cert-verify: true
-  sni: vkvd127.mycdn.me
-  type: trojan
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844

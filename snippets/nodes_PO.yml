@@ -431,7 +431,7 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2FFree-VPN-CF-Geo-Project%2F217.30.10.31%3D8443'
-- name: 638|波兰_112318007
+- name: 638|波兰_112404007
   network: tcp
   password: .+QAJot50sDi6mvb
   port: 11790
@@ -444,13 +444,57 @@ proxies:
   server: 212.162.155.43
   sni: tianjiu.pages.dev
   type: trojan
+- name: 638|波兰 - 普魯斯科夫 - 4
+  password: trojan
+  port: 2087
+  server: 45.144.49.26
+  sni: tianjiu.pages.dev
+  type: trojan
+- name: 638|波兰 - 普魯斯科夫 - 3
+  password: trojan
+  port: 2083
+  server: 77.83.246.117
+  sni: tianjiu.pages.dev
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 638|🇵🇱 PL_145
-  network: tcp
-  port: 8312
-  server: cgroup.node4.v.nodelist-airport.com
-  servername: ''
-  tls: false
+  name: 638|波兰_112404050
+  network: ws
+  port: '44749'
+  server: 45.66.11.50
+  servername: imafake.locker
+  tls: true
   type: vmess
-  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: 638|波兰_112404051
+  network: ws
+  port: '44749'
+  server: 45.66.11.50
+  servername: imafake.locker
+  tls: true
+  type: vmess
+  uuid: 9631096d-3032-4942-9446-bdf12665682b
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: 638|波兰_112404053
+  network: ws
+  port: '44749'
+  server: 45.66.11.50
+  servername: imafake.locker
+  tls: true
+  type: vmess
+  uuid: c50f9480-2e1d-40db-9458-630e79636663
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest

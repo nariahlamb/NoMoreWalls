@@ -115,7 +115,7 @@ proxies:
       Host: 23.166.88.27
     path: /
 - client-fingerprint: chrome
-  name: 618,634|yandex-424
+  name: 618,634|yandex-3567
   network: ws
   packet-addr: false
   packet-encoding: xudp
@@ -133,15 +133,20 @@ proxies:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
   xudp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '638|🇨🇭_CH_瑞士 #1'
-  network: tcp
+- name: 638|瑞士 - 温特图尔 - 1
+  password: trojan
+  port: 8443
+  server: 45.15.167.19
+  sni: tianjiu.pages.dev
+  type: trojan
+- name: 656|🇨🇭 瑞士 01
+  network: ws
+  password: b87a1832-96c8-4291-b273-30a4d68f2629
   port: 443
-  reality-opts:
-    public-key: Ufkz__Q3m_d8NFR08OVtXx3hLaV4-x7UesrVKduEIn0
-  server: srv18.towersflowerss.com
-  servername: srv18.towersflowerss.com
-  tls: false
-  type: vless
-  uuid: acacdb17-f35a-43b0-8829-dcf2d8fe76a6
+  server: 91.245.225.69
+  sni: joss.gpj1.web.id
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joss.gpj1.web.id
+    path: '%2FFree-VPN-CF-Geo-Project%2F91.245.225.69%3D443'
