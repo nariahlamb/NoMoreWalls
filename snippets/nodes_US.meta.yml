@@ -220,34 +220,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- name: 96,579,634|yandex-131
-  network: ws
-  port: 443
-  server: 104.16.143.134
-  servername: www.x-aniu--hk.netlib.re
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    headers:
-      Host: www.x-aniu--hk.netlib.re
-    path: /?ed=2560
-- name: 96,579,634|yandex-121
-  network: ws
-  port: 443
-  server: 104.18.207.210
-  servername: www.x-aniu--hk.netlib.re
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    headers:
-      Host: www.x-aniu--hk.netlib.re
-    path: /?ed=2560
 - client-fingerprint: firefox
   flow: ''
   grpc-opts:
@@ -372,19 +344,68 @@ proxies:
   tls: true
   type: http
   username: 94931862-1484-11f0-9ab7-f23c95b6f51d
-- name: 217|US
+- name: 217|🇺🇸 US
   network: tcp
   port: 443
   server: 51.81.37.20
   servername: 147135010072.sec21org.com
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
+- alterId: 2
+  cipher: auto
+  name: 217,634|yandex-3762
+  network: ws
+  port: 30804
+  server: v4.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 217,473,618,627,634|yandex-3736
+  network: ws
+  port: 30832
+  server: v32.heduian.link
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '217,637|12,13|美国|@ripaojiedian #2'
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 224|美国高速x2
   port: 17437
-  server: sdzy.sqgw.xyz
+  server: 180.188.43.157
   type: vmess
   udp: true
   uuid: 7dbdba19-6a3b-4370-93b1-fb5a89adde0c
@@ -597,7 +618,7 @@ proxies:
   tls: false
   type: hysteria2
 - country: 🇯🇵JP
-  name: '399,473,524,578,591,627,638|12,13|美国|@ripaojiedian #3'
+  name: '399,473,524,591,627,638|12,13|美国|@ripaojiedian #3'
   network: tcp
   password: 2cf6d686799e6fa95316394064f26c0a
   port: 2890
@@ -816,8 +837,8 @@ proxies:
   server: 139.64.165.101
   type: ss
 - cipher: aes-128-gcm
-  country: 🇸 US
-  name: 454,455,473,587|🇸 US_164
+  country: 🇺🇸 US
+  name: 454,455,473,587|🇺 US_177
   password: shadowsocks
   port: 443
   server: 156.146.38.167
@@ -1359,7 +1380,7 @@ proxies:
   server: 38.107.226.238
   type: ss
 - cipher: aes-256-cfb
-  name: 454,587|_03
+  name: 454,587|_08
   password: gYCYXfkUQEs2TaJQ
   port: 9038
   server: 194.116.173.21
@@ -1390,7 +1411,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇸 US
-  name: 454,455,473,587|🇸 US_166
+  name: 454,455,473,587|🇺🇸 US_175
   password: shadowsocks
   port: 443
   server: 156.146.38.170
@@ -1544,8 +1565,8 @@ proxies:
   server: 107.151.182.253
   type: ss
 - cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: 454,473,587|🇰 HK_69
+  country: 🇰 HK
+  name: 454,473,587|🇰 HK_70
   password: asd123456
   port: 8388
   server: 103.36.91.23
@@ -2656,15 +2677,15 @@ proxies:
       Host: 68.183.129.197
     path: /cctv13/hd.m3u8
 - cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: 473,587|🇺🇸 US_170
+  country: 🇸 US
+  name: 473,587|🇺 US_169
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 64.74.163.130
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸 US
-  name: 473,587|🇺🇸 US_175
+  name: 473,587|🇺🇸 US_174
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 104.192.226.106
@@ -15918,6 +15939,15 @@ proxies:
     path: /path/243535322906
 - alterId: 0
   cipher: auto
+  name: '524,609,610|美国 华盛顿Cogent通信公司 #4'
+  network: none
+  port: 36104
+  server: 38.180.16.86
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
   name: '524,609,610,630|🇺🇸 美国 科罗拉多州NTT(美国)通信公司 #1'
   network: none
   port: '44805'
@@ -15927,18 +15957,13 @@ proxies:
   uuid: f7d62526-9e06-455e-82bd-241d368002e8
 - alterId: 0
   cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: '524,587,609,610|美国 华盛顿Cogent通信公司 #2'
+  name: 524,609,610,630|🇺🇸 美国 华盛顿Cogent通信公司
   network: none
-  port: 53487
-  server: 38.84.201.21
-  skip-cert-verify: true
+  port: '36236'
+  server: 38.180.16.86
   tls: false
   type: vmess
-  uuid: c3c1ec05-df2c-4975-9b42-e9b007564eb1
-  ws-path: /
+  uuid: a58bc1a5-8c18-49ff-9453-c331b52f45dc
 - name: 524|🇺🇸_US_美国
   network: ws
   password: 12345678-1234-1234-1234-123456789123
@@ -15976,6 +16001,17 @@ proxies:
     headers:
       Host: c03237cb.ba73fe85.netlib.re
     path: '%2F'
+- name: 524,634|yandex-70
+  network: ws
+  port: 80
+  server: 172.66.156.81
+  tls: false
+  type: vless
+  uuid: 0267b737-c79b-4092-95ad-74694cbbce32
+  ws-opts:
+    headers:
+      Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
+    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
 - cipher: aes-256-gcm
   name: 537,634|yandex-5122
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
@@ -16226,6 +16262,23 @@ proxies:
   tls: true
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
+- alterId: 0
+  cipher: auto
+  name: 578,618,634,638|未知10
+  network: ws
+  port: '443'
+  server: fapeng.org
+  servername: fapeng.org
+  skip-cert-verify: true
+  tfo: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -16401,122 +16454,21 @@ proxies:
   type: vless
   udp: true
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- alterId: 64
-  cipher: auto
+- cipher: aes-256-gcm
   country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 587,618,638|🇺🇸 US_173
-  network: tcp
-  port: 30002
-  server: 38.12.83.217
-  servername: ''
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
+  name: 587|🇺🇸 US_171
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 36885
+  server: ss.031.node-for-bigairport.win
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇸 US
   h2-opts: {}
   http-opts: {}
-  name: '587,638|🇺🇸 US_193 #1'
-  network: tcp
-  port: 45231
-  server: lt.fxlcn.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 587|🇺🇸 US_178
-  network: ws
-  port: 443
-  server: 38.99.82.193
-  servername: tilebani.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: tilebani.com
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 587|🇸 US_180
-  network: ws
-  port: 443
-  server: xyst5w.teeoomboom.de
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-path: /video/g5petez.m3u8
-- alterId: 0
-  cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: '587,638|🇺🇸 US_176 #1'
-  network: none
-  port: 57283
-  server: 216.238.89.53
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 1a5aafc0-6482-451d-fe76-6875b7818579
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: '587,638|🇺🇸 US_178 #1'
-  network: tcp
-  port: 45258
-  server: 216.227.168.157
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 587,638|🇺🇸 US_179
+  name: 587,638|🇺🇸 US_184
   network: tcp
   port: 45294
-  server: 216.227.168.157
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 587,638|🇺🇸 US_180
-  network: tcp
-  port: 45288
   server: lt.fxlcn.com
   servername: ''
   skip-cert-verify: true
@@ -16524,55 +16476,6 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 587,638|🇺🇸 US_183
-  network: tcp
-  port: 45258
-  server: lt.fxlcn.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 587,618,638|🇺🇸 US_181
-  network: tcp
-  port: 45271
-  server: lt.fxlcn.com
-  servername: ''
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 587|🇺🇸 US_187
-  network: ws
-  port: 443
-  server: 148.113.176.192
-  servername: fapeng.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: fapeng.org
-  ws-path: linkvws
 - alterId: 0
   cipher: auto
   country: 🇺🇸 US
@@ -16590,18 +16493,116 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_183
+  network: ws
+  port: 443
+  server: 15.235.50.172
+  servername: baradiha.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: baradiha.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: '587,638|🇺🇸 US_184 #1'
+  name: '587,638|🇺🇸 US_180 #1'
   network: tcp
-  port: 45294
+  port: 45288
   server: lt.fxlcn.com
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: '587,638|🇺🇸 US_183 #1'
+  network: tcp
+  port: 45258
+  server: lt.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: '587,618,638|🇺🇸 US_181 #1'
+  network: tcp
+  port: 45271
+  server: lt.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: '587,638|🇺🇸 US_179 #1'
+  network: tcp
+  port: 45294
+  server: 216.227.168.157
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_188
+  network: ws
+  port: 443
+  server: 148.113.176.192
+  servername: fapeng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: fapeng.org
+  ws-path: linkvws
+- alterId: 64
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,618,638|🇺🇸 US_173
+  network: tcp
+  port: 30002
+  server: 38.12.83.217
+  servername: ''
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -16618,21 +16619,6 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 587,638|🇺🇸 US_188
-  network: tcp
-  port: 45263
-  server: 216.227.168.157
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
 - alterId: 0
@@ -16657,10 +16643,71 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: '587,638|🇺🇸 US_189 #1'
+  name: '587,638|🇺🇸 US_178 #1'
   network: tcp
-  port: 45237
-  server: fa.fxlcn.com
+  port: 45258
+  server: 216.227.168.157
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇺🇸 US_176
+  network: none
+  port: 57283
+  server: 216.238.89.53
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1a5aafc0-6482-451d-fe76-6875b7818579
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,856|California V2 - C Group
+  network: ws
+  port: 6542
+  server: cgroup.node5.v.nodelist-airport.com
+  servername: cgroup.node5.v.nodelist-airport.com
+  skip-cert-verify: true
+  type: vmess
+  udp: true
+  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  ws-headers:
+    HOST: cgroup.node5.v.nodelist-airport.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇸 US_195
+  network: ws
+  port: 443
+  server: xyst5w.teeoomboom.de
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /video/g5petez.m3u8
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: '587,638|🇺🇸 US_188 #1'
+  network: tcp
+  port: 45263
+  server: 216.227.168.157
   servername: ''
   skip-cert-verify: true
   tls: false
@@ -16672,52 +16719,42 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 587|🇺🇸 US_194
-  network: ws
-  port: 443
-  server: 15.235.83.228
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  name: 587|🇺🇸 US_197
+  network: none
+  port: 53487
+  server: 38.84.201.21
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
+  uuid: c3c1ec05-df2c-4975-9b42-e9b007564eb1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_198
+  network: ws
+  port: 26995
+  server: 62.192.173.86
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7582b522-9028-4365-9ade-9798745a5d38
+  ws-path: /0fagapx
 - alterId: 0
   cipher: auto
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 587|🇺🇸 US_195
-  network: ws
-  port: 443
-  server: 15.235.50.172
-  servername: baradiha.com
+  name: 587,638|🇺🇸 US_194
+  network: tcp
+  port: 45247
+  server: fa.fxlcn.com
+  servername: ''
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: baradiha.com
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 587|🇸 US_196
-  network: ws
-  port: 443
-  server: 15.235.83.227
-  servername: mankadmu.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: mankadmu.com
-  ws-path: /linkvws
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇺🇸 US
@@ -16740,9 +16777,41 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: '587,638|🇺🇸 US_194 #1'
+  name: 587|🇺🇸 US_201
+  network: ws
+  port: 443
+  server: 15.235.83.227
+  servername: mankadmu.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: mankadmu.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: '587,638|🇺🇸 US_193 #1'
   network: tcp
-  port: 45247
+  port: 45231
+  server: lt.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇺🇸 US_189
+  network: tcp
+  port: 45237
   server: fa.fxlcn.com
   servername: ''
   skip-cert-verify: true
@@ -16750,8 +16819,83 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_204
+  network: ws
+  port: 443
+  server: 15.235.83.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_205
+  network: tcp
+  port: 24321
+  server: cgroup.node3.v.nodelist-airport.com
+  servername: cgroup.node3.v.nodelist-airport.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_206
+  network: ws
+  port: 15745
+  server: 62.192.173.86
+  skip-cert-verify: true
+  type: vmess
+  uuid: b564b504-17bf-4ff3-fe42-17569844e526
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587,630|🇭🇰 香港 V2CROSS.COM
+  network: none
+  port: '36673'
+  server: 154.219.119.183
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a84406ac-275d-4dd8-ddda-67c019845a37
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇺🇸 US_208
+  network: ws
+  port: 443
+  server: 38.99.82.193
+  servername: tilebani.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: tilebani.com
+  ws-path: /linkvws
 - cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
+  country: 🇸US
   name: '591,719|🏴‍☠️ HUOJIAN1-1A-437 #1'
   password: f1fa04be-bdf6-477e-81d0-b46232227455
   port: 51004
@@ -16760,7 +16904,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇸US
-  name: 591|Relay_🇺🇸US-🇸US_35
+  name: 591|Relay_🇸US-🇺🇸US_39
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -31413,15 +31557,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 630|🇺🇸 美国 华盛顿Cogent通信公司
-  network: none
-  port: '36236'
-  server: 38.180.16.86
-  tls: false
-  type: vmess
-  uuid: a58bc1a5-8c18-49ff-9453-c331b52f45dc
-- alterId: 0
-  cipher: auto
   name: 630|🇺🇸 美国 阿里云
   network: none
   port: '13502'
@@ -31589,22 +31724,6 @@ proxies:
     headers:
       Host: 1g.890699.xyZ
     path: /lXENb74xF4ylXngZ
-- alterId: 2
-  cipher: auto
-  name: '637|12,13|美国|@ripaojiedian #2'
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -31783,7 +31902,7 @@ proxies:
   server: 217.30.10.31
   sni: joss.gpj1.web.id
   type: trojan
-- name: '638|🇺🇸 US_195 #1'
+- name: 638|🇺🇸 US_195
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: hinet.mjt000.com
@@ -31841,7 +31960,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 638|🇺🇸 US_196
+- name: '638|🇺🇸 US_196 #1'
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
@@ -35380,7 +35499,7 @@ proxies:
   flow: xtls-rprx-vision
   name: '656,719|🇺🇸 United States 2086-1284 #1'
   network: tcp
-  port: 17308
+  port: 17017
   server: usvless.yydzx.xyz
   servername: usvless.yydzx.xyz
   skip-cert-verify: false
@@ -35389,7 +35508,7 @@ proxies:
   uuid: de5d89a9-3f16-448e-8c40-9145852c8736
 - name: '656,719|🇺🇸 United States 2083-1285 #1'
   password: de5d89a9-3f16-448e-8c40-9145852c8736
-  port: 13065
+  port: 13415
   ports: 13001-14000
   server: us2083.yydzx.xyz
   skip-cert-verify: false
@@ -36204,6 +36323,16 @@ proxies:
   type: vmess
   udp: true
   uuid: 5ef5f64d-6316-412f-8b70-9409bac43535
+- alterId: 2
+  cipher: auto
+  name: '719|🇺🇸 美国 081-1048 #1'
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: '719|🇺🇸 美国 075-1072 #1'
@@ -36555,7 +36684,7 @@ proxies:
   congestion-controller: bbr
   name: 719|🇺🇸 United States 02-1252
   password: de5d89a9-3f16-448e-8c40-9145852c8736
-  port: 11568
+  port: 11755
   server: ustuic01.yydzx.xyz
   sni: ustuic01.yydzx.xyz
   type: tuic
@@ -36948,7 +37077,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.nintendo.it:193531
+    host: db5fe62.dl.microsoft.jp:193531
     mode: tls
   port: 2377
   server: db5fe62.u1.glados-config.com
@@ -36959,7 +37088,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.nintendo.de:193531
+    host: db5fe62.dl.microsoft.hu:193531
     mode: tls
   port: 2377
   server: db5fe62.u2.glados-config.com
@@ -36970,7 +37099,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.fastly.net:193531
+    host: db5fe62.dl.microsoft.de:193531
     mode: tls
   port: 2377
   server: db5fe62.u3.glados-config.com
@@ -36981,7 +37110,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.mozilla.net:193531
+    host: db5fe62.dl.nintendo.eu:193531
     mode: tls
   port: 2377
   server: db5fe62.u4.glados-config.com
@@ -36992,7 +37121,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.cat:193531
+    host: db5fe62.dl.epicgames.com:193531
     mode: tls
   port: 2377
   server: db5fe62.u5.glados-config.com
@@ -37003,7 +37132,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.is:193531
+    host: db5fe62.dl.nintendo.es:193531
     mode: tls
   port: 2377
   server: db5fe62.u6.glados-config.com
@@ -37014,7 +37143,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.com:154948
+    host: feb7fa9.dl.epicgames.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.u1.glados-config.com
@@ -37025,7 +37154,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.de:154948
+    host: feb7fa9.dl.microsoft.ge:154948
     mode: tls
   port: 2377
   server: feb7fa9.u2.glados-config.com
@@ -37036,7 +37165,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.it:154948
+    host: feb7fa9.dl.microsoft.ee:154948
     mode: tls
   port: 2377
   server: feb7fa9.u3.glados-config.com
@@ -37047,7 +37176,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.ge:154948
+    host: feb7fa9.dl.nvidia.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.u4.glados-config.com
@@ -37058,7 +37187,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.be:154948
+    host: feb7fa9.dl.microsoft.ch:154948
     mode: tls
   port: 2377
   server: feb7fa9.u5.glados-config.com
@@ -37069,7 +37198,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.ee:154948
+    host: feb7fa9.dl.microsoft.net:154948
     mode: tls
   port: 2377
   server: feb7fa9.u6.glados-config.com
@@ -37155,9 +37284,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '859|美国普通线路1 #1'
+  name: '859|美国普通线路2 #1'
   network: tcp
-  port: '13090'
+  port: '13093'
   server: zz.xiaoqingwa.xyz
   servername: ''
   tls: false
@@ -37165,9 +37294,9 @@ proxies:
   uuid: 09740703-d597-3396-9502-45bb6e293342
 - alterId: 0
   cipher: auto
-  name: '859|美国普通线路2 #1'
+  name: '859|美国普通线路1 #1'
   network: tcp
-  port: '13093'
+  port: '13090'
   server: zz.xiaoqingwa.xyz
   servername: ''
   tls: false

@@ -205,31 +205,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: chacha20-ietf
-  name: '96,579|HK_4|6.7MB/s|NF|D+ #1'
-  password: asd123456
-  port: 8388
-  server: 103.149.182.203
-  type: ss
-- cipher: chacha20-ietf
-  name: '96,579|HK_5|7.3MB/s|NF #1'
-  password: asd123456
-  port: 8388
-  server: 103.149.182.38
-  type: ss
-- cipher: chacha20-ietf
-  name: 96,473,579,634|yandex-224
-  password: asd123456
-  port: 8388
-  server: 103.149.182.86
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: '96,473,579|HK_7|7.5MB/s|NF|D+ #1'
-  password: asd123456
-  port: 8388
-  server: 103.149.183.154
-  type: ss
 - alterId: 0
   cipher: auto
   name: 100,473,586,618,627,634|yandex-1182
@@ -742,6 +717,20 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
+- alterId: 0
+  cipher: none
+  name: 217|🇭🇰 HK-Eons_Data_Communications
+  network: ws
+  port: 443
+  server: www.visa.com.tw
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: df7a96e2-c663-48ed-9713-1c144705f79e
+  ws-opts:
+    headers:
+      Host: ee-boston-therapist-cleaning.trycloudflare.com
+    path: /vmess-argo?ed=2048
 - cipher: aes-256-gcm
   name: '294,614,615,635|🇭🇰 香港2|@ripaojiedian #3'
   password: ccf426f1fe78
@@ -1034,7 +1023,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '470|🇭🇰 香港 #1'
+  name: '470|🇭🇰 香港 #2'
   port: 19901
   server: xg.dashuai.cyou
   tls: false
@@ -1165,7 +1154,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,524,578,627,638|未知8
+  name: 473,524,627,638|未知8
   network: ws
   port: '3721'
   server: 8.218.17.136
@@ -1179,8 +1168,8 @@ proxies:
       Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 473,587| HK_68
+  country: 🇭🇰 HK
+  name: 473,587|🇰 HK_71
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
@@ -2568,7 +2557,7 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇸 US
+- country: 🇺🇸 US
   name: '473,587,627|🇭🇰HK-45.149.92.71-5513 #1'
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
@@ -2577,17 +2566,23 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  name: 473|🇰HK-188.116.22.96-5552
+  country: 🇬🇧GB
+  name: 473,591|🇬🇧GB_07
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 188.116.22.96
   type: ss
 - cipher: chacha20-ietf
-  country: 🇰HK
-  name: 473,591|Pool_HK_09
+  name: 473|🇰HK-103.149.183.80-5554
   password: asd123456
   port: 8388
   server: 103.149.183.80
+  type: ss
+- cipher: chacha20-ietf
+  name: 473|🇰HK-103.149.183.154-5555
+  password: asd123456
+  port: 8388
+  server: 103.149.183.154
   type: ss
 - cipher: chacha20-ietf
   name: 473|🇰HK-103.149.183.113-5609
@@ -2596,14 +2591,21 @@ proxies:
   server: 103.149.183.113
   type: ss
 - cipher: chacha20-ietf
-  name: 473|🇭🇰HK-103.149.183.191-5611
+  name: 473,634|yandex-224
+  password: asd123456
+  port: 8388
+  server: 103.149.182.86
+  type: ss
+  udp: true
+- cipher: chacha20-ietf
+  country: 🇰HK
+  name: 473,591|HK_10
   password: asd123456
   port: 8388
   server: 103.149.183.191
   type: ss
 - cipher: chacha20-ietf
-  country: 🇰 HK
-  name: 473,587|🇰 HK_70
+  name: 473|🇭🇰HK-103.149.182.191-5612
   password: asd123456
   port: 8388
   server: 103.149.182.191
@@ -5167,12 +5169,19 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: aes-256-gcm
+  country: 🇭🇰 HK
+  name: 587|🇰 HK_73
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 15099
+  server: ss.026.node-for-bigairport.win
+  type: ss
 - alterId: 2
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 587|🇰 HK_72
+  name: 587|🇭🇰 HK_74
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -5180,6 +5189,15 @@ proxies:
   type: vmess
   uuid: 1b9c460e-f026-11ef-b737-f23c91cfbbc9
   ws-path: /
+- country: 🇭🇰HK
+  name: 591|🇰HK_12
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.22
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
 - name: 606|香港_古洞
   network: tcp
   password: NUeBvQHox0BmnHpu
@@ -5388,15 +5406,6 @@ proxies:
   type: vmess
   udp: true
   uuid: aaba2807-e05d-4b46-a819-10aca0793576
-- alterId: 0
-  cipher: auto
-  name: 630|🇭🇰 香港 V2CROSS.COM
-  network: none
-  port: '36673'
-  server: 154.219.119.183
-  tls: false
-  type: vmess
-  uuid: a84406ac-275d-4dd8-ddda-67c019845a37
 - alterId: 0
   cipher: auto
   name: '630,638|🇨🇳_中国 #1'
@@ -6108,7 +6117,7 @@ proxies:
   type: vmess
   udp: true
   uuid: f3c11ea9-8694-4e45-9373-2d9a8ea9c988
-- name: '691|HK #3'
+- name: 691|HK
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 41288

@@ -1015,18 +1015,18 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 217|JP
-  network: tcp
+- name: 217|🇯🇵 JP
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
+  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - alterId: 0
   cipher: auto
   name: 224|日本高速x1
   port: 46150
-  server: sdzy.sqgw.xyz
+  server: 180.188.43.157
   type: vmess
   udp: true
   uuid: 7dbdba19-6a3b-4370-93b1-fb5a89adde0c
@@ -2958,7 +2958,8 @@ proxies:
   server: 54.199.83.239
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇵JP-54.178.43.232-5428
+  country: 🇰 HK
+  name: 473,587|🇰 HK_72
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 10079
   server: ss.030.node-for-bigairport.win
@@ -3395,6 +3396,15 @@ proxies:
   tls: true
   type: vmess
   uuid: 2e7548bb-7c5b-4d97-d64d-1b2fe4050089
+- country: 🇯🇵JP
+  name: 591,642|🇯🇵 日本 18
+  password: FDIypSwe64a3DA7un2R8DFjYXZO3NS05gKZTTOC8SxO0Fy3cqYg3EaFDA3ABaEYKNx39D
+  port: 443
+  server: kuame.missionsec.us
+  skip-cert-verify: true
+  sni: kuame.missionsec.us
+  type: trojan
+  udp: true
 - name: '603|日本_Osaka #1'
   network: ws
   password: NISHIKUITAN222
@@ -4187,13 +4197,6 @@ proxies:
   tls: false
   type: vmess
   uuid: dbf7a6e4-d518-4f9b-a55e-27ef892ffac1
-- name: 642|🇯🇵 日本 18
-  password: FDIypSwe64a3DA7un2R8DFjYXZO3NS05gKZTTOC8SxO0Fy3cqYg3EaFDA3ABaEYKNx39D
-  port: 443
-  server: kuame.missionsec.us
-  skip-cert-verify: true
-  sni: kuame.missionsec.us
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '649|日本NO.1 #2'
@@ -5386,7 +5389,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.lt:193531
+    host: db5fe62.dl.microsoft.dk:193531
     mode: tls
   port: 2377
   server: db5fe62.j1.glados-config.com
@@ -5397,7 +5400,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.nintendo.be:193531
+    host: db5fe62.dl.microsoft.cl:193531
     mode: tls
   port: 2377
   server: db5fe62.j2.glados-config.com
@@ -5408,7 +5411,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.com:193531
+    host: db5fe62.dl.microsoft.io:193531
     mode: tls
   port: 2377
   server: db5fe62.j3.glados-config.com
@@ -5419,7 +5422,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.de:154948
+    host: feb7fa9.dl.fastly.net:154948
     mode: tls
   port: 2377
   server: feb7fa9.j1.glados-config.com
@@ -5430,7 +5433,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.de:154948
+    host: feb7fa9.dl.nintendo.be:154948
     mode: tls
   port: 2377
   server: feb7fa9.j2.glados-config.com
@@ -5441,7 +5444,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.ge:154948
+    host: feb7fa9.dl.xboxlive.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.j3.glados-config.com
