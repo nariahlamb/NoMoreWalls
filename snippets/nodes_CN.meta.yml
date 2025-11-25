@@ -173,7 +173,7 @@ proxies:
   port: '30806'
   server: v6.heduian.link
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
@@ -422,13 +422,13 @@ proxies:
       Host: v8.heduian.link
     path: /oooo
 - cipher: aes-128-gcm
-  name: 473,634|yandex-5189
+  name: 473,634|yandex-5147
   password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74
   port: 23344
   server: 103.219.103.217
   type: ss
   udp: true
-- name: '473,524,627,630,634,638,656,719|🏴‍☠️ PSG2 #1'
+- name: '473,578,627,630,634,638,656,719|🏴‍☠️ PSG2 #1'
   network: tcp
   password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
   port: 5223
@@ -447,7 +447,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: 473,634|yandex-5193
+  name: 473,634|yandex-5132
   password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74
   port: 21712
   server: 103.219.103.217
@@ -455,7 +455,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: '473,627,630,634,638|🇨🇳_中国 #2'
+  name: '473,627,634,638|🇨🇳_中国 #2'
   network: ws
   port: '30830'
   server: v30.heduian.link
@@ -469,7 +469,7 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- name: '473,524,627,630,638,656,719|🇯🇵 JP3 #1'
+- name: '473,627,630,638,656,719|🇯🇵 JP3 #1'
   network: tcp
   password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
   port: 5223
@@ -1560,7 +1560,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 473,591|Pool__01
+  name: 473|🇨CN-222.186.20.102-5580
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -1886,7 +1886,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 473,627,634|yandex-2567
+  name: 473,627,634|yandex-371
   network: ws
   port: 30812
   server: v12.heduian.link
@@ -1902,7 +1902,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 473,627,634|yandex-4636
+  name: 473,627,634|yandex-2440
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -1918,7 +1918,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 473,627,634|yandex-4149
+  name: 473,627,634|yandex-1953
   network: ws
   port: 30828
   server: v28.heduian.link
@@ -1938,53 +1938,25 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
-- client-fingerprint: chrome
-  name: 524,638|🇸🇬_新加坡
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 43.100.74.250
-  servername: www.primevideo.com
-  tls: false
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-  ws-opts:
-    headers:
-      Host: www.primevideo.com
-- client-fingerprint: chrome
-  name: '524,634,638,656,719|🇭🇰 香港 12 #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 43.100.81.250
-  servername: www.primevideo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-  ws-opts:
-    headers:
-      Host: www.primevideo.com
-- client-fingerprint: chrome
-  name: '524,638|🇨🇳_CN_中国 #16'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 43.100.86.235
-  servername: images-na.ssl-images-amazon.com
-  tls: false
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-  ws-opts:
-    headers:
-      Host: images-na.ssl-images-amazon.com
 - alpn:
   - h3
   client-fingerprint: chrome
-  name: '524,638|🇨🇳_CN_中国 #18'
+  name: 524,638|电报群：https://t.me/vvkj11
+  network: ws
+  port: 443
+  server: 8.218.189.27
+  servername: s3.sni565.netlib.re
+  tls: true
+  type: vless
+  uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+  ws-opts:
+    headers:
+      Host: s3.sni565.netlib.re
+    path: '%2Fproxyip%3Dtw.sni2025.netlib.re'
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: '524,638|🇨🇳_CN_中国 #12'
   network: ws
   port: 43
   server: 220.128.110.108
@@ -1996,64 +1968,17 @@ proxies:
     headers:
       Host: s3.sni565.netlib.re
     path: '%2Fproxyip%3Dtw.sni2025.netlib.re'
-- client-fingerprint: chrome
-  name: '524,638|🇨🇳_CN_中国 #15'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 43.100.67.86
-  servername: www.primevideo.com
-  tls: false
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-  ws-opts:
-    headers:
-      Host: www.primevideo.com
-- client-fingerprint: chrome
-  name: '524,638|🇸🇬_新加坡 #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.213.146.128
-  servername: www.primevideo.com
-  tls: false
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-  ws-opts:
-    headers:
-      Host: www.primevideo.com
-- alpn:
-  - h3
-  client-fingerprint: chrome
-  name: '524,638|🇨🇳_CN_中国 #17'
+- name: '524|🇨🇳_CN_中国 #2'
   network: ws
-  port: 12485
-  server: 125.227.162.252
-  servername: s3.sni565.netlib.re
-  tls: true
-  type: vless
-  uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+  password: c6b96097-fe2d-487d-b9ef-60c994b90db2
+  port: 35951
+  server: 36.50.90.241
+  sni: joss.gpj1.web.id
+  type: trojan
   ws-opts:
     headers:
-      Host: s3.sni565.netlib.re
-    path: '%2Fproxyip%3Dtw.sni2025.netlib.re'
-- alterId: 64
-  cipher: auto
-  country: 🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: 587,638|🇨🇳 CN_39
-  network: tcp
-  port: 59003
-  server: 183.236.51.36
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
+      Host: joss.gpj1.web.id
+    path: '%2FFree-VPN-CF-Geo-Project%2F36.50.90.241%3D35951'
 - alterId: 64
   cipher: auto
   name: 605,618,723|🇨🇳 中国 085
@@ -2147,7 +2072,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 618,634|yandex-515
+  name: 618,634|yandex-3125
   network: ws
   port: 8443
   server: 27.50.48.154
@@ -2222,7 +2147,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: 618,634|yandex-801
+- name: 618,634|yandex-3411
   network: ws
   port: 8443
   server: 27.50.48.239
@@ -2238,7 +2163,7 @@ proxies:
       Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
     path: /snippets?ip=proxyip:port(443)
 - client-fingerprint: random
-  name: 618,634|yandex-938
+  name: 618,634|yandex-3548
   network: ws
   port: 443
   server: visa.cn
@@ -2253,7 +2178,7 @@ proxies:
     headers:
       Host: 5-55sfjslf.ifenxiang.cfd
     path: /?ed=2560
-- name: 618,634|yandex-1049
+- name: 618,634|yandex-3659
   network: ws
   port: 81
   server: 210.61.97.241
@@ -2269,7 +2194,7 @@ proxies:
       Host: lj.ylks01.eu.org
     path: /blue
 - client-fingerprint: firefox
-  name: 618,634|yandex-1183
+  name: 618,634|yandex-3793
   network: ws
   port: 443
   server: 154.92.9.46
@@ -2674,7 +2599,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 618,634|yandex-1485
+- name: 618,634|yandex-4095
   network: ws
   port: 2096
   server: 45.192.222.54
@@ -2709,7 +2634,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 89c4f90d-6016-4d16-b17f-ee527564d12e
-- name: 618,634|yandex-1539
+- name: 618,634|yandex-4149
   network: ws
   port: 443
   server: 154.211.8.12
@@ -2724,7 +2649,7 @@ proxies:
     headers:
       Host: nicorobin.eula.cloudns.org
     path: /Telegram
-- name: 618,634|yandex-1541
+- name: 618,634|yandex-4151
   network: tcp
   port: 2096
   server: 154.198.173.54
@@ -2735,7 +2660,7 @@ proxies:
   udp: true
   uuid: 12345678-1234-1234-1234-123456789123
 - client-fingerprint: chrome
-  name: 618,634|yandex-1590
+  name: 618,634|yandex-4200
   network: ws
   port: 2096
   server: 45.205.0.52
@@ -2869,7 +2794,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
-- name: 618,634|yandex-1667
+- name: 618,634|yandex-4277
   network: ws
   port: 11263
   server: 223.18.129.85
@@ -2884,7 +2809,7 @@ proxies:
     headers:
       Host: dd.ylks.xyz
     path: /blue
-- name: 618,634|yandex-1668
+- name: 618,634|yandex-4278
   network: ws
   port: 12224
   server: 59.127.80.162
@@ -3355,6 +3280,15 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: '630,638|🇨🇳 中国 阿里云 #1'
+  network: none
+  port: '52986'
+  server: 8.218.17.136
+  tls: false
+  type: vmess
+  uuid: 7363d47e-ac8b-4fe0-d23e-99077999a70d
+- alterId: 0
+  cipher: auto
   name: 637|2|🇸24 |  4.8MB/s
   network: tcp
   port: 5229
@@ -3626,31 +3560,49 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-- name: 638|🇨🇳 CN_40
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 3462
-  server: a03.taipeicitygovernment.cn.ua
-  sni: a03.taipeicitygovernment.cn.ua
-  type: trojan
-- name: '638,656,719|🇰🇷 KR3 #1'
+- client-fingerprint: chrome
+  name: '638|🇨🇳_CN_中国 #9'
   network: tcp
-  password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
-  port: 5223
-  server: kr3.t.sgateway.link
-  skip-cert-verify: true
-  sni: pod-kr-z1.psusercontent.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '638|🇨🇳_中国 #1'
-  network: tcp
-  port: '3304'
-  server: 113.57.36.148
-  servername: ''
+  port: 443
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+  server: 43.100.67.86
+  servername: www.primevideo.com
   tls: false
-  type: vmess
-  uuid: f0305e21-30bb-32f9-9b1b-9e02dcf3af54
+  type: vless
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  ws-opts:
+    headers:
+      Host: www.primevideo.com
+- client-fingerprint: chrome
+  name: '638|🇨🇳_CN_中国 #10'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+  server: 43.100.86.235
+  servername: images-na.ssl-images-amazon.com
+  tls: false
+  type: vless
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  ws-opts:
+    headers:
+      Host: images-na.ssl-images-amazon.com
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: '638|🇨🇳_CN_中国 #11'
+  network: ws
+  port: 12485
+  server: 125.227.162.252
+  servername: s3.sni565.netlib.re
+  tls: true
+  type: vless
+  uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+  ws-opts:
+    headers:
+      Host: s3.sni565.netlib.re
+    path: '%2Fproxyip%3Dtw.sni2025.netlib.re'
 - alterId: 0
   cipher: auto
   name: 638|github.com/freefq - 广东省移动 7

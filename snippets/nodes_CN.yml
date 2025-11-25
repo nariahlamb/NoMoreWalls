@@ -173,7 +173,7 @@ proxies:
   port: '30806'
   server: v6.heduian.link
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
@@ -422,13 +422,13 @@ proxies:
       Host: v8.heduian.link
     path: /oooo
 - cipher: aes-128-gcm
-  name: 473,634|yandex-5189
+  name: 473,634|yandex-5147
   password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74
   port: 23344
   server: 103.219.103.217
   type: ss
   udp: true
-- name: '473,524,627,630,634,638,656,719|🏴‍☠️ PSG2 #1'
+- name: '473,578,627,630,634,638,656,719|🏴‍☠️ PSG2 #1'
   network: tcp
   password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
   port: 5223
@@ -447,7 +447,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: 473,634|yandex-5193
+  name: 473,634|yandex-5132
   password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74
   port: 21712
   server: 103.219.103.217
@@ -455,7 +455,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: '473,627,630,634,638|🇨🇳_中国 #2'
+  name: '473,627,634,638|🇨🇳_中国 #2'
   network: ws
   port: '30830'
   server: v30.heduian.link
@@ -469,7 +469,7 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- name: '473,524,627,630,638,656,719|🇯🇵 JP3 #1'
+- name: '473,627,630,638,656,719|🇯🇵 JP3 #1'
   network: tcp
   password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
   port: 5223
@@ -1547,7 +1547,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 473,591|Pool__01
+  name: 473|🇨CN-222.186.20.102-5580
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -1873,7 +1873,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 473,627,634|yandex-2567
+  name: 473,627,634|yandex-371
   network: ws
   port: 30812
   server: v12.heduian.link
@@ -1889,7 +1889,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 473,627,634|yandex-4636
+  name: 473,627,634|yandex-2440
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -1905,7 +1905,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 473,627,634|yandex-4149
+  name: 473,627,634|yandex-1953
   network: ws
   port: 30828
   server: v28.heduian.link
@@ -1925,21 +1925,17 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
-- alterId: 64
-  cipher: auto
-  country: 🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: 587,638|🇨🇳 CN_39
-  network: tcp
-  port: 59003
-  server: 183.236.51.36
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
+- name: '524|🇨🇳_CN_中国 #2'
+  network: ws
+  password: c6b96097-fe2d-487d-b9ef-60c994b90db2
+  port: 35951
+  server: 36.50.90.241
+  sni: joss.gpj1.web.id
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joss.gpj1.web.id
+    path: '%2FFree-VPN-CF-Geo-Project%2F36.50.90.241%3D35951'
 - alterId: 64
   cipher: auto
   name: 605,618,723|🇨🇳 中国 085
@@ -3078,6 +3074,15 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: '630,638|🇨🇳 中国 阿里云 #1'
+  network: none
+  port: '52986'
+  server: 8.218.17.136
+  tls: false
+  type: vmess
+  uuid: 7363d47e-ac8b-4fe0-d23e-99077999a70d
+- alterId: 0
+  cipher: auto
   name: 637|2|🇸24 |  4.8MB/s
   network: tcp
   port: 5229
@@ -3349,31 +3354,6 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-- name: 638|🇨🇳 CN_40
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 3462
-  server: a03.taipeicitygovernment.cn.ua
-  sni: a03.taipeicitygovernment.cn.ua
-  type: trojan
-- name: '638,656,719|🇰🇷 KR3 #1'
-  network: tcp
-  password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
-  port: 5223
-  server: kr3.t.sgateway.link
-  skip-cert-verify: true
-  sni: pod-kr-z1.psusercontent.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '638|🇨🇳_中国 #1'
-  network: tcp
-  port: '3304'
-  server: 113.57.36.148
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f0305e21-30bb-32f9-9b1b-9e02dcf3af54
 - alterId: 0
   cipher: auto
   name: 638|github.com/freefq - 广东省移动 7
