@@ -1,5 +1,5 @@
 proxies:
-- name: 294,614,615,634|yandex-5118
+- name: 294,614,615,634|yandex-2060
   network: ws
   password: 8d047125-8467-4724-bb62-ef64405dca78
   port: 443
@@ -150,7 +150,7 @@ proxies:
       Host: s2.sni565.netlib.re
     path: '%2Fproxyip%3Dtw.sni2025.netlib.re'
 - client-fingerprint: chrome
-  name: 618,634|yandex-181
+  name: 618,634|yandex-445
   network: ws
   packet-addr: false
   packet-encoding: xudp
@@ -171,7 +171,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇳🇱NL
   delay: 1563
-  name: 623,634|yandex-4569
+  name: 623,634|yandex-5225
   password: DQUwoInT4gvB9cTdyEU70rkN9JUEsXgq
   port: 443
   server: 83.172.136.43
@@ -183,28 +183,14 @@ proxies:
   server: 45.15.167.19
   sni: tianjiu.pages.dev
   type: trojan
-- name: 656|🇨🇭 瑞士 01-1008
-  network: ws
-  port: 443
-  server: us4.candyfans.win
-  servername: us4.candyfans.win
-  tls: true
-  type: vless
-  uuid: dfb3a6e5-8ef6-42f8-afe4-addd8518b4de
-  ws-opts:
-    headers:
-      Host: us4.candyfans.win
-    path: '%2Fudlpws'
-- name: 719|🇨🇭  01-1008
-  network: ws
-  port: 443
-  server: us4.candyfans.win
-  servername: us4.candyfans.win
-  tls: true
-  type: vless
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 719|🇨🇭  01-968
+  password: a5ffd495-d7b9-4299-a014-a637f66ea185
+  port: 30002
+  server: 107.189.11.79
+  skip-cert-verify: true
+  type: anytls
   udp: true
-  uuid: dfb3a6e5-8ef6-42f8-afe4-addd8518b4de
-  ws-opts:
-    headers:
-      Host: us4.candyfans.win
-    path: /udlpws
