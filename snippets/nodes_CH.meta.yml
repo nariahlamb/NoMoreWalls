@@ -1,5 +1,5 @@
 proxies:
-- name: 294,578,614,615,634|yandex-5051
+- name: 294,614,615,634|yandex-2954
   network: ws
   password: 8d047125-8467-4724-bb62-ef64405dca78
   port: 443
@@ -69,7 +69,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: 473|🇨CH-156.146.62.160-4478
+  name: 473|🇨CH-156.146.62.160-4527
   password: shadowsocks
   port: 443
   server: 156.146.62.160
@@ -150,7 +150,7 @@ proxies:
       Host: s2.sni565.netlib.re
     path: '%2Fproxyip%3Dtw.sni2025.netlib.re'
 - client-fingerprint: chrome
-  name: 618,634|yandex-3438
+  name: 618,634|yandex-3486
   network: ws
   packet-addr: false
   packet-encoding: xudp
@@ -169,17 +169,31 @@ proxies:
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇳🇱NL
-  delay: 1563
-  name: 623,634|yandex-649
-  password: DQUwoInT4gvB9cTdyEU70rkN9JUEsXgq
-  port: 443
-  server: 83.172.136.43
+  name: '719|🇨🇭 CH-MTU-507 #1'
+  password: 68456a23-6b41-4f44-bac9-bb66062c4f77
+  port: 57304
+  server: zf-cm.bgblwow.org
   type: ss
   udp: true
-- name: 638|瑞士 - 温特图尔 - 1
-  password: trojan
-  port: 8443
-  server: 45.15.167.19
-  sni: tianjiu.pages.dev
-  type: trojan
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 719|🇨🇭  02-940
+  password: a5ffd495-d7b9-4299-a014-a637f66ea185
+  port: 30002
+  server: 107.189.11.79
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 719|🇨🇭 瑞士 01-949
+  password: a5ffd495-d7b9-4299-a014-a637f66ea185
+  port: 30001
+  server: 107.189.11.79
+  skip-cert-verify: true
+  type: anytls
+  udp: true
