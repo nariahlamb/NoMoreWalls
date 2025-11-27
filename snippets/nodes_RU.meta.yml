@@ -1,6 +1,5 @@
 proxies:
-- name: '294,399,473,524,578,609,610,614,615,617,621,627,633,634,638|14|RU_speednode_0030
-    #2'
+- name: 294,399,473,614,615,621,627,633,634,638,656,719|🇷🇺  02-936
   password: Qzy7tgpRhu
   port: 443
   server: 37.18.14.33
@@ -10,7 +9,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,524,617,621,633,638|14|RU_speednode_0032 #2'
+  name: '399,524,621,633,638|14|RU_speednode_0032 #2'
   network: tcp
   port: 443
   reality-opts:
@@ -256,7 +255,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,618,634|yandex-902
+- name: 473,618,634|yandex-514
   network: ws
   password: vpn
   port: 2025
@@ -272,7 +271,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-2090
+  name: 473,618,627,634|yandex-1702
   network: ws
   port: 50826
   server: 45.67.32.147
@@ -699,64 +698,27 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- name: '578,614,615|[Vless] RU_speednode_0031 #1'
-  network: ws
-  port: 2053
-  server: 80.90.187.190
-  servername: kuangbao.xiejiang.dpdns.org
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-  ws-opts:
-    headers:
-      Host: kuangbao.xiejiang.dpdns.org
-    path: /?ed=2560security=tls
-- name: '578,614,615|[Vless] RU_speednode_0033 #1'
-  network: ws
-  port: 2053
-  server: 194.35.119.135
-  servername: kuangbao.xiejiang.dpdns.org
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-  ws-opts:
-    headers:
-      Host: kuangbao.xiejiang.dpdns.org
-    path: /?ed=2560security=tls
-- name: '578,614,615|[Vless] RU_speednode_0034 #1'
-  network: ws
-  port: 2053
-  server: 194.35.119.49
-  servername: kuangbao.xiejiang.dpdns.org
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-  ws-opts:
-    headers:
-      Host: kuangbao.xiejiang.dpdns.org
-    path: /?ed=2560security=tls
 - alpn:
-  - h2%2Chttp/1.1
-  name: '578,614,615|[Vless] RU_speednode_0035 #1'
-  network: ws
-  port: 8443
-  server: zcreat.ethervpn.fun
-  servername: zcreat.ethervpn.fun
-  skip-cert-verify: false
-  tfo: false
+  - h2
+  name: 578|🇷🇺 RU 1
+  network: grpc
+  port: 443
+  server: 185.59.218.168
+  servername: pqh23v4.hiddendom.shop
   tls: true
   type: vless
-  uuid: a47595a8-1add-401a-8189-e6799f8d8628
-  ws-opts:
-    headers:
-      Host: zcreat.ethervpn.fun
-    path: /websocketpl?ed=2047fp=chrome
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+- alterId: 0
+  cipher: auto
+  name: 578,618|俄罗斯 067
+  network: tcp
+  port: 11052
+  server: 45.67.230.79
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - alterId: 0
   cipher: auto
   country: 🇺 RU
@@ -1506,18 +1468,60 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 618|俄罗斯 002
-  network: grpc
-  port: 8880
-  server: 185.231.205.5
-  skip-cert-verify: true
-  tfo: true
+- name: '614,615|[Vless] RU_speednode_0031 #1'
+  network: ws
+  port: 2053
+  server: 80.90.187.190
+  servername: kuangbao.xiejiang.dpdns.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  ws-opts:
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+    path: /?ed=2560security=tls
+- name: '614,615|[Vless] RU_speednode_0033 #1'
+  network: ws
+  port: 2053
+  server: 194.35.119.135
+  servername: kuangbao.xiejiang.dpdns.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  ws-opts:
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+    path: /?ed=2560security=tls
+- name: '614,615|[Vless] RU_speednode_0034 #1'
+  network: ws
+  port: 2053
+  server: 194.35.119.49
+  servername: kuangbao.xiejiang.dpdns.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  ws-opts:
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+    path: /?ed=2560security=tls
+- alpn:
+  - h2%2Chttp/1.1
+  name: '614,615|[Vless] RU_speednode_0035 #1'
+  network: ws
+  port: 8443
+  server: zcreat.ethervpn.fun
+  servername: zcreat.ethervpn.fun
+  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  uuid: a47595a8-1add-401a-8189-e6799f8d8628
+  ws-opts:
+    headers:
+      Host: zcreat.ethervpn.fun
+    path: /websocketpl?ed=2047fp=chrome
 - client-fingerprint: chrome
   grpc-opts: {}
   name: 618|俄罗斯 003
@@ -1648,16 +1652,6 @@ proxies:
   tls: true
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- encryption: none
-  grpc-opts: {}
-  name: 618|俄罗斯 015
-  network: grpc
-  port: 8880
-  server: 185.236.232.123
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - client-fingerprint: chrome
   grpc-opts: {}
   name: 618|俄罗斯 016
@@ -1923,7 +1917,7 @@ proxies:
   type: vless
   udp: true
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 618,634|yandex-1025
+- name: 618,634|yandex-637
   network: ws
   port: 2096
   server: 176.124.223.41
@@ -1938,7 +1932,7 @@ proxies:
       Host: vless.keepfuck.me
     path: /snippets
 - client-fingerprint: chrome
-  name: 618,634|yandex-1055
+  name: 618,634|yandex-667
   network: ws
   port: 2087
   server: 92.243.75.49
@@ -1953,7 +1947,7 @@ proxies:
     headers:
       Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
     path: /snippets?ip=proxyip:port(443)
-- name: 618,634|yandex-1215
+- name: 618,634|yandex-827
   network: ws
   port: 2096
   server: 195.13.54.253
@@ -1979,7 +1973,7 @@ proxies:
   type: vless
   udp: true
   uuid: 7c63f43f-f526-49bb-b5c8-2be26e11ef00
-- name: 618,634|yandex-1255
+- name: 618,634|yandex-867
   network: ws
   port: 8443
   server: 92.243.74.239
@@ -2004,7 +1998,7 @@ proxies:
   type: vless
   udp: true
   uuid: 9ac37507-dc17-5313-8125-c6f588c60103
-- name: 618,634|yandex-1296
+- name: 618,634|yandex-908
   network: ws
   port: 443
   server: 194.76.18.113
@@ -2019,7 +2013,7 @@ proxies:
     headers:
       Host: cj.ylks.xyz
     path: /blue
-- name: 618,634|yandex-1329
+- name: 618,634|yandex-941
   network: tcp
   port: 443
   server: de04.abvpn.ru
@@ -2043,16 +2037,6 @@ proxies:
   network: grpc
   port: 8880
   server: 185.231.205.231
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 618|俄罗斯 051
-  network: grpc
-  port: 8880
-  server: 185.231.205.234
   skip-cert-verify: false
   tfo: false
   tls: true
@@ -2083,16 +2067,6 @@ proxies:
   network: grpc
   port: 8880
   server: 185.236.232.157
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 618|俄罗斯 055
-  network: grpc
-  port: 8880
-  server: 185.236.232.223
   skip-cert-verify: false
   tfo: false
   tls: true
@@ -2172,7 +2146,7 @@ proxies:
   type: vless
   udp: true
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 618,634|yandex-1560
+- name: 618,634|yandex-1172
   network: ws
   port: 2096
   server: 213.219.247.41
@@ -2186,7 +2160,7 @@ proxies:
     headers:
       Host: vless.keepfuck.me
     path: /snippets
-- name: 618,634|yandex-1565
+- name: 618,634|yandex-1177
   network: ws
   port: 8443
   server: 217.30.10.46
@@ -2221,15 +2195,6 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
-- alterId: 0
-  cipher: auto
-  name: 618|俄罗斯 067
-  network: tcp
-  port: 11052
-  server: 45.67.230.79
-  skip-cert-verify: true
-  type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - name: 618|俄罗斯 068
   network: grpc
   port: 3479
@@ -2250,7 +2215,7 @@ proxies:
   type: vless
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 618,634|yandex-1732
+- name: 618,634|yandex-1344
   network: ws
   port: 2096
   server: 185.59.218.54
@@ -2265,7 +2230,7 @@ proxies:
     headers:
       Host: sni.aizrf.com
     path: /snippets
-- name: 618,634|yandex-1733
+- name: 618,634|yandex-1345
   network: ws
   port: 2096
   server: 193.9.49.54
@@ -2280,7 +2245,7 @@ proxies:
     headers:
       Host: sni.aizrf.com
     path: /snippets
-- name: 618,634|yandex-1734
+- name: 618,634|yandex-1346
   network: ws
   port: 2096
   server: 213.241.198.54
@@ -2325,7 +2290,7 @@ proxies:
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
-  name: 618,634|yandex-1844
+  name: 618,634|yandex-1456
   network: ws
   port: 2096
   server: 195.13.44.52
@@ -2340,7 +2305,7 @@ proxies:
       Host: saas.git.cloudns.org
     path: /snippets&freecodes
 - client-fingerprint: chrome
-  name: 618,634|yandex-2010
+  name: 618,634|yandex-1622
   network: ws
   port: 2096
   server: 94.247.142.61
@@ -2365,7 +2330,7 @@ proxies:
   type: vless
   udp: true
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: 618,634|yandex-2083
+- name: 618,634|yandex-1695
   network: ws
   port: 443
   server: 194.87.79.223
@@ -2380,7 +2345,7 @@ proxies:
     headers:
       Host: fei.634676.xyz
     path: /?ed=2560
-- name: 618,634|yandex-2104
+- name: 618,634|yandex-1716
   network: ws
   port: 2053
   server: 89.169.160.84
@@ -2495,7 +2460,7 @@ proxies:
   type: vless
   udp: true
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: 618,634|yandex-2190
+- name: 618,634|yandex-1802
   network: tcp
   port: 443
   server: che-0001-xr.packet-drop-society.net
@@ -2763,7 +2728,7 @@ proxies:
   uuid: 258a5f07-d07e-4de4-90b6-69a0ca34bab7
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: '656,719|🇷🇺 RU JSC 01-1240 #1'
+  name: '656,719|🇷🇺 RU JSC 01-1141 #1'
   network: tcp
   packet-encoding: xudp
   path: /
@@ -2867,7 +2832,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 719|🇷🇺 01-TK丨DS丨NF丨AI丨sg-cf-1079
+  name: 719|🇷🇺 俄罗斯01-TK丨DS丨NF丨AI丨sg-cf-980
   password: c1854182-5014-4cd5-b024-022302480ba1
   port: 20066
   server: sgzz.9966663.xyz
@@ -2879,7 +2844,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 719|🇷🇺 俄罗斯02-TK丨DS丨NF丨AI丨sg-cf-108...
+  name: 719|🇷🇺 俄罗斯02-TK丨DS丨NF丨AI丨sg-cf-981
   password: c1854182-5014-4cd5-b024-022302480ba1
   port: 20067
   server: sgzz.9966663.xyz
@@ -2891,7 +2856,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 719|🇷🇺 俄罗斯03-TK丨DS丨NF丨AI丨sg-cf-108...
+  name: 719|🇷🇺 俄罗斯03-TK丨DS丨NF丨AI丨sg-cf-982
   password: c1854182-5014-4cd5-b024-022302480ba1
   port: 20068
   server: sgzz.9966663.xyz
@@ -2903,7 +2868,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 719|🇷🇺 俄罗斯04-TK丨DS丨NF丨AI丨sg-cf-108...
+  name: 719|🇷🇺 俄罗斯04-TK丨DS丨NF丨AI丨sg-cf-983
   password: c1854182-5014-4cd5-b024-022302480ba1
   port: 20069
   server: sgzz.9966663.xyz
@@ -2915,7 +2880,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 719|🇷🇺 俄罗斯05-TK丨DS丨NF丨AI丨sg-cf-108...
+  name: 719|🇷🇺 俄罗斯05-TK丨DS丨NF丨AI丨sg-cf-984
   password: c1854182-5014-4cd5-b024-022302480ba1
   port: 20070
   server: sgzz.9966663.xyz
