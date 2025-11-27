@@ -194,7 +194,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇱PL
-  name: 468,587|🇱PL_132
+  name: 468,587|🇱PL_120
   password: UTJA57ypk2XKQpnm
   port: 9033
   server: 217.30.10.18
@@ -231,7 +231,7 @@ proxies:
   server: 217.30.10.70
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇵🇱PL-217.30.10.18-0310
+  name: 473,587|_02
   password: GA9KzeEgvfxNrgmM
   port: 9019
   server: 217.30.10.18
@@ -437,10 +437,11 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
   delay: 772
-  name: 623,634,719|🇵🇱 兰 01-767
+  name: 623,634,719|🇵🇱 PL Dedipath 01-876
   password: 6Ts2ZDTQAf3hkFoB8AFufDwsGrlF4e2t
   port: 443
   server: 45.15.126.19
+  tfo: true
   type: ss
   udp: true
 - name: 638|波兰 - 普魯斯科夫 - 5
@@ -467,3 +468,26 @@ proxies:
   server: 77.83.246.117
   sni: tianjiu.pages.dev
   type: trojan
+- name: 656|🇵🇱 波兰 02-773
+  network: ws
+  password: 823f57d2-d271-48a6-859e-d041179e1c6b
+  port: 8443
+  server: 145.239.88.255
+  sni: joss.gpj.web.id
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joss.gpj.web.id
+    path: '%2FFree-VPN-CF-Geo-Project%2F145.239.88.255%3D8443'
+- name: 719|🇵🇱  02-773
+  network: ws
+  password: 823f57d2-d271-48a6-859e-d041179e1c6b
+  port: 8443
+  server: 145.239.88.255
+  sni: joss.gpj.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj.web.id
+    path: /Free-VPN-CF-Geo-Project/145.239.88.255=8443
