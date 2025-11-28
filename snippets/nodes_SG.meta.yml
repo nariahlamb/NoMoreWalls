@@ -49,9 +49,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 92,473,542,618,627,634,723|🇸🇬 新加坡 005
+  name: 92,473,542,618,627,634|yandex-906
   network: ws
-  port: '8080'
+  port: 8080
   server: 18.139.108.70
   servername: ''
   skip-cert-verify: false
@@ -66,9 +66,9 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 92,473,542,618,627,634,723|🇸🇬 新加坡 006
+  name: 92,473,542,618,627,634|yandex-907
   network: ws
-  port: '8080'
+  port: 8080
   server: 52.221.29.32
   servername: ''
   skip-cert-verify: false
@@ -83,9 +83,9 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 92,473,542,618,627,634,723|🇸🇬 新加坡 007
+  name: 92,473,542,618,627,634|yandex-908
   network: ws
-  port: '8080'
+  port: 8080
   server: 18.141.185.144
   servername: ''
   skip-cert-verify: false
@@ -100,9 +100,9 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 92,473,542,618,627,634,723|🇸🇬 新加坡 008
+  name: 92,473,542,618,627,634|yandex-909
   network: ws
-  port: '8080'
+  port: 8080
   server: 124.156.207.12
   servername: ''
   skip-cert-verify: false
@@ -117,9 +117,9 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 92,473,542,618,627,634,723|🇨🇳 中国 065
+  name: 92,473,542,618,627,634|yandex-910
   network: ws
-  port: '443'
+  port: 443
   server: 8.219.53.156
   servername: ''
   skip-cert-verify: false
@@ -174,9 +174,9 @@ proxies:
   uuid: 11c36283-1947-4710-9ff3-d61603f3f415
 - alterId: 0
   cipher: auto
-  name: 100,473,586,618,627,634,723|🇺🇸 美国 302
+  name: 100,473,586,618,627,634|yandex-921
   network: ws
-  port: '443'
+  port: 443
   server: sgcft01.xqc.best
   servername: d16henb377mok4.cloudfront.net
   skip-cert-verify: true
@@ -1850,8 +1850,7 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
-  name: '473,591,614,615|[SS] 🇸🇬 SG SS-125@free-nodes #1'
+  name: '473,578,614,615|[SS] 🇸🇬 SG SS-125@free-nodes #1'
   password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
   port: 443
   server: 167.150.100.115
@@ -1886,9 +1885,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇸🇬 新加坡 009
+  name: 473,618,627,634|yandex-1993
   network: ws
-  port: '443'
+  port: 443
   server: waifu.kurumi.biz.id
   servername: ''
   skip-cert-verify: true
@@ -1902,9 +1901,9 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇸🇬 新加坡 010
+  name: 473,618,627,634|yandex-1994
   network: ws
-  port: '80'
+  port: 80
   server: waifu.kurumi.biz.id
   servername: ''
   skip-cert-verify: true
@@ -2557,15 +2556,12 @@ proxies:
     path: /anti13.zingfast.vn
 - alterId: 0
   cipher: auto
-  country: 🇬SG
-  h2-opts: {}
-  http-opts: {}
-  name: 473,591,627,638|🇸🇬 SG_136
+  name: 473,627,638|🇸🇬 SG_136
   network: ws
   port: 58607
   server: 68.183.178.131
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: c11c32cb-27b3-4afa-c0f3-fb250aa4959e
@@ -3545,36 +3541,49 @@ proxies:
   ws-path: /
 - alpn:
   - h2
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /
   name: 578|🇸🇬 SG 3
   network: grpc
   port: 443
   server: 45.8.211.71
   servername: pqh24v3.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- alpn:
-  - h2
-  name: 578|🇸🇬 SG 2
-  network: grpc
-  port: 443
-  server: 45.8.211.86
-  servername: pqh23v4.hiddendom.shop
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
 - alterId: 0
   cipher: auto
-  country: 🇸🇬SG
+  country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: 591|🇸🇬SG_53
-  network: none
-  port: 32228
-  server: 8.218.116.26
+  name: 587| SG_138
+  network: ws
+  port: 58607
+  server: 68.183.178.131
+  servername: www.12333.monster
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c11c32cb-27b3-4afa-c0f3-fb250aa4959e
+  ws-headers:
+    HOST: www.12333.monster
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇬 SG_139
+  network: ws
+  port: 20522
+  server: 8.217.92.110
   skip-cert-verify: true
   type: vmess
-  uuid: e4767e9f-ed00-4f31-a984-a918bdd9b09c
+  uuid: 31e1f90f-0218-4097-91f9-a42df9b3334a
+  ws-path: /telegram_@sswia
 - name: 603|新加坡_新加坡
   network: ws
   port: 32101
@@ -4706,9 +4715,9 @@ proxies:
     path: /vless
 - alterId: 0
   cipher: auto
-  name: 618,723|🇸🇬 新加坡 013
+  name: 618|新加坡 013
   network: xhttp
-  port: '443'
+  port: 443
   server: 68.183.236.145
   skip-cert-verify: true
   tls: true
@@ -4716,12 +4725,11 @@ proxies:
   uuid: 3393cc9e-7498-4942-9bc4-c6da73080fd9
 - alterId: 0
   cipher: auto
-  name: 618,723|🇸🇬 新加坡 014
+  name: 618|新加坡 014
   network: xhttp
-  port: '80'
+  port: 80
   server: 68.183.236.145
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 3393cc9e-7498-4942-9bc4-c6da73080fd9
 - client-fingerprint: chrome
@@ -4746,21 +4754,6 @@ proxies:
   type: vless
   udp: true
   uuid: a2088892-07c5-4c54-8a10-4a4b6ebefab6
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳CN
-  delay: 837
-  h2-opts: {}
-  http-opts: {}
-  name: '623,630,638|🇨🇳_中国 #2'
-  network: tcp
-  port: '30812'
-  server: v12.hdacd.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - delay: 1609
   name: 623|新加坡 - 新加坡 - EN Technologies Pt...
   password: '!!str 1'
@@ -5141,26 +5134,19 @@ proxies:
     headers:
       Host: ayanamirei.11160321.xyz
     path: '%2Fed%253D2560'
-- name: 642|🇸🇬 新加坡 13
-  password: 198a5a6f-0b03-4d37-804e-4692c16add3c
+- name: 642|🇸🇬 新加坡 05
+  password: 41f1fd94-aae9-46c5-9684-2a33baba3fba
   port: 33301
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: 642|🇸🇬 新加坡 07
-  password: 3a712733-2555-4ad8-9768-0a56c40350c7
+- name: 642|🇸🇬 新加坡 04
+  password: e1fd3163-01e5-40a1-9c32-835378bdc006
   port: 33301
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 642|🇸🇬 新加坡 14
-  password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
-  port: 20230
-  server: sg006.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
   type: trojan
 - alterId: 0
   cipher: auto
@@ -5923,13 +5909,6 @@ proxies:
   server: cm2.kaochangcn.org
   type: ss
   udp: true
-- name: 723|🇸🇬 新加坡 002
-  password: 1b26d982-fd68-44f4-bf6d-22fe17a9249a
-  port: 20230
-  server: sg006.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
 - name: '764|新加坡01 #2'
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10827
@@ -6063,7 +6042,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.nintendo.jp:193531
+    host: db5fe62.dl.microsoft.es:193531
     mode: tls
   port: 2377
   server: db5fe62.s1.glados-config.com
@@ -6074,7 +6053,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.microsoft.lt:193531
+    host: db5fe62.dl.microsoft.ge:193531
     mode: tls
   port: 2377
   server: db5fe62.s2.glados-config.com
@@ -6085,7 +6064,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: db5fe62.dl.nintendo.jp:193531
+    host: db5fe62.dl.microsoft.ch:193531
     mode: tls
   port: 2377
   server: db5fe62.s3.glados-config.com
@@ -6096,7 +6075,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.com:154948
+    host: feb7fa9.dl.microsoft.ge:154948
     mode: tls
   port: 2377
   server: feb7fa9.s1.glados-config.com
@@ -6107,7 +6086,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.io:154948
+    host: feb7fa9.dl.microsoft.de:154948
     mode: tls
   port: 2377
   server: feb7fa9.s2.glados-config.com
@@ -6118,7 +6097,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.is:154948
+    host: feb7fa9.dl.nintendo.de:154948
     mode: tls
   port: 2377
   server: feb7fa9.s3.glados-config.com
