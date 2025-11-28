@@ -1,7 +1,5 @@
 proxies:
-- country: 🇱NL
-  name: '294,399,473,578,591,614,615,617,621,627,630,633,634,638|14|RU_speednode_0030
-    #2'
+- name: '294,399,473,578,614,615,617,621,627,633,634,638|14|RU_speednode_0030 #2'
   password: Qzy7tgpRhu
   port: 443
   server: 37.18.14.33
@@ -147,7 +145,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,578,614,615,618,634|yandex-615
+- name: 473,614,615,618,634|yandex-3892
   network: ws
   password: vpn
   port: 2025
@@ -163,9 +161,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-1803
+  name: 473,618,627,634,723|🇷🇺 俄罗斯 079
   network: ws
-  port: 50826
+  port: '50826'
   server: 45.67.32.147
   servername: ''
   skip-cert-verify: true
@@ -752,31 +750,43 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 066
+  name: 618,723|🇷🇺 俄罗斯 066
   network: tcp
-  port: 47555
+  port: '47555'
   server: 46.29.166.237
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 067
+  name: 618,723|🇷🇺 俄罗斯 067
   network: tcp
-  port: 11052
+  port: '11052'
   server: 45.67.230.79
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 314185f7-931d-4656-922d-0857e7afd224
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 073
+  name: 618,723|🇷🇺 俄罗斯 073
   network: tcp
-  port: 2098
+  port: '2098'
   server: 147.45.51.16
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
+- alterId: 0
+  cipher: auto
+  name: 630,638,656|🇷🇺 RU LLC 01-1031
+  network: tcp
+  port: '49934'
+  server: 45.136.244.201
+  tls: false
+  type: vmess
+  uuid: 90afa47d-341a-497d-ae25-1d81258804d5
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -806,13 +816,29 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 638,656|🇷🇺 RU LLC 01-1030
-  network: tcp
-  port: '49934'
+  name: '719|🇷🇺 RU LLC 01-1031 #1'
+  port: 49934
   server: 45.136.244.201
+  skip-cert-verify: true
+  tfo: true
   tls: false
   type: vmess
+  udp: true
   uuid: 90afa47d-341a-497d-ae25-1d81258804d5
+- name: 723|🇷🇺 俄罗斯 001
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
+- name: 723|🇷🇺 俄罗斯 039
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: trojan
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
