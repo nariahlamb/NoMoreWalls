@@ -8,16 +8,10 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: aes-256-cfb
-  name: 473|🇸SE-121.127.46.147-0250
+  name: 473|🇸SE-121.127.46.147-0267
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 121.127.46.147
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '473,614,615|[SS] 未知 SS-63@free-nodes #1'
-  password: yo6h9qkhwz8UJoTZCRtoSi
-  port: 34094
-  server: 78.40.116.178
   type: ss
 - name: 473,614,615,618,634|yandex-3573
   network: ws
@@ -33,6 +27,12 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: '473,614,615|[SS] 未知 SS-63@free-nodes #1'
+  password: yo6h9qkhwz8UJoTZCRtoSi
+  port: 34094
+  server: 78.40.116.178
+  type: ss
 - name: '473,578,614,615,617,627,638|未知 TROJAN-202@free-nodes #2'
   password: telegram-id-privatevpns
   port: 22222
@@ -40,28 +40,28 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-263@free-nodes #1'
+- name: 473,614,615,617,627,638|未知69
   password: telegram-id-privatevpns
   port: 22222
   server: 16.171.58.121
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 473,614,615,617,627,638|未知149
+- name: '473,614,615,617,627,638|未知 TROJAN-304@free-nodes #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 13.50.16.231
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 473,614,615,617,627,638|未知79
+- name: '473,614,615,617,627,638|未知 TROJAN-339@free-nodes #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 13.49.46.49
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '473,578,614,615,617,627,638|未知174 #1'
+- name: 473,614,615,617,627,638|未知177
   password: telegram-id-directvpn
   port: 22222
   server: 13.48.105.114
@@ -80,7 +80,7 @@ proxies:
     headers:
       Host: joss.gpj1.web.id
     path: '%2FFree-VPN-CF-Geo-Project%2F193.233.114.58%3D8443'
-- name: '473,614,615,617,627,638|未知177 #1'
+- name: 473,614,615,617,627,638|未知130
   password: telegram-id-directvpn
   port: 22222
   server: 13.49.224.224
@@ -120,31 +120,31 @@ proxies:
       Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|SE-13.49.241.14-5021
+  name: 473|SE-13.49.241.14-5037
   password: pydQILh06AvJ
   port: 27092
   server: 13.49.241.14
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇸SE-37.19.222.214-9504
+  name: 473|🇸SE-37.19.222.214-9520
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.214
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇪SE-37.19.222.213-9505
+  name: 473|🇪SE-37.19.222.213-9521
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.213
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇸🇪SE-37.19.222.212-9506
+  name: 473|🇸🇪SE-37.19.222.212-9522
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.212
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇸🇪SE-37.19.222.211-9507
+  name: 473|🇸🇪SE-37.19.222.211-9523
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.211
@@ -282,7 +282,23 @@ proxies:
   type: vless
   udp: true
   uuid: 88e35bbb-8cd2-c309-a1e9-551fb1c17a7f
-- name: 638|瑞典_1128041789
+- delay: 976
+  name: 623|丹麦 - Hørsholm - ASERGO Scandin...
+  password: '!!str 1'
+  port: 8081
+  server: 82.103.131.250
+  tls: false
+  type: http
+  username: afY491o7YfK00koaXQD9kb0j_HvKciJZGwlKQSL3GjCc9YAw2tZbH1bOB2SEWK3boXw609MC0WdYefYZbCn32A==
+- delay: 1279
+  name: 623|瑞典 - Sköndal - M247 Europe SRL...
+  password: '!!str 1'
+  port: 8081
+  server: 146.70.122.66
+  tls: false
+  type: http
+  username: afY491o7YfK00koaXQD9kb0j_HvKciJZGwlKQSL3GjDKni2F7JOlqnHm8RJBssZToXw609MC0WdYefYZbCn32A==
+- name: 638|瑞典_112818004
   network: tcp
   password: BaeSzHdfJIR13l67
   port: 11930
@@ -306,4 +322,11 @@ proxies:
   port: 81
   server: 195.123.211.204
   sni: tianjiu.pages.dev
+  type: trojan
+- name: 642|🇸🇪 瑞典 02
+  password: 3b38715b-f08a-46dd-9904-7531ca4bb6e8
+  port: 2053
+  server: 95.182.120.208
+  skip-cert-verify: false
+  sni: joss.gpj.web.id
   type: trojan
