@@ -203,7 +203,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇱PL
-  name: 468,473,587|🇱PL_138
+  name: 468,473,587|🇱PL_139
   password: UTJA57ypk2XKQpnm
   port: 9033
   server: 217.30.10.18
@@ -396,7 +396,7 @@ proxies:
       Host: 3h-poland1.09vpn.com
     path: /vmess/
 - client-fingerprint: chrome
-  name: 618,634|yandex-3639
+  name: 618,634|yandex-3297
   network: ws
   port: 2053
   server: 31.133.0.55
@@ -424,7 +424,7 @@ proxies:
   tls: true
   type: vmess
   uuid: bd996dac-3b1c-42a9-b8a1-66b87d0b72ae
-- name: 618,634|yandex-4755
+- name: 618,634|yandex-4413
   network: tcp
   port: 1002
   server: 185.254.220.229
@@ -450,7 +450,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
   delay: 772
-  name: 623,634,719|🇵🇱 兰 01-803
+  name: '623,634,719|🇵🇱 波兰 01-881 #1'
   password: 6Ts2ZDTQAf3hkFoB8AFufDwsGrlF4e2t
   port: 443
   server: 45.15.126.19
@@ -480,7 +480,7 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.dpdns.org
     path: '%2F%3Fed%3D2560'
-- name: 638,656|🇳🇱 荷兰 06-777
+- name: '638|🇵🇱_波兰 #2'
   network: ws
   port: 8443
   server: 89.19.211.109
@@ -504,7 +504,7 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.dpdns.org
     path: '%2F%3Fed%3D2560'
-- name: '638|🇵🇱_波兰 #4'
+- name: 638,656|🇵🇱 波兰 02-828
   network: ws
   port: 443
   server: 91.149.253.249
@@ -540,7 +540,7 @@ proxies:
     path: '%2F'
 - encryption: none
   fast-open: false
-  name: 719|🇵🇱 兰 01-634
+  name: 719|🇵🇱 兰 02-828
   network: ws
   port: 443
   server: 91.149.253.249
@@ -549,10 +549,13 @@ proxies:
   tfo: false
   tls: true
   type: vless
+  udp: true
   uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
       Host: kuangbao.xiejiang.dpdns.org
+    max-early-data: 2560
     path: /
 - alpn:
   - h2
