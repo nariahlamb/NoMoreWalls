@@ -13,7 +13,7 @@ proxies:
   port: 989
   server: 121.127.46.147
   type: ss
-- name: 473,614,615,618,634|yandex-1149
+- name: 473,578,614,615,618,634|yandex-464
   network: ws
   password: vpn
   port: 2025
@@ -28,7 +28,7 @@ proxies:
       Host: vkvd127.mycdn.me
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '473,614,615|[SS] 未知 SS-63@free-nodes #1'
+  name: '473,578,614,615|[SS] 未知 SS-63@free-nodes #1'
   password: yo6h9qkhwz8UJoTZCRtoSi
   port: 34094
   server: 78.40.116.178
@@ -61,7 +61,7 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '473,578,614,615,617,627,638|未知126 #1'
+- name: '473,614,615,617,627,638|未知126 #1'
   password: telegram-id-directvpn
   port: 22222
   server: 13.48.105.114
@@ -149,6 +149,12 @@ proxies:
   port: 443
   server: 37.19.222.211
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 578|https://t.me/ForceRunVPN-🇸🇪-Tä...
+  password: RP767jpZVarzQ0iI0vbTuA
+  port: 37538
+  server: 78.40.117.109
+  type: ss
 - name: 608|瑞典_021805001+L30
   password: telegram-id-privatevpns
   port: 22222
@@ -166,11 +172,12 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 618|瑞典 001
+  name: 618,723|🇸🇪 瑞典 001
   network: tcp
-  port: 35500
+  port: '35500'
   server: 148.135.184.84
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 744847f4-8549-4bab-a8e4-6b410d271c16
 - name: 638|瑞典_120118005
@@ -186,3 +193,23 @@ proxies:
   server: 172.234.96.64
   sni: tianjiu.pages.dev
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 656|🇸🇪 SE ORACLE 01-370
+  network: tcp
+  port: '18154'
+  server: 36.141.40.59
+  tls: false
+  type: vmess
+  uuid: 24912953-d8e5-4761-95a0-a707651cc423
+- alterId: 0
+  cipher: auto
+  name: '719|🇸🇪 SE ORACLE 01-370 #1'
+  port: 18154
+  server: 36.141.40.59
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 24912953-d8e5-4761-95a0-a707651cc423

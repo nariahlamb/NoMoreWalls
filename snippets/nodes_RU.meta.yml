@@ -10,7 +10,7 @@ proxies:
   uuid: 97e7c83c-9346-49b4-85a5-1e3bbf7488b9
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,621,633,638,656,719|🇱🇻 LV_3 | ⬇️ 6.8MB/s-77 #1'
+  name: '399,621,633,638,656,719|🇱🇻 LV_3 | ⬇️ 6.8MB/s-72 #1'
   network: tcp
   port: 443
   reality-opts:
@@ -25,7 +25,7 @@ proxies:
   uuid: 2dfa740c-8069-4993-8b96-c3e5dc540593
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,621,633,638,656,719|🇩🇪 DE_4 | ⬇️ 2.3MB/s-37 #1'
+  name: '399,621,633,638,656,719|🇩🇪 DE_4 | ⬇️ 2.3MB/s-33 #1'
   network: tcp
   port: 443
   reality-opts:
@@ -39,7 +39,7 @@ proxies:
   udp: true
   uuid: 07e0d9f5-6ed1-4bfb-8c19-311a312cba7d
 - client-fingerprint: chrome
-  name: '399,578,617,621,633,638|14|RU_speednode_0057 #2'
+  name: '399,617,621,633,638|14|RU_speednode_0057 #2'
   port: 35728
   server: 178.236.16.98
   servername: yahoo.com
@@ -246,7 +246,7 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '473,614,615|[SS] 🇷🇺 RU SS-76@free-nodes #1'
+  name: '473,578,614,615|[SS] 🇷🇺 RU SS-76@free-nodes #1'
   password: yYLiE0LOsr0CwIjbiCSLy2
   port: 49115
   server: 147.45.235.63
@@ -287,7 +287,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,614,615,618,634|yandex-1144
+- name: 473,614,615,618,634|yandex-459
   network: ws
   password: vpn
   port: 2025
@@ -303,9 +303,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-2332
+  name: 473,618,627,634,723|🇷🇺 俄罗斯 079
   network: ws
-  port: 50826
+  port: '50826'
   server: 45.67.32.147
   servername: ''
   skip-cert-verify: true
@@ -317,7 +317,8 @@ proxies:
     headers:
       Host: wellyoumust.goahead.rf.gd
     path: /multipath
-- name: 473,524,578,609,610,614,615,617,627,634|yandex-5145
+- country: 🇱NL
+  name: 473,578,591,614,615,617,627|🇷🇺RU-37.18.14.33-1209
   password: Qzy7tgpRhu
   port: 443
   server: 37.18.14.33
@@ -732,16 +733,10 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- name: '578,617,638|RU VLESS-06@free-nodes #2'
-  port: 443
-  server: ru1.monkeyisland.xyz
-  tls: false
-  type: vless
-  uuid: 6184fcfb-52e0-40bb-a271-bbd097b70a8e
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: xyz
-  name: '578,614,615,617|RU VLESS-11@free-nodes #1'
+  name: 578,614,615,617|RU VLESS-11@free-nodes
   network: grpc
   port: 443
   reality-opts:
@@ -750,12 +745,13 @@ proxies:
   server: 51.250.28.39
   servername: cloudflare.com
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vless
   uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '578,614,615,617,638|RU VLESS-27@free-nodes #2'
+  name: '578,614,615,617,638|RU VLESS-27@free-nodes #1'
   network: tcp
   port: 443
   reality-opts:
@@ -764,12 +760,13 @@ proxies:
   server: 147.45.159.152
   servername: google.com
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vless
   uuid: b127d2d2-277a-491e-bf80-2e8688fa85e2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '578,614,615,617,638|RU VLESS-74@free-nodes #2'
+  name: '578,614,615,617,638|RU VLESS-74@free-nodes #1'
   network: tcp
   port: 443
   reality-opts:
@@ -778,36 +775,10 @@ proxies:
   server: 212.233.75.107
   servername: bit-site.ru
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vless
   uuid: bca5cfe1-3d2a-45dc-b66a-96298e0051f5
-- name: '578,617,638|RU VLESS-98@free-nodes #2'
-  port: 27121
-  server: wolfy.ufavpn.ru
-  tls: false
-  type: vless
-  uuid: cbf1ec03-2cff-4b1f-9eb5-5929c13fc20c
-- alpn:
-  - h2
-  name: 578|🇷🇺 RU 1
-  network: grpc
-  port: 443
-  server: 185.59.218.168
-  servername: pqh23v4.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- alterId: 0
-  cipher: auto
-  name: 578,618|俄罗斯 067
-  network: tcp
-  port: 11052
-  server: 45.67.230.79
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - alterId: 0
   cipher: auto
   country: 🇺 RU
@@ -823,6 +794,14 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺RU
+  name: 591,634|yandex-5178
+  password: d3837224ed465f00
+  port: 57456
+  server: 45.139.26.173
+  type: ss
+  udp: true
 - name: 603|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1557,6 +1536,30 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: '617,638|RU VLESS-06@free-nodes #1'
+  port: 443
+  server: ru1.monkeyisland.xyz
+  tls: false
+  type: vless
+  uuid: 6184fcfb-52e0-40bb-a271-bbd097b70a8e
+- name: '617,638|RU VLESS-98@free-nodes #1'
+  port: 27121
+  server: wolfy.ufavpn.ru
+  tls: false
+  type: vless
+  uuid: cbf1ec03-2cff-4b1f-9eb5-5929c13fc20c
+- client-fingerprint: chrome
+  grpc-opts: {}
+  name: 618|俄罗斯 002
+  network: grpc
+  port: 8880
+  server: 185.231.205.5
+  skip-cert-verify: true
+  tfo: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
   grpc-opts: {}
   name: 618|俄罗斯 003
@@ -1687,6 +1690,16 @@ proxies:
   tls: true
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- encryption: none
+  grpc-opts: {}
+  name: 618|俄罗斯 015
+  network: grpc
+  port: 8880
+  server: 185.236.232.123
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - client-fingerprint: chrome
   grpc-opts: {}
   name: 618|俄罗斯 016
@@ -1952,7 +1965,7 @@ proxies:
   type: vless
   udp: true
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 618,634|yandex-1267
+- name: 618,634|yandex-582
   network: ws
   port: 2096
   server: 176.124.223.41
@@ -1967,7 +1980,7 @@ proxies:
       Host: vless.keepfuck.me
     path: /snippets
 - client-fingerprint: chrome
-  name: 618,634|yandex-1297
+  name: 618,634|yandex-612
   network: ws
   port: 2087
   server: 92.243.75.49
@@ -1982,7 +1995,7 @@ proxies:
     headers:
       Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
     path: /snippets?ip=proxyip:port(443)
-- name: 618,634|yandex-1457
+- name: 618,634|yandex-772
   network: ws
   port: 2096
   server: 195.13.54.253
@@ -2008,7 +2021,7 @@ proxies:
   type: vless
   udp: true
   uuid: 7c63f43f-f526-49bb-b5c8-2be26e11ef00
-- name: 618,634|yandex-1497
+- name: 618,634|yandex-812
   network: ws
   port: 8443
   server: 92.243.74.239
@@ -2033,7 +2046,7 @@ proxies:
   type: vless
   udp: true
   uuid: 9ac37507-dc17-5313-8125-c6f588c60103
-- name: 618,634|yandex-1538
+- name: 618,634|yandex-853
   network: ws
   port: 443
   server: 194.76.18.113
@@ -2048,7 +2061,7 @@ proxies:
     headers:
       Host: cj.ylks.xyz
     path: /blue
-- name: 618,634|yandex-1571
+- name: 618,634|yandex-886
   network: tcp
   port: 443
   server: de04.abvpn.ru
@@ -2072,6 +2085,16 @@ proxies:
   network: grpc
   port: 8880
   server: 185.231.205.231
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 618|俄罗斯 051
+  network: grpc
+  port: 8880
+  server: 185.231.205.234
   skip-cert-verify: false
   tfo: false
   tls: true
@@ -2102,6 +2125,16 @@ proxies:
   network: grpc
   port: 8880
   server: 185.236.232.157
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+- name: 618|俄罗斯 055
+  network: grpc
+  port: 8880
+  server: 185.236.232.223
   skip-cert-verify: false
   tfo: false
   tls: true
@@ -2181,7 +2214,7 @@ proxies:
   type: vless
   udp: true
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 618,634|yandex-1802
+- name: 618,634|yandex-1117
   network: ws
   port: 2096
   server: 213.219.247.41
@@ -2195,7 +2228,7 @@ proxies:
     headers:
       Host: vless.keepfuck.me
     path: /snippets
-- name: 618,634|yandex-1807
+- name: 618,634|yandex-1122
   network: ws
   port: 8443
   server: 217.30.10.46
@@ -2223,13 +2256,24 @@ proxies:
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 066
+  name: 618,723|🇷🇺 俄罗斯 066
   network: tcp
-  port: 47555
+  port: '47555'
   server: 46.29.166.237
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
+- alterId: 0
+  cipher: auto
+  name: 618,723|🇷🇺 俄罗斯 067
+  network: tcp
+  port: '11052'
+  server: 45.67.230.79
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - name: 618|俄罗斯 068
   network: grpc
   port: 3479
@@ -2250,7 +2294,7 @@ proxies:
   type: vless
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 618,634|yandex-1974
+- name: 618,634|yandex-1289
   network: ws
   port: 2096
   server: 185.59.218.54
@@ -2265,7 +2309,7 @@ proxies:
     headers:
       Host: sni.aizrf.com
     path: /snippets
-- name: 618,634|yandex-1975
+- name: 618,634|yandex-1290
   network: ws
   port: 2096
   server: 193.9.49.54
@@ -2280,7 +2324,7 @@ proxies:
     headers:
       Host: sni.aizrf.com
     path: /snippets
-- name: 618,634|yandex-1976
+- name: 618,634|yandex-1291
   network: ws
   port: 2096
   server: 213.241.198.54
@@ -2297,11 +2341,12 @@ proxies:
     path: /snippets
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 073
+  name: 618,723|🇷🇺 俄罗斯 073
   network: tcp
-  port: 2098
+  port: '2098'
   server: 147.45.51.16
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
 - name: 618|俄罗斯 074
@@ -2325,7 +2370,7 @@ proxies:
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
-  name: 618,634|yandex-2086
+  name: 618,634|yandex-1401
   network: ws
   port: 2096
   server: 195.13.44.52
@@ -2340,7 +2385,7 @@ proxies:
       Host: saas.git.cloudns.org
     path: /snippets&freecodes
 - client-fingerprint: chrome
-  name: 618,634|yandex-2252
+  name: 618,634|yandex-1567
   network: ws
   port: 2096
   server: 94.247.142.61
@@ -2365,7 +2410,7 @@ proxies:
   type: vless
   udp: true
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: 618,634|yandex-2325
+- name: 618,634|yandex-1640
   network: ws
   port: 443
   server: 194.87.79.223
@@ -2380,7 +2425,7 @@ proxies:
     headers:
       Host: fei.634676.xyz
     path: /?ed=2560
-- name: 618,634|yandex-2346
+- name: 618,634|yandex-1661
   network: ws
   port: 2053
   server: 89.169.160.84
@@ -2495,7 +2540,7 @@ proxies:
   type: vless
   udp: true
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: 618,634|yandex-2432
+- name: 618,634|yandex-1747
   network: tcp
   port: 443
   server: che-0001-xr.packet-drop-society.net
@@ -2735,7 +2780,7 @@ proxies:
   uuid: fd0718a1-c463-4297-8ba9-a7f4b93ce436
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '638,656,719|🇷🇺 RU_1 | ⬇️ 2.4MB/s-67 #1'
+  name: '638,656,719|🇷🇺 RU_1 | ⬇️ 2.4MB/s-62 #1'
   network: tcp
   port: 8443
   reality-opts:
@@ -2775,7 +2820,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '656,719|🇷🇺 RU_4 | ⬇️ 1.4MB/s-143 #1'
+  name: '656,719|🇷🇺 RU_4 | ⬇️ 1.4MB/s-138 #1'
   network: tcp
   port: 443
   reality-opts:
@@ -2787,6 +2832,166 @@ proxies:
   type: vless
   udp: true
   uuid: 0a97c5f3-68de-4d5e-bac2-c6bd94551fb6
+- alterId: 0
+  cipher: auto
+  name: 656|🇷🇺 RU LLC 01-364
+  network: tcp
+  port: '18121'
+  server: 36.141.40.59
+  tls: false
+  type: vmess
+  uuid: 24912953-d8e5-4761-95a0-a707651cc423
+- name: 656|🇷🇺 普通-西伯利亚-382
+  obfs: salamander
+  obfs-password: MWM0NDYzYmVjY2Q2YWFlNA%3D%3D
+  password: 78e8d15f-6e0e-43be-8d8e-6bcad8c9d740
+  port: 40400
+  server: xbly.qishuijc.top
+  sni: xbly.qishuijc.top
+  tls: false
+  type: hysteria2
+- client-fingerprint: android
+  name: 656|🇷🇺 优化-西伯利亚1-409
+  network: ws
+  port: 443
+  server: yh1.jgpyjc.top
+  servername: xblyfddds.xiaohuolongjc.top
+  tls: true
+  type: vless
+  uuid: 78e8d15f-6e0e-43be-8d8e-6bcad8c9d740
+  ws-opts:
+    headers:
+      Host: xblyfddds.xiaohuolongjc.top
+    path: '%2Fmscjckjkjfsc'
+- client-fingerprint: android
+  name: 656|🇷🇺 优化-西伯利亚2-410
+  network: ws
+  port: 443
+  server: yh2.jgpyjc.top
+  servername: xblyfddds.xiaohuolongjc.top
+  tls: true
+  type: vless
+  uuid: 78e8d15f-6e0e-43be-8d8e-6bcad8c9d740
+  ws-opts:
+    headers:
+      Host: xblyfddds.xiaohuolongjc.top
+    path: '%2Fmscjckjkjfsc'
+- client-fingerprint: android
+  name: 656|🇷🇺 优化-西伯利亚3-411
+  network: ws
+  port: 443
+  server: yh3.jgpyjc.top
+  servername: xblyfddds.xiaohuolongjc.top
+  tls: true
+  type: vless
+  uuid: 78e8d15f-6e0e-43be-8d8e-6bcad8c9d740
+  ws-opts:
+    headers:
+      Host: xblyfddds.xiaohuolongjc.top
+    path: '%2Fmscjckjkjfsc'
+- encryption: none
+  fast-open: false
+  name: 719|🇷🇺 (-160
+  network: ws
+  port: 443
+  server: 98.70.151.190
+  servername: kuangbao.xiejiang.dpdns.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+    max-early-data: 2560
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '719|🇷🇺 RU LLC 01-364 #1'
+  port: 18121
+  server: 36.141.40.59
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 24912953-d8e5-4761-95a0-a707651cc423
+- mport: 40400-42450
+  name: 719|🇷🇺 普通--382
+  obfs: salamander
+  obfs-password: MWM0NDYzYmVjY2Q2YWFlNA==
+  password: 78e8d15f-6e0e-43be-8d8e-6bcad8c9d740
+  port: 40400
+  ports: 40400-42450
+  server: xbly.qishuijc.top
+  skip-cert-verify: false
+  sni: xbly.qishuijc.top
+  type: hysteria2
+  udp: true
+- client-fingerprint: android
+  encryption: mlkem768x25519plus.random.0rtt.zOJpNlrFa99pYZOkfTGCc-AMaHj3RV6bosjzPNrO1m4
+  name: 719|🇷🇺 优化-伯利亚1-409
+  network: ws
+  port: 443
+  server: yh1.jgpyjc.top
+  servername: xblyfddds.xiaohuolongjc.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 78e8d15f-6e0e-43be-8d8e-6bcad8c9d740
+  ws-opts:
+    headers:
+      Host: xblyfddds.xiaohuolongjc.top
+    path: /mscjckjkjfsc
+- client-fingerprint: android
+  encryption: mlkem768x25519plus.random.0rtt.zOJpNlrFa99pYZOkfTGCc-AMaHj3RV6bosjzPNrO1m4
+  name: '719|🇷🇺 优化-西伯利亚2-410 #1'
+  network: ws
+  port: 443
+  server: yh2.jgpyjc.top
+  servername: xblyfddds.xiaohuolongjc.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 78e8d15f-6e0e-43be-8d8e-6bcad8c9d740
+  ws-opts:
+    headers:
+      Host: xblyfddds.xiaohuolongjc.top
+    path: /mscjckjkjfsc
+- client-fingerprint: android
+  encryption: mlkem768x25519plus.random.0rtt.zOJpNlrFa99pYZOkfTGCc-AMaHj3RV6bosjzPNrO1m4
+  name: '719|🇷🇺 优化-西伯利亚3-411 #1'
+  network: ws
+  port: 443
+  server: yh3.jgpyjc.top
+  servername: xblyfddds.xiaohuolongjc.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 78e8d15f-6e0e-43be-8d8e-6bcad8c9d740
+  ws-opts:
+    headers:
+      Host: xblyfddds.xiaohuolongjc.top
+    path: /mscjckjkjfsc
+- name: 723|🇷🇺 俄罗斯 001
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
+- name: 723|🇷🇺 俄罗斯 039
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: trojan
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
