@@ -202,13 +202,14 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 468,473|🇱PL-217.30.10.18-0339
+  country: 🇱PL
+  name: 468,473,587|🇱PL_250
   password: UTJA57ypk2XKQpnm
   port: 9033
   server: 217.30.10.18
   tfo: false
   type: ss
-- name: 473,524,578,614,615,617,627,630,638|波兰_120218002
+- name: 473,578,609,610,614,615,617,627,634,638|波兰_120304002
   network: tcp
   password: .+QAJot50sDi6mvb
   port: 11790
@@ -216,8 +217,9 @@ proxies:
   skip-cert-verify: true
   sni: runningshoes.purpletornado.click
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
-  name: 473,587|_09
+  name: 473,587|_07
   password: ueLXVkvh4hckhErQ
   port: 9060
   server: 217.30.10.18
@@ -427,7 +429,7 @@ proxies:
       Host: 3h-poland1.09vpn.com
     path: /vmess/
 - client-fingerprint: chrome
-  name: 618,634|yandex-3280
+  name: 618,634|yandex-744
   network: ws
   port: 2053
   server: 31.133.0.55
@@ -455,7 +457,7 @@ proxies:
   tls: true
   type: vmess
   uuid: bd996dac-3b1c-42a9-b8a1-66b87d0b72ae
-- name: 618,634|yandex-4396
+- name: 618,634|yandex-1860
   network: tcp
   port: 1002
   server: 185.254.220.229
@@ -478,6 +480,27 @@ proxies:
   tls: true
   type: vmess
   uuid: 70073f5e-9182-4f17-8758-5f7b16b241b4
+- name: 638|🇵🇱PL_1 | ⬇️ 5.1MB/s
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: i1XUXx_YHZJ8LiZG7yGYG-jXr1JHASvat25lf9SmnzM
+    short-id: 5626dfc4162fd4f2
+  server: plr.strelkavpn.ru
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 0e0df131-29f5-4725-b9a3-7b1a6cac4c95
+- name: 638|🇵🇱_波兰
+  network: ws
+  port: 2053
+  server: 194.35.119.135
+  servername: kuangbao.xiejiang.dpdns.org
+  tls: true
+  type: vless
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  ws-opts:
+    path: '%2F'
 - name: 638|PL波兰(mibei77.com 米贝节点分享)
   network: ws
   port: 2053
@@ -490,16 +513,6 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.dpdns.org
     path: '%2F%3Fed%3D2560'
-- name: 638|🇵🇱_波兰
-  network: ws
-  port: 2053
-  server: 81.200.154.2
-  servername: kuangbao.xiejiang.dpdns.org
-  tls: true
-  type: vless
-  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-  ws-opts:
-    path: '%2F'
 - name: '638|🇵🇱_波兰 #1'
   network: ws
   port: 2053
@@ -521,16 +534,6 @@ proxies:
   ws-opts:
     path: '%2F'
 - name: '638|🇵🇱_波兰 #3'
-  network: ws
-  port: 8443
-  server: 85.193.95.23
-  servername: kuangbao.xiejiang.dpdns.org
-  tls: true
-  type: vless
-  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-  ws-opts:
-    path: '%2F'
-- name: '638|🇵🇱_波兰 #4'
   network: ws
   port: 8443
   server: 89.19.211.109
