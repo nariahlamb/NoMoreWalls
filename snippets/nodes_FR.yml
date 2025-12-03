@@ -412,7 +412,8 @@ proxies:
       Host: pelang.org
     path: /
 - cipher: aes-256-cfb
-  name: 473|🇷FR-195.154.119.77-0333
+  country: 🇷FR
+  name: 473,591|FR_07
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -725,7 +726,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇬🇧 英国 006
+  name: 473,524,618,627,634,723|🇬🇧 英国 006
   network: ws
   port: '80'
   server: 51.68.191.233
@@ -806,7 +807,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇩🇪 德国 051
+  name: 473,524,618,627,634,723|🇩🇪 德国 051
   network: ws
   port: '443'
   server: 141.94.155.229
@@ -822,7 +823,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇫🇷 法国 140
+  name: 473,524,618,627,634,723|🇫🇷 法国 140
   network: ws
   port: '443'
   server: 91.134.8.93
@@ -838,7 +839,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634,723|🇫🇷 法国 141
+  name: 473,524,618,627,634,723|🇫🇷 法国 141
   network: ws
   port: '443'
   server: 146.59.85.226
@@ -978,14 +979,12 @@ proxies:
   server: 176.31.83.90
   skip-cert-verify: false
   type: trojan
-- country: 🇷FR
-  name: '473,587,614,615,617,627,638|未知177 #1'
+- name: '473,614,615,617,627,638|未知177 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 473,627,634,638,656|🇨🇦 加拿大-优化2-402
@@ -1250,7 +1249,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 473,627|🇫🇷FR-57.128.189.240-6020
+  name: '473,524,627|🇫🇷FR-57.128.189.240-6020 #1'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -1280,12 +1279,15 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 473,627|🇫🇷FR-91.134.8.101-6032
+  country: 🇫FR
+  h2-opts: {}
+  http-opts: {}
+  name: '473,524,591,627|🇫🇷FR-91.134.8.101-6032 #1'
   network: ws
   port: 443
   server: 91.134.8.101
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1293,14 +1295,12 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- country: 🇫🇷FR
-  name: 473,587,627|🇫🇷FR-51.178.42.187-6036
+- name: 473,627|🇫🇷FR-51.178.42.187-6036
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '473,627|🇫🇷FR-146.59.55.50-6172 #1'
@@ -1767,7 +1767,7 @@ proxies:
   server: 141.95.160.152
   type: ss
 - cipher: aes-256-gcm
-  name: 537,634|yandex-4793
+  name: 537,634|yandex-2148
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
@@ -1805,35 +1805,6 @@ proxies:
     headers:
       Host: ''
     path: /vmess/
-- alterId: 0
-  cipher: auto
-  country: 🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 587| FR_42
-  network: ws
-  port: 443
-  server: 91.134.8.101
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 587,638|🇫🇷 FR_51
-  network: none
-  port: 38141
-  server: 45.136.12.37
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 604|法国_马赛
@@ -1992,7 +1963,7 @@ proxies:
   uuid: 96db7e57-5314-4560-b708-2446670dfa29
 - country: 🇫🇷FR
   delay: 900
-  name: 623,634|yandex-25
+  name: 623,634|yandex-2380
   password: telegram-id-directvpn
   port: 22223
   server: 15.188.94.111
@@ -2217,6 +2188,16 @@ proxies:
     headers:
       Host: pelang.org
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 638|🇫🇷 FR_51
+  network: none
+  port: 38141
+  server: 45.136.12.37
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
 - alterId: 0
   cipher: auto
   name: '649|法国1 #2'
