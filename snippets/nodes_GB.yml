@@ -1,16 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '97,581|英国2 #1'
-  port: 45067
-  server: hxb.dashuai.help
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7082f5d7-8ea3-4f80-8c1d-b3855ce68cea
-- alterId: 0
-  cipher: auto
   name: '97,581|英国1 #1'
   port: 45066
   server: hxa.dashuai.help
@@ -18,7 +8,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7082f5d7-8ea3-4f80-8c1d-b3855ce68cea
+  uuid: 1279ad5f-188a-4cfd-a1ac-26c4a17031eb
+- alterId: 0
+  cipher: auto
+  name: '97,581|英国2 #1'
+  port: 45067
+  server: hxb.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1279ad5f-188a-4cfd-a1ac-26c4a17031eb
 - cipher: chacha20-ietf-poly1305
   name: 224|sd.258.cyou续费地址
   password: 7dbdba19-6a3b-4370-93b1-fb5a89adde0c
@@ -161,7 +161,8 @@ proxies:
   server: 145.239.6.202
   type: ss
 - cipher: aes-128-gcm
-  name: 454,455,473|🇧GB-141.98.101.178-0327
+  country: 🇧 GB
+  name: 454,455,473,587| GB_49
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -399,7 +400,8 @@ proxies:
   server: 82.38.31.202
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇬🇧GB-82.38.31.179-0397
+  country: 🇧 GB
+  name: 473,587|🇧 GB_51
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.179
@@ -454,7 +456,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-1008
+  name: 473,618,627,634|yandex-866
   network: ws
   port: 80
   server: 57.129.132.223
@@ -471,7 +473,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: 473,604,618,627,634|yandex-2070
+  name: 473,604,618,627,634|yandex-1928
   network: ws
   port: 443
   server: 68.168.31.196
@@ -487,7 +489,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,604,618,627,634|yandex-2071
+  name: 473,604,618,627,634|yandex-1929
   network: ws
   port: 443
   server: 68.168.31.242
@@ -503,7 +505,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 473,604,618,627,634|yandex-2225
+  name: 473,604,618,627,634|yandex-2083
   network: ws
   port: 443
   server: 172.99.190.209
@@ -544,28 +546,28 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-240 | free-nodes #1'
+- name: '473,578,614,615,617,627,638|未知 TROJAN-240 | free-nodes #1'
   password: shenmegui
   port: 8461
   server: 185.49.33.47
   skip-cert-verify: false
   sni: $jp.swiftfalcon.app
   type: trojan
-- name: 473,614,615,617,627,638|未知83
+- name: '473,614,615,617,627,638|未知83 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 18.135.6.102
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 473,614,615,617,627,634,638|未知77
+- name: 473,578,614,615,617,627,634,638|未知77
   password: 02e653c9-7c93-46a9-999d-11834bd0c577
   port: 443
   server: 132.145.51.172
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '473,614,615,617,627,638|未知 TROJAN-393 | free-nodes #1'
+- name: '473,578,614,615,617,627,638|未知 TROJAN-393 | free-nodes #1'
   password: telegram-id-directvpn
   port: 22222
   server: 13.40.3.71
@@ -578,7 +580,7 @@ proxies:
   server: 45.66.134.219
   skip-cert-verify: false
   type: trojan
-- name: 473,614,615,617,627,638|未知 TROJAN-588 | free-nodes
+- name: '473,614,615,617,627,638|未知 TROJAN-588 | free-nodes #1'
   password: xxoo
   port: 443
   server: 138.124.183.222
@@ -605,14 +607,14 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-1207 | free-nodes #1'
+- name: '473,578,614,615,617,627,638|未知 TROJAN-1207 | free-nodes #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 35.177.137.88
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '473,578,614,615,617,627,638|未知103 #1'
+- name: '473,614,615,617,627,638|未知103 #1'
   password: xxoo
   port: 443
   server: 138.124.183.226
@@ -630,18 +632,22 @@ proxies:
   server: 138.124.183.216
   skip-cert-verify: false
   type: trojan
-- name: 473,614,615,617,627|🇬🇧GB-51.38.65.155-1828
+- country: 🇬🇧 GB
+  name: 473,578,587,614,615,617,627|🇬🇧GB-51.38.65.155-1828
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
   skip-cert-verify: false
   type: trojan
-- name: 473,614,615,617,627|🇬🇧GB-46.101.87.178-1445
+  udp: true
+- country: 🇧GB
+  name: 473,587,614,615,617,627|🇬🇧GB-46.101.87.178-1445
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 473|GB-185.108.105.129-3241
   password: WCuz7yrfZSCQQXSNrtGPz2HT
@@ -843,12 +849,14 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8
-- name: 473,614,615,617,627|🇬🇧GB-198.244.190.189-2100
+- country: 🇷FR
+  name: 473,587,614,615,617,627|🇬🇧GB-198.244.190.189-2100
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 473|GB-172.99.190.87-8117
   password: KixLvKzwjekG00rm
@@ -1636,7 +1644,7 @@ proxies:
   skip-cert-verify: false
   sni: loader.tapsell.ir
   type: trojan
-- name: 473,627|🇬🇧GB-146.19.230.241-10687
+- name: 473,614,615,617,627|🇬🇧GB-146.19.230.241-10687
   password: xxoo
   port: 443
   server: 146.19.230.241
@@ -1703,34 +1711,8 @@ proxies:
     headers:
       Host: ''
     path: /path/1685613581032
-- alterId: 0
-  cipher: auto
-  country: 🇧GB
-  h2-opts: {}
-  http-opts: {}
-  name: '524,591,609,610,630,638,642,656,719|🇺🇸 US_6 | ⬇️ 3.0MB/s-79 #1'
-  network: tcp
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  fast-open: false
-  name: '524,609,610,634,719|🇬🇧 英国( )-166 #1'
-  network: ''
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - cipher: aes-256-gcm
-  name: 537,634|yandex-373
+  name: 537,634|yandex-262
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 23001
   server: uk001.dogsvip.site
@@ -1882,7 +1864,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-286
+  name: 577,634|yandex-107
   network: ws
   port: 16617
   server: planb.mojcn.com
@@ -1899,7 +1881,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-311
+  name: 577,634|yandex-132
   network: ws
   port: 16645
   server: m.cnmjin.net
@@ -1916,7 +1898,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-312
+  name: 577,634|yandex-133
   network: ws
   port: 16645
   server: t.cnmjcn.cyou
@@ -1944,6 +1926,28 @@ proxies:
   type: vmess
   udp: true
   uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
+- alterId: 0
+  cipher: auto
+  country: 🇧GB
+  h2-opts: {}
+  http-opts: {}
+  name: '587,591,609,610,630,638,642,656,719|🇺🇸 US_6 | ⬇️ 3.0MB/s-79 #1'
+  network: tcp
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-path: /
+- country: 🇬🇧 GB
+  name: 587|🇧 GB_56
+  password: dd6dcb10-4683-11f0-ae79-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 604|英国_倫敦金融城
