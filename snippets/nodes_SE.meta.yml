@@ -64,7 +64,7 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '473,614,615|[Trojan] 未知 TROJAN-1490 | free... #1'
+- name: '473,614,615|[Trojan] 未知 TROJAN-335 | free-... #1'
   network: ws
   password: d78d48df-b788-4a95-9e9f-77c9b2f69822
   port: 8443
@@ -83,11 +83,11 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '473,578,614,615,617,627,638|未知108 #1'
+- name: '473,578,627,638|未知108 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 13.50.16.231
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trj.rollingnext.co.uk
   type: trojan
 - name: '473,614,615,617,627,638|未知 TROJAN-370 | free-nodes #1'
@@ -165,6 +165,12 @@ proxies:
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.211
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 578|https://t.me/ForceRunVPN-🇸🇪-Tä...
+  password: RP767jpZVarzQ0iI0vbTuA
+  port: 37538
+  server: 78.40.117.109
   type: ss
 - name: 608|瑞典_021805001+L30
   password: telegram-id-privatevpns
@@ -280,11 +286,12 @@ proxies:
     path: /google
 - alterId: 0
   cipher: auto
-  name: 618|瑞典 001
+  name: 618,723|🇸🇪 瑞典 001
   network: tcp
-  port: 35500
+  port: '35500'
   server: 148.135.184.84
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 744847f4-8549-4bab-a8e4-6b410d271c16
 - client-fingerprint: firefox
