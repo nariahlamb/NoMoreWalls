@@ -102,13 +102,13 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '473,614,615|[SS] 🇷🇺 RU SS-97 | free-nodes #1'
+  name: '473,578,614,615|[SS] 🇷🇺 RU SS-109 | free-nodes #1'
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '473,614,615|[SS] 未知 SS-95 | free-nodes #1'
+  name: '473,578,614,615|[SS] 未知 SS-107 | free-nodes #1'
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
@@ -155,7 +155,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,614,615,618,634|yandex-653
+- name: 473,614,615,618,634|yandex-3282
   network: ws
   password: vpn
   port: 2025
@@ -171,9 +171,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-1841
+  name: 473,618,627,634,723|🇷🇺 俄罗斯 079
   network: ws
-  port: 50826
+  port: '50826'
   server: 45.67.32.147
   servername: ''
   skip-cert-verify: true
@@ -185,14 +185,14 @@ proxies:
     headers:
       Host: wellyoumust.goahead.rf.gd
     path: /multipath
-- name: '473,578,614,615,617,627,638|未知138 #1'
+- name: '473,614,615,617,627,638|未知138 #1'
   password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910
   port: 28443
   server: 45.88.148.237
   skip-cert-verify: false
   sni: sbank.ir
   type: trojan
-- name: '473,578,614,615,617,627,638|未知186 #1'
+- name: 473,614,615,617,627,638|未知186
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 45.88.148.234
@@ -205,7 +205,7 @@ proxies:
   skip-cert-verify: false
   sni: joss.gpj4.web.id
   type: trojan
-- name: 473,627,638|未知 TROJAN-1830 | free-nodes
+- name: '473,614,615,617,627,638|未知 TROJAN-1830 | free-nodes #1'
   password: Qzy7tgpRhu
   port: 443
   server: 37.18.14.33
@@ -213,11 +213,12 @@ proxies:
   sni: m.vk.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-45.139.26.173-3432
+  name: 473,634|yandex-4924
   password: d3837224ed465f00
   port: 57456
   server: 45.139.26.173
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '473,627,638|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #37'
@@ -479,17 +480,6 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 578,618|俄罗斯 067
-  network: tcp
-  port: 11052
-  server: 45.67.230.79
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - alterId: 0
   cipher: auto
   country: 🇺 RU
@@ -828,28 +818,34 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: aes-256-gcm
-  name: '614,615|[SS] 🇷🇺 RU SS-22 | free-nodes #1'
-  password: o0OBHZkTfgxaZQEdThYFU1YyuGWmLm9K5cIQ2kj4MiM=
-  port: 24589
-  server: 95.163.226.50
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 066
+  name: 618,723|🇷🇺 俄罗斯 066
   network: tcp
-  port: 47555
+  port: '47555'
   server: 46.29.166.237
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 073
+  name: 618,723|🇷🇺 俄罗斯 067
   network: tcp
-  port: 2098
+  port: '11052'
+  server: 45.67.230.79
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
+- alterId: 0
+  cipher: auto
+  name: 618,723|🇷🇺 俄罗斯 073
+  network: tcp
+  port: '2098'
   server: 147.45.51.16
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
 - cipher: chacha20-ietf-poly1305
@@ -885,6 +881,20 @@ proxies:
     headers:
       Host: aeryy5gfrp630ww1.lovebaipiao.net
     path: /images
+- name: 723|🇷🇺 俄罗斯 001
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
+- name: 723|🇷🇺 俄罗斯 039
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: trojan
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
