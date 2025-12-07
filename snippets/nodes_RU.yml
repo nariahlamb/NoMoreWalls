@@ -102,13 +102,13 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473,578|未知 SS-107 | free-nodes
+  name: 473|🇺RU-45.89.55.173-0286
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473,578|🇷🇺 RU SS-109 | free-nodes
+  name: 473|🇺RU-45.138.157.162-0289
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
@@ -149,7 +149,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,614,615,618,634|yandex-3525
+- name: 473,618,634|yandex-699
   network: ws
   password: vpn
   port: 2025
@@ -165,7 +165,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-4713
+  name: 473,618,627,634|yandex-1887
   network: ws
   port: 50826
   server: 45.67.32.147
@@ -180,12 +180,12 @@ proxies:
       Host: wellyoumust.goahead.rf.gd
     path: /multipath
 - cipher: chacha20-ietf-poly1305
-  name: '473,614,615|[SS] 未知 SS-51 | free-nodes #1'
+  name: '473,614,615|[SS] 未知 SS-60 | free-nodes #1'
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
   type: ss
-- name: '473,614,615,617,627,638|未知 TROJAN-337 | free-nodes #1'
+- name: '473,578,614,615,617,627,638|未知 TROJAN-337 | free-nodes #1'
   password: 6c7d536e-1ecf-448d-83c1-3044dd89ceac
   port: 443
   server: 5.182.39.57
@@ -478,6 +478,17 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 578,618|俄罗斯 067
+  network: tcp
+  port: 11052
+  server: 45.67.230.79
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -801,12 +812,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '614,615|[SS] 🇷🇺 RU SS-18 | free-nodes #1'
-  password: AqZbt1QCs3ngEfXo1p7T-w
-  port: 1080
-  server: 81.200.158.206
-  type: ss
 - alterId: 0
   cipher: auto
   name: 618|俄罗斯 066
@@ -818,15 +823,6 @@ proxies:
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
-  name: 618|俄罗斯 067
-  network: tcp
-  port: 11052
-  server: 45.67.230.79
-  skip-cert-verify: true
-  type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
-- alterId: 0
-  cipher: auto
   name: 618|俄罗斯 073
   network: tcp
   port: 2098
@@ -836,13 +832,22 @@ proxies:
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
 - country: 🇷🇺RU
   delay: 2149
-  name: 623,634|yandex-439
+  name: 623,634|yandex-4889
   password: 3ef03de40a234d209bb2d3807ca0d643
   port: 443
   server: 46.29.161.237
   skip-cert-verify: true
   type: trojan
   udp: true
+- name: '627,638|未知 TROJAN-1073 | free-nodes #1'
+  network: ws
+  password: vpn
+  port: 2025
+  server: 45.82.14.144
+  sni: www.bing.com
+  type: trojan
+  ws-opts:
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
