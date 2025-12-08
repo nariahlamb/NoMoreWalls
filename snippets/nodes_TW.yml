@@ -33,9 +33,9 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 92,618,634,723|🇺🇸 美国 288
+  name: 92,618,634|yandex-1311
   network: ws
-  port: '8080'
+  port: 8080
   server: 34.81.49.231
   skip-cert-verify: false
   tfo: false
@@ -49,9 +49,9 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 92,473,618,627,634,723|🇨🇳 中国 063
+  name: 92,473,618,627,634|yandex-1312
   network: ws
-  port: '28080'
+  port: 28080
   server: tw-pqshi.vm.331331.xyz
   servername: ''
   skip-cert-verify: false
@@ -99,6 +99,16 @@ proxies:
   type: vmess
   udp: true
   uuid: e9b7e121-c334-4df3-bf37-b4019d151b0f
+- name: 217|TW
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 167.68.4.223
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 224|台湾x1
@@ -243,7 +253,7 @@ proxies:
   server: 60.249.3.226
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-683 | free-nodes #1'
+- name: 473,627,638|未知 TROJAN-683 | free-nodes
   password: b09d2aaa443af97a
   port: 3389
   server: 211.72.35.155
@@ -273,13 +283,13 @@ proxies:
   server: official.taipeicitygovernment.if.ua
   skip-cert-verify: false
   type: trojan
-- name: 473,614,615,617,627,638|未知 TROJAN-351 | free-nodes
+- name: '473,614,615,617,627,638|未知 TROJAN-351 | free-nodes #1'
   password: 7b06d22a8a7c764f
   port: 3389
   server: 211.72.35.154
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-1064 | free-nodes #1'
+- name: 473,614,615,617,627,638|未知 TROJAN-1064 | free-nodes
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.chernovtsy.ua
@@ -297,21 +307,21 @@ proxies:
   server: official.taipeicitygovernment.dp.ua
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知106 #1'
+- name: '473,627,638|未知106 #1'
   password: 7b06d22a8a7c764f
   port: 3389
   server: 211.72.35.156
   skip-cert-verify: false
   type: trojan
 - country: 🇨 CN
-  name: 473,587,627|🇹🇼TW-211.20.245.139-2674
+  name: 473,587,614,615,617,627|🇹🇼TW-211.20.245.139-2674
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
   udp: true
-- name: '473,614,615,617,627,638|未知 TROJAN-1057 | free-nodes #1'
+- name: '473,627,638|未知 TROJAN-1057 | free-nodes #1'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.ivano-frankivsk.ua
@@ -545,7 +555,7 @@ proxies:
     headers:
       Host: woidenca1.jsworld.eu.org
     path: /nishikata3
-- name: '473,614,615,617,627,638|未知 TROJAN-642 | free-nodes #1'
+- name: '473,627,638|未知 TROJAN-642 | free-nodes #1'
   password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT
   port: 443
   server: 2.58.242.43
@@ -673,17 +683,18 @@ proxies:
     path: /v2ray
 - cipher: chacha20-ietf-poly1305
   country: 🇩 ID
-  name: 473,587| ID_204
+  name: 473,587| ID_199
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇼TW-154.223.20.79-7512
+  name: 473,587|_10
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 473,627|🇹🇼TW-103.229.127.212-9785
@@ -1095,11 +1106,6 @@ proxies:
   type: vmess
   udp: true
   uuid: aaba2807-e05d-4b46-a819-10aca0793576
-- name: 627|🇹🇼TW-211.72.35.157-1306
-  password: 7ac49a893e0bd10c
-  port: 3389
-  server: 211.72.35.157
-  type: trojan
 - name: '627,638|未知 TROJAN-1421 | free-nodes #1'
   password: 7ac49a893e0bd10c
   port: 3389
@@ -1214,7 +1220,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.be:154948
+    host: feb7fa9.dl.nintendo.net:154948
     mode: tls
   port: 2377
   server: feb7fa9.t1.glados-config.com
@@ -1225,7 +1231,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.de:154948
+    host: feb7fa9.dl.blizzard.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.t2.glados-config.com
@@ -1236,7 +1242,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.it:154948
+    host: feb7fa9.dl.microsoft.fi:154948
     mode: tls
   port: 2377
   server: feb7fa9.t3.glados-config.com
@@ -1247,7 +1253,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.mozilla.net:154948
+    host: feb7fa9.dl.nintendo.jp:154948
     mode: tls
   port: 2377
   server: feb7fa9.t4.glados-config.com
@@ -1258,7 +1264,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.cl:154948
+    host: feb7fa9.dl.mozilla.net:154948
     mode: tls
   port: 2377
   server: feb7fa9.t5.glados-config.com
@@ -1269,7 +1275,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.cl:154948
+    host: feb7fa9.dl.microsoft.es:154948
     mode: tls
   port: 2377
   server: feb7fa9.t6.glados-config.com
