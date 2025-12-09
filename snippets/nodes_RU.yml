@@ -102,7 +102,7 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '473,614,615|[SS] 未知 SS-78 | free-nodes #1'
+  name: '473,614,615|[SS] 未知 SS-79 | free-nodes #1'
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
@@ -149,7 +149,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,614,615,618,634|yandex-600
+- name: 473,614,615,618,634|yandex-3628
   network: ws
   password: vpn
   port: 2025
@@ -165,7 +165,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,618,627,634|yandex-1788
+  name: 473,618,627,634|yandex-4816
   network: ws
   port: 50826
   server: 45.67.32.147
@@ -185,13 +185,13 @@ proxies:
   port: 1080
   server: 81.200.158.206
   type: ss
-- name: '473,614,615,617,627,638|未知 TROJAN-789 | free-nodes #1'
+- name: 473,614,615,617,627,638|未知 TROJAN-789 | free-nodes
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 45.88.148.234
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-808 | free-nodes #1'
+- name: '473,578,614,615,617,627,638|未知 TROJAN-808 | free-nodes #1'
   password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910
   port: 28443
   server: 45.88.148.237
@@ -353,8 +353,7 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇺RU
-  name: 473,591|🇺RU_33
+  name: 473|🇺RU-45.139.26.173-7467
   password: d3837224ed465f00
   port: 57456
   server: 45.139.26.173
@@ -490,6 +489,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 314185f7-931d-4656-922d-0857e7afd224
+- alterId: 0
+  cipher: auto
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇷🇺 RU_263
+  network: tcp
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -814,7 +828,7 @@ proxies:
       Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 614,615,634|yandex-5131
+  name: 614,615,634|yandex-3201
   password: '!!str 907560230'
   port: 17846
   server: clr.ducks.tel
@@ -838,15 +852,23 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
-- country: 🇷🇺RU
-  delay: 1515
-  name: 623,630,634,638|🇷🇺_RU_俄罗斯
-  password: af4b064a9c39472fb34ad8b113acdc6b
-  port: 443
-  server: 46.29.161.237
-  skip-cert-verify: true
-  sni: 46.29.161.237
-  type: trojan
+- cipher: aes-256-gcm
+  country: 🇷🇺RU
+  delay: 952
+  name: 623,634|yandex-3148
+  password: 7ae4e68cf77f6089
+  port: 1012
+  server: 45.140.169.26
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇷🇺RU
+  delay: 606
+  name: 623,634|yandex-3149
+  password: f34579d0148b2581
+  port: 1281
+  server: 185.22.154.19
+  type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇺俄罗斯 01 | 1x RU
@@ -869,16 +891,16 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 638|🇷🇺 RU_263
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- client-fingerprint: chrome
+  name: '656,719|🇷🇺 RU LLC 01-173 #1'
+  password: 70d53b4f-def3-48fd-8906-ae489ddf1ffe
+  port: 17615
+  server: 183.236.97.18
+  skip-cert-verify: true
+  sni: data.52daishu.life
+  tfo: true
+  type: trojan
+  udp: true
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
