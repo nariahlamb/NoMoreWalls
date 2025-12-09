@@ -224,7 +224,7 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '473,614,615|[SS] 未知 SS-79 | free-nodes #1'
+  name: '473,578,614,615|[SS] 未知 SS-83 | free-nodes #1'
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
@@ -302,18 +302,18 @@ proxies:
       Host: wellyoumust.goahead.rf.gd
     path: /multipath
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-81.200.158.206-1212
+  name: '473,578,614,615|[SS] 🇷🇺 RU SS-70 | free-nodes #1'
   password: AqZbt1QCs3ngEfXo1p7T-w
   port: 1080
   server: 81.200.158.206
   type: ss
-- name: 473,614,615,617,627,638|未知 TROJAN-789 | free-nodes
+- name: '473,578,614,615,617,627,638|未知 TROJAN-789 | free-nodes #1'
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 45.88.148.234
   skip-cert-verify: false
   type: trojan
-- name: '473,578,614,615,617,627,638|未知 TROJAN-808 | free-nodes #1'
+- name: '473,614,615,617,627,638|未知 TROJAN-808 | free-nodes #1'
   password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910
   port: 28443
   server: 45.88.148.237
@@ -648,86 +648,28 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 578,614,615,634|yandex-3201
+  password: '!!str 907560230'
+  port: 17846
+  server: clr.ducks.tel
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '578,614,615,617|RU VLESS-11 | free-nodes #1'
+  name: 578,614,615,617,638|RU VLESS-66 | free-nodes
   network: tcp
-  port: 2443
+  port: 443
   reality-opts:
-    public-key: IgaNLuUg1JOIoUdX4CegMU_XBU35B5RAYRL_-KZfpSY
-    short-id: c84a28bb05989ff4
-  server: 158.160.175.98
-  servername: yandex.ru
+    public-key: 8OsJx6xuHcpL_5e1w0U4bMBa-icevDgvvzNwPwZbORQ
+    short-id: 5540e44a53c3d01c
+  server: 217.16.24.170
+  servername: api-maps.yandex.ru
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vless
-  uuid: 62b0e46b-d2a5-423d-8457-95bde707fc19
-- name: '578,617,638|RU VLESS-78 | free-nodes #2'
-  port: 443
-  server: betty.ns.cloudflare.com
-  tls: false
-  type: vless
-  uuid: d64fbcef-f032-48ae-8f52-d73976cb0c57
-- name: 578,617,638|RU VLESS-92 | free-nodes
-  port: 443
-  server: clyde.ns.cloudflare.com
-  tls: false
-  type: vless
-  uuid: fae01ea6-1fc4-44fa-90c6-e2e8f5f16b44
-- name: 578,617,638|RU VLESS-99 | free-nodes
-  port: 443
-  server: 130.193.42.234
-  tls: false
-  type: vless
-  uuid: 7e281f58-63b0-4e9a-a3fe-537e33e374b9
-- name: 578,617,638|RU VLESS-101 | free-nodes
-  port: 443
-  server: noda8.topconnected.ru
-  tls: false
-  type: vless
-  uuid: b148ea58-3fc7-4f27-8d8b-2b8e007e59fc
-- name: 578,617,638|RU VLESS-102 | free-nodes
-  port: 443
-  server: noda2.topconnected.ru
-  tls: false
-  type: vless
-  uuid: b148ea58-3fc7-4f27-8d8b-2b8e007e59fc
-- alpn:
-  - h2
-  name: 578|🇷🇺 RU 1
-  network: grpc
-  port: 443
-  server: 185.59.218.168
-  servername: pqh23v4.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- alterId: 0
-  cipher: auto
-  name: 578,618|俄罗斯 067
-  network: tcp
-  port: 11052
-  server: 45.67.230.79
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
-- alterId: 0
-  cipher: auto
-  country: 🇺 RU
-  h2-opts: {}
-  http-opts: {}
-  name: 587,638|🇷🇺 RU_263
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
+  uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
 - name: 603|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1462,13 +1404,24 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 614,615,634|yandex-3201
-  password: '!!str 907560230'
-  port: 17846
-  server: clr.ducks.tel
-  type: ss
+- name: 617,638|RU VLESS-92 | free-nodes
+  port: 443
+  server: clyde.ns.cloudflare.com
+  tls: false
+  type: vless
+  uuid: fae01ea6-1fc4-44fa-90c6-e2e8f5f16b44
+- client-fingerprint: chrome
+  grpc-opts: {}
+  name: 618|俄罗斯 002
+  network: grpc
+  port: 8880
+  server: 185.231.205.5
+  skip-cert-verify: true
+  tfo: true
+  tls: true
+  type: vless
   udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
   grpc-opts: {}
   name: 618|俄罗斯 003
@@ -1599,6 +1552,16 @@ proxies:
   tls: true
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- encryption: none
+  grpc-opts: {}
+  name: 618|俄罗斯 015
+  network: grpc
+  port: 8880
+  server: 185.236.232.123
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - client-fingerprint: chrome
   grpc-opts: {}
   name: 618|俄罗斯 016
@@ -1990,6 +1953,16 @@ proxies:
   type: vless
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 618|俄罗斯 051
+  network: grpc
+  port: 8880
+  server: 185.231.205.234
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: 618|俄罗斯 052
   network: grpc
   port: 8880
@@ -2014,6 +1987,16 @@ proxies:
   network: grpc
   port: 8880
   server: 185.236.232.157
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+- name: 618|俄罗斯 055
+  network: grpc
+  port: 8880
+  server: 185.236.232.223
   skip-cert-verify: false
   tfo: false
   tls: true
@@ -2142,6 +2125,15 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
+- alterId: 0
+  cipher: auto
+  name: 618|俄罗斯 067
+  network: tcp
+  port: 11052
+  server: 45.67.230.79
+  skip-cert-verify: true
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - name: 618|俄罗斯 068
   network: grpc
   port: 3479
@@ -2707,6 +2699,12 @@ proxies:
   tls: false
   type: vless
   uuid: 74053bef-bd35-4654-b45b-a79f75a60637
+- name: 638|RU VLESS-99 | free-nodes
+  port: 443
+  server: 130.193.42.234
+  tls: false
+  type: vless
+  uuid: 7e281f58-63b0-4e9a-a3fe-537e33e374b9
 - name: 638|RU VLESS-83 | free-nodes
   port: 443
   server: noda4.topconnected.ru
@@ -2738,19 +2736,18 @@ proxies:
   tls: false
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 638|RU VLESS-66 | free-nodes
-  network: tcp
+- name: 638|RU VLESS-102 | free-nodes
   port: 443
-  reality-opts:
-    public-key: 8OsJx6xuHcpL_5e1w0U4bMBa-icevDgvvzNwPwZbORQ
-    short-id: 5540e44a53c3d01c
-  server: 217.16.24.170
-  servername: api-maps.yandex.ru
+  server: noda2.topconnected.ru
   tls: false
   type: vless
-  uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
+  uuid: b148ea58-3fc7-4f27-8d8b-2b8e007e59fc
+- name: 638|RU VLESS-101 | free-nodes
+  port: 443
+  server: noda8.topconnected.ru
+  tls: false
+  type: vless
+  uuid: b148ea58-3fc7-4f27-8d8b-2b8e007e59fc
 - client-fingerprint: chrome
   encryption: none
   fast-open: false
@@ -2781,6 +2778,22 @@ proxies:
   tls: false
   type: vless
   uuid: cb7188cf-2c3a-43a5-af90-d893922e4917
+- name: 638|RU VLESS-78 | free-nodes
+  port: 443
+  server: betty.ns.cloudflare.com
+  tls: false
+  type: vless
+  uuid: d64fbcef-f032-48ae-8f52-d73976cb0c57
+- alterId: 0
+  cipher: auto
+  name: 638|🇷🇺 RU_263
+  network: tcp
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - client-fingerprint: chrome
   name: '656,719|🇷🇺 RU LLC 01-173 #1'
   password: 70d53b4f-def3-48fd-8906-ae489ddf1ffe
