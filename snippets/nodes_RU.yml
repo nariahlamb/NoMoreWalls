@@ -114,7 +114,7 @@ proxies:
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '473,578,614,615|[SS] 未知 SS-88 | free-nodes #1'
+  name: '473,614,615|[SS] 未知 SS-101 | free-nodes #1'
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
@@ -155,7 +155,7 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,614,615,618,634|yandex-3808
+- name: 473,614,615,618,634|yandex-4147
   network: ws
   password: vpn
   port: 2025
@@ -186,8 +186,8 @@ proxies:
       Host: wellyoumust.goahead.rf.gd
     path: /multipath
 - cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 473,578,587,614,615,634|yandex-3160
+  country: 🇷🇺 RU
+  name: 473,587,614,615,634|yandex-3334
   password: AqZbt1QCs3ngEfXo1p7T-w
   port: 1080
   server: 81.200.158.206
@@ -229,14 +229,14 @@ proxies:
 - cipher: aes-256-gcm
   country: 🇷🇺RU
   delay: 952
-  name: 473,623,634|yandex-440
+  name: 473,614,615,623,634|yandex-2701
   password: 7ae4e68cf77f6089
   port: 1012
   server: 45.140.169.26
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 473|🇷🇺RU-185.22.154.75-3352
+  name: '473,614,615|[SS] 🇷🇺 RU SS-10 | free-nodes #1'
   password: d989ff3d46a63f63
   port: 10081
   server: 185.22.154.75
@@ -244,7 +244,7 @@ proxies:
 - cipher: aes-256-gcm
   country: 🇷🇺RU
   delay: 606
-  name: 473,623,634|yandex-441
+  name: 473,614,615,623,634|yandex-2702
   password: f34579d0148b2581
   port: 1281
   server: 185.22.154.19
@@ -523,13 +523,17 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 578,614,615,634|yandex-3143
-  password: '!!str 907560230'
-  port: 17846
-  server: clr.ducks.tel
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 578,618,723|🇷🇺 俄罗斯 067
+  network: tcp
+  port: '11052'
+  server: 45.67.230.79
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - alterId: 0
   cipher: auto
   country: 🇺 RU
@@ -868,6 +872,13 @@ proxies:
     headers:
       Host: ''
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 614,615,634|yandex-3317
+  password: '!!str 907560230'
+  port: 17846
+  server: clr.ducks.tel
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 618,723|🇷🇺 俄罗斯 066
@@ -878,16 +889,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
-- alterId: 0
-  cipher: auto
-  name: 618,723|🇷🇺 俄罗斯 067
-  network: tcp
-  port: '11052'
-  server: 45.67.230.79
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
 - alterId: 0
   cipher: auto
   name: 618,723|🇷🇺 俄罗斯 073
@@ -927,13 +928,15 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 656|🇷🇺 ►RU | 俄罗斯01-1x-251
+  name: 656,719|🇷🇺 ►RU | 01-1x-251
   network: ws
-  port: '15656'
+  port: 15656
   server: oss-cn-ozkekcp9c-Kpz1zKk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 717e613c-c367-47c1-b226-310ae4960e25
   ws-opts:
     path: /
