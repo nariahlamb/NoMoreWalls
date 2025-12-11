@@ -35,8 +35,9 @@ proxies:
   tls: true
   type: vless
   uuid: 97e7c83c-9346-49b4-85a5-1e3bbf7488b9
-- client-fingerprint: chrome
-  name: '399,578,621,633,638|14|RU_speednode_0009 #2'
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: '399,578,621,633,638,656,719|🇰🇿 哈萨克斯坦_2-35 #1'
   network: tcp
   port: 35728
   reality-opts:
@@ -47,6 +48,7 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
 - cipher: chacha20-ietf-poly1305
   name: 454|🇷🇺1 |  5.2MB/s
@@ -247,19 +249,19 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '473,524,614,615|[SS] 未知 SS-91 | free-nodes #1'
+  name: '473,614,615|[SS] 未知 SS-91 | free-nodes #1'
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473,524|🇷🇺 RU-45.89.55.173-0315
+  name: 473|🇷🇺RU-45.89.55.173-0315
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473,524|🇷🇺 RU-45.138.157.162-0371
+  name: 473|🇺RU-45.138.157.162-0371
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
@@ -333,7 +335,7 @@ proxies:
   port: 1080
   server: 81.200.158.206
   type: ss
-- name: 473,614,615,617,627,630,638|🇷🇺_RU_俄罗斯
+- name: 473,578,614,615,617,627,630,638|🇷🇺_RU_俄罗斯
   password: af4b064a9c39472fb34ad8b113acdc6b
   port: 443
   server: 46.29.161.237
@@ -346,7 +348,7 @@ proxies:
   server: 45.88.148.234
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-175 | free-nodes #2'
+- name: '473,578,614,615,617,627,638|未知 TROJAN-175 | free-nodes #2'
   password: 6c7d536e-1ecf-448d-83c1-3044dd89ceac
   port: 443
   server: 5.182.39.57
@@ -508,7 +510,7 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473,634|yandex-3119
+  name: 473,634|yandex-3289
   password: s8LbJCgUiGXeCKVc63tHJP
   port: 64674
   server: 94.198.220.183
@@ -634,19 +636,6 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- name: 524,634|yandex-3125
-  network: ws
-  port: 80
-  server: nl-78w-c.southnetworks.cloud
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 094e66a9-8d92-41fe-85ad-8e7bf9b5fcaa
-  ws-opts:
-    headers:
-      Host: nl-78w-c.southnetworks.cloud
-    path: /getWorkerUpdates
 - alpn:
   - h2
   - http/1.1
@@ -695,16 +684,19 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- name: 578,617,638|🇷🇺RU_1 | ⬇️ 7.8MB/s
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '578,617,638,656,719|🇷🇺 俄罗斯_5-36 #1'
   network: tcp
   port: 443
   reality-opts:
     public-key: bYPDMM7Z7s3brAUozWIqspE24dQwgHyI60lDRZvscVo
     short-id: a20d3ed244c76426
   server: 51.250.20.121
-  servername: ''
-  tls: false
+  servername: ads.x5.ru
+  tls: true
   type: vless
+  udp: true
   uuid: 20cf5921-f7fa-47c5-81ae-947fbef83a4d
 - name: '578,617|RU VLESS-50 | free-nodes #1'
   port: 2443
@@ -728,7 +720,7 @@ proxies:
   uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 587| RU_163
+  name: 587|🇺 RU_157
   password: 7kJQs2RYHhViTYWaf1RobB
   port: 7749
   server: 77.246.97.187
@@ -1673,9 +1665,23 @@ proxies:
   tls: false
   type: vless
   uuid: fae01ea6-1fc4-44fa-90c6-e2e8f5f16b44
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '656,719|🇷🇺 俄罗斯_4-23 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: i3AAHIiAZOk2-3BFfQlPN5eRBfBpLt53M3p0JKuE0Cw
+    short-id: 0d680ba281cb229b
+  server: 85.192.24.131
+  servername: web.max.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 07e0d9f5-6ed1-4bfb-8c19-311a312cba7d
 - alterId: 0
   cipher: auto
-  name: 656,719|🇷🇺 ►RU | 01-1x-426
+  name: 656,719|🇷🇺 ►RU | 01-1x-493
   network: ws
   port: 15656
   server: oss-cn-ozkekcp9c-Kpz1zKk.mmbdddgb-i-uap-dline.space
@@ -1687,7 +1693,7 @@ proxies:
   uuid: 717e613c-c367-47c1-b226-310ae4960e25
   ws-opts:
     path: /
-- name: '656,719|🇷🇺 俄罗斯-02-479 #1'
+- name: '656,719|🇷🇺 俄罗斯-02-546 #1'
   password: 7c771fa7-5625-4eb3-9768-3bac68383d3b
   port: 23001
   server: rua.xn--mesx36n.com
@@ -1711,15 +1717,4 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
-  udp: true
-- cipher: aes-128-gcm
-  name: '837,838,839,840|🇷🇺 Russia 046 #3'
-  password: 11575f448fb4021fc611
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45930
-  server: ru046.jd.kunlunpx.com
-  type: ss
   udp: true
