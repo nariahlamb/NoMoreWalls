@@ -248,7 +248,7 @@ proxies:
   port: '443'
   server: seoul03.zgjok.com
   servername: seoul03.zgjok.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
@@ -257,14 +257,14 @@ proxies:
       Host: seoul03.zgjok.com
     path: /
 - cipher: aes-256-gcm
-  name: 473|🇰🇷KR-141.164.45.187-0371
+  name: 473,524|🇰🇷 KR-141.164.45.187-0371
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 141.164.45.187
   type: ss
 - cipher: aes-256-cfb
   country: 🇸 US
-  name: 473,587,634|yandex-3050
+  name: 473,524,587,634|yandex-3146
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
@@ -272,7 +272,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇺🇸 US
-  name: 473,587|🇺🇸 US_180
+  name: 473,524,587|🇺🇸 US_176
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
@@ -314,25 +314,25 @@ proxies:
   skip-cert-verify: false
   sni: swift.protocolbuffer.com
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-224 | free-nodes #2'
+- name: '473,627,638|未知 TROJAN-224 | free-nodes #2'
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   port: 443
   server: 138.2.115.240
   skip-cert-verify: false
   type: trojan
-- name: 473,614,615,617,627,638|未知136
+- name: 473,578,614,615,617,627,638|未知136
   password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a
   port: 443
   server: 144.24.72.126
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-504 | free-nodes #1'
+- name: 473,614,615,617,627,638|未知 TROJAN-504 | free-nodes
   password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
   port: 443
   server: 146.56.189.146
   skip-cert-verify: false
   type: trojan
-- name: 473,614,615,617,627,638|未知185
+- name: 473,578,614,615,617,627,638|未知185
   password: 57edfecf-5694-4a34-8072-54a4f0636a62
   port: 40005
   server: 146.56.179.67
@@ -351,7 +351,7 @@ proxies:
   server: 3.34.6.217
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-1944 | free-nodes #1'
+- name: '473,578,614,615,617,627,638|未知 TROJAN-1944 | free-nodes #1'
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   port: 8443
   server: 144.24.76.54
@@ -565,7 +565,7 @@ proxies:
   port: 443
   server: 43.200.245.35
   type: ss
-- name: 473,578,614,615,617,627|🇰🇷KR-138.2.113.84-4247
+- name: 473,614,615,617,627|🇰🇷KR-138.2.113.84-4247
   password: b291d129-ee55-4801-a9b8-b5316e5c37b7
   port: 443
   server: 138.2.113.84
@@ -653,7 +653,8 @@ proxies:
   server: 3.36.118.190
   type: ss
 - cipher: aes-256-cfb
-  name: 473,578,634|yandex-3182
+  country: 🇷 KR
+  name: 473,524,587,634|yandex-3278
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -661,7 +662,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇷 KR
-  name: 473,587,634|yandex-2979
+  name: 473,587,634|yandex-3075
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
@@ -733,7 +734,7 @@ proxies:
     headers:
       Host: ''
     path: /vmess
-- name: '473,578,614,615,617,627,638|未知 TROJAN-228 | free-nodes #2'
+- name: '473,614,615,617,627,638|未知 TROJAN-228 | free-nodes #2'
   password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy
   port: 443
   server: 121.78.213.3
@@ -909,7 +910,7 @@ proxies:
   server: 125.141.26.5
   type: ss
 - cipher: aes-256-gcm
-  name: 537,634|yandex-120
+  name: 537,634|yandex-235
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 21001
   server: kr001.dogsvip.site
@@ -1218,7 +1219,7 @@ proxies:
   uuid: 717e613c-c367-47c1-b226-310ae4960e25
   ws-opts:
     path: /
-- name: '656,719|🇰🇷 Korea | 01-634 #1'
+- name: '656,719|🇰🇷 Korea | 01-636 #1'
   password: 3D8B448F-6413-C7E0-D3DA-86D314923446
   port: 20065
   server: oss-cn-shanghai.solidigm-zxcv.com
@@ -1280,17 +1281,6 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
-  udp: true
-- cipher: aes-128-gcm
-  name: '837,838,839,840|🇰🇷 SouthKorea 037 #3'
-  password: d7577ca6729babe0790f
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45921
-  server: kr037.jd.kunlunpx.com
-  type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 860|KR-IDC-节点1
