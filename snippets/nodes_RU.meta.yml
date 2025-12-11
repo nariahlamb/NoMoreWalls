@@ -1,5 +1,6 @@
 proxies:
-- name: '399,621,633,638|9|🇷🇺 - RU - @freeOnlineVPN #2'
+- auth: SNItest
+  name: '399,578,621,633,638|9|🇷🇺 - RU - @freeOnlineVPN #2'
   password: SNItest
   port: 443
   server: 46.243.235.119
@@ -9,7 +10,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,621,633,638|14|RU_speednode_0006 #2'
+  name: '399,621,638|14|RU_speednode_0006 #2'
   port: 4443
   server: 80.90.186.91
   servername: github.com
@@ -18,7 +19,7 @@ proxies:
   type: vless
   uuid: 3121850a-24aa-41f9-936d-dbdf10a3b31f
 - client-fingerprint: chrome
-  name: '399,621,633,638|14|RU_speednode_0007 #2'
+  name: '399,621,638|14|RU_speednode_0007 #2'
   port: 52900
   server: 62.113.42.65
   servername: ozon.ru
@@ -27,7 +28,7 @@ proxies:
   type: vless
   uuid: 97e7c83c-9346-49b4-85a5-1e3bbf7488b9
 - client-fingerprint: chrome
-  name: '399,621,633,638|14|RU_speednode_0008 #2'
+  name: '399,621,638|14|RU_speednode_0008 #2'
   port: 52900
   server: wolfy.ufavpn.ru
   servername: ozon.ru
@@ -46,6 +47,7 @@ proxies:
   server: 178.236.16.98
   servername: yahoo.com
   skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   udp: true
@@ -249,22 +251,22 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '473,614,615|[SS] 未知 SS-91 | free-nodes #1'
-  password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
+  name: 473|🇺RU-45.138.157.162-0316
+  password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
-  server: 5.182.37.87
+  server: 45.138.157.162
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇷🇺RU-45.89.55.173-0315
+  name: 473|🇺RU-45.89.55.173-0317
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-45.138.157.162-0371
-  password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
+  name: '473,578,614,615|[SS] 未知 SS-92 | free-nodes #1'
+  password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
-  server: 45.138.157.162
+  server: 5.182.37.87
   type: ss
 - cipher: aes-256-cfb
   name: 473|🇺RU-213.183.53.222-0466
@@ -289,7 +291,7 @@ proxies:
     path: /fr-unlimitxxx
 - alterId: 0
   cipher: auto
-  name: 473,627|🇷🇺RU-185.143.220.25-11066
+  name: 473,627|🇷🇺RU-185.143.220.25-10545
   network: ws
   port: 443
   server: 185.143.220.25
@@ -302,39 +304,33 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: '473,614,615|[Trojan] 未知 TROJAN-643 | free-... #1'
-  network: ws
+- cipher: chacha20-ietf-poly1305
+  country: 🇺RU
+  name: '473,578,591,614,615|[SS] 🇷🇺 RU SS-81 | free-nodes #1'
+  password: AqZbt1QCs3ngEfXo1p7T-w
+  port: 1080
+  server: 81.200.158.206
+  type: ss
+- name: 473,578,614,615,617,627,638|未知188
+  password: 6c7d536e-1ecf-448d-83c1-3044dd89ceac
+  port: 443
+  server: 5.182.39.57
+  skip-cert-verify: false
+  sni: joss.gpj4.web.id
+  type: trojan
+- name: 473,627|🇷🇺RU-45.82.14.144-1174
   password: vpn
   port: 2025
   server: 45.82.14.144
   skip-cert-verify: false
   sni: www.bing.com
   type: trojan
-  ws-opts:
-    headers:
-      Host: dns.google.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 473,627|🇷🇺RU-45.67.32.147-1188
-  network: ws
-  port: 50826
-  server: 45.67.32.147
-  servername: ''
+- name: '473,614,615,617,627,638|未知 TROJAN-763 | free-nodes #1'
+  password: 750a29bf-0a40-437f-b120-38de74ae7eaf
+  port: 28443
+  server: 45.88.148.234
   skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 718ba477-37a3-4464-9e25-6171eedf44c9
-  ws-opts:
-    headers:
-      Host: wellyoumust.goahead.rf.gd
-    path: /multipath
-- cipher: chacha20-ietf-poly1305
-  name: '473,614,615|[SS] 🇷🇺 RU SS-79 | free-nodes #1'
-  password: AqZbt1QCs3ngEfXo1p7T-w
-  port: 1080
-  server: 81.200.158.206
-  type: ss
+  type: trojan
 - name: 473,578,614,615,617,627,630,638|🇷🇺_RU_俄罗斯
   password: af4b064a9c39472fb34ad8b113acdc6b
   port: 443
@@ -342,20 +338,7 @@ proxies:
   skip-cert-verify: true
   sni: 46.29.161.237
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-292 | free-nodes #1'
-  password: 750a29bf-0a40-437f-b120-38de74ae7eaf
-  port: 28443
-  server: 45.88.148.234
-  skip-cert-verify: false
-  type: trojan
-- name: '473,578,614,615,617,627,638|未知 TROJAN-175 | free-nodes #2'
-  password: 6c7d536e-1ecf-448d-83c1-3044dd89ceac
-  port: 443
-  server: 5.182.39.57
-  skip-cert-verify: false
-  sni: joss.gpj4.web.id
-  type: trojan
-- name: 473,614,615,617,627|🇷🇺RU-45.88.148.237-2615
+- name: '473,614,615,617,627,638|未知 TROJAN-999 | free-nodes #1'
   password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910
   port: 28443
   server: 45.88.148.237
@@ -379,7 +362,7 @@ proxies:
     path: /fr-unlimitxxx
 - alterId: 0
   cipher: auto
-  name: 473,627|🇷🇺RU-45.89.230.196-3732
+  name: 473,627|🇷🇺RU-45.89.230.196-3214
   network: ws
   port: 80
   server: 45.89.230.196
@@ -394,7 +377,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,627|🇷🇺RU-45.129.2.237-4028
+  name: 473,627|🇷🇺RU-45.129.2.237-3510
   network: ws
   port: 10258
   server: 45.129.2.237
@@ -409,7 +392,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,627|🇷🇺RU-45.136.245.240-4294
+  name: 473,627|🇷🇺RU-45.136.245.240-3773
   network: ws
   port: 12910
   server: 45.136.245.240
@@ -428,7 +411,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 473,627|🇷🇺RU-194.87.248.27-4582
+  name: 473,627|🇷🇺RU-194.87.248.27-4061
   network: http
   port: 26743
   server: 194.87.248.27
@@ -439,7 +422,7 @@ proxies:
   uuid: 59952a8e-b712-4190-d85e-f9aadd65faa0
 - alterId: 0
   cipher: auto
-  name: 473,627|🇷🇺RU-91.193.181.192-5063
+  name: 473,627|🇷🇺RU-91.193.181.192-4542
   network: ws
   port: 8090
   server: 91.193.181.192
@@ -453,7 +436,7 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 473|🇺RU-92.223.109.126-6292
+  name: 473|🇺RU-92.223.109.126-5771
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 92.223.109.126
@@ -467,7 +450,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 473,627|🇷🇺RU-176.119.159.245-6421
+  name: 473,627|🇷🇺RU-176.119.159.245-5900
   network: http
   port: 37672
   server: 176.119.159.245
@@ -477,26 +460,26 @@ proxies:
   type: vmess
   uuid: 86b4e35c-1061-47b3-8c6c-811d1853a477
 - cipher: aes-256-cfb
-  name: 473|🇷🇺RU-213.183.53.222-6537
+  name: 473|🇷🇺RU-213.183.53.222-6016
   password: GA9KzeEgvfxNrgmM
   port: 9019
   server: 213.183.53.222
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇺RU-213.183.53.208-6538
+  name: 473|🇺RU-213.183.53.208-6017
   password: GeregetR8cvQHzYr
   port: 9030
   server: 213.183.53.208
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇷🇺RU-213.183.53.222-6540
+  name: 473|🇷🇺RU-213.183.53.222-6019
   password: 9XwYyZsK8SNzQDtY
   port: 9059
   server: 213.183.53.222
   type: ss
 - alterId: 0
   cipher: auto
-  name: 473,627|🇷🇺RU-195.133.53.192-6626
+  name: 473,627|🇷🇺RU-195.133.53.192-6105
   network: ws
   port: 43688
   server: 195.133.53.192
@@ -510,21 +493,22 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473,634|yandex-3289
+  country: 🇷🇺RU
+  name: 473,591,634|yandex-3341
   password: s8LbJCgUiGXeCKVc63tHJP
   port: 64674
   server: 94.198.220.183
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 473|🇺RU-38.60.223.8-7484
+  name: 473|🇺RU-38.60.223.8-6963
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.60.223.8
   type: ss
 - alterId: 0
   cipher: auto
-  name: 473,627|🇷🇺RU-185.174.138.209-9960
+  name: 473,627|🇷🇺RU-185.174.138.209-9439
   network: ws
   port: 2095
   server: 185.174.138.209
@@ -539,7 +523,7 @@ proxies:
     path: /az05.beyondy.cfd/link?/TM
 - alterId: 0
   cipher: auto
-  name: 473,627|🇷🇺RU-185.174.138.199-9990
+  name: 473,627|🇷🇺RU-185.174.138.199-9469
   network: ws
   port: 2052
   server: 185.174.138.199
@@ -554,7 +538,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,627|🇷🇺RU-185.174.138.196-10012
+  name: 473,627|🇷🇺RU-185.174.138.196-9491
   network: ws
   port: 2082
   server: 185.174.138.196
@@ -569,7 +553,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,627|🇷🇺RU-45.67.215.119-10343
+  name: 473,627|🇷🇺RU-45.67.215.119-9822
   network: ws
   port: 443
   server: 45.67.215.119
@@ -583,55 +567,55 @@ proxies:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-91.207.183.63-10697
+  name: 473|🇺RU-91.207.183.63-10176
   password: mX1q8sv17wA5LGDHIHD6Jo
   port: 15720
   server: 91.207.183.63
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇺RU-45.89.52.66-10801
+  name: 473|🇺RU-45.89.52.66-10280
   password: HSZuyJQcWe8dxNdF
   port: 9043
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇷🇺RU-45.89.52.66-10802
+  name: 473|🇷🇺RU-45.89.52.66-10281
   password: S7KwUu7yBy58S3Ga
   port: 9042
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇺RU-45.89.52.66-10803
+  name: 473|🇺RU-45.89.52.66-10282
   password: U6qnYRhfyDmn8sgn
   port: 9041
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇺RU-45.89.52.66-10804
+  name: 473|🇺RU-45.89.52.66-10283
   password: p9z5BVADH2YFs3MN
   port: 9040
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇺RU-45.89.52.66-10805
+  name: 473|🇺RU-45.89.52.66-10284
   password: TN2YqghxeFDKZfLU
   port: 9037
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇺RU-45.89.52.66-10806
+  name: 473|🇺RU-45.89.52.66-10285
   password: BwcAUZk8hUFAkDGN
   port: 9031
   server: 45.89.52.66
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|RU-185.221.153.52-11059
+  name: 473|RU-185.221.153.52-10538
   password: slatpifOon
   port: 444
   server: 185.221.153.52
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-146.185.198.44-11360
+  name: 473|🇺RU-146.185.198.44-10839
   password: V7jmsA6PQsLn
   port: 444
   server: 146.185.198.44
@@ -686,27 +670,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '578,617,638,656,719|🇷🇺 俄罗斯_5-36 #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: bYPDMM7Z7s3brAUozWIqspE24dQwgHyI60lDRZvscVo
-    short-id: a20d3ed244c76426
-  server: 51.250.20.121
-  servername: ads.x5.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 20cf5921-f7fa-47c5-81ae-947fbef83a4d
-- name: '578,617|RU VLESS-50 | free-nodes #1'
-  port: 2443
-  server: 158.160.175.98
-  tls: false
-  type: vless
-  uuid: 62b0e46b-d2a5-423d-8457-95bde707fc19
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 578,614,615,617,638|RU VLESS-63 | free-nodes
+  name: 578,614,615,617,638|RU VLESS-70 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -715,22 +679,57 @@ proxies:
   server: 217.16.24.170
   servername: api-maps.yandex.ru
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vless
   uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '578,633|RU_speednode_0010 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lJscl0GgEiVZtTVrMVI6O0-zSJTgmug9Cs-KJqpxWw0
+    short-id: f6fb0261a102c0c8
+  server: 89.23.101.203
+  servername: www.vk.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d5f7970e-121f-4e6f-9acf-250effc0715b
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '578,633,656,719|🇷🇺 俄罗斯_4-23 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: i3AAHIiAZOk2-3BFfQlPN5eRBfBpLt53M3p0JKuE0Cw
+    short-id: 0d680ba281cb229b
+  server: 85.192.24.131
+  servername: web.max.ru
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 07e0d9f5-6ed1-4bfb-8c19-311a312cba7d
 - cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 587|🇺 RU_157
+  country: 🇷🇺 RU
+  delay: 710
+  name: 587,623,634|yandex-546
   password: 7kJQs2RYHhViTYWaf1RobB
   port: 7749
   server: 77.246.97.187
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 587,638|🇷🇺 RU_197
+  name: 587,638|🇷🇺 RU_160
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -1474,6 +1473,33 @@ proxies:
     headers:
       Host: ''
     path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '617,638,656,719|🇷🇺 俄罗斯_5-36 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: bYPDMM7Z7s3brAUozWIqspE24dQwgHyI60lDRZvscVo
+    short-id: a20d3ed244c76426
+  server: 51.250.20.121
+  servername: ads.x5.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 20cf5921-f7fa-47c5-81ae-947fbef83a4d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '617,638|🇷🇺_俄罗斯 #9'
+  network: tcp
+  port: 2443
+  reality-opts:
+    public-key: IgaNLuUg1JOIoUdX4CegMU_XBU35B5RAYRL_-KZfpSY
+    short-id: c84a28bb05989ff4
+  server: 158.160.175.98
+  servername: yandex.ru
+  tls: false
+  type: vless
+  uuid: 62b0e46b-d2a5-423d-8457-95bde707fc19
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1495,6 +1521,19 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
+- name: 638|🇷🇺_俄罗斯
+  network: ws
+  port: 12020
+  server: 94.159.106.227
+  servername: mot.luyuju.dpdns.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-opts:
+    headers:
+      Host: mot.luyuju.dpdns.org
+    path: '%2F%40Marisa_kristi'
 - name: 638|🇷🇺RU_5 | ⬇️ 8.5MB/s
   network: tcp
   port: 443
@@ -1547,7 +1586,7 @@ proxies:
   uuid: 2a2a6062-003c-0012-b293-ee0d0416afee
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 638|RU VLESS-20 | free-nodes
+  name: '638|RU VLESS-20 | free-nodes #1'
   network: tcp
   port: 8443
   reality-opts:
@@ -1558,6 +1597,84 @@ proxies:
   tls: false
   type: vless
   uuid: 2a2a6062-003c-0012-b293-ee0d0416afee
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '638|🇷🇺_俄罗斯 #2'
+  network: tcp
+  port: 4443
+  reality-opts:
+    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
+    short-id: aa7e96542880027a
+  server: 94.141.161.204
+  servername: github.com
+  tls: false
+  type: vless
+  uuid: 3121850a-24aa-41f9-936d-dbdf10a3b31f
+- name: '638|🇷🇺_俄罗斯 #4'
+  network: ws
+  port: 2096
+  server: 185.176.24.101
+  servername: spdf.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 502524df-bb02-4a14-8362-d84caf2b0a76
+  ws-opts:
+    headers:
+      Host: spdf.qzz.io
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560
+- name: '638|🇷🇺_俄罗斯 #5'
+  network: ws
+  port: 2096
+  server: 185.59.218.101
+  servername: spdf.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 502524df-bb02-4a14-8362-d84caf2b0a76
+  ws-opts:
+    headers:
+      Host: spdf.qzz.io
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560
+- name: '638|🇷🇺_俄罗斯 #6'
+  network: ws
+  port: 2096
+  server: 45.142.120.101
+  servername: spdf.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 502524df-bb02-4a14-8362-d84caf2b0a76
+  ws-opts:
+    headers:
+      Host: spdf.qzz.io
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560
+- name: '638|🇷🇺_俄罗斯 #7'
+  network: ws
+  port: 2096
+  server: 45.67.215.101
+  servername: spdf.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 502524df-bb02-4a14-8362-d84caf2b0a76
+  ws-opts:
+    headers:
+      Host: spdf.qzz.io
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560
+- name: '638|🇷🇺_俄罗斯 #8'
+  network: ws
+  port: 2096
+  server: 5.182.84.101
+  servername: spdf.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 502524df-bb02-4a14-8362-d84caf2b0a76
+  ws-opts:
+    headers:
+      Host: spdf.qzz.io
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 638|RU VLESS-57 | free-nodes
@@ -1603,6 +1720,20 @@ proxies:
   tls: false
   type: vless
   uuid: b148ea58-3fc7-4f27-8d8b-2b8e007e59fc
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  name: 638,656|🇵🇱 ShatakVPN 470082-111
+  network: xhttp
+  port: 443
+  server: 193.247.82.67
+  servername: plb.tunnelguard.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: b278fc13-9be7-4e21-90cb-cb52ac0e2469
+  ws-opts:
+    path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '638|🇷🇺_RU_俄罗斯 #2'
@@ -1622,63 +1753,12 @@ proxies:
   tls: false
   type: vless
   uuid: d64fbcef-f032-48ae-8f52-d73976cb0c57
-- client-fingerprint: chrome
-  name: 638|🇷🇺_俄罗斯
-  network: tcp
-  port: 42275
-  reality-opts:
-    public-key: 5Z8mktBAXgz88xCibv79NncelOS-3WAunfZNKnJRdUM
-    short-id: 08
-  server: 62.113.42.65
-  servername: eh.vk.com
-  tls: false
-  type: vless
-  uuid: ded39de0-6d5e-426b-90e8-b7dfeced29b2
-- client-fingerprint: chrome
-  name: '638|🇷🇺_俄罗斯 #1'
-  network: tcp
-  port: 42275
-  reality-opts:
-    public-key: 5Z8mktBAXgz88xCibv79NncelOS-3WAunfZNKnJRdUM
-    short-id: 08
-  server: wolfy.ufavpn.ru
-  servername: eh.vk.com
-  tls: false
-  type: vless
-  uuid: ded39de0-6d5e-426b-90e8-b7dfeced29b2
-- name: '638|🇷🇺_俄罗斯 #2'
-  network: ws
-  port: 8443
-  server: 8.34.146.230
-  servername: kk66.tc6666.netlib.re
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: eca3f76a-2e2f-4143-9852-e2a74a848f77
-  ws-opts:
-    headers:
-      Host: kk66.tc6666.netlib.re
-    path: '%2Fproxyip%3Dsjc.o00o.ooo'
-- name: '638|RU VLESS-50 | free-nodes #2'
+- name: 638|RU VLESS-50 | free-nodes
   port: 443
   server: clyde.ns.cloudflare.com
   tls: false
   type: vless
   uuid: fae01ea6-1fc4-44fa-90c6-e2e8f5f16b44
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '656,719|🇷🇺 俄罗斯_4-23 #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: i3AAHIiAZOk2-3BFfQlPN5eRBfBpLt53M3p0JKuE0Cw
-    short-id: 0d680ba281cb229b
-  server: 85.192.24.131
-  servername: web.max.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 07e0d9f5-6ed1-4bfb-8c19-311a312cba7d
 - alterId: 0
   cipher: auto
   name: 656,719|🇷🇺 ►RU | 01-1x-493
@@ -1717,4 +1797,15 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇷🇺 Russia 046 #3'
+  password: 11575f448fb4021fc611
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45930
+  server: ru046.jd.kunlunpx.com
+  type: ss
   udp: true
