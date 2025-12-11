@@ -102,19 +102,19 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '473,614,615|[SS] 未知 SS-101 | free-nodes #1'
+  name: '473,524,614,615|[SS] 未知 SS-108 | free-nodes #1'
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇷🇺RU-45.89.55.173-0315
+  name: 473,524|🇷🇺 RU-45.89.55.173-0315
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-45.138.157.162-0371
+  name: 473,524|🇷🇺 RU-45.138.157.162-0371
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
@@ -155,30 +155,28 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,614,615,634|yandex-3704
+- name: '473,614,615|[Trojan] 未知 TROJAN-1285 | free... #1'
   network: ws
   password: vpn
   port: 2025
   server: 45.82.14.144
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.bing.com
   type: trojan
-  udp: true
   ws-opts:
     headers:
       Host: dns.google.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,627,634|yandex-4892
+  name: 473,627|🇷🇺RU-45.67.32.147-1188
   network: ws
   port: 50826
   server: 45.67.32.147
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
-  udp: true
   uuid: 718ba477-37a3-4464-9e25-6171eedf44c9
   ws-opts:
     headers:
@@ -186,7 +184,7 @@ proxies:
     path: /multipath
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: '473,587,614,615|[SS] 🇷🇺 RU SS-89 | free-nodes #1'
+  name: '473,587,614,615|[SS] 🇷🇺 RU SS-96 | free-nodes #1'
   password: AqZbt1QCs3ngEfXo1p7T-w
   port: 1080
   server: 81.200.158.206
@@ -204,7 +202,7 @@ proxies:
   server: 45.88.148.234
   skip-cert-verify: false
   type: trojan
-- name: '473,578,614,615,617,627,638|未知 TROJAN-175 | free-nodes #1'
+- name: '473,614,615,617,627,638|未知 TROJAN-175 | free-nodes #2'
   password: 6c7d536e-1ecf-448d-83c1-3044dd89ceac
   port: 443
   server: 5.182.39.57
@@ -366,11 +364,12 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|RU-94.198.220.183-7475
+  name: 473,634|yandex-3344
   password: s8LbJCgUiGXeCKVc63tHJP
   port: 64674
   server: 94.198.220.183
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 473|🇺RU-38.60.223.8-7484
   password: f8f7aCzcPKbsF8p3
@@ -490,6 +489,13 @@ proxies:
   password: V7jmsA6PQsLn
   port: 444
   server: 146.185.198.44
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 587|🇺 RU_180
+  password: 7kJQs2RYHhViTYWaf1RobB
+  port: 7749
+  server: 77.246.97.187
   type: ss
 - alterId: 0
   cipher: auto
@@ -877,4 +883,15 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇷🇺 Russia 046 #3'
+  password: 11575f448fb4021fc611
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45930
+  server: ru046.jd.kunlunpx.com
+  type: ss
   udp: true

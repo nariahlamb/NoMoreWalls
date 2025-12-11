@@ -247,19 +247,19 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '473,614,615|[SS] 未知 SS-101 | free-nodes #1'
+  name: '473,524,614,615|[SS] 未知 SS-108 | free-nodes #1'
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇷🇺RU-45.89.55.173-0315
+  name: 473,524|🇷🇺 RU-45.89.55.173-0315
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-45.138.157.162-0371
+  name: 473,524|🇷🇺 RU-45.138.157.162-0371
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
@@ -300,30 +300,28 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- name: 473,614,615,634|yandex-3704
+- name: '473,614,615|[Trojan] 未知 TROJAN-1285 | free... #1'
   network: ws
   password: vpn
   port: 2025
   server: 45.82.14.144
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.bing.com
   type: trojan
-  udp: true
   ws-opts:
     headers:
       Host: dns.google.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,627,634|yandex-4892
+  name: 473,627|🇷🇺RU-45.67.32.147-1188
   network: ws
   port: 50826
   server: 45.67.32.147
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
-  udp: true
   uuid: 718ba477-37a3-4464-9e25-6171eedf44c9
   ws-opts:
     headers:
@@ -331,7 +329,7 @@ proxies:
     path: /multipath
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: '473,587,614,615|[SS] 🇷🇺 RU SS-89 | free-nodes #1'
+  name: '473,587,614,615|[SS] 🇷🇺 RU SS-96 | free-nodes #1'
   password: AqZbt1QCs3ngEfXo1p7T-w
   port: 1080
   server: 81.200.158.206
@@ -349,7 +347,7 @@ proxies:
   server: 45.88.148.234
   skip-cert-verify: false
   type: trojan
-- name: '473,578,614,615,617,627,638|未知 TROJAN-175 | free-nodes #1'
+- name: '473,614,615,617,627,638|未知 TROJAN-175 | free-nodes #2'
   password: 6c7d536e-1ecf-448d-83c1-3044dd89ceac
   port: 443
   server: 5.182.39.57
@@ -511,11 +509,12 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|RU-94.198.220.183-7475
+  name: 473,634|yandex-3344
   password: s8LbJCgUiGXeCKVc63tHJP
   port: 64674
   server: 94.198.220.183
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 473|🇺RU-38.60.223.8-7484
   password: f8f7aCzcPKbsF8p3
@@ -636,6 +635,19 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- name: 524,634|yandex-3350
+  network: ws
+  port: 80
+  server: nl-78w-c.southnetworks.cloud
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 094e66a9-8d92-41fe-85ad-8e7bf9b5fcaa
+  ws-opts:
+    headers:
+      Host: nl-78w-c.southnetworks.cloud
+    path: /getWorkerUpdates
 - alpn:
   - h2
   - http/1.1
@@ -684,9 +696,32 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- name: 578,617,638|🇷🇺RU_1 | ⬇️ 7.8MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: bYPDMM7Z7s3brAUozWIqspE24dQwgHyI60lDRZvscVo
+    short-id: a20d3ed244c76426
+  server: 51.250.20.121
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 20cf5921-f7fa-47c5-81ae-947fbef83a4d
+- name: '578,617|RU VLESS-19 | free-nodes #1'
+  port: 4443
+  server: 212.60.21.104
+  tls: false
+  type: vless
+  uuid: 3121850a-24aa-41f9-936d-dbdf10a3b31f
+- name: '578,617|RU VLESS-23 | free-nodes #1'
+  port: 4443
+  server: 147.45.237.23
+  tls: false
+  type: vless
+  uuid: 3121850a-24aa-41f9-936d-dbdf10a3b31f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '578,614,615,617,638|RU VLESS-63 | free-nodes #1'
+  name: 578,614,615,617,638|RU VLESS-63 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -698,6 +733,13 @@ proxies:
   tls: false
   type: vless
   uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 587|🇺 RU_180
+  password: 7kJQs2RYHhViTYWaf1RobB
+  port: 7749
+  server: 77.246.97.187
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇺 RU
@@ -1447,26 +1489,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 614,615,617|RU VLESS-09 | free-nodes
-  network: tcp
-  port: 4443
-  reality-opts:
-    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
-    short-id: aa7e96542880027a
-  server: 212.60.21.104
-  servername: github.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 3121850a-24aa-41f9-936d-dbdf10a3b31f
-- name: 617|RU VLESS-14 | free-nodes
-  port: 4443
-  server: 147.45.237.23
-  tls: false
-  type: vless
-  uuid: 3121850a-24aa-41f9-936d-dbdf10a3b31f
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1499,17 +1521,6 @@ proxies:
   tls: false
   type: vless
   uuid: 0a97c5f3-68de-4d5e-bac2-c6bd94551fb6
-- name: 638|🇷🇺RU_1 | ⬇️ 7.8MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: bYPDMM7Z7s3brAUozWIqspE24dQwgHyI60lDRZvscVo
-    short-id: a20d3ed244c76426
-  server: 51.250.20.121
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 20cf5921-f7fa-47c5-81ae-947fbef83a4d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '638|🇷🇺_RU_俄罗斯 #1'
@@ -1696,4 +1707,15 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇷🇺 Russia 046 #3'
+  password: 11575f448fb4021fc611
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45930
+  server: ru046.jd.kunlunpx.com
+  type: ss
   udp: true
