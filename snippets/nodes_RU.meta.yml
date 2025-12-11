@@ -249,19 +249,19 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473,524|🇷🇺 RU-45.138.157.162-0316
+  name: 473|🇺RU-45.138.157.162-0316
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473,524|🇷🇺 RU-45.89.55.173-0317
+  name: 473|🇺RU-45.89.55.173-0317
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '473,524,614,615|[SS] 未知 SS-82 | free-nodes #1'
+  name: '473,614,615|[SS] 未知 SS-92 | free-nodes #1'
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
@@ -491,7 +491,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺RU
-  name: 473,524,591,634|yandex-628
+  name: 473,591,634|yandex-3273
   password: s8LbJCgUiGXeCKVc63tHJP
   port: 64674
   server: 94.198.220.183
@@ -617,19 +617,6 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- name: 524|🇷🇺 _RU_俄罗斯
-  network: ws
-  port: 80
-  server: nl-78w-c.southnetworks.cloud
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 094e66a9-8d92-41fe-85ad-8e7bf9b5fcaa
-  ws-opts:
-    headers:
-      Host: nl-78w-c.southnetworks.cloud
-    path: /getWorkerUpdates
 - alpn:
   - h2
   - http/1.1
@@ -678,6 +665,48 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '578,614,615,617|RU VLESS-15 | free-nodes #1'
+  network: tcp
+  port: 8444
+  reality-opts:
+    public-key: qtqQVReOiQPUhSKBL8rZ9c921pk4Tr2UvponGFdEGQI
+    short-id: a71aaf4d2db3e06a
+  server: finland.netninja.ru
+  servername: google.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 34101c6a-1da4-4ffd-af36-ca8134bd8f8b
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '578,617,638,656,719|🇷🇺 俄罗斯_5-36 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: bYPDMM7Z7s3brAUozWIqspE24dQwgHyI60lDRZvscVo
+    short-id: a20d3ed244c76426
+  server: 51.250.20.121
+  servername: ads.x5.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 20cf5921-f7fa-47c5-81ae-947fbef83a4d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '578,614,615,617|RU VLESS-46 | free-nodes #1'
+  network: tcp
+  port: 4443
+  reality-opts:
+    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
+    short-id: aa7e96542880027a
+  server: 185.251.90.45
+  servername: github.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 281d153a-2fae-4725-84ed-602fb3627ca6
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 578,617,638|RU VLESS-70 | free-nodes
@@ -691,30 +720,6 @@ proxies:
   tls: false
   type: vless
   uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  delay: 897
-  name: 587,623,634|yandex-288
-  password: 7kJQs2RYHhViTYWaf1RobB
-  port: 7749
-  server: 77.246.97.187
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  country: 🇺 RU
-  h2-opts: {}
-  http-opts: {}
-  name: 587,638|🇷🇺 RU_160
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
 - name: 603|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1451,18 +1456,74 @@ proxies:
     path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 614,615,617|RU VLESS-02 | free-nodes
+  name: 614,615,617|RU VLESS-04 | free-nodes
   network: tcp
-  port: 8444
+  port: 443
   reality-opts:
-    public-key: qtqQVReOiQPUhSKBL8rZ9c921pk4Tr2UvponGFdEGQI
-    short-id: a71aaf4d2db3e06a
-  server: netherlands.netninja.ru
-  servername: google.com
+    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+    short-id: 7755e972daf8eec8
+  server: test-pc.intfreed.ru
+  servername: video.intfreed.ru
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 34101c6a-1da4-4ffd-af36-ca8134bd8f8b
+  uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 614,615,617|RU VLESS-06 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+    short-id: 7755e972daf8eec8
+  server: wrs.intfreed.ru
+  servername: video.intfreed.ru
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 614,615,617|RU VLESS-07 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+    short-id: 7755e972daf8eec8
+  server: fin.intfreed.ru
+  servername: video.intfreed.ru
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 614,615,617|RU VLESS-08 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+    short-id: 7755e972daf8eec8
+  server: net2.intfreed.ru
+  servername: video.intfreed.ru
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 614,615,617|RU VLESS-10 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+    short-id: 7755e972daf8eec8
+  server: swiss.intfreed.ru
+  servername: swiss.video.intfreed.ru
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 621,633|RU_speednode_0010
@@ -1491,7 +1552,7 @@ proxies:
 - cipher: aes-256-gcm
   country: 🇷🇺RU
   delay: 937
-  name: 623,634|yandex-282
+  name: 623,634|yandex-3176
   password: c5fcdf7829112cb4
   port: 10081
   server: 45.129.2.185
@@ -1542,20 +1603,6 @@ proxies:
   tls: false
   type: vless
   uuid: 0a97c5f3-68de-4d5e-bac2-c6bd94551fb6
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '638,656,719|🇷🇺 俄罗斯_5-36 #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: bYPDMM7Z7s3brAUozWIqspE24dQwgHyI60lDRZvscVo
-    short-id: a20d3ed244c76426
-  server: 51.250.20.121
-  servername: ads.x5.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 20cf5921-f7fa-47c5-81ae-947fbef83a4d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '638|🇷🇺_RU_俄罗斯 #1'
@@ -1783,6 +1830,16 @@ proxies:
   tls: false
   type: vless
   uuid: fae01ea6-1fc4-44fa-90c6-e2e8f5f16b44
+- alterId: 0
+  cipher: auto
+  name: 638|🇷🇺 RU_160
+  network: tcp
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
   name: 656,719|🇷🇺 ►RU | 01-1x-494
