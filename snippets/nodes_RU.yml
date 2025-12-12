@@ -102,10 +102,10 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473,524|🇷🇺 RU-45.138.157.162-0316
-  password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
+  name: '473,524,578,614,615|[SS] 未知 SS-92 | free-nodes #1'
+  password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
-  server: 45.138.157.162
+  server: 5.182.37.87
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 473,524|🇷🇺 RU-45.89.55.173-0317
@@ -114,13 +114,21 @@ proxies:
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '473,524,614,615|[SS] 未知 SS-92 | free-nodes #1'
-  password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
+  name: 473,524|🇷🇺 RU-45.138.157.162-0316
+  password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
-  server: 5.182.37.87
+  server: 45.138.157.162
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺RU
+  name: 473,591,634|yandex-375
+  password: s8LbJCgUiGXeCKVc63tHJP
+  port: 64674
+  server: 94.198.220.183
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 473|🇺RU-213.183.53.222-0466
+  name: 473|🇺RU-213.183.53.222-0440
   password: KnJGad3FqTvjqbaX
   port: 9014
   server: 213.183.53.222
@@ -155,32 +163,12 @@ proxies:
     headers:
       Host: ''
     path: /6e9EtZ2dL
-- cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-81.200.158.206-0657
-  password: AqZbt1QCs3ngEfXo1p7T-w
-  port: 1080
-  server: 81.200.158.206
-  type: ss
-- name: 473,614,615,617,627,638|未知55
-  password: 6c7d536e-1ecf-448d-83c1-3044dd89ceac
+- cipher: aes-256-gcm
+  name: '473,614,615|[SS] 未知 SS-03 | free-nodes #1'
+  password: 836d7fac-063e-42a0-baf5-b6ecd2db18fc
   port: 443
-  server: 5.182.39.57
-  skip-cert-verify: false
-  sni: joss.gpj4.web.id
-  type: trojan
-- name: 473,627|🇷🇺RU-45.82.14.144-1174
-  password: vpn
-  port: 2025
-  server: 45.82.14.144
-  skip-cert-verify: false
-  sni: www.bing.com
-  type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-1126 | free-nodes #1'
-  password: 750a29bf-0a40-437f-b120-38de74ae7eaf
-  port: 28443
-  server: 45.88.148.234
-  skip-cert-verify: false
-  type: trojan
+  server: 193.228.128.82
+  type: ss
 - name: 473,614,615,617,627,630,638|🇷🇺_RU_俄罗斯
   password: af4b064a9c39472fb34ad8b113acdc6b
   port: 443
@@ -188,12 +176,25 @@ proxies:
   skip-cert-verify: true
   sni: 46.29.161.237
   type: trojan
+- name: '473,614,615,617,627,638|未知 TROJAN-1126 | free-nodes #1'
+  password: 750a29bf-0a40-437f-b120-38de74ae7eaf
+  port: 28443
+  server: 45.88.148.234
+  skip-cert-verify: false
+  type: trojan
 - name: '473,614,615,617,627,638|未知 TROJAN-460 | free-nodes #1'
   password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910
   port: 28443
   server: 45.88.148.237
   skip-cert-verify: false
   sni: sbank.ir
+  type: trojan
+- name: 473,614,615,617,627,638|未知55
+  password: 6c7d536e-1ecf-448d-83c1-3044dd89ceac
+  port: 443
+  server: 5.182.39.57
+  skip-cert-verify: false
+  sni: joss.gpj4.web.id
   type: trojan
 - alterId: 0
   cipher: auto
@@ -286,7 +287,7 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 473|🇺RU-92.223.109.126-5771
+  name: 473|🇺RU-92.223.109.126-5837
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 92.223.109.126
@@ -310,19 +311,19 @@ proxies:
   type: vmess
   uuid: 86b4e35c-1061-47b3-8c6c-811d1853a477
 - cipher: aes-256-cfb
-  name: 473|🇷🇺RU-213.183.53.222-6016
+  name: 473|🇷🇺RU-213.183.53.222-6082
   password: GA9KzeEgvfxNrgmM
   port: 9019
   server: 213.183.53.222
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇺RU-213.183.53.208-6017
+  name: 473|🇺RU-213.183.53.208-6083
   password: GeregetR8cvQHzYr
   port: 9030
   server: 213.183.53.208
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇷🇺RU-213.183.53.222-6019
+  name: 473|🇷🇺RU-213.183.53.222-6085
   password: 9XwYyZsK8SNzQDtY
   port: 9059
   server: 213.183.53.222
@@ -342,16 +343,8 @@ proxies:
     headers:
       Host: YouTube-aweikeji
     path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🇺RU
-  name: 473,524,591,634|yandex-375
-  password: s8LbJCgUiGXeCKVc63tHJP
-  port: 64674
-  server: 94.198.220.183
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 473|🇺RU-38.60.223.8-6963
+  name: 473|RU-38.60.223.8-6986
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.60.223.8
@@ -417,59 +410,74 @@ proxies:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-91.207.183.63-10176
+  name: 473|🇺RU-91.207.183.63-10188
   password: mX1q8sv17wA5LGDHIHD6Jo
   port: 15720
   server: 91.207.183.63
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇺RU-45.89.52.66-10280
+  name: 473|🇺RU-45.89.52.66-10292
   password: HSZuyJQcWe8dxNdF
   port: 9043
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇷🇺RU-45.89.52.66-10281
+  name: 473|🇷🇺RU-45.89.52.66-10293
   password: S7KwUu7yBy58S3Ga
   port: 9042
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇺RU-45.89.52.66-10282
+  name: 473|🇺RU-45.89.52.66-10294
   password: U6qnYRhfyDmn8sgn
   port: 9041
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇺RU-45.89.52.66-10283
+  name: 473|🇺RU-45.89.52.66-10295
   password: p9z5BVADH2YFs3MN
   port: 9040
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇺RU-45.89.52.66-10284
+  name: 473|🇺RU-45.89.52.66-10296
   password: TN2YqghxeFDKZfLU
   port: 9037
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇺RU-45.89.52.66-10285
+  name: 473|🇺RU-45.89.52.66-10297
   password: BwcAUZk8hUFAkDGN
   port: 9031
   server: 45.89.52.66
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|RU-185.221.153.52-10538
+  name: 473|RU-185.221.153.52-10550
   password: slatpifOon
   port: 444
   server: 185.221.153.52
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-146.185.198.44-10839
+  name: 473|🇺RU-146.185.198.44-10851
   password: V7jmsA6PQsLn
   port: 444
   server: 146.185.198.44
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇷🇺 RU_149
+  network: tcp
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -802,6 +810,12 @@ proxies:
   server: 45.129.2.185
   type: ss
   udp: true
+- name: 627|🇷🇺RU-45.82.14.144-1174
+  password: vpn
+  port: 2025
+  server: 45.82.14.144
+  sni: www.bing.com
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -823,16 +837,6 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 638|🇷🇺 RU_149
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
   name: 656,719|🇷🇺 ►RU | 01-1x-494

@@ -256,6 +256,14 @@ proxies:
     headers:
       Host: seoul03.zgjok.com
     path: /
+- cipher: aes-256-cfb
+  country: 🇸 US
+  name: 473,524,587,634|yandex-3080
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 473,524|🇰🇷 KR-141.164.45.187-0371
   password: RexnBgU7EV5ADxG
@@ -263,18 +271,20 @@ proxies:
   server: 141.164.45.187
   type: ss
 - cipher: aes-256-cfb
-  name: 473,524,634|yandex-3080
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 473,524|🇰🇷 KR-154.90.62.168-0422
+  country: 🇸 US
+  name: 473,524,587|🇸 US_172
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
+- cipher: aes-256-cfb
+  country: 🇷 KR
+  name: 473,524,578,587,634|yandex-3212
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 473,627|🇰🇷KR-152.69.230.170-0571
@@ -305,12 +315,36 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: '473,614,615,617,627,638|未知 TROJAN-859 | free-nodes #1'
-  password: KLF0qOU0ZZGw5Tnu
+- name: 473,614,615,617,627,638|未知84
+  password: b291d129-ee55-4801-a9b8-b5316e5c37b7
   port: 443
-  server: 121.78.213.3
+  server: 138.2.113.84
   skip-cert-verify: false
-  sni: swift.protocolbuffer.com
+  type: trojan
+- name: 473,578,614,615,617,627,638|未知108
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  port: 40005
+  server: 146.56.179.67
+  skip-cert-verify: false
+  type: trojan
+- name: '473,578,614,615,617,627,638|未知173 #1'
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  port: 8443
+  server: 144.24.76.54
+  skip-cert-verify: false
+  sni: 2.hg.kr.cat77.cloud
+  type: trojan
+- name: '473,614,615,617,627,638|未知 TROJAN-390 | free-nodes #1'
+  password: xxoo
+  port: 443
+  server: 3.34.6.217
+  skip-cert-verify: false
+  type: trojan
+- name: '473,614,615,617,627,638|未知 TROJAN-896 | free-nodes #1'
+  password: 9c822f05-cfdc-479a-9534-60f3d4127435
+  port: 443
+  server: 138.2.113.248
+  skip-cert-verify: false
   type: trojan
 - name: '473,614,615,617,627,638|未知 TROJAN-936 | free-nodes #1'
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
@@ -330,37 +364,12 @@ proxies:
   server: 146.56.189.146
   skip-cert-verify: false
   type: trojan
-- name: 473,578,614,615,617,627,638|未知108
-  password: 57edfecf-5694-4a34-8072-54a4f0636a62
-  port: 40005
-  server: 146.56.179.67
-  skip-cert-verify: false
-  type: trojan
-- name: '473,627,638|未知 TROJAN-230 | free-nodes #2'
-  password: b5fc9fa9-796d-4185-a316-395ecac04a85
+- name: '473,614,615,617,627,638|未知 TROJAN-859 | free-nodes #1'
+  password: KLF0qOU0ZZGw5Tnu
   port: 443
-  server: 150.230.249.20
+  server: 121.78.213.3
   skip-cert-verify: false
-  sni: www.gomacau.gq
-  type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-390 | free-nodes #1'
-  password: xxoo
-  port: 443
-  server: 3.34.6.217
-  skip-cert-verify: false
-  type: trojan
-- name: '473,578,627,638|未知173 #1'
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  port: 8443
-  server: 144.24.76.54
-  skip-cert-verify: false
-  sni: 2.hg.kr.cat77.cloud
-  type: trojan
-- name: '473,627,638|未知 TROJAN-896 | free-nodes #1'
-  password: 9c822f05-cfdc-479a-9534-60f3d4127435
-  port: 443
-  server: 138.2.113.248
-  skip-cert-verify: false
+  sni: swift.protocolbuffer.com
   type: trojan
 - alterId: 0
   cipher: auto
@@ -392,12 +401,6 @@ proxies:
     headers:
       Host: ''
     path: /reffs7y26g0ua
-- cipher: aes-256-gcm
-  name: 473|KR-203.32.26.157-2766
-  password: 63d7c17506d1f48b
-  port: 60120
-  server: 203.32.26.157
-  type: ss
 - alterId: 1
   cipher: auto
   name: '473,627,638|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #44'
@@ -489,25 +492,25 @@ proxies:
       Host: kr-arm2.018999.xyz
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.201.48.212-3595
+  name: 473|🇷KR-43.201.48.212-3662
   password: amazonskr05
   port: 443
   server: 43.201.48.212
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇷KR-141.164.39.146-3701
+  name: 473|🇷KR-141.164.39.146-3767
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 141.164.39.146
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇷KR-158.247.205.87-3728
+  name: 473|🇷KR-158.247.205.87-3794
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 158.247.205.87
   type: ss
 - cipher: aes-256-gcm
-  name: 473|🇷KR-158.247.205.87-3729
+  name: 473|🇷KR-158.247.205.87-3795
   password: pKEW8JPByTVTLtM
   port: 443
   server: 158.247.205.87
@@ -518,7 +521,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '473,627|🇰🇷KR-150.230.249.15-3834 #1'
+  name: 473,627|🇰🇷KR-150.230.249.15-3834
   network: http
   port: 46842
   server: 150.230.249.15
@@ -529,7 +532,7 @@ proxies:
   uuid: 4530b5ee-ced4-4e64-9285-1867fc5df7f8
 - alterId: 0
   cipher: auto
-  name: '473,627|🇰🇷KR-152.70.252.218-3879 #1'
+  name: 473,627|🇰🇷KR-152.70.252.218-3879
   network: ws
   port: 10020
   server: 152.70.252.218
@@ -544,7 +547,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '473,627|🇰🇷KR-152.67.218.38-3902 #1'
+  name: 473,627|🇰🇷KR-152.67.218.38-3902
   network: ws
   port: 443
   server: 152.67.218.38
@@ -558,37 +561,31 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.200.245.35-4147
+  name: 473|🇷KR-43.200.245.35-4213
   password: amazonskr05
   port: 443
   server: 43.200.245.35
   type: ss
-- name: 473,614,615,617,627,638|未知84
-  password: b291d129-ee55-4801-a9b8-b5316e5c37b7
-  port: 443
-  server: 138.2.113.84
-  skip-cert-verify: false
-  type: trojan
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.201.59.8-4279
+  name: 473|🇷KR-43.201.59.8-4345
   password: amazonskr05
   port: 443
   server: 43.201.59.8
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.201.47.102-4484
+  name: 473|🇷KR-43.201.47.102-4550
   password: amazonskr05
   port: 443
   server: 43.201.47.102
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.201.57.66-5415
+  name: 473|🇷KR-43.201.57.66-5481
   password: amazonskr05
   port: 443
   server: 43.201.57.66
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.201.86.30-5494
+  name: 473|🇷KR-43.201.86.30-5560
   password: amazonskr05
   port: 443
   server: 43.201.86.30
@@ -610,7 +607,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '473,627|🇰🇷KR-13.125.24.112-5502 #1'
+  name: 473,627|🇰🇷KR-13.125.24.112-5502
   network: ws
   port: 42517
   server: 13.125.24.112
@@ -624,7 +621,7 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 473|🇷KR-13.125.124.161-5556
+  name: 473|🇷KR-13.125.124.161-5622
   password: amazonskr05
   port: 443
   server: 13.125.124.161
@@ -644,41 +641,27 @@ proxies:
     headers:
       Host: 152.67.218.38
     path: /
+- name: '473,627,638|未知 TROJAN-230 | free-nodes #2'
+  password: b5fc9fa9-796d-4185-a316-395ecac04a85
+  port: 443
+  server: 150.230.249.20
+  skip-cert-verify: false
+  sni: www.gomacau.gq
+  type: trojan
 - cipher: aes-256-cfb
-  name: 473|🇷KR-3.36.118.190-6557
+  name: 473|🇷KR-3.36.118.190-6623
   password: amazonskr05
   port: 443
   server: 3.36.118.190
   type: ss
 - cipher: aes-256-cfb
-  name: 473,524,634|yandex-3212
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 473,634|yandex-3009
+  country: 🇷 KR
+  name: 473,524,587,634|yandex-3009
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '473,627|🇰🇷KR-49.128.204.85-6745 #1'
-  network: ws
-  port: 16629
-  server: 49.128.204.85
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 2c78877c-6472-45da-ae89-9b9d6e3ec5e6
-  ws-opts:
-    headers:
-      Host: ''
-    path: /sfgjmero45
 - alterId: 0
   cipher: auto
   name: 473,627|🇰🇷KR-54.180.114.77-7622
@@ -695,7 +678,7 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 473|KR-158.247.213.230-8171
+  name: 473|KR-158.247.213.230-8183
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 158.247.213.230
@@ -730,7 +713,7 @@ proxies:
     headers:
       Host: ''
     path: /vmess
-- name: '473,614,615,617,627,638|未知 TROJAN-724 | free-nodes #1'
+- name: '473,627,638|未知 TROJAN-724 | free-nodes #1'
   password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy
   port: 443
   server: 121.78.213.3
@@ -784,7 +767,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '473,627|🇰🇷KR-61.111.244.51-9387 #1'
+  name: 473,627|🇰🇷KR-61.111.244.51-9387
   network: ws
   port: 61155
   server: 61.111.244.51
@@ -829,7 +812,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: '473,627|🇰🇷KR-138.2.123.70-9845 #1'
+  name: 473,627|🇰🇷KR-138.2.123.70-9845
   network: ws
   port: 443
   server: 138.2.123.70
@@ -844,7 +827,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '473,627|🇰🇷KR-119.195.219.150-9847 #1'
+  name: 473,627|🇰🇷KR-119.195.219.150-9847
   network: ws
   port: 18050
   server: 119.195.219.150
@@ -874,7 +857,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '473,627|🇰🇷KR-158.180.91.206-9901 #1'
+  name: 473,627|🇰🇷KR-158.180.91.206-9901
   network: ws
   port: 46271
   server: 158.180.91.206
@@ -888,19 +871,19 @@ proxies:
       Host: kr.huafei888.site
     path: /
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.202.49.222-10313
+  name: 473|🇷KR-43.202.49.222-10325
   password: doub.io
   port: 2333
   server: 43.202.49.222
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇷KR-43.201.108.109-10314
+  name: 473|🇷KR-43.201.108.109-10326
   password: amazonskr05
   port: 443
   server: 43.201.108.109
   type: ss
 - cipher: aes-256-cfb
-  name: 473|🇷KR-125.141.26.5-10912
+  name: 473|🇷KR-125.141.26.5-10924
   password: qwerREWQ@@
   port: 2003
   server: 125.141.26.5
@@ -1077,6 +1060,20 @@ proxies:
   sni: kr01.xxxxyyyysbs.sbs
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 627|🇰🇷KR-49.128.204.85-6745
+  network: ws
+  port: 16629
+  server: 49.128.204.85
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2c78877c-6472-45da-ae89-9b9d6e3ec5e6
+  ws-opts:
+    headers:
+      Host: ''
+    path: /sfgjmero45
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1221,14 +1218,6 @@ proxies:
   uuid: 717e613c-c367-47c1-b226-310ae4960e25
   ws-opts:
     path: /
-- name: '656,719|🇰🇷 Korea | 01-636 #1'
-  password: 3D8B448F-6413-C7E0-D3DA-86D314923446
-  port: 20065
-  server: oss-cn-shanghai.solidigm-zxcv.com
-  skip-cert-verify: true
-  sni: cos.ap-shanghai.myqcloud.com
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 687|C05-韩国春川 倍率:0.5
