@@ -46,20 +46,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 0f8c87b1-da8b-45cd-aabb-7710e49ad2b0
-- alterId: 0
-  cipher: auto
-  name: 217|🇫🇷 法国
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - cipher: aes-256-cfb
   name: 454,473|🇱NL-51.15.27.48-10245
   password: f8f7aCzcPKbsF8p3
@@ -388,7 +374,7 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 473,524,634|yandex-230
+  name: 473,524,634|yandex-3305
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -430,7 +416,7 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 473,614,615,617,627,638|未知29
+- name: 473,578,614,615,617,627,638|未知29
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -453,14 +439,14 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '473,578,614,615,617,627,638|未知194 #1'
+- name: 473,614,615,617,627,638|未知194
   password: telegram-id-privatevpns
   port: 22222
   server: 13.37.103.10
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '473,578,614,615,617,627,638|未知157 #1'
+- name: '473,614,615,617,627,638|未知157 #1'
   password: iwangjie
   port: 2053
   server: 135.125.232.253
@@ -487,7 +473,7 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 473,578,614,615,617,627,638| Google搜二爷翻墙，免费获取翻墙节点_278
+- name: 473,614,615,617,627,638| Google搜二爷翻墙，免费获取翻墙节点_278
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -521,7 +507,7 @@ proxies:
   server: 145.223.70.115
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638,656,719|🇺🇸 US_315-415 #1'
+- name: '473,578,614,615,617,627,638,656,719|🇺🇸 US_315-415 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 51.44.38.121
@@ -535,7 +521,7 @@ proxies:
   skip-cert-verify: false
   sni: ukt1.sshocean.net
   type: trojan
-- country: 🇫🇷FR
+- country: 🇷FR
   name: 473,587,614,615,617,627|🇫🇷FR-51.195.202.129-1187
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
@@ -606,7 +592,7 @@ proxies:
   server: 141.95.61.209
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-1800 | free-nodes #1'
+- name: '473,578,614,615,617,627,638|未知 TROJAN-1800 | free-nodes #1'
   password: telegram-id-directvpn
   port: 22222
   server: 13.39.112.204
@@ -1539,11 +1525,11 @@ proxies:
   port: 443
   server: 162.19.59.160
   type: ss
-- name: '473,578,627,638|未知190 #1'
+- name: 473,627,638|未知190
   password: telegram-id-privatevpns
   port: 22222
   server: 15.236.122.160
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
 - grpc-opts:
@@ -1621,7 +1607,7 @@ proxies:
   server: 141.95.160.152
   type: ss
 - cipher: aes-256-gcm
-  name: 537,634|yandex-479
+  name: 537,634|yandex-3005
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
@@ -1631,9 +1617,9 @@ proxies:
   cipher: auto
   name: 578|Channel id:@proxy_kafee 🇫🇷
   network: ws
-  port: 2082
+  port: '2082'
   server: 5.196.29.123
-  skip-cert-verify: true
+  servername: ''
   tls: false
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
@@ -2256,4 +2242,15 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇫🇷 France 043 #3'
+  password: 8141b20c775ce63fab96
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45927
+  server: fr034.jd.kunlunpx.com
+  type: ss
   udp: true
