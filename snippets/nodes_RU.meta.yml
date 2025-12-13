@@ -106,7 +106,7 @@ proxies:
   uuid: 4a406d5c-839d-41f0-83b1-c03a62eb0e6b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,524,578,614,615,617,621,633,634,638,656,719|🇷🇺 俄罗斯_7-68 #1'
+  name: '399,578,614,615,617,621,633,634,638,656,719|🇷🇺 俄罗斯_7-68 #1'
   network: tcp
   port: 4249
   reality-opts:
@@ -394,27 +394,27 @@ proxies:
   port: 443
   server: 193.228.128.82
   type: ss
-- name: '473,578,614,615,617,627,630,638|🇷🇺_RU_俄罗斯 #1'
+- name: '473,614,615,617,627,630,638|🇷🇺_RU_俄罗斯 #2'
   password: af4b064a9c39472fb34ad8b113acdc6b
   port: 443
   server: 46.29.161.237
   skip-cert-verify: true
   sni: 46.29.161.237
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-583 | free-nodes #1'
+- name: '473,578,614,615,617,627,638|未知154 #1'
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 45.88.148.234
   skip-cert-verify: false
   type: trojan
-- name: 473,614,615,617,627,638|未知134
+- name: '473,614,615,617,627,638|未知 TROJAN-860 | free-nodes #1'
   password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910
   port: 28443
   server: 45.88.148.237
   skip-cert-verify: false
   sni: sbank.ir
   type: trojan
-- name: 473,614,615,617,627,638|未知41
+- name: '473,614,615,617,627,638|未知 TROJAN-1262 | free-nodes #1'
   password: 6c7d536e-1ecf-448d-83c1-3044dd89ceac
   port: 443
   server: 5.182.39.57
@@ -569,7 +569,7 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473,634|yandex-391
+  name: 473,634|yandex-345
   password: s8LbJCgUiGXeCKVc63tHJP
   port: 64674
   server: 94.198.220.183
@@ -695,6 +695,19 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 524|🇷🇺_RU_俄罗斯
+  network: tcp
+  port: 1488
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 84.201.178.99
+  servername: ads.x5.ru
+  tls: false
+  type: vless
+  uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
 - alpn:
   - h2
   - http/1.1
@@ -803,21 +816,6 @@ proxies:
   tls: false
   type: vless
   uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
-- alterId: 0
-  cipher: auto
-  country: 🇺 RU
-  h2-opts: {}
-  http-opts: {}
-  name: 587,638|🇷🇺 RU_144
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
 - name: 603|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1573,11 +1571,23 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 638|🇷🇺RU_145
+- name: 638|🇷🇺RU_146
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
   sni: hk-full.privateip.net
+  type: trojan
+- name: 638|俄罗斯 - 多莫傑多沃 - 2
+  password: trojan
+  port: 8880
+  server: 37.27.216.110
+  sni: tianjiu.pages.dev
+  type: trojan
+- name: 638|俄罗斯 - 多莫傑多沃 - 1
+  password: trojan
+  port: 2053
+  server: 65.109.214.6
+  sni: tianjiu.pages.dev
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -1606,7 +1616,7 @@ proxies:
   uuid: 0a97c5f3-68de-4d5e-bac2-c6bd94551fb6
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '638|🇷🇺_RU_俄罗斯 #2'
+  name: '638|🇷🇺_RU_俄罗斯 #3'
   network: tcp
   port: 8443
   reality-opts:
@@ -1623,17 +1633,6 @@ proxies:
   tls: false
   type: vless
   uuid: 7e281f58-63b0-4e9a-a3fe-537e33e374b9
-- name: 638|🇷🇺RU_4 | ⬇️ 4.7MB/s
-  network: tcp
-  port: 52900
-  reality-opts:
-    public-key: AjYSCSFHfqOg-NbP_ngiRvJkKNKZXuHNDa1sJd4TRRQ
-    short-id: 1fbc
-  server: 62.113.42.65
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 97e7c83c-9346-49b4-85a5-1e3bbf7488b9
 - name: 638|RU VLESS-78 | free-nodes
   port: 443
   server: noda2.topconnected.ru
@@ -1661,7 +1660,7 @@ proxies:
   uuid: b89d0b93-0ce0-424d-b9ab-92102acd5b84
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '638|🇷🇺_RU_俄罗斯 #3'
+  name: '638|🇷🇺_RU_俄罗斯 #4'
   network: tcp
   port: 443
   reality-opts:
@@ -1678,17 +1677,6 @@ proxies:
   tls: false
   type: vless
   uuid: d64fbcef-f032-48ae-8f52-d73976cb0c57
-- name: 638|🇷🇺RU_4 | ⬇️ 7.5MB/s
-  network: tcp
-  port: 42275
-  reality-opts:
-    public-key: 5Z8mktBAXgz88xCibv79NncelOS-3WAunfZNKnJRdUM
-    short-id: 08
-  server: 62.113.42.65
-  servername: ''
-  tls: false
-  type: vless
-  uuid: ded39de0-6d5e-426b-90e8-b7dfeced29b2
 - name: '638|RU俄罗斯(mibei77.com 米贝节点分享) #3'
   network: ws
   port: 443
