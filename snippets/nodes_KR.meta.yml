@@ -372,22 +372,20 @@ proxies:
       Host: seoul03.zgjok.com
     path: /
 - cipher: aes-256-cfb
-  country: 🇺🇸 US
-  name: 473,587,634|yandex-2446
+  name: 473,524,634|yandex-3150
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 473|🇷KR-141.164.45.187-0395
+  name: 473,524|🇰🇷 KR-141.164.45.187-0329
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 141.164.45.187
   type: ss
 - cipher: aes-256-cfb
-  country: 🇺🇸 US
-  name: 473,587|🇸 US_138
+  name: 473,524|🇰🇷 KR-154.90.62.168-0338
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
@@ -438,7 +436,7 @@ proxies:
   server: 138.2.113.248
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知127 #1'
+- name: 473,614,615,617,627,638|未知127
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   port: 443
   server: 138.2.115.240
@@ -462,7 +460,7 @@ proxies:
   server: official.seoulcityhall.com.ua
   skip-cert-verify: false
   type: trojan
-- name: '473,578,614,615,617,627,638|未知 TROJAN-1448 | free-nodes #1'
+- name: '473,614,615,617,627,638|未知 TROJAN-1448 | free-nodes #1'
   password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
   port: 443
   server: 146.56.189.146
@@ -765,15 +763,14 @@ proxies:
   server: 3.36.118.190
   type: ss
 - cipher: aes-256-cfb
-  name: 473,578,634|yandex-2578
+  name: 473,524,578,634|yandex-3282
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 473,587,634|yandex-2375
+  name: 473,524,634|yandex-3079
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
@@ -781,12 +778,15 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 473,524,627,638|韩国_121318035
+  country: 🇷KR
+  h2-opts: {}
+  http-opts: {}
+  name: 473,591,627,638|韩国_121318035
   network: ws
   port: '38265'
   server: 49.128.219.213
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 3c9d0123-6621-448e-b232-4547d476052e
@@ -1020,8 +1020,20 @@ proxies:
   port: 2003
   server: 125.141.26.5
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 524|🇰🇷 KR-49.128.219.213-6926
+  network: ws
+  port: 38265
+  server: 49.128.219.213
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3c9d0123-6621-448e-b232-4547d476052e
+  ws-opts:
+    path: /
 - cipher: aes-256-gcm
-  name: 537,634|yandex-3182
+  name: 537,634|yandex-136
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 21001
   server: kr001.dogsvip.site
@@ -1111,19 +1123,6 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
-- alterId: 0
-  cipher: auto
-  country: 🇷 KR
-  h2-opts: {}
-  http-opts: {}
-  name: 587|🇰🇷 KR_76
-  network: ws
-  port: 16629
-  server: 49.128.204.85
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2c78877c-6472-45da-ae89-9b9d6e3ec5e6
-  ws-path: /sfgjmero45
 - name: 603|韩国_首尔特别市
   network: ws
   port: 8443
@@ -1716,25 +1715,7 @@ proxies:
   tls: false
   type: vmess
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-- alterId: 0
-  cipher: auto
-  name: 642|🇰🇷 韩国 04
-  network: tcp
-  port: '45076'
-  server: hxa.dashuai.help
-  tls: false
-  type: vmess
-  uuid: 093bc3f7-2cd5-4f6c-b62e-80ce5500a204
-- alterId: 0
-  cipher: auto
-  name: 642|🇰🇷 韩国 03
-  network: tcp
-  port: '45075'
-  server: hxb.dashuai.help
-  tls: false
-  type: vmess
-  uuid: 093bc3f7-2cd5-4f6c-b62e-80ce5500a204
-- name: '656,719|🇰🇷 韩国-03-210 #1'
+- name: 656,719|🇰🇷 -03-192
   password: 7c771fa7-5625-4eb3-9768-3bac68383d3b
   port: 23001
   server: kr3.xn--mesx36n.com

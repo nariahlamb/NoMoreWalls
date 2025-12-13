@@ -423,12 +423,12 @@ proxies:
     path: /JAGOANSSH/
 - alterId: 0
   cipher: auto
-  name: '473,627,638|🇧🇪 BE_21 #1'
+  name: 473,524,627,638|🇧🇪 BE_21
   network: ws
   port: 443
   server: 57.128.189.240
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -438,12 +438,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,627,638|🇫🇷 FR_44
+  name: 473,524,627,638|🇫🇷 FR_44
   network: ws
   port: 443
   server: 91.134.8.101
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -452,7 +452,8 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 473|🇷FR-195.154.119.77-0316
+  country: 🇫🇷FR
+  name: 473,524,591|🇫🇷FR_05
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -571,14 +572,14 @@ proxies:
   server: 62.210.254.72
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知131 #1'
+- name: 473,614,615,617,627,638|未知131
   password: b8808043-6566-4923-9195-e66bfb553d57
   port: 443
   server: 51.38.99.96
   skip-cert-verify: false
   sni: ba24.ir
   type: trojan
-- name: 473,578,614,615,617,627,638|未知83
+- name: 473,614,615,617,627,638|未知83
   password: eDHWaPzxcl
   port: 25365
   server: 145.223.70.115
@@ -598,14 +599,12 @@ proxies:
   skip-cert-verify: false
   sni: ukt1.sshocean.net
   type: trojan
-- country: 🇷FR
-  name: 473,587,614,615,617,627,638|未知20
+- name: 473,614,615,617,627,638|未知20
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
-  udp: true
 - name: '473,627|🇫🇷FR-146.70.158.111-1223 #1'
   password: 11ae0edd-2f63-4495-8683-037abbda9986
   port: 443
@@ -613,21 +612,19 @@ proxies:
   skip-cert-verify: false
   sni: amin.karkas1.ir
   type: trojan
-- name: 473,614,615,617,627,638|未知55
+- name: 473,578,614,615,617,627,638|未知55
   password: e0d44ae7-cb7d-4acc-a8c0-9861a6f5eaad
   port: 80
   server: 51.91.11.29
   skip-cert-verify: false
   sni: akharinkhabar.ir
   type: trojan
-- country: 🇫🇷FR
-  name: 473,587,614,615,617,627,638|未知63
+- name: 473,614,615,617,627,638|未知63
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
-  udp: true
 - name: '473,614,615,617,627,638|未知 TROJAN-970 | free-nodes #1'
   password: telegram-id-privatevpns
   port: 22222
@@ -676,7 +673,7 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '473,578,614,615,617,627,638|未知 TROJAN-1616 | free-nodes #1'
+- name: '473,614,615,617,627,638|未知 TROJAN-1616 | free-nodes #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 51.45.33.224
@@ -879,7 +876,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '473,524,627|🇫🇷FR-57.128.189.240-6753 #1'
+  name: 473,627|🇫🇷FR-57.128.189.240-6753
   network: ws
   port: 443
   server: 57.128.189.240
@@ -924,7 +921,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '473,524,627|🇫🇷FR-91.134.8.101-6767 #1'
+  name: 473,627|🇫🇷FR-91.134.8.101-6767
   network: ws
   port: 443
   server: 91.134.8.101
@@ -1690,8 +1687,39 @@ proxies:
   port: 8388
   server: 141.95.160.152
   type: ss
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 55 Mbps
+  fast-open: false
+  name: 524,634,719|🏴‍☠️ 🟠-04-178
+  port: 50011
+  protocol: udp
+  server: 62.210.10.186
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 11 Mbps
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55
+  fast-open: false
+  name: 524,634|yandex-232
+  port: 35511
+  protocol: udp
+  server: 62.210.10.186
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 11
 - cipher: aes-256-gcm
-  name: 537,634|yandex-3188
+  name: 537,634|yandex-142
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
@@ -1725,6 +1753,47 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /
+- cipher: aes-256-cfb
+  country: 🇷FR
+  name: 591|FR_03
+  password: amazonskr05
+  port: 443
+  server: 13.38.79.160
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇫🇷FR
+  delay: 2343
+  name: 591,623,634|yandex-3316
+  password: amazonskr05
+  port: 443
+  server: 35.180.209.169
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇫🇷FR
+  delay: 1996
+  name: 591,623,634|yandex-3314
+  password: amazonskr05
+  port: 443
+  server: 15.236.142.160
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇫🇷FR
+  name: 591|🇫🇷FR_07
+  password: amazonskr05
+  port: 443
+  server: 13.39.112.212
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇫🇷FR
+  delay: 948
+  name: '591,623,634,719|🇫🇷 法国 08-75 #1'
+  password: amazonskr05
+  port: 443
+  server: 15.236.122.197
+  type: ss
+  udp: true
 - name: 603|法国_巴黎
   network: ws
   port: 443
@@ -1903,18 +1972,9 @@ proxies:
     headers:
       Host: 639004957474582477.tiguan-amsit.info
     path: '%2Fcahttingws'
-- cipher: aes-256-cfb
-  country: 🇫🇷FR
-  delay: 1996
-  name: '623,634,719|🇫🇷 法国 09-131 #1'
-  password: amazonskr05
-  port: 443
-  server: 15.236.142.160
-  type: ss
-  udp: true
 - country: 🇫🇷FR
   delay: 1461
-  name: 623,634|yandex-3054
+  name: 623,634|yandex-3315
   password: telegram-id-privatevpns
   port: 22222
   server: 13.36.150.189
@@ -1924,25 +1984,8 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇫🇷FR
-  delay: 2343
-  name: 623,634|yandex-3055
-  password: amazonskr05
-  port: 443
-  server: 35.180.209.169
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  delay: 948
-  name: 623,634|yandex-3056
-  password: amazonskr05
-  port: 443
-  server: 15.236.122.197
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇫🇷FR
   delay: 2347
-  name: 623,634|yandex-3057
+  name: 623,634|yandex-3318
   password: amazonskr05
   port: 443
   server: 35.180.247.200
@@ -2225,24 +2268,6 @@ proxies:
     headers:
       Host: pelang.org
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 642|🇫🇷 法国 07
-  network: tcp
-  port: '45072'
-  server: hxa.dashuai.help
-  tls: false
-  type: vmess
-  uuid: 093bc3f7-2cd5-4f6c-b62e-80ce5500a204
-- alterId: 2
-  cipher: auto
-  name: 642,656|🇫🇷 法国 11-60
-  network: tcp
-  port: '30835'
-  server: v35.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: '649|法国1 #4'
