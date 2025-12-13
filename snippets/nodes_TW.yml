@@ -78,16 +78,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: '97,581|台湾1 #1'
-  port: 45078
-  server: hxa.dashuai.help
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1f3025de-56ae-487c-9f6c-c4a3431808ea
-- alterId: 0
-  cipher: auto
   name: '97,581|台湾2 #1'
   port: 45077
   server: hxb.dashuai.help
@@ -95,7 +85,27 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1f3025de-56ae-487c-9f6c-c4a3431808ea
+  uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
+- alterId: 0
+  cipher: auto
+  name: '97,581|台湾1 #1'
+  port: 45078
+  server: hxa.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
+- name: 217|TW
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 167.68.4.223
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 224|台湾x1
@@ -233,7 +243,7 @@ proxies:
   server: 211.72.35.153
   skip-cert-verify: false
   type: trojan
-- country: 🇨 CN
+- country: 🇳 CN
   name: 473,587,614,615,617,627|🇹🇼TW-61.228.121.119-0796
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
@@ -662,15 +672,15 @@ proxies:
       Host: tw3.594888.xyz
     path: /v2ray
 - cipher: aes-256-cfb
-  country: 🇭🇰HK
-  name: 473,591|🇭🇰HK_18
+  name: 473,587,634,719|🇨🇳  01-38
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇩 ID
-  name: 473,587| ID_72
+  name: 473,587| ID_74
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
@@ -857,7 +867,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-604
+  name: 577,634|yandex-576
   network: ws
   port: 16616
   server: planb.mojcn.com
@@ -874,7 +884,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-606
+  name: 577,634|yandex-578
   network: ws
   port: 16616
   server: t.cnmjcn.cyou
@@ -1258,7 +1268,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.es:154948
+    host: feb7fa9.dl.microsoft.es:154948
     mode: tls
   port: 2377
   server: feb7fa9.t1.glados-config.com
@@ -1269,7 +1279,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.net:154948
+    host: feb7fa9.dl.microsoft.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.t2.glados-config.com
@@ -1280,7 +1290,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.de:154948
+    host: feb7fa9.dl.nintendo.net:154948
     mode: tls
   port: 2377
   server: feb7fa9.t3.glados-config.com
@@ -1291,7 +1301,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.lt:154948
+    host: feb7fa9.dl.blizzard.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.t4.glados-config.com
@@ -1302,7 +1312,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.lt:154948
+    host: feb7fa9.dl.microsoft.dk:154948
     mode: tls
   port: 2377
   server: feb7fa9.t5.glados-config.com
@@ -1313,56 +1323,12 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.jp:154948
+    host: feb7fa9.dl.fastly.net:154948
     mode: tls
   port: 2377
   server: feb7fa9.t6.glados-config.com
   type: ss
   udp: false
-- cipher: aes-128-gcm
-  name: '837,838,839,840|🇹🇼 Taiwan 065 #3'
-  password: cfc6f3f75f5ef7b2665c
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45916
-  server: tw065.jd.kunlunpx.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '837,838,839,840|🇹🇼 Taiwan 031 #3'
-  password: b74518fb49bd645e6ce7
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45915
-  server: tw031.jd.kunlunpx.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '837,838,839,840|🇹🇼 Taiwan 030 #3'
-  password: b270fd77db2ecb7acbc8
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45914
-  server: tw030.jd.kunlunpx.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '837,838,839,840|🇹🇼 TaiwanDynamicIP #3'
-  password: 3e26a8cfb09fda219b36
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45573
-  server: tw080.jd.kunlunpx.com
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 847|TW | 台湾 01 备
