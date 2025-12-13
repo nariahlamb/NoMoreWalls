@@ -319,12 +319,13 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,633,634,638|14|DE_speednode_0008 #1'
+  name: '399,524,634,638|14|DE_speednode_0008 #1'
   network: tcp
   port: 443
   server: deu637.webunlocked.org
   servername: deu637.webunlocked.org
   skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   uuid: 51be809d-3e82-4090-b14f-a42a32100ff9
@@ -905,12 +906,12 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 473,627|🇩🇪DE-57.129.24.125-0274
+  name: 473,524,627|🇩🇪DE-57.129.24.125-0274
   network: ws
   port: 443
   server: 57.129.24.125
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -919,7 +920,7 @@ proxies:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '473,578,614,615|[SS] 🇩🇪 DE SS-138 | free-nodes #1'
+  name: '473,524,578,614,615|[SS] 🇩🇪 DE SS-138 | free-nodes #1'
   password: JGv616hMWdjfuZ00jYfq7XkBHJZrOBrg
   port: 443
   server: 87.121.162.249
@@ -3086,7 +3087,7 @@ proxies:
   sni: frtgrpc.mainssh.xyz
   type: trojan
 - cipher: aes-256-gcm
-  name: 537,634|yandex-163
+  name: 537,634|yandex-542
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 28001
   server: de001.dogsvip.site
@@ -3222,10 +3223,11 @@ proxies:
   up: 10000
 - alterId: 0
   cipher: auto
-  name: '577|德国-优化 #9'
+  name: 577,634|yandex-3559
   network: ws
   port: 16644
   server: planb.mojcn.com
+  tls: false
   type: vmess
   udp: true
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -3238,10 +3240,11 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '577|德国-优化2 #9'
+  name: 577,634|yandex-3560
   network: ws
   port: 16644
   server: m.cnmjcn.com
+  tls: false
   type: vmess
   udp: true
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -3414,7 +3417,7 @@ proxies:
   country: 🇪 DE
   h2-opts: {}
   http-opts: {}
-  name: 587|🇪 DE_43
+  name: 587|🇪 DE_41
   network: ws
   port: 443
   server: 141.94.155.224
@@ -3431,7 +3434,7 @@ proxies:
   country: 🇩🇪 DE
   h2-opts: {}
   http-opts: {}
-  name: 587|🇪 DE_44
+  name: 587|🇪 DE_42
   network: ws
   port: 443
   server: 141.95.126.134
@@ -3939,7 +3942,7 @@ proxies:
   uuid: 2ee2a715-d541-416a-8713-d66567448c2e
 - country: 🇩🇪DE
   delay: 1715
-  name: 623,634|yandex-534
+  name: 623,634|yandex-636
   password: telegram-id-privatevpns
   port: 22222
   server: 3.126.180.133
@@ -3949,7 +3952,7 @@ proxies:
   udp: true
 - country: 🇩🇪DE
   delay: 2543
-  name: 623,634|yandex-535
+  name: 623,634|yandex-637
   password: telegram-id-privatevpns
   port: 22222
   server: 52.28.28.48
@@ -3959,7 +3962,7 @@ proxies:
   udp: true
 - country: 🏁ZZ
   delay: 1570
-  name: 623,634|yandex-536
+  name: 623,634|yandex-638
   network: ws
   port: 80
   server: www.speedtest.net
@@ -6044,4 +6047,15 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇩🇪 Germany 044 #3'
+  password: bd62dac6636078647014
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45928
+  server: de044.jd.kunlunpx.com
+  type: ss
   udp: true

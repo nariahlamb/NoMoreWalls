@@ -26,7 +26,7 @@ proxies:
   uuid: 20cf5921-f7fa-47c5-81ae-947fbef83a4d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,578,621,633,638|14|RU_speednode_0034 #1'
+  name: '399,524,578,621,633,638|14|RU_speednode_0034 #1'
   network: tcp
   port: 443
   reality-opts:
@@ -42,7 +42,7 @@ proxies:
   uuid: d5f7970e-121f-4e6f-9acf-250effc0715b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,578,614,615,617,621,633,638,656,719|🇷🇺 俄罗斯_3-16 #1'
+  name: '399,524,578,614,615,617,621,633,638,656,719|🇷🇺 俄罗斯_3-16 #1'
   network: tcp
   port: 1488
   reality-opts:
@@ -58,7 +58,7 @@ proxies:
   uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,633,638|14|RU_speednode_0036 #1'
+  name: '399,638|14|RU_speednode_0036 #1'
   port: 8443
   server: yo.himikvpn.online
   servername: sun6-21.userapi.com
@@ -68,7 +68,7 @@ proxies:
   uuid: 4a406d5c-839d-41f0-83b1-c03a62eb0e6b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,578,614,615,617,621,633,638,656,719|🇷🇺 俄罗斯_2-15 #1'
+  name: '399,524,578,614,615,617,621,633,638,656,719|🇷🇺 俄罗斯_2-15 #1'
   network: tcp
   port: 1488
   reality-opts:
@@ -84,7 +84,7 @@ proxies:
   uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,633,638|14|RU_speednode_0038 #1'
+  name: '399,638|14|RU_speednode_0038 #1'
   port: 8443
   server: 85.192.33.79
   servername: sun6-21.userapi.com
@@ -94,7 +94,7 @@ proxies:
   uuid: 4a406d5c-839d-41f0-83b1-c03a62eb0e6b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '399,578,614,615,617,633,634,638,656,719|🇷🇺 俄罗斯_7-68 #1'
+  name: '399,578,614,615,617,634,638,656,719|🇷🇺 俄罗斯_7-68 #1'
   network: tcp
   port: 4249
   reality-opts:
@@ -323,25 +323,25 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-45.138.157.162-0270
+  name: 473,524|🇷🇺 RU-45.138.157.162-0280
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-45.89.55.173-0298
+  name: 473,524|🇷🇺 RU-45.89.55.173-0279
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '473,578,614,615|[SS] 未知 SS-92 | free-nodes #1'
+  name: '473,524,578,614,615|[SS] 未知 SS-92 | free-nodes #1'
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473,634|yandex-345
+  name: 473,634|yandex-3495
   password: s8LbJCgUiGXeCKVc63tHJP
   port: 64674
   server: 94.198.220.183
@@ -683,6 +683,21 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 524|🇷🇺 _RU_俄罗斯
+  network: tcp
+  port: 1488
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 84.201.178.99
+  servername: ads.x5.ru
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
 - alpn:
   - h2
   - http/1.1
@@ -1740,4 +1755,15 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇷🇺 Russia 046 #3'
+  password: 11575f448fb4021fc611
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45930
+  server: ru046.jd.kunlunpx.com
+  type: ss
   udp: true
