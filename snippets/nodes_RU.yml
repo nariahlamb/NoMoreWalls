@@ -102,19 +102,19 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 472,523|🇷🇺 RU-45.138.157.162-0334
+  name: 472|🇺RU-45.138.157.162-0299
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472,523,577|未知 SS-92 | free-nodes
+  name: 472|🇺RU-5.182.37.87-0311
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472,523|🇷🇺 RU-45.89.55.173-0292
+  name: 472|🇺RU-45.89.55.173-0410
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
@@ -323,7 +323,7 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 472,633|yandex-3088
+  name: 472,633|yandex-3129
   password: s8LbJCgUiGXeCKVc63tHJP
   port: 64674
   server: 94.198.220.183
@@ -449,21 +449,6 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇺 RU
-  h2-opts: {}
-  http-opts: {}
-  name: 586,637|🇷🇺 RU_135
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
 - name: '603|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -814,6 +799,16 @@ proxies:
   server: hk-full.privateip.net
   sni: hk-full.privateip.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 637|🇷🇺 RU_135
+  network: tcp
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - name: 763|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
@@ -829,4 +824,15 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇷🇺 Russia 046 #3'
+  password: 11575f448fb4021fc611
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45930
+  server: ru046.jd.kunlunpx.com
+  type: ss
   udp: true

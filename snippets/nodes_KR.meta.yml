@@ -200,8 +200,7 @@ proxies:
     headers:
       Host: i1.hdslb.com
     path: /download
-- auth: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
-  name: '400,577,620,632,637|9|KR #1'
+- name: '400,620,632,637|9|KR #1'
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2056
   server: cc1.mangshe.xyz
@@ -363,16 +362,14 @@ proxies:
   server: 141.164.45.187
   type: ss
 - cipher: aes-256-cfb
-  country: 🇸 US
-  name: 472,523,586,633|yandex-2632
+  name: 472,633|yandex-2500
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇺🇸 US
-  name: 472,523,586|🇸 US_159
+  name: 472|🇷KR-154.90.62.168-0382
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
@@ -625,7 +622,7 @@ proxies:
   password: b291d129-ee55-4801-a9b8-b5316e5c37b7
   port: 443
   server: 138.2.113.84
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
 - name: 472,626|🇰🇷KR-138.2.115.240-2369
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
@@ -758,14 +755,14 @@ proxies:
   server: 3.36.118.190
   type: ss
 - cipher: aes-256-cfb
-  name: 472,523,577,633|yandex-2764
+  name: 472,633|yandex-2632
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 472,523,633|yandex-2561
+  name: 472,633|yandex-2429
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
@@ -773,7 +770,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 472,626|🇰🇷KR-49.128.219.213-4969
+  name: '472,523,626|🇰🇷KR-49.128.219.213-4969 #1'
   network: ws
   port: 38265
   server: 49.128.219.213
@@ -1019,23 +1016,8 @@ proxies:
   port: 2003
   server: 125.141.26.5
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 523,626|🇰🇷KR-49.128.219.213-0389
-  network: ws
-  port: 38265
-  server: 49.128.219.213
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3c9d0123-6621-448e-b232-4547d476052e
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - cipher: aes-256-gcm
-  name: 536,633|yandex-3205
+  name: 536,633|yandex-3267
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 21001
   server: kr001.dogsvip.site
@@ -1125,19 +1107,6 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
-- alterId: 0
-  cipher: auto
-  country: 🇷 KR
-  h2-opts: {}
-  http-opts: {}
-  name: 586|🇷 KR_78
-  network: ws
-  port: 16629
-  server: 49.128.204.85
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2c78877c-6472-45da-ae89-9b9d6e3ec5e6
-  ws-path: /sfgjmero45
 - name: 602|韩国_首尔特别市
   network: ws
   port: 8443
@@ -1650,6 +1619,20 @@ proxies:
   sni: kr01.xxxxyyyysbs.sbs
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 626|🇰🇷KR-49.128.219.213-0389
+  network: ws
+  port: 38265
+  server: 49.128.219.213
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3c9d0123-6621-448e-b232-4547d476052e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 636|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1897,6 +1880,17 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇰🇷 SouthKorea 037 #3'
+  password: d7577ca6729babe0790f
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45921
+  server: kr037.jd.kunlunpx.com
+  type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 860|KR-IDC-节点1
