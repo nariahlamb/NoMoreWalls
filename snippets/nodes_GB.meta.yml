@@ -194,7 +194,8 @@ proxies:
   server: 145.239.6.202
   type: ss
 - cipher: aes-128-gcm
-  name: 453,454,472|🇧GB-141.98.101.178-0357
+  country: 🇧 GB
+  name: 453,454,472,587| GB_51
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -415,7 +416,8 @@ proxies:
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇬🇧GB-82.38.31.217-0233
+  country: 🇬🇧GB
+  name: 472,591|🇬🇧GB_11
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.217
@@ -433,13 +435,15 @@ proxies:
   server: 82.38.31.218
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇧GB-82.38.31.191-0242
+  country: 🇧GB
+  name: 472,591|GB_09
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.191
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇬🇧GB-82.38.31.194-0244
+  country: 🇬🇧GB
+  name: 472,591|🇬🇧GB_10
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.194
@@ -469,7 +473,8 @@ proxies:
   server: 82.38.31.202
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇧GB-82.38.31.179-0356
+  country: 🇧 GB
+  name: 472,587|🇧 GB_53
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.179
@@ -818,24 +823,30 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8
-- name: 472,627|🇬🇧GB-198.244.190.189-4796
+- country: 🇷FR
+  name: 472,587,627|🇬🇧GB-198.244.190.189-4796
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 472,627|🇬🇧GB-51.38.65.155-4803
+  udp: true
+- country: 🇬🇧 GB
+  name: 472,587,627|🇬🇧GB-51.38.65.155-4803
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
   server: 51.38.65.155
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: '472,627|🇬🇧GB-46.101.87.178-4804 #1'
+  udp: true
+- country: 🇧GB
+  name: '472,587,627|🇬🇧GB-46.101.87.178-4804 #1'
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 472|GB-172.99.190.87-5820
   password: KixLvKzwjekG00rm
@@ -1651,7 +1662,7 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 472,578,627,638|未知62
+- name: 472,627,638|未知62
   password: xxoo
   port: 443
   server: 146.19.230.241
@@ -1734,17 +1745,22 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 524,578,609,610,630,638,656,854|【机场推荐：https://a0a.xyz/】_14
+  country: 🇧 GB
+  h2-opts: {}
+  http-opts: {}
+  name: 524,587,609,610,630,638,656,854|【机场推荐：https://a0a.xyz/】_14
   network: tcp
   port: '180'
   server: 82.198.246.97
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '524,578,634,638|🇬🇧_GB_英国 #6'
+  name: '524,634,638|🇬🇧_GB_英国 #6'
   network: tcp
   port: 1488
   reality-opts:
@@ -1969,48 +1985,14 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: '578,638|🇬🇧GB英国 #1'
-  password: 6b5b50ff-7798-40dc-9888-b4dd581e5435
-  port: 44004
-  server: 51.89.128.93
-  sni: joss.dus.biz.id
+- country: 🇬🇧 GB
+  name: 587,638|未知58
+  password: 255a0a50-3f10-11f0-b0d6-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
   type: trojan
-- name: '578,638|GB VLESS-56 | free-nodes #1'
-  port: 8443
-  server: 94.72.99.160
-  tls: false
-  type: vless
-  uuid: f5d7d068-3325-43d8-85bd-e8ed665abcd5
-- grpc-opts:
-    grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: '578,638|GB VLESS-101 | free-nodes #1'
-  network: grpc
-  port: 32418
-  server: 141.227.174.26
-  tls: false
-  type: vless
-  uuid: aab74025-0737-410c-b048-bcbde3bc1852
-- name: 578|GB VLESS-122 | free-nodes
-  port: 443
-  server: 108.162.195.45
-  tls: false
-  type: vless
-  uuid: 7270612b-49f6-4b04-999c-34d8263da767
-  ws-opts:
-    path: '%2Faymdlws'
-- name: 578|GB VLESS-129 | free-nodes
-  network: ws
-  port: 443
-  server: cosmin.ns.cloudflare.com
-  servername: picassoo.info
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 7270612b-49f6-4b04-999c-34d8263da767
-  ws-opts:
-    headers:
-      Host: picassoo.info
-    path: '%2Faymdlws'
+  udp: true
 - name: 603|英国_金丝雀码头
   network: ws
   port: 443
@@ -2803,6 +2785,12 @@ proxies:
   skip-cert-verify: false
   sni: joss.dus.biz.id
   type: trojan
+- name: 638|🇬🇧GB英国
+  password: 6b5b50ff-7798-40dc-9888-b4dd581e5435
+  port: 44004
+  server: 51.89.128.93
+  sni: joss.dus.biz.id
+  type: trojan
 - name: 638|🇬🇧 GB_62
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
@@ -2871,6 +2859,15 @@ proxies:
   tls: false
   type: vless
   uuid: 937f8940-ad8a-409f-93c3-4d6249af628f
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 638|GB VLESS-101 | free-nodes
+  network: grpc
+  port: 32418
+  server: 141.227.174.26
+  tls: false
+  type: vless
+  uuid: aab74025-0737-410c-b048-bcbde3bc1852
 - name: 638|🇬🇧_英国
   network: ws
   port: 80
@@ -2884,6 +2881,12 @@ proxies:
     path: '%2F'
 - name: 638|GB VLESS-45 | free-nodes
   port: 443
+  server: 94.72.99.160
+  tls: false
+  type: vless
+  uuid: f5d7d068-3325-43d8-85bd-e8ed665abcd5
+- name: 638|GB VLESS-56 | free-nodes
+  port: 8443
   server: 94.72.99.160
   tls: false
   type: vless
@@ -3091,6 +3094,17 @@ proxies:
   skip-cert-verify: false
   sni: kr-qingyun.dwyun.me
   type: trojan
+- grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 656,719|🇬🇧 国 01-123
+  network: grpc
+  port: 21249
+  server: 209.38.168.122
+  tls: false
+  type: vless
+  udp: true
+  uuid: 45040c4c-81b3-43c7-bd81-9cc9ebc3456b
 - cipher: chacha20-ietf-poly1305
   name: 722|🇬🇧Great britan-英国1
   password: 0305e0ec-ec7e-4770-9aa3-81e3427f91b6

@@ -88,13 +88,15 @@ proxies:
   server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 453,472|🇨🇦CA-142.4.216.225-0290
+  country: 🇦CA
+  name: 453,472,587|🇦CA_35
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 453,472,634,648|SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-Ti...
+  country: ' CZ'
+  name: 453,472,587,634,648|SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-Ti...
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
@@ -179,13 +181,15 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 472,524,627,638|加拿大_121404001
+- country: 🇨🇦CA
+  name: 472,524,591,627,638|加拿大_121404001
   password: 6pRjKQJ0CWyFtG.9
   port: 12990
   server: 198.57.27.27
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: diningtable.electricbanana.click
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '472,627|🇨🇦CA-134.195.198.147-0274 #1'
@@ -201,21 +205,24 @@ proxies:
     headers:
       Host: inna.cfd
     path: /
-- name: 472,627,638|加拿大_121404002
+- country: 🇸US
+  name: 472,591,627,638|加拿大_121404002
   password: .ie4rghJuMkcf0oF
   port: 18509
   server: 38.96.254.102
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: shoppingmall.electricbanana.click
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇦CA-142.4.216.225-0294
+  name: 472,587|_03
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
 - cipher: aes-128-cfb
-  name: '472,524,627|8J%2BHqPCfh6ZDQS00NS4xNTQuMjA0... #1'
+  country: 🇪 SE
+  name: '472,524,587,627|8J%2BHqPCfh6ZDQS00NS4xNTQuMjA0... #1'
   obfs: http_post
   obfs-param: ''
   password: $$Turb0VPN$$
@@ -840,7 +847,7 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8
-- name: 472,627|🇨🇦CA-148.113.207.224-4761
+- name: 472,587,627|🇨🇦CA-148.113.207.224-4761
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
   server: ca-full.privateip.net
@@ -1531,6 +1538,12 @@ proxies:
   server: 3.96.217.9
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 524,609,610,630|🇨🇦 加拿大多伦多 V2CROSS.COM
+  password: 6pRjKQJ0CWyFtG.9
+  port: 12990
+  server: 198.57.27.27
+  skip-cert-verify: false
   type: trojan
 - cipher: aes-256-gcm
   name: 537,634|yandex-106
@@ -5997,12 +6010,6 @@ proxies:
   type: vmess
   udp: true
   uuid: cc66b473-d76c-46a6-8f60-505b682f801b
-- name: 630|🇨🇦 加拿大多伦多 V2CROSS.COM
-  password: 6pRjKQJ0CWyFtG.9
-  port: 12990
-  server: 198.57.27.27
-  skip-cert-verify: false
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -6092,6 +6099,19 @@ proxies:
   sni: tianjiu.pages.dev
   type: trojan
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 638|🇨🇦_CA_加拿大
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: 8W9r2aXGhKNtvPxnL6EiPpQuSm9OJT17x2xyxwxIo30
+    short-id: 84f70f1177981563
+  server: 167.17.70.16
+  servername: www.microsoft.com
+  tls: false
+  type: vless
+  uuid: 55975415-43c0-461c-8752-d5b8013364e3
+- client-fingerprint: chrome
   name: '638|🇨🇦_加拿大 #1'
   network: ws
   port: 443
@@ -6129,16 +6149,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
-- client-fingerprint: firefox
-  name: 656|🇨🇦 加拿大 11-18
-  network: ws
-  port: 443
-  server: yh3.jgpyjc.top
-  servername: jnd.youxixia.top
-  tls: true
-  type: vless
-  uuid: 94a4062b-2fff-45ec-8988-d513e63ec92e
-  ws-opts:
-    headers:
-      Host: jnd.youxixia.top
-    path: '%2F'
+- auth: 881c153c-cf33-4bfc-b7ff-4a90163c160f
+  name: 656,719|🇨🇦 加 03-67
+  password: 881c153c-cf33-4bfc-b7ff-4a90163c160f
+  port: 25200
+  ports: 25200-26200
+  server: xjp.kaixincloud.top
+  skip-cert-verify: false
+  sni: xjp.kaixincloud.top
+  tls: false
+  type: hysteria2
+  udp: true

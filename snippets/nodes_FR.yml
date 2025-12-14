@@ -383,7 +383,8 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 472|🇷FR-195.154.119.77-0278
+  country: 🇫🇷FR
+  name: 472,591|🇫🇷FR_05
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -685,13 +686,14 @@ proxies:
     headers:
       Host: ahdaeph8.com
     path: /ws
-- name: 472,627,638|_19
+- name: 472,587,627,638|_19
   password: wkmY1R4EcP
   port: 443
   server: 45.76.47.77
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.bing.com
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '472,524,627|🇫🇷FR-57.128.189.240-4776 #1'
@@ -752,18 +754,22 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 472,627|🇫🇷FR-51.178.42.187-4795
+- country: 🇷FR
+  name: 472,587,627|🇫🇷FR-51.178.42.187-4795
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 472,627,638|未知100
+  udp: true
+- country: 🇫🇷FR
+  name: 472,587,627,638|未知100
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 472,627|🇫🇷FR-146.59.55.50-4862
@@ -794,7 +800,8 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 472|🇫🇷FR-13.38.79.160-4931
+  country: 🇫🇷FR
+  name: 472,591|🇫🇷FR_07
   password: amazonskr05
   port: 443
   server: 13.38.79.160
@@ -802,7 +809,7 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇫🇷FR
   delay: 2343
-  name: 472,623,634|yandex-3365
+  name: 472,591,623,634|yandex-3365
   password: amazonskr05
   port: 443
   server: 35.180.209.169
@@ -811,7 +818,7 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇫🇷FR
   delay: 1996
-  name: 472,623,634|yandex-3363
+  name: 472,591,623,634|yandex-3363
   password: amazonskr05
   port: 443
   server: 15.236.142.160
@@ -824,13 +831,15 @@ proxies:
   server: 13.38.73.145
   type: ss
 - cipher: aes-256-cfb
-  name: 472|🇫🇷FR-13.39.112.212-4936
+  country: 🇫🇷FR
+  name: 472,591|🇫🇷FR_08
   password: amazonskr05
   port: 443
   server: 13.39.112.212
   type: ss
 - cipher: aes-256-cfb
-  name: 472|🇫🇷FR-51.44.165.171-4979
+  country: 🇺🇸US
+  name: 472,591|🇺🇸US_60
   password: amazonskr05
   port: 443
   server: 51.44.165.171
@@ -1520,7 +1529,7 @@ proxies:
   port: 443
   server: 162.19.59.160
   type: ss
-- name: '472,578,627,638|未知 TROJAN-172 | free-nodes #1'
+- name: 472,627,638|未知 TROJAN-172 | free-nodes
   password: telegram-id-privatevpns
   port: 22222
   server: 15.237.50.200
@@ -1636,18 +1645,40 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 578|Channel id:@proxy_kafee 🇫🇷
-  network: ws
-  port: '2082'
-  server: 5.196.29.123
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇫🇷 FR_49
+  network: none
+  port: 38141
+  server: 45.136.12.37
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /
+  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇷 FR_46
+  network: ws
+  port: 443
+  server: 91.134.8.101
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
+- cipher: aes-256-cfb
+  country: 🇷FR
+  name: 591|FR_03
+  password: amazonskr05
+  port: 443
+  server: 15.237.246.157
+  type: ss
 - alterId: 0
   cipher: auto
   name: 604|法国_马赛
@@ -2029,16 +2060,6 @@ proxies:
   server: 185.253.116.133
   sni: tianjiu.pages.dev
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 638|🇫🇷 FR_49
-  network: none
-  port: 38141
-  server: 45.136.12.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
 - alterId: 2
   cipher: auto
   name: 642|🇫🇷 法国 11
@@ -2066,24 +2087,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
-- alterId: 0
-  cipher: auto
-  name: 656|🇫🇷 法国 07-6
-  network: tcp
-  port: '45071'
-  server: hxb.dashuai.help
-  tls: false
-  type: vmess
-  uuid: f8622ef1-d6e4-4310-96bc-0740e38b8220
-- alterId: 0
-  cipher: auto
-  name: 656|🇫🇷 法国 05-10
-  network: tcp
-  port: '45072'
-  server: hxa.dashuai.help
-  tls: false
-  type: vmess
-  uuid: c1fe996c-d6c0-4d47-8cfb-2228f8b3185e
 - cipher: chacha20-ietf-poly1305
   name: 722|🇫🇷France-法国1
   password: 0305e0ec-ec7e-4770-9aa3-81e3427f91b6
