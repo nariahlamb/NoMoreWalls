@@ -854,11 +854,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 217|🇸🇬 SG
+- name: 217|SG
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
-  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - client-fingerprint: firefox
@@ -1035,6 +1035,93 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
+- client-fingerprint: firefox
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '317|新加坡02|流媒体 #5'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: 1cs7mxEcoVKwcYepAnKgqHAFhRxPv6aO3tv7lNhwLDQ
+    short-id: 46bf6ea0
+  server: sg002.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+- client-fingerprint: firefox
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '317|新加坡03|流媒体 #5'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: hBXQa1tSoP0jjIezHxeyKhf1YKxe8CoBHoxvIxEJuAc
+    short-id: 2c5ecaae
+  server: sg003.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+- client-fingerprint: firefox
+  flow: ''
+  grpc-opts:
+    grpc-service-name: tj
+  name: '317|新加坡04|流媒体 #5'
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: Bkxd25PPovqeYw6AevM-L266KM2kLDJomgmorzvGFmM
+    short-id: 2c846487
+  server: sg004.421421.xyz
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+- name: '317|tg群组: https://t.me/tjiajc1 #5'
+  network: ws
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: sg005.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '317|新加坡06|流媒体 #5'
+  network: ws
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: sg006.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '317|新加坡07|流媒体 #5'
+  network: ws
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: sg007.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+- name: '317|新加坡08|流媒体 #5'
+  network: ws
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: sg008.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -1052,8 +1139,7 @@ proxies:
   udp: true
   uuid: 494ab5b1-3c91-4047-903b-0ea59c42435f
   ws-opts: null
-- auth: 16461a78-363c-457a-92f9-83b0a68edc37
-  name: '399,578,621,633,638|9|新加坡 #2'
+- name: '399,621,633,638|9|新加坡 #2'
   password: 16461a78-363c-457a-92f9-83b0a68edc37
   port: 2056
   server: sg3.eyucdn.xyz
@@ -1061,8 +1147,7 @@ proxies:
   sni: sg3.eyucdn.xyz
   tls: false
   type: hysteria2
-- auth: 3hszBhqVsUhqOOFWJlev6k6Tkc
-  name: '399,578,621,633,638|9|SG #9'
+- name: '399,621,633,638|9|SG #9'
   password: 3hszBhqVsUhqOOFWJlev6k6Tkc
   port: 22509
   server: 47.129.217.4
@@ -1070,8 +1155,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- auth: 3hszBhqVsUhqOOFWJlev6k6Tkc
-  name: '399,578,621,633,638|9|SG #1 #2'
+- name: '399,621,633,638|9|SG #1 #2'
   password: 3hszBhqVsUhqOOFWJlev6k6Tkc
   port: 22509
   server: 47.129.224.62
@@ -1079,8 +1163,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- auth: 5OiuCsPmULZ0lJwts89fegLJE
-  name: '399,578,621,633,638|9|SG #2 #2'
+- name: '399,621,633,638|9|SG #2 #2'
   password: 5OiuCsPmULZ0lJwts89fegLJE
   port: 17193
   server: 47.129.100.149
@@ -1088,8 +1171,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- auth: 5OiuCsPmULZ0lJwts89fegLJE
-  name: '399,578,621,633,638|9|SG #3 #2'
+- name: '399,621,633,638|9|SG #3 #2'
   password: 5OiuCsPmULZ0lJwts89fegLJE
   port: 17193
   server: 52.221.210.182
@@ -1097,8 +1179,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- auth: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
-  name: '399,578,621,633,638|9|新加坡1 #2'
+- name: '399,621,633,638|9|新加坡1 #2'
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2055
   server: xjp1.mangshe.xyz
@@ -1106,8 +1187,7 @@ proxies:
   sni: xjp1.mangshe.xyz
   tls: false
   type: hysteria2
-- auth: KYIFgW1don6L8TaDBJHynafxZ0
-  name: '399,578,621,633,638|9|SG #5 #2'
+- name: '399,621,633,638|9|SG #5 #2'
   password: KYIFgW1don6L8TaDBJHynafxZ0
   port: 4763
   server: 47.237.23.83
@@ -1115,8 +1195,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- auth: XON4wZ0sXe1YaqFY2FeM7uZY4
-  name: '399,578,621,633,638|9|SG #6 #2'
+- name: '399,621,633,638|9|SG #6 #2'
   password: XON4wZ0sXe1YaqFY2FeM7uZY4
   port: 15221
   server: 122.248.205.111
@@ -1124,8 +1203,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- auth: e7965e64-e001-4e8c-8273-39c61ff4a094
-  name: '399,578,621,633,638|9|SG #7 #2'
+- name: '399,621,633,638|9|SG #7 #2'
   password: e7965e64-e001-4e8c-8273-39c61ff4a094
   port: 30000
   server: sg3.oomz.ru
@@ -1133,8 +1211,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- auth: fWydUhyG3woKe4a0kcKKKdx78
-  name: '399,578,621,633,638|9|SG #8 #2'
+- name: '399,621,633,638|9|SG #8 #2'
   password: fWydUhyG3woKe4a0kcKKKdx78
   port: 6467
   server: 8.219.232.60
@@ -1994,7 +2071,7 @@ proxies:
   server: 167.150.100.115
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '473,524,578,614,615|[SS] 🇸🇬 SG SS-74 | free-nodes #1'
+  name: 473,524|🇸🇬 SG-95.173.218.203-0281
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 95.173.218.203
@@ -2030,123 +2107,123 @@ proxies:
       Host: ''
     path: /sshkit/Ertusg86/635014638c264/
 - cipher: chacha20-ietf-poly1305
-  name: '473,578,614,615|[SS] 🇸🇬 SG SS-42 | free-nodes #1'
+  name: 473|🇬SG-209.74.82.227-0630
   password: uA1rLP5m0mMOQ8FcxRXxgr
   port: 26515
   server: 209.74.82.227
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '473,578,614,615|[SS] 🇸🇬 SG SS-49 | free-nodes #1'
+  name: 473|🇬SG-209.74.82.196-0634
   password: 8Ij4seif85QQHfLmR0zYkQ
   port: 48918
   server: 209.74.82.196
   type: ss
-- name: '473,578,614,615,617,627,638|未知 TROJAN-149 | free-nodes #2'
+- name: '473,578,627,638|未知 TROJAN-149 | free-nodes #1'
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
   server: jp01.trojanyyds.xyz
   skip-cert-verify: false
   type: trojan
-- name: '473,578,614,615,617,627,638|未知 TROJAN-192 | free-nodes #2'
+- name: '473,578,627,638|未知190 #1'
   password: ffec9f6ea19e1dd1
   port: 3389
   server: 5.44.249.43
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-229 | free-nodes #1'
+- name: 473,627,638|未知 TROJAN-229 | free-nodes
   password: 973ef350-f6a5-11ec-9274-1239d0255272
   port: 443
   server: trojan2.udpgw.com
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-287 | free-nodes #1'
+- name: 473,627,638|未知32
   password: FLpONjB2Lb
   port: 443
   server: 139.162.45.139
   skip-cert-verify: false
   type: trojan
-- name: 473,614,615,617,627,638|未知42
+- name: 473,627,638|未知 TROJAN-292 | free-nodes
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
   server: us01.trojanyyds.xyz
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-331 | free-nodes #1'
+- name: 473,627,638|未知 TROJAN-331 | free-nodes
   password: iyinglong
   port: 443
   server: 18.141.8.87
   skip-cert-verify: false
   type: trojan
-- name: 473,614,615,617,627,638|未知124
+- name: 473,627,638|未知 TROJAN-348 | free-nodes
   password: 16bcc187-a1a0-4b8a-8b69-627f38b7cc0d
   port: 80
   server: 15.235.197.4
   skip-cert-verify: false
   sni: anetwork.ir
   type: trojan
-- name: 473,614,615,617,627,638|未知7
+- name: 473,627,638|未知 TROJAN-470 | free-nodes
   password: 79314e99f0a473fe86efc7827942ad00
   port: 443
   server: 68.183.231.236
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '473,578,614,615,617,627,638|未知 TROJAN-547 | free-nodes #1'
+- name: '473,578,627,638|未知154 #1'
   password: iyinglong
   port: 443
   server: 18.140.67.76
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-628 | free-nodes #1'
+- name: 473,627,638|未知 TROJAN-628 | free-nodes
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
   server: in01.trojanyyds.xyz
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-656 | free-nodes #1'
+- name: 473,627,638|未知 TROJAN-656 | free-nodes
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 168.138.189.17
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-808 | free-nodes #1'
+- name: 473,627,638|未知83
   password: iyinglong
   port: 443
   server: 13.213.69.245
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-1002 | free-nodes #1'
+- name: 473,627,638|未知 TROJAN-1002 | free-nodes
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
   server: uk01.trojanyyds.xyz
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-1009 | free-nodes #1'
+- name: 473,627,638|未知57
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
   server: sg01.trojanyyds.xyz
   skip-cert-verify: false
   type: trojan
-- name: 473,614,615,617,627,638|未知3
+- name: 473,627,638|未知 TROJAN-1323 | free-nodes
   password: affae2e0-e84b-11ec-b09f-1239d0255272
   port: 443
   server: trojan1.udpgw.com
   skip-cert-verify: false
   type: trojan
-- name: '473,578,614,615,617,627,638|未知 TROJAN-1536 | free-nodes #1'
+- name: '473,578,627,638|未知187 #1'
   password: 1b26d982-fd68-44f4-bf6d-22fe17a9249a
   port: 20230
   server: sg006.421421.xyz
   skip-cert-verify: false
   sni: www.alibaba.com
   type: trojan
-- name: 473,614,615,617,627,638|未知82
+- name: 473,627,638|未知 TROJAN-1651 | free-nodes
   password: 0c6a3341e8d5ab17
   port: 3389
   server: 103.172.116.196
   skip-cert-verify: false
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-1745 | free-nodes #1'
+- name: 473,627,638|未知78
   password: 08964210-e7b8-11ec-95aa-1239d0255272
   port: 443
   server: w12.udpgw.com
@@ -2545,7 +2622,7 @@ proxies:
   port: 443
   server: 54.254.199.122
   type: ss
-- name: '473,627,638|未知 TROJAN-472 | free-nodes #1'
+- name: 473,627,638|未知 TROJAN-472 | free-nodes
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
   server: sg02.trojanyyds.xyz
@@ -2712,7 +2789,7 @@ proxies:
     path: /anti13.zingfast.vn
 - alterId: 0
   cipher: auto
-  name: 473,627,638|🇸🇬 SG_152
+  name: 473,627,638|🇸🇬 SG_153
   network: ws
   port: 58607
   server: 68.183.178.131
@@ -2737,7 +2814,7 @@ proxies:
   port: 801
   server: 81.90.189.41
   type: ss
-- name: '473,627,638|未知 TROJAN-1458 | free-nodes #1'
+- name: 473,627,638|未知 TROJAN-1458 | free-nodes
   password: 71086710-33eb-11ed-adce-1239d0255272
   port: 443
   server: sg1-trojan.bonds.id
@@ -3136,7 +3213,7 @@ proxies:
   port: 443
   server: 51.79.161.232
   type: ss
-- name: 473,614,615,617,627|🇸🇬SG-15.235.197.4-10857
+- name: 473,627|🇸🇬SG-15.235.197.4-10857
   password: 16bcc187-a1a0-4b8a-8b69-627f38b7cc0d
   port: 80
   server: 15.235.197.4
@@ -3177,70 +3254,70 @@ proxies:
   server: 103.172.116.79
   type: ss
 - cipher: aes-256-gcm
-  name: 537,634|yandex-106
+  name: 537,634|yandex-73
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 18001
   server: sg001.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-107
+  name: 537,634|yandex-74
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 18002
   server: sg002.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-108
+  name: 537,634|yandex-75
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 18003
   server: sg003.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-109
+  name: 537,634|yandex-76
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 18004
   server: sg004.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-110
+  name: 537,634|yandex-77
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 18005
   server: sg005.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-111
+  name: 537,634|yandex-78
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 18006
   server: sg006.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-112
+  name: 537,634|yandex-79
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 18007
   server: sg007.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-113
+  name: 537,634|yandex-80
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 18008
   server: sg008.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-114
+  name: 537,634|yandex-81
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 18009
   server: sg009.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-115
+  name: 537,634|yandex-82
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 18010
   server: sg010.dogsvip.site
@@ -3380,7 +3457,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-665
+  name: 577,634|yandex-585
   network: ws
   port: 16618
   server: t.cnmjcn.cyou
@@ -3395,19 +3472,35 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
-- client-fingerprint: chrome
-  name: 578,719|🏴‍☠️ 🟡-07-168
-  port: 10808
-  server: 213.35.126.34
+- name: '578,638|SG VLESS-77 | free-nodes #1'
+  port: 443
+  server: 38.134.189.186
+  tls: false
+  type: vless
+  uuid: ef4d7a6a-a7f0-48e1-8c77-cd305fdca732
+- alterId: 0
+  cipher: auto
+  country: 🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 587| SG_163
+  network: ws
+  port: 58607
+  server: 68.183.178.131
+  servername: www.12333.monster
   skip-cert-verify: true
-  type: socks5
-  udp: true
+  tls: true
+  type: vmess
+  uuid: c11c32cb-27b3-4afa-c0f3-fb250aa4959e
+  ws-headers:
+    HOST: www.12333.monster
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇬SG
   h2-opts: {}
   http-opts: {}
-  name: 591|🇬SG_63
+  name: 591|🇬SG_66
   network: none
   port: 52752
   server: 8.218.105.196
@@ -4499,12 +4592,6 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: trojan
-- name: '617,638|SG VLESS-77 | free-nodes #1'
-  port: 443
-  server: 38.134.189.186
-  tls: false
-  type: vless
-  uuid: ef4d7a6a-a7f0-48e1-8c77-cd305fdca732
 - name: 625|🇬 新加坡01-1A
   password: 7babdef9-fa9b-4159-b08b-d77a9fc6946f
   port: 31100
@@ -4697,7 +4784,7 @@ proxies:
   sni: sg01.xxxxyyyysbs.sbs
   type: trojan
   udp: true
-- name: 630|🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
+- name: 630,638|🇸🇬SG新加坡2
   password: 8bf6e7d7-23e8-4655-8f07-c3827e2d6ebf
   port: 2053
   server: 51.38.226.4
@@ -4763,7 +4850,7 @@ proxies:
   server: gg21.hangfengjiasu.com
   tfo: false
   type: ss
-- name: 638|防失效github+SubCrawler新加坡_121318...
+- name: 638|防失效github+SubCrawler新加坡_121404...
   password: 52d0cb21-56da-4f00-862f-be01b66446a8
   port: 443
   server: singaporex-1.nezhasu.com
@@ -4771,7 +4858,7 @@ proxies:
   sni: Singaporex-1.nezhasu.com
   tls: false
   type: hysteria2
-- name: 638|新加坡_121318182
+- name: 638|新加坡_121404182
   password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
   port: 443
   server: singaporex-1.nezhasu.com
@@ -4779,31 +4866,20 @@ proxies:
   sni: Singaporex-1.nezhasu.com
   tls: false
   type: hysteria2
-- name: 638|SG新加坡(mibei77.com 米贝节点分享)
-  network: ws
-  password: 8bf6e7d7-23e8-4655-8f07-c3827e2d6ebf
-  port: 2053
-  server: 51.38.226.4
-  sni: joss.dus.biz.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: joss.dus.biz.id
-    path: '%2FFree-VPN-CF-Geo-Project%2F51.38.226.4%3D2053'
-- name: 638|新加坡_121318116
+- name: 638|新加坡_121404116
   network: tcp
   password: aWgKDJmn2q.hv=51
   port: 10293
   server: 139.180.143.191
   sni: zmbvgixwdqusy.advudjng.click
   type: trojan
-- name: 638|新加坡 - 新加坡 - 1-01
+- name: 638|新加坡 - 新加坡 - 1-1
   password: trojan
   port: 443
   server: kinsta.com
   sni: doufeng.pages.dev
   type: trojan
-- name: '638|SG新加坡(mibei77.com 米贝节点分享) #1'
+- name: 638|SG新加坡(mibei77.com 米贝节点分享)
   network: ws
   port: 8880
   server: 104.21.31.4
@@ -4814,7 +4890,7 @@ proxies:
     headers:
       Host: underthegun.cfd.
     path: '%2FFCHANNEL---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY'
-- name: '638|SG新加坡(mibei77.com 米贝节点分享) #2'
+- name: '638|SG新加坡(mibei77.com 米贝节点分享) #1'
   network: ws
   port: 443
   server: 80.76.32.12
@@ -4850,7 +4926,7 @@ proxies:
   uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
   ws-opts:
     path: '%2F'
-- name: '638|SG新加坡(mibei77.com 米贝节点分享) #3'
+- name: '638|SG新加坡(mibei77.com 米贝节点分享) #2'
   network: ws
   port: 443
   server: 45.144.52.23
@@ -4862,7 +4938,7 @@ proxies:
     headers:
       Host: fl-3-direct.djarbnet.ru
     path: '%2Fgetupdates'
-- name: '638|SG新加坡(mibei77.com 米贝节点分享) #4'
+- name: '638|SG新加坡(mibei77.com 米贝节点分享) #3'
   network: ws
   port: 443
   server: fl-3-direct.djarbnet.ru
@@ -4878,6 +4954,20 @@ proxies:
   server: sg007.421421.xyz
   skip-cert-verify: true
   sni: www.alibaba.com
+  type: trojan
+- name: 642|🇸🇬 新加坡 08
+  password: 30b96ca1-faad-4f41-9a42-eafa5b35fba5
+  port: 33301
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 642|🇸🇬 新加坡 06
+  password: 3e348b11-df2a-491b-bb3b-3e940ff7df69
+  port: 33301
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
   type: trojan
 - alterId: 0
   cipher: auto
@@ -4940,23 +5030,117 @@ proxies:
       Host: sap.xiaomayi.nyc.mn
     max-early-data: 2560
     path: /vless-argo
-- name: 656|🇸🇬 新加坡 09-27
-  network: ws
-  password: 0bfa2050-b165-4156-859c-70f36d300dce
-  port: 20230
-  server: sg007.421421.xyz
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 656,719|🇸🇬  02-4
+  network: tcp
+  port: 30401
+  reality-opts:
+    public-key: ZeXA8rcM3TV466jK83J157gY7U2JTI9KP9nmn_Nbawk
+    short-id: 105a652c
+  server: freea.glyphara.com
+  servername: learn.microsoft.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5783fa83-a7ab-4dad-bafe-b6a3c8a8f086
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '656,719|🇸🇬 新加坡 10-38 #1'
+  network: tcp
+  port: 30402
+  reality-opts:
+    public-key: uTOYAGREMpfEr3cQFcLwgMAWwwxjS3e2Yw32kCdN3Ew
+    short-id: f5f6e6f4
+  server: freea.glyphara.com
+  servername: itunes.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5783fa83-a7ab-4dad-bafe-b6a3c8a8f086
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '656,719|🇸🇬 新加坡 12-46 #1'
+  network: tcp
+  port: 30402
+  reality-opts:
+    public-key: uTOYAGREMpfEr3cQFcLwgMAWwwxjS3e2Yw32kCdN3Ew
+    short-id: f5f6e6f4
+  server: freea.glyphara.com
+  servername: itunes.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f422ffef-de23-4885-beeb-fce6ac5832a3
+- name: '656,719|🇸🇬 新加坡 07-78 #1'
+  password: 10f0377c-e459-4526-85ce-c56e19841e31
+  port: 33301
+  server: green2.cdntencentmusic.com
   skip-cert-verify: true
-  sni: www.alibaba.com
+  sni: green2.cdntencentmusic.com
   type: trojan
-  ws-opts:
-    headers:
-      Host: www.alibaba.com
-    path: '%2F'
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '656,719|🇸🇬 新加坡 14-90 #1'
+  network: tcp
+  port: 30401
+  reality-opts:
+    public-key: ZeXA8rcM3TV466jK83J157gY7U2JTI9KP9nmn_Nbawk
+    short-id: 105a652c
+  server: freea.glyphara.com
+  servername: learn.microsoft.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b8dba830-9a40-454e-99e5-fcb8f935a5ef
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '656,719|🇸🇬 新加坡 03-109 #1'
+  network: tcp
+  port: 30401
+  reality-opts:
+    public-key: ZeXA8rcM3TV466jK83J157gY7U2JTI9KP9nmn_Nbawk
+    short-id: 105a652c
+  server: freea.glyphara.com
+  servername: learn.microsoft.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 23ca48f4-dad3-49dc-ab73-1728654bbf8a
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '656,719|🇸🇬 新加坡 16-111 #1'
+  network: tcp
+  port: 30402
+  reality-opts:
+    public-key: uTOYAGREMpfEr3cQFcLwgMAWwwxjS3e2Yw32kCdN3Ew
+    short-id: f5f6e6f4
+  server: freea.glyphara.com
+  servername: itunes.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 286f38b1-8c5f-4242-a509-b340d1186b55
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '656,719|🇸🇬 新加坡 11-152 #1'
+  network: tcp
+  port: 30402
+  reality-opts:
+    public-key: uTOYAGREMpfEr3cQFcLwgMAWwwxjS3e2Yw32kCdN3Ew
+    short-id: f5f6e6f4
+  server: freea.glyphara.com
+  servername: itunes.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 23ca48f4-dad3-49dc-ab73-1728654bbf8a
 - client-fingerprint: firefox
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '674,675|新加坡02|流媒体 #6'
+  name: '674,675|新加坡02|流媒体 #7'
   network: grpc
   port: 20230
   reality-opts:
@@ -4973,7 +5157,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '674,675|新加坡03|流媒体 #6'
+  name: '674,675|新加坡03|流媒体 #7'
   network: grpc
   port: 20230
   reality-opts:
@@ -4990,7 +5174,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '674,675|新加坡04|流媒体 #6'
+  name: '674,675|新加坡04|流媒体 #7'
   network: grpc
   port: 20230
   reality-opts:
@@ -5003,7 +5187,7 @@ proxies:
   type: vless
   udp: true
   uuid: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
-- name: '674,675|tg群组: https://t.me/tjiajc1 #6'
+- name: '674,675|tg群组: https://t.me/tjiajc1 #7'
   network: ws
   password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
   port: 20230
@@ -5012,7 +5196,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '674,675|新加坡06|流媒体 #6'
+- name: '674,675|新加坡06|流媒体 #7'
   network: ws
   password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
   port: 20230
@@ -5021,7 +5205,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '674,675|新加坡07|流媒体 #6'
+- name: '674,675|新加坡07|流媒体 #7'
   network: ws
   password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
   port: 20230
@@ -5030,7 +5214,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '674,675|新加坡08|流媒体 #6'
+- name: '674,675|新加坡08|流媒体 #7'
   network: ws
   password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
   port: 20230
@@ -5039,19 +5223,6 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '719|🇸🇬 新加坡 09-27 #1'
-  network: ws
-  password: 0bfa2050-b165-4156-859c-70f36d300dce
-  port: 20230
-  server: sg007.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.alibaba.com
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 722|🇸🇬Singapore-新加坡1
   password: 0305e0ec-ec7e-4770-9aa3-81e3427f91b6
@@ -5195,33 +5366,33 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 788|GLaDOS-SG-01
+  name: '788|GLaDOS-SG-01 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.blizzard.com:154948
+    host: feb7fa9.dl.microsoft.it:154948
     mode: tls
   port: 2377
   server: feb7fa9.s1.glados-config.com
   type: ss
   udp: false
 - cipher: chacha20-ietf-poly1305
-  name: 788|GLaDOS-SG-02
+  name: '788|GLaDOS-SG-02 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.blizzard.com:154948
+    host: feb7fa9.dl.microsoft.md:154948
     mode: tls
   port: 2377
   server: feb7fa9.s2.glados-config.com
   type: ss
   udp: false
 - cipher: chacha20-ietf-poly1305
-  name: 788|GLaDOS-SG-03
+  name: '788|GLaDOS-SG-03 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.is:154948
+    host: feb7fa9.dl.blizzard.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.s3.glados-config.com

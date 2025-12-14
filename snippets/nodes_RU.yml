@@ -114,7 +114,7 @@ proxies:
   server: 45.138.157.162
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '473,524,578,614,615|[SS] 未知 SS-92 | free-nodes #1'
+  name: 473,524|🇷🇺 RU-5.182.37.87-0325
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
@@ -156,32 +156,32 @@ proxies:
       Host: ''
     path: /6e9EtZ2dL
 - cipher: aes-256-gcm
-  name: '473,578,614,615|[SS] 未知 SS-03 | free-nodes #1'
+  name: 473|🇷🇺RU-193.228.128.82-0620
   password: 836d7fac-063e-42a0-baf5-b6ecd2db18fc
   port: 443
   server: 193.228.128.82
   type: ss
-- name: 473,614,615,617,627,630,638|🇷🇺_RU_俄罗斯
+- name: 473,627,630,638|🇷🇺_RU_俄罗斯
   password: af4b064a9c39472fb34ad8b113acdc6b
   port: 443
   server: 46.29.161.237
   skip-cert-verify: true
   sni: 46.29.161.237
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-583 | free-nodes #1'
+- name: 473,627,638|未知 TROJAN-583 | free-nodes
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 45.88.148.234
   skip-cert-verify: false
   type: trojan
-- name: 473,614,615,617,627,638|未知122
+- name: 473,627,638|未知 TROJAN-860 | free-nodes
   password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910
   port: 28443
   server: 45.88.148.237
   skip-cert-verify: false
   sni: sbank.ir
   type: trojan
-- name: '473,614,615,617,627,638|未知 TROJAN-1262 | free-nodes #1'
+- name: 473,627,638|未知 TROJAN-1262 | free-nodes
   password: 6c7d536e-1ecf-448d-83c1-3044dd89ceac
   port: 443
   server: 5.182.39.57
@@ -336,12 +336,13 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇺RU
-  name: 473,591|🇺RU_60
+  country: 🇷🇺RU
+  name: 473,591,719|🇰🇿  01-19
   password: s8LbJCgUiGXeCKVc63tHJP
   port: 64674
   server: 94.198.220.183
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 473|🇺RU-38.60.223.8-6999
   password: f8f7aCzcPKbsF8p3
@@ -462,6 +463,21 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇷🇺 RU_149
+  network: tcp
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -806,21 +822,18 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
+- name: 638|🇷🇺RU_150
+  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
+  port: 443
+  server: hk-full.privateip.net
+  sni: hk-full.privateip.net
+  type: trojan
 - name: 638|俄罗斯 - 多莫傑多沃 - 1
   password: trojan
   port: 2053
   server: 65.109.214.6
   sni: tianjiu.pages.dev
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 638|🇷🇺 俄罗斯 V2CROSS.COM
-  network: tcp
-  port: '100'
-  server: cpanel.navar1.ir
-  tls: false
-  type: vmess
-  uuid: 95c6f6f0-84f7-4443-8a50-a59f8e66f5ee
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
