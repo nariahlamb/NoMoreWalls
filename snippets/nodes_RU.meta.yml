@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400,577,620,632,637|14|RU_speednode_0005 #1'
+  name: '400,637|14|RU_speednode_0005 #1'
   port: 443
   server: 51.250.20.121
   servername: ads.x5.ru
@@ -11,7 +11,7 @@ proxies:
   uuid: 20cf5921-f7fa-47c5-81ae-947fbef83a4d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400,523,577,620,632,637|14|RU_speednode_0006 #1'
+  name: '400,523,577,637|14|RU_speednode_0006 #1'
   network: tcp
   port: 1488
   reality-opts:
@@ -26,7 +26,7 @@ proxies:
   uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400,620,632,637|14|RU_speednode_0007 #1'
+  name: '400,637|14|RU_speednode_0007 #1'
   port: 443
   server: 89.23.101.203
   servername: www.vk.com
@@ -36,7 +36,7 @@ proxies:
   uuid: d5f7970e-121f-4e6f-9acf-250effc0715b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400,523,577,620,632,637|14|RU_speednode_0008 #1'
+  name: '400,523,577,637|14|RU_speednode_0008 #1'
   network: tcp
   port: 1488
   reality-opts:
@@ -50,7 +50,7 @@ proxies:
   type: vless
   uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
 - client-fingerprint: chrome
-  name: '400,577,620,632,637,655,718|🏴‍☠️ 🟡-14-188 #1'
+  name: '400,577,637,655,718|🏴‍☠️ 🟡-14-185 #1'
   network: tcp
   port: 35728
   reality-opts:
@@ -59,6 +59,7 @@ proxies:
   server: 178.236.16.98
   servername: yahoo.com
   skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   udp: true
@@ -268,7 +269,7 @@ proxies:
   server: 45.138.157.162
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472,523|🇷🇺 RU-5.182.37.87-0269
+  name: 472,523,577|未知 SS-92 | free-nodes
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
@@ -483,7 +484,7 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 472,633|yandex-3099
+  name: 472,633|yandex-3088
   password: s8LbJCgUiGXeCKVc63tHJP
   port: 64674
   server: 94.198.220.183
@@ -659,7 +660,7 @@ proxies:
   udp: true
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 577|RU VLESS-16 | free-nodes
+  name: 577|🇷🇺 RU VLESS-16 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -667,7 +668,9 @@ proxies:
     short-id: 7755e972daf8eec8
   server: net2.intfreed.ru
   servername: video.intfreed.ru
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
 - client-fingerprint: qq
@@ -680,12 +683,14 @@ proxies:
     short-id: 7755e972daf8eec8
   server: swiss.intfreed.ru
   servername: swiss.video.intfreed.ru
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 577|RU VLESS-47 | free-nodes
+  name: 577|🇷🇺 RU VLESS-47 | free-nodes
   network: tcp
   port: 4443
   reality-opts:
@@ -693,12 +698,14 @@ proxies:
     short-id: aa7e96542880027a
   server: 185.251.90.45
   servername: github.com
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 281d153a-2fae-4725-84ed-602fb3627ca6
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 577|RU VLESS-52 | free-nodes
+  name: 577|🇷🇺 RU VLESS-52 | free-nodes
   network: tcp
   port: 2443
   reality-opts:
@@ -706,7 +713,9 @@ proxies:
     short-id: c84a28bb05989ff4
   server: 158.160.175.98
   servername: yandex.ru
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 62b0e46b-d2a5-423d-8457-95bde707fc19
 - client-fingerprint: chrome
@@ -719,9 +728,26 @@ proxies:
     short-id: 5540e44a53c3d01c
   server: 217.16.24.170
   servername: api-maps.yandex.ru
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
+- alterId: 0
+  cipher: auto
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 586,637|🇷🇺 RU_135
+  network: tcp
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - name: 602|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1498,7 +1524,7 @@ proxies:
   uuid: 2a2a6062-003c-0004-b293-ee0d0416afee
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '637|RU VLESS-02 | free-nodes #1'
+  name: 637|RU VLESS-02 | free-nodes
   network: tcp
   port: 8444
   reality-opts:
@@ -1607,16 +1633,6 @@ proxies:
     headers:
       Host: lh44.999894.xyz
     path: '%2Fproxyip%3Dsjc.o00o.ooo'
-- alterId: 0
-  cipher: auto
-  name: 637|🇷🇺 RU_135
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - name: 763|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
