@@ -198,19 +198,19 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-5.182.37.87-0284
+  name: 473,524|🇷🇺 RU-5.182.37.87-0284
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-45.138.157.162-0325
+  name: 473,524|🇷🇺 RU-45.138.157.162-0325
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇺RU-45.89.55.173-0332
+  name: 473,524|🇷🇺 RU-45.89.55.173-0332
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
@@ -533,13 +533,15 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '524,638|🇷🇺_RU_俄罗斯 #9'
+  name: '524,638|🇷🇺_RU_俄罗斯 #7'
   network: tcp
   port: 443
   reality-opts:
     public-key: zkeQCEkz7LlrzwzeG26Ae_HEk3_QlgM9CbiWJx5iWh0
   server: 83.166.255.72
   servername: 01.img.avito.st
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: eb162ab1-a006-4931-b1b3-8fc88a22b10e
@@ -571,7 +573,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '572,574,575,576|俄罗斯RU-A #6'
+  name: '571,572,573,574,575,576|俄罗斯RU-A #8'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1671
   server: a.mjanyt.com
@@ -583,7 +585,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '577|俄罗斯RU-A #7'
+  name: '577|俄罗斯RU-A #9'
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 1671
   server: a.mjanyt.com
@@ -591,6 +593,21 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇷🇺 RU_149
+  network: tcp
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - name: 603|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1346,7 +1363,7 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: '638|🇷🇺_RU_俄罗斯 #2'
+- name: 638|🇷🇺_RU_俄罗斯
   password: af4b064a9c39472fb34ad8b113acdc6b
   port: 443
   server: 46.29.161.237
@@ -1373,7 +1390,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '638|🇷🇺_RU_俄罗斯 #3'
+  name: '638|🇷🇺_RU_俄罗斯 #1'
   network: tcp
   port: 4443
   reality-opts:
@@ -1405,7 +1422,7 @@ proxies:
   uuid: 281d153a-2fae-4725-84ed-602fb3627ca6
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '638|🇷🇺_RU_俄罗斯 #4'
+  name: '638|🇷🇺_RU_俄罗斯 #2'
   network: tcp
   port: 8443
   reality-opts:
@@ -1418,7 +1435,7 @@ proxies:
   uuid: 2a2a6062-003c-0004-b293-ee0d0416afee
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '638|🇷🇺_RU_俄罗斯 #5'
+  name: '638|🇷🇺_RU_俄罗斯 #3'
   network: tcp
   port: 1488
   reality-opts:
@@ -1483,7 +1500,7 @@ proxies:
   uuid: bf92bdef-ab8d-4481-8798-2d39023357b2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '638|🇷🇺_RU_俄罗斯 #7'
+  name: '638|🇷🇺_RU_俄罗斯 #5'
   network: tcp
   port: 443
   reality-opts:
@@ -1496,7 +1513,7 @@ proxies:
   uuid: cb7188cf-2c3a-43a5-af90-d893922e4917
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '638|🇷🇺_RU_俄罗斯 #8'
+  name: '638|🇷🇺_RU_俄罗斯 #6'
   network: tcp
   port: 443
   reality-opts:
@@ -1525,16 +1542,6 @@ proxies:
     path: '%2Fproxyip%3Dsjc.o00o.ooo'
 - alterId: 0
   cipher: auto
-  name: 638|🇷🇺 RU_149
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
   name: 642,854|【机场推荐：https://a0a.xyz/】28
   network: ws
   port: '2052'
@@ -1547,16 +1554,6 @@ proxies:
     headers:
       Host: 2112176225.online.video.downloader.0123456789ru.xn--11x.org
     path: /
-- name: 656|🇷🇺 俄罗斯联邦 01-3
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D
-  password: c458e5cf-812f-4233-829c-f90d85755730
-  port: 35670
-  server: wqels.wqtd.mom
-  skip-cert-verify: true
-  sni: wqels.wqtd.mom
-  tls: false
-  type: hysteria2
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
@@ -1572,4 +1569,15 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇷🇺 Russia 046 #3'
+  password: 11575f448fb4021fc611
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45930
+  server: ru046.jd.kunlunpx.com
+  type: ss
   udp: true
