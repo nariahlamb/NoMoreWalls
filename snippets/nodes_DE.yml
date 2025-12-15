@@ -422,12 +422,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,627|🇩🇪DE-57.129.24.125-0304
+  name: 473,524,627|🇩🇪DE-57.129.24.125-0304
   network: ws
   port: 443
   server: 57.129.24.125
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -436,7 +436,7 @@ proxies:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇪DE-87.121.162.249-0401
+  name: 473,524|🇩🇪 DE-87.121.162.249-0408
   password: JGv616hMWdjfuZ00jYfq7XkBHJZrOBrg
   port: 443
   server: 87.121.162.249
@@ -1363,19 +1363,23 @@ proxies:
     headers:
       Host: ''
     path: linkvws
-- name: 473,627,638|🇩🇪DE_39
+- country: 🇪DE
+  name: 473,587,627,638|🇩🇪DE_39
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: de2-full.privateip.net
   type: trojan
-- name: 473,627|🇩🇪DE-51.195.101.222-4816
+  udp: true
+- country: 🇫🇷FR
+  name: 473,587,627|🇩🇪DE-51.195.101.222-4816
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 473|DE-193.108.117.75-5493
   password: PCnnH6SQSnfoS27
@@ -1567,7 +1571,7 @@ proxies:
     path: /chat
 - alterId: 0
   cipher: auto
-  name: '473,524,578,627|🇩🇪DE-57.129.24.125-7133 #1'
+  name: 473,578,627|🇩🇪DE-57.129.24.125-7133
   network: ws
   port: 443
   server: 57.129.24.125
@@ -2665,6 +2669,40 @@ proxies:
   tls: false
   type: vmess
   uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
+- alterId: 0
+  cipher: auto
+  country: 🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇪 DE_35
+  network: ws
+  port: 443
+  server: 141.95.126.134
+  servername: jamekk.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: jamekk.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇩🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇪 DE_36
+  network: ws
+  port: 443
+  server: 141.94.155.224
+  servername: fapeng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: fapeng.org
+  ws-path: linkvws
 - name: '603|德国_Frankfurt am Main #3'
   network: ws
   password: NISHIKUITAN222
@@ -2813,6 +2851,17 @@ proxies:
   skip-cert-verify: false
   sni: awaited-chicken.adder289.quest
   type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  delay: 815
+  name: '623,656,719|🏴‍☠️ 🟠-01-176 #1'
+  network: none
+  port: 50255
+  server: 45.80.188.48
+  tls: false
+  type: vmess
+  uuid: bc140c02-25a9-4feb-96bb-7d772b17fd17
 - name: 625|🇪 德国01-1B
   password: 047b80e0-b81a-4058-b098-01b0a4965b3e
   port: 46100
@@ -4078,13 +4127,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 642|🇩🇪 德国 68
-  password: telegram-id-directvpn
-  port: 22223
-  server: 63.176.121.99
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 687|A05-德国 倍率:0.01 dh
