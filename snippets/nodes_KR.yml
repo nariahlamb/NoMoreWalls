@@ -242,23 +242,20 @@ proxies:
   sni: appsvs.shop
   type: trojan
 - cipher: aes-256-cfb
-  country: 🇸 US
-  name: 473,524,587,634|yandex-2680
+  name: 473,524,634|yandex-2656
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇺🇸 US
-  name: 473,524,587|🇸 US_160
+  name: 473,524|🇰🇷 KR-154.90.62.168-0326
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 473,524,587,634|yandex-2812
+  name: 473,524,578,634|yandex-2788
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -271,8 +268,7 @@ proxies:
   server: 141.164.45.187
   type: ss
 - cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 473,524,587,634|yandex-2609
+  name: 473,524,634|yandex-2585
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
@@ -660,9 +656,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 473,524,627|🇰🇷KR-146.56.177.166-4842
+  name: 473,524,627,638|韩国_121604001
   network: ws
-  port: 443
+  port: '443'
   server: seoul03.zgjok.com
   servername: seoul03.zgjok.com
   skip-cert-verify: true
@@ -922,12 +918,18 @@ proxies:
   server: 125.141.26.5
   type: ss
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2936
+  name: 537,634|yandex-3294
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 21001
   server: kr001.dogsvip.site
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 578|🇰🇷 韩国
+  password: 5b751724-20b0-49a5-87fb-b0eb95b4485e
+  port: 15151
+  server: 36.141.40.46
+  type: ss
 - name: '603|韩国_春川市 #3'
   network: ws
   password: NISHIKUITAN222
@@ -1160,21 +1162,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 638|🇰🇷 KR_78
-  network: ws
-  port: 16629
-  server: 49.128.204.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2c78877c-6472-45da-ae89-9b9d6e3ec5e6
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 638|韩国_121518040 M64
+  name: 638|韩国_121604040 M64
   network: ''
   port: '8888'
   server: 146.56.112.110
@@ -1184,19 +1172,10 @@ proxies:
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
 - alterId: 0
   cipher: auto
-  name: 642|🇰🇷 韩国 05
+  name: 642,656|🇰🇷 韩国 05-72
   network: tcp
   port: '45075'
   server: hxb.dashuai.help
-  tls: false
-  type: vmess
-  uuid: bfe3ddb9-a691-4120-ba64-98ac7902274f
-- alterId: 0
-  cipher: auto
-  name: 656|🇰🇷 韩国 06-66
-  network: tcp
-  port: '45076'
-  server: hxa.dashuai.help
   tls: false
   type: vmess
   uuid: bfe3ddb9-a691-4120-ba64-98ac7902274f
@@ -1220,9 +1199,9 @@ proxies:
   uuid: 8775ec53-510a-3033-b4ad-a00d96def8dd
 - alterId: 0
   cipher: auto
-  name: 719|🇰🇷 国 06-66
-  port: 45076
-  server: hxa.dashuai.help
+  name: '719|🇰🇷 韩国 05-72 #1'
+  port: 45075
+  server: hxb.dashuai.help
   tls: false
   type: vmess
   udp: true
@@ -1242,6 +1221,17 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇰🇷 SouthKorea 037 #3'
+  password: d7577ca6729babe0790f
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45921
+  server: kr037.jd.kunlunpx.com
+  type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 860|KR-IDC-节点1

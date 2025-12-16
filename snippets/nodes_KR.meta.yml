@@ -200,7 +200,8 @@ proxies:
     headers:
       Host: i1.hdslb.com
     path: /download
-- name: '401,578,621,633,638|9|KR #1'
+- auth: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  name: '401,578,621,633,638|9|KR #1'
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2056
   server: cc1.mangshe.xyz
@@ -326,23 +327,20 @@ proxies:
   sni: appsvs.shop
   type: trojan
 - cipher: aes-256-cfb
-  country: 🇸 US
-  name: 473,524,587,634|yandex-2680
+  name: 473,524,634|yandex-2656
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇺🇸 US
-  name: 473,524,587|🇸 US_160
+  name: 473,524|🇰🇷 KR-154.90.62.168-0326
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 473,524,587,634|yandex-2812
+  name: 473,524,578,634|yandex-2788
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -355,8 +353,7 @@ proxies:
   server: 141.164.45.187
   type: ss
 - cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 473,524,587,634|yandex-2609
+  name: 473,524,634|yandex-2585
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
@@ -744,9 +741,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 473,524,627|🇰🇷KR-146.56.177.166-4842
+  name: 473,524,627,638|韩国_121604001
   network: ws
-  port: 443
+  port: '443'
   server: seoul03.zgjok.com
   servername: seoul03.zgjok.com
   skip-cert-verify: true
@@ -1006,7 +1003,7 @@ proxies:
   server: 125.141.26.5
   type: ss
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2936
+  name: 537,634|yandex-3294
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 21001
   server: kr001.dogsvip.site
@@ -1096,6 +1093,12 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 578|🇰🇷 韩国
+  password: 5b751724-20b0-49a5-87fb-b0eb95b4485e
+  port: 15151
+  server: 36.141.40.46
+  type: ss
 - name: 603|韩国_首尔特别市
   network: ws
   port: 8443
@@ -1675,7 +1678,7 @@ proxies:
   type: trojan
 - cipher: auto
   client-fingerprint: chrome
-  name: '638,656,719|🏴‍☠️ 🟡-12-207 #1'
+  name: '638,656,719|🏴‍☠️ 🟡-12-191 #1'
   network: none
   port: 36656
   server: 49.128.204.85
@@ -1685,21 +1688,7 @@ proxies:
   uuid: 9f2810ca-b45a-4012-baaf-046d52d1e025
 - alterId: 0
   cipher: auto
-  name: 638|🇰🇷 KR_78
-  network: ws
-  port: 16629
-  server: 49.128.204.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2c78877c-6472-45da-ae89-9b9d6e3ec5e6
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 638|韩国_121518040 M64
+  name: 638|韩国_121604040 M64
   network: ''
   port: '8888'
   server: 146.56.112.110
@@ -1709,23 +1698,66 @@ proxies:
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
 - alterId: 0
   cipher: auto
-  name: 642|🇰🇷 韩国 05
+  name: 642,656|🇰🇷 韩国 05-72
   network: tcp
   port: '45075'
   server: hxb.dashuai.help
   tls: false
   type: vmess
   uuid: bfe3ddb9-a691-4120-ba64-98ac7902274f
-- alterId: 0
-  cipher: auto
-  name: 656|🇰🇷 韩国 06-66
-  network: tcp
-  port: '45076'
-  server: hxa.dashuai.help
-  tls: false
-  type: vmess
-  uuid: bfe3ddb9-a691-4120-ba64-98ac7902274f
-- name: 656,719|🇰🇷 -03-211
+- client-fingerprint: chrome
+  name: 656|🇰🇷 韩国 03-34
+  network: ws
+  port: 27443
+  server: 211.229.77.184
+  servername: c.iamdt.dpdns.org
+  tls: true
+  type: vless
+  uuid: 53342b53-157e-4475-9f3a-40439434e689
+  ws-opts:
+    headers:
+      Host: c.iamdt.dpdns.org
+    path: '%2F%3Fed%3D2048'
+- client-fingerprint: chrome
+  name: 656|🇰🇷 韩国 01-67
+  network: ws
+  port: 50001
+  server: 115.22.115.218
+  servername: c.iamdt.dpdns.org
+  tls: true
+  type: vless
+  uuid: 53342b53-157e-4475-9f3a-40439434e689
+  ws-opts:
+    headers:
+      Host: c.iamdt.dpdns.org
+    path: '%2F%3Fed%3D2048'
+- client-fingerprint: chrome
+  name: 656|🇰🇷 韩国 02-99
+  network: ws
+  port: 50003
+  server: 175.215.175.175
+  servername: c.iamdt.dpdns.org
+  tls: true
+  type: vless
+  uuid: 53342b53-157e-4475-9f3a-40439434e689
+  ws-opts:
+    headers:
+      Host: c.iamdt.dpdns.org
+    path: '%2F%3Fed%3D2048'
+- client-fingerprint: chrome
+  name: 656|🇰🇷 韩国 04-125
+  network: ws
+  port: 50001
+  server: 59.31.68.195
+  servername: c.iamdt.dpdns.org
+  tls: true
+  type: vless
+  uuid: 53342b53-157e-4475-9f3a-40439434e689
+  ws-opts:
+    headers:
+      Host: c.iamdt.dpdns.org
+    path: '%2F%3Fed%3D2048'
+- name: '656,719|🇰🇷 韩国-03-195 #1'
   password: 7c771fa7-5625-4eb3-9768-3bac68383d3b
   port: 23001
   server: kr3.xn--mesx36n.com
@@ -1752,15 +1784,79 @@ proxies:
   type: vmess
   udp: true
   uuid: 8775ec53-510a-3033-b4ad-a00d96def8dd
+- client-fingerprint: chrome
+  name: 719|🇰🇷 国 03-34
+  network: ws
+  port: 27443
+  server: 211.229.77.184
+  servername: c.iamdt.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53342b53-157e-4475-9f3a-40439434e689
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: c.iamdt.dpdns.org
+    max-early-data: 2048
+    path: /
+- client-fingerprint: chrome
+  name: '719|🇰🇷 韩国 01-67 #1'
+  network: ws
+  port: 50001
+  server: 115.22.115.218
+  servername: c.iamdt.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53342b53-157e-4475-9f3a-40439434e689
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: c.iamdt.dpdns.org
+    max-early-data: 2048
+    path: /
 - alterId: 0
   cipher: auto
-  name: 719|🇰🇷 国 06-66
-  port: 45076
-  server: hxa.dashuai.help
+  name: '719|🇰🇷 韩国 05-72 #1'
+  port: 45075
+  server: hxb.dashuai.help
   tls: false
   type: vmess
   udp: true
   uuid: bfe3ddb9-a691-4120-ba64-98ac7902274f
+- client-fingerprint: chrome
+  name: '719|🇰🇷 韩国 02-99 #1'
+  network: ws
+  port: 50003
+  server: 175.215.175.175
+  servername: c.iamdt.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53342b53-157e-4475-9f3a-40439434e689
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: c.iamdt.dpdns.org
+    max-early-data: 2048
+    path: /
+- client-fingerprint: chrome
+  name: '719|🇰🇷 韩国 04-125 #1'
+  network: ws
+  port: 50001
+  server: 59.31.68.195
+  servername: c.iamdt.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53342b53-157e-4475-9f3a-40439434e689
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: c.iamdt.dpdns.org
+    max-early-data: 2048
+    path: /
 - name: 764|韩国01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10836
@@ -1776,6 +1872,17 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇰🇷 SouthKorea 037 #3'
+  password: d7577ca6729babe0790f
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45921
+  server: kr037.jd.kunlunpx.com
+  type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 860|KR-IDC-节点1
