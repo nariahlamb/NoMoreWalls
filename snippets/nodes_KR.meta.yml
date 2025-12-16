@@ -200,7 +200,8 @@ proxies:
     headers:
       Host: i1.hdslb.com
     path: /download
-- name: '401,578,621,633,638|9|KR #1'
+- auth: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  name: '401,578,621,633,638|9|KR #1'
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2056
   server: cc1.mangshe.xyz
@@ -341,33 +342,37 @@ proxies:
       Host: seoul03.zgjok.com
     path: /
 - cipher: aes-256-gcm
-  name: 473,524|🇰🇷 KR-141.164.45.187-0374
+  name: 473|🇷KR-141.164.45.187-0315
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 141.164.45.187
   type: ss
 - cipher: aes-256-cfb
-  name: 473,524,634|yandex-3127
+  country: 🇸 US
+  name: 473,587,634|yandex-3127
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 473,524|🇰🇷 KR-154.90.62.168-0366
+  country: 🇺🇸 US
+  name: 473,587|🇺🇸 US_149
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
-  name: 473,524,634|yandex-3056
+  country: 🇷 KR
+  name: 473,587,634|yandex-3056
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 473,524,634|yandex-3259
+  country: 🇷 KR
+  name: 473,578,587,634|yandex-3259
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -1077,6 +1082,23 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 578|🇰🇷 韩国
+  password: 5b751724-20b0-49a5-87fb-b0eb95b4485e
+  port: 15151
+  server: 36.141.40.46
+  type: ss
+- client-fingerprint: chrome
+  name: 578,719|🏴‍☠️ -07-188
+  password: test.+
+  port: 30446
+  server: testkr3.ssv.vc
+  skip-cert-verify: true
+  sni: testkr3.ssv.vc
+  tls: true
+  type: http
+  udp: true
+  username: test
 - name: 603|韩国_首尔特别市
   network: ws
   port: 8443
@@ -1672,6 +1694,69 @@ proxies:
   tls: false
   type: vmess
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+- alterId: 0
+  cipher: auto
+  name: 656|🇰🇷 韩国 01-17
+  network: tcp
+  port: '45075'
+  server: hxb.dashuai.help
+  tls: false
+  type: vmess
+  uuid: 010d85f9-f06f-4538-944c-c830f6a2d636
+- alterId: 0
+  cipher: auto
+  name: 656|🇰🇷 韩国 05-49
+  network: tcp
+  port: '45076'
+  server: hxa.dashuai.help
+  tls: false
+  type: vmess
+  uuid: 0e634b81-aa4b-4ad6-860b-5c913346d226
+- alterId: 0
+  cipher: auto
+  name: 656|🇰🇷 韩国 07-66
+  network: tcp
+  port: '45075'
+  server: hxb.dashuai.help
+  tls: false
+  type: vmess
+  uuid: dd79d882-2c4b-4e02-bf9c-3c5df751531a
+- alterId: 0
+  cipher: auto
+  name: 656|🇰🇷 韩国 03-86
+  network: tcp
+  port: '45075'
+  server: hxb.dashuai.help
+  tls: false
+  type: vmess
+  uuid: 9b3d8da4-394a-413f-be56-b0203ccc6786
+- alterId: 0
+  cipher: auto
+  name: 656|🇰🇷 韩国 09-100
+  network: tcp
+  port: '45075'
+  server: hxb.dashuai.help
+  tls: false
+  type: vmess
+  uuid: 0e634b81-aa4b-4ad6-860b-5c913346d226
+- alterId: 0
+  cipher: auto
+  name: 656|🇰🇷 韩国 04-110
+  network: tcp
+  port: '45076'
+  server: hxa.dashuai.help
+  tls: false
+  type: vmess
+  uuid: 9b3d8da4-394a-413f-be56-b0203ccc6786
+- alterId: 0
+  cipher: auto
+  name: 656|🇰🇷 韩国 02-139
+  network: tcp
+  port: '45075'
+  server: hxb.dashuai.help
+  tls: false
+  type: vmess
+  uuid: 01d51059-c763-4cdc-b918-2cfcb8db5704
 - alterId: 0
   cipher: auto
   name: 687|C05-韩国春川 倍率:0.5
