@@ -828,8 +828,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- country: 🇰HK
-  name: 296,401,473,524,591,621,627,630,633,635,636,638|11,12|香港3|@ripaojiedian
+- name: 296,401,473,524,621,627,630,633,635,636,638|11,12|香港3|@ripaojiedian
   network: tcp
   password: e2722c0fb503f8a592436c12bce0509a
   port: 443
@@ -837,7 +836,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - name: 296,401,473,621,627,630,633,635,636,638|11,12|香港4|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -1599,7 +1597,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇰 HK
-  name: 473,587|🇰 HK_56
+  name: 473,587| HK_52
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
@@ -1722,7 +1720,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 473,627,630,638|🇭🇰HK-203.198.28.145-1002
+  name: 473,524,609,610,627,630,638|🇭🇰HK-203.198.28.145-1002
   network: ws
   port: '52513'
   server: aflzzul.meiquankongjian.com
@@ -2364,7 +2362,8 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-gcm
-  name: 473|🇭🇰HK-18.163.115.140-4923
+  country: 🇸 US
+  name: 473,587|🇸 US_149
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 19888
   server: ss.008.node-for-bigairport.win
@@ -4454,13 +4453,15 @@ proxies:
     headers:
       Host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
-- name: 524,609,610,634|yandex-3163
-  password: BxceQaOe
-  port: 443
-  server: 219.79.214.159
-  sni: t.me%25252Fripaojiedian
-  type: trojan
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 524,609,610,630,638,656|🏴‍☠️ -5-156
+  network: tcp
+  port: '30830'
+  server: v30.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-gcm
   name: 537,634|yandex-3172
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
@@ -5004,19 +5005,12 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
-- cipher: aes-256-gcm
-  country: 🇰 HK
-  name: 587|🇰 HK_55
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 10079
-  server: ss.030.node-for-bigairport.win
-  type: ss
 - alterId: 2
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 587|🇰 HK_58
+  name: 587|🇰 HK_55
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -5029,7 +5023,7 @@ proxies:
   country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 587|🇰 HK_59
+  name: 587|🇰 HK_56
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -5038,24 +5032,36 @@ proxies:
   uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
   ws-path: /
 - cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: 591|🇭🇰HK_22
+  country: 🇰HK
+  name: 591|HK_24
   password: asd123456
   port: 8388
-  server: 103.149.182.79
+  server: 103.149.183.200
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 591|🇭🇰HK_23
+  name: 591|🇭🇰HK_26
   network: tcp
   port: 38141
   server: 45.136.12.37
   skip-cert-verify: true
   type: vmess
   uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 591|🇭🇰HK_28
+  network: none
+  port: 13852
+  server: 45.207.157.29
+  skip-cert-verify: true
+  type: vmess
+  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
 - name: 603|香港_香港
   network: ws
   port: 2053
@@ -6440,105 +6446,6 @@ proxies:
   tls: true
   type: vless
   uuid: 1c3171af-60cc-4dd9-be65-e852d0306a8e
-- name: '656,719|🇭🇰 香港01HKT-272 #1'
-  password: 57c5f845-ea6a-45e7-9a9e-23b5a3df07f8
-  port: 8080
-  server: 175.29.23.21
-  skip-cert-verify: false
-  sni: hkmax01.376897.xyz
-  tls: false
-  type: hysteria2
-  udp: true
-- name: '656,719|🇭🇰 香港02HKT-273 #1'
-  password: 57c5f845-ea6a-45e7-9a9e-23b5a3df07f8
-  port: 8080
-  server: hkmax03.476579.xyz
-  skip-cert-verify: false
-  sni: hkmax03.476579.xyz
-  tls: false
-  type: hysteria2
-  udp: true
-- name: '656,719|🇭🇰 香港03HKT-274 #1'
-  password: 57c5f845-ea6a-45e7-9a9e-23b5a3df07f8
-  port: 8080
-  server: 202.85.53.103
-  skip-cert-verify: false
-  sni: hkmax06.767887.xyz
-  tls: false
-  type: hysteria2
-  udp: true
-- name: '656,719|🇭🇰 香港04HKT-275 #1'
-  password: 57c5f845-ea6a-45e7-9a9e-23b5a3df07f8
-  port: 8080
-  server: 202.85.53.125
-  skip-cert-verify: false
-  sni: hkt04.476579.xyz
-  tls: false
-  type: hysteria2
-  udp: true
-- name: '656,719|🇭🇰 香港05HKT-276 #1'
-  password: 57c5f845-ea6a-45e7-9a9e-23b5a3df07f8
-  port: 8080
-  server: 202.85.53.135
-  skip-cert-verify: false
-  sni: hkt05.476579.xyz
-  tls: false
-  type: hysteria2
-  udp: true
-- name: '656,719|🇭🇰 香港06HKT-277 #1'
-  password: 57c5f845-ea6a-45e7-9a9e-23b5a3df07f8
-  port: 8080
-  server: 202.85.53.140
-  skip-cert-verify: false
-  sni: hkt06.476579.xyz
-  tls: false
-  type: hysteria2
-  udp: true
-- name: '656,719|🇭🇰 香港07HKT-278 #1'
-  password: 57c5f845-ea6a-45e7-9a9e-23b5a3df07f8
-  port: 8080
-  server: 202.85.53.141
-  skip-cert-verify: false
-  sni: hkt07.344233.cc
-  tls: false
-  type: hysteria2
-  udp: true
-- name: '656,719|🇭🇰 香港08HKT-279 #1'
-  password: 57c5f845-ea6a-45e7-9a9e-23b5a3df07f8
-  port: 8080
-  server: 202.85.53.142
-  skip-cert-verify: false
-  sni: hkt08.344233.cc
-  tls: false
-  type: hysteria2
-  udp: true
-- name: '656,719|🇭🇰 香港09HKT-280 #1'
-  password: 57c5f845-ea6a-45e7-9a9e-23b5a3df07f8
-  port: 8080
-  server: 202.85.53.169
-  skip-cert-verify: false
-  sni: hkt09.344233.cc
-  tls: false
-  type: hysteria2
-  udp: true
-- name: '656,719|🇭🇰 香港10HKT-281 #1'
-  password: 57c5f845-ea6a-45e7-9a9e-23b5a3df07f8
-  port: 8080
-  server: hkt10.344233.cc
-  skip-cert-verify: false
-  sni: hkt10.344233.cc
-  tls: false
-  type: hysteria2
-  udp: true
-- name: '656,719|🇭🇰 香港11HKT-282 #1'
-  password: 57c5f845-ea6a-45e7-9a9e-23b5a3df07f8
-  port: 8080
-  server: hkmax01.767887.xyz
-  skip-cert-verify: false
-  sni: hkmax01.767887.xyz
-  tls: false
-  type: hysteria2
-  udp: true
 - name: '691|HK #3'
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
