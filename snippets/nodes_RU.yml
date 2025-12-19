@@ -480,14 +480,6 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: 591,634|yandex-3434
-  password: HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk
-  port: 443
-  server: 194.246.114.101
-  type: ss
-  udp: true
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -889,4 +881,15 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇷🇺 Russia 046 #3'
+  password: 11575f448fb4021fc611
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45930
+  server: ru046.jd.kunlunpx.com
+  type: ss
   udp: true
