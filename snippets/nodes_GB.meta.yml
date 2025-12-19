@@ -181,8 +181,9 @@ proxies:
   server: 145.239.6.202
   type: ss
 - cipher: aes-128-gcm
+  country: 🇧 GB
   delay: 1943
-  name: '454,455,473,623|英国 - Stretford - M247 Europe S... #1'
+  name: 454,455,473,587,623,634|yandex-3749
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -436,7 +437,7 @@ proxies:
 - cipher: rc4-md5
   client-fingerprint: chrome
   delay: 2513
-  name: '473,623,719|🏴‍☠️ 🟠-03-173 #1'
+  name: '473,623,634,719|🏴‍☠️ 🟠-03-208 #1'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 146.70.61.37
@@ -450,7 +451,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '473,719|🏴‍☠️ ❓-02-177 #1'
+  name: '473,634,719|🏴‍☠️ ❓-02-212 #1'
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.194
@@ -487,8 +488,8 @@ proxies:
   server: 82.38.31.218
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇧GB
-  name: 473,591|🇧GB_06
+  country: 🇬🇧GB
+  name: 473,591|🇬🇧GB_11
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.202
@@ -496,11 +497,12 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
   delay: 2114
-  name: '473,591,623,719|🇬🇧 英国_1-219 #1'
+  name: '473,591,623,634,719|🇬🇧 英国_1-254 #1'
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.205
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 473|🇬🇧GB-82.38.31.187-0404
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -678,12 +680,13 @@ proxies:
   port: 8080
   server: 172.99.190.39
   type: ss
-- name: 473,627,638|未知 TROJAN-476 | free-nodes
+- name: 473,627,634,638|未知 TROJAN-476 | free-nodes
   password: 02e653c9-7c93-46a9-999d-11834bd0c577
   port: 443
   server: 132.145.51.172
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 473|🇧GB-172.99.190.7-2722
   password: FoOiGlkAA9yPEGP
@@ -802,30 +805,37 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8
-- name: 473,627|🇬🇧GB-198.244.190.189-4854
+- country: 🇷FR
+  name: 473,587,627|🇬🇧GB-198.244.190.189-4854
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇧GB-82.38.31.179-4857
+  country: 🇧 GB
+  name: 473,587|🇧 GB_45
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.179
   type: ss
-- name: 473,627|🇬🇧GB-51.38.65.155-4862
+- country: 🇬🇧 GB
+  name: 473,587,627|🇬🇧GB-51.38.65.155-4862
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
   server: 51.38.65.155
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 473,627|🇬🇧GB-46.101.87.178-4863
+  udp: true
+- country: 🇧GB
+  name: 473,587,627|🇬🇧GB-46.101.87.178-4863
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 473|🇧GB-82.38.31.199-5029
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -1742,9 +1752,9 @@ proxies:
   type: vless
   uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
 - cipher: aes-256-gcm
-  name: 537|🇬🇧 Great Britain丨01
+  name: 537,634|yandex-624
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
-  port: '23001'
+  port: 23001
   server: uk001.dogsvip.site
   type: ss
   udp: true
@@ -1894,10 +1904,11 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '577|日本-优化 #9'
+  name: 577,634|yandex-703
   network: ws
   port: 16617
   server: planb.mojcn.com
+  tls: false
   type: vmess
   udp: true
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -1910,10 +1921,11 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '577|英国-优化2 #9'
+  name: 577,634|yandex-728
   network: ws
   port: 16645
   server: m.cnmjin.net
+  tls: false
   type: vmess
   udp: true
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -1926,10 +1938,11 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '577|英国-优化3 #9'
+  name: 577,634|yandex-729
   network: ws
   port: 16645
   server: t.cnmjcn.cyou
+  tls: false
   type: vmess
   udp: true
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -1943,23 +1956,33 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '578|Channel id: @ShadowProxy66 🇬🇧'
-  port: 50394
+  network: tcp
+  port: '50394'
   server: 46.250.243.56
-  skip-cert-verify: true
+  servername: ''
   tls: false
   type: vmess
   uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
 - alterId: 0
   cipher: auto
   name: '578|Channel id: @ShadowProxy66🇬🇧'
-  port: 44023
+  network: tcp
+  port: '44023'
   server: 51.38.64.209
-  skip-cert-verify: true
+  servername: ''
   tls: false
   type: vmess
   uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
+- country: 🇬🇧 GB
+  name: 587|🇧 GB_51
+  password: 255a0a50-3f10-11f0-b0d6-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
+  country: 🇧GB
   name: 591|🇧GB_07
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
@@ -1967,17 +1990,17 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: '591,719|🇬🇧 英国-226 #1'
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.176
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 591|🇬🇧GB_09
+  name: 591|🇧GB_08
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 185.255.123.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: '591,719|🇬🇧 英国-261 #1'
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.176
   type: ss
 - name: 603|英国_金丝雀码头
   network: ws
@@ -2861,7 +2884,7 @@ proxies:
 - encryption: none
   grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: '638,656,719|🇺🇸 美国_3-240 #1'
+  name: '638,656,719|🇺🇸 美国_3-275 #1'
   network: grpc
   port: 21250
   server: 209.38.168.122
@@ -3180,16 +3203,34 @@ proxies:
   skip-cert-verify: false
   sni: kr-qingyun.dwyun.me
   type: trojan
-- auth: 9d4c9e38-760a-4e5b-b3d0-264613d9661c
-  name: 656,719|🇬🇧 国 04-59
-  password: 9d4c9e38-760a-4e5b-b3d0-264613d9661c
-  port: 11000
-  server: 185.168.194.111
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 656,719|🇬🇧 国 02-28
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: bup-dr56at91n37SQwAMnsNtcmk44UQBGCYN8hkU0nQ
+    short-id: 903a1801
+  server: 140.238.101.15
+  servername: buylite.music.apple.com
+  tls: true
+  type: vless
   udp: true
+  uuid: db0e6888-bce3-4614-906c-996bf28eabfc
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 656,719|🇬🇧 国 03-169
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: i7DUE1GbZSybS9hVNoLXkNBUOhy_428gM8v5fKfjS0Q
+    short-id: 375cd304
+  server: 193.123.187.39
+  servername: buylite.music.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: db0e6888-bce3-4614-906c-996bf28eabfc
 - cipher: chacha20-ietf-poly1305
   name: 722|🇬🇧Great britan-英国1
   password: 0305e0ec-ec7e-4770-9aa3-81e3427f91b6
@@ -3219,28 +3260,6 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
-  udp: true
-- cipher: aes-128-gcm
-  name: '837,838,839,840|🇬🇧 Kingdom 045 #3'
-  password: c8a1d0a69902859d209f
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45929
-  server: uk045.jd.kunlunpx.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '837,838,839,840|🇬🇧 Kingdom 081 #3'
-  password: b252e75cc98799d5b2d1
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45570
-  server: uk081.jd.kunlunpx.com
-  type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 856|Tokyo SS - C Group

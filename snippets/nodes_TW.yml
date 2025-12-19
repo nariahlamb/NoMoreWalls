@@ -214,11 +214,12 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: aes-256-cfb
-  name: 473|TW-154.223.20.79-0428
+  name: 473,587|_06
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   http-opts:
@@ -642,14 +643,17 @@ proxies:
     headers:
       Host: tw3.594888.xyz
     path: /v2ray
-- name: 473,627|🇹🇼TW-60.248.240.223-4842
+- country: 🇨 CN
+  name: 473,587,627|🇹🇼TW-60.248.240.223-4842
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 473|🇼TW-223.165.4.173-4873
+  country: 🇩 ID
+  name: 473,587| ID_59
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
@@ -682,7 +686,7 @@ proxies:
   port: 20521
   server: 103.61.139.137
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
@@ -842,10 +846,11 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '577|台湾-优化 #9'
+  name: 577,634|yandex-716
   network: ws
   port: 16616
   server: planb.mojcn.com
+  tls: false
   type: vmess
   udp: true
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -858,10 +863,11 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '577|台湾-优化3 #9'
+  name: 577,634|yandex-718
   network: ws
   port: 16616
   server: t.cnmjcn.cyou
+  tls: false
   type: vmess
   udp: true
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -1187,7 +1193,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.net:154948
+    host: feb7fa9.dl.microsoft.eu:154948
     mode: tls
   port: 2377
   server: feb7fa9.t1.glados-config.com
@@ -1198,7 +1204,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.eu:154948
+    host: feb7fa9.dl.microsoft.es:154948
     mode: tls
   port: 2377
   server: feb7fa9.t2.glados-config.com
@@ -1209,7 +1215,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.eu:154948
+    host: feb7fa9.dl.microsoft.cl:154948
     mode: tls
   port: 2377
   server: feb7fa9.t3.glados-config.com
@@ -1220,7 +1226,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.lu:154948
+    host: feb7fa9.dl.microsoft.lt:154948
     mode: tls
   port: 2377
   server: feb7fa9.t4.glados-config.com
@@ -1231,7 +1237,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.be:154948
+    host: feb7fa9.dl.microsoft.cat:154948
     mode: tls
   port: 2377
   server: feb7fa9.t5.glados-config.com
@@ -1242,53 +1248,9 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.lt:154948
+    host: feb7fa9.dl.microsoft.cz:154948
     mode: tls
   port: 2377
   server: feb7fa9.t6.glados-config.com
   type: ss
   udp: false
-- cipher: aes-128-gcm
-  name: '837,838,839,840|🇹🇼 Taiwan 065 #3'
-  password: cfc6f3f75f5ef7b2665c
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45916
-  server: tw065.jd.kunlunpx.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '837,838,839,840|🇹🇼 Taiwan 031 #3'
-  password: b74518fb49bd645e6ce7
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45915
-  server: tw031.jd.kunlunpx.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '837,838,839,840|🇹🇼 Taiwan 030 #3'
-  password: b270fd77db2ecb7acbc8
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45914
-  server: tw030.jd.kunlunpx.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '837,838,839,840|🇹🇼 TaiwanDynamicIP #3'
-  password: 3e26a8cfb09fda219b36
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45573
-  server: tw080.jd.kunlunpx.com
-  type: ss
-  udp: true

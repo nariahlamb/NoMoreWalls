@@ -1595,7 +1595,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: '473,627,637|12,13|香港4|@ripaojiedian #2'
+  name: '473,627,634,637|12,13|香港4|@ripaojiedian #2'
   network: ws
   port: 30809
   server: v9.heduian.link
@@ -1604,6 +1604,7 @@ proxies:
   tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
@@ -1626,14 +1627,15 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 473,627|🇨🇳CN-144.48.180.187-7347
+  name: 473,627,634|yandex-1168
   network: ws
   port: 30812
   server: v12.heduian.link
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
@@ -1641,14 +1643,15 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 473,627|🇨🇳CN-144.48.180.187-7540
+  name: 473,627,634|yandex-3237
   network: ws
   port: 30829
   server: v29.heduian.link
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
@@ -1656,14 +1659,15 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '473,627|🇨🇳CN-144.48.180.187-7554 #1'
+  name: 473,627,634|yandex-2750
   network: ws
   port: 30828
   server: v28.heduian.link
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
@@ -2347,13 +2351,14 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 638|🇨🇳CN-14.17.71.237-2882
+  name: 638,656,719|🇫🇷 国 05-42
   network: ws
   port: 41319
   server: 14.17.71.237
   servername: ''
   tls: false
   type: vmess
+  udp: true
   uuid: 82539eb7-18c8-48d0-bb9c-55d1b6e47f59
   ws-opts:
     headers:
@@ -2373,3 +2378,9 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- cipher: chacha20-ietf-poly1305
+  name: 719|🇨🇳 01_1-284
+  password: O6dqdxtEcmgs
+  port: 57631
+  server: 58.152.109.62
+  type: ss

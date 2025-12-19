@@ -465,6 +465,21 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇷🇺 RU_145
+  network: tcp
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - name: '604|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -839,31 +854,6 @@ proxies:
   skip-cert-verify: true
   sni: api-maps.yandex.ru
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 638|🇷🇺 RU_145
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: 656,719|🇷🇺 联 01-38
-  network: ws
-  port: 2052
-  server: yx1.xn--11x.org
-  servername: 2112135539.online.video.downloader.0123456789ru.xn--11x.org
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9d4c9e38-760a-4e5b-b3d0-264613d9661c
-  ws-opts:
-    headers:
-      Host: 2112135539.online.video.downloader.0123456789ru.xn--11x.org
-    path: /
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
@@ -879,15 +869,4 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
-  udp: true
-- cipher: aes-128-gcm
-  name: '837,838,839,840|🇷🇺 Russia 046 #3'
-  password: 11575f448fb4021fc611
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45930
-  server: ru046.jd.kunlunpx.com
-  type: ss
   udp: true
