@@ -89,13 +89,13 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 454,473,587|CA_22
+  name: 454,473,587|CA_31
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇨🇿 CZ
+  country: 🇨 CZ
   name: 454,473,587,634,648|SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-Ti...
   password: f8f7aCzcPKbsF8p3
   port: 990
@@ -161,7 +161,8 @@ proxies:
   server: 85.208.108.60
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '473,634,719|🇨🇦 加拿大_1-196 #1'
+  country: 🇨CZ
+  name: '473,591,634,719|🇨🇦 加拿大_1-167 #1'
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 79.127.200.169
@@ -213,7 +214,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,627,638|🏁 ZZ_207
+  name: '473,627,638|🏁 ZZ_207 #1'
   network: ws
   port: 443
   server: 134.195.198.147
@@ -227,7 +228,7 @@ proxies:
       Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 473,587|_02
+  name: 473,587|_07
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -263,13 +264,15 @@ proxies:
   protocol-param: ''
   server: ssca.irundns.net
   type: ssr
-- name: 473,524,627,638|加拿大_121918006
+- country: 🇸US
+  name: 473,524,591,627,638|加拿大_121918006
   password: .ie4rghJuMkcf0oF
   port: 18509
   server: 38.96.254.102
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: shoppingmall.electricbanana.click
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 473,627|🇨🇦CA-15.235.41.200-0392
@@ -901,7 +904,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '473,578,627|🇨🇦CA-15.235.83.228-4949 #1'
+  name: '473,627|🇨🇦CA-15.235.83.228-4949 #1'
   network: ws
   port: 443
   server: 15.235.83.228
@@ -1378,12 +1381,12 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 473,627|🇨🇦CA-15.235.50.172-7230
+  name: 473,578,627|🇨🇦CA-15.235.50.172-7230
   network: ws
   port: 443
   server: 15.235.50.172
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1393,12 +1396,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 473,627|🇨🇦CA-15.235.83.228-7231
+  name: 473,578,627|🇨🇦CA-15.235.83.228-7231
   network: ws
   port: 443
   server: 15.235.83.228
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1413,7 +1416,7 @@ proxies:
   port: 443
   server: 134.195.198.147
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1473,7 +1476,7 @@ proxies:
   port: 443
   server: 23.162.200.227
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1488,7 +1491,7 @@ proxies:
   port: 443
   server: 15.235.83.227
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1540,13 +1543,6 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 524,609,610,630,634|yandex-939
-  password: 6pRjKQJ0CWyFtG.9
-  port: 12990
-  server: 198.57.27.27
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - cipher: aes-256-gcm
   name: 537,634|yandex-409
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
@@ -1751,28 +1747,41 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 578|🇨🇦CA-15.235.50.172-1645
-  network: ws
-  port: 443
-  server: 15.235.50.172
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: baradiha.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
   name: '578|Channel id: @ShadowProxy66🇨🇦'
-  network: tcp
-  port: '42610'
+  port: 42610
   server: 51.79.86.182
-  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: 🇦CA
+  delay: 1443
+  name: 591,623,634,719|🇨🇦 -164
+  password: S6jUK9Fw5fMHgNqlqXObHZWv8Tf4nEkm
+  port: 443
+  server: 193.203.203.66
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇨🇦CA
+  delay: 1648
+  name: 591,623,634|yandex-1052
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 147.78.0.182
+  type: ss
+  udp: true
+- country: 🇨🇦CA
+  name: 591|🇨🇦CA_06
+  password: 6pRjKQJ0CWyFtG.9
+  port: 12990
+  server: 198.57.27.27
+  skip-cert-verify: true
+  sni: 198.57.27.27
+  type: trojan
+  udp: true
 - name: 603|加拿大_多伦多
   network: ws
   port: 443
@@ -5972,7 +5981,7 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
 - client-fingerprint: chrome
   delay: 1818
-  name: '623,634,719|🇺🇸 美国 08  2-111 #1'
+  name: 623,634|yandex-965
   network: ws
   port: 2053
   server: cfxr.eu.org
@@ -5987,7 +5996,7 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
 - client-fingerprint: chrome
   delay: 2384
-  name: '623,634,719|🇺🇸 美国 12  2-37 #1'
+  name: '623,634,719|🇺🇸 美国 17-23 #1'
   network: ws
   port: 2053
   server: one.dash.cloudflare.com
@@ -6002,7 +6011,7 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
 - client-fingerprint: chrome
   delay: 1820
-  name: '623,634,719|🇺🇸 美国 61-63 #1'
+  name: 623,634|yandex-967
   network: ws
   port: 2053
   server: pages.cloudflare.com
@@ -6032,7 +6041,7 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
 - client-fingerprint: chrome
   delay: 1350
-  name: '623,634,719|🇺🇸 美国 06  2-45 #1'
+  name: 623,634|yandex-969
   network: ws
   port: 2053
   server: one.dash.cloudflare.com
@@ -6045,15 +6054,6 @@ proxies:
     headers:
       Host: sss.fchina.ggff.net
     path: /proxyip=sjc.o00o.ooo
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  delay: 1443
-  name: 623,634,719|🇨🇦 -193
-  password: S6jUK9Fw5fMHgNqlqXObHZWv8Tf4nEkm
-  port: 443
-  server: 193.203.203.66
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 625|🇦 加拿大2-1D
@@ -6135,6 +6135,13 @@ proxies:
   type: vmess
   udp: true
   uuid: cc66b473-d76c-46a6-8f60-505b682f801b
+- name: 630,634|yandex-939
+  password: 6pRjKQJ0CWyFtG.9
+  port: 12990
+  server: 198.57.27.27
+  skip-cert-verify: false
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -6258,20 +6265,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
-- auth: c83d44d6-33d8-4382-98e2-3f3e607a7885
-  name: 656,719|🇨🇦  02-13
-  password: c83d44d6-33d8-4382-98e2-3f3e607a7885
-  port: 25200
-  ports: 25200-26200
-  server: xjp.kaixincloud.top
-  skip-cert-verify: false
-  sni: xjp.kaixincloud.top
-  tls: false
-  type: hysteria2
-  udp: true
-- auth: 544b70e0-9d1c-43c1-b78e-bd8f25744c15
-  name: '656,719|🇨🇦 加拿大 03-59 #1'
-  password: 544b70e0-9d1c-43c1-b78e-bd8f25744c15
+- auth: 13440c81-8886-49cb-9c4a-364381a3e2a5
+  name: 656,719|🇨🇦  03-51
+  password: 13440c81-8886-49cb-9c4a-364381a3e2a5
   port: 25200
   ports: 25200-26200
   server: xjp.kaixincloud.top
