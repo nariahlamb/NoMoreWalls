@@ -830,7 +830,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   client-fingerprint: chrome
-  country: 🇭🇰HK
+  country: 🇰HK
   name: '296,401,473,524,591,621,627,630,633,635,636,638,656,719|🏴‍☠️ 🟡-11-195 #1'
   network: tcp
   password: e2722c0fb503f8a592436c12bce0509a
@@ -841,7 +841,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: '296,401,473,524,609,610,621,627,630,633,635,636,638,719|🏴‍☠️ 🟡-01-159 #1'
+  name: '296,401,473,621,627,630,633,635,636,638,719|🏴‍☠️ 🟡-01-159 #1'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -860,7 +860,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  country: 🇰HK
+  country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
   name: 296,401,591,621,630,633,636,638|11|🇭🇰 香港|@ripaojiedian
@@ -1424,8 +1424,7 @@ proxies:
   server: 216.250.97.82
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 473,587|🇰 HK_59
+  name: 473|🇰HK-203.23.128.33-0423
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
@@ -2203,22 +2202,18 @@ proxies:
   port: 36888
   server: ss.007.node-for-bigairport.win
   type: ss
-- country: 🇺🇸 US
-  name: '473,587,627|🇭🇰HK-45.149.92.71-4953 #1'
+- name: '473,627|🇭🇰HK-45.149.92.71-4953 #1'
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇸 US
-  name: '473,587,627|🇭🇰HK-45.149.92.71-4954 #1'
+- name: '473,627|🇭🇰HK-45.149.92.71-4954 #1'
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: hinet.mjt000.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: chacha20-ietf
   name: 473|🇭🇰HK-103.149.182.79-4991
   password: asd123456
@@ -4223,10 +4218,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 524,609,610,630,638,656|🏴‍☠️ -01-165
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 524,591,609,610,630,638,656|🏴‍☠️ -01-165
   network: tcp
   port: '30830'
   server: v30.hdacd.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -4767,52 +4766,13 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 587|🇰 HK_61
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: bb85e074-b0c2-11ea-ad28-f23c913c8d2b
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 587|🇰 HK_62
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-  ws-path: /
-- alterId: 0
-  client-fingerprint: chrome
+- cipher: chacha20-ietf
   country: 🇰HK
-  name: '591,719|🇭🇰 香港_2-241 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.30.31
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
-- country: 🇭🇰HK
-  name: 591|🇭🇰HK_14
-  password: BxceQaOe
-  port: 443
-  server: 219.79.214.159
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
+  name: 591|HK_12
+  password: asd123456
+  port: 8388
+  server: 103.149.182.86
+  type: ss
 - name: 603|香港_香港
   network: ws
   port: 2053
