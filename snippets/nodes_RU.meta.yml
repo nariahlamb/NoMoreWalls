@@ -198,19 +198,19 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 472|RU-45.89.55.173-0324
+  name: 472,523|🇷🇺 RU-45.89.55.173-0327
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇺RU-5.182.37.87-0349
+  name: 472,523|🇷🇺 RU-5.182.37.87-0332
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇺RU-45.138.157.162-0367
+  name: 472,523|🇷🇺 RU-45.138.157.162-0334
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
@@ -548,7 +548,7 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '523,637|🇷🇺_RU_俄罗斯 #4'
+  name: '523,637|🇷🇺_RU_俄罗斯 #3'
   network: tcp
   port: 443
   reality-opts:
@@ -556,6 +556,8 @@ proxies:
     short-id: 672ff0
   server: 178.154.205.131
   servername: ads.x5.ru
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
@@ -607,6 +609,21 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 586,637|美国_122004011
+  network: tcp
+  port: '45245'
+  server: ye.fxlcn.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - name: 602|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1408,7 +1425,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '637|🇷🇺_RU_俄罗斯 #1'
+  name: 637|🇷🇺_RU_俄罗斯
   network: tcp
   port: 4443
   reality-opts:
@@ -1419,7 +1436,7 @@ proxies:
   tls: false
   type: vless
   uuid: 1859f2db-e6e8-4dc4-b21e-99da517e2e62
-- name: 637,655|🇺🇸 美国 012-75
+- name: 637|🇷🇺_俄罗斯
   network: ws
   port: 8443
   server: 92.243.74.4
@@ -1432,18 +1449,6 @@ proxies:
     headers:
       Host: stall.saass.ccwu.cc
     path: '%2Fproxyip%3Dsjc.o00o.ooo'
-- client-fingerprint: chrome
-  name: '637|🇷🇺_RU_俄罗斯 #2'
-  network: tcp
-  port: 35728
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
-  server: 178.236.16.98
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
 - name: 637|RU VLESS-131 | free-nodes
   port: 443
   server: 217.16.24.170
@@ -1452,7 +1457,7 @@ proxies:
   uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '637|🇷🇺_RU_俄罗斯 #3'
+  name: '637|🇷🇺_RU_俄罗斯 #2'
   network: tcp
   port: 443
   reality-opts:
@@ -1462,7 +1467,7 @@ proxies:
   tls: false
   type: vless
   uuid: eb162ab1-a006-4931-b1b3-8fc88a22b10e
-- name: 764|俄罗斯01
+- name: 763|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
   server: ppg-other.kunlun05dns.com
@@ -1470,22 +1475,11 @@ proxies:
   sni: openssl.nodesni.com
   type: trojan
   udp: true
-- name: '765|俄罗斯01 #1'
+- name: '764|俄罗斯01 #1'
   password: ae58505d-0d32-4c93-8f65-604321517f9b
   port: 10844
   server: ppg-other.kunlun05dns.com
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
-  udp: true
-- cipher: aes-128-gcm
-  name: '837,838,839,840|🇷🇺 Russia 046 #3'
-  password: 11575f448fb4021fc611
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45930
-  server: ru046.jd.kunlunpx.com
-  type: ss
   udp: true
