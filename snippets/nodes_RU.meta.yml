@@ -772,7 +772,7 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '523,638|🇷🇺_俄罗斯 #3'
+  name: '523,621,633,638|🇷🇺_俄罗斯 #3'
   network: tcp
   port: 443
   reality-opts:
@@ -780,7 +780,7 @@ proxies:
     short-id: 672ff0
   server: 178.154.205.131
   servername: ads.x5.ru
-  skip-cert-verify: true
+  skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
@@ -1567,8 +1567,43 @@ proxies:
     headers:
       Host: ''
     path: /
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 621,633|RU_speednode_0008
+  port: 443
+  server: 51.250.77.7
+  servername: ads.x5.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 71e0492e-9dc5-4fef-891b-15c983934886
+- name: 621,633|RU_speednode_0012
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: freeyx.cloudflare88.eu.org
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- client-fingerprint: chrome
+  name: '621,633,638|🇷🇺_俄罗斯 #1'
+  network: tcp
+  port: 47944
+  reality-opts:
+    public-key: _7L2lOpu_wMQLTxy0VT0WIHe8yYfBFKKq8wWWLr-4Tw
+    short-id: ffffffffff
+  server: 89.23.113.137
+  servername: www.ietf.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 9f721f50-e015-5ea3-8bb0-22428307e9c0
 - delay: 2468
-  name: 623,634,656,719|🇷🇺 01-482
+  name: 623,634,656,719|🇷🇺 01-483
   password: f6c6c896-05d5-49cd-9fba-042cb91f63ee
   port: 10844
   server: ppg-other.kunlun05dns.com
@@ -1665,7 +1700,7 @@ proxies:
   tls: false
   type: vless
   uuid: 6142e134-346a-4ffe-bf5b-c3fb7e3c9dfb
-- name: 638,656|🇺🇸 美国 127-83
+- name: 638|🇷🇺_俄罗斯
   network: ws
   port: 8443
   server: 92.243.74.4
@@ -1678,30 +1713,6 @@ proxies:
     headers:
       Host: stall.saass.ccwu.cc
     path: '%2Fproxyip%3Dsjc.o00o.ooo'
-- client-fingerprint: chrome
-  name: '638|🇷🇺_俄罗斯 #1'
-  network: tcp
-  port: 47944
-  reality-opts:
-    public-key: _7L2lOpu_wMQLTxy0VT0WIHe8yYfBFKKq8wWWLr-4Tw
-    short-id: ffffffffff
-  server: 89.23.113.137
-  servername: www.ietf.org
-  tls: false
-  type: vless
-  uuid: 9f721f50-e015-5ea3-8bb0-22428307e9c0
-- client-fingerprint: chrome
-  name: '638|🇷🇺_RU_俄罗斯 #1'
-  network: tcp
-  port: 35728
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
-  server: 178.236.16.98
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 638|RU VLESS-112 | free-nodes
@@ -1789,28 +1800,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 656|🇷🇺 俄罗斯 07-132
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D
-  password: 994df9db-7e83-49b4-bd0b-73ff5e097f2c
-  port: 13084
-  server: ciqiyuanjiuyubaels01zl.ciyuan78.help
-  skip-cert-verify: true
-  sni: ciqiyuanjiuyubaels01zl.cyfb798.mom
-  tls: false
-  type: hysteria2
-- auth: 994df9db-7e83-49b4-bd0b-73ff5e097f2c
-  name: 719|🇷🇺  07-132
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 994df9db-7e83-49b4-bd0b-73ff5e097f2c
-  port: 13084
-  ports: 13084-21392
-  server: ciqiyuanjiuyubaels01zl.ciyuan78.help
-  skip-cert-verify: true
-  sni: ciqiyuanjiuyubaels01zl.cyfb798.mom
-  type: hysteria2
-  udp: true
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
