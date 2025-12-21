@@ -96,16 +96,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
-- name: 218|TW
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 167.68.4.223
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 225|台湾x1
@@ -310,13 +300,14 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 472,630,638|🇹🇼TW台湾
+- name: 472,523,609,610,630,634,638|🇹🇼TW台湾
   password: 3846a29b-57d5-40f2-8acd-13855aa025cd
   port: 31103
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
+  udp: true
 - name: 472,638,656,719|🇺🇸 US_5|0.6MB/s|0%|GPT|GM|D+|X...
   password: a213e1a5-3c5a-40f2-b70e-98ffa63ffc8e
   port: 35501
@@ -698,7 +689,7 @@ proxies:
       Host: tw3.594888.xyz
     path: /v2ray
 - cipher: aes-256-cfb
-  name: 472,587|_07
+  name: 472,587|_10
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
@@ -714,7 +705,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇩 ID
-  name: 472,587| ID_63
+  name: 472,587| ID_56
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
@@ -803,6 +794,13 @@ proxies:
   port: 50701
   server: 61.220.130.70
   type: ss
+- name: 523,609,610,634|yandex-3213
+  password: ef76d08c-9841-47e8-92a6-5b74df5d58ac
+  port: 35502
+  server: green2.cdntencentmusic.com
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '545,546|台湾-优化 #1'
@@ -901,7 +899,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-3141
+  name: 577,634|yandex-15
   network: ws
   port: 16616
   server: planb.mojcn.com
@@ -918,7 +916,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-3143
+  name: 577,634|yandex-17
   network: ws
   port: 16616
   server: t.cnmjcn.cyou
@@ -933,24 +931,6 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
-- country: 🇹🇼TW
-  name: 591|🇼TW_27
-  password: a5049baa-eadf-4523-bcac-33139e4a99ea
-  port: 35501
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- country: 🇹🇼TW
-  name: '591,656,719|🇭🇰 香港 05-95 #1'
-  password: 3846a29b-57d5-40f2-8acd-13855aa025cd
-  port: 31104
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 625|🇼 节点-台湾
   password: c929bf16-8ac6-4a47-9a3c-17acd5378a9a
@@ -1221,7 +1201,7 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: 638,656|🇭🇰 HK_136 | 3.93Mb-181
+  name: 638,656|🇭🇰 HK_136 | 3.93Mb-231
   network: tcp
   port: '35034'
   server: 165.154.195.38
@@ -1266,7 +1246,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.io:154948
+    host: feb7fa9.dl.microsoft.dk:154948
     mode: tls
   port: 2377
   server: feb7fa9.t1.glados-config.com
@@ -1277,7 +1257,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.es:154948
+    host: feb7fa9.dl.xboxlive.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.t2.glados-config.com
@@ -1288,7 +1268,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.is:154948
+    host: feb7fa9.dl.nintendo.eu:154948
     mode: tls
   port: 2377
   server: feb7fa9.t3.glados-config.com
@@ -1299,7 +1279,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.it:154948
+    host: feb7fa9.dl.nvidia.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.t4.glados-config.com
@@ -1310,7 +1290,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.is:154948
+    host: feb7fa9.dl.microsoft.cat:154948
     mode: tls
   port: 2377
   server: feb7fa9.t5.glados-config.com
@@ -1321,9 +1301,53 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.jp:154948
+    host: feb7fa9.dl.microsoft.dk:154948
     mode: tls
   port: 2377
   server: feb7fa9.t6.glados-config.com
   type: ss
   udp: false
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇹🇼 Taiwan 065 #3'
+  password: cfc6f3f75f5ef7b2665c
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45916
+  server: tw065.jd.kunlunpx.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇹🇼 Taiwan 031 #3'
+  password: b74518fb49bd645e6ce7
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45915
+  server: tw031.jd.kunlunpx.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇹🇼 Taiwan 030 #3'
+  password: b270fd77db2ecb7acbc8
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45914
+  server: tw030.jd.kunlunpx.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇹🇼 TaiwanDynamicIP #3'
+  password: 3e26a8cfb09fda219b36
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45573
+  server: tw080.jd.kunlunpx.com
+  type: ss
+  udp: true

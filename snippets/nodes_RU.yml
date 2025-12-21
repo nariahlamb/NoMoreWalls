@@ -1061,14 +1061,6 @@ proxies:
   server: 65.109.214.6
   sni: tianjiu.pages.dev
   type: trojan
-- name: '656,719|🇷🇺 俄罗斯 06-115 #1'
-  password: f6c6c896-05d5-49cd-9fba-042cb91f63ee
-  port: 10844
-  server: ppg-other.kunlun05dns.com
-  skip-cert-verify: true
-  sni: openssl.nodesni.com
-  type: trojan
-  udp: true
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844
@@ -1084,4 +1076,15 @@ proxies:
   skip-cert-verify: true
   sni: openssl.nodesni.com
   type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: '837,838,839,840|🇷🇺 Russia 046 #3'
+  password: 11575f448fb4021fc611
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45930
+  server: ru046.jd.kunlunpx.com
+  type: ss
   udp: true
