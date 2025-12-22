@@ -437,20 +437,23 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: aes-256-cfb
-  name: 472,523|🇨🇳 TW-154.223.20.79-0446
+  name: 472,523,587|_01
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
-- name: 472,627|🇹🇼TW-220.130.58.138-0643
+  udp: true
+- country: 🇹🇼TW
+  name: 472,591,627|🇹🇼TW-220.130.58.138-0643
   password: c80870af-749e-406c-bdbd-7aafa46de71d
   port: 31103
   server: green2.cdntencentmusic.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
+  udp: true
 - country: 🇹🇼TW
-  name: 472,523,591,609,610,627,634|yandex-128
+  name: 472,591,627|🇹🇼TW-220.130.58.138-0645
   password: a5049baa-eadf-4523-bcac-33139e4a99ea
   port: 35501
   server: green2.cdntencentmusic.com
@@ -895,14 +898,17 @@ proxies:
     headers:
       Host: tw3.594888.xyz
     path: /v2ray
-- name: 472,627|🇹🇼TW-59.125.131.163-4867
+- country: 🇳 CN
+  name: 472,587,627|🇹🇼TW-59.125.131.163-4867
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇼TW-223.165.4.173-4895
+  country: 🇩 ID
+  name: 472,587| ID_66
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
@@ -914,15 +920,17 @@ proxies:
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: 472,523,627|🇹🇼TW-220.130.58.138-5031
+- country: 🇼TW
+  name: 472,523,591,627|🇹🇼TW-220.130.58.138-5031
   password: 3846a29b-57d5-40f2-8acd-13855aa025cd
   port: 31104
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
+  udp: true
 - country: 🇹🇼TW
-  name: 472,591,627,630,638|🇹🇼TW台湾2 36.2KB/s
+  name: 472,523,591,609,610,627,630,634,638|🇹🇼TW台湾2 36.2KB/s
   password: a213e1a5-3c5a-40f2-b70e-98ffa63ffc8e
   port: 31102
   server: green2.cdntencentmusic.com
@@ -953,7 +961,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 472,578,627|🇹🇼TW-103.61.139.137-7440
+  name: 472,627|🇹🇼TW-103.61.139.137-7440
   network: ws
   port: 20521
   server: 103.61.139.137
@@ -1118,7 +1126,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-419
+  name: 577,634|yandex-22
   network: ws
   port: 16616
   server: planb.mojcn.com
@@ -1135,7 +1143,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-421
+  name: 577,634|yandex-24
   network: ws
   port: 16616
   server: t.cnmjcn.cyou
@@ -1497,7 +1505,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.jp:154948
+    host: feb7fa9.dl.nintendo.jp:154948
     mode: tls
   port: 2377
   server: feb7fa9.t1.glados-config.com
@@ -1508,7 +1516,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.jp:154948
+    host: feb7fa9.dl.microsoft.md:154948
     mode: tls
   port: 2377
   server: feb7fa9.t2.glados-config.com
@@ -1519,7 +1527,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.is:154948
+    host: feb7fa9.dl.nintendo.de:154948
     mode: tls
   port: 2377
   server: feb7fa9.t3.glados-config.com
@@ -1530,7 +1538,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.mozilla.net:154948
+    host: feb7fa9.dl.microsoft.es:154948
     mode: tls
   port: 2377
   server: feb7fa9.t4.glados-config.com
@@ -1541,7 +1549,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.cz:154948
+    host: feb7fa9.dl.xboxlive.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.t5.glados-config.com
@@ -1552,7 +1560,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.it:154948
+    host: feb7fa9.dl.microsoft.de:154948
     mode: tls
   port: 2377
   server: feb7fa9.t6.glados-config.com

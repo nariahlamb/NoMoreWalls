@@ -181,7 +181,8 @@ proxies:
   server: 145.239.6.202
   type: ss
 - cipher: aes-128-gcm
-  name: 453,454,472,523|🇬🇧 GB-141.98.101.178-0327
+  country: 🇬🇧 GB
+  name: 453,454,472,523,587|🇧 GB_52
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -486,7 +487,8 @@ proxies:
   server: 82.38.31.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472,523|🇬🇧 GB-82.38.31.179-0375
+  country: 🇧 GB
+  name: 472,523,587| GB_50
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.179
@@ -689,7 +691,7 @@ proxies:
   port: 8080
   server: 172.99.190.39
   type: ss
-- name: 472,627,634|yandex-2337
+- name: 472,627,634|yandex-2556
   password: 02e653c9-7c93-46a9-999d-11834bd0c577
   port: 443
   server: 132.145.51.172
@@ -814,24 +816,30 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8
-- name: 472,627|🇬🇧GB-198.244.190.189-4880
+- country: 🇫🇷FR
+  name: 472,587,627|🇬🇧GB-198.244.190.189-4880
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 472,627|🇬🇧GB-51.38.65.155-4887
+  udp: true
+- country: 🇬🇧 GB
+  name: 472,587,627|🇬🇧GB-51.38.65.155-4887
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: '472,627|🇬🇧GB-46.101.87.178-4888 #1'
+  udp: true
+- country: 🇧GB
+  name: '472,587,627|🇬🇧GB-46.101.87.178-4888 #1'
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: rc4-md5
   name: 472,523|🇬🇧 GB-146.70.61.37-5069
   password: 14fFPrbezE3HDZzsMOr6
@@ -1747,7 +1755,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
 - client-fingerprint: chrome
-  name: '523,578,638|🇬🇧_GB_英国 #2'
+  name: '523,638|🇬🇧_GB_英国 #2'
   network: tcp
   port: 443
   reality-opts:
@@ -1770,7 +1778,7 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-gcm
-  name: 537,634|yandex-342
+  name: 537,634|yandex-96
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 23001
   server: uk001.dogsvip.site
@@ -1922,7 +1930,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-406
+  name: 577,634|yandex-09
   network: ws
   port: 16617
   server: planb.mojcn.com
@@ -1939,7 +1947,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-431
+  name: 577,634|yandex-34
   network: ws
   port: 16645
   server: m.cnmjin.net
@@ -1956,7 +1964,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-432
+  name: 577,634|yandex-35
   network: ws
   port: 16645
   server: t.cnmjcn.cyou
@@ -1971,26 +1979,14 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '578|Channel id: @ShadowProxy66 🇬🇧'
-  network: tcp
-  port: '50394'
-  server: 46.250.243.56
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
-- alterId: 0
-  cipher: auto
-  name: '578|Channel id: @ShadowProxy66🇬🇧'
-  network: tcp
-  port: '44023'
-  server: 51.38.64.209
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
+- country: 🇬🇧 GB
+  name: 587|🇧 GB_56
+  password: dd6dcb10-4683-11f0-ae79-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: 603|英国_金丝雀码头
   network: ws
   port: 443
@@ -2806,7 +2802,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 638|🇬🇧 GB_54
+- name: '638|🇬🇧 GB_54 #1'
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -3525,7 +3521,7 @@ proxies:
   sni: kr-qingyun.dwyun.me
   type: trojan
 - auth: 1f67e89d-60a1-438a-a1da-e5b2552260bd
-  name: '656,719|🇬🇧 GB_5 | ⬇️ 5.5MB/s-471 #1'
+  name: 656,719|🇬🇧 国 01-76
   password: 1f67e89d-60a1-438a-a1da-e5b2552260bd
   port: 42889
   server: uk1.jueduibupao.top
@@ -3535,7 +3531,7 @@ proxies:
   type: hysteria2
   udp: true
 - auth: 5a50db51-d1b9-4052-aec7-154e2b14a9ef
-  name: '656,719|🇬🇧 GB_6 | ⬇️ 6.0MB/s-489 #1'
+  name: '656,719|🇬🇧 英国 02-118 #1'
   password: 5a50db51-d1b9-4052-aec7-154e2b14a9ef
   port: 49878
   server: uk1.jueduibupao.top
@@ -3548,7 +3544,7 @@ proxies:
   name: 656|🇬🇧 UK-366
   network: ws
   port: 443
-  server: freev2.cloudflare.182682.xyz
+  server: ct.877774.xyz
   servername: do-lon1.064288.xyz
   skip-cert-verify: true
   tls: true
@@ -3558,23 +3554,28 @@ proxies:
     headers:
       Host: do-lon1.064288.xyz
     path: '%2Fannouncement%3Fed%3D2048'
-- name: '656,719|🇬🇧 GB_8 | ⬇️ 4.8MB/s-506 #1'
-  password: c3de5c64-68ca-482b-956a-2ad39386d101
-  port: 43700
-  server: uk1.jueduibupao.top
-  skip-cert-verify: true
-  sni: uk1.jueduibupao.top
-  tls: false
-  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '656,719|🇬🇧 GB_5 | ⬇️ 3.0MB/s-425 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: j_b7jaRqL2-82XSGRL0IYkNJ2Y3hrhhgq5kIBIK76lk
+  server: 38.60.196.27
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e64c5bbb-a4b8-498e-b374-4462d961c8a2
 - client-fingerprint: random
-  name: 656|🇬🇧 GB_9 | ⬇️ 4.7MB/s-536
+  name: 656|🇬🇧 GB_6 | ⬇️ 4.1MB/s-445
   network: ws
   port: 443
-  server: ct.877774.xyz
+  server: www.visa.com.hk
   servername: do-lon1.064288.xyz
   tls: true
   type: vless
-  uuid: 27930641-a054-427e-a142-b7c85358bf36
+  uuid: f2b574fd-c288-4022-a914-7d39ef40a52d
   ws-opts:
     headers:
       Host: do-lon1.064288.xyz
@@ -3583,7 +3584,7 @@ proxies:
   name: '719|🇬🇧 UK-366 #1'
   network: ws
   port: 443
-  server: freev2.cloudflare.182682.xyz
+  server: ct.877774.xyz
   servername: do-lon1.064288.xyz
   skip-cert-verify: true
   tfo: false
@@ -3597,14 +3598,14 @@ proxies:
     max-early-data: 2048
     path: /announcement
 - client-fingerprint: random
-  name: '719|🇬🇧 GB_9 | ⬇️ 4.7MB/s-536 #1'
+  name: '719|🇬🇧 GB_6 | ⬇️ 4.1MB/s-445 #1'
   network: ws
   port: 443
-  server: ct.877774.xyz
+  server: www.visa.com.hk
   servername: do-lon1.064288.xyz
   tls: true
   type: vless
-  uuid: 27930641-a054-427e-a142-b7c85358bf36
+  uuid: f2b574fd-c288-4022-a914-7d39ef40a52d
   ws-opts:
     headers:
       Host: do-lon1.064288.xyz
