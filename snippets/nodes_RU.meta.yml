@@ -243,13 +243,13 @@ proxies:
       Host: 45.136.244.181
     path: /fr-unlimitxxx
 - cipher: chacha20-ietf-poly1305
-  name: 472,523|🇷🇺 RU-45.89.55.173-0330
+  name: 472|RU-45.89.55.173-0364
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472,523|🇷🇺 RU-45.138.157.162-0332
+  name: 472|🇷🇺RU-45.138.157.162-0368
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
@@ -572,7 +572,7 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 523,638,656,719|🇩🇪 DE_2|4.5MB/s|0%|GPT|YT-RU|N...
+  name: 523,638,656|🇩🇪 DE²_2|4.5MB/s|0%|GPT|YT-RU|...
   network: tcp
   port: 443
   reality-opts:
@@ -580,11 +580,8 @@ proxies:
     short-id: 672ff0
   server: 178.154.205.131
   servername: ads.x5.ru
-  skip-cert-verify: true
-  tfo: false
-  tls: true
+  tls: false
   type: vless
-  udp: true
   uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
 - alpn:
   - h2
@@ -634,6 +631,13 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 587| RU_129
+  password: YQCSKoCF3QazW8YlvDBWA4
+  port: 56689
+  server: 109.71.246.210
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇺 RU
@@ -1459,7 +1463,7 @@ proxies:
   uuid: 02f62dd5-218f-4e9f-9c4b-f8a2e452533e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '638,656,719|🇳🇱 NL_4 | ⬇️ 5.2MB/s-287 #1'
+  name: 638,656|🇳🇱 NL_4 | ⬇️ 5.2MB/s-287
   network: tcp
   port: 443
   reality-opts:
@@ -1467,9 +1471,8 @@ proxies:
     short-id: d1579a8745398e34
   server: 89.169.137.193
   servername: eh.vk.com
-  tls: true
+  tls: false
   type: vless
-  udp: true
   uuid: 2c8adcaa-e428-4cea-9c88-e88166651ab3
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -1498,7 +1501,7 @@ proxies:
   type: vless
   uuid: 309fa273-6579-4cb2-9143-7cad50401eba
 - flow: ''
-  name: '638|🇷🇺_RU_俄罗斯 #1'
+  name: '638|🇷🇺_RU_俄罗斯 #2'
   network: tcp
   port: 58349
   server: 31.44.0.63
@@ -1507,7 +1510,7 @@ proxies:
   uuid: 48a8cab5-ce75-4c8a-90f5-dcd020c89b4b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '638,656,719|🇫🇮 FI_2 | ⬇️ 3.0MB/s-282 #1'
+  name: 638,656|🇫🇮 FI_2 | ⬇️ 3.0MB/s-282
   network: tcp
   port: 443
   reality-opts:
@@ -1515,9 +1518,8 @@ proxies:
     short-id: ed3eb3256dee971f
   server: 158.160.191.241
   servername: ya.ru
-  tls: true
+  tls: false
   type: vless
-  udp: true
   uuid: 4d7a559b-6379-41a7-9e51-41ef759846aa
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -1573,7 +1575,7 @@ proxies:
   uuid: 9818b579-3746-468b-88ac-65bd26b28e86
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '638,656,719|🇳🇱 NL_1 | ⬇️ 1.1MB/s-58 #1'
+  name: 638,656|🇳🇱 NL_1 | ⬇️ 1.1MB/s-58
   network: tcp
   port: 47944
   reality-opts:
@@ -1581,9 +1583,8 @@ proxies:
     short-id: ffffffffff
   server: 89.23.113.137
   servername: www.ietf.org
-  tls: true
+  tls: false
   type: vless
-  udp: true
   uuid: 9f721f50-e015-5ea3-8bb0-22428307e9c0
 - client-fingerprint: chrome
   grpc-opts:
@@ -1654,78 +1655,16 @@ proxies:
   uuid: e80f6880-f525-48a2-9d3f-faea2cd7c967
 - alterId: 0
   cipher: auto
-  name: 656,719|🇷🇺 ►RU | 01-1x-473
+  name: 656|🇷🇺 ►RU | 俄罗斯01-1x-473
   network: ws
-  port: 15656
+  port: '15656'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 719|🇷🇺 -Co01-213
-  password: c1854182-5014-4cd5-b024-022302480ba1
-  port: 20131
-  server: co-f0ba91-20.9966663.xyz
-  skip-cert-verify: true
-  sni: co-f0ba91-20.9966663.xyz
-  type: anytls
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 719|🇷🇺 俄罗斯-Co02-214
-  password: c1854182-5014-4cd5-b024-022302480ba1
-  port: 20132
-  server: co-f0ba91-20.9966663.xyz
-  skip-cert-verify: true
-  sni: co-f0ba91-20.9966663.xyz
-  type: anytls
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 719|🇷🇺 俄罗斯-Co03-215
-  password: c1854182-5014-4cd5-b024-022302480ba1
-  port: 20133
-  server: co-f0ba91-20.9966663.xyz
-  skip-cert-verify: true
-  sni: co-f0ba91-20.9966663.xyz
-  type: anytls
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 719|🇷🇺 俄罗斯-Co04-216
-  password: c1854182-5014-4cd5-b024-022302480ba1
-  port: 20134
-  server: co-f0ba91-20.9966663.xyz
-  skip-cert-verify: true
-  sni: co-f0ba91-20.9966663.xyz
-  type: anytls
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 719|🇷🇺 俄罗斯-Co05-217
-  password: c1854182-5014-4cd5-b024-022302480ba1
-  port: 20135
-  server: co-f0ba91-20.9966663.xyz
-  skip-cert-verify: true
-  sni: co-f0ba91-20.9966663.xyz
-  type: anytls
-  udp: true
 - name: 764|俄罗斯01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10844

@@ -96,16 +96,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
-- name: 217|TW
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 167.68.4.223
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 224|台湾x1
@@ -115,7 +105,8 @@ proxies:
   udp: true
   uuid: 7dbdba19-6a3b-4370-93b1-fb5a89adde0c
 - delay: 1265
-  name: '294,400,472,621,623,627,630,633,634,635,636,638|12,13|香港6|@ripaojiedian #2'
+  name: '294,400,472,523,609,610,621,623,627,630,633,634,635,636,638|12,13|香港6|@ripaojiedian
+    #2'
   network: tcp
   password: cfdf8794-5365-41ac-9e59-573aab964b3e
   port: 31103
@@ -224,7 +215,7 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: aes-256-cfb
-  name: 472,587|_07
+  name: 472,587|_06
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
@@ -661,7 +652,7 @@ proxies:
     headers:
       Host: tw3.594888.xyz
     path: /v2ray
-- country: 🇨 CN
+- country: 🇳 CN
   name: 472,587,627|🇹🇼TW-59.125.131.163-4858
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
@@ -683,7 +674,7 @@ proxies:
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: 472,638|台湾省台中市+中华电信
+- name: '472,638|台湾省台中市+中华电信 #6'
   password: 3e791d86-b43c-46c7-a3a9-dc2d2aff0db2
   port: 35501
   server: green2.cdntencentmusic.com
@@ -780,6 +771,15 @@ proxies:
   port: 50701
   server: 61.220.130.70
   type: ss
+- country: 🇹🇼TW
+  name: '523,591,609,610,634,638|台湾省台中市+中华电信 #7'
+  password: 9f6256ae-52e7-4954-9a17-445b106bdca7
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '545,546|台湾-优化 #1'
@@ -878,7 +878,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-383
+  name: 577,634|yandex-32
   network: ws
   port: 16616
   server: planb.mojcn.com
@@ -895,7 +895,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-385
+  name: 577,634|yandex-34
   network: ws
   port: 16616
   server: t.cnmjcn.cyou
@@ -1107,14 +1107,6 @@ proxies:
   type: vmess
   udp: true
   uuid: aaba2807-e05d-4b46-a819-10aca0793576
-- name: 627,634|yandex-3286
-  password: adb3985f-f23b-42f9-9332-cac7604021fd
-  port: 35501
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
 - name: '627,638|TW台湾(mibei77.com 米贝节点分享) #3'
   network: tcp
   password: 3846a29b-57d5-40f2-8acd-13855aa025cd
@@ -1252,12 +1244,6 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: '%2F'
-- name: '638|台湾省台中市+中华电信 #1'
-  password: 9f6256ae-52e7-4954-9a17-445b106bdca7
-  port: 31102
-  server: green2.cdntencentmusic.com
-  sni: green2.cdntencentmusic.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 638|台湾_122504007 L0
@@ -1268,22 +1254,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-- alterId: 0
-  cipher: auto
-  client-fingerprint: ''
-  fast-open: false
-  name: '656,719|🇹🇼 TW台湾02-92 #1'
-  network: ws
-  port: 12888
-  server: gtm1.ktmwan.net
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 1ec49aaf-2990-4c7b-a45c-d190e6ea5438
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /
 - name: 656|🇭🇰 HK¹-TW⁰_1|6.9MB/s|GPT|YT|NF...
   network: ws
   password: 5a2c16f9
@@ -1318,139 +1288,20 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: '%2F%2F'
-- name: '656,719|🇹🇼 Trojan-台湾1 | 低倍率-527 #1'
+- name: 656|🇹🇼 Trojan-台湾1 | 低倍率-527
   password: 259a29a2-b884-47c9-ad0f-689f00b92bdd
   port: 10116
   server: cc.rk1.cac.cab
   skip-cert-verify: true
   sni: tctw1.bilibili.com
   type: trojan
-  udp: true
-- name: '656,719|🇹🇼 Trojan-台湾2 | 低倍率-534 #1'
+- name: 656|🇹🇼 Trojan-台湾2 | 低倍率-534
   password: 259a29a2-b884-47c9-ad0f-689f00b92bdd
-  port: 47430
-  server: 0c9885863ddf022d3a838911d4bf9ab1.lh.gtm.cac.cab
+  port: 48062
+  server: 0204fea0775c2f44f8b5ac9c743e0120.lh.gtm.cac.cab
   skip-cert-verify: true
   sni: tctw1.bilibili.com
   type: trojan
-  udp: true
-- name: 719|🇹🇼 TW_2 | ️ 5.5MB/s-3
-  network: ws
-  password: 5a2c16f9
-  port: 443
-  server: 104.19.220.22
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /
-- name: '719|🇹🇼 TW_9 | ⬇️ 5.3MB/s-6 #1'
-  network: ws
-  password: 5a2c16f9
-  port: 443
-  server: one.cf.cdn.hyli.xyz
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /
-- name: '719|🇹🇼 TW_10 | ⬇️ 4.0MB/s-12 #1'
-  network: ws
-  password: 5a2c16f9
-  port: 443
-  server: 104.17.167.134
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /
-- name: '719|🇹🇼 TW_7 | ⬇️ 4.4MB/s-23 #1'
-  network: ws
-  password: 5a2c16f9
-  port: 443
-  server: 172.64.229.205
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  fast-open: false
-  name: 719|🇹🇼 -60
-  password: ac0d7fda-a374-4bf5-a969-09d54da0468a
-  port: 20005
-  server: 103.181.165.180
-  tfo: false
-  type: ss
-- name: '719|🇹🇼 TW_10 | ⬇️ 3.7MB/s-270 #1'
-  network: ws
-  password: 5a2c16f9
-  port: 443
-  server: 162.159.128.253
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: //
-- name: '719|🇹🇼 TW_15 | ⬇️ 3.1MB/s-289 #1'
-  network: ws
-  password: 5a2c16f9
-  port: 443
-  server: 104.17.167.134
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: //
-- name: '719|🇹🇼 TW_21 | ⬇️ 4.0MB/s-297 #1'
-  network: ws
-  password: 5a2c16f9
-  port: 443
-  server: 777.ai7777777.xyz
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /
-- cipher: aes-128-gcm
-  name: 719|🇹🇼 1-516
-  password: 259a29a2-b884-47c9-ad0f-689f00b92bdd
-  port: 50013
-  server: lh2.cac.cab
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '719|🇹🇼 台湾2-517 #1'
-  password: 259a29a2-b884-47c9-ad0f-689f00b92bdd
-  port: 50014
-  server: lh2.cac.cab
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '719|🇹🇼 台湾3-518 #1'
-  password: 259a29a2-b884-47c9-ad0f-689f00b92bdd
-  port: 50015
-  server: lh2.cac.cab
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '719|🇹🇼 台湾4-519 #1'
-  password: 259a29a2-b884-47c9-ad0f-689f00b92bdd
-  port: 50016
-  server: lh2.cac.cab
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 722|🇹🇼TW-台湾2
   password: 0305e0ec-ec7e-4770-9aa3-81e3427f91b6
@@ -1479,7 +1330,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.ch:154948
+    host: feb7fa9.dl.fastly.net:154948
     mode: tls
   port: 2377
   server: feb7fa9.t1.glados-config.com
@@ -1490,7 +1341,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.it:154948
+    host: feb7fa9.dl.nvidia.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.t2.glados-config.com
@@ -1501,7 +1352,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.de:154948
+    host: feb7fa9.dl.nintendo.it:154948
     mode: tls
   port: 2377
   server: feb7fa9.t3.glados-config.com
@@ -1512,7 +1363,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.fi:154948
+    host: feb7fa9.dl.epicgames.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.t4.glados-config.com
@@ -1523,7 +1374,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.ee:154948
+    host: feb7fa9.dl.nintendo.jp:154948
     mode: tls
   port: 2377
   server: feb7fa9.t5.glados-config.com
@@ -1534,7 +1385,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.eu:154948
+    host: feb7fa9.dl.microsoft.de:154948
     mode: tls
   port: 2377
   server: feb7fa9.t6.glados-config.com

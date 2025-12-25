@@ -266,7 +266,7 @@ proxies:
       Host: _acme-challenge.2go.cloudns.be
     path: /
 - client-fingerprint: chrome
-  name: '96,579,719|🇹🇼 TW_13 | ⬇️ 6.4MB/s-280 #1'
+  name: '96,579|🇭🇰 HK_3|5.5MB/s|YT-HK|NF|D+ #1'
   network: ws
   port: 443
   server: 104.17.202.10
@@ -845,30 +845,48 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- name: 217|HK
+- name: 217|🇭🇰 HK
   network: ws
   port: 65056
   server: 202.181.24.70
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: c9d0ddb5-f2c1-4111-a92d-9798a2348a56
   ws-opts:
-    path: '%2Fyz'
+    path: /yz
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '217|HK #1'
+  name: 217|🇭🇰 HK 2
   network: tcp
   port: 46716
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: agaungzhou01.bumbleshrimp.com
   servername: www.nvidia.com
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: none
+  name: 217|🇭🇰 HK-Eons_Data_Communications
+  network: ws
+  port: 443
+  server: www.visa.com.tw
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: df7a96e2-c663-48ed-9713-1c144705f79e
+  ws-opts:
+    headers:
+      Host: ee-boston-therapist-cleaning.trycloudflare.com
+    path: /vmess-argo?ed=2048
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '217|HK #2'
+  name: 217|🇭🇰 HK 3
   network: tcp
   port: 25791
   reality-opts:
@@ -876,7 +894,9 @@ proxies:
     short-id: 57d9de10de16538d
   server: 34.92.65.82
   servername: cloudreve.mnm.pp.ua
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 711007f1-9cdf-4fd9-b5d4-d67aee173281
 - alterId: 2
@@ -889,7 +909,8 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 294,400,472,523,621,627,630,633,634,635,636,638,642,854|【机场推荐：https://a0a.xyz/】9
+- name: '294,400,472,523,621,627,630,633,634,635,636,638,642,854|【机场推荐：https://a0a.xyz/】17
+    #4'
   network: tcp
   password: 44e660b0ee21cf3ac66aee2c08af85d2
   port: 443
@@ -932,7 +953,7 @@ proxies:
     grpc-service-name: m
   h2-opts: null
   http-opts: null
-  name: 398|🇭🇰
+  name: 399|🇭🇰
   network: grpc
   port: 9999
   server: hkov.a.vxgky.com
@@ -1343,7 +1364,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '469|🇭🇰 香港 #1'
+  name: '469|🇭🇰 香港 #2'
   port: 19901
   server: xg.dashuai.cyou
   tls: false
@@ -1437,13 +1458,14 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇰 HK
-  name: 472,587|🇰 HK_57
+  name: 472,587| HK_55
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
 - cipher: aes-256-cfb
-  name: 472,523|🇭🇰 HK-216.250.97.82-0446
+  country: 🇰HK
+  name: 472,591|🇭🇰HK_11
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 216.250.97.82
@@ -1545,7 +1567,7 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn/download
-- name: '472,523,627,630|_CN_中国 #4'
+- name: '472,523,627,630|_CN_中国 #3'
   password: BxceQaOe
   port: 443
   server: 219.79.214.159
@@ -2200,12 +2222,12 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 472,523,627|🇭🇰HK-219.79.49.180-4886
+  name: '472,523,627|🇭🇰HK-219.79.49.180-4886 #1'
   network: ws
   port: 80
   server: hkt.gotochinatown.net
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
@@ -2245,14 +2267,14 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf
-  name: 472,634|yandex-3316
+  name: 472,634|yandex-374
   password: asd123456
   port: 8388
   server: 103.149.183.200
   type: ss
   udp: true
 - cipher: chacha20-ietf
-  name: 472,634|yandex-3302
+  name: 472,634|yandex-360
   password: asd123456
   port: 8388
   server: 103.149.182.86
@@ -2265,13 +2287,14 @@ proxies:
   server: ss.018.node-for-bigairport.win
   type: ss
 - cipher: chacha20-ietf
-  name: 472,523|🇭🇰 HK-103.141.221.88-0419
+  name: 472|🇰HK-103.141.221.88-5070
   password: asd123456
   port: 8388
   server: 103.141.221.88
   type: ss
 - cipher: chacha20-ietf
-  name: 472,634|yandex-3338
+  country: 🇰HK
+  name: 472,591,634|yandex-396
   password: asd123456
   port: 8388
   server: 103.149.182.79
@@ -4194,106 +4217,115 @@ proxies:
     headers:
       Host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 523,609,610,630,638,656|🇮🇷 Relay_-IR_48 | 4.10Mb-87
+  network: tcp
+  port: '30830'
+  server: v30.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-gcm
-  name: 537,634|yandex-506
+  name: 537,634|yandex-191
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16001
   server: hk001.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-507
+  name: 537,634|yandex-192
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16002
   server: hk002.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-508
+  name: 537,634|yandex-193
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16003
   server: hk003.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-509
+  name: 537,634|yandex-194
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16004
   server: hk004.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-510
+  name: 537,634|yandex-195
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16005
   server: hk005.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-511
+  name: 537,634|yandex-196
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16006
   server: hk006.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-512
+  name: 537,634|yandex-197
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16007
   server: hk007.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-513
+  name: 537,634|yandex-198
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16008
   server: hk008.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-514
+  name: 537,634|yandex-199
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16009
   server: hk009.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-515
+  name: 537,634|yandex-200
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16010
   server: hk010.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-516
+  name: 537,634|yandex-201
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16011
   server: hk011.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-517
+  name: 537,634|yandex-202
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16012
   server: hk012.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-518
+  name: 537,634|yandex-203
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16013
   server: hk013.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-519
+  name: 537,634|yandex-204
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16014
   server: hk014.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-520
+  name: 537,634|yandex-205
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16015
   server: hk015.dogsvip.site
@@ -4637,7 +4669,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-376
+  name: 577,634|yandex-25
   network: ws
   port: 16632
   server: planb.mojcn.com
@@ -4654,7 +4686,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-377
+  name: 577,634|yandex-26
   network: ws
   port: 16632
   server: m.cnmjin.net
@@ -4671,7 +4703,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-378
+  name: 577,634|yandex-27
   network: ws
   port: 16632
   server: t.cnmjcn.cyou
@@ -4688,7 +4720,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-379
+  name: 577,634|yandex-28
   network: ws
   port: 16622
   server: planb.mojcn.com
@@ -4705,7 +4737,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-380
+  name: 577,634|yandex-29
   network: ws
   port: 16622
   server: m.cnmjin.net
@@ -4722,7 +4754,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-381
+  name: 577,634|yandex-30
   network: ws
   port: 16622
   server: t.cnmjcn.cyou
@@ -4777,7 +4809,7 @@ proxies:
   server: hkt.gotochinatown.net
   skip-cert-verify: true
   type: vmess
-  uuid: d70a9508-5477-11ef-bf61-f23c913c8d2b
+  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
   ws-path: /
 - alterId: 2
   cipher: auto
@@ -4790,7 +4822,7 @@ proxies:
   server: hkt.gotochinatown.net
   skip-cert-verify: true
   type: vmess
-  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+  uuid: d70a9508-5477-11ef-bf61-f23c913c8d2b
   ws-path: /
 - name: 603|香港_香港
   network: ws
@@ -5506,15 +5538,6 @@ proxies:
     headers:
       Host: ''
     path: /arki
-- alterId: 0
-  cipher: auto
-  name: 630,638,656|🇮🇷 Relay_-IR_48 | 4.10Mb-87
-  network: tcp
-  port: '30830'
-  server: v30.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇭 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5696,7 +5719,7 @@ proxies:
   uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '638,656,719|🇭🇰 HK_3 | ⬇️ 2.2MB/s-281 #1'
+  name: 638,656|🇭🇰 HK_3 | ⬇️ 2.2MB/s-281
   network: tcp
   port: 8443
   reality-opts:
@@ -5704,9 +5727,8 @@ proxies:
     short-id: dcedb9f230283db1
   server: verahk1.uspn.io
   servername: xverahk1.uspn.io
-  tls: true
+  tls: false
   type: vless
-  udp: true
   uuid: 45553a57-d94e-46bd-bea7-306eefab0d58
 - client-fingerprint: chrome
   name: '638|🇭🇰_香港 #2'
@@ -6092,33 +6114,16 @@ proxies:
     headers:
       Host: yf.xhya.nyc.mn
     path: /
-- name: 656,719|🇭🇰 HK_4|9.6MB/s|2%|YT|NF|D+|X|...
+- name: 656|🇭🇰 HK²_4|9.6MB/s|2%|YT|NF|D+|X...
   password: BxceQaOe
   port: 443
   server: 58.152.25.71
   skip-cert-verify: true
   sni: 58.152.25.71
   type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: ''
-  fast-open: false
-  name: 656,719|🇭🇰 HK-08-84
-  network: ws
-  port: 12890
-  server: gtm1.ktmwan.net
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 1ec49aaf-2990-4c7b-a45c-d190e6ea5438
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '656,719|🇭🇰 HK_2 | ⬇️ 2.1MB/s-278 #1'
+  name: 656|🇭🇰 HK_2 | ⬇️ 2.1MB/s-278
   network: tcp
   port: 10122
   reality-opts:
@@ -6126,9 +6131,8 @@ proxies:
     short-id: 8a6394aa28d6
   server: 1.36.189.217
   servername: music.apple.com
-  tls: true
+  tls: false
   type: vless
-  udp: true
   uuid: 7f60f6e7-8419-4cff-9e1b-14179f677a5e
 - client-fingerprint: chrome
   name: 656|🇭🇰 HK_11 | ⬇️ 1.3MB/s-291
@@ -6284,203 +6288,175 @@ proxies:
     path: '%2Fproxyip%3D210.61.97.241%3A81'
 - alterId: 0
   cipher: auto
-  name: '656,719|🇭🇰 ►HK | 香港02-1x*-376 #1'
+  name: 656|🇭🇰 ►HK | 香港02-1x*-376
   network: ws
-  port: 15568
+  port: '15568'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇭🇰 ►HK | 香港03-1x-377 #1'
+  name: 656|🇭🇰 ►HK | 香港03-1x-377
   network: ws
-  port: 15562
+  port: '15562'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇭🇰 ►HK | 香港04-1x-378 #1'
+  name: 656|🇭🇰 ►HK | 香港04-1x-378
   network: ws
-  port: 15563
+  port: '15563'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇭🇰 HK | 香港05-1x-379 #1'
+  name: 656|🇭🇰 HK | 香港05-1x-379
   network: ws
-  port: 15880
+  port: '15880'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇭🇰 HK | 香港06-1x-380 #1'
+  name: 656|🇭🇰 HK | 香港06-1x-380
   network: ws
-  port: 15565
+  port: '15565'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇭🇰 HK | 香港07-1x-381 #1'
+  name: 656|🇭🇰 HK | 香港07-1x-381
   network: ws
-  port: 15566
+  port: '15566'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇭🇰 ►HK | 香港08-1x*-382 #1'
+  name: 656|🇭🇰 ►HK | 香港08-1x*-382
   network: ws
-  port: 15573
+  port: '15573'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇭🇰 ►HK | 香港09-1x*-383 #1'
+  name: 656|🇭🇰 ►HK | 香港09-1x*-383
   network: ws
-  port: 15569
+  port: '15569'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇭🇰 ►HK | 香港10-1x*-384 #1'
+  name: 656|🇭🇰 ►HK | 香港10-1x*-384
   network: ws
-  port: 15570
+  port: '15570'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇭🇰 ►HK | 香港11-1x-385 #1'
+  name: 656|🇭🇰 ►HK | 香港11-1x-385
   network: ws
-  port: 15571
+  port: '15571'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇭🇰 ►HK | 香港12-1x-386 #1'
+  name: 656|🇭🇰 ►HK | 香港12-1x-386
   network: ws
-  port: 15572
+  port: '15572'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇭🇰 ►HK | 香港13-2x-HKT-387 #1'
+  name: 656|🇭🇰 ►HK | 香港13-2x-HKT-387
   network: ws
-  port: 15638
+  port: '15638'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇭🇰 ►HK | 香港14-3x-iclble-388 #1'
+  name: 656|🇭🇰 ►HK | 香港14-3x-iclble-388
   network: ws
-  port: 15710
+  port: '15710'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
-- name: 656,719|🇭🇰 Trojan-香港1 | -524
+- name: 656|🇭🇰 Trojan-香港1 | 低倍率-524
   password: 259a29a2-b884-47c9-ad0f-689f00b92bdd
   port: 10116
   server: cc.rk1.cac.cab
   skip-cert-verify: true
   sni: tchk1.bilibili.com
   type: trojan
-  udp: true
-- name: '656,719|🇭🇰 Trojan-香港2 | 低倍率-530 #1'
+- name: 656|🇭🇰 Trojan-香港2 | 低倍率-530
   password: 259a29a2-b884-47c9-ad0f-689f00b92bdd
-  port: 46925
-  server: 66c46f276078def6c986869308bab69d.lh.gtm.cac.cab
+  port: 47274
+  server: db4c783a173e235760fc419be875ec7a.lh.gtm.cac.cab
   skip-cert-verify: true
   sni: tchk1.bilibili.com
   type: trojan
-  udp: true
-- name: '691|HK #3'
+- name: 691|HK
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 41288
@@ -6488,299 +6464,6 @@ proxies:
   skip-cert-verify: true
   sni: hk12.bilibili.com
   type: trojan
-- cipher: aes-256-gcm
-  fast-open: false
-  name: '719|🇭🇰 HK AMAZON 06 @txwl666-61 #1'
-  password: 05d1a3ab-2ca8-42b2-8f21-527695250017
-  port: 15098
-  server: 95.40.99.219
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  fast-open: false
-  name: '719|🇭🇰 HK AMAZON 09 @txwl666-62 #1'
-  password: 05d1a3ab-2ca8-42b2-8f21-527695250017
-  port: 16888
-  server: 43.198.22.37
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  fast-open: false
-  name: '719|🇭🇰 HK AMAZON 10 @txwl666-63 #1'
-  password: 05d1a3ab-2ca8-42b2-8f21-527695250017
-  port: 15098
-  server: 54.46.63.252
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  fast-open: false
-  name: '719|🇭🇰 HK AMAZON 11 @txwl666-64 #1'
-  password: 05d1a3ab-2ca8-42b2-8f21-527695250017
-  port: 15097
-  server: 43.199.214.93
-  tfo: false
-  type: ss
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 719|🇭🇰 国-香港-01-103
-  password: c1854182-5014-4cd5-b024-022302480ba1
-  port: 20131
-  server: hkv4.9966663.xyz
-  skip-cert-verify: true
-  sni: hkv4.9966663.xyz
-  type: anytls
-  udp: true
-- client-fingerprint: chrome
-  name: '719|🇭🇰 HK_11 | ⬇️ 1.3MB/s-291 #1'
-  network: ws
-  port: 8443
-  server: 172.64.154.113
-  servername: www.xaniusg1.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: www.xaniusg1.qzz.io
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  name: '719|🇭🇰 HK_12 | ⬇️ 4.7MB/s-296 #1'
-  network: ws
-  port: 443
-  server: 104.17.253.113
-  servername: www.xaniusg1.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: www.xaniusg1.qzz.io
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  name: '719|🇭🇰 HK_13 | ⬇️ 1.0MB/s-299 #1'
-  network: ws
-  port: 2087
-  server: 172.64.158.216
-  servername: www.xaniusg1.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: www.xaniusg1.qzz.io
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  name: '719|🇭🇰 HK_14 | ⬇️ 3.5MB/s-307 #1'
-  network: ws
-  port: 8443
-  server: 172.64.154.113
-  servername: www.xaniuhk.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: www.xaniuhk.qzz.io
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  name: '719|🇭🇰 HK_15 | ⬇️ 4.5MB/s-309 #1'
-  network: ws
-  port: 2087
-  server: 104.18.45.192
-  servername: www.xaniusg1.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: www.xaniusg1.qzz.io
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  name: '719|🇭🇰 HK_16 | ⬇️ 3.7MB/s-310 #1'
-  network: ws
-  port: 2087
-  server: 172.64.154.30
-  servername: www.xaniusg1.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: www.xaniusg1.qzz.io
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  name: '719|🇭🇰 HK_17 | ⬇️ 1.3MB/s-315 #1'
-  network: ws
-  port: 443
-  server: 104.18.63.116
-  servername: www.xaniuhk.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: www.xaniuhk.qzz.io
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  name: '719|🇭🇰 HK_18 | ⬇️ 1.7MB/s-317 #1'
-  network: ws
-  port: 2087
-  server: 172.64.34.130
-  servername: www.xaniuhk.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: www.xaniuhk.qzz.io
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  name: '719|🇭🇰 HK_19 | ⬇️ 5.3MB/s-321 #1'
-  network: ws
-  port: 443
-  server: www.wto.org
-  servername: www.xaniuhk.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: www.xaniuhk.qzz.io
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  name: '719|🇭🇰 HK_20 | ⬇️ 1.6MB/s-324 #1'
-  network: ws
-  port: 443
-  server: 104.16.29.98
-  servername: www.xaniuhk.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: www.xaniuhk.qzz.io
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  name: '719|🇭🇰 HK_21 | ⬇️ 1.1MB/s-327 #1'
-  network: ws
-  port: 443
-  server: 104.21.29.56
-  servername: www.xaniuhk.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: www.xaniuhk.qzz.io
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  name: '719|🇭🇰 HK_22 | ⬇️ 4.7MB/s-334 #1'
-  network: ws
-  port: 443
-  server: 104.24.254.62
-  servername: www.xaniusg1.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: www.xaniusg1.qzz.io
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  name: '719|🇭🇰 HK_23 | ⬇️ 1.0MB/s-336 #1'
-  network: ws
-  port: 443
-  server: 104.25.63.32
-  servername: www.xaniuhk.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: www.xaniuhk.qzz.io
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  name: '719|🇭🇰 HK_24 | ⬇️ 6.3MB/s-337 #1'
-  network: ws
-  port: 443
-  server: 104.18.63.72
-  servername: www.xaniuhk.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: www.xaniuhk.qzz.io
-    max-early-data: 2560
-    path: /
-- name: '719|🇭🇰 HK⁻¹_1|11.8MB/s|YT|NF|D+|X-... #1'
-  network: ws
-  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-  port: 443
-  server: ct.877774.xyz
-  skip-cert-verify: false
-  sni: cm2-bpg.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /proxyip=210.61.97.241:81
-- cipher: aes-128-gcm
-  name: 719|🇭🇰 1-504
-  password: 259a29a2-b884-47c9-ad0f-689f00b92bdd
-  port: 50001
-  server: lh.cac.cab
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '719|🇭🇰 香港2-505 #1'
-  password: 259a29a2-b884-47c9-ad0f-689f00b92bdd
-  port: 50002
-  server: lh.cac.cab
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '719|🇭🇰 香港3-506 #1'
-  password: 259a29a2-b884-47c9-ad0f-689f00b92bdd
-  port: 50003
-  server: lh.cac.cab
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '719|🇭🇰 香港4-507 #1'
-  password: 259a29a2-b884-47c9-ad0f-689f00b92bdd
-  port: 50004
-  server: lh.cac.cab
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 722|🇭🇰HK-香港1
   password: 0305e0ec-ec7e-4770-9aa3-81e3427f91b6

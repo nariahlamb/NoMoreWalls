@@ -352,7 +352,7 @@ proxies:
   port: '443'
   server: seoul03.zgjok.com
   servername: seoul03.zgjok.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
@@ -361,21 +361,21 @@ proxies:
       Host: seoul03.zgjok.com
     path: /
 - cipher: aes-256-gcm
-  name: 472,523|🇰🇷 KR-141.164.45.187-5115
+  name: 472|🇷KR-141.164.45.187-0350
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 141.164.45.187
   type: ss
 - cipher: aes-256-cfb
-  country: 🇸 US
-  name: 472,523,587|🇺🇸 US_145
+  country: 🇺🇸 US
+  name: 472,587|🇺 US_144
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
-  country: 🇸 US
-  name: 472,523,587,634|yandex-3012
+  country: 🇺🇸 US
+  name: 472,587,634|yandex-3159
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
@@ -383,14 +383,15 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇷 KR
-  name: 472,587,634|yandex-2941
+  name: 472,587,634|yandex-3088
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 472,523,634|yandex-3144
+  country: 🇷 KR
+  name: 472,587,634|yandex-3291
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -1010,7 +1011,7 @@ proxies:
   server: 125.141.26.5
   type: ss
 - cipher: aes-256-gcm
-  name: 537,634|yandex-561
+  name: 537,634|yandex-246
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 21001
   server: kr001.dogsvip.site
@@ -1100,6 +1101,24 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 591|Relay_ZZ-🇷KR_98
+  network: ws
+  port: 8443
+  server: c7.620720.xyz
+  servername: c7.620720.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      HOST: c7.620720.xyz
+    path: /
 - name: 603|韩国_首尔特别市
   network: ws
   port: 8443
@@ -1712,57 +1731,49 @@ proxies:
   uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
 - alterId: 0
   cipher: auto
-  name: 656,719|🇰🇷 ►KR | 01-1x*-397
+  name: 656|🇰🇷 ►KR | 韩国01-1x*-397
   network: ws
-  port: 15582
+  port: '15582'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇰🇷 ►KR | 韩国02-1x*-398 #1'
+  name: 656|🇰🇷 ►KR | 韩国02-1x*-398
   network: ws
-  port: 15583
+  port: '15583'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇰🇷 ►KR | 韩国03-3x-KT-399 #1'
+  name: 656|🇰🇷 ►KR | 韩国03-3x-KT-399
   network: ws
-  port: 15672
+  port: '15672'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇰🇷 ►KR | 韩国04-2x-LG-400 #1'
+  name: 656|🇰🇷 ►KR | 韩国04-2x-LG-400
   network: ws
-  port: 15689
+  port: '15689'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
@@ -1784,17 +1795,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 8775ec53-510a-3033-b4ad-a00d96def8dd
-- alterId: 0
-  cipher: auto
-  client-fingerprint: ''
-  fast-open: false
-  name: '719|🇰🇷 KR_146 |16.14Mb-101 #1'
-  port: 80
-  server: 152.70.92.69
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
 - name: 764|韩国01
   password: 342ef623-bd7d-47c3-ac04-d5c3529c1828
   port: 10836

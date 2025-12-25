@@ -66,6 +66,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 217|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: 453,472|🇳🇱NL-51.15.27.48-8360
   password: f8f7aCzcPKbsF8p3
@@ -391,12 +405,12 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 472,523,627,638|🇫🇷 FR_46
+  name: 472,627,638|🇫🇷 FR_46
   network: ws
   port: 443
   server: 91.134.8.101
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -405,19 +419,19 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 472,523|🇫🇷 FR-51.159.106.175-0315
+  name: 472|🇷FR-51.159.106.175-0293
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.106.175
   type: ss
 - alterId: 0
   cipher: auto
-  name: '472,523,627,638|🇧🇪 BE_19 #1'
+  name: 472,627,638|🇧🇪 BE_19
   network: ws
   port: 443
   server: 57.128.189.240
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -426,7 +440,7 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 472,523|🇫🇷 FR-195.154.119.77-0340
+  name: 472|🇷FR-195.154.119.77-0316
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -695,7 +709,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 472,627|🇫🇷FR-57.128.189.240-4845
+  name: '472,523,627|🇫🇷FR-57.128.189.240-4845 #1'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -740,7 +754,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 472,627|🇫🇷FR-91.134.8.101-4867
+  name: '472,523,627|🇫🇷FR-91.134.8.101-4867 #1'
   network: ws
   port: 443
   server: 91.134.8.101
@@ -753,7 +767,7 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- country: 🇷FR
+- country: 🇫🇷FR
   name: 472,587,627|🇫🇷FR-51.178.42.187-4869
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
@@ -761,12 +775,14 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 472,627|🇫🇷FR-51.195.202.129-4870
+- country: 🇫🇷FR
+  name: 472,587,627|🇫🇷FR-51.195.202.129-4870
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 472,627|🇫🇷FR-146.59.55.50-4936
@@ -1547,20 +1563,16 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  client-fingerprint: ''
-  delay: 1684
-  fast-open: false
-  name: '523,623,634,719|🇭🇰 Relay_HK-US_119-88 #1'
-  port: 30835
+  name: 523,630,638,642,656|🇭🇰 Relay_HK-US_119-88
+  network: tcp
+  port: '30835'
   server: v35.hdacd.com
-  skip-cert-verify: true
-  tfo: false
+  servername: ''
   tls: false
   type: vmess
-  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-gcm
-  name: 537,634|yandex-567
+  name: 537,634|yandex-252
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
@@ -1586,34 +1598,6 @@ proxies:
   h2-opts: {}
   http-opts: {}
   name: 587| FR_41
-  network: ws
-  port: 20521
-  server: 45.136.12.37
-  skip-cert-verify: true
-  type: vmess
-  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇫🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 587,638|🇫🇷 FR_45
-  network: none
-  port: 38141
-  server: 45.136.12.37
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇫🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 587|🇫🇷 FR_43
   network: ws
   port: 443
   server: 91.134.8.101
@@ -1732,6 +1716,19 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
+- alterId: 2
+  cipher: auto
+  client-fingerprint: ''
+  delay: 1684
+  fast-open: false
+  name: 623,634|yandex-320
+  port: 30835
+  server: v35.hdacd.com
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: 625|🇫🇷 法国1-1E
@@ -1929,16 +1926,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
-- alterId: 2
-  cipher: auto
-  name: 630,638,642,656|🇭🇰 Relay_HK-US_119-88
-  network: tcp
-  port: '30835'
-  server: v35.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 638|🇫🇷FR_47
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
@@ -2018,6 +2005,16 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: 638|🇫🇷 FR_45
+  network: none
+  port: 38141
+  server: 45.136.12.37
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
+- alterId: 0
+  cipher: auto
   name: '649|法国1 #4'
   network: tcp
   port: '45072'
@@ -2036,57 +2033,49 @@ proxies:
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
 - alterId: 0
   cipher: auto
-  name: 656,719|🏴‍☠️ ►GF | 圭01-2x-R-449
+  name: 656|🏴‍☠️ ►GF | 法属圭亚那01-2x-R-449
   network: ws
-  port: 15676
+  port: '15676'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 656,719|🇫🇷 ►FR | 法01-1x*-467
+  name: 656|🇫🇷 ►FR | 法国01-1x*-467
   network: ws
-  port: 15641
+  port: '15641'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇫🇷 ►FR | 法国02-1x*-468 #1'
+  name: 656|🇫🇷 ►FR | 法国02-1x*-468
   network: ws
-  port: 15691
+  port: '15691'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇫🇷 ►FR | 法国03-2x-R-469 #1'
+  name: 656|🇫🇷 ►FR | 法国03-2x-R-469
   network: ws
-  port: 15693
+  port: '15693'
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
   servername: www.itvcn.com
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 952e7afd-980d-4f10-b028-7e558908363c
   ws-opts:
     path: /
