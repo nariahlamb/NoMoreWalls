@@ -354,7 +354,7 @@ proxies:
   port: '443'
   server: seoul03.zgjok.com
   servername: seoul03.zgjok.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
@@ -363,26 +363,29 @@ proxies:
       Host: seoul03.zgjok.com
     path: /
 - cipher: aes-256-gcm
-  name: 472,523|🇰🇷 KR-141.164.45.187-0350
+  name: 472|🇷KR-141.164.45.187-0388
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 141.164.45.187
   type: ss
 - cipher: aes-256-cfb
-  name: 472,523,634|yandex-2844
+  country: 🇸 US
+  name: 472,587,634|yandex-2799
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 472,523|🇰🇷 KR-154.90.62.168-0372
+  country: 🇺🇸 US
+  name: 472,587|🇺 US_135
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
-  name: 472,523,578,634|yandex-2976
+  country: 🇷 KR
+  name: 472,587,634|yandex-2931
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -769,7 +772,8 @@ proxies:
   server: 3.36.118.190
   type: ss
 - cipher: aes-256-cfb
-  name: 472,634|yandex-2773
+  country: 🇷 KR
+  name: 472,587,634|yandex-2728
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
@@ -1009,7 +1013,7 @@ proxies:
   server: 125.141.26.5
   type: ss
 - cipher: aes-256-gcm
-  name: 537,634|yandex-3127
+  name: 537,634|yandex-337
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 21001
   server: kr001.dogsvip.site
@@ -1099,6 +1103,24 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 591|Relay_ZZ-🇷KR_109
+  network: ws
+  port: 8443
+  server: c7.620720.xyz
+  servername: c7.620720.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      HOST: c7.620720.xyz
+    path: /
 - name: 603|韩国_首尔特别市
   network: ws
   port: 8443
@@ -1503,6 +1525,34 @@ proxies:
   skip-cert-verify: true
   sni: humble-rodent.treefrog761.one
   type: trojan
+- delay: 1708
+  name: 623,634|yandex-113
+  network: ws
+  password: trojan
+  port: 10250
+  server: 110.12.52.95
+  skip-cert-verify: true
+  sni: fofang.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: fofang.pages.dev
+    path: /?ed=2560
+- delay: 1729
+  name: 623,634|yandex-114
+  network: ws
+  password: trojan
+  port: 25010
+  server: 61.79.126.130
+  skip-cert-verify: true
+  sni: fofang.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: fofang.pages.dev
+    path: /?ed=2560
 - cipher: aes-256-gcm
   name: 625|KR-IDC-1
   password: 506efa4f-5060-4bfb-ae39-91882e46c3c1
