@@ -86,7 +86,7 @@ proxies:
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - alterId: 0
   cipher: auto
-  name: 218|🇫🇷 法国
+  name: 217|🇫🇷 法国
   network: ws
   port: 30837
   server: v37.heduian.link
@@ -451,12 +451,12 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '472,523,627,638|🇧🇪 BE_23 #1'
+  name: 472,627,638|🇧🇪 BE_30
   network: ws
   port: 443
   server: 57.128.189.240
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -465,19 +465,19 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 472,523|🇫🇷 FR-51.159.106.175-0293
+  name: 472|🇷FR-51.159.106.175-0299
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.106.175
   type: ss
 - alterId: 0
   cipher: auto
-  name: 472,523,627,638|🇫🇷 FR_41
+  name: 472,627,638|🇫🇷 FR_44
   network: ws
   port: 443
   server: 91.134.8.101
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -486,7 +486,7 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 472,523|🇫🇷 FR-195.154.119.77-0316
+  name: 472|🇷FR-195.154.119.77-0340
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -755,7 +755,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 472,627|🇫🇷FR-57.128.189.240-4800
+  name: '472,523,627|🇫🇷FR-57.128.189.240-4800 #1'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -800,7 +800,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 472,627|🇫🇷FR-91.134.8.101-4825
+  name: '472,523,627|🇫🇷FR-91.134.8.101-4825 #1'
   network: ws
   port: 443
   server: 91.134.8.101
@@ -813,22 +813,18 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- country: 🇫🇷FR
-  name: 472,587,627|🇫🇷FR-51.178.42.187-4827
+- name: 472,627|🇫🇷FR-51.178.42.187-4827
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 472,587,627|🇫🇷FR-51.195.202.129-4828
+- name: 472,627|🇫🇷FR-51.195.202.129-4828
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 472,627|🇫🇷FR-146.59.55.50-4892
@@ -1106,7 +1102,7 @@ proxies:
   port: 443
   server: 146.59.55.50
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1607,64 +1603,18 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  fast-open: false
-  name: 523,634|yandex-3114
-  port: 26691
-  protocol: udp
-  server: 62.210.196.68
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 11 Mbps
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 55
-  fast-open: false
-  name: 523|🇫🇷 _FR_法国 2
-  port: 35511
-  protocol: udp
-  server: 62.210.10.186
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 11
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  fast-open: false
-  name: 523,634|yandex-3080
-  port: 50011
-  protocol: udp
-  server: 62.210.10.186
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 11 Mbps
 - alterId: 2
   cipher: auto
-  client-fingerprint: ''
-  fast-open: false
-  name: '523,719|🇭🇰 Relay_HK-US_119-88 #1'
-  port: 30835
+  name: '523,630,638|🇭🇰_香港 #8'
+  network: tcp
+  port: '30835'
   server: v35.hdacd.com
-  skip-cert-verify: true
-  tfo: false
+  servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-gcm
-  name: 537,634|yandex-343
+  name: 537,634|yandex-2695
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
@@ -1674,9 +1624,9 @@ proxies:
   cipher: auto
   name: 578|Channel id:@proxy_kafee 🇫🇷
   network: ws
-  port: '2082'
+  port: 2082
   server: 5.196.29.123
-  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
@@ -1684,33 +1634,6 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /
-- alterId: 0
-  cipher: auto
-  country: 🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 587| FR_41
-  network: none
-  port: 38141
-  server: 45.136.12.37
-  skip-cert-verify: true
-  type: vmess
-  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 587|🇷 FR_42
-  network: ws
-  port: 443
-  server: 91.134.8.101
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-path: /linkvws
 - name: 603|法国_巴黎
   network: ws
   port: 443
@@ -2056,23 +1979,41 @@ proxies:
   tls: true
   type: vmess
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 630,638,656|🇭🇰 Relay_HK-US_119-88
-  network: tcp
-  port: '30835'
-  server: v35.hdacd.com
+  name: 630,638|未知_122604821
+  network: ws
+  port: '80'
+  server: DddFfRtY6.922922.shop
   servername: ''
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 638|🇫🇷FR_44
+  uuid: bce0c7cb-08d1-46a7-b77b-7bff8b46252f
+  ws-opts:
+    headers:
+      Host: DddFfRtY6.922922.shop
+    path: /RkUUbqhA9GJZBROjL3Q5vTymr
+- name: '630|🇫🇷 FR法国(mibei77.com 米贝节点分享) #9'
+  password: 7418004a-0ecd-41c0-a062-42bf966d3fb2
+  port: 443
+  server: cf.877774.xyz
+  skip-cert-verify: false
+  sni: guang.bgm2024.dpdns.org
+  type: trojan
+- name: '630|🇫🇷 FR法国(mibei77.com 米贝节点分享) #14'
+  password: e86364fb-a5e3-42c3-b7fa-6ce8097fe19f
+  port: 443
+  server: bisque.qzz.io
+  skip-cert-verify: false
+  sni: bisque.qzz.io
+  type: trojan
+- name: 638|🇫🇷FR_47
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 638|法国_122518253
+- name: 638|法国_122604245
   network: tcp
   password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
   port: 25075
@@ -2080,7 +2021,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 638|法国_122518251
+- name: 638|法国_122604243
   network: tcp
   password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
   port: 25075
@@ -2088,7 +2029,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 638|法国_122518252
+- name: 638|法国_122604244
   network: tcp
   password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
   port: 25075
@@ -2096,19 +2037,19 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 638|🇫🇷FR_42
+- name: 638|🇫🇷FR_45
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: '638|🇫🇷FR_45 #1'
+- name: 638|🇫🇷FR_48
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 638|🇫🇷FR_43
+- name: 638|🇫🇷FR_46
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -2116,11 +2057,11 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 638|FR TROJAN-09 | free-nodes
+  name: 638|FR TROJAN-03 | free-nodes
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 35.180.13.228
+  server: 15.237.171.88
   sni: trojan.burgerip.co.uk
   type: trojan
 - client-fingerprint: chrome
@@ -2136,32 +2077,6 @@ proxies:
   tls: false
   type: vless
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: randomized
-  name: 638,656|🇭🇰 US¹-TW⁰_3|13.2MB/s|GM|YT-HK...
-  network: ws
-  port: 443
-  server: 108.162.198.185
-  servername: snippets.kkii.eu.org
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: '%2F'
-- client-fingerprint: chrome
-  name: 638,656|🇹🇼 TW_9 | ⬇️ 3.2MB/s-263
-  network: ws
-  port: 443
-  server: 172.64.53.226
-  servername: snippets.kkii.eu.org
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 638|法国 140
@@ -2228,7 +2143,7 @@ proxies:
   ws-opts:
     path: '%2Fadkfoows'
 - client-fingerprint: chrome
-  name: 656|🇫🇷 FR_2 | ⬇️ 2.3MB/s-248
+  name: 656|🇫🇷 FR_2 | ⬇️ 2.3MB/s-206
   network: ws
   port: 443
   server: 94.131.118.18
@@ -2240,7 +2155,7 @@ proxies:
     headers:
       Host: ads.x5.ru
     path: '%2Fkmdznvws'
-- name: 656|🇫🇷 FR_4 | ⬇️ 5.3MB/s-272
+- name: 656|🇫🇷 FR_4 | ⬇️ 5.3MB/s-230
   network: ws
   port: 443
   server: 185.231.205.152
@@ -2253,8 +2168,21 @@ proxies:
       Host: ads.x5.ru
     path: '%2Fuefsanws'
 - client-fingerprint: chrome
+  name: 656|🇫🇷 FR_7 | ⬇️ 1.1MB/s-254
+  network: ws
+  port: 2087
+  server: hj.xmm1993.top
+  servername: www.xaniuhk.qzz.io
+  tls: true
+  type: vless
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: www.xaniuhk.qzz.io
+    path: '%2F%3Fed%3D2560'
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '656,719|🇫🇷 FR_8 | ⬇️ 4.3MB/s-342 #1'
+  name: '656,719|🇫🇷 FR_8 | ⬇️ 4.3MB/s-300 #1'
   network: tcp
   port: 443
   reality-opts:
@@ -2268,7 +2196,7 @@ proxies:
   uuid: ca257dd3-a933-4b8b-8186-f9beca982be9
 - alterId: 0
   cipher: auto
-  name: 656,719|🏴‍☠️ ►GF | 圭01-2x-R-444
+  name: 656,719|🏴‍☠️ ►GF | 圭01-2x-R-402
   network: ws
   port: 15676
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
@@ -2282,7 +2210,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 656,719|🇫🇷 ►FR | 法01-1x*-462
+  name: 656,719|🇫🇷 ►FR | 法01-1x*-420
   network: ws
   port: 15641
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
@@ -2296,7 +2224,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇫🇷 ►FR | 法国02-1x*-463 #1'
+  name: '656,719|🇫🇷 ►FR | 法国02-1x*-421 #1'
   network: ws
   port: 15691
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
@@ -2310,7 +2238,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '656,719|🇫🇷 ►FR | 法国03-2x-R-464 #1'
+  name: '656,719|🇫🇷 ►FR | 法国03-2x-R-422 #1'
   network: ws
   port: 15693
   server: oss-cn-ozkekcp9c-Kpz1zk.mmbdddgb-i-uap-dline.space
@@ -2345,7 +2273,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 719|🇫🇷 国-Co01-183
+  name: 719|🇫🇷 国-Co01-141
   password: c1854182-5014-4cd5-b024-022302480ba1
   port: 20131
   server: co-a40dc7-20.9966663.xyz
@@ -2357,7 +2285,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 719|🇫🇷 法国-Co02-184
+  name: 719|🇫🇷 法国-Co02-142
   password: c1854182-5014-4cd5-b024-022302480ba1
   port: 20132
   server: co-a40dc7-20.9966663.xyz
@@ -2369,7 +2297,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 719|🇫🇷 法国-Co03-185
+  name: 719|🇫🇷 法国-Co03-143
   password: c1854182-5014-4cd5-b024-022302480ba1
   port: 20133
   server: co-a40dc7-20.9966663.xyz
@@ -2381,7 +2309,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 719|🇫🇷 法国-Co04-186
+  name: 719|🇫🇷 法国-Co04-144
   password: c1854182-5014-4cd5-b024-022302480ba1
   port: 20134
   server: co-a40dc7-20.9966663.xyz
@@ -2393,7 +2321,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 719|🇫🇷 法国-Co05-187
+  name: 719|🇫🇷 法国-Co05-145
   password: c1854182-5014-4cd5-b024-022302480ba1
   port: 20135
   server: co-a40dc7-20.9966663.xyz
@@ -2402,7 +2330,7 @@ proxies:
   type: anytls
   udp: true
 - client-fingerprint: chrome
-  name: 719|🇫🇷 FR_2 |  2.3MB/s-248
+  name: 719|🇫🇷 FR_2 |  2.3MB/s-206
   network: ws
   port: 443
   server: 94.131.118.18
@@ -2414,7 +2342,7 @@ proxies:
     headers:
       Host: ads.x5.ru
     path: /kmdznvws
-- name: '719|🇫🇷 FR_4 | ⬇️ 5.3MB/s-272 #1'
+- name: '719|🇫🇷 FR_4 | ⬇️ 5.3MB/s-230 #1'
   network: ws
   port: 443
   server: 185.231.205.152
@@ -2427,7 +2355,7 @@ proxies:
       Host: ads.x5.ru
     path: /uefsanws
 - client-fingerprint: chrome
-  name: '719|🇫🇷 FR_6 | ⬇️ 1.3MB/s-287 #1'
+  name: '719|🇫🇷 FR_6 | ⬇️ 1.3MB/s-245 #1'
   network: ws
   port: 443
   server: 104.25.127.147
@@ -2442,7 +2370,7 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: chrome
-  name: '719|🇫🇷 FR_7 | ⬇️ 1.1MB/s-296 #1'
+  name: '719|🇫🇷 FR_7 | ⬇️ 1.1MB/s-254 #1'
   network: ws
   port: 2087
   server: hj.xmm1993.top
