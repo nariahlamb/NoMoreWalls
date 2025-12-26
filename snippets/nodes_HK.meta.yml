@@ -253,18 +253,42 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- name: '96,579|🇭🇰 HK_1|5.2MB/s|YT-HK|NF|D+ #1'
+- name: '96,579|HK_2|7.3MB/s|NF|D+ #1'
+  network: ws
+  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+  port: 2083
+  server: cf.090227.xyz
+  skip-cert-verify: true
+  sni: cm2-bpg.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cm2-bpg.filegear-sg.me
+    path: '%2Fproxyip%3D210.61.97.241%3A81'
+- name: '96,579|HK_3|5.4MB/s|YT-HK|NF|D+ #1'
   network: ws
   password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
   port: 443
-  server: store.ubi.com
+  server: cf.877774.xyz
   skip-cert-verify: true
   sni: _acme-challenge.2go.cloudns.be
   type: trojan
   ws-opts:
+    path: '%2F'
+- client-fingerprint: chrome
+  name: '96,579,638|US美国(mibei77.com 米贝节点分享) #4'
+  network: ws
+  port: 443
+  server: 104.19.39.97
+  servername: snippets.kkii.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
     headers:
-      Host: _acme-challenge.2go.cloudns.be
-    path: /
+      Host: snippets.kkii.eu.org
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: '97,581|香港NO.2 #1'
@@ -841,7 +865,8 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '295,400,472,578,621,627,630,633,634,635,636,638,854|【机场推荐：https://a0a.xyz/】17
+- country: 🇭🇰HK
+  name: '295,400,472,578,591,621,627,630,633,634,635,636,638,854|【机场推荐：https://a0a.xyz/】17
     #2'
   network: tcp
   password: 44e660b0ee21cf3ac66aee2c08af85d2
@@ -859,7 +884,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '295,400,578,621,630,633,635,636|香港5|@ripaojiedian #1'
+- name: '295,400,523,578,609,610,621,630,633,634,635,636|香港5|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -867,6 +892,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+  udp: true
 - name: '295,400,578,621,630,633,635,636|新加坡3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
@@ -885,15 +911,11 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: '295,400,591,621,630,633,636,638|12|🇭🇰 香港|@ripaojiedian #3'
+  name: '295,400,621,630,633,636,638|12|🇭🇰 香港|@ripaojiedian #3'
   network: tcp
   port: 30807
   server: v10.hdacd.com
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -1401,13 +1423,14 @@ proxies:
       Host: hkt.gotochinatown.net
     path: /
 - cipher: chacha20-ietf
-  name: 472|🇭🇰HK-103.141.221.88-0368
+  name: 472,523|🇭🇰 HK-103.141.221.88-0368
   password: asd123456
   port: 8388
   server: 103.141.221.88
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇰HK-203.23.128.33-0383
+  country: 🇰 HK
+  name: 472,523,587|🇰 HK_58
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
@@ -1428,8 +1451,7 @@ proxies:
       Host: hk.nbee.pp.ua
     path: /
 - cipher: aes-256-cfb
-  country: 🇰HK
-  name: 472,591|HK_13
+  name: 472|🇰HK-216.250.97.82-0427
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 216.250.97.82
@@ -1524,7 +1546,7 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn/download
-- name: '472,523,627,630|_CN_中国 #2'
+- name: '472,523,627,630|_CN_中国 #3'
   password: BxceQaOe
   port: 443
   server: 219.79.214.159
@@ -1554,7 +1576,7 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
 - cipher: aes-128-gcm
-  name: 472,634|yandex-3004
+  name: 472,634|yandex-61
   password: 57bc0c04-8184-48f5-906b-897d095ed445
   port: 17459
   server: liubu9.singdns.com
@@ -2194,20 +2216,24 @@ proxies:
   port: 19888
   server: ss.008.node-for-bigairport.win
   type: ss
-- name: '472,627|🇭🇰HK-45.149.92.71-5026 #1'
+- country: 🇺🇸 US
+  name: '472,587,627|🇭🇰HK-45.149.92.71-5026 #1'
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: '472,627|🇭🇰HK-45.149.92.71-5027 #1'
+  udp: true
+- country: 🇸 US
+  name: '472,587,627|🇭🇰HK-45.149.92.71-5027 #1'
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: hinet.mjt000.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf
-  name: 472|🇭🇰HK-103.149.183.191-5072
+  name: 472,523|🇭🇰 HK-103.149.183.191-5072
   password: asd123456
   port: 8388
   server: 103.149.183.191
@@ -2234,21 +2260,21 @@ proxies:
   server: 103.149.183.154
   type: ss
 - cipher: chacha20-ietf
-  name: 472,634|yandex-2977
+  name: 472,634|yandex-34
   password: asd123456
   port: 8388
   server: 103.149.182.158
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 472|🇭🇰HK-95.40.121.96-5190
+  country: 🇰 HK
+  name: 472,587|🇰 HK_57
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 36888
   server: ss.007.node-for-bigairport.win
   type: ss
 - cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: 472,591,634|yandex-2962
+  name: 472,634|yandex-19
   password: asd123456
   port: 8388
   server: 103.149.182.203
@@ -4172,105 +4198,105 @@ proxies:
       Host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
 - cipher: aes-256-gcm
-  name: 537,634|yandex-17
+  name: 537,634|yandex-3130
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16001
   server: hk001.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-18
+  name: 537,634|yandex-3131
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16002
   server: hk002.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-19
+  name: 537,634|yandex-3132
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16003
   server: hk003.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-20
+  name: 537,634|yandex-3133
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16004
   server: hk004.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-21
+  name: 537,634|yandex-3134
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16005
   server: hk005.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-22
+  name: 537,634|yandex-3135
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16006
   server: hk006.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-23
+  name: 537,634|yandex-3136
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16007
   server: hk007.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-24
+  name: 537,634|yandex-3137
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16008
   server: hk008.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-25
+  name: 537,634|yandex-3138
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16009
   server: hk009.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-26
+  name: 537,634|yandex-3139
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16010
   server: hk010.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-27
+  name: 537,634|yandex-3140
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16011
   server: hk011.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-28
+  name: 537,634|yandex-3141
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16012
   server: hk012.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-29
+  name: 537,634|yandex-3142
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16013
   server: hk013.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-30
+  name: 537,634|yandex-3143
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16014
   server: hk014.dogsvip.site
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 537,634|yandex-31
+  name: 537,634|yandex-3144
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 16015
   server: hk015.dogsvip.site
@@ -4614,7 +4640,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-2938
+  name: 577,634|yandex-178
   network: ws
   port: 16632
   server: planb.mojcn.com
@@ -4631,7 +4657,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-2939
+  name: 577,634|yandex-179
   network: ws
   port: 16632
   server: m.cnmjin.net
@@ -4648,7 +4674,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-2940
+  name: 577,634|yandex-180
   network: ws
   port: 16632
   server: t.cnmjcn.cyou
@@ -4665,7 +4691,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-2941
+  name: 577,634|yandex-181
   network: ws
   port: 16622
   server: planb.mojcn.com
@@ -4682,7 +4708,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-2942
+  name: 577,634|yandex-182
   network: ws
   port: 16622
   server: m.cnmjin.net
@@ -4699,7 +4725,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-2943
+  name: 577,634|yandex-183
   network: ws
   port: 16622
   server: t.cnmjcn.cyou
@@ -4733,18 +4759,46 @@ proxies:
   server: 203.23.128.92
   type: ss
 - cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: 591|🇰HK_14
+  country: 🇭🇰 HK
+  name: 587|🇰 HK_59
   password: asd123456
   port: 8388
-  server: 103.149.182.38
+  server: 103.149.182.191
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇭🇰 HK_61
+  network: none
+  port: 13852
+  server: 45.207.157.29
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇰 HK_62
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: d70a9508-5477-11ef-bf61-f23c913c8d2b
+  ws-path: /
 - cipher: chacha20-ietf
   country: 🇰HK
-  name: 591|🇭🇰HK_15
+  name: 591|Relay_HK-🇭🇰HK_06
   password: asd123456
   port: 8388
-  server: 103.149.182.79
+  server: 103.149.182.105
   type: ss
 - name: 603|香港_香港
   network: ws
@@ -5348,14 +5402,14 @@ proxies:
   type: vmess
   udp: true
   uuid: aaba2807-e05d-4b46-a819-10aca0793576
-- name: 630|🇭🇰 香港 电讯盈科有限公司
+- name: '630|🇭🇰 香港 电讯盈科有限公司 #1'
   password: BxceQaOe
   port: 443
   server: 203.198.84.221
   skip-cert-verify: false
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '630|🇭🇰 香港 电讯盈科有限公司 #1'
+- name: '630|🇭🇰 香港 电讯盈科有限公司 #2'
   password: BxceQaOe
   port: 443
   server: 58.152.46.60
@@ -5550,7 +5604,7 @@ proxies:
       Host: www.xaniuhk.qzz.io
     path: '%2F%3Fed%3D2560'
 - client-fingerprint: chrome
-  name: 638,656|🇭🇰 HK_15 | ⬇️ 4.5MB/s-279
+  name: 638,656|🇭🇰 HK_15 | ⬇️ 4.5MB/s-194
   network: ws
   port: 2087
   server: 104.18.45.192
@@ -5575,7 +5629,7 @@ proxies:
       Host: www.xaniuhk.qzz.io
     path: '%2F%3Fed%3D2560'
 - client-fingerprint: chrome
-  name: 638,656|🇭🇰 HK_21 | ⬇️ 1.1MB/s-297
+  name: 638,656|🇭🇰 HK_21 | ⬇️ 1.1MB/s-212
   network: ws
   port: 443
   server: 104.21.29.56
@@ -5588,7 +5642,7 @@ proxies:
       Host: www.xaniuhk.qzz.io
     path: '%2F%3Fed%3D2560'
 - client-fingerprint: chrome
-  name: 638,656|🇫🇷 FR_6 | ⬇️ 1.3MB/s-262
+  name: 638,656|🇫🇷 FR_6 | ⬇️ 1.3MB/s-177
   network: ws
   port: 443
   server: 104.25.127.147
@@ -5601,7 +5655,7 @@ proxies:
       Host: www.xaniuhk.qzz.io
     path: '%2F%3Fed%3D2560'
 - client-fingerprint: chrome
-  name: 638,656|🇩🇪 DE_5 | ⬇️ 1.4MB/s-286
+  name: 638,656|🇩🇪 DE_5 | ⬇️ 1.4MB/s-201
   network: ws
   port: 2096
   server: 172.64.151.220
@@ -5714,7 +5768,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 638,656|🇭🇰 香港 电讯盈科有限公司-349
+  name: 638,656|🇭🇰 香港 电讯盈科有限公司-264
   network: tcp
   port: '30830'
   server: v30.hdacd.com
@@ -5722,16 +5776,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 638|🇭🇰 HK_61
-  network: none
-  port: 13852
-  server: 45.207.157.29
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
 - alterId: 2
   cipher: auto
   name: 638|🇭🇰 HK_62
@@ -5915,7 +5959,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '656,719|🇭🇰 HK_2 | ⬇️ 2.1MB/s-248 #1'
+  name: '656,719|🇭🇰 HK_2 | ⬇️ 2.1MB/s-163 #1'
   network: tcp
   port: 10122
   reality-opts:
@@ -5929,7 +5973,7 @@ proxies:
   uuid: 7f60f6e7-8419-4cff-9e1b-14179f677a5e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '656,719|🇭🇰 HK_3 | ⬇️ 2.2MB/s-251 #1'
+  name: '656,719|🇭🇰 HK_3 | ⬇️ 2.2MB/s-166 #1'
   network: tcp
   port: 8443
   reality-opts:
@@ -5942,7 +5986,7 @@ proxies:
   udp: true
   uuid: 45553a57-d94e-46bd-bea7-306eefab0d58
 - client-fingerprint: chrome
-  name: 656|🇭🇰 HK_11 | ⬇️ 1.3MB/s-261
+  name: 656|🇭🇰 HK_11 | ⬇️ 1.3MB/s-176
   network: ws
   port: 8443
   server: 172.64.154.113
@@ -5955,7 +5999,7 @@ proxies:
       Host: www.xaniusg1.qzz.io
     path: '%2F%3Fed%3D2560'
 - client-fingerprint: chrome
-  name: 656|🇭🇰 HK_16 | ⬇️ 3.7MB/s-280
+  name: 656|🇭🇰 HK_16 | ⬇️ 3.7MB/s-195
   network: ws
   port: 2087
   server: 172.64.154.30
@@ -5968,7 +6012,7 @@ proxies:
       Host: www.xaniusg1.qzz.io
     path: '%2F%3Fed%3D2560'
 - client-fingerprint: chrome
-  name: 656|🇭🇰 HK_17 | ⬇️ 1.3MB/s-285
+  name: 656|🇭🇰 HK_17 | ⬇️ 1.3MB/s-200
   network: ws
   port: 443
   server: 104.18.63.116
@@ -5981,7 +6025,7 @@ proxies:
       Host: www.xaniuhk.qzz.io
     path: '%2F%3Fed%3D2560'
 - client-fingerprint: chrome
-  name: 656|🇭🇰 HK_18 | ⬇️ 1.7MB/s-287
+  name: 656|🇭🇰 HK_18 | ⬇️ 1.7MB/s-202
   network: ws
   port: 2087
   server: 172.64.34.130
@@ -5994,7 +6038,7 @@ proxies:
       Host: www.xaniuhk.qzz.io
     path: '%2F%3Fed%3D2560'
 - client-fingerprint: chrome
-  name: 656|🇭🇰 HK_19 | ⬇️ 5.3MB/s-291
+  name: 656|🇭🇰 HK_19 | ⬇️ 5.3MB/s-206
   network: ws
   port: 443
   server: www.wto.org
@@ -6007,7 +6051,7 @@ proxies:
       Host: www.xaniuhk.qzz.io
     path: '%2F%3Fed%3D2560'
 - client-fingerprint: chrome
-  name: 656|🇭🇰 HK_20 | ⬇️ 1.6MB/s-294
+  name: 656|🇭🇰 HK_20 | ⬇️ 1.6MB/s-209
   network: ws
   port: 443
   server: 104.16.29.98
@@ -6020,7 +6064,7 @@ proxies:
       Host: www.xaniuhk.qzz.io
     path: '%2F%3Fed%3D2560'
 - client-fingerprint: chrome
-  name: 656|🇭🇰 HK_23 | ⬇️ 1.0MB/s-306
+  name: 656|🇭🇰 HK_23 | ⬇️ 1.0MB/s-221
   network: ws
   port: 443
   server: 104.25.63.32
@@ -6033,7 +6077,7 @@ proxies:
       Host: www.xaniuhk.qzz.io
     path: '%2F%3Fed%3D2560'
 - client-fingerprint: chrome
-  name: 656|🇭🇰 HK_24 | ⬇️ 6.3MB/s-307
+  name: 656|🇭🇰 HK_24 | ⬇️ 6.3MB/s-222
   network: ws
   port: 443
   server: 104.18.63.72
@@ -6054,7 +6098,7 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fproxyip%3D210.61.97.241%3A81'
-- name: 656,719|🇭🇰 [] 香港 01-354
+- name: 656,719|🇭🇰 [] 香港 01-269
   password: c930b945-d54a-4db2-9b39-7bcfd85dafa4
   port: 27011
   server: lt-hkg.ltdns.top
@@ -6062,7 +6106,7 @@ proxies:
   sni: www.ithome.com
   type: trojan
   udp: true
-- name: '656,719|🇭🇰 [核心] 香港 02-355 #1'
+- name: '656,719|🇭🇰 [核心] 香港 02-270 #1'
   password: c930b945-d54a-4db2-9b39-7bcfd85dafa4
   port: 27013
   server: lt-hkg.ltdns.top
@@ -6070,7 +6114,7 @@ proxies:
   sni: www.ithome.com
   type: trojan
   udp: true
-- name: '656,719|🇭🇰 [核心] 香港 03-356 #1'
+- name: '656,719|🇭🇰 [核心] 香港 03-271 #1'
   password: c930b945-d54a-4db2-9b39-7bcfd85dafa4
   port: 27015
   server: lt-hkg.ltdns.top
@@ -6078,7 +6122,7 @@ proxies:
   sni: www.ithome.com
   type: trojan
   udp: true
-- name: '656,719|🇭🇰 [核心] 香港 04-357 #1'
+- name: '656,719|🇭🇰 [核心] 香港 04-272 #1'
   password: c930b945-d54a-4db2-9b39-7bcfd85dafa4
   port: 27017
   server: lt-hkg.ltdns.top
@@ -6086,7 +6130,7 @@ proxies:
   sni: www.ithome.com
   type: trojan
   udp: true
-- name: '656,719|🇭🇰 [核心] 香港 05-358 #1'
+- name: '656,719|🇭🇰 [核心] 香港 05-273 #1'
   password: c930b945-d54a-4db2-9b39-7bcfd85dafa4
   port: 27019
   server: lt-hkg.ltdns.top
@@ -6094,7 +6138,7 @@ proxies:
   sni: www.ithome.com
   type: trojan
   udp: true
-- name: '656,719|🇭🇰 [核心] 香港 06-359 #1'
+- name: '656,719|🇭🇰 [核心] 香港 06-274 #1'
   password: c930b945-d54a-4db2-9b39-7bcfd85dafa4
   port: 27111
   server: lt-hkg.ltdns.top
@@ -6131,7 +6175,7 @@ proxies:
   type: anytls
   udp: true
 - client-fingerprint: chrome
-  name: '719|🇭🇰 HK_11 | ⬇️ 1.3MB/s-261 #1'
+  name: '719|🇭🇰 HK_11 | ⬇️ 1.3MB/s-176 #1'
   network: ws
   port: 8443
   server: 172.64.154.113
@@ -6146,7 +6190,7 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: chrome
-  name: '719|🇭🇰 HK_12 | ⬇️ 4.7MB/s-266 #1'
+  name: '719|🇭🇰 HK_12 | ⬇️ 4.7MB/s-181 #1'
   network: ws
   port: 443
   server: 104.17.253.113
@@ -6161,7 +6205,7 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: chrome
-  name: '719|🇭🇰 HK_13 | ⬇️ 1.0MB/s-269 #1'
+  name: '719|🇭🇰 HK_13 | ⬇️ 1.0MB/s-184 #1'
   network: ws
   port: 2087
   server: 172.64.158.216
@@ -6176,7 +6220,7 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: chrome
-  name: '719|🇭🇰 HK_14 | ⬇️ 3.5MB/s-277 #1'
+  name: '719|🇭🇰 HK_14 | ⬇️ 3.5MB/s-192 #1'
   network: ws
   port: 8443
   server: 172.64.154.113
@@ -6191,7 +6235,7 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: chrome
-  name: '719|🇭🇰 HK_15 | ⬇️ 4.5MB/s-279 #1'
+  name: '719|🇭🇰 HK_15 | ⬇️ 4.5MB/s-194 #1'
   network: ws
   port: 2087
   server: 104.18.45.192
@@ -6206,7 +6250,7 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: chrome
-  name: '719|🇭🇰 HK_16 | ⬇️ 3.7MB/s-280 #1'
+  name: '719|🇭🇰 HK_16 | ⬇️ 3.7MB/s-195 #1'
   network: ws
   port: 2087
   server: 172.64.154.30
@@ -6221,7 +6265,7 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: chrome
-  name: '719|🇭🇰 HK_17 | ⬇️ 1.3MB/s-285 #1'
+  name: '719|🇭🇰 HK_17 | ⬇️ 1.3MB/s-200 #1'
   network: ws
   port: 443
   server: 104.18.63.116
@@ -6236,7 +6280,7 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: chrome
-  name: '719|🇭🇰 HK_18 | ⬇️ 1.7MB/s-287 #1'
+  name: '719|🇭🇰 HK_18 | ⬇️ 1.7MB/s-202 #1'
   network: ws
   port: 2087
   server: 172.64.34.130
@@ -6251,7 +6295,7 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: chrome
-  name: '719|🇭🇰 HK_19 | ⬇️ 5.3MB/s-291 #1'
+  name: '719|🇭🇰 HK_19 | ⬇️ 5.3MB/s-206 #1'
   network: ws
   port: 443
   server: www.wto.org
@@ -6266,7 +6310,7 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: chrome
-  name: '719|🇭🇰 HK_20 | ⬇️ 1.6MB/s-294 #1'
+  name: '719|🇭🇰 HK_20 | ⬇️ 1.6MB/s-209 #1'
   network: ws
   port: 443
   server: 104.16.29.98
@@ -6281,7 +6325,7 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: chrome
-  name: '719|🇭🇰 HK_21 | ⬇️ 1.1MB/s-297 #1'
+  name: '719|🇭🇰 HK_21 | ⬇️ 1.1MB/s-212 #1'
   network: ws
   port: 443
   server: 104.21.29.56
@@ -6296,7 +6340,7 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: chrome
-  name: '719|🇭🇰 HK_22 | ⬇️ 4.7MB/s-304 #1'
+  name: '719|🇭🇰 HK_22 | ⬇️ 4.7MB/s-219 #1'
   network: ws
   port: 443
   server: 104.24.254.62
@@ -6311,7 +6355,7 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: chrome
-  name: '719|🇭🇰 HK_23 | ⬇️ 1.0MB/s-306 #1'
+  name: '719|🇭🇰 HK_23 | ⬇️ 1.0MB/s-221 #1'
   network: ws
   port: 443
   server: 104.25.63.32
@@ -6326,7 +6370,7 @@ proxies:
     max-early-data: 2560
     path: /
 - client-fingerprint: chrome
-  name: '719|🇭🇰 HK_24 | ⬇️ 6.3MB/s-307 #1'
+  name: '719|🇭🇰 HK_24 | ⬇️ 6.3MB/s-222 #1'
   network: ws
   port: 443
   server: 104.18.63.72

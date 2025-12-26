@@ -248,7 +248,7 @@ proxies:
   port: '443'
   server: seoul03.zgjok.com
   servername: seoul03.zgjok.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
@@ -257,26 +257,29 @@ proxies:
       Host: seoul03.zgjok.com
     path: /
 - cipher: aes-256-gcm
-  name: 472|🇰🇷KR-141.164.45.187-0344
+  name: 472,523|🇰🇷 KR-141.164.45.187-0344
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 141.164.45.187
   type: ss
 - cipher: aes-256-cfb
-  name: 472|🇰🇷KR-154.90.62.168-0366
+  country: 🇸 US
+  name: 472,523,587|🇸 US_152
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
-  name: 472,634|yandex-2680
+  country: 🇸 US
+  name: 472,523,587,634|yandex-2974
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 472,578,634|yandex-2812
+  country: 🇷 KR
+  name: 472,578,587,634|yandex-3106
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -663,7 +666,8 @@ proxies:
   server: 3.36.118.190
   type: ss
 - cipher: aes-256-cfb
-  name: 472,634|yandex-2609
+  country: 🇷 KR
+  name: 472,523,587,634|yandex-2903
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
@@ -903,30 +907,12 @@ proxies:
   server: 125.141.26.5
   type: ss
 - cipher: aes-256-gcm
-  name: 537,634|yandex-72
+  name: 537,634|yandex-3185
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 21001
   server: kr001.dogsvip.site
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 591|Relay_ZZ-🇷KR_111
-  network: ws
-  port: 8443
-  server: c7.620720.xyz
-  servername: c7.620720.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      HOST: c7.620720.xyz
-    path: /
 - name: '603|韩国_春川市 #3'
   network: ws
   password: NISHIKUITAN222
@@ -994,7 +980,7 @@ proxies:
   sni: humble-rodent.treefrog761.one
   type: trojan
 - delay: 1708
-  name: 623,634|yandex-237
+  name: 623,634|yandex-129
   network: ws
   password: trojan
   port: 10250
@@ -1008,7 +994,7 @@ proxies:
       Host: fofang.pages.dev
     path: /?ed=2560
 - delay: 1729
-  name: 623,634|yandex-238
+  name: 623,634|yandex-130
   network: ws
   password: trojan
   port: 25010
