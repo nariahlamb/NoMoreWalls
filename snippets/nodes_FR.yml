@@ -66,20 +66,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- alterId: 0
-  cipher: auto
-  name: 218|🇫🇷 法国
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - cipher: aes-256-cfb
   name: 453,472|🇳🇱NL-51.15.27.48-8482
   password: f8f7aCzcPKbsF8p3
@@ -427,19 +413,19 @@ proxies:
       Host: 162.19.224.175
     path: /vmess
 - cipher: aes-256-cfb
-  name: 472,523|🇫🇷 FR-51.159.106.175-0289
+  name: 472|FR-51.159.106.175-0289
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.106.175
   type: ss
 - alterId: 0
   cipher: auto
-  name: 472,523,627,638|🇫🇷 FR_44
+  name: 472,627,638|🇫🇷 FR_44
   network: ws
   port: 443
   server: 91.134.8.101
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -449,12 +435,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 472,523,627,638|🇧🇪 BE_30
+  name: 472,627,638|🇧🇪 BE_30
   network: ws
   port: 443
   server: 57.128.189.240
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -463,7 +449,7 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 472,523|🇫🇷 FR-195.154.119.77-0313
+  name: 472|🇫🇷FR-195.154.119.77-0313
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -702,7 +688,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 472,627|🇫🇷FR-57.128.189.240-4914
+  name: '472,523,627|🇫🇷FR-57.128.189.240-4914 #1'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -747,7 +733,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 472,627|🇫🇷FR-91.134.8.101-4928
+  name: '472,523,627|🇫🇷FR-91.134.8.101-4928 #1'
   network: ws
   port: 443
   server: 91.134.8.101
@@ -1049,7 +1035,7 @@ proxies:
   port: 443
   server: 146.59.55.50
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1566,18 +1552,16 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  client-fingerprint: ''
-  fast-open: false
-  name: '523,719|🇭🇰 Relay_HK-US_119-68 #1'
-  port: 30835
+  name: 523,630,638,656|🇭🇰 Relay_HK-US_119-68
+  network: tcp
+  port: '30835'
   server: v35.hdacd.com
-  skip-cert-verify: true
-  tfo: false
+  servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2695
+  name: 537,634|yandex-78
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
@@ -1587,9 +1571,9 @@ proxies:
   cipher: auto
   name: 578|Channel id:@proxy_kafee 🇫🇷
   network: ws
-  port: '2082'
+  port: 2082
   server: 5.196.29.123
-  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
@@ -1886,30 +1870,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
-- alterId: 2
-  cipher: auto
-  name: 630,638,656|🇭🇰 Relay_HK-US_119-68
-  network: tcp
-  port: '30835'
-  server: v35.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '630|🇫🇷 FR法国(mibei77.com 米贝节点分享) #9'
-  password: 7418004a-0ecd-41c0-a062-42bf966d3fb2
-  port: 443
-  server: cf.877774.xyz
-  skip-cert-verify: false
-  sni: guang.bgm2024.dpdns.org
-  type: trojan
-- name: '630|🇫🇷 FR法国(mibei77.com 米贝节点分享) #14'
-  password: e86364fb-a5e3-42c3-b7fa-6ce8097fe19f
-  port: 443
-  server: bisque.qzz.io
-  skip-cert-verify: false
-  sni: bisque.qzz.io
-  type: trojan
 - name: 638|🇫🇷FR_47
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443

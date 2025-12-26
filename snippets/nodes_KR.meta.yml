@@ -324,7 +324,7 @@ proxies:
   port: '443'
   server: seoul03.zgjok.com
   servername: seoul03.zgjok.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
@@ -333,26 +333,26 @@ proxies:
       Host: seoul03.zgjok.com
     path: /
 - cipher: aes-256-gcm
-  name: 472,523|🇰🇷 KR-141.164.45.187-0344
+  name: 472|🇰🇷KR-141.164.45.187-0344
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 141.164.45.187
   type: ss
 - cipher: aes-256-cfb
-  name: 472,523|🇰🇷 KR-154.90.62.168-0366
+  name: 472|🇰🇷KR-154.90.62.168-0366
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
-  name: 472,523,634|yandex-2478
+  name: 472,634|yandex-2680
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 472,634|yandex-2610
+  name: 472,578,634|yandex-2812
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -739,7 +739,7 @@ proxies:
   server: 3.36.118.190
   type: ss
 - cipher: aes-256-cfb
-  name: 472,523,634|yandex-2407
+  name: 472,634|yandex-2609
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
@@ -979,7 +979,7 @@ proxies:
   server: 125.141.26.5
   type: ss
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2689
+  name: 537,634|yandex-72
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 21001
   server: kr001.dogsvip.site
@@ -1069,6 +1069,24 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 591|Relay_ZZ-🇷KR_111
+  network: ws
+  port: 8443
+  server: c7.620720.xyz
+  servername: c7.620720.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      HOST: c7.620720.xyz
+    path: /
 - name: 603|韩国_首尔特别市
   network: ws
   port: 8443
@@ -1474,7 +1492,7 @@ proxies:
   sni: humble-rodent.treefrog761.one
   type: trojan
 - delay: 1708
-  name: 623,634|yandex-2728
+  name: 623,634|yandex-237
   network: ws
   password: trojan
   port: 10250
@@ -1488,7 +1506,7 @@ proxies:
       Host: fofang.pages.dev
     path: /?ed=2560
 - delay: 1729
-  name: 623,634|yandex-2729
+  name: 623,634|yandex-238
   network: ws
   password: trojan
   port: 25010
@@ -1609,23 +1627,6 @@ proxies:
   sni: kr01.xxxxyyyysbs.sbs
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 630,638|印度_122604022
-  network: tcp
-  port: '9000'
-  server: id1.wpairplane.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d96ab248-733f-425a-8e2d-d4c88822aa5a
-- name: '630,638|🇰🇷 KR韩国(mibei77.com 米贝节点分享) #2'
-  password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  port: 443
-  server: cdns.doon.eu.org
-  skip-cert-verify: false
-  sni: _acme-challenge.2go.cloudns.be
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1671,6 +1672,19 @@ proxies:
   server: 3.34.192.249
   tfo: false
   type: ss
+- name: 638|🇰🇷KR韩国
+  password: 5a2c16f9
+  port: 443
+  server: 104.26.1.110
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: 638|🇰🇷 KR韩国(mibei77.com 米贝节点分享)
+  password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  port: 443
+  server: cdns.doon.eu.org
+  skip-cert-verify: false
+  sni: _acme-challenge.2go.cloudns.be
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 638|🇰🇷_韩国
