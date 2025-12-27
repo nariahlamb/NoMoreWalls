@@ -84,6 +84,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 218|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: 453,472|🇳🇱NL-51.15.27.48-8409
   password: f8f7aCzcPKbsF8p3
@@ -415,12 +429,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 472,523,627,638|🇧🇪 BE_22
+  name: '472,627,638|🇧🇪 BE_22 #1'
   network: ws
   port: 443
   server: 57.128.189.240
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -429,19 +443,19 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 472,523|🇫🇷 FR-51.159.106.175-0300
+  name: 472|🇷FR-51.159.106.175-0315
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.106.175
   type: ss
 - alterId: 0
   cipher: auto
-  name: 472,523,627,638|🇫🇷 FR_39
+  name: 472,627,638|🇫🇷 FR_39
   network: ws
   port: 443
   server: 91.134.8.101
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -450,7 +464,7 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 472,523|🇫🇷 FR-195.154.119.77-0412
+  name: 472|🇷FR-195.154.119.77-0360
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -719,7 +733,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 472,627|🇫🇷FR-57.128.189.240-4867
+  name: '472,523,627|🇫🇷FR-57.128.189.240-4867 #1'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -764,7 +778,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 472,627|🇫🇷FR-91.134.8.101-4888
+  name: '472,523,627|🇫🇷FR-91.134.8.101-4888 #1'
   network: ws
   port: 443
   server: 91.134.8.101
@@ -777,18 +791,22 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 472,627|🇫🇷FR-51.178.42.187-4890
+- country: 🇫🇷FR
+  name: 472,587,627|🇫🇷FR-51.178.42.187-4890
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 472,627|🇫🇷FR-51.195.202.129-4891
+  udp: true
+- country: 🇷FR
+  name: 472,587,627|🇫🇷FR-51.195.202.129-4891
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 472,627|🇫🇷FR-146.59.55.50-4954
@@ -1581,65 +1599,18 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  fast-open: false
-  name: 523,634|yandex-07
-  port: 26691
-  protocol: udp
-  server: 62.210.196.68
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 11 Mbps
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 55
-  fast-open: false
-  name: 523,634|yandex-16
-  port: 35511
-  protocol: udp
-  server: 62.210.10.186
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 11
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  fast-open: false
-  name: 523,634|yandex-11
-  port: 50011
-  protocol: udp
-  server: 62.210.10.186
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 11 Mbps
 - alterId: 2
   cipher: auto
-  client-fingerprint: ''
-  fast-open: false
-  name: '523,719|🇭🇰 Relay_HK-US_119-68 #1'
-  port: 30835
+  name: 523,630,638,656|🇭🇰 Relay_HK-US_119-68
+  network: tcp
+  port: '30835'
   server: v35.hdacd.com
-  skip-cert-verify: true
-  tfo: false
+  servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-gcm
-  name: 537,634|yandex-415
+  name: 537,634|yandex-101
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
@@ -1659,6 +1630,20 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 587| FR_42
+  network: ws
+  port: 443
+  server: 91.134.8.101
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
 - name: 603|法国_巴黎
   network: ws
   port: 443
@@ -2004,16 +1989,13 @@ proxies:
   tls: true
   type: vmess
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
-- alterId: 2
-  cipher: auto
-  name: 630,638,656|🇭🇰 Relay_HK-US_119-68
-  network: tcp
-  port: '30835'
-  server: v35.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '630|🇫🇷 FR法国(mibei77.com 米贝节点分享) #8'
+  password: e86364fb-a5e3-42c3-b7fa-6ce8097fe19f
+  port: 443
+  server: bisque.qzz.io
+  skip-cert-verify: false
+  sni: bisque.qzz.io
+  type: trojan
 - name: 638|🇫🇷FR_41
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
@@ -2139,6 +2121,23 @@ proxies:
   tls: false
   type: vmess
   uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
+- name: 642|🇫🇷 法国 | FRA
+  password: iwangjie
+  port: 2053
+  server: 141.94.68.216
+  skip-cert-verify: false
+  sni: nodes.830901.xyz
+  type: trojan
+- name: '642|🇫🇷 法国 | FRA #1'
+  obfs: salamander
+  obfs-password: salamander
+  password: 5936c09e-b309-4946-966e-4245afd04a6a
+  port: 30035
+  server: 31.56.48.133
+  skip-cert-verify: true
+  sni: www.python.org
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: '649|法国1 #4'

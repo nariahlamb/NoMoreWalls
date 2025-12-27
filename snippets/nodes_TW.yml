@@ -96,16 +96,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
-- name: 218|TW
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 167.68.4.223
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 225|台湾x1
@@ -228,14 +218,14 @@ proxies:
   tls: false
   type: vmess
   uuid: f6406b6d-5487-46da-f793-46611269a306
-- name: 472,627,638|🇭🇰HK香港6
+- name: 472,627,630,638|🇭🇰HK香港6
   password: bcb12795-9b04-4293-93e5-42f448481532
   port: 35502
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: 472,627,638|🇭🇰HK香港2
+- name: 472,627,630,638|🇭🇰HK香港2
   password: 9c206dfa-409d-4814-8091-1547da8ec868
   port: 31102
   server: green2.cdntencentmusic.com
@@ -651,19 +641,23 @@ proxies:
       Host: tw3.594888.xyz
     path: /v2ray
 - cipher: aes-256-cfb
-  name: 472,523|🇨🇳 TW-154.223.20.79-4854
+  name: 472,587|_03
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
-- name: 472,627|🇹🇼TW-61.221.189.241-4879
+  udp: true
+- country: 🇨 CN
+  name: 472,587,627|🇹🇼TW-61.221.189.241-4879
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 472,523|🇨🇳 TW-223.165.4.173-4905
+  country: 🇩 ID
+  name: 472,587| ID_61
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
@@ -856,7 +850,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-149
+  name: 577,634|yandex-286
   network: ws
   port: 16616
   server: planb.mojcn.com
@@ -873,7 +867,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 577,634|yandex-151
+  name: 577,634|yandex-288
   network: ws
   port: 16616
   server: t.cnmjcn.cyou
@@ -1156,14 +1150,14 @@ proxies:
     headers:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
-- name: 638|台湾_122718011
+- name: '638,642|🇹🇼 🇨🇳 台湾 | TWN #12'
   password: 056f5d6d-c696-47d0-a47e-b3ed64621dc2
   port: 31101
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: '638,642|🇹🇼 🇨🇳 台湾 | TWN #20'
+- name: 638|台湾_122718016
   password: 2bc95c2a-1808-4d67-b06d-7a2ae33525e9
   port: 31101
   server: green2.cdntencentmusic.com
@@ -1184,14 +1178,14 @@ proxies:
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: 638|台湾_122718017
+- name: '638,642|🇭🇰 香港 | HKG #4'
   password: 404a16fa-9eb0-42ed-8f18-65eba7202f05
   port: 31101
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: 638|台湾_122718013
+- name: '638,642|🇹🇼 🇨🇳 台湾 | TWN #19'
   password: 43026775-d84c-4519-b448-0516ae0ccd64
   port: 31101
   server: green2.cdntencentmusic.com
@@ -1204,13 +1198,6 @@ proxies:
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 638,642|🇺🇸 美国 | USA
-  password: 5a2c16f9
-  port: 443
-  server: 104.19.220.22
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
   type: trojan
 - name: 638|台湾_122718021
   password: 5bcc47ca-9afa-4410-84d0-72ffec97f1e2
@@ -1225,12 +1212,6 @@ proxies:
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 638|🇹🇼TW台湾2
-  password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
-  port: 5223
-  server: hk3.t.sgateway.link
-  sni: pod-hk-z1.psusercontent.com
   type: trojan
 - name: 638|台湾_122718009
   password: f18f0241-4e1b-426c-bef8-175d801b529c
@@ -1425,7 +1406,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.ch:154948
+    host: feb7fa9.dl.epicgames.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.t1.glados-config.com
@@ -1436,7 +1417,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.es:154948
+    host: feb7fa9.dl.nintendo.it:154948
     mode: tls
   port: 2377
   server: feb7fa9.t2.glados-config.com
@@ -1447,7 +1428,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.xboxlive.com:154948
+    host: feb7fa9.dl.blizzard.com:154948
     mode: tls
   port: 2377
   server: feb7fa9.t3.glados-config.com
@@ -1458,7 +1439,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.cat:154948
+    host: feb7fa9.dl.microsoft.lt:154948
     mode: tls
   port: 2377
   server: feb7fa9.t4.glados-config.com
@@ -1469,7 +1450,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.it:154948
+    host: feb7fa9.dl.microsoft.md:154948
     mode: tls
   port: 2377
   server: feb7fa9.t5.glados-config.com
@@ -1480,7 +1461,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.nintendo.eu:154948
+    host: feb7fa9.dl.microsoft.md:154948
     mode: tls
   port: 2377
   server: feb7fa9.t6.glados-config.com
