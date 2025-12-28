@@ -88,15 +88,13 @@ proxies:
   server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇦CA
-  name: 452,471,586|CA_33
+  name: 452,471,522|🇨🇦 CA-142.4.216.225-0343
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇨 CZ
-  name: 452,471,586,633,647|SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-Ti...
+  name: 452,471,522,633,647|SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-Ti...
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
@@ -137,78 +135,61 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: aes-256-gcm
-  name: 471|CA-85.208.108.60-0109
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.60-0111
+  name: 471|🇦CA-85.208.108.60-0062
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 85.208.108.60
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 471|🇦CA-159.203.18.119-0071
+  network: ws
+  port: 80
+  server: 159.203.18.119
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: af3e47fc-f817-4845-822c-1f35ecf90b31
+  ws-opts:
+    path: /vmess
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-2313
-  password: PCnnH6SQSnfoS27
-  port: 8090
+  name: 471|🇦CA-85.208.108.60-0079
+  password: TEzjfAYq2IjtuoS
+  port: 6697
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.60-0143
-  password: kDWvXYZoTBcGkC4
-  port: 8881
+  name: 471|🇦CA-85.208.108.60-0080
+  password: KixLvKzwjekG00rm
+  port: 8080
   server: 85.208.108.60
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 471|🇦CA-79.127.200.169-0258
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 79.127.200.169
+- cipher: aes-256-gcm
+  name: 471|🇨🇦CA-85.208.108.60-0081
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 85.208.108.60
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇦CA
-  name: 471,590|CA_03
-  password: S6jUK9Fw5fMHgNqlqXObHZWv8Tf4nEkm
-  port: 443
-  server: 193.203.203.66
+- cipher: aes-256-cfb
+  name: 471,522|🇨🇦 CA-79.127.233.170-0262
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
   type: ss
 - cipher: rc4-md5
-  country: 🇺🇸US
-  name: 471,590|🇸US_31
+  name: 471,522|🇨🇦 CA-137.184.174.93-0260
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 137.184.174.93
   type: ss
 - alterId: 0
   cipher: auto
-  name: '471,626,637|🏁 ZZ_226 #1'
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- cipher: aes-256-cfb
-  name: 471|🇦CA-79.127.233.170-0262
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 471,626|🇨🇦CA-23.162.200.227-0293
+  name: 471,522,626|🇨🇦CA-23.162.200.227-0266
   network: ws
   port: 443
   server: 23.162.200.227
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -216,14 +197,20 @@ proxies:
     headers:
       Host: ''
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 471,522|🇨🇦 CA-79.127.200.169-0258
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 79.127.200.169
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-134.195.198.147-0317
+  name: 471,522,626|🇨🇦CA-134.195.198.147-0268
   network: ws
   port: 443
   server: 134.195.198.147
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -231,30 +218,23 @@ proxies:
     headers:
       Host: inna.cfd
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 471,577,586|_04
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 471,577,633,647|SS--NF解锁拿大地区非自制剧-ChatGPT-TikTo...
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 45.154.204.7
-  type: ss
-  udp: true
-- name: 471,522,608,609,626,629,637,655,718|🇺🇸 国 Cogent公司-204
-  password: .ie4rghJuMkcf0oF
-  port: 18509
-  server: 38.96.254.102
-  skip-cert-verify: false
-  sni: shoppingmall.electricbanana.click
-  tfo: false
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 471,522,626,637|🏁 ZZ_226
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: aes-128-cfb
-  country: 🇪 SE
-  name: '471,522,586,626|8J%2BHqPCfh6ZDQS00NS4xNTQuMjA0... #1'
+  name: 471,522,626|8J%2BHqPCfh6ZDQS00NS4xNTQuMjA0...
   obfs: http_post
   obfs-param: ''
   password: $$Turb0VPN$$
@@ -264,20 +244,19 @@ proxies:
   server: ssca.irundns.net
   type: ssr
 - cipher: chacha20-ietf-poly1305
-  name: 471,577,633,647|SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-Ti...
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 23.95.76.59
+  name: 471,522|🇨🇦 CA-142.4.216.225-0335
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-15.235.41.200-0348
+  name: 471,522,626|🇨🇦CA-15.235.41.200-0383
   network: ws
   port: 80
   server: 15.235.41.200
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -285,31 +264,78 @@ proxies:
     headers:
       Host: ''
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 471,522|🇨🇦 CA-193.203.203.66-0259
+  password: S6jUK9Fw5fMHgNqlqXObHZWv8Tf4nEkm
+  port: 443
+  server: 193.203.203.66
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 471,522|🇨🇦 CA-51.79.102.253-0876
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 471,522,633,647|SS--NF解锁拿大地区非自制剧-ChatGPT-TikTo...
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 45.154.204.7
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 471,522,633,647|SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-Ti...
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 23.95.76.59
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: 471,633,647|SS->-NF英国-ChatGPT-144.217.164....
+  name: 471,522,633,647|SS->-NF英国-ChatGPT-144.217.164....
   password: 8JCsPssfgS8tiRwiMlhARg==
   port: 12000
   server: 144.217.164.29
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 471|🇦CA-134.195.196.149-0468
+  name: 471|🇦CA-134.195.196.149-0482
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 134.195.196.149
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇦CA-196.247.59.154-0485
+  name: 471|🇦CA-196.247.59.154-0499
   password: G!yBwPWH3Vao
   port: 800
   server: 196.247.59.154
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.61-0588
+  name: 471|🇦CA-85.208.108.61-0602
   password: XKFKl2rULjIp74
   port: 8008
   server: 85.208.108.61
   type: ss
+- name: 471,522,626,629,637,655,718|🇺🇸 国 Cogent公司-204
+  password: .ie4rghJuMkcf0oF
+  port: 18509
+  server: 38.96.254.102
+  skip-cert-verify: false
+  sni: shoppingmall.electricbanana.click
+  tfo: false
+  type: trojan
+- name: 471,522,608,609,626,629,637,718|🇨🇦 多 V2CROSS.COM-205
+  password: 6pRjKQJ0CWyFtG.9
+  port: 12990
+  server: 198.57.27.27
+  skip-cert-verify: false
+  tfo: false
+  type: trojan
 - name: 471,626|🇨🇦CA-148.113.141.99-0712
   password: HdsUZmsHQW
   port: 443
@@ -330,7 +356,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 471,522,626,629,637,647|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
+  name: 471,626,629,637,647|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
   network: ws
   port: 80
   server: 15.235.41.200
@@ -345,7 +371,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: '471,522,626,629,637,647|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP... #1'
+  name: '471,626,629,637,647|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP... #1'
   network: ws
   port: 80
   server: 51.79.102.253
@@ -358,136 +384,129 @@ proxies:
     headers:
       HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: 471,522,608,609,626,629,637,718|🇨🇦 多 V2CROSS.COM-205
-  password: 6pRjKQJ0CWyFtG.9
-  port: 12990
-  server: 198.57.27.27
-  skip-cert-verify: false
-  tfo: false
-  type: trojan
 - cipher: aes-256-gcm
-  name: 471|🇦CA-198.8.92.84-1043
+  name: 471|🇦CA-198.8.92.84-1054
   password: ugyBkSEFxVEmUYSHyvxmWNj9
   port: 40220
   server: 198.8.92.84
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇦CA-138.197.174.245-1065
+  name: 471|🇦CA-138.197.174.245-1076
   password: yuMqkGIx6Ia0
   port: 56443
   server: 138.197.174.245
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-198.8.92.84-1082
+  name: 471|🇨🇦CA-198.8.92.84-1093
   password: J9Y2ncrdPEC38gwydNFFGBna
   port: 35294
   server: 198.8.92.84
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-198.8.92.84-1086
+  name: 471|🇨🇦CA-198.8.92.84-1097
   password: F5bKkb9ggkLx4JbQrbLn7LjZ
   port: 44945
   server: 198.8.92.84
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-198.8.92.84-1098
+  name: 471|🇨🇦CA-198.8.92.84-1109
   password: Kquv5UhvZXNMemAQy8DxZ7qn
   port: 38620
   server: 198.8.92.84
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-198.8.92.84-1099
+  name: 471|🇨🇦CA-198.8.92.84-1110
   password: BdRWC38L5JUDMTYNNxJGcUwB
   port: 49396
   server: 198.8.92.84
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇦CA-51.161.118.38-1332
+  name: 471|🇦CA-51.161.118.38-1345
   password: G!yBwPWH3Vao
   port: 801
   server: 51.161.118.38
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.90-1348
+  name: 471|🇨🇦CA-85.208.108.90-1361
   password: faBAoD54k87UJG7
   port: 2375
   server: 85.208.108.90
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.90-1367
+  name: 471|🇨🇦CA-85.208.108.90-1380
   password: zDNVedRFPQexG9v
   port: 6379
   server: 85.208.108.90
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-51.161.118.38-1405
+  name: 471|🇨🇦CA-51.161.118.38-1418
   password: G!yBwPWH3Vao
   port: 812
   server: 51.161.118.38
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇦CA-51.161.118.38-1406
+  name: 471|🇦CA-51.161.118.38-1419
   password: G!yBwPWH3Vao
   port: 805
   server: 51.161.118.38
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-51.161.118.38-1407
+  name: 471|🇨🇦CA-51.161.118.38-1420
   password: G!yBwPWH3Vao
   port: 808
   server: 51.161.118.38
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-51.161.118.38-1408
+  name: 471|🇨🇦CA-51.161.118.38-1421
   password: G!yBwPWH3Vao
   port: 811
   server: 51.161.118.38
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇦CA-51.161.118.38-1409
+  name: 471|🇦CA-51.161.118.38-1422
   password: G!yBwPWH3Vao
   port: 807
   server: 51.161.118.38
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-51.161.118.38-1410
+  name: 471|🇨🇦CA-51.161.118.38-1423
   password: G!yBwPWH3Vao
   port: 802
   server: 51.161.118.38
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-51.161.118.38-1411
+  name: 471|🇨🇦CA-51.161.118.38-1424
   password: G!yBwPWH3Vao
   port: 804
   server: 51.161.118.38
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-51.161.118.38-1412
+  name: 471|🇨🇦CA-51.161.118.38-1425
   password: G!yBwPWH3Vao
   port: 810
   server: 51.161.118.38
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-51.161.118.38-1414
+  name: 471|🇨🇦CA-51.161.118.38-1427
   password: G!yBwPWH3Vao
   port: 803
   server: 51.161.118.38
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-51.161.118.38-1415
+  name: 471|🇨🇦CA-51.161.118.38-1428
   password: G!yBwPWH3Vao
   port: 800
   server: 51.161.118.38
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.90-1416
+  name: 471|🇦CA-85.208.108.90-1429
   password: faBAoD54k87UJG7
   port: 2376
   server: 85.208.108.90
   type: ss
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-132.145.99.228-1462
+  name: 471,626|🇨🇦CA-132.145.99.228-1467
   network: ws
   port: 13724
   server: 132.145.99.228
@@ -500,7 +519,7 @@ proxies:
     headers:
       Host: ''
     path: /ws-path
-- name: 471,626|🇨🇦CA-35.182.251.60-1514
+- name: 471,626|🇨🇦CA-35.182.251.60-1519
   password: telegram-id-directvpn
   port: 22222
   server: 35.182.251.60
@@ -509,7 +528,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-192.99.8.99-1562
+  name: 471,626|🇨🇦CA-192.99.8.99-1567
   network: ws
   port: 36005
   server: 192.99.8.99
@@ -523,20 +542,20 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-1594
+  name: 471|🇦CA-85.208.108.60-1607
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨CA-85.208.108.60-1650
+  name: 471|🇨CA-85.208.108.60-1663
   password: pKEW8JPByTVTLtM
   port: 4444
   server: 85.208.108.60
   type: ss
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-158.51.121.36-1985
+  name: 471,626|🇨🇦CA-158.51.121.36-1979
   network: ws
   port: 443
   server: 158.51.121.36
@@ -550,182 +569,188 @@ proxies:
       Host: ''
     path: /linkvws
 - cipher: aes-256-gcm
-  name: 471|🇦CA-198.57.27.218-1998
+  name: 471|🇦CA-198.57.27.218-2011
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 198.57.27.218
   type: ss
-- name: 471,626|🇨🇦CA-51.222.86.136-2007
+- name: 471,626|🇨🇦CA-51.222.86.136-2001
   password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
   port: 443
   server: ca-trojan.bonds.id
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇦CA-72.140.224.195-2115
+  name: 471|🇦CA-72.140.224.195-2128
   password: G!yBwPWH3Vao
   port: 800
   server: 72.140.224.195
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-2145
+  name: 471|🇦CA-85.208.108.60-2158
   password: XKFKl2rULjIp74
   port: 8009
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-2182
+  name: 471|🇦CA-85.208.108.60-2195
   password: KixLvKzwjekG00rm
   port: 5500
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨CA-85.208.108.60-2199
+  name: 471|🇨CA-85.208.108.60-2212
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-2329
+  name: 471|🇦CA-85.208.108.60-2342
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-2302
+  name: 471|🇦CA-85.208.108.60-2315
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.60-2988
+  name: 471|🇨🇦CA-85.208.108.60-3001
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.60-2346
+  name: 471|🇨🇦CA-85.208.108.60-2359
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.60-2306
+  name: 471|🇨🇦CA-85.208.108.60-2319
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-2307
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-2308
+  name: 471|🇦CA-85.208.108.60-2321
   password: faBAoD54k87UJG7
   port: 2376
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-2309
+  name: 471|🇦CA-85.208.108.60-2322
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.60-2310
+  name: 471|🇨🇦CA-85.208.108.60-2323
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-2311
+  name: 471|🇦CA-85.208.108.60-2324
   password: XKFKl2rULjIp74
   port: 8008
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-2314
+  name: 471|🇦CA-85.208.108.60-2325
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 471|🇦CA-85.208.108.60-2327
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨CA-85.208.108.60-3676
+  name: 471|🇨CA-85.208.108.60-3689
   password: Y6R9pAtvxxzmGC
   port: 5000
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.60-2319
+  name: 471|🇨🇦CA-85.208.108.60-2332
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-3002
+  name: 471|🇦CA-85.208.108.60-3015
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-2326
+  name: 471|🇦CA-85.208.108.60-2339
   password: pKEW8JPByTVTLtM
   port: 443
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.60-2333
+  name: 471|🇨🇦CA-85.208.108.60-2346
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-2340
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.60-3662
+  name: 471|🇨🇦CA-85.208.108.60-2364
   password: Y6R9pAtvxxzmGC
   port: 5600
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-2358
+  name: 471|🇦CA-85.208.108.60-2370
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 471|🇦CA-85.208.108.60-2371
   password: e4FCWrgpkji3QY
   port: 9102
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.60-3651
+  name: 471|🇨🇦CA-85.208.108.60-3664
   password: e4FCWrgpkji3QY
   port: 9101
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.60-2998
+  name: 471|🇦CA-85.208.108.60-2383
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 471|🇨🇦CA-85.208.108.60-3011
   password: faBAoD54k87UJG7
   port: 2375
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-2378
+  name: 471|🇦CA-85.208.108.60-2391
   password: KixLvKzwjekG00rm
   port: 8000
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.20-2977
+  name: 471|🇦CA-85.208.108.20-2990
   password: zDNVedRFPQexG9v
   port: 6379
   server: 85.208.108.20
   type: ss
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-51.161.130.141-2545
+  name: 471,626|🇨🇦CA-51.161.130.141-2539
   network: ws
   port: 80
   server: 51.161.130.141
@@ -739,80 +764,80 @@ proxies:
       Host: ''
     path: /JAGOANSSH/
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.18-2592
+  name: 471|🇨🇦CA-85.208.108.18-2605
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 85.208.108.18
   type: ss
-- name: 471,626|🇨🇦CA-149.56.141.11-3323
+- name: 471,626|🇨🇦CA-149.56.141.11-3317
   password: 8b6daf15-8342-482d-b894-1239fd98ce7f
   port: 443
   server: 149.56.141.11
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.59-2731
+  name: 471|🇦CA-85.208.108.59-2744
   password: XKFKl2rULjIp74
   port: 8009
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.59-2870
+  name: 471|🇦CA-85.208.108.59-2883
   password: zDNVedRFPQexG9v
   port: 6379
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-3637
+  name: 471|🇦CA-85.208.108.60-3650
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.61-3980
+  name: 471|🇦CA-85.208.108.61-3993
   password: pKEW8JPByTVTLtM
   port: 443
   server: 85.208.108.61
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.92-3981
+  name: 471|🇨🇦CA-85.208.108.92-3994
   password: pKEW8JPByTVTLtM
   port: 443
   server: 85.208.108.92
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇦CA-196.247.59.156-4156
+  name: 471|🇦CA-196.247.59.156-4169
   password: G!yBwPWH3Vao
   port: 806
   server: 196.247.59.156
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.20-4243
+  name: 471|🇦CA-85.208.108.20-4256
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.20-4244
+  name: 471|🇨🇦CA-85.208.108.20-4257
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.20-4247
+  name: 471|🇦CA-85.208.108.20-4260
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.20-4248
+  name: 471|🇨🇦CA-85.208.108.20-4261
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 85.208.108.20
   type: ss
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-149.56.95.159-4428
+  name: 471,626|🇨🇦CA-149.56.95.159-4422
   network: ws
   port: 23784
   server: 149.56.95.159
@@ -827,7 +852,7 @@ proxies:
     path: /
 - alterId: 4
   cipher: auto
-  name: 471,626|🇨🇦CA-138.197.165.31-4806
+  name: 471,626|🇨🇦CA-138.197.165.31-4800
   network: ws
   port: 8080
   server: 138.197.165.31
@@ -840,7 +865,7 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8
-- name: 471,586,626|🇨🇦CA-148.113.207.224-4861
+- name: 471,626|🇨🇦CA-148.113.207.224-4855
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
   server: ca-full.privateip.net
@@ -848,7 +873,22 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-148.113.176.192-4977
+  name: 471,577,626|🇨🇦CA-15.235.83.228-4974
+  network: ws
+  port: 443
+  server: 15.235.83.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 471,626|🇨🇦CA-148.113.176.192-4971
   network: ws
   port: 443
   server: 148.113.176.192
@@ -863,7 +903,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-15.235.50.172-4978
+  name: 471,626|🇨🇦CA-15.235.50.172-4972
   network: ws
   port: 443
   server: 15.235.50.172
@@ -878,7 +918,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-15.235.83.227-4979
+  name: 471,626|🇨🇦CA-15.235.83.227-4973
   network: ws
   port: 443
   server: 15.235.83.227
@@ -893,22 +933,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-15.235.83.228-4980
-  network: ws
-  port: 443
-  server: 15.235.83.228
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '471,522,626|🇨🇦CA-134.195.198.147-5018 #1'
+  name: 471,626|🇨🇦CA-134.195.198.147-5012
   network: ws
   port: 443
   server: 134.195.198.147
@@ -922,440 +947,434 @@ proxies:
       Host: ''
     path: /linkvws
 - cipher: aes-256-gcm
-  name: 471|CA-134.195.196.149-5549
+  name: 471|CA-134.195.196.149-5582
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 134.195.196.149
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-134.195.196.149-5550
+  name: 471|🇨🇦CA-134.195.196.149-5583
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 134.195.196.149
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-196.247.59.154-5556
+  name: 471|🇨🇦CA-196.247.59.154-5589
   password: G!yBwPWH3Vao
   port: 801
   server: 196.247.59.154
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-134.195.196.149-5576
+  name: 471|🇨🇦CA-134.195.196.149-5609
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 134.195.196.149
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-134.195.196.149-5577
+  name: 471|🇦CA-134.195.196.149-5610
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 134.195.196.149
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-134.195.196.85-5578
+  name: 471|🇨🇦CA-134.195.196.85-5611
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 134.195.196.85
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-196.247.59.154-5579
+  name: 471|🇨🇦CA-196.247.59.154-5612
   password: G!yBwPWH3Vao
   port: 806
   server: 196.247.59.154
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇦CA-196.247.59.154-5581
+  name: 471|🇦CA-196.247.59.154-5614
   password: G!yBwPWH3Vao
   port: 809
   server: 196.247.59.154
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-196.247.59.154-5582
+  name: 471|🇨🇦CA-196.247.59.154-5615
   password: G!yBwPWH3Vao
   port: 803
   server: 196.247.59.154
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.93-5598
+  name: 471|🇨🇦CA-85.208.108.93-5631
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 85.208.108.93
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-134.195.196.231-5650
+  name: 471|🇦CA-134.195.196.231-5683
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 134.195.196.231
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-134.195.196.230-5651
+  name: 471|🇨🇦CA-134.195.196.230-5684
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 134.195.196.230
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-134.195.196.231-5652
+  name: 471|🇨🇦CA-134.195.196.231-5685
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 134.195.196.231
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-38.111.114.246-5752
+  name: 471|🇦CA-38.111.114.246-5785
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 38.111.114.246
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-38.111.114.246-5753
+  name: 471|🇨🇦CA-38.111.114.246-5786
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 38.111.114.246
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.59-5799
+  name: 471|🇦CA-85.208.108.59-5832
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.60-5800
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.18-5801
+  name: 471|🇦CA-85.208.108.18-5834
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 85.208.108.18
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.59-5803
+  name: 471|🇦CA-85.208.108.59-5836
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.20-5804
+  name: 471|🇦CA-85.208.108.20-5837
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.21-5805
+  name: 471|🇨🇦CA-85.208.108.21-5838
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.59-5806
+  name: 471|🇨🇦CA-85.208.108.59-5839
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.21-5807
+  name: 471|🇦CA-85.208.108.21-5840
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.20-5808
+  name: 471|🇨🇦CA-85.208.108.20-5841
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.21-5809
+  name: 471|🇦CA-85.208.108.21-5842
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.59-5812
+  name: 471|🇦CA-85.208.108.59-5845
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.20-5813
+  name: 471|🇨🇦CA-85.208.108.20-5846
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.20-5814
+  name: 471|🇨🇦CA-85.208.108.20-5847
   password: KixLvKzwjekG00rm
   port: 8000
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.59-5816
+  name: 471|🇦CA-85.208.108.59-5849
   password: KixLvKzwjekG00rm
   port: 8000
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.59-5817
+  name: 471|🇨🇦CA-85.208.108.59-5850
   password: XKFKl2rULjIp74
   port: 8008
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.94-5819
+  name: 471|🇦CA-85.208.108.94-5852
   password: KixLvKzwjekG00rm
   port: 8080
   server: 85.208.108.94
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.59-5822
+  name: 471|🇨🇦CA-85.208.108.59-5855
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.59-5827
+  name: 471|🇨🇦CA-85.208.108.59-5860
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.59-5831
+  name: 471|🇦CA-85.208.108.59-5864
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.59-5832
+  name: 471|🇨🇦CA-85.208.108.59-5865
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.21-5834
+  name: 471|🇨🇦CA-85.208.108.21-5867
   password: e4FCWrgpkji3QY
   port: 9102
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.59-5835
+  name: 471|🇦CA-85.208.108.59-5868
   password: e4FCWrgpkji3QY
   port: 9102
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.58-5836
+  name: 471|🇨🇦CA-85.208.108.58-5869
   password: e4FCWrgpkji3QY
   port: 9101
   server: 85.208.108.58
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.94-5838
+  name: 471|🇦CA-85.208.108.94-5871
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 85.208.108.94
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.59-5839
+  name: 471|🇨🇦CA-85.208.108.59-5872
   password: pKEW8JPByTVTLtM
   port: 443
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.59-5840
+  name: 471|🇦CA-85.208.108.59-5873
   password: faBAoD54k87UJG7
   port: 2375
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.59-5842
+  name: 471|🇦CA-85.208.108.59-5875
   password: faBAoD54k87UJG7
   port: 2376
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.59-5844
+  name: 471|🇦CA-85.208.108.59-5877
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.59-5848
+  name: 471|🇨🇦CA-85.208.108.59-5881
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.21-5849
+  name: 471|🇦CA-85.208.108.21-5882
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.20-5850
+  name: 471|🇨🇦CA-85.208.108.20-5883
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.20-5852
+  name: 471|🇨🇦CA-85.208.108.20-5885
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-85.208.108.59-5853
+  name: 471|🇦CA-85.208.108.59-5886
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-85.208.108.59-5855
+  name: 471|🇨🇦CA-85.208.108.59-5888
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨CA-85.208.108.59-5856
+  name: 471|🇨CA-85.208.108.59-5889
   password: e4FCWrgpkji3QY
   port: 9101
   server: 85.208.108.59
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇦CA-196.247.59.154-5998
+  name: 471|🇦CA-196.247.59.154-6031
   password: G!yBwPWH3Vao
   port: 805
   server: 196.247.59.154
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇦CA-196.247.59.156-6003
+  name: 471|🇦CA-196.247.59.156-6036
   password: G!yBwPWH3Vao
   port: 803
   server: 196.247.59.156
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-196.247.59.154-6004
+  name: 471|🇨🇦CA-196.247.59.154-6037
   password: G!yBwPWH3Vao
   port: 802
   server: 196.247.59.154
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-196.247.59.156-6005
+  name: 471|🇨🇦CA-196.247.59.156-6038
   password: G!yBwPWH3Vao
   port: 801
   server: 196.247.59.156
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇦CA-196.247.59.156-6006
+  name: 471|🇦CA-196.247.59.156-6039
   password: G!yBwPWH3Vao
   port: 808
   server: 196.247.59.156
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-196.247.59.156-6009
+  name: 471|🇨🇦CA-196.247.59.156-6042
   password: G!yBwPWH3Vao
   port: 809
   server: 196.247.59.156
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-196.247.59.156-6012
+  name: 471|🇨🇦CA-196.247.59.156-6045
   password: G!yBwPWH3Vao
   port: 804
   server: 196.247.59.156
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-51.161.118.38-6014
+  name: 471|🇨🇦CA-51.161.118.38-6047
   password: G!yBwPWH3Vao
   port: 806
   server: 51.161.118.38
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-134.195.196.149-6095
+  name: 471|🇦CA-134.195.196.149-6128
   password: XKFKl2rULjIp74
   port: 8009
   server: 134.195.196.149
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-134.195.198.95-6096
+  name: 471|🇦CA-134.195.198.95-6129
   password: faBAoD54k87UJG7
   port: 2376
   server: 134.195.198.95
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-134.195.196.149-6097
+  name: 471|🇨🇦CA-134.195.196.149-6130
   password: kDWvXYZoTBcGkC4
   port: 8881
   server: 134.195.196.149
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-134.195.198.95-6098
+  name: 471|🇦CA-134.195.198.95-6131
   password: pKEW8JPByTVTLtM
   port: 443
   server: 134.195.198.95
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-134.195.196.149-6099
+  name: 471|🇨🇦CA-134.195.196.149-6132
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 134.195.196.149
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-134.195.196.143-6100
+  name: 471|🇨🇦CA-134.195.196.143-6133
   password: G!yBwPWH3Vao
   port: 805
   server: 134.195.196.143
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-134.195.196.107-6101
+  name: 471|🇨🇦CA-134.195.196.107-6134
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 134.195.196.107
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 471|🇨🇦CA-134.195.196.178-6102
+  name: 471|🇨🇦CA-134.195.196.178-6135
   password: G!yBwPWH3Vao
   port: 804
   server: 134.195.196.178
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-134.195.196.149-6104
+  name: 471|🇨🇦CA-134.195.196.149-6137
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 134.195.196.149
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-134.195.196.107-6106
+  name: 471|🇨🇦CA-134.195.196.107-6139
   password: XKFKl2rULjIp74
   port: 8009
   server: 134.195.196.107
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-134.195.198.95-6107
+  name: 471|🇨🇦CA-134.195.198.95-6140
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 134.195.198.95
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-134.195.198.95-6108
+  name: 471|🇨🇦CA-134.195.198.95-6141
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 134.195.198.95
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇨🇦CA-134.195.196.107-6111
+  name: 471|🇨🇦CA-134.195.196.107-6144
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 134.195.196.107
   type: ss
 - cipher: aes-256-gcm
-  name: 471|🇦CA-134.195.196.149-6113
+  name: 471|🇦CA-134.195.196.149-6146
   password: KixLvKzwjekG00rm
   port: 8080
   server: 134.195.196.149
   type: ss
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-137.184.164.233-7221
+  name: 471,626|🇨🇦CA-137.184.164.233-7215
   network: ws
   port: 80
   server: 137.184.164.233
@@ -1370,12 +1389,12 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 471,577,626|🇨🇦CA-15.235.50.172-7271
+  name: 471,626|🇨🇦CA-15.235.50.172-7265
   network: ws
   port: 443
   server: 15.235.50.172
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1385,12 +1404,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 471,577,626|🇨🇦CA-15.235.83.228-7272
+  name: 471,626|🇨🇦CA-15.235.83.228-7266
   network: ws
   port: 443
   server: 15.235.83.228
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1400,12 +1419,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '471,522,577,626|🇨🇦CA-134.195.198.147-7274 #1'
+  name: 471,577,626|🇨🇦CA-134.195.198.147-7268
   network: ws
   port: 443
   server: 134.195.198.147
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1415,7 +1434,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-148.113.153.109-7285
+  name: 471,626|🇨🇦CA-148.113.153.109-7279
   network: ws
   port: 443
   server: 148.113.153.109
@@ -1430,7 +1449,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-15.235.85.156-7296
+  name: 471,626|🇨🇦CA-15.235.85.156-7290
   network: ws
   port: 443
   server: 15.235.85.156
@@ -1445,7 +1464,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-15.235.85.147-7297
+  name: 471,626|🇨🇦CA-15.235.85.147-7291
   network: ws
   port: 443
   server: 15.235.85.147
@@ -1460,12 +1479,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '471,522,577,626|🇨🇦CA-23.162.200.227-7299 #1'
+  name: 471,577,626|🇨🇦CA-23.162.200.227-7293
   network: ws
   port: 443
   server: 23.162.200.227
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1475,12 +1494,12 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 471,577,626|🇨🇦CA-15.235.83.227-7314
+  name: 471,577,626|🇨🇦CA-15.235.83.227-7308
   network: ws
   port: 443
   server: 15.235.83.227
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1490,7 +1509,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 471,626|🇨🇦CA-23.162.200.94-7878
+  name: 471,626|🇨🇦CA-23.162.200.94-7872
   network: ws
   port: 443
   server: 23.162.200.94
@@ -1505,7 +1524,7 @@ proxies:
     path: /linkvws
 - alterId: 1
   cipher: auto
-  name: 471,626|🇨🇦CA-134.195.198.92-8047
+  name: 471,626|🇨🇦CA-134.195.198.92-8041
   network: ws
   port: 443
   server: 134.195.198.92
@@ -1518,14 +1537,14 @@ proxies:
     headers:
       Host: 134.195.198.92
     path: /
-- name: 471,626|🇨🇦CA-35.182.28.167-8518
+- name: 471,626|🇨🇦CA-35.182.28.167-8512
   password: telegram-id-directvpn
   port: 22222
   server: 35.182.28.167
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 471,626|🇨🇦CA-3.96.217.9-8544
+- name: 471,626|🇨🇦CA-3.96.217.9-8538
   password: telegram-id-directvpn
   port: 22222
   server: 3.96.217.9
@@ -1542,6 +1561,8 @@ proxies:
     short-id: 84f70f1177981563
   server: 167.17.70.16
   servername: www.microsoft.com
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   udp: true
@@ -1750,10 +1771,25 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  name: 577|🇨🇦CA-15.235.50.172-1645
+  network: ws
+  port: 443
+  server: 15.235.50.172
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: baradiha.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: '577|Channel id: @ShadowProxy66🇨🇦'
-  port: 42610
+  network: tcp
+  port: '42610'
   server: 51.79.86.182
-  skip-cert-verify: true
+  servername: ''
   tls: false
   type: vmess
   uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
@@ -5939,20 +5975,6 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- client-fingerprint: chrome
-  delay: 2578
-  name: '622,633,718|🇹🇼 TW_13 | ⬇️ 6.4MB/s-104 #1'
-  network: ws
-  port: 443
-  server: 104.17.202.10
-  servername: snippets.kkii.eu.org
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: /
 - alterId: 0
   cipher: auto
   name: 624|🇦 加拿大2-1D
@@ -6034,20 +6056,6 @@ proxies:
   type: vmess
   udp: true
   uuid: cc66b473-d76c-46a6-8f60-505b682f801b
-- alterId: 0
-  cipher: auto
-  name: 626|🇨🇦CA-51.79.102.253-0346
-  network: ws
-  port: 80
-  server: 51.79.102.253
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 636|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
