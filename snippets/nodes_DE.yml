@@ -451,7 +451,7 @@ proxies:
       Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 472,523|🇩🇪 DE-38.60.250.107-0448
+  name: 472|DE-38.60.250.107-0456
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.60.250.107
@@ -1320,14 +1320,12 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇸US
-  name: 472,587,627|🇩🇪DE-159.89.16.218-4980
+- name: 472,627|🇩🇪DE-159.89.16.218-4980
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: aes-256-gcm
   name: 472|DE-193.108.117.75-5617
   password: PCnnH6SQSnfoS27
@@ -1519,7 +1517,7 @@ proxies:
     path: /chat
 - alterId: 0
   cipher: auto
-  name: 472,578,627|🇩🇪DE-57.129.24.125-7233
+  name: '472,523,578,627|🇩🇪DE-57.129.24.125-7233 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -2396,21 +2394,6 @@ proxies:
   skip-cert-verify: false
   sni: frtgrpc.mainssh.xyz
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 523,627|🇩🇪DE-57.129.24.125-0341
-  network: ws
-  port: 443
-  server: 57.129.24.125
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /
 - cipher: aes-256-gcm
   name: 537,634|yandex-3234
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
@@ -2580,24 +2563,7 @@ proxies:
   country: 🇪 DE
   h2-opts: {}
   http-opts: {}
-  name: 587|🇪 DE_35
-  network: ws
-  port: 443
-  server: 141.95.126.134
-  servername: jamekk.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: jamekk.org
-  ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇩🇪 DE
-  h2-opts: {}
-  http-opts: {}
-  name: 587|🇪 DE_36
+  name: 587| DE_35
   network: ws
   port: 443
   server: 141.94.155.224
@@ -2608,6 +2574,23 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-headers:
     HOST: fapeng.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇩🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇪 DE_36
+  network: ws
+  port: 443
+  server: 141.95.126.134
+  servername: jamekk.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: jamekk.org
   ws-path: linkvws
 - name: '603|德国_Frankfurt am Main #3'
   network: ws
@@ -2846,6 +2829,20 @@ proxies:
   sni: de01.xxxxyyyysbs.sbs
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 627|🇩🇪DE-57.129.24.125-0341
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /
 - cipher: aes-256-cfb
   name: 627|8J%2BHqPCfh7NDTi0yMjIuMTg2LjIw...
   obfs: plain
@@ -3938,7 +3935,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 638|🇩🇪_DE_德国
+  name: '638|🇩🇪_DE_德国 #1'
   network: tcp
   port: 8080
   server: 185.189.58.195

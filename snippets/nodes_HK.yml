@@ -763,7 +763,8 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
   udp: true
-- name: 295,400,578,621,627,630,633,634,635,636,638,642|🇭🇰 香港 | HKG
+- name: '295,400,523,578,609,610,621,627,630,633,634,635,636,638|12,13|香港5|@ripaojiedian
+    #1'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -772,22 +773,6 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
   udp: true
-- name: '295,472,638|12,13|新加坡3|@ripaojiedian #1'
-  network: tcp
-  password: BxceQaOe
-  port: 3579
-  server: 18.167.99.12
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: '295,472,627,638|12,13|美国2|@ripaojiedian #1'
-  network: tcp
-  password: f36f4495b4b26cc2fe346cfa23e05b1b
-  port: 4054
-  server: 18.162.244.22
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
 - alterId: 2
   cipher: auto
   country: 🇰HK
@@ -802,7 +787,8 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 295,400,578,621,633,634|yandex-2850
+- country: 🇭🇰HK
+  name: 295,400,578,591,621,633,634|yandex-2850
   password: BxceQaOe
   port: 443
   server: 203.198.84.221
@@ -1151,20 +1137,20 @@ proxies:
   server: 103.149.182.79
   type: ss
 - cipher: chacha20-ietf
-  name: 472,523|🇭🇰 HK-103.141.221.88-0418
+  name: 472|🇰HK-103.141.221.88-0382
   password: asd123456
   port: 8388
   server: 103.141.221.88
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇰 HK
-  name: 472,523,587| HK_55
+  name: 472,587| HK_57
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
 - cipher: aes-256-cfb
-  name: 472,523|🇭🇰 HK-216.250.97.82-5062
+  name: 472|🇭🇰HK-216.250.97.82-0439
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 216.250.97.82
@@ -1251,7 +1237,7 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn/download
-- name: '472,523,627,630|_CN_中国 #3'
+- name: '472,523,627,630|_CN_中国 #2'
   password: BxceQaOe
   port: 443
   server: 219.79.214.159
@@ -1264,6 +1250,22 @@ proxies:
   port: 8388
   server: 103.149.183.80
   type: ss
+- name: '472,638|12,13|新加坡3|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 3579
+  server: 18.167.99.12
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: '472,627,638|12,13|美国2|@ripaojiedian #1'
+  network: tcp
+  password: f36f4495b4b26cc2fe346cfa23e05b1b
+  port: 4054
+  server: 18.162.244.22
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
 - cipher: aes-128-gcm
   name: 472,634|yandex-2948
   password: 57bc0c04-8184-48f5-906b-897d095ed445
@@ -1891,7 +1893,7 @@ proxies:
   port: '443'
   server: n1761214911.74qxv.top
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 372c1939-299d-4946-9633-5ffa971f8b67
@@ -1900,8 +1902,7 @@ proxies:
       Host: n1761214911.74qxv.top
     path: /
 - cipher: aes-256-gcm
-  country: 🇺🇸 US
-  name: 472,587|🇸 US_152
+  name: 472|🇰HK-18.166.57.91-4973
   password: b0c9d775-32f7-459a-b24d-ecda7c9f3720
   port: 11688
   server: ss.020.node-for-bigairport.win
@@ -1923,8 +1924,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: 472,591,634|yandex-2949
+  name: 472,634|yandex-2949
   password: asd123456
   port: 8388
   server: 103.149.182.105
@@ -3842,12 +3842,28 @@ proxies:
     headers:
       Host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
-- cipher: chacha20-ietf
-  name: 523|🇭🇰 HK-103.141.221.101-0430
-  password: asd123456
-  port: 8388
-  server: 103.141.221.101
-  type: ss
+- name: '523,609,610|香港+电讯盈科有限公司 #5'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  sni: t.me%25252Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  country: 🇨CN
+  delay: 2217
+  disable-sni: true
+  h2-opts: {}
+  http-opts: {}
+  name: '523,591,609,610,623,638,656,719|🇸🇬 SG²_1|2.3MB/s|50%|GPT⁺|GM|T... #1'
+  network: tcp
+  port: 30812
+  server: v12.hdacd.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-gcm
   name: 537,634|yandex-3172
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
@@ -4361,6 +4377,13 @@ proxies:
   port: 990
   server: 203.23.128.92
   type: ss
+- cipher: chacha20-ietf
+  country: 🇰 HK
+  name: 587|🇰 HK_58
+  password: asd123456
+  port: 8388
+  server: 103.149.182.191
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇰 HK
@@ -4378,10 +4401,10 @@ proxies:
   ws-path: /
 - alterId: 2
   cipher: auto
-  country: 🇰 HK
+  country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 587|🇰 HK_57
+  name: 587|🇰 HK_60
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -4393,7 +4416,7 @@ proxies:
     HOST: hkt.gotochinatown.net
   ws-path: /
 - country: 🇭🇰HK
-  name: 591|🇭🇰HK_13
+  name: 591|🇭🇰HK_11
   password: BxceQaOe
   port: 443
   server: 58.152.46.60
