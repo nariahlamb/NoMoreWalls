@@ -437,12 +437,11 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: aes-256-cfb
-  name: 472,587|_01
+  name: 472|TW-154.223.20.79-0457
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   http-opts:
@@ -458,11 +457,11 @@ proxies:
   tls: false
   type: vmess
   uuid: f6406b6d-5487-46da-f793-46611269a306
-- name: 472,638|🇹🇼TW台湾4
+- name: '472,638,642|🇹🇼 🇨🇳 台湾 | TWN #4'
   password: 913d0c8a-1c21-4fe2-9ce3-1d98f0db12e0
   port: 31102
   server: green2.cdntencentmusic.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
 - alterId: 0
@@ -873,17 +872,14 @@ proxies:
     headers:
       Host: tw3.594888.xyz
     path: /v2ray
-- country: 🇨 CN
-  name: 472,587,627|🇹🇼TW-61.228.84.29-4800
+- name: 472,627|🇹🇼TW-61.228.84.29-4800
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇩 ID
-  name: 472,587| ID_65
+  name: 472|🇼TW-223.165.4.173-4835
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
@@ -1402,24 +1398,23 @@ proxies:
   server: green2.cdntencentmusic.com
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: '638,642|🇹🇼 🇨🇳 台湾 | TWN #13'
+- name: 638|🇹🇼TW台湾5
   password: 404a16fa-9eb0-42ed-8f18-65eba7202f05
   port: 35501
   server: green2.cdntencentmusic.com
-  skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: 638|🇹🇼TW台湾6
+- name: '638,642|🇺🇸 美国 | USA #1'
   password: 5a2c16f9
   port: 443
   server: 104.17.162.3
+  skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '638,642|🇺🇸 美国 | USA #9'
+- name: 638|🇹🇼TW台湾7
   password: 5a2c16f9
   port: 443
   server: 172.64.229.83
-  skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
 - name: '638|TW台湾(mibei77.com 米贝节点分享) #2'
@@ -2010,6 +2005,19 @@ proxies:
     headers:
       Host: bb-67r.pages.dev
     path: /
+- client-fingerprint: randomized
+  name: 719|🇭🇰 US¹-TW⁰_4|16.7MB/s|GPT|YT-H...
+  network: ws
+  port: 443
+  server: nrtcfdns.zone.id
+  servername: snippets.kkii.eu.org
+  tls: true
+  type: vless
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
 - name: '719|🇹🇼 TW_7 | ⬇️ 4.4MB/s-23 #1'
   network: ws
   password: 5a2c16f9
@@ -2049,6 +2057,19 @@ proxies:
   ws-opts:
     headers:
       Host: bb-67r.pages.dev
+    path: /
+- name: '719|🇹🇼 TW_5 | ⬇️ 3.0MB/s-88 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 104.19.220.22
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
     path: /
 - name: '719|🇭🇰 HK¹-TW⁰_1|6.9MB/s|GPT|YT|NF... #1'
   network: ws
@@ -2363,7 +2384,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.is:154948
+    host: feb7fa9.dl.nintendo.es:154948
     mode: tls
   port: 2377
   server: feb7fa9.t1.glados-config.com
@@ -2374,7 +2395,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.it:154948
+    host: feb7fa9.dl.nintendo.be:154948
     mode: tls
   port: 2377
   server: feb7fa9.t2.glados-config.com
@@ -2385,7 +2406,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.lv:154948
+    host: feb7fa9.dl.microsoft.hu:154948
     mode: tls
   port: 2377
   server: feb7fa9.t3.glados-config.com
@@ -2396,7 +2417,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.ge:154948
+    host: feb7fa9.dl.mozilla.net:154948
     mode: tls
   port: 2377
   server: feb7fa9.t4.glados-config.com
@@ -2407,7 +2428,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.mozilla.net:154948
+    host: feb7fa9.dl.microsoft.lt:154948
     mode: tls
   port: 2377
   server: feb7fa9.t5.glados-config.com
@@ -2418,7 +2439,7 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: feb7fa9.dl.microsoft.md:154948
+    host: feb7fa9.dl.microsoft.net:154948
     mode: tls
   port: 2377
   server: feb7fa9.t6.glados-config.com
