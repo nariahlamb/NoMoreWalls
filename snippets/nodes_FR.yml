@@ -28,7 +28,7 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: '97,580|法国1 #2'
+  name: '97,581|法国1 #2'
   port: 45072
   server: hxa.dashuai.help
   skip-cert-verify: true
@@ -38,7 +38,7 @@ proxies:
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
 - alterId: 0
   cipher: auto
-  name: '97,580|法国2 #2'
+  name: '97,581|法国2 #2'
   port: 45071
   server: hxb.dashuai.help
   skip-cert-verify: true
@@ -48,7 +48,7 @@ proxies:
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
 - alterId: 0
   cipher: auto
-  name: '98,582|法国1 #3'
+  name: '98,583|法国1 #3'
   port: 45072
   server: hxa.dashuai.help
   skip-cert-verify: true
@@ -58,7 +58,7 @@ proxies:
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - alterId: 0
   cipher: auto
-  name: '98,582|法国2 #3'
+  name: '98,583|法国2 #3'
   port: 45071
   server: hxb.dashuai.help
   skip-cert-verify: true
@@ -375,7 +375,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 471,627,638|🇧🇪 BE_17
+  name: '471,627,638|🇧🇪 BE_23 #1'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -390,7 +390,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 471,627,638|🇫🇷 FR_43
+  name: 471,627,638|🇫🇷 FR_50
   network: ws
   port: 443
   server: 91.134.8.101
@@ -731,18 +731,22 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: 471,627|🇫🇷FR-51.195.202.129-4897
+- country: 🇷FR
+  name: 471,587,627|🇫🇷FR-51.195.202.129-4897
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: 471,627|🇫🇷FR-51.178.42.187-4900
+  udp: true
+- country: 🇫🇷FR
+  name: 471,587,627|🇫🇷FR-51.178.42.187-4900
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 471,627|🇫🇷FR-146.59.55.50-4960
@@ -1015,7 +1019,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 471,577,627|🇫🇷FR-146.59.55.50-7334
+  name: 471,578,627|🇫🇷FR-146.59.55.50-7334
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1545,7 +1549,7 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-gcm
-  name: 536,634|yandex-474
+  name: 536,634|yandex-3112
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
@@ -1553,7 +1557,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 577|Channel id:@proxy_kafee 🇫🇷
+  name: 578|Channel id:@proxy_kafee 🇫🇷
   network: ws
   port: '2082'
   server: 5.196.29.123
@@ -1565,6 +1569,35 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 587| FR_48
+  network: ws
+  port: 443
+  server: 91.134.8.101
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 587,638|🇫🇷 FR_48
+  network: none
+  port: 38141
+  server: 45.136.12.37
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 604|法国_马赛
@@ -1854,13 +1887,13 @@ proxies:
   tls: true
   type: vmess
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
-- name: 638|🇫🇷FR_46
+- name: '638|🇫🇷FR_53 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 638|法国_122818225
+- name: 638|法国_122904230
   network: tcp
   password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
   port: 25075
@@ -1868,7 +1901,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 638|法国_122818223
+- name: 638|法国_122904228
   network: tcp
   password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
   port: 25075
@@ -1876,7 +1909,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 638|法国_122818224
+- name: 638|法国_122904229
   network: tcp
   password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
   port: 25075
@@ -1884,19 +1917,19 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 638|🇫🇷FR_45
+- name: 638|🇫🇷FR_54
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: 638|🇫🇷FR_48
+- name: '638|🇫🇷FR_52 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 638|🇫🇷FR_47
+- name: 638|🇫🇷FR_51
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -1928,44 +1961,6 @@ proxies:
   server: 51.44.54.110
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 638|法国 140
-  network: ws
-  port: 443
-  server: 91.134.8.93
-  servername: pelang.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: pelang.org
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 638|法国 141
-  network: ws
-  port: 443
-  server: 146.59.85.226
-  servername: pelang.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: pelang.org
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 638|🇫🇷 FR_42
-  network: none
-  port: 38141
-  server: 45.136.12.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
 - name: '642|🇫🇷 法国 | FRA #2'
   password: iwangjie
   port: 2053
