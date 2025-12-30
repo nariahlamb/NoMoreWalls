@@ -66,20 +66,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- alterId: 0
-  cipher: auto
-  name: 218|🇫🇷 法国
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - cipher: aes-256-cfb
   name: 453,472|🇳🇱NL-51.15.27.48-8350
   password: f8f7aCzcPKbsF8p3
@@ -352,19 +338,19 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: aes-256-cfb
-  name: 472,523|🇫🇷 FR-51.159.106.175-0310
+  name: 472|FR-51.159.106.175-0310
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.106.175
   type: ss
 - alterId: 0
   cipher: auto
-  name: 472,523,627,638|🇫🇷 FR_46
+  name: 472,627,638|🇫🇷 FR_46
   network: ws
   port: 443
   server: 91.134.8.101
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -374,12 +360,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 472,523,627,638|🇧🇪 BE_18
+  name: 472,627,638|🇧🇪 BE_18
   network: ws
   port: 443
   server: 57.128.189.240
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -388,7 +374,7 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 472,523|🇫🇷 FR-195.154.119.77-0355
+  name: 472|🇫FR-195.154.119.77-0355
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -687,7 +673,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 472,627|🇫🇷FR-57.128.189.240-4805
+  name: '472,523,627|🇫🇷FR-57.128.189.240-4805 #1'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -732,7 +718,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 472,627|🇫🇷FR-91.134.8.101-4820
+  name: '472,523,627|🇫🇷FR-91.134.8.101-4820 #1'
   network: ws
   port: 443
   server: 91.134.8.101
@@ -1555,18 +1541,15 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  client-fingerprint: ''
-  fast-open: false
-  name: '523,719|🇭🇰 Relay_HK-US_119-289 #1'
-  port: 30835
+  name: 523,630,638,642,656|🇭🇰 Relay_HK-US_119-289
+  network: tcp
+  port: '30835'
   server: v35.hdacd.com
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-gcm
-  name: 537,634|yandex-2832
+  name: 537,634|yandex-3191
   password: 3030b609-f36f-4fd1-a4ef-a6e653780536
   port: 27001
   server: fr001.dogsvip.site
@@ -1591,33 +1574,6 @@ proxies:
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 587| FR_48
-  network: ws
-  port: 443
-  server: 91.134.8.101
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 587|🇷 FR_49
-  network: ws
-  port: 20521
-  server: 45.136.12.37
-  skip-cert-verify: true
-  type: vmess
-  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇫🇷 FR
-  h2-opts: {}
-  http-opts: {}
   name: 587,638|🇫🇷 FR_45
   network: none
   port: 38141
@@ -1628,6 +1584,20 @@ proxies:
   type: vmess
   uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 587|🇷 FR_48
+  network: ws
+  port: 443
+  server: 91.134.8.101
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
 - alterId: 0
   cipher: auto
   name: 604|法国_马赛
@@ -1740,7 +1710,7 @@ proxies:
     path: /xrenvws
 - country: 🇫🇷FR
   delay: 1393
-  name: 623,634|yandex-77
+  name: 623,634|yandex-3110
   password: telegram-id-privatevpns
   port: 22222
   server: 52.47.154.136
@@ -1927,15 +1897,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
-- alterId: 2
-  cipher: auto
-  name: 630,638,642,656|🇭🇰 Relay_HK-US_119-289
-  network: tcp
-  port: '30835'
-  server: v35.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 638|🇫🇷FR_48
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
