@@ -474,23 +474,11 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- name: '89,343|🇯🇵 JP_1|8.0MB/s|YT-JP|NF|D+|GM #1'
+- name: '89,343|🇯🇵 JP_4|7.9MB/s|YT-JP|D+|GM #1'
   network: ws
   password: 5a2c16f9
   port: 443
-  server: 172.64.229.64
-  skip-cert-verify: true
-  sni: snippets.kkii.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: /
-- name: '89,343|🇯🇵 JP_2|8.0MB/s|YT-JP|NF|D+|GM #1'
-  network: ws
-  password: 5a2c16f9
-  port: 443
-  server: 172.64.229.7
+  server: 172.64.229.10
   skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
@@ -1169,8 +1157,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- country: 🇯🇵JP
-  name: '227,261,296,353,383,389,392,395,397,398,400|12,13|日本3|@ripaojiedian #2'
+- name: '227,261,296,383,389,392,395,397,398,400|12,13|日本3|@ripaojiedian #2'
   network: tcp
   password: f36f4495b4b26cc2fe346cfa23e05b1b
   port: 1933
@@ -1178,7 +1165,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - country: 🇯🇵JP
   name: '227,261,296,353,383,389,392,395,397,398,400|12,13|新加坡|@ripaojiedian #2'
   network: tcp
@@ -1227,6 +1213,34 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 227,395|#114 JP10
+  network: ws
+  port: '443'
+  server: n1753598451.74qxv.top
+  servername: n1753598451.74qxv.top
+  tls: true
+  type: vmess
+  uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
+  ws-opts:
+    headers:
+      Host: n1753598451.74qxv.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 227,395|#119 JP12
+  network: ws
+  port: '443'
+  server: n1753598448.74qxv.top
+  servername: n1753598448.74qxv.top
+  tls: true
+  type: vmess
+  uuid: 3cd6f849-078e-4da9-8080-a2791b51b766
+  ws-opts:
+    headers:
+      Host: n1753598448.74qxv.top
+    path: /
 - client-fingerprint: firefox
   flow: ''
   name: '242,243,244|日本01 #3'
@@ -1617,7 +1631,7 @@ proxies:
   port: 8080
   server: 172.105.199.111
   type: ss
-- country: 🇯🇵JP
+- country: 🇵JP
   name: 296,353,389,400|日本_123118002
   password: f36f4495b4b26cc2fe346cfa23e05b1b
   port: 1281
@@ -1659,16 +1673,14 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- country: 🇯🇵JP
-  name: 296,353,389,400|日本_123118009
+- name: 296,389,400|日本_123118009
   password: f36f4495b4b26cc2fe346cfa23e05b1b
   port: 3901
   server: 160.16.153.13
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
-- country: 🇵JP
+- country: 🇯🇵JP
   name: 296,353,389,400|日本_123118010
   password: f36f4495b4b26cc2fe346cfa23e05b1b
   port: 1281
@@ -2409,15 +2421,6 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- country: 🇷IR
-  name: '296,353,371,372,389,392,395,404|🇯🇵 日本 | JPN #5'
-  password: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05
-  port: 25010
-  server: 37.202.200.19
-  skip-cert-verify: true
-  sni: 37.202.200.19
-  type: trojan
-  udp: true
 - name: '296,389|🇯🇵JP-202.181.103.235-5054 #1'
   password: f36f4495b4b26cc2fe346cfa23e05b1b
   port: 2760
@@ -2752,21 +2755,7 @@ proxies:
   country: 🇵 JP
   h2-opts: {}
   http-opts: {}
-  name: 350| JP_71
-  network: tcp
-  port: 53231
-  server: cgroup.node1.v.nodelist-airport.com
-  servername: cgroup.node1.v.nodelist-airport.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 350|🇵 JP_72
+  name: 350| JP_104
   network: ws
   port: 443
   server: seoul03.zgjok.com
@@ -2779,7 +2768,7 @@ proxies:
     HOST: seoul03.zgjok.com
   ws-path: /
 - country: 🇯🇵JP
-  name: 353|Relay_🇯🇵JP-🇯🇵JP_15
+  name: 353|Relay_🇯🇵JP-🇯🇵JP_14
   password: BxceQaOe
   port: 2762
   server: 52.194.193.12
@@ -3261,20 +3250,73 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- delay: 629
-  name: 385,396|yandex-3275
+- alterId: 0
+  cipher: auto
+  country: 🇯🇵JP
+  delay: 1226
+  h2-opts: {}
+  http-opts: {}
+  name: 385|日本 - 东京 - Alibaba Cloud LLC - ...
   network: ws
-  password: 5a2c16f9
   port: 443
-  server: 172.64.229.10
+  server: n1753598446.wpg27.xyz
+  servername: n1753598446.wpg27.xyz
   skip-cert-verify: true
-  sni: snippets.kkii.eu.org
-  type: trojan
-  udp: true
+  tls: true
+  type: vmess
+  uuid: a5047d95-24b8-451a-93e3-f2a387b93d5a
   ws-opts:
     headers:
-      Host: snippets.kkii.eu.org
+      HOST: n1753598446.wpg27.xyz
     path: /
+- auth: A8069A5B-E992-44E8-917E-7246CFD19F61
+  client-fingerprint: chrome
+  delay: 1686
+  down: 500 Mbps
+  mtu: 1350
+  name: 385,396|yandex-3216
+  obfs: salamander
+  obfs-password: xK9mN2pLq5vR8wB3
+  password: A8069A5B-E992-44E8-917E-7246CFD19F61
+  port: 443
+  server: jp3.dexlos.com
+  skip-cert-verify: false
+  sni: jp3.dexlos.com
+  type: hysteria2
+  udp: true
+  up: 40 Mbps
+- auth: A8069A5B-E992-44E8-917E-7246CFD19F61
+  client-fingerprint: chrome
+  delay: 1687
+  down: 500 Mbps
+  mtu: 1350
+  name: 385,396|yandex-3217
+  obfs: salamander
+  obfs-password: xK9mN2pLq5vR8wB3
+  password: A8069A5B-E992-44E8-917E-7246CFD19F61
+  port: 443
+  server: jp2.dexlos.com
+  skip-cert-verify: false
+  sni: jp2.dexlos.com
+  type: hysteria2
+  udp: true
+  up: 40 Mbps
+- auth: A8069A5B-E992-44E8-917E-7246CFD19F61
+  client-fingerprint: chrome
+  delay: 1686
+  down: 500 Mbps
+  mtu: 1350
+  name: 385,396|yandex-3218
+  obfs: salamander
+  obfs-password: xK9mN2pLq5vR8wB3
+  password: A8069A5B-E992-44E8-917E-7246CFD19F61
+  port: 443
+  server: jp5.dexlos.com
+  skip-cert-verify: false
+  sni: jp5.dexlos.com
+  type: hysteria2
+  udp: true
+  up: 40 Mbps
 - auth: 5f449182-c897-4614-9597-1f2981718d68
   name: 387|🇵 马VIP-日本
   password: 5f449182-c897-4614-9597-1f2981718d68
@@ -3572,34 +3614,6 @@ proxies:
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 395|#114 JP10
-  network: ws
-  port: '443'
-  server: n1753598451.74qxv.top
-  servername: n1753598451.74qxv.top
-  tls: true
-  type: vmess
-  uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
-  ws-opts:
-    headers:
-      Host: n1753598451.74qxv.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 395|#119 JP12
-  network: ws
-  port: '443'
-  server: n1753598448.74qxv.top
-  servername: n1753598448.74qxv.top
-  tls: true
-  type: vmess
-  uuid: 3cd6f849-078e-4da9-8080-a2791b51b766
-  ws-opts:
-    headers:
-      Host: n1753598448.74qxv.top
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
