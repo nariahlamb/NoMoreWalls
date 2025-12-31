@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400,578,621,633,638,656,719|🇷🇺 RU²_3|5.1MB/s|YT|TK|X-114 #1'
+  name: '400,621,633,638,656,719|🇷🇺 RU²_3|5.1MB/s|YT|TK|X-114 #1'
   network: tcp
   port: 443
   reality-opts:
@@ -10,14 +10,13 @@ proxies:
   server: 89.169.182.230
   servername: vk.com
   skip-cert-verify: false
-  tfo: false
   tls: true
   type: vless
   udp: true
   uuid: ac2c8871-d4eb-40a6-8487-fd1b31c3bc22
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400,578,621,633,634,638,656,719|🇷🇺 RU_5 | ⬇️ 6.8MB/s-108 #1'
+  name: '400,621,633,634,638,656,719|🇷🇺 RU_5 | ⬇️ 6.8MB/s-108 #1'
   network: tcp
   port: 4248
   reality-opts:
@@ -25,14 +24,13 @@ proxies:
   server: 51.250.28.151
   servername: ads.x5.ru
   skip-cert-verify: false
-  tfo: false
   tls: true
   type: vless
   udp: true
   uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400,578,621,633,638,656,719|🇳🇱 NL_6 | ⬇️ 5.3MB/s-156 #1'
+  name: '400,621,633,638,656,719|🇳🇱 NL_6 | ⬇️ 5.3MB/s-156 #1'
   network: tcp
   port: 4443
   reality-opts:
@@ -41,7 +39,6 @@ proxies:
   server: s9.vless-balancer.ru
   servername: github.com
   skip-cert-verify: false
-  tfo: false
   tls: true
   type: vless
   udp: true
@@ -260,13 +257,13 @@ proxies:
       Host: 45.136.244.181
     path: /fr-unlimitxxx
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇺RU-45.89.55.173-0358
+  name: 472,523|🇷🇺 RU-45.89.55.173-0403
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 472|🇷🇺RU-45.138.157.162-0359
+  name: 472,523|🇷🇺 RU-45.138.157.162-0399
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
@@ -699,18 +696,9 @@ proxies:
   sni: hsels.huasuan666.top
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 523,609,610,630|🇸🇬 俄罗斯 新西伯利亚justhost
-  network: none
-  port: '34895'
-  server: 2.56.242.210
-  tls: false
-  type: vmess
-  uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '523,638|🇷🇺_RU_俄罗斯 #4'
+  name: '523,638|🇷🇺_RU_俄罗斯 #2'
   network: tcp
   port: 443
   reality-opts:
@@ -718,6 +706,8 @@ proxies:
     short-id: 672ff0
   server: 178.154.205.131
   servername: ads.x5.ru
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
@@ -1503,6 +1493,15 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 609,630|🇸🇬 俄罗斯 新西伯利亚justhost
+  network: none
+  port: '34895'
+  server: 2.56.242.210
+  tls: false
+  type: vmess
+  uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
 - cipher: chacha20-ietf-poly1305
   name: 637|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1524,7 +1523,13 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 638|🇷🇺RU_135
+- name: 638|🇷🇺RU俄罗斯
+  password: 870133af-bf3d-4ece-99a7-8a77bf2d3b40
+  port: 443
+  server: veraams2.uspn.io
+  sni: veraams2.uspn.io
+  type: trojan
+- name: 638|🇷🇺RU_148
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
@@ -1598,7 +1603,7 @@ proxies:
   type: vless
   uuid: 309fa273-6579-4cb2-9143-7cad50401eba
 - flow: ''
-  name: '638|🇷🇺_RU_俄罗斯 #3'
+  name: '638|🇷🇺_RU_俄罗斯 #1'
   network: tcp
   port: 58349
   server: 31.44.0.63
@@ -1683,6 +1688,17 @@ proxies:
   type: vless
   udp: true
   uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
+- name: 638|RU VLESS-125 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: PfxP7-Pvot9Y8z5boZwuG3Afyb_zdm0C2HCZezNMTiQ
+    short-id: 85225c27630d023f
+  server: 109.248.203.71
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 6142e134-346a-4ffe-bf5b-c3fb7e3c9dfb
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '638|俄羅斯 #2'
