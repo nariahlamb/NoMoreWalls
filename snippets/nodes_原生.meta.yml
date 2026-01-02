@@ -75,6 +75,24 @@ proxies:
   type: vmess
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
+- name: 400|🏴‍☠️ 原生地址-443-Trojan-WS-TLS
+  password: 70e8aaf9-3a4a-46b8-b0e4-beb45889de82
+  port: 443
+  server: 172.67.150.228
+  sni: j.ltde.dpdns.org
+  type: trojan
+- name: 400|🏴‍☠️ 原生地址-443-WS-TLS
+  network: ws
+  port: 443
+  server: 172.67.150.228
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 70e8aaf9-3a4a-46b8-b0e4-beb45889de82
+  ws-opts:
+    headers:
+      Host: j.ltde.dpdns.org
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: '411|澳大利亚原生1 #4'
