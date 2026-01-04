@@ -1,55 +1,55 @@
 proxies:
 - cipher: aes-128-gcm
-  name: '277,278|4 #4'
+  name: '276,277|4 #4'
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  name: '277,278|1 #10'
+  name: '276,277|1 #10'
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
-  name: '277,278|3 #1'
+  name: '276,277|3 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.163
   type: ss
 - cipher: aes-256-cfb
-  name: 277|🌀29-CH |  12.1MB/s
+  name: 276|🌀29-CH |  12.1MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 84.17.53.160
   type: ss
 - cipher: aes-256-cfb
-  name: 277|🌀37-CH |  2.6MB/s
+  name: 276|🌀37-CH |  2.6MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.15.82
   type: ss
 - cipher: aes-256-cfb
-  name: 296|🇨CH-185.126.116.125-0090
+  name: 295|🇨CH-185.126.116.125-0090
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 185.126.116.125
   type: ss
-- name: 296,389|🇨🇭CH-152.67.71.149-2374
+- name: 295,389|🇨🇭CH-152.67.71.149-2371
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: 296|🇨CH-156.146.62.160-3942
+  name: 295|🇨CH-156.146.62.160-4054
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
 - alterId: 1
   cipher: auto
-  name: 296,389|🇨🇭CH-186.190.215.32-7817
+  name: 295,389|🇨🇭CH-186.190.215.32-7792
   network: ws
   port: 443
   server: 186.190.215.32
@@ -64,7 +64,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: 296,389|🇨🇭CH-186.190.215.75-7881
+  name: 295,389|🇨🇭CH-186.190.215.75-7856
   network: ws
   port: 443
   server: 186.190.215.75
@@ -79,7 +79,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 296,389|🇨🇭CH-140.238.212.95-7894
+  name: 295,389|🇨🇭CH-140.238.212.95-7869
   network: ws
   port: 443
   server: 140.238.212.95
@@ -94,7 +94,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 296,389|🇨🇭CH-23.166.88.27-7988
+  name: 295,389|🇨🇭CH-23.166.88.27-7963
   network: ws
   port: 443
   server: 23.166.88.27
@@ -118,38 +118,16 @@ proxies:
   sni: us6.dexlos.com
   type: hysteria2
   udp: true
-- name: 400|#126 CH3
-  password: smart@-PhVxMdT5OVnjtTecU-kZoej
-  port: 10014
-  server: z-eu1.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-- name: 400|#124 CH1
-  password: smart@-PhVxMdT5OVnjtTecU-kZoej
-  port: 10028
-  server: z-eu1.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-- name: 400|#127 CH4
-  password: smart@-PhVxMdT5OVnjtTecU-kZoej
-  port: 10014
-  server: z-eu2.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-- name: 400|#135 CH5
-  password: smart@-PhVxMdT5OVnjtTecU-kZoej
-  port: 10020
-  server: z-eu2.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-- name: 400|#125 CH2
-  password: smart@-PhVxMdT5OVnjtTecU-kZoej
-  port: 10028
-  server: z-eu2.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|🇨🇭_瑞士
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: henSnE5bp7VH5HLvQGA8aepmLrngfZc9yV-xhQK5gik
+    short-id: c4920b7b39
+  server: 2.56.178.73
+  servername: '%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI'
+  tls: false
+  type: vless
+  uuid: 97e10d36-c8fc-429a-b3d7-dcc67b718d0f
