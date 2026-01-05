@@ -305,7 +305,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 277,278,296,350|🇺🇸 US_170
+  name: 277,278,296,350|🇸 US_178
   password: shadowsocks
   port: 443
   server: 156.146.38.167
@@ -878,7 +878,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇸 US
-  name: 277,278,296,350|🇸 US_166
+  name: 277,278,296,350|🇸 US_173
   password: shadowsocks
   port: 443
   server: 156.146.38.170
@@ -935,8 +935,7 @@ proxies:
   server: 169.197.142.187
   type: ss
 - cipher: aes-128-gcm
-  country: 🇸US
-  name: 277,296,353|🇸US_24
+  name: 277,296|🇺🇸US-173.244.56.6-0186
   password: shadowsocks
   port: 443
   server: 173.244.56.6
@@ -1032,7 +1031,8 @@ proxies:
   server: 107.151.182.253
   type: ss
 - cipher: chacha20-ietf
-  name: 277|🇺🇸119 |  8.9MB/s
+  country: 🇭🇰 HK
+  name: 277,350|🇭🇰 HK_52
   password: asd123456
   port: 8388
   server: 103.36.91.23
@@ -1769,7 +1769,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇸 US
-  name: 296,350| US_162
+  name: 296,350|🇺🇸 US_175
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 104.192.226.106
@@ -5049,15 +5049,13 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇸US
-  name: 296,353,389|🇺🇸US-64.94.95.118-5045
+- name: 296,389|🇺🇸US-64.94.95.118-5045
   password: kkzh2prsyr2ik47as615
   port: 57142
   server: 64.94.95.118
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: 64.94.95.118
   type: trojan
-  udp: true
 - cipher: aes-256-cfb
   name: 296|🇸US-104.192.226.106-4900
   password: f8f7aCzcPKbsF8p3
@@ -14207,27 +14205,13 @@ proxies:
     path: /path/243535322906
 - cipher: chacha20-ietf-poly1305
   country: 🇸 US
-  name: 350|🇸 US_163
+  name: 350| US_168
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 154.205.159.100
   type: ss
 - cipher: aes-256-cfb
   country: 🇸 US
-  name: 350|🇺🇸 US_165
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.165.233.93
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸 US
-  name: 350|🇸 US_169
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺🇸 US
   name: 350,396|yandex-2933
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -14236,14 +14220,28 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇺🇸 US
-  name: 350|🇺🇸 US_172
+  name: 350|🇸 US_172
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
+- cipher: aes-256-cfb
+  country: 🇺🇸 US
+  name: 350|🇸 US_174
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.165.233.93
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸 US
+  name: 350|🇺🇸 US_176
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇸 US
-  name: 350|🇺🇸 US_173
+  name: 350|🇺🇸 US_177
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 38.54.45.129
@@ -14253,18 +14251,56 @@ proxies:
   country: 🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 350|🇸 US_174
-  network: ws
-  port: 443
-  server: 15.235.83.228
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  name: 350|🇺🇸 US_180
+  network: none
+  port: 34460
+  server: 216.238.86.158
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
+  uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: '350,400|🇺🇸 US_185 #1'
+  network: none
+  port: 12056
+  server: 47.253.197.26
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: dd7be7f1-38ff-45e6-f1e5-b20c2190f527
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 350,392|US_188
+  network: none
+  port: '27502'
+  server: 216.238.87.47
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b8155ce4-7e08-4c40-800f-8671312b7124
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 350|🇺🇸 US_183
+  network: none
+  port: 7100
+  server: 206.119.191.9
+  skip-cert-verify: true
+  type: vmess
+  uuid: 10853485-26e1-477b-d257-58a3f4873db3
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇺🇸 US
@@ -14285,151 +14321,15 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 350|🇸 US_176
-  network: ws
-  port: 443
-  server: 148.113.176.192
-  servername: fapeng.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: fapeng.org
-  ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 350,392|US_188
+  name: 350,371,372,392|🇺🇸 美国 华盛顿Cogent通信公司
   network: none
-  port: '27502'
-  server: 216.238.87.47
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b8155ce4-7e08-4c40-800f-8671312b7124
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 350|🇺🇸 US_178
-  network: none
-  port: 34460
-  server: 216.238.86.158
-  skip-cert-verify: true
-  type: vmess
-  uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 350|🇺🇸 US_179
-  network: ws
-  port: 52513
-  server: aflzzul.meiquankongjian.com
-  servername: aflzzul.meiquankongjian.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-  ws-headers:
-    HOST: aflzzul.meiquankongjian.com
-  ws-path: /564dfa20/
-- alterId: 0
-  cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: '350,400|🇺🇸 US_185 #1'
-  network: none
-  port: 12056
-  server: 47.253.197.26
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: dd7be7f1-38ff-45e6-f1e5-b20c2190f527
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 350|🇸 US_181
-  network: ws
-  port: 51515
-  server: aflzzul.meiquankongjian.com
-  servername: aflzzul.meiquankongjian.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-  ws-headers:
-    HOST: aflzzul.meiquankongjian.com
-  ws-path: /564dfa20/
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 350|🇺🇸 US_182
-  network: none
-  port: 443
+  port: '443'
   server: 38.76.144.22
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: c63aa0a7-589b-4bc7-c10f-72cfda242fff
   ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 350|🇸 US_183
-  network: ws
-  port: 443
-  server: n1753598452.wpg27.xyz
-  servername: n1753598452.wpg27.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
-  ws-headers:
-    HOST: n1753598452.wpg27.xyz
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 350|🇸 US_184
-  network: none
-  port: 7100
-  server: 206.119.191.9
-  skip-cert-verify: true
-  type: vmess
-  uuid: 10853485-26e1-477b-d257-58a3f4873db3
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 350|🇺🇸 US_185
-  network: ws
-  port: 52511
-  server: aflzzul.meiquankongjian.com
-  servername: aflzzul.meiquankongjian.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-  ws-headers:
-    HOST: aflzzul.meiquankongjian.com
-  ws-path: /564dfa20/
 - country: 🇸US
   name: 350|🇸US_191
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
@@ -14438,33 +14338,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 353|Relay_🇸US-🇺🇸US_26
-  obfs: http_simple
-  password: Uk92CS
-  port: 13000
-  protocol: auth_aes128_sha1
-  server: nm3.boom.party
-  type: ssr
-- alterId: 0
-  cipher: auto
-  country: 🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 353|Relay_🇺🇸US-IR_27
-  network: ws
-  port: 443
-  server: cf.fovi.tk
-  servername: foxlux.fovi.tk
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-  ws-opts:
-    headers:
-      HOST: foxlux.fovi.tk
-    path: /eisasqa
 - name: 365|美国_洛杉矶
   network: ws
   password: NISHIKUITAN222
@@ -15195,7 +15068,7 @@ proxies:
     path: /dyajvws
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #2'
+  name: '374|美国 CloudFlare节点 #4'
   network: ws
   port: 2095
   server: 172.64.194.234
@@ -15208,7 +15081,7 @@ proxies:
     path: /hgcefomn
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #3'
+  name: '374|美国 CloudFlare节点 #5'
   network: ws
   port: 8880
   server: 141.101.123.18
@@ -15221,7 +15094,7 @@ proxies:
     path: /qwer
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #4'
+  name: '374|美国 CloudFlare节点 #6'
   network: ws
   port: 8080
   server: 198.41.218.144
@@ -15235,7 +15108,7 @@ proxies:
     path: /qwer01
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #5'
+  name: '374|美国 CloudFlare节点 #7'
   network: ws
   port: 8080
   server: 162.159.241.157
@@ -15544,7 +15417,7 @@ proxies:
       Host: snippets.kkii.eu.org
     path: /
 - delay: 1804
-  name: 385,396|yandex-272
+  name: '385,396,404|🇹🇼 🇨🇳 台湾 | TWN #16'
   password: 458398b0-f3b0-4cf5-b8a5-34805f995e24
   port: 35502
   server: green2.cdntencentmusic.com
@@ -15694,10 +15567,11 @@ proxies:
   server: 74.208.150.213
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 389|🇺🇸US-160.153.136.238-1765
+- name: '389,404|🇺🇸 美国 | USA #10'
   password: 5a2c16f9
   port: 2096
   server: 160.153.136.238
+  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
 - name: 389|🇺🇸US-66.228.55.178-8393
@@ -15723,6 +15597,33 @@ proxies:
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 392,400|🇳🇬_尼日利亚
+  network: tcp
+  port: '36334'
+  server: 160.119.196.92
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 575ac7a3-0127-4420-a9ea-5ff3f6c02ac7
+- alterId: 0
+  cipher: auto
+  name: 392,400,544|【机场推荐：https://a0a.xyz/】19
+  network: tcp
+  port: '30830'
+  server: v30.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 392,400|🇺🇸US美国14
+  password: 5a2c16f9
+  port: 443
+  server: 162.159.24.131
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
 - name: 392,400|🇺🇸US美国6
   password: 5a2c16f9
   port: 443
@@ -15730,17 +15631,24 @@ proxies:
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 392,400|🇺🇸US美国3
+- name: 392,400|🇫🇷FR法国2
   password: 5a2c16f9
   port: 443
-  server: 172.64.229.6
+  server: cf.130519.xyz
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 392,400|🇺🇸US美国18
+- name: 392,400|🇺🇸US美国10
   password: 5a2c16f9
   port: 443
-  server: 777.ai7777777.xyz
+  server: 104.17.162.3
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: 392,400|🇭🇰HK香港5
+  password: 5a2c16f9
+  port: 443
+  server: 104.17.167.134
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
@@ -15758,10 +15666,17 @@ proxies:
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 392,400|🇺🇸US美国16
+- name: 392,400|🇺🇸US美国18
   password: 5a2c16f9
   port: 443
-  server: 172.64.229.11
+  server: 777.ai7777777.xyz
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: 392,400|🇺🇸US美国3
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.6
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
@@ -15772,19 +15687,48 @@ proxies:
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 392,400|🇺🇸US美国10
+- name: 392,400|🇯🇵JP日本3
   password: 5a2c16f9
   port: 443
-  server: 104.17.162.3
+  server: 172.64.229.86
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 392,400|🇺🇸US美国14
+- name: 392,400|🇺🇸US美国16
   password: 5a2c16f9
   port: 443
-  server: 162.159.24.131
+  server: 172.64.229.11
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
+  type: trojan
+- name: '392|🇺🇸 美国(yudou789.top 玉豆免费节点) #34'
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.10
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '392|🇺🇸 美国(yudou789.top 玉豆免费节点) #54'
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.83
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '392|🇺🇸 美国(yudou789.top 玉豆免费节点) #55'
+  password: 72ea07aa-a0e8-4d62-8387-0902bfc11cba
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '392,400|US美国(mibei77.com 米贝节点分享) #3'
+  network: tcp
+  password: 5278ceaf-43ad-4c83-bc12-b3d82cc0a523
+  port: 35501
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
   type: trojan
 - name: 392,400|🇺🇸US美国2
   password: 5a2c16f9
@@ -15792,6 +15736,13 @@ proxies:
   server: 104.19.220.22
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
+  type: trojan
+- name: '392|🇺🇸 美国(yudou789.top 玉豆免费节点) #76'
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: false
+  sni: epge.muarua.filegear-sg.me
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 399|🇸_US_美国
@@ -15960,13 +15911,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '400|US美国(mibei77.com 米贝节点分享) #3'
-  network: tcp
-  password: 5278ceaf-43ad-4c83-bc12-b3d82cc0a523
-  port: 35501
-  server: green2.cdntencentmusic.com
-  sni: green2.cdntencentmusic.com
-  type: trojan
 - name: 400|🇺🇸 美国 | USA 15
   password: 554f139b-f31f-41c4-99f9-73d60647db26
   port: 443
@@ -15979,17 +15923,17 @@ proxies:
   server: vip3.kaixincloud.top
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '400,404|🇺🇸 美国 | USA #16'
+- name: 400|美國_95
   password: 5a2c16f9
   port: 443
   server: 104.16.245.77
-  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 400|美國_161
+- name: '400,404|🇺🇸 美国 | USA #19'
   password: 5a2c16f9
   port: 443
   server: 104.16.246.188
+  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
 - name: 400|美國_74
@@ -16028,10 +15972,11 @@ proxies:
   server: 172.64.144.144
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 400|美國-080
+- name: '400,404|🇺🇸 美国 | USA #12'
   password: 5a2c16f9
   port: 2096
   server: 172.64.144.145
+  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
 - name: 400|美國-095
@@ -16064,10 +16009,11 @@ proxies:
   server: 172.64.144.235
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 400|美國-032-2
+- name: '400,404|🇸🇬 新加坡 | SGP #2'
   password: 5a2c16f9
   port: 2096
   server: 172.64.144.248
+  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
 - name: 400|美國-028
@@ -16094,17 +16040,17 @@ proxies:
   server: 172.64.145.13
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '400,404|🇺🇸 美国 | USA #4'
+- name: 400|美國-063-2
   password: 5a2c16f9
   port: 2096
   server: 172.64.145.156
-  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 400|美國-068
+- name: '400,404|🇺🇸 美国 | USA #22'
   password: 5a2c16f9
   port: 2096
   server: 172.64.145.189
+  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
 - name: 400|美國-081
@@ -16203,11 +16149,10 @@ proxies:
   server: 172.64.146.237
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '400,404|🇺🇸 美国 | USA #12'
+- name: 400|美國-041-1
   password: 5a2c16f9
   port: 2096
   server: 172.64.146.64
-  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
 - name: 400|美國-050
@@ -16216,17 +16161,17 @@ proxies:
   server: 172.64.146.75
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 400|美國-043
+- name: '400,404|🇺🇸 美国 | USA #27'
   password: 5a2c16f9
   port: 2096
   server: 172.64.146.77
+  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '400,404|🇺🇸 美国 | USA #17'
+- name: 400|美國-027-1
   password: 5a2c16f9
   port: 2096
   server: 172.64.146.7
-  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
 - name: 400|美國-057
@@ -16265,18 +16210,16 @@ proxies:
   server: 172.64.147.208
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '400,404|🇺🇸 美国 | USA #2'
+- name: 400|美國-078
   password: 5a2c16f9
   port: 2096
   server: 172.64.147.211
-  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '400,404|🇺🇸 美国 | USA #21'
+- name: 400|美國-032-1
   password: 5a2c16f9
   port: 2096
   server: 172.64.147.238
-  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
 - name: 400|美國-029
@@ -16345,11 +16288,10 @@ proxies:
   server: 172.64.229.127
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '400,404|🇺🇸 美国 | USA #3'
+- name: 400|美國_114
   password: 5a2c16f9
   port: 443
   server: 172.64.229.131
-  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
 - name: 400|美國_62
@@ -16394,11 +16336,10 @@ proxies:
   server: 172.64.229.20
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '400,404|🇺🇸 美国 | USA #14'
+- name: 400|美國_113
   password: 5a2c16f9
   port: 443
   server: 172.64.229.21
-  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
 - name: 400|美國-044
@@ -16413,10 +16354,11 @@ proxies:
   server: 172.64.229.27
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 400|YouTube顺丰资源 美国_108-1
+- name: 400,404|🇺🇸 美国 | USA
   password: 5a2c16f9
   port: 443
   server: 172.64.229.2
+  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
 - name: 400|美國_55
@@ -16425,7 +16367,7 @@ proxies:
   server: 172.64.229.32
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '400,404|🇺🇸 美国 | USA #1'
+- name: '400,404|🇺🇸 美国 | USA #2'
   password: 5a2c16f9
   port: 443
   server: 172.64.229.39
@@ -16444,10 +16386,11 @@ proxies:
   server: 172.64.229.44
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 400|美國_64
+- name: '400,404|🇺🇸 美国 | USA #8'
   password: 5a2c16f9
   port: 443
   server: 172.64.229.47
+  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
 - name: 400|美國-096-1
@@ -16614,11 +16557,10 @@ proxies:
   server: 5.78.92.27
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '400,404|🇺🇸 美国 | USA #7'
+- name: 400|🇺🇸 美国 | USA 23
   password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
   port: 443
   server: v1.dabache.top
-  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
 - name: 400|美国_010518062
@@ -16658,11 +16600,10 @@ proxies:
   server: 216.144.235.37
   sni: doufeng.pages.dev
   type: trojan
-- name: '400,404|🇺🇸 美国 | USA #6'
+- name: 400|🇺🇸 美国 | USA 22
   password: trojan
   port: 2087
   server: 22b.net
-  skip-cert-verify: false
   sni: store.timimi.dpdns.org
   type: trojan
 - name: 400|美国 - 肯特 - 2-1
@@ -16847,7 +16788,7 @@ proxies:
   uuid: a2235b72-fd9c-404f-be5a-53b2de0cb798
 - alterId: 0
   cipher: auto
-  name: '400|🇺🇸 US_186 #1'
+  name: 400|🇺🇸 US_186
   network: ws
   port: 443
   server: n1753598452.wpg27.xyz
@@ -17234,59 +17175,122 @@ proxies:
   tls: false
   type: vmess
   uuid: 10853485-26e1-477b-d257-58a3f4873db3
-- name: 404|🇺🇸 美国 | USA
+- name: '404|🇺🇸 美国 | USA #3'
   password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
   port: 2096
-  server: 5.10.246.238
+  server: 45.149.12.238
   skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '404|🇺🇸 美国 | USA #8'
+- name: '404|🇺🇸 美国 | USA #6'
+  password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
+  port: 2096
+  server: 45.128.76.238
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #7'
+  password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
+  port: 8443
+  server: 51.81.209.21
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #9'
+  password: 554f139b-f31f-41c4-99f9-73d60647db26
+  port: 7800
+  server: 192.9.135.182
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #11'
   password: 5a2c16f9
   port: 2096
   server: 172.64.145.130
   skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '404|🇺🇸 美国 | USA #9'
+- name: '404|🇺🇸 美国 | USA #13'
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.103
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #14'
+  password: 554f139b-f31f-41c4-99f9-73d60647db26
+  port: 8443
+  server: 80.209.242.156
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #15'
   password: 554f139b-f31f-41c4-99f9-73d60647db26
   port: 2096
-  server: 188.244.122.238
-  skip-cert-verify: true
-  sni: snippets.kkii.eu.org
-  type: trojan
-- name: '404|🇺🇸 美国 | USA #10'
-  password: 554f139b-f31f-41c4-99f9-73d60647db26
-  port: 59170
-  server: 47.90.220.146
-  skip-cert-verify: true
-  sni: snippets.kkii.eu.org
-  type: trojan
-- name: '404|🇺🇸 美国 | USA #11'
-  password: 9c9d3203-5045-4842-9545-8beddcf4e6af
-  port: 443
-  server: gainsboro.qzz.io
-  skip-cert-verify: false
-  sni: gainsboro.qzz.io
-  type: trojan
-- name: '404|🇺🇸 美国 | USA #13'
-  password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
-  port: 443
   server: v2.dabache.top
   skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '404|🇺🇸 美国 | USA #18'
+- name: '404|🇺🇸 美国 | USA #16'
   password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
-  port: 41913
-  server: 129.146.22.121
+  port: 443
+  server: vip1.kaixincloud.top
   skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '404|🇺🇸 美国 | USA #22'
-  password: f52d0a04-94ad-4f9e-9945-4c3d43374e36
+- name: '404|🇺🇸 美国 | USA #17'
+  password: 554f139b-f31f-41c4-99f9-73d60647db26
   port: 2096
-  server: 104.18.42.163
+  server: 45.202.113.238
   skip-cert-verify: true
-  sni: ts888.yumige.dpdns.org
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #18'
+  password: 7418004a-0ecd-41c0-a062-42bf966d3fb2
+  port: 443
+  server: cf.0sm.com
+  skip-cert-verify: true
+  sni: vd.vmy2024.dpdns.org
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #20'
+  password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
+  port: 2096
+  server: v2.dabache.top
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #21'
+  password: 554f139b-f31f-41c4-99f9-73d60647db26
+  port: 443
+  server: v1.dabache.top
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #23'
+  password: 554f139b-f31f-41c4-99f9-73d60647db26
+  port: 3701
+  server: 129.153.91.86
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #24'
+  password: 554f139b-f31f-41c4-99f9-73d60647db26
+  port: 2053
+  server: 199.119.137.77
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #25'
+  password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
+  port: 2087
+  server: 104.196.250.34
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #26'
+  password: 554f139b-f31f-41c4-99f9-73d60647db26
+  port: 443
+  server: 147.75.236.96
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
   type: trojan
