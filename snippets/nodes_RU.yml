@@ -1,5 +1,5 @@
 proxies:
-- name: 227,261,383,395,396,400|13|DE_speednode_0004
+- name: '226,260,383,395,396,400|14|DE_speednode_0004 #2'
   network: ws
   password: 554f139b-f31f-41c4-99f9-73d60647db26
   port: 8443
@@ -463,16 +463,26 @@ proxies:
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 350,400|🇷🇺 RU_164
+  name: 350|🇺 RU_179
   network: none
   port: 34895
   server: 2.56.242.210
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺RU
+  h2-opts: {}
+  http-opts: {}
+  name: 353|🇺RU_21
+  network: tcp
+  port: 34895
+  server: 2.56.242.210
+  skip-cert-verify: true
+  type: vmess
+  uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
 - name: '366|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -817,13 +827,16 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 400|🇷🇺RU_165
+- name: 400|🇷🇺RU_175
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
   sni: hk-full.privateip.net
   type: trojan
-- name: 400|RU TROJAN-52 | free-nodes
+- alpn:
+  - h2
+  - http/1.1
+  name: 400|RU TROJAN-47 | free-nodes
   network: tcp
   password: yUHNMwWvenoHBaN5CtqKPwt1CTzXgW
   port: 443

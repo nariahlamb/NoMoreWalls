@@ -1,5 +1,5 @@
 proxies:
-- name: 227,261,383,395,396,400|13|DE_speednode_0004
+- name: '226,260,383,395,396,400|14|DE_speednode_0004 #2'
   network: ws
   password: 554f139b-f31f-41c4-99f9-73d60647db26
   port: 8443
@@ -13,7 +13,7 @@ proxies:
       Host: snippets.kkii.eu.org
     path: /Telegram🇨🇳WangCai2
 - client-fingerprint: chrome
-  name: 261,383,395,400|13|RU_speednode_0009
+  name: '260,383,395,400|14|RU_speednode_0009 #2'
   port: 443
   server: vkll.takovpn.ru
   servername: eh.vk.com
@@ -23,7 +23,7 @@ proxies:
   uuid: 846c5d45-936c-42f6-9120-2d13830d5fa0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 261,383,395,400|13|RU_speednode_0010
+  name: '260,383,395,400|14|RU_speednode_0010 #2'
   port: 443
   server: aut-0001-xr.packet-drop-society.net
   servername: hls-svod.itunes.apple.com
@@ -33,7 +33,7 @@ proxies:
   uuid: 94e25e2b-ffc8-453d-a08c-1f5c3c249755
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 261,383,395,400|🇪🇪[openproxylist.com] vless-EE...
+  name: 260,383,395,400|🇪🇪[openproxylist.com] vless-EE...
   network: tcp
   port: 1488
   reality-opts:
@@ -47,7 +47,7 @@ proxies:
   uuid: d2d79fd8-a3d4-4792-9766-e472e1fe8a5f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 261,383,395,400|🇵🇱[openproxylist.com] vless-PL...
+  name: 260,383,395,400|🇵🇱[openproxylist.com] vless-PL...
   network: tcp
   port: 1488
   reality-opts:
@@ -630,16 +630,26 @@ proxies:
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 350,400|🇷🇺 RU_164
+  name: 350|🇺 RU_179
   network: none
   port: 34895
   server: 2.56.242.210
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺RU
+  h2-opts: {}
+  http-opts: {}
+  name: 353|🇺RU_21
+  network: tcp
+  port: 34895
+  server: 2.56.242.210
+  skip-cert-verify: true
+  type: vmess
+  uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
 - name: 365|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1395,13 +1405,16 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 400|🇷🇺RU_165
+- name: 400|🇷🇺RU_175
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
   sni: hk-full.privateip.net
   type: trojan
-- name: 400|RU TROJAN-52 | free-nodes
+- alpn:
+  - h2
+  - http/1.1
+  name: 400|RU TROJAN-47 | free-nodes
   network: tcp
   password: yUHNMwWvenoHBaN5CtqKPwt1CTzXgW
   port: 443
@@ -1410,7 +1423,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|RU VLESS-57 | free-nodes
+  name: 400|RU VLESS-52 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1421,6 +1434,18 @@ proxies:
   tls: false
   type: vless
   uuid: 07a4ef14-34b3-44b5-bc08-343cc74adc0e
+- name: 400|俄罗斯(yudou789.top 玉豆免费节点)_3
+  network: ws
+  port: 2096
+  server: 185.176.24.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  ws-opts:
+    headers:
+      Host: sni.111000.dns.army
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|俄罗斯(yudou789.top 玉豆免费节点)-003
   network: ws
   port: 2096
@@ -1433,18 +1458,6 @@ proxies:
     headers:
       Host: sni.111000.cc.cd
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|YouTube顺丰资源 俄罗斯_193
-  network: ws
-  port: 2096
-  server: 5.182.84.238
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.cc.cd
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - name: 400|俄罗斯(yudou789.top 玉豆免费节点)-004
   network: ws
   port: 443
@@ -1457,28 +1470,47 @@ proxies:
     headers:
       Host: sni.111000.de5.net
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|RU VLESS-121 | free-nodes
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|RU VLESS-13 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0
+    short-id: d1579a8745398e34
+  server: 89.169.137.193
+  servername: eh.vk.com
+  tls: false
+  type: vless
+  uuid: 2c8adcaa-e428-4cea-9c88-e88166651ab3
+- name: 400|RU VLESS-113 | free-nodes
   port: 443
   server: 185.130.114.219
   tls: false
   type: vless
   uuid: 309fa273-6579-4cb2-9143-7cad50401eba
-- name: 400|RU VLESS-120 | free-nodes
+- name: 400|RU VLESS-112 | free-nodes
   port: 443
   server: 185.130.114.253
   tls: false
   type: vless
   uuid: 309fa273-6579-4cb2-9143-7cad50401eba
+- name: 400|RU VLESS-05 | free-nodes
+  port: 443
+  server: nl7.fastlanehosting.ru
+  tls: false
+  type: vless
+  uuid: 393b50c8-c060-465f-b179-b1a824f52a03
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|RU VLESS-113 | free-nodes
+  name: 400|RU VLESS-81 | free-nodes
   network: tcp
   port: 443
   reality-opts:
     public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
-    short-id: 17802e8ff84f12df
-  server: 51.250.65.209
-  servername: ads.x5.ru
+    short-id: 2476f063981ffd92
+  server: 51.250.87.167
+  servername: api-maps.yandex.ru
   tls: false
   type: vless
   uuid: 4371ad14-b981-4699-bedf-83fb79bde3e6
@@ -1503,8 +1535,19 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.dpdns.org
     path: '%2F%3Fed%3D2560'
-- client-fingerprint: qq
-  name: 400|RU VLESS-80 | free-nodes
+- name: 400|RU VLESS-126 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: PfxP7-Pvot9Y8z5boZwuG3Afyb_zdm0C2HCZezNMTiQ
+    short-id: 85225c27630d023f
+  server: 109.248.203.71
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 6142e134-346a-4ffe-bf5b-c3fb7e3c9dfb
+- client-fingerprint: chrome
+  name: 400|RU VLESS-72 | free-nodes
   network: tcp
   port: 2040
   reality-opts:
@@ -1515,15 +1558,9 @@ proxies:
   tls: false
   type: vless
   uuid: 89f99086-e244-41dc-ab20-c1d8763399d0
-- name: 400|RU VLESS-81 | free-nodes
-  port: 443
-  server: 217.16.20.134
-  tls: false
-  type: vless
-  uuid: 8b55c24a-806d-4b29-9388-0e5034cf78df
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|RU VLESS-54 | free-nodes
+  name: 400|RU VLESS-49 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1534,6 +1571,18 @@ proxies:
   tls: false
   type: vless
   uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
+- client-fingerprint: firefox
+  name: 400|RU VLESS-02 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Wg_prcp8fAsUrveCKVqBsk_8mWuKurQb-0N3H1e35mk
+    short-id: bb3b14db
+  server: de31.abvpn.ru
+  servername: cdnjs.cloudflare.com
+  tls: false
+  type: vless
+  uuid: c5c9d8ec-6c95-4f84-a395-de41ef895f34
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '400|🇷🇺_俄罗斯 #1'
