@@ -1665,25 +1665,38 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- cipher: aes-256-gcm
+  country: ' JP'
+  name: 350| JP_90
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 10079
+  server: ss.027.node-for-bigairport.win
+  type: ss
 - alterId: 0
   cipher: auto
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 350| JP_71
-  network: ws
-  port: 443
-  server: seoul03.zgjok.com
-  servername: seoul03.zgjok.com
+  name: 350| JP_91
+  network: tcp
+  port: 53231
+  server: cgroup.node1.v.nodelist-airport.com
+  servername: cgroup.node1.v.nodelist-airport.com
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
-  ws-headers:
-    HOST: seoul03.zgjok.com
+  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
   ws-path: /
 - country: JP
-  name: 353|Relay_JP-JP_15
+  name: 353,400|日本_010718026+L0
+  password: 381f2e86233720eacda26d50e9aa26da
+  port: 4006
+  server: 202.181.103.246
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- country: JP
+  name: 353|Relay_JP-JP_16
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1933
   server: 160.16.196.59
@@ -1697,15 +1710,6 @@ proxies:
   port: 4006
   server: 160.16.196.59
   skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: JP
-  name: 353,400|日本_010718026+L0
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 4006
-  server: 202.181.103.246
-  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
   udp: true
@@ -2208,22 +2212,6 @@ proxies:
       Host: l.ayovo.netlib.re
     max-early-data: 2560
     path: /
-- client-fingerprint: chrome
-  delay: 595
-  name: '385|日本 - 成田市 - Cloudflare, Inc. - ... #1'
-  network: ws
-  port: 443
-  server: 162.159.45.232
-  servername: l.ayovo.netlib.re
-  tls: true
-  type: vless
-  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: l.ayovo.netlib.re
-    max-early-data: 2560
-    path: /
 - name: 392,400|🇯🇵JP日本9
   password: 5a2c16f9
   port: 443
@@ -2329,12 +2317,6 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: hysteria2
-- name: 400|日本_010718008+L0
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 3901
-  server: 202.181.103.246
-  sni: www.nintendogames.net
-  type: trojan
 - name: 400|日本_010718174
   network: tcp
   password: ace1qxDyr_-GmIUgK.1Tnjb6ikAN
