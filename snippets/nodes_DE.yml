@@ -486,6 +486,23 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  country: ' DE'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| DE_37
+  network: ws
+  port: 443
+  server: 141.95.126.134
+  servername: jamekk.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: jamekk.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
   country: DE
   h2-opts: {}
   http-opts: {}
@@ -504,20 +521,20 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_35
+  name: 350| DE_39
   network: ws
   port: 443
-  server: 141.95.126.134
-  servername: jamekk.org
+  server: 141.94.155.224
+  servername: fapeng.org
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-headers:
-    HOST: jamekk.org
+    HOST: fapeng.org
   ws-path: linkvws
 - country: DE
-  name: 350,400|🇩🇪DE_37
+  name: 350,400|🇩🇪DE_36
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -673,61 +690,24 @@ proxies:
   skip-cert-verify: false
   sni: awaited-chicken.adder289.quest
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
-  delay: 1123
-  name: 385|德国 - 卡尔斯鲁厄 - Contabo GmbH - 4
-  password: 75782921a8e70802
-  port: 18550
-  server: 195.7.6.160
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  delay: 1903
-  name: 385|德国 - 兰河畔林堡 - OVH SAS - 1
-  password: 333c4cae01f8bacf
-  port: 11201
-  server: 135.125.247.29
-  type: ss
-  udp: true
 - alterId: 0
-  cipher: auto
-  client-fingerprint: ''
-  delay: 1049
-  name: 385|德国 - 兰河畔林堡 - OVH SAS - 5
+  cipher: chacha20-poly1305
+  client-fingerprint: chrome
+  delay: 1857
+  disable-sni: true
+  name: 385|德国 - 兰河畔林堡 - OVH SAS - 2
   network: ws
-  port: 12898
-  server: gtm1.ktmwan.net
+  port: 8080
+  server: zula.ir
+  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 81a5821c-b354-4c29-a4b3-3c9747cc674f
+  uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
-      Host: baidu.com
-    path: /
-- cipher: chacha20-ietf-poly1305
-  delay: 731
-  name: 385|德国 - 兰河畔林堡 - OVH SAS - 6
-  password: cbbcbfd5330475d1
-  port: 11201
-  server: 141.95.106.215
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇫🇷FR
-  delay: 1358
-  name: 385|德国 - 萨尔布吕肯 - OVH SAS - 3
-  password: c0fb2805ee931691
-  port: 11201
-  server: 54.37.77.214
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇪🇸 ES
-  delay: 1619
-  name: 385|西班牙 - 马德里 - Melbikomas UAB - 1
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 5.188.181.201
-  type: ss
+      Host: nasnet-511952424.mcitel.co
+    path: /nasnet/cdn
 - name: 387|--HONG-OIDE-ET-2
   password: f36f4495b4b26cc2fe346cfa23e05b1b
   port: 443
@@ -750,15 +730,7 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|🇩🇪_德国
-  network: tcp
-  password: 02948bde80594712b974368035f294dd
-  port: 9443
-  server: 88.214.24.235
-  skip-cert-verify: true
-  sni: apple.com
-  type: trojan
-- name: 400|德国_010704702
+- name: 400|德国_010718722
   network: tcp
   password: 9BbIGN.nF=gztO-iq7ETmxdJ
   port: 13448
@@ -766,7 +738,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 400|德国_010704701
+- name: 400|德国_010718721
   network: tcp
   password: 9BbIGN.nF=gztO-iq7ETmxdJ
   port: 13448
@@ -774,7 +746,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 400|德国_010704024
+- name: 400|德国_010718026
   network: tcp
   password: 9BbIGN.nF=gztO-iq7ETmxdJ
   port: 13448
@@ -794,10 +766,16 @@ proxies:
   server: 128.140.64.14
   sni: tianjiu.pages.dev
   type: trojan
-- name: 400|德国 - 德赖艾希 - 73-01
+- name: 400|德国 - 德赖艾希 - 54-01
   password: trojan
-  port: 2052
-  server: 130.185.122.203
+  port: 8444
+  server: 135.181.25.7
+  sni: doufeng.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 46-01
+  password: trojan
+  port: 999
+  server: 138.124.116.141
   sni: doufeng.pages.dev
   type: trojan
 - name: 400|德国 - 德赖艾希 - 86-01
@@ -806,7 +784,7 @@ proxies:
   server: 138.199.212.148
   sni: doufeng.pages.dev
   type: trojan
-- name: 400|德国 - 德赖艾希 - 3-1
+- name: 400|德国 - 德赖艾希 - 3-01
   password: trojan
   port: 4444
   server: 138.226.236.46
@@ -842,12 +820,6 @@ proxies:
   server: 152.53.13.241
   sni: tianjiu.pages.dev
   type: trojan
-- name: 400|德国 - 德赖艾希 - 124
-  password: trojan
-  port: 1020
-  server: 152.53.225.203
-  sni: tianjiu.pages.dev
-  type: trojan
 - name: 400|德国 - 德赖艾希 - 19-01
   password: trojan
   port: 2051
@@ -864,6 +836,12 @@ proxies:
   password: trojan
   port: 8444
   server: 159.195.20.112
+  sni: doufeng.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 9-01
+  password: trojan
+  port: 8444
+  server: 159.195.21.31
   sni: doufeng.pages.dev
   type: trojan
 - name: 400|德国 - 德赖艾希 - 8-01
@@ -884,12 +862,6 @@ proxies:
   server: 163.5.187.149
   sni: tianjiu.pages.dev
   type: trojan
-- name: 400|德国 - 德赖艾希 - 33-002
-  password: trojan
-  port: 8443
-  server: 167.235.65.225
-  sni: tianjiu.pages.dev
-  type: trojan
 - name: 400|德国 - 德赖艾希 - 12-02
   password: trojan
   port: 2083
@@ -907,12 +879,6 @@ proxies:
   port: 8000
   server: 176.96.138.203
   sni: tianjiu.pages.dev
-  type: trojan
-- name: 400|德国 - 德赖艾希 - 38-001
-  password: trojan
-  port: 8444
-  server: 185.104.63.51
-  sni: doufeng.pages.dev
   type: trojan
 - name: 400|德国 - 杜塞尔多夫 - 87
   password: trojan
@@ -950,11 +916,29 @@ proxies:
   server: 188.245.165.71
   sni: tianjiu.pages.dev
   type: trojan
+- name: 400|德国 - 德赖艾希 - 85
+  password: trojan
+  port: 44444
+  server: 188.245.207.54
+  sni: tianjiu.pages.dev
+  type: trojan
 - name: 400|德国 - 德赖艾希 - 2-01
   password: trojan
   port: 8444
   server: 188.68.58.109
   sni: doufeng.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 4-02
+  password: trojan
+  port: 8443
+  server: 193.23.216.248
+  sni: tianjiu.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 100
+  password: trojan
+  port: 1002
+  server: 194.26.192.125
+  sni: tianjiu.pages.dev
   type: trojan
 - name: 400|德国 - 德赖艾希 - 121
   password: trojan
@@ -965,6 +949,12 @@ proxies:
 - name: 400|德国 - 德赖艾希 - 135
   password: trojan
   port: 2007
+  server: 194.26.192.125
+  sni: tianjiu.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 89
+  password: trojan
+  port: 2012
   server: 194.26.192.125
   sni: tianjiu.pages.dev
   type: trojan
@@ -1052,6 +1042,12 @@ proxies:
   server: 194.26.192.251
   sni: tianjiu.pages.dev
   type: trojan
+- name: 400|德国 - 德赖艾希 - 15-02
+  password: trojan
+  port: 2083
+  server: 195.201.252.144
+  sni: tianjiu.pages.dev
+  type: trojan
 - name: 400|德国 - 德赖艾希 - 71-01
   password: trojan
   port: 6780
@@ -1088,6 +1084,12 @@ proxies:
   server: 2.59.134.207
   sni: tianjiu.pages.dev
   type: trojan
+- name: 400|德国 - 德赖艾希 - 26-02
+  password: trojan
+  port: 8080
+  server: 202.61.200.220
+  sni: tianjiu.pages.dev
+  type: trojan
 - name: 400|德国 - 德赖艾希 - 21-02
   password: trojan
   port: 8088
@@ -1106,17 +1108,17 @@ proxies:
   server: 212.52.1.202
   sni: tianjiu.pages.dev
   type: trojan
-- name: 400|德国 - 德赖艾希 - 47-02
-  password: trojan
-  port: 8443
-  server: 213.176.114.86
-  sni: tianjiu.pages.dev
-  type: trojan
 - name: 400|德国 - 德赖艾希 - 39-02
   password: trojan
   port: 8080
   server: 3.67.8.221
   sni: tianjiu.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 40-01
+  password: trojan
+  port: 1001
+  server: 37.27.201.146
+  sni: doufeng.pages.dev
   type: trojan
 - name: 400|德国 - 德赖艾希 - 60-001
   password: trojan
@@ -1124,11 +1126,11 @@ proxies:
   server: 38.180.181.134
   sni: doufeng.pages.dev
   type: trojan
-- name: 400|德国 - 德赖艾希 - 61-01
+- name: 400|德国 - 德赖艾希 - 61-02
   password: trojan
-  port: 8444
-  server: 38.180.219.136
-  sni: doufeng.pages.dev
+  port: 14000
+  server: 38.244.166.207
+  sni: tianjiu.pages.dev
   type: trojan
 - name: 400|德国 - 德赖艾希 - 63
   password: trojan
@@ -1136,10 +1138,22 @@ proxies:
   server: 45.145.42.170
   sni: tianjiu.pages.dev
   type: trojan
-- name: 400|德国 - 德赖艾希 - 128
+- name: 400|德国 - 德赖艾希 - 98
   password: trojan
-  port: 1033
-  server: 45.154.98.133
+  port: 1001
+  server: 45.154.98.100
+  sni: tianjiu.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 41-02
+  password: trojan
+  port: 2002
+  server: 45.154.98.100
+  sni: tianjiu.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 91
+  password: trojan
+  port: 3002
+  server: 45.154.98.100
   sni: tianjiu.pages.dev
   type: trojan
 - name: 400|德国 - 德赖艾希 - 120
@@ -1178,10 +1192,16 @@ proxies:
   server: 45.95.174.14
   sni: doufeng.pages.dev
   type: trojan
-- name: 400|德国 - 杜塞尔多夫 - 63
+- name: 400|德国 - 德赖艾希 - 29-02
   password: trojan
-  port: 6666
-  server: 45.95.2.173
+  port: 443
+  server: 46.226.165.34
+  sni: tianjiu.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 57-01
+  password: trojan
+  port: 900
+  server: 46.62.238.101
   sni: doufeng.pages.dev
   type: trojan
 - name: 400|德国 - 德赖艾希 - 34-02
@@ -1214,10 +1234,58 @@ proxies:
   server: 62.133.60.66
   sni: tianjiu.pages.dev
   type: trojan
-- name: 400|德国 - 德赖艾希 - 51-001
+- name: 400|德国 - 德赖艾希 - 45-02
+  password: trojan
+  port: 443
+  server: 62.60.230.30
+  sni: tianjiu.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 117
+  password: trojan
+  port: 3085
+  server: 62.60.239.218
+  sni: tianjiu.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 66-01
+  password: trojan
+  port: 512
+  server: 65.108.249.15
+  sni: doufeng.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 44-01
+  password: trojan
+  port: 8989
+  server: 65.109.188.82
+  sni: doufeng.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 31-01
+  password: trojan
+  port: 5009
+  server: 65.109.193.73
+  sni: doufeng.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 64-01
+  password: trojan
+  port: 8890
+  server: 65.109.210.183
+  sni: doufeng.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 70-01
   password: trojan
   port: 9999
-  server: 62.60.148.115
+  server: 65.109.210.183
+  sni: doufeng.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 17-01
+  password: trojan
+  port: 4440
+  server: 65.109.220.75
+  sni: doufeng.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 78-01
+  password: trojan
+  port: 1001
+  server: 77.233.223.128
   sni: doufeng.pages.dev
   type: trojan
 - name: 400|德国 - 德赖艾希 - 48-02
@@ -1256,11 +1324,11 @@ proxies:
   server: 85.17.67.245
   sni: doufeng.pages.dev
   type: trojan
-- name: 400|德国 - 德赖艾希 - 11-02
+- name: 400|德国 - 德赖艾希 - 81-01
   password: trojan
-  port: 2053
-  server: 88.99.60.34
-  sni: tianjiu.pages.dev
+  port: 8081
+  server: 86.106.84.89
+  sni: doufeng.pages.dev
   type: trojan
 - name: 400|德国 - 德赖艾希 - 123
   password: trojan
@@ -1268,22 +1336,22 @@ proxies:
   server: 89.168.110.240
   sni: tianjiu.pages.dev
   type: trojan
+- name: 400|德国 - 德赖艾希 - 58-01
+  password: trojan
+  port: 8082
+  server: 89.208.113.120
+  sni: doufeng.pages.dev
+  type: trojan
 - name: 400|德国 - 德赖艾希 - 93
   password: trojan
   port: 1001
   server: 89.58.14.243
   sni: tianjiu.pages.dev
   type: trojan
-- name: 400|德国 - 德赖艾希 - 7-02
+- name: 400|德国 - 德赖艾希 - 62-02
   password: trojan
-  port: 2083
-  server: 89.58.26.175
-  sni: tianjiu.pages.dev
-  type: trojan
-- name: 400|德国 - 德赖艾希 - 54-02
-  password: trojan
-  port: 2012
-  server: 89.58.34.230
+  port: 1002
+  server: 89.58.14.243
   sni: tianjiu.pages.dev
   type: trojan
 - name: 400|德国 - 德赖艾希 - 27-01
@@ -1370,6 +1438,12 @@ proxies:
   server: 91.107.203.137
   sni: tianjiu.pages.dev
   type: trojan
+- name: 400|德国 - 德赖艾希 - 113
+  password: trojan
+  port: 3085
+  server: 91.107.245.83
+  sni: tianjiu.pages.dev
+  type: trojan
 - name: 400|德国 - 德赖艾希 - 33-01
   password: trojan
   port: 2052
@@ -1380,6 +1454,12 @@ proxies:
   password: trojan
   port: 2052
   server: 91.107.250.73
+  sni: doufeng.pages.dev
+  type: trojan
+- name: 400|德国 - 德赖艾希 - 15-01
+  password: trojan
+  port: 2082
+  server: 91.107.252.241
   sni: doufeng.pages.dev
   type: trojan
 - name: 400|德国 - 德赖艾希 - 83-02
@@ -1394,6 +1474,12 @@ proxies:
   server: 91.184.249.207
   sni: doufeng.pages.dev
   type: trojan
+- name: 400|德国 - 德赖艾希 - 50-01
+  password: trojan
+  port: 445
+  server: 91.186.217.158
+  sni: doufeng.pages.dev
+  type: trojan
 - name: 400|德国 - 德赖艾希 - 20-02
   password: trojan
   port: 2233
@@ -1406,7 +1492,7 @@ proxies:
   server: 91.98.123.18
   sni: doufeng.pages.dev
   type: trojan
-- name: 400|德国 - 德赖艾希 - 7-001
+- name: 400|德国 - 德赖艾希 - 7-01
   password: trojan
   port: 999
   server: 91.98.123.18
@@ -1436,7 +1522,13 @@ proxies:
   server: 94.141.123.232
   sni: tianjiu.pages.dev
   type: trojan
-- name: 400|德国_010704699
+- name: 400|德国 - 德赖艾希 - 1-01
+  password: trojan
+  port: 443
+  server: ip.sb
+  sni: doufeng.pages.dev
+  type: trojan
+- name: 400|德国_010718720
   network: tcp
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
@@ -1444,7 +1536,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 400|德国_010704031
+- name: 400|德国_010718036
   network: tcp
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
@@ -1452,15 +1544,26 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 400|DE TROJAN-50 | free-nodes
-  network: ws
+- name: 400|DE TROJAN-70 | free-nodes
   password: xtA6WF92Itmhm9jfvXUH1MDVL
   port: 443
   server: free-de-3.undef.network
   sni: free-de-3.undef.network
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 400|德国 051
+  network: ws
+  port: 443
+  server: 141.94.155.229
+  servername: pelang.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
-    path: '%2Ff2fc2a1f'
+    headers:
+      Host: pelang.org
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 400|德国 011
@@ -1487,21 +1590,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|🇩🇪 DE_36
-  network: ws
-  port: 443
-  server: 141.94.155.224
+  name: 400|德国_010718215
+  network: tcp
+  port: '29774'
+  server: 5.75.217.137
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 899cff3b-504a-454f-c315-a18fe050fa0d
 - alterId: 0
   cipher: auto
-  name: 400|德国_010704703
+  name: 400|德国_010718231
   network: tcp
   port: '32156'
   server: 91.107.151.30
@@ -1518,17 +1617,31 @@ proxies:
   tls: false
   type: vmess
   uuid: 42e25353-b1ae-59f3-bd59-d86d2737b814
-- name: 404|🇩🇪 德国 | DEU
-  password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
+- name: '404|🇩🇪 德国 | DEU #1'
+  password: 5a2c16f9
   port: 443
-  server: 202.61.254.159
+  server: 5.61.41.30
   skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '404|🇩🇪 德国 | DEU #1'
-  password: 554f139b-f31f-41c4-99f9-73d60647db26
+- name: '404|🇩🇪 德国 | DEU #3'
+  password: 5a2c16f9
   port: 443
-  server: 87.120.216.157
+  server: 202.61.254.159
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '404|🇩🇪 德国 | DEU #4'
+  password: 5a2c16f9
+  port: 443
+  server: 193.23.197.183
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '404|🇩🇪 德国 | DEU #5'
+  password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
+  port: 443
+  server: 193.23.197.183
   skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan

@@ -1,4 +1,49 @@
 proxies:
+- auth: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
+  name: 47|🇫🇷 法国IPV6-09
+  password: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
+  port: 40149
+  server: fr09.sulian.life
+  skip-cert-verify: true
+  sni: fr09.sulian.life
+  type: hysteria2
+  udp: true
+- auth: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
+  name: 47|🇫🇷 法国IPV6-10
+  password: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
+  port: 41148
+  server: fr10.sulink.one
+  skip-cert-verify: true
+  sni: fr10.sulink.one
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 47|🇫🇷 法国1
+  port: 45072
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
+- alterId: 0
+  cipher: auto
+  name: 47|🇫🇷 CM 隧道 法国 NO1
+  port: 52108
+  server: sh3.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- alterId: 0
+  cipher: auto
+  name: 47|🇫🇷 法国2
+  port: 45071
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
   name: '90,345|法国1 #2'
@@ -39,7 +84,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- name: 261,400|9|法兰克福
+- name: 261|8|法兰克福
   password: 16461a78-363c-457a-92f9-83b0a68edc37
   port: 2056
   server: de.eyucdn.xyz
@@ -47,7 +92,7 @@ proxies:
   sni: de.eyucdn.xyz
   tls: false
   type: hysteria2
-- name: 261,400|9|FR
+- name: 261|8|FR
   password: 45b46edb-679b-4ea5-befd-88c05bb94f80
   port: 2056
   server: de.eyucdn.xyz
@@ -55,7 +100,7 @@ proxies:
   sni: de.eyucdn.xyz
   tls: false
   type: hysteria2
-- name: '261,400|10|🇷 - FR - @freeOnlineVPN #1'
+- name: '261|9|🇷 - FR - @freeOnlineVPN #1'
   obfs: salamander
   obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
   password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
@@ -348,7 +393,7 @@ proxies:
   uuid: c0f8303b-32d7-4c34-88b2-84b0501b02d5
 - alterId: 0
   cipher: auto
-  name: 293|🇫🇷 法国1
+  name: '293|🇫🇷 法国1 #1'
   port: 45072
   server: haa.dashuai.cyou
   tls: false
@@ -357,7 +402,7 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - alterId: 0
   cipher: auto
-  name: 293|🇫🇷 法国2
+  name: '293|🇫🇷 法国2 #1'
   port: 45071
   server: xdd.dashuai.cyou
   tls: false
@@ -369,7 +414,7 @@ proxies:
   country: ' FR'
   h2-opts: {}
   http-opts: {}
-  name: 350| FR_38
+  name: 350| FR_43
   network: ws
   port: 443
   server: 91.134.8.101
@@ -378,19 +423,32 @@ proxies:
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: ' FR'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| FR_44
+  network: none
+  port: 38141
+  server: 45.136.12.37
+  skip-cert-verify: true
+  type: vmess
+  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
+  ws-path: /
 - country: FR
-  name: 350|FR_39
+  name: 350|FR_45
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: 198.244.190.189
+  server: uk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_40
+  name: 350|FR_46
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: uk-full.privateip.net
+  server: 198.244.190.189
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -573,75 +631,12 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- delay: 2626
-  name: 385|法国 - 巴黎 - Aeza International L...
-  network: ws
-  port: 8080
-  server: devops-develop.skyservermd.ir
-  type: vless
-  udp: true
-  uuid: f5095791-5832-49e2-83c5-bb4bebc264ee
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: websocket.network.www.speedtest.net.flutter.dev.russia.fr.vegaskala.com.
-    max-early-data: 1024
-    path: /www.speedtest.net
-- delay: 2438
-  http-opts:
-    headers:
-      Host:
-      - speedtest.net
-    path:
-    - /
-  name: 385|法国 - 巴黎 - SysLevel - 5
-  network: http
-  port: 2021
-  server: ntherlandsa.vegaskala.com
-  type: vless
-  udp: true
-  uuid: f5095791-5832-49e2-83c5-bb4bebc264ee
-- cipher: chacha20-ietf-poly1305
-  country: 🇫🇷FR
-  delay: 2185
-  name: 385|法国 - 格拉沃利讷 - OVH SAS - 1
-  password: 5bbe7bf7a282ad8b
-  port: 11201
-  server: 51.178.114.93
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇫🇷FR
-  delay: 2424
-  name: 385|法国 - 鲁贝 - OVH SAS - 3
-  password: f19e359a2f0c4f5f
-  port: 11201
-  server: 51.68.83.117
-  type: ss
-- client-fingerprint: chrome
-  delay: 942
-  name: 385|法国 - 鲁贝 - OVH SAS - 6
-  password: 2ce44386-e96c-445b-bab9-c48d1772628e
-  port: 6002
-  server: 51.68.227.243
-  skip-cert-verify: true
-  sni: swcdn.apple.com
-  type: anytls
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  delay: 1954
-  name: 385|法国 - 斯特拉斯堡 - OVH SAS - 2
-  password: 76de82292c035b46
-  port: 45924
-  server: 57.128.110.71
-  type: ss
-  udp: true
 - alterId: 2
   cipher: auto
-  name: '392,400|🇭🇰_香港 #6'
+  name: '392,400|🇫🇷 法国 09 #1'
   network: tcp
   port: '30835'
   server: v35.hdacd.com
-  servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -652,7 +647,7 @@ proxies:
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 400|法国_010704277
+- name: 400|法国_010718316
   network: tcp
   password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
   port: 25075
@@ -660,7 +655,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 400|法国_010704275
+- name: 400|法国_010718314
   network: tcp
   password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
   port: 25075
@@ -668,7 +663,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 400|法国_010704276
+- name: 400|法国_010718315
   network: tcp
   password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
   port: 25075
@@ -676,18 +671,55 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 400|🇫🇷FR_42
+- name: 400|🇫🇷FR_39
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: 400|🇫🇷FR_43
+- name: 400|🇫🇷FR_40
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
+- name: 400|法国(yudou789.top 玉豆免费节点)_4
+  network: ws
+  port: 443
+  server: 162.19.224.15
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  ws-opts:
+    headers:
+      Host: sni.111000.de5.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|法国(yudou789.top 玉豆免费节点)_3
+  network: ws
+  port: 8443
+  server: 57.129.63.30
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  ws-opts:
+    headers:
+      Host: sni.111000.de5.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 400|FR VLESS-80 | free-nodes
+  network: tcp
+  port: 8080
+  reality-opts:
+    public-key: D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw
+    short-id: b7b70c104ad267b8
+  server: maxb17.musicdoon.ir
+  servername: chatgpt.com
+  tls: false
+  type: vless
+  uuid: 2c7a2b04-ad16-484b-b0e4-739cd06b650f
 - name: 400|FR VLESS-40 | free-nodes
   network: tcp
   port: 23576
@@ -708,6 +740,19 @@ proxies:
   tls: false
   type: vless
   uuid: 4f55ad4a-286f-46ab-8971-0a35aea2c537
+- name: 400|🇫🇷_法国
+  network: ws
+  port: 2096
+  server: 89.117.112.101
+  servername: spdf.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 502524df-bb02-4a14-8362-d84caf2b0a76
+  ws-opts:
+    headers:
+      Host: spdf.qzz.io
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560
 - client-fingerprint: firefox
   name: '400|🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
@@ -720,331 +765,6 @@ proxies:
   tls: false
   type: vless
   uuid: 5695e906-fd40-45e7-b261-7bc605af614c
-- name: 400|🇫🇷_法国
-  network: ws
-  port: 31210
-  server: 141.95.10.7
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #1'
-  network: ws
-  port: 2053
-  server: 141.95.127.132
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #2'
-  network: ws
-  port: 8443
-  server: 141.95.127.227
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #3'
-  network: ws
-  port: 2053
-  server: 162.19.224.113
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #4'
-  network: ws
-  port: 2053
-  server: 162.19.246.53
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #5'
-  network: ws
-  port: 8443
-  server: 51.195.101.75
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #6'
-  network: ws
-  port: 8443
-  server: 51.68.184.179
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #7'
-  network: ws
-  port: 2053
-  server: 57.129.14.93
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #8'
-  network: ws
-  port: 2053
-  server: 57.129.15.55
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #9'
-  network: ws
-  port: 8443
-  server: 57.129.16.155
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #10'
-  network: ws
-  port: 2053
-  server: 57.129.47.15
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #11'
-  network: ws
-  port: 8443
-  server: 57.129.47.19
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #12'
-  network: ws
-  port: 2053
-  server: 57.129.47.47
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #13'
-  network: ws
-  port: 2053
-  server: 57.129.47.4
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #14'
-  network: ws
-  port: 2053
-  server: 57.129.47.78
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #15'
-  network: ws
-  port: 8443
-  server: 57.129.5.105
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #16'
-  network: ws
-  port: 8443
-  server: 57.129.5.108
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #17'
-  network: ws
-  port: 8443
-  server: 57.129.63.145
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #18'
-  network: ws
-  port: 2053
-  server: 57.129.63.149
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #19'
-  network: ws
-  port: 8443
-  server: 57.129.63.149
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #20'
-  network: ws
-  port: 2053
-  server: 57.129.63.155
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #21'
-  network: ws
-  port: 2053
-  server: 57.129.63.163
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #22'
-  network: ws
-  port: 2053
-  server: 57.129.63.37
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- name: '400|🇫🇷_法国 #23'
-  network: ws
-  port: 443
-  server: 94.228.162.176
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3WangCai2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 400|FR VLESS-32 | free-nodes
-  network: tcp
-  port: 4241
-  reality-opts:
-    public-key: -8Dc8Dm5YzxVvllu8W5Uc7N9rq27_A3McxYXArNyJQs
-    short-id: 0a381e1fa219
-  server: fr.sbrf-cdn342.ru
-  servername: dropbox.com
-  tls: false
-  type: vless
-  uuid: 8619e4c1-0984-4dce-83e3-419e2d7f5079
 - alterId: 0
   cipher: auto
   name: 400|法国 140
@@ -1061,7 +781,21 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 400|🇫🇷 FR_40
+  name: 400|法国 141
+  network: ws
+  port: 443
+  server: 146.59.85.226
+  servername: pelang.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: pelang.org
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 400|🇫🇷 FR_38
   network: ws
   port: 443
   server: 91.134.8.101
@@ -1075,17 +809,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|🇫🇷 FR_41
-  network: none
-  port: 38141
-  server: 45.136.12.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
-- alterId: 0
-  cipher: auto
-  name: 400|法国_010704102
+  name: 400|法国_010718125
   network: tcp
   port: '550'
   server: 162.19.248.238
@@ -1093,16 +817,6 @@ proxies:
   tls: false
   type: vmess
   uuid: ede27a79-b039-490b-932c-495de4b68880
-- alterId: 0
-  cipher: auto
-  name: 400|法国_010704104
-  network: tcp
-  port: '443'
-  server: 217.69.5.32
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ec4c349c-b3c6-4cff-be63-01eaad1dc098
 - alterId: 0
   cipher: auto
   name: '411|法国1 #4'
