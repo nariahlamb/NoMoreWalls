@@ -7,14 +7,14 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 261|13|CN_speednode_0001
-  port: 25135
-  server: chengbai02.ascwt179.com
-  servername: hk.jd.com
+  name: 261,383,395,400|14|CN_speednode_0001
+  port: 29877
+  server: yg2g.jiedian242.com
+  servername: www.nvidia.com
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: ab33d265-3a47-400e-b12b-8f6bf1bb3269
+  uuid: 1a598715-d629-4d8c-910b-dbe5ebdc0b53
 - alterId: 0
   cipher: auto
   name: 283|🇨🇳 CN 030 |  18.0MB/s
@@ -46,8 +46,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  country: ' CN'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| CN_32
+  network: tcp
+  port: 59003
+  server: 183.236.51.36
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
 - country: ' CN'
-  name: 350| CN_30
+  name: 350| CN_33
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
@@ -64,16 +77,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '383,395,400|14|CN_speednode_0001 #1'
-  port: 29877
-  server: yg2g.jiedian242.com
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 1a598715-d629-4d8c-910b-dbe5ebdc0b53
+- alterId: 0
+  cipher: auto
+  name: '371,372|广东省广州市 电信 #1'
+  network: ws
+  port: 52511
+  server: aflzzul.meiquankongjian.com
+  tls: false
+  type: vmess
+  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+  ws-opts:
+    headers:
+      Host: aflzzul.meiquankongjian.com
+    path: /564dfa20/
 - name: 388|🇨🇳CN-183.56.247.206-000
   password: f441a2b0-31ef-490d-bd91-9b1cd960f4ce
   port: 29482
