@@ -190,6 +190,21 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
+  name: '89,343|🇭🇰 HK_1|8.6MB/s|YT-HK|NF #1'
+  network: ws
+  port: 443
+  server: n1761214911.74qxv.top
+  servername: n1761214911.74qxv.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+  ws-opts:
+    headers:
+      Host: n1761214911.74qxv.top
+    path: /
+- alterId: 0
+  cipher: auto
   name: '90,345|香港NO.2 #1'
   port: 45051
   server: hxb.dashuai.help
@@ -722,7 +737,7 @@ proxies:
     path: /stream?ed=2048
 - alterId: 2
   cipher: auto
-  name: '226,397|🇭🇰 香港|@ripaojiedian #2'
+  name: '227,397|🇭🇰 香港|@ripaojiedian #2'
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -731,14 +746,15 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 226|Hong Kong_Central_vmess_1113
+  name: 227|Hong Kong_Central_vmess_1113
   port: 30809
   server: v9.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '226,261,383,392,395,397,398,400|12,13|香港3|@ripaojiedian #1'
+- country: HK
+  name: 227,261,353,383,392,395,397,398,400|12,13|香港3|@ripaojiedian
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 443
@@ -746,8 +762,9 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - country: HK
-  name: '226,261,353,383,392,395,397,398,400|香港4|@ripaojiedian #2'
+  name: '227,261,353,371,372,383,392,395,397,398,400|香港4|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -756,7 +773,7 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
   udp: true
-- name: 226,261,383,392,395,400|🇭🇰[openproxylist.com] trojan-H...
+- name: 227,261,392,395,400|🇭🇰[openproxylist.com] trojan-H...
   network: tcp
   password: BxceQaOe
   port: 443
@@ -764,7 +781,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '226,261,383,392,395,400|12,13|新加坡3|@ripaojiedian #1'
+- name: 227,261,392,395,400|12,13|新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 2673
@@ -772,7 +789,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '226,261,383,392,395,400|12,13|美国3|@ripaojiedian #1'
+- name: 227,261,392,395,400|12,13|美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 3127
@@ -785,7 +802,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: '226,261,353,383,392,395,398,400|12|🇭🇰 香港|@ripaojiedian #1'
+  name: 227,261,353,383,392,395,398,400|12|🇭🇰 香港|@ripaojiedian
   network: tcp
   port: 30807
   server: v10.hdacd.com
@@ -796,7 +813,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: '226,261,383,392,395,400|12|🇭🇰 香港2|@ripaojiedian #1'
+  name: 227,261,392,395,400|12|🇭🇰 香港2|@ripaojiedian
   network: tcp
   port: 30809
   server: v9.hdacd.com
@@ -804,7 +821,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '226,395,397,398|香港5|@ripaojiedian #1'
+- name: '227,383,395,397,398|香港5|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -812,7 +829,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '226,395,397,398|美国3|@ripaojiedian #1'
+- name: '227,371,372,383,395,397,398|美国3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 1112
@@ -1276,69 +1293,33 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- cipher: aes-256-cfb
-  country: ' HK'
-  name: 350| HK_57
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' HK'
-  name: 350| HK_58
+  name: 350| HK_57
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
 - cipher: aes-256-gcm
   country: ' HK'
+  name: 350| HK_58
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 10079
+  server: ss.030.node-for-bigairport.win
+  type: ss
+- cipher: aes-256-cfb
+  country: ' HK'
   name: 350| HK_59
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 15099
-  server: ss.026.node-for-bigairport.win
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
   type: ss
-- cipher: aes-256-gcm
+- alterId: 2
+  cipher: auto
   country: ' HK'
+  h2-opts: {}
+  http-opts: {}
   name: 350| HK_60
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 36888
-  server: ss.007.node-for-bigairport.win
-  type: ss
-- alterId: 2
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| HK_61
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| HK_62
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: c11ff50c-f582-11ee-94df-f23c9164ca5d
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| HK_63
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -1351,7 +1332,59 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
+  name: 350| HK_61
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: de003c72-0157-11ef-86da-f23c91cfbbc9
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| HK_62
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| HK_63
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 34f0cf42-0f8a-11ec-a8bf-f23c91cfbbc9
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
   name: 350| HK_64
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: d70a9508-5477-11ef-bf61-f23c913c8d2b
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| HK_65
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -1367,7 +1400,23 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 350| HK_65
+  name: 350| HK_66
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
+  ws-headers:
+    HOST: hkt.gotochinatown.net
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| HK_67
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -1380,20 +1429,23 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 350| HK_66
+  name: 350| HK_68
   network: ws
   port: 80
   server: hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
   type: vmess
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+  uuid: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
   ws-path: /
 - alterId: 2
   cipher: auto
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 350| HK_67
+  name: 350| HK_69
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -1401,6 +1453,35 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| HK_70
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| HK_71
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7c077572-6da9-11ef-b786-f23c91cfbbc9
   ws-headers:
     HOST: broadcastlv.chat.bilibili.com
   ws-path: /
@@ -1424,39 +1505,20 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 350| HK_69
+  name: 350| HK_73
   network: ws
   port: 80
   server: hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
   type: vmess
-  uuid: 7c077572-6da9-11ef-b786-f23c91cfbbc9
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
+  uuid: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
   ws-path: /
 - alterId: 2
   cipher: auto
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 350| HK_70
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 9cccea7a-b6ab-11eb-a0fc-f23c913c8d2b
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| HK_71
+  name: 350| HK_74
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -1484,20 +1546,7 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 350| HK_73
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| HK_74
+  name: 350| HK_76
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -1510,42 +1559,16 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 350| HK_75
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: d70a9508-5477-11ef-bf61-f23c913c8d2b
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| HK_76
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
   name: 350| HK_77
   network: ws
   port: 80
   server: hkt.gotochinatown.net
-  servername: hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
   type: vmess
-  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
+  uuid: 9cccea7a-b6ab-11eb-a0fc-f23c913c8d2b
   ws-headers:
-    HOST: hkt.gotochinatown.net
+    HOST: broadcastlv.chat.bilibili.com
   ws-path: /
 - alterId: 2
   cipher: auto
@@ -1584,36 +1607,10 @@ proxies:
   server: hkt.gotochinatown.net
   skip-cert-verify: true
   type: vmess
-  uuid: 34f0cf42-0f8a-11ec-a8bf-f23c91cfbbc9
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| HK_81
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: de003c72-0157-11ef-86da-f23c91cfbbc9
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| HK_82
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3085fcf8-a69c-11ec-bd7c-f23c913c8d2b
+  uuid: c11ff50c-f582-11ee-94df-f23c9164ca5d
   ws-path: /
 - country: HK
-  name: 353|HK_06
+  name: 353|HK_07
   password: BxceQaOe
   port: 443
   server: 58.152.46.60
@@ -1635,6 +1632,12 @@ proxies:
   server: v1.littlexing.eu.org
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
+  type: trojan
+- name: '371,372|香港+电讯盈科有限公司 #2'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  sni: t.me%252Fripaojiedian
   type: trojan
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
@@ -2008,7 +2011,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #1'
+  name: 400|香港_010804187
   network: ws
   port: '80'
   server: 400b87b1-t8lts0-t8xyf4-1l0qa.hkt.gotochinatown.net
@@ -2022,7 +2025,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #52'
+  name: 400|香港_010804204
   network: ws
   port: '80'
   server: 5b6b25bc-t8lts0-tonrqx-1khwf.hkt.gotochinatown.net
@@ -2036,7 +2039,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #58'
+  name: 400|香港_010804207
   network: ws
   port: '80'
   server: 5e8d9f95-t8lts0-t8xdsu-nx3b.hkt.gotochinatown.net
@@ -2050,7 +2053,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #62'
+  name: 400|香港_010804211
   network: ws
   port: '80'
   server: 679063a1-t8lts0-tnfe2z-1s4hc.hkt.gotochinatown.net
@@ -2064,7 +2067,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #53'
+  name: 400|香港_010804205
   network: ws
   port: '80'
   server: 681326b3-t8lts0-tcj3xn-1o20w.hkt.gotochinatown.net
@@ -2078,7 +2081,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #28'
+  name: 400|香港_010804195
   network: ws
   port: '80'
   server: 6989c314-t8lts0-tn57fp-5ifr.hkt.gotochinatown.net
@@ -2092,7 +2095,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #16'
+  name: 400|香港_010804190
   network: ws
   port: '80'
   server: 6cb481f1-t8lts0-tgzvop-hns7.hkt.gotochinatown.net
@@ -2106,7 +2109,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #32'
+  name: 400|香港_010804197
   network: ws
   port: '80'
   server: 6d59909a-t8lts0-tamumc-1lkbs.hkt.gotochinatown.net
@@ -2120,7 +2123,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #21'
+  name: 400|香港_010804192
   network: ws
   port: '80'
   server: 7264b62c-t8lts0-t8ygh3-81nv.hkt.gotochinatown.net
@@ -2144,7 +2147,7 @@ proxies:
   uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #63'
+  name: 400|香港_010804212
   network: ws
   port: '80'
   server: 82e0ffd2-t8lts0-tm23vf-1jk6u.hkt.gotochinatown.net
@@ -2158,7 +2161,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #59'
+  name: 400|香港_010804208
   network: ws
   port: '80'
   server: 8863bb01-t8lts0-tcop2n-tl32.hkt.gotochinatown.net
@@ -2172,7 +2175,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #49'
+  name: 400|香港_010804203
   network: ws
   port: '80'
   server: 946bd029-t8lts0-tc48kl-1szgv.hkt.gotochinatown.net
@@ -2186,7 +2189,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #60'
+  name: 400|香港_010804209
   network: ws
   port: '80'
   server: 137d9435-t8lts0-tpn98f-1rcxl.hkt.gotochinatown.net
@@ -2200,7 +2203,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #61'
+  name: 400|香港_010804210
   network: ws
   port: '80'
   server: 14600a27-t8lts0-tc67m2-1tjc4.hkt.gotochinatown.net
@@ -2214,7 +2217,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #54'
+  name: 400|香港_010804206
   network: ws
   port: '80'
   server: 1ecb028e-t8lts0-tiuylw-46gc.hkt.gotochinatown.net
@@ -2228,7 +2231,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #29'
+  name: 400|香港_010804196
   network: ws
   port: '80'
   server: 2304a470-t8lts0-tbac1z-1j3zm.hkt.gotochinatown.net
@@ -2256,7 +2259,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #42'
+  name: 400|香港_010804202
   network: ws
   port: '80'
   server: 2d329bb4-t8lts0-tbnucr-1thfv.hkt.gotochinatown.net
@@ -2270,7 +2273,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #14'
+  name: 400|香港_010804189
   network: ws
   port: '80'
   server: 3c66b913-t8lts0-tcp4th-1c4g6.hkt.gotochinatown.net
@@ -2284,7 +2287,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #36'
+  name: 400|香港_010804199
   network: ws
   port: '80'
   server: a1728291-t8lts0-thvc3p-1o4kv.hkt.gotochinatown.net
@@ -2298,7 +2301,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #19'
+  name: 400|香港_010804191
   network: ws
   port: '80'
   server: aa289785-t8lts0-tighxj-12hj8.hkt.gotochinatown.net
@@ -2312,7 +2315,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #34'
+  name: 400|香港_010804198
   network: ws
   port: '80'
   server: c4afc2ca-t8lts0-t95ncr-1slop.hkt.gotochinatown.net
@@ -2326,7 +2329,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #23'
+  name: 400|香港_010804193
   network: ws
   port: '80'
   server: c760d6c2-t8lts0-thv9l4-1jbj0.hkt.gotochinatown.net
@@ -2354,7 +2357,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 400,404|🇭🇰 香港 | HKG
+  name: 400|香港_010804186
   network: ws
   port: '80'
   server: daa0ee28-t8lts0-t9eu8q-tlhh.hkt.gotochinatown.net
@@ -2368,7 +2371,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #41'
+  name: 400|香港_010804201
   network: ws
   port: '80'
   server: e5692929-t8lts0-t9x9zr-1lkt0.hkt.gotochinatown.net
@@ -2382,7 +2385,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #26'
+  name: 400|香港_010804194
   network: ws
   port: '80'
   server: fc41a9ed-t8lts0-tpw4i4-1pckg.hkt.gotochinatown.net
@@ -2396,7 +2399,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '400,404|🇭🇰 香港 | HKG #40'
+  name: 400|香港_010804200
   network: ws
   port: '80'
   server: ff8f06ce-t8lts0-th9kx9-1os43.hkt.gotochinatown.net
@@ -2436,43 +2439,112 @@ proxies:
     headers:
       Host: n1761214918.74qxv.top
     path: /
-- name: '404|🇭🇰 香港 | HKG #2'
-  password: 9463d7ac-65c9-4022-9e81-f2c3f331e06b
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '404|🇭🇰 香港 | HKG #3'
-  password: 86558621-899b-4c51-89ce-7ef44f247226
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '404|🇭🇰 香港 | HKG #4'
-  password: 7ed6c63e-648a-4063-87da-2d23a2db1d8c
-  port: 21103
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: '404|🇭🇰 香港 | HKG #6'
-  password: db86510f-8f0e-4e0e-9534-746dd8e4d07e
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '404|🇭🇰 香港 | HKG #7'
-  password: f272b771-49f1-48f0-8ac4-ab7cd1a5c343
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 404|🇭🇰 香港 | HKG
+  network: ws
+  port: '80'
+  server: b680583e-t8lts0-t9szn4-19xg1.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #1'
+  network: ws
+  port: '80'
+  server: 84d9fa2f-t8lts0-t8tsp0-1szmi.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: ba151628-b3a2-11ef-bdb9-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #2'
+  network: ws
+  port: '80'
+  server: 6ff9a3bd-t8lts0-tk5ls1-z7a1.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #3'
+  network: ws
+  port: '80'
+  server: 6e97b3eb-t8lts0-tgr32b-wj6v.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 847c03b2-0a9d-11eb-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #4'
+  network: ws
+  port: '80'
+  server: 365083fc-t8lts0-t8zdpa-1swry.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 8a5d58a0-c50e-11ef-a46e-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #5'
+  network: ws
+  port: '80'
+  server: f88be12b-t8lts0-t9jrlv-1atkp.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 1ec223c0-1ed9-11ec-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #6'
+  network: ws
+  port: '80'
+  server: 02f1afb7-t8lts0-tiaexf-ufc0.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #7'
+  network: ws
+  port: '80'
+  server: e3f6b485-t8lts0-t9so47-1pr35.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - name: '404|🇭🇰 香港 | HKG #8'
-  password: 458398b0-f3b0-4cf5-b8a5-34805f995e24
+  password: a8862f1e-01d8-4782-a120-9e01c372c669
   port: 31101
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
@@ -2486,7 +2558,7 @@ proxies:
   server: hkt.gotochinatown.net
   tls: false
   type: vmess
-  uuid: 9cccea7a-b6ab-11eb-a0fc-f23c913c8d2b
+  uuid: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
   ws-opts:
     headers:
       Host: hkt.gotochinatown.net
@@ -2496,50 +2568,36 @@ proxies:
   name: '404|🇭🇰 香港 | HKG #10'
   network: ws
   port: '80'
-  server: faafb8c9-t6r5s0-t7dy6t-jx5r.hkt.gotochinatown.net
+  server: 74ce7887-t8lts0-tfeciy-1iddy.hkt.gotochinatown.net
   tls: false
   type: vmess
-  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-  ws-opts:
-    headers:
-      Host: faafb8c9-t6r5s0-t7dy6t-jx5r.hkt.gotochinatown.net
-    path: /
-- name: '404|🇭🇰 香港 | HKG #11'
-  password: c8dec2f2-a659-4e4e-859c-b8a058a2764e
-  port: 21101
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: false
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: '404|🇭🇰 香港 | HKG #12'
-  password: 7ed6c63e-648a-4063-87da-2d23a2db1d8c
-  port: 21101
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: false
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '404|🇭🇰 香港 | HKG #13'
-  network: ws
-  port: '80'
-  server: 612d3b73-t8lts0-teivih-1rz31.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 7699767c-44ae-11ef-80c7-f23c91cfbbc9
+  uuid: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: '404|🇭🇰 香港 | HKG #15'
-  password: 7ed6c63e-648a-4063-87da-2d23a2db1d8c
+- name: '404|🇭🇰 香港 | HKG #12'
+  password: e50c4886-76af-447e-98b9-4a9d0d79f45e
   port: 21102
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: true
   sni: cdnfire.xiaomispeed.com
   type: trojan
-- name: '404|🇭🇰 香港 | HKG #17'
-  password: 2119dffa-66de-4f90-9fd2-1fbb7564d0e5
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #14'
+  network: ws
+  port: '80'
+  server: 46b259d6-t8lts0-t9k1jt-1ldl3.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: '404|🇭🇰 香港 | HKG #15'
+  password: 9d7034dc-ae3f-4b90-8a39-ef9c79d4ed5f
   port: 31101
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
@@ -2547,39 +2605,92 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '404|🇭🇰 香港 | HKG #18'
+  name: '404|🇭🇰 香港 | HKG #16'
+  network: ws
+  port: '80'
+  server: f098ccea-t8lts0-thzbn1-1gxvd.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 398e0d38-8649-11ef-959c-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #17'
   network: ws
   port: '80'
   server: hkt.gotochinatown.net
   tls: false
   type: vmess
-  uuid: b02327ac-a49a-11ef-a673-f23c913c8d2b
+  uuid: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
   ws-opts:
     headers:
       Host: hkt.gotochinatown.net
     path: /
+- name: '404|🇭🇰 香港 | HKG #18'
+  password: 5107a215-5284-44d5-b740-607bed57026e
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇭🇰 香港 | HKG #19'
+  password: 154e3552-cd70-4b43-a906-121b5ba29bbd
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
 - alterId: 2
   cipher: auto
   name: '404|🇭🇰 香港 | HKG #20'
   network: ws
   port: '80'
-  server: hkt.gotochinatown.net
+  server: 5784578a-t8lts0-tkhmfr-1jm8i.hkt.gotochinatown.net
   tls: false
   type: vmess
-  uuid: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
+  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
   ws-opts:
     headers:
-      Host: hkt.gotochinatown.net
+      Host: broadcastlv.chat.bilibili.com
     path: /
-- name: '404|🇭🇰 香港 | HKG #22'
-  password: db86510f-8f0e-4e0e-9534-746dd8e4d07e
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
+- name: '404|🇭🇰 香港 | HKG #21'
+  password: fc6f0a8a-13ea-4c54-a1a0-535e8a3ebe60
+  port: 21102
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #22'
+  network: ws
+  port: '80'
+  server: e9fbcf2a-t8lts0-tbao5v-gacy.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #23'
+  network: ws
+  port: '80'
+  server: fc9d3bb0-t70f40-t7hmka-1plv4.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 28213b50-7ed5-11ee-add6-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: fc9d3bb0-t70f40-t7hmka-1plv4.hkt.gotochinatown.net
+    path: /
 - name: '404|🇭🇰 香港 | HKG #24'
-  password: 517b8b87-6f56-4041-8673-73a5e2756254
+  password: c8dec2f2-a659-4e4e-859c-b8a058a2764e
   port: 21103
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: true
@@ -2590,44 +2701,182 @@ proxies:
   name: '404|🇭🇰 香港 | HKG #25'
   network: ws
   port: '80'
+  server: b72e516b-t8lts0-ta5nd4-e06r.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: '404|🇭🇰 香港 | HKG #27'
+  password: 87a08b2d-7f83-41c4-85c7-ac021d1493fd
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #28'
+  network: ws
+  port: '80'
+  server: a6ee2163-t8lts0-te0v28-1mh67.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: e1c7fbbc-96b6-11ef-8563-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #29'
+  network: ws
+  port: '80'
   server: hkt.gotochinatown.net
   tls: false
   type: vmess
-  uuid: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
+  uuid: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
   ws-opts:
     headers:
       Host: hkt.gotochinatown.net
     path: /
-- name: '404|🇭🇰 香港 | HKG #27'
-  password: 843bcd0b-f2ab-482f-8262-6d09cf97f4b8
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '404|🇭🇰 香港 | HKG #31'
-  password: 9d7034dc-ae3f-4b90-8a39-ef9c79d4ed5f
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '404|🇭🇰 香港 | HKG #33'
-  password: 7882a049-8d73-4c30-9c71-20ef57909cb2
+- name: '404|🇭🇰 香港 | HKG #30'
+  password: 628a0e70-c096-40d6-9d40-f664c5bb5b32
   port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #31'
+  network: ws
+  port: '80'
+  server: 3c12fe42-t8lts0-ta1wsm-1ryup.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #32'
+  network: ws
+  port: '80'
+  server: ae5f03b2-t8lts0-t8yr82-jx5r.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: '404|🇭🇰 香港 | HKG #33'
+  password: eab777de-fef2-4794-9a9f-fa63ed7b1360
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇭🇰 香港 | HKG #34'
+  password: fe6eae40-94da-4c80-9f23-5e3d4402d52b
+  port: 31102
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
 - name: '404|🇭🇰 香港 | HKG #35'
-  password: 885fcda4-5aab-40cb-a25e-6ec5d5a3c2cd
+  password: 2cfd8fb6-1f17-4d33-a3b9-448b1d723723
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #36'
+  network: ws
+  port: '80'
+  server: 5567342b-t8lts0-tfi5fd-1imi4.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #37'
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- name: '404|🇭🇰 香港 | HKG #38'
+  password: ad2cc05a-ec0e-41c9-93b3-36fc911eebcc
   port: 21101
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: false
   sni: cdnfire.xiaomispeed.com
   type: trojan
-- name: '404|🇭🇰 香港 | HKG #37'
-  password: 9dd4df8c-d016-412e-91f2-984c854f6dcf
+- name: '404|🇭🇰 香港 | HKG #39'
+  password: 40991964-b3be-4458-8bc7-5b1774552acf
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #40'
+  network: ws
+  port: '80'
+  server: bf85780f-t8lts0-td95qh-1isea.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #41'
+  network: ws
+  port: '80'
+  server: 30a3bbd2-t8lts0-tbe46y-1la7v.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 460749c2-bcef-11ee-89fc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #42'
+  network: ws
+  port: '80'
+  server: 38d53567-t8lts0-t9lc3n-z93q.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 40639730-e027-11ea-87ad-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: '404|🇭🇰 香港 | HKG #43'
+  password: 7882a049-8d73-4c30-9c71-20ef57909cb2
   port: 31101
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
@@ -2635,86 +2884,85 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '404|🇭🇰 香港 | HKG #38'
+  name: '404|🇭🇰 香港 | HKG #44'
   network: ws
   port: '80'
-  server: 1e55ac41-t6r5s0-tiuylw-46gc.hkt.gotochinatown.net
+  server: 9ff1414d-t70f40-t9p7yj-1ijh5.hkt.gotochinatown.net
   tls: false
   type: vmess
-  uuid: 225d1cca-d744-11ef-b790-f23c91cfbbc9
+  uuid: f7d95364-607b-11ee-93af-f23c91369f2d
   ws-opts:
     headers:
-      Host: 1e55ac41-t6r5s0-tiuylw-46gc.hkt.gotochinatown.net
+      Host: 9ff1414d-t70f40-t9p7yj-1ijh5.hkt.gotochinatown.net
     path: /
-- name: '404|🇭🇰 香港 | HKG #39'
-  password: fe6eae40-94da-4c80-9f23-5e3d4402d52b
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '404|🇭🇰 香港 | HKG #43'
-  password: eab777de-fef2-4794-9a9f-fa63ed7b1360
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #46'
+  network: ws
+  port: '80'
+  server: a5352065-t8lts0-thntyd-1f596.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #47'
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: ee1b9e94-9b95-11ef-8967-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- name: '404|🇭🇰 香港 | HKG #48'
+  password: 7882a049-8d73-4c30-9c71-20ef57909cb2
   port: 31102
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: '404|🇭🇰 香港 | HKG #47'
-  password: f1a09e6c-f30c-43ca-a9e4-e2015ee5c0da
-  port: 31103
-  server: green2.cdntencentmusic.com
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #49'
+  network: ws
+  port: '80'
+  server: 5bb26bb0-t8lts0-t9pc69-mv7m.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 94d40708-8273-11ea-8fc9-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: '404|🇭🇰 香港 | HKG #50'
+  password: 5c278946-d72d-41df-b5f5-409c04ab8401
+  port: 21103
+  server: cdnfire.xiaomispeed.com
   skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
+  sni: cdnfire.xiaomispeed.com
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: '404|🇭🇰 香港 | HKG #48'
-  network: ws
-  port: '80'
-  server: hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '404|🇭🇰 香港 | HKG #50'
-  network: ws
-  port: '80'
-  server: hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 4fb15f9c-f078-11ed-814b-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
 - alterId: 2
   cipher: auto
   name: '404|🇭🇰 香港 | HKG #51'
   network: ws
   port: '80'
-  server: hkt.gotochinatown.net
+  server: 5545a4de-t8lts0-tasors-1tdqt.hkt.gotochinatown.net
   tls: false
   type: vmess
-  uuid: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
+  uuid: 167db97c-ee01-11ef-b737-f23c91cfbbc9
   ws-opts:
     headers:
-      Host: hkt.gotochinatown.net
+      Host: broadcastlv.chat.bilibili.com
     path: /
-- name: '404|🇭🇰 香港 | HKG #56'
-  password: f272b771-49f1-48f0-8ac4-ab7cd1a5c343
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '404|🇭🇰 香港 | HKG #57'
-  password: 36c872c1-0d25-4a3f-894e-a1d8b0c66248
+- name: '404|🇭🇰 香港 | HKG #52'
+  password: 628a0e70-c096-40d6-9d40-f664c5bb5b32
   port: 31101
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
@@ -2722,31 +2970,89 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '404|🇭🇰 香港 | HKG #64'
+  name: '404|🇭🇰 香港 | HKG #53'
   network: ws
   port: '80'
   server: hkt.gotochinatown.net
   tls: false
   type: vmess
-  uuid: 7c077572-6da9-11ef-b786-f23c91cfbbc9
+  uuid: 34f0cf42-0f8a-11ec-a8bf-f23c91cfbbc9
   ws-opts:
     headers:
       Host: hkt.gotochinatown.net
     path: /
-- name: '404|🇭🇰 香港 | HKG #65'
-  password: 2119dffa-66de-4f90-9fd2-1fbb7564d0e5
+- name: '404|🇭🇰 香港 | HKG #54'
+  password: 36c872c1-0d25-4a3f-894e-a1d8b0c66248
   port: 31102
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: '404|🇭🇰 香港 | HKG #66'
-  password: 9b242a22-c656-4571-86ba-fe82dffdced1
-  port: 21102
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #55'
+  network: ws
+  port: '80'
+  server: 9418e845-t8lts0-tnkuks-wujn.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #57'
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #58'
+  network: ws
+  port: '80'
+  server: d4ee7823-t8lts0-taklwz-12bd.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #59'
+  network: ws
+  port: '80'
+  server: b225951a-t8lts0-t96hzo-g3b3.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 9ad05870-d8c5-11ef-9f1c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #60'
+  network: ws
+  port: '80'
+  server: a710fd59-t8lts0-t96zrt-1gevg.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 411|香港（直连）
