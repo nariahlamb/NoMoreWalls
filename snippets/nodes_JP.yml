@@ -994,7 +994,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '226,260,371,372,383,392,395,397,398|日本|@ripaojiedian #1'
+- name: '226,261,383,392,395,397,398|日本|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 3194
@@ -1002,7 +1002,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '226,260,383,392,395,397,398|日本2|@ripaojiedian #1'
+- name: '226,261,383,392,395,397,398|日本2|@ripaojiedian #1'
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 4006
@@ -1010,7 +1010,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '226,260,383,392,395,397,398|日本3|@ripaojiedian #1'
+- name: '226,261,383,392,395,397,398|日本3|@ripaojiedian #1'
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1933
@@ -1018,7 +1018,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '226,260,383,392,395,397,398|新加坡|@ripaojiedian #1'
+- name: '226,261,383,392,395,397,398|新加坡|@ripaojiedian #1'
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 3901
@@ -1026,7 +1026,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '226,260,383,392,395,397,398|新加坡2|@ripaojiedian #1'
+- name: '226,261,383,392,395,397,398|新加坡2|@ripaojiedian #1'
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 3901
@@ -1034,7 +1034,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: '226,260,383,392,395,397,398|美国|@ripaojiedian #1'
+- name: '226,261,383,392,395,397,398|美国|@ripaojiedian #1'
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1281
@@ -1042,7 +1042,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: '226,260,383,392,395,397,398|美国2|@ripaojiedian #1'
+- name: '226,261,383,392,395,397,398|美国2|@ripaojiedian #1'
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1281
@@ -1330,7 +1330,39 @@ proxies:
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 350| JP_67
+  name: 350,400|🇯🇵 JP_95
+  network: tcp
+  port: 53231
+  server: cgroup.node1.v.nodelist-airport.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| JP_71
+  network: ws
+  port: 443
+  server: seoul02.zgjok.com
+  servername: seoul02.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  ws-headers:
+    HOST: seoul02.zgjok.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| JP_72
   network: ws
   port: 443
   server: seoul03.zgjok.com
@@ -1511,6 +1543,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+- alterId: 0
+  cipher: auto
+  name: '371,372|日本 V2CROSS.COM #1'
+  network: ws
+  port: 443
+  server: seoul02.zgjok.com
+  tls: true
+  type: vmess
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  ws-opts:
+    headers:
+      Host: seoul02.zgjok.com
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1728,16 +1773,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 400|🇯🇵 JP_95
-  network: tcp
-  port: 53231
-  server: cgroup.node1.v.nodelist-airport.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
 - alterId: 0
   cipher: auto
   name: 400|日本_010804182

@@ -729,7 +729,8 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '226,260,383,392,395,397,398,400|12,13|香港3|@ripaojiedian #1'
+- country: HK
+  name: '226,261,353,383,392,395,397,398,400|12,13|香港3|@ripaojiedian #1'
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 443
@@ -737,7 +738,8 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '226,260,383,392,395,397,398,400|香港4|@ripaojiedian #2'
+  udp: true
+- name: '226,261,371,372,383,392,395,397,398,400|香港4|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -745,7 +747,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '226,260,383,392,395,397,398|香港5|@ripaojiedian #1'
+- name: '226,261,383,392,395,397,398|香港5|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -753,7 +755,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '226,260,383,392,395,397,398|美国3|@ripaojiedian #1'
+- name: '226,261,383,392,395,397,398|美国3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 1112
@@ -763,11 +765,15 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '226,260,383,392,395,398,400|12|🇭🇰 香港|@ripaojiedian #1'
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: '226,261,353,383,392,395,398,400|12|🇭🇰 香港|@ripaojiedian #1'
   network: tcp
   port: 30807
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -1227,42 +1233,13 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- cipher: aes-256-cfb
-  country: ' HK'
-  name: 350| HK_52
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' HK'
-  name: 350| HK_53
+  name: 350| HK_57
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
-- cipher: aes-256-gcm
-  country: ' HK'
-  name: 350| HK_54
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 15099
-  server: ss.026.node-for-bigairport.win
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 350,400|🇭🇰 HK_77
-  network: none
-  port: 13852
-  server: 45.207.157.29
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
-  ws-path: /
 - alterId: 0
   cipher: auto
   country: ' HK'
@@ -1278,11 +1255,44 @@ proxies:
   type: vmess
   uuid: cbe408ad-cc35-4e4e-efca-ac5c095bb99d
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 350,400|🇭🇰 HK_77
+  network: none
+  port: 13852
+  server: 45.207.157.29
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+  ws-path: /
 - country: HK
-  name: 353|HK_03
+  name: 353|HK_04
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
+- country: HK
+  name: 353|HK_05
   password: BxceQaOe
   port: 443
   server: 58.152.25.236
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
+- country: HK
+  name: 353|HK_06
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.86
   skip-cert-verify: true
   sni: t.me/ripaojiedian
   type: trojan
@@ -1302,6 +1312,13 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
+- name: 371,372,392|🇭🇰 香港 电讯盈科有限公司
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: false
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
   delay: 2861
@@ -1310,13 +1327,6 @@ proxies:
   port: 11201
   server: 38.54.93.205
   type: ss
-- name: 392|🇭🇰 香港 电讯盈科有限公司
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: false
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - alterId: 2
   cipher: auto
   name: 392,400|🇭🇰HK-42.98.241.59-5038
