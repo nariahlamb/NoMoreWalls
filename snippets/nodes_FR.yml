@@ -342,7 +342,7 @@ proxies:
   country: ' FR'
   h2-opts: {}
   http-opts: {}
-  name: 350| FR_43
+  name: 350| FR_41
   network: ws
   port: 443
   server: 91.134.8.101
@@ -352,7 +352,7 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
 - country: FR
-  name: 350|FR_44
+  name: 350|FR_42
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -360,7 +360,7 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_45
+  name: 350|FR_43
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -490,13 +490,14 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- country: 🇫🇷FR
-  delay: 989
-  name: 385|法国 - 巴黎 - Amazon.com, Inc. - 1
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.206.99
+- country: 🇺🇸US
+  delay: 1012
+  name: 385|法国 - 巴黎 - Amazon.com - 1
+  password: telegram-id-directvpn
+  port: 22223
+  server: 15.224.1.8
   skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - name: 400|FR TROJAN-41 | free-nodes
@@ -504,42 +505,42 @@ proxies:
   port: 9443
   server: 88.214.24.235
   type: trojan
-- name: 400|法国_010904315
-  network: tcp
-  password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
-  port: 25075
-  server: 104.238.188.249
-  skip-cert-verify: true
-  sni: ads.x5.ru
-  type: trojan
-- name: 400|法国_010904313
-  network: tcp
-  password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
-  port: 25075
-  server: 108.61.123.140
-  skip-cert-verify: true
-  sni: ads.x5.ru
-  type: trojan
-- name: 400|法国_010904314
-  network: tcp
-  password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
-  port: 25075
-  server: 95.179.210.231
-  skip-cert-verify: true
-  sni: ads.x5.ru
-  type: trojan
-- name: 400|🇫🇷FR_46
+- name: 400|🇫🇷FR_45
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: 400|🇫🇷FR_47
+- name: 400|🇫🇷FR_44
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
+- name: 400|🇫🇷_法国
+  network: ws
+  password: iwangjie
+  port: 2053
+  server: 135.125.232.253
+  skip-cert-verify: false
+  sni: nodes.830901.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nodes.830901.xyz
+    path: '%2F%3Fed%3D2560'
+- name: '400|🇫🇷_法国 #1'
+  network: ws
+  password: iwangjie
+  port: 2053
+  server: 141.94.68.216
+  skip-cert-verify: false
+  sni: nodes.830901.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nodes.830901.xyz
+    path: '%2F%3Fed%3D2560'
 - alterId: 2
   cipher: auto
   name: 400|🇫🇷 法国 09
@@ -549,6 +550,20 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 400|法国 140
+  network: ws
+  port: 443
+  server: 91.134.8.93
+  servername: pelang.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: pelang.org
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 400|法国 141
@@ -565,7 +580,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 400|🇫🇷 FR_44
+  name: 400|🇫🇷 FR_43
   network: ws
   port: 443
   server: 91.134.8.101
@@ -579,31 +594,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|🇫🇷 FR_45
-  network: ws
-  port: 20521
-  server: 45.136.12.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 400|🇫🇷 FR_43
-  network: none
-  port: 38141
-  server: 45.136.12.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
-- alterId: 0
-  cipher: auto
-  name: 400|法国_010904063
+  name: 400|法国_010918067
   network: tcp
   port: '550'
   server: 162.19.248.238
@@ -613,7 +604,7 @@ proxies:
   uuid: ede27a79-b039-490b-932c-495de4b68880
 - alterId: 0
   cipher: auto
-  name: 400|法国_010904065
+  name: 400|法国_010918069
   network: tcp
   port: '443'
   server: 217.69.5.32

@@ -1160,13 +1160,26 @@ proxies:
   country: ' SG'
   h2-opts: {}
   http-opts: {}
-  name: 350| SG_143
+  name: 350| SG_162
   network: none
   port: 43425
   server: 8.210.248.133
   skip-cert-verify: true
   type: vmess
   uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' SG'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| SG_163
+  network: none
+  port: 52752
+  server: 8.218.105.196
+  skip-cert-verify: true
+  type: vmess
+  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
   ws-path: /
 - name: 365|新加坡_新加坡
   network: ws
@@ -2253,42 +2266,37 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: trojan
-- client-fingerprint: randomized
-  delay: 1231
+- client-fingerprint: chrome
+  delay: 398
   name: 385|新加坡 - 新加坡 - Cloudflare, Inc. -...
   network: ws
-  port: 2095
-  server: www.wto.org
-  skip-cert-verify: false
-  tfo: false
-  tls: false
+  port: 443
+  server: 162.159.16.63
+  servername: l.ayovo.netlib.re
+  tls: true
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: l.ayovo.netlib.re
+    max-early-data: 2560
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 395|SG4｜机房｜低风险
+  network: ws
+  port: '443'
+  server: singapore02.zgjok.com
+  servername: singapore02.zgjok.com
+  tls: true
+  type: vmess
+  uuid: 780c7671-e8c8-45ab-922b-4fdfc4310aa0
   ws-opts:
     headers:
-      Host: cnmfangbinxing-nmsl.cnm-fangbinxing-nmsl.workers.dev
+      Host: singapore02.zgjok.com
     path: /
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  delay: 2425
-  name: 385|新加坡 - 新加坡 - Tempest Hosting, L...
-  password: c43ad036-c91f-4b42-91dc-72120bc51112
-  port: 12002
-  server: sg.lyhycloud.org
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: anytls
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  delay: 863
-  name: '385|新加坡 - 新加坡 - Tempest Hosting, L... #1'
-  password: c43ad036-c91f-4b42-91dc-72120bc51112
-  port: 35601
-  server: gw.liangyuandianwan.com
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2338,8 +2346,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 400|11,12|新加坡3|@ripaojiedian
-  network: tcp
+- name: '400|🇸🇬 新加坡3|@stairnode #2'
   password: BxceQaOe
   port: 381
   server: 95.40.79.104
@@ -2392,15 +2399,15 @@ proxies:
 - name: '400|🇸🇬_新加坡 #1'
   network: ws
   port: 443
-  server: 43.160.253.51
-  servername: x-hk.xaniusnippets.qzz.io
+  server: 8.219.155.125
+  servername: ww1.sgxaniu.qzz.io
   skip-cert-verify: false
   tls: true
   type: vless
   uuid: e258977b-e413-4718-a3af-02d75492c349
   ws-opts:
     headers:
-      Host: x-hk.xaniusnippets.qzz.io
+      Host: ww1.sgxaniu.qzz.io
     path: '%2F%3Fed%3D2560'
 - alterId: 0
   cipher: auto
@@ -2444,17 +2451,7 @@ proxies:
   uuid: 050f3ef7-7df0-4f00-8001-3574f0360357
 - alterId: 0
   cipher: auto
-  name: 400|🇸🇬 SG_170
-  network: none
-  port: 52752
-  server: 8.218.105.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
-- alterId: 0
-  cipher: auto
-  name: 400|新加坡_010904024
+  name: 400|新加坡_010918001
   network: ws
   port: '80'
   server: 150.109.11.193
@@ -2468,7 +2465,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|新加坡_010904027
+  name: 400|新加坡_010918030
   network: ws
   port: '443'
   server: n1747624267.4u9ma.icu

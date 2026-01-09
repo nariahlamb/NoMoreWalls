@@ -994,7 +994,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '227,261,383,392,395,397,398|日本|@ripaojiedian #1'
+- name: '227,261,383,392,395,397,398,400|12,13|日本|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 2595
@@ -1002,7 +1002,8 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '227,261,383,392,395,397,398|日本2|@ripaojiedian #1'
+- country: JP
+  name: '227,261,353,383,392,395,397,398,400|12,13|日本2|@ripaojiedian #2'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 4006
@@ -1010,7 +1011,9 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,261,383,392,395,397,398|日本3|@ripaojiedian #1'
+  udp: true
+- country: JP
+  name: '227,261,353,383,392,395,397,398,400|12,13|日本3|@ripaojiedian #2'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
@@ -1018,7 +1021,9 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,261,383,392,395,397,398|新加坡|@ripaojiedian #1'
+  udp: true
+- country: JP
+  name: '227,261,353,383,392,395,397,398,400|12,13|新加坡|@ripaojiedian #2'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3901
@@ -1026,7 +1031,9 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,261,383,392,395,397,398|新加坡2|@ripaojiedian #1'
+  udp: true
+- country: JP
+  name: '227,261,353,383,392,395,397,398,400|12,13|新加坡2|@ripaojiedian #2'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3076
@@ -1034,7 +1041,8 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: '227,261,383,392,395,397,398|新加坡3|@ripaojiedian #1'
+  udp: true
+- name: '227,261,383,392,395,397,398,400|12,13|新加坡3|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 3127
@@ -1042,7 +1050,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '227,261,383,392,395,397,398|美国|@ripaojiedian #1'
+- name: '227,261,383,392,395,397,398,400|12,13|美国|@ripaojiedian #2'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1281
@@ -1050,7 +1058,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,261,383,392,395,397,398|美国2|@ripaojiedian #1'
+- name: '227,261,383,392,395,397,398,400|12,13|美国2|@ripaojiedian #2'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1281
@@ -1333,12 +1341,19 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: aes-256-gcm
+  country: ' JP'
+  name: 350| JP_91
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 10079
+  server: ss.027.node-for-bigairport.win
+  type: ss
 - alterId: 0
   cipher: auto
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 350| JP_73
+  name: 350| JP_92
   network: ws
   port: 443
   server: seoul03.zgjok.com
@@ -1351,17 +1366,16 @@ proxies:
     HOST: seoul03.zgjok.com
   ws-path: /
 - country: JP
-  name: 353,400|日本_010904002
+  name: 353,400|日本_010918012
   password: 381f2e86233720eacda26d50e9aa26da
-  port: 1933
+  port: 4006
   server: 160.16.144.208
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
   udp: true
 - country: JP
-  name: 353,400|11,12|日本3|@ripaojiedian
-  network: tcp
+  name: '353,400|🇯🇵 日本3|@stairnode #1'
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1933
   server: 160.16.138.24
@@ -1370,31 +1384,20 @@ proxies:
   type: trojan
   udp: true
 - country: JP
-  name: 353,400|11,12|日本2|@ripaojiedian
-  network: tcp
+  name: 353,400|日本_010918015
   password: 381f2e86233720eacda26d50e9aa26da
   port: 4006
   server: 160.16.138.24
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
   udp: true
 - country: JP
-  name: 353,400|11,12|日本|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 3194
-  server: 54.250.239.2
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-  udp: true
-- country: JP
-  name: 353,400|日本_010904004
+  name: '353,400|🇯🇵 日本3|@stairnode #2'
   password: 381f2e86233720eacda26d50e9aa26da
-  port: 4006
+  port: 1933
   server: 160.16.144.208
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
   udp: true
@@ -1547,6 +1550,39 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+- alterId: 0
+  cipher: auto
+  country: 🇯🇵JP
+  delay: 2123
+  h2-opts: {}
+  http-opts: {}
+  name: 385|日本 - 东京 - Oracle Corporation -...
+  network: ws
+  port: 443
+  server: tokyo01.zgjok.com
+  servername: tokyo01.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
+  ws-opts:
+    headers:
+      HOST: tokyo01.zgjok.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 395|JP4｜机房｜低风险
+  network: ws
+  port: '443'
+  server: tokyo01.zgjok.com
+  servername: tokyo01.zgjok.com
+  tls: true
+  type: vmess
+  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
+  ws-opts:
+    headers:
+      Host: tokyo01.zgjok.com
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1589,62 +1625,50 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|日本_010904019+L0
+- name: 400|日本_010918008+L0
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1281
   server: 160.16.196.59
   sni: www.nintendogames.net
   type: trojan
-- name: 400|日本_010904020+L0
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 1933
-  server: 160.16.196.59
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 400|日本_010904006+L0
+- name: 400|日本_010918018+L0
   password: 381f2e86233720eacda26d50e9aa26da
   port: 3901
   server: 160.16.196.59
   sni: www.nintendogames.net
   type: trojan
-- name: 400|日本_010904010+L0
+- name: 400|日本_010918003+L0
   password: 381f2e86233720eacda26d50e9aa26da
   port: 4006
   server: 160.16.196.59
   sni: www.nintendogames.net
   type: trojan
-- name: 400|日本_010904018
+- name: 400|日本_010918007
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1281
   server: 160.16.63.16
   sni: www.nintendogames.net
   type: trojan
-- name: 400|日本_010904017
+- name: 400|日本_010918020
   password: 381f2e86233720eacda26d50e9aa26da
   port: 3901
   server: 160.16.63.16
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 400|日本_010904012+L0
+- name: 400|日本_010918009+L0
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1281
   server: 202.181.103.246
   sni: www.nintendogames.net
   type: trojan
-- name: 400|日本_010904003+L0
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 1933
-  server: 202.181.103.246
-  sni: www.nintendogames.net
-  type: trojan
-- name: 400|日本_010904007+L0
+- name: 400|日本_010918017+L0
   password: 381f2e86233720eacda26d50e9aa26da
   port: 3901
   server: 202.181.103.246
   sni: www.nintendogames.net
   type: trojan
-- name: 400|日本_010904032+L0
+- name: 400|日本_010918005+L0
   password: 381f2e86233720eacda26d50e9aa26da
   port: 4006
   server: 202.181.103.246
@@ -1657,31 +1681,24 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 400|日本_010904180
-  network: tcp
-  password: ace1qxDyr_-GmIUgK.1Tnjb6ikAN
-  port: 10435
-  server: 167.179.113.248
-  sni: fuzzyfonduepotstand.oscillatingovenmitt.click
-  type: trojan
-- name: 400|日本_010904181
-  network: tcp
-  password: ace1qxDyr_-GmIUgK.1Tnjb6ikAN
-  port: 10435
-  server: 45.77.20.207
-  sni: fuzzyfonduepotstand.oscillatingovenmitt.click
-  type: trojan
-- name: 400|日本 - 成田市 - 1
-  password: trojan
-  port: 443
-  server: 141.147.185.15
-  sni: tianjiu.pages.dev
+- name: 400|日本_010918041
+  password: BxceQaOe
+  port: 3194
+  server: 54.250.239.2
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
   type: trojan
 - name: 400|日本 - 成田市 - 7
   password: trojan
   port: 9443
   server: 45.32.49.72
   sni: doufeng.pages.dev
+  type: trojan
+- name: 400|日本 - 成田市 - 3
+  password: trojan
+  port: 1030
+  server: 47.79.88.131
+  sni: tianjiu.pages.dev
   type: trojan
 - alterId: 0
   cipher: auto
@@ -1699,17 +1716,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|🇯🇵 JP_101
-  network: tcp
-  port: 53231
-  server: cgroup.node1.v.nodelist-airport.com
+  name: 400|🇯🇵 JP_73
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
-  name: 400|日本_010904183
+  name: 400|日本_010918177
   network: ws
   port: '443'
   server: n1753598445.74qxv.top
@@ -1723,7 +1744,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|日本_010904182
+  name: 400|日本_010918224
   network: ws
   port: '443'
   server: n1753598446.wpg27.xyz
@@ -1737,7 +1758,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|日本_010904042
+  name: 400|日本_010918051
   network: ws
   port: '443'
   server: n1753598448.74qxv.top
@@ -1751,7 +1772,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|日本_010904043
+  name: 400|日本_010918050
   network: ws
   port: '443'
   server: n1753598451.74qxv.top
@@ -1763,15 +1784,6 @@ proxies:
     headers:
       Host: n1753598451.74qxv.top
     path: /
-- alterId: 2
-  cipher: auto
-  name: 404|🇯🇵 日本 | JPN
-  network: tcp
-  port: '30806'
-  server: v6.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: '411|日本NO.1 #4'
