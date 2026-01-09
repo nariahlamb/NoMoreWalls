@@ -1199,6 +1199,20 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 226,395|JP5｜机房｜低风险
+  network: ws
+  port: '443'
+  server: tokyo01.zgjok.com
+  servername: tokyo01.zgjok.com
+  tls: true
+  type: vmess
+  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
+  ws-opts:
+    headers:
+      Host: tokyo01.zgjok.com
+    path: /
 - client-fingerprint: firefox
   flow: ''
   name: '241,242,243|日本01 #3'
@@ -1501,7 +1515,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 335|日本-优化2
+  name: 334|日本-优化2
   network: ws
   port: 16617
   server: m.cnmjin.net
@@ -1517,7 +1531,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 335|日本-优化3
+  name: 334|日本-优化3
   network: ws
   port: 16617
   server: t.cnmjcn.cyou
@@ -1532,7 +1546,7 @@ proxies:
     path: /
   ws-path: /
 - down: 10000
-  name: 335|日本JP-HY2
+  name: 334|日本JP-HY2
   password: ba001863-ddd0-4beb-8933-8a75a898c7ec
   port: 1443
   server: jp.mjhy2.com
@@ -1544,7 +1558,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 335|日本JP-A
+  name: 334|日本JP-A
   password: ba001863-ddd0-4beb-8933-8a75a898c7ec
   port: 1663
   server: a.mjanyt.com
@@ -1556,7 +1570,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 335|尼日利亚NG-A
+  name: 334|尼日利亚NG-A
   password: ba001863-ddd0-4beb-8933-8a75a898c7ec
   port: 1681
   server: a.mjanyt.com
@@ -1631,26 +1645,48 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: ' JP'
-  name: 350| JP_94
+  name: 350| JP_93
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 10079
   server: ss.027.node-for-bigairport.win
   type: ss
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| JP_94
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| JP_95
+  network: tcp
+  port: 53231
+  server: cgroup.node1.v.nodelist-airport.com
+  servername: cgroup.node1.v.nodelist-airport.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  ws-path: /
 - country: JP
-  name: 353,400|日本_010918015
+  name: '353,400|🇯🇵 日本3|@stairnode #1'
   password: 381f2e86233720eacda26d50e9aa26da
-  port: 4006
+  port: 1933
   server: 160.16.138.24
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: JP
-  name: 353,400|日本_010918012
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 4006
-  server: 160.16.144.208
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
   udp: true
@@ -1664,11 +1700,20 @@ proxies:
   type: trojan
   udp: true
 - country: JP
-  name: '353,400|🇯🇵 日本3|@stairnode #1'
+  name: 353,400|日本_010918012
   password: 381f2e86233720eacda26d50e9aa26da
-  port: 1933
+  port: 4006
+  server: 160.16.144.208
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- country: JP
+  name: 353,400|日本_010918015
+  password: 381f2e86233720eacda26d50e9aa26da
+  port: 4006
   server: 160.16.138.24
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
   udp: true
@@ -2146,20 +2191,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alterId: 0
-  cipher: auto
-  name: 371,372,395|JP5｜机房｜低风险
-  network: ws
-  port: '443'
-  server: tokyo01.zgjok.com
-  servername: tokyo01.zgjok.com
-  tls: true
-  type: vmess
-  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
-  ws-opts:
-    headers:
-      Host: tokyo01.zgjok.com
-    path: /
 - client-fingerprint: chrome
   delay: 1000
   name: 385|日本 - 成田市 - Cloudflare, Inc. - ...
@@ -2512,6 +2543,13 @@ proxies:
     headers:
       Host: n1753598451.74qxv.top
     path: /
+- name: '404|🇯🇵 日本 | JPN #2'
+  password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
+  port: 21563
+  server: fq-jp.mxtn.net
+  skip-cert-verify: false
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: '411|日本NO.1 #4'
