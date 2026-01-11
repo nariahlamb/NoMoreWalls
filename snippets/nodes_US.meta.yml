@@ -382,20 +382,26 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '262,400|🇺🇸 美国|@stairnode #1'
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 1281
-  server: 160.16.87.174
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: '262,383,395,400|14|US_speednode_0028 #1'
+  port: 443
+  server: 129.153.71.226
+  servername: iosapps.itunes.apple.com
   skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '262,400|🇺🇸 美国3|@stairnode #1'
-  password: BxceQaOe
-  port: 4569
-  server: 43.198.110.101
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
+  tls: true
+  type: vless
+  uuid: 080d1733-7509-4c7b-8c7e-5a1f415efc80
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '262,383,395,400|14|US_speednode_0029 #1'
+  port: 8443
+  server: 45.15.178.117
+  servername: ign.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 932fbc77-4dff-4607-8b69-50d6580331a3
 - cipher: aes-128-gcm
   name: '278,279|2 #6'
   password: shadowsocks
@@ -479,7 +485,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: ' US'
-  name: 278,279,350| US_174
+  name: 278,279,350| US_177
   password: shadowsocks
   port: 443
   server: 156.146.38.167
@@ -1205,7 +1211,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf
   country: ' HK'
-  name: 278,350| HK_59
+  name: 278,350| HK_58
   password: asd123456
   port: 8388
   server: 103.36.91.23
@@ -2186,82 +2192,61 @@ proxies:
   sni: us.mjanyt.com
   type: anytls
   udp: true
-- cipher: aes-256-cfb
-  country: ' US'
-  name: 350| US_167
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 350| US_168
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 154.205.159.100
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 350| US_169
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 38.165.233.18
-  type: ss
-- cipher: aes-256-cfb
   country: ' US'
   name: 350| US_170
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
-- cipher: aes-256-gcm
-  country: ' US'
-  name: 350| US_171
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 36885
-  server: ss.031.node-for-bigairport.win
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 350| US_172
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 104.192.226.106
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
-  name: 350| US_173
-  password: HfAiyrdFbKJuKIQkGjvJrDFefmH8YDSC
-  port: 443
-  server: 45.83.131.43
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 350| US_175
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  name: 350| US_171
+  password: f8f7aCzcPKbsF8p3
   port: 990
-  server: 193.135.174.135
+  server: 154.205.159.100
+  type: ss
+- cipher: aes-256-gcm
+  country: ' US'
+  name: 350| US_172
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 36885
+  server: ss.031.node-for-bigairport.win
   type: ss
 - cipher: aes-256-cfb
   country: ' US'
-  name: 350| US_177
+  name: 350| US_173
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
 - cipher: aes-256-cfb
   country: ' US'
-  name: 350| US_178
+  name: 350| US_174
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 38.165.233.93
+  server: 154.90.62.168
+  type: ss
+- cipher: aes-256-cfb
+  country: ' US'
+  name: 350| US_175
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 350| US_178
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 38.165.231.25
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
   name: 350| US_179
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.165.231.25
+  password: HfAiyrdFbKJuKIQkGjvJrDFefmH8YDSC
+  port: 443
+  server: 45.83.131.43
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
@@ -2270,46 +2255,26 @@ proxies:
   port: 990
   server: 38.54.45.129
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   country: ' US'
-  h2-opts: {}
-  http-opts: {}
   name: 350| US_181
-  network: ws
-  port: 443
-  server: 15.235.50.172
-  servername: baradiha.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: baradiha.com
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 38.165.233.18
+  type: ss
+- cipher: aes-256-cfb
   country: ' US'
-  h2-opts: {}
-  http-opts: {}
   name: 350| US_182
-  network: ws
-  port: 443
-  server: 15.235.83.228
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.165.233.93
+  type: ss
 - alterId: 0
   cipher: auto
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350,400|🇺🇸 US_166
+  name: 350,400|🇺🇸 US_191
   network: none
   port: 12056
   server: 47.253.197.26
@@ -2327,44 +2292,44 @@ proxies:
   name: 350| US_184
   network: ws
   port: 443
-  server: 148.113.176.192
-  servername: fapeng.org
+  server: 15.235.50.172
+  servername: baradiha.com
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-headers:
-    HOST: fapeng.org
-  ws-path: linkvws
+    HOST: baradiha.com
+  ws-path: /linkvws
 - alterId: 0
   cipher: auto
   country: ' US'
   h2-opts: {}
   http-opts: {}
   name: 350| US_185
-  network: none
-  port: 7100
-  server: 206.119.191.9
+  network: ws
+  port: 443
+  server: 15.235.83.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 10853485-26e1-477b-d257-58a3f4873db3
-  ws-path: /
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ws-path: /linkvws
 - alterId: 0
   cipher: auto
   country: ' US'
   h2-opts: {}
   http-opts: {}
   name: 350| US_186
-  network: ws
-  port: 443
-  server: n1753598452.wpg27.xyz
-  servername: n1753598452.wpg27.xyz
+  network: none
+  port: 7100
+  server: 206.119.191.9
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
-  ws-headers:
-    HOST: n1753598452.wpg27.xyz
+  uuid: 10853485-26e1-477b-d257-58a3f4873db3
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -2383,8 +2348,25 @@ proxies:
   ws-headers:
     HOST: mankadmu.com
   ws-path: /linkvws
-- country: ' US'
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
   name: 350| US_188
+  network: ws
+  port: 443
+  server: 148.113.176.192
+  servername: fapeng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: fapeng.org
+  ws-path: linkvws
+- country: ' US'
+  name: 350| US_189
   password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
   port: 443
   server: 154.17.24.29
@@ -2392,7 +2374,7 @@ proxies:
   type: trojan
   udp: true
 - country: ' US'
-  name: 350| US_189
+  name: 350| US_190
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: hinet.mjt000.com
@@ -2400,7 +2382,7 @@ proxies:
   type: trojan
   udp: true
 - country: ' US'
-  name: 350| US_190
+  name: 350| US_191
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
@@ -2409,21 +2391,21 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: US
-  name: 350|US_191
+  name: 350|US_192
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.66
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: US
-  name: 350|US_192
+  name: 350|US_193
   password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
   port: 52952
   server: exchange.gameaurela.click
   type: ss
 - cipher: aes-256-cfb
   country: US
-  name: 353|Relay_US-US_38
+  name: 353|Relay_US-US_39
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -2435,7 +2417,7 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 353|US_39
+  name: 353|US_40
   network: tcp
   port: 2052
   server: 38.54.98.110
@@ -2443,6 +2425,15 @@ proxies:
   tls: true
   type: vmess
   uuid: 665d9b8f-153d-4907-adac-de12afd9c851
+- country: US
+  name: 353,400|未知 TROJAN-1578 | free-nodes
+  password: .ie4rghJuMkcf0oF
+  port: 18509
+  server: 38.96.254.102
+  skip-cert-verify: true
+  sni: shoppingmall.electricbanana.click
+  type: trojan
+  udp: true
 - name: 365|美国_洛杉矶
   network: ws
   password: NISHIKUITAN222
@@ -5158,12 +5149,6 @@ proxies:
     headers:
       Host: lax2.ibgfw.top
     path: /dyajvws
-- name: '371,372|美国+加州 #1'
-  password: kkzh2prsyr2ik47as615
-  port: 57142
-  server: 64.94.95.118
-  sni: 64.94.95.118
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 374|美国 CloudFlare节点
@@ -5217,26 +5202,6 @@ proxies:
     headers:
       Host: ecc.vtcss.top
     path: /qwer01
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: '383,395,400|14|US_speednode_0028 #1'
-  port: 443
-  server: 129.153.71.226
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 080d1733-7509-4c7b-8c7e-5a1f415efc80
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '383,395,400|14|US_speednode_0029 #1'
-  port: 8443
-  server: 45.15.178.117
-  servername: ign.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 932fbc77-4dff-4607-8b69-50d6580331a3
 - client-fingerprint: randomized
   delay: 1633
   name: 385|美国 - 东洛杉矶 - Cloudflare, Inc. -...
@@ -5404,11 +5369,60 @@ proxies:
     headers:
       Host: cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev
     path: /
-- name: 392,400|🇺🇸US美国
+- name: 392,400|🇺🇸US美国6
   password: er668
   port: 443
   server: kfjdi.pages.dev
   skip-cert-verify: false
+  type: trojan
+- name: '392,400|🇺🇸 美国 加州 #1'
+  password: kkzh2prsyr2ik47as615
+  port: 57142
+  server: 64.94.95.118
+  skip-cert-verify: false
+  sni: 64.94.95.118
+  type: trojan
+- name: '392,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #60'
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: false
+  sni: epge.muarua.filegear-sg.me
+  type: trojan
+- name: '392,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #64'
+  password: eab777de-fef2-4794-9a9f-fa63ed7b1360
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '392,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #57'
+  password: 87a08b2d-7f83-41c4-85c7-ac021d1493fd
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '392,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #53'
+  password: 7882a049-8d73-4c30-9c71-20ef57909cb2
+  port: 31101
+  server: 220.130.58.136
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '392,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #54'
+  password: 7882a049-8d73-4c30-9c71-20ef57909cb2
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '392,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #67'
+  password: fe6eae40-94da-4c80-9f23-5e3d4402d52b
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
   type: trojan
 - name: '395,400|US5｜机房｜低风险 #1'
   password: 39821423-11bb-4fb4-a521-7ce2e99dc342
@@ -5538,15 +5552,7 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|美国_0110182875
-  password: 5936c09e-b309-4946-966e-4245afd04a6a
-  port: 61237
-  server: 194.113.37.75
-  skip-cert-verify: true
-  sni: www.apple.com
-  tls: false
-  type: hysteria2
-- name: 400|🇺🇸龟壳 美国 US-Oracle_Corporation-...
+- name: 400|🇺🇸 美国 | USA 27
   password: f19823db-48e6-44fc-8a6a-372ce3611763
   port: 26902
   server: 170.9.63.232
@@ -5554,72 +5560,41 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 400|美国(yudou789.top 玉豆免费节点)_126
-  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  port: 443
-  server: blackshadow.dpdns.org
-  sni: blackshadow.dpdns.org
-  type: trojan
-- name: 400|🇺🇸US美国5
-  password: 7882a049-8d73-4c30-9c71-20ef57909cb2
-  port: 31101
-  server: 220.130.58.136
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '400|🇺🇸 US美国(mibei77.com 米贝节点分享) #6'
-  password: 7882a049-8d73-4c30-9c71-20ef57909cb2
-  port: 31103
-  server: green2.cdntencentmusic.com
+- name: '400|🇺🇸 美国|@stairnode #1'
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 1281
+  server: 160.16.87.174
   skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
+  sni: www.nintendogames.net
   type: trojan
-- name: '400|🇺🇸 US美国(mibei77.com 米贝节点分享) #9'
-  password: 87a08b2d-7f83-41c4-85c7-ac021d1493fd
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 400|🇺🇸 US_175
+- name: 400|🇺🇸 US_194
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: hinet.mjt000.com
   sni: hinet.mjt000.com
   type: trojan
-- name: 400|🇺🇸US美国2
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  sni: epge.muarua.filegear-sg.me
+- name: '400|🇺🇸 美国3|@stairnode #1'
+  password: BxceQaOe
+  port: 4569
+  server: 43.198.110.101
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
   type: trojan
-- name: 400|美国_0110182535
+- name: 400|🇺🇸_美国
+  network: tcp
   password: a0b8f30a-5fda-488b-89d2-5bde0991284e
   port: 28886
   server: 38.165.45.35
   skip-cert-verify: true
   sni: addons.mozilla.org
   type: trojan
-- name: 400|🇺🇸 US_176
+- name: 400|🇺🇸 US_192
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
   sni: usla.mjt000.com
   type: trojan
-- name: '400|🇺🇸 US美国(mibei77.com 米贝节点分享) #13'
-  password: eab777de-fef2-4794-9a9f-fa63ed7b1360
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '400|🇺🇸 US美国(mibei77.com 米贝节点分享) #16'
-  password: fe6eae40-94da-4c80-9f23-5e3d4402d52b
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 400|美国_011018063
+- name: 400|美国_011104064
   network: tcp
   password: tSk5LQoJr7F.WnRsUM4hT
   port: 19106
@@ -5656,12 +5631,6 @@ proxies:
   server: 216.144.235.37
   sni: doufeng.pages.dev
   type: trojan
-- name: 400|美国 - 肯特 - 2-01
-  password: trojan
-  port: 8080
-  server: 23.94.43.128
-  sni: doufeng.pages.dev
-  type: trojan
 - name: 400|美国 - 东洛杉矶 - 28
   password: trojan
   port: 28080
@@ -5673,12 +5642,6 @@ proxies:
   port: 587
   server: 38.95.73.40
   sni: doufeng.pages.dev
-  type: trojan
-- name: 400|美国 - 紐約 - 11
-  password: trojan
-  port: 8443
-  server: 5.180.24.187
-  sni: tianjiu.pages.dev
   type: trojan
 - name: 400|美国 - Reston - 15
   password: trojan
@@ -5704,36 +5667,18 @@ proxies:
   server: 66.154.105.50
   sni: doufeng.pages.dev
   type: trojan
-- name: 400|美国 - South Fulton - 4
-  password: trojan
-  port: 9090
-  server: 77.110.119.241
-  sni: tianjiu.pages.dev
-  type: trojan
 - name: 400|美国 222
   password: trojan
   port: 8443
   server: ip.sb
   sni: fofang.pages.dev
   type: trojan
-- name: 400|🇺🇸 US_174
+- name: 400|🇺🇸 US_193
   password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
   port: 443
   server: 154.17.24.29
   sni: 154.17.24.29
   type: trojan
-- name: 400|美国(yudou6677.top 玉豆免费节点)_3
-  network: ws
-  port: 10443
-  server: 172.86.94.7
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    headers:
-      Host: mot.gike.dpdns.org
-    path: '%2F%2540Marisa_kristi'
 - name: 400|US美国(mibei77.com 米贝节点分享)
   network: ws
   port: 12020
@@ -5747,7 +5692,7 @@ proxies:
       Host: mot.luyuju.dpdns.org
     path: '%2F%40Marisa_kristi'
 - client-fingerprint: chrome
-  name: 400|🇺🇸_美国
+  name: '400|🇺🇸_美国 #1'
   network: ws
   port: 443
   server: 63.141.128.180
@@ -5807,18 +5752,6 @@ proxies:
     headers:
       Host: sni.111000.cc.cd
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_64-1-1
-  network: ws
-  port: 8443
-  server: 136.244.90.180
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.de5.net
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|美国(yudou789.top 玉豆免费节点)_120-1-...
   network: ws
   port: 2096
@@ -5855,30 +5788,6 @@ proxies:
     headers:
       Host: sni.111000.de5.net
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_30-2-1
-  network: ws
-  port: 8443
-  server: 143.20.213.40
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.de5.net
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_90-2
-  network: ws
-  port: 8443
-  server: 152.53.141.9
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.de5.net
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|美国(yudou789.top 玉豆免费节点)_4-2
   network: ws
   port: 443
@@ -5890,18 +5799,6 @@ proxies:
   ws-opts:
     headers:
       Host: sni.111000.de5.net
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_125-1
-  network: ws
-  port: 2096
-  server: 170.114.46.238
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.cc.cd
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|美国(yudou789.top 玉豆免费节点)_15-1
   network: ws
@@ -5931,18 +5828,6 @@ proxies:
   network: ws
   port: 2096
   server: 172.64.144.159
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.cc.cd
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_22-1-1
-  network: ws
-  port: 2096
-  server: 172.64.144.183
   servername: ''
   tls: true
   type: vless
@@ -6107,18 +5992,6 @@ proxies:
     headers:
       Host: sni.111000.de5.net
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_130
-  network: ws
-  port: 2096
-  server: 185.135.9.168
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.army
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|美国(yudou789.top 玉豆免费节点)_122-2-...
   network: ws
   port: 2096
@@ -6166,18 +6039,6 @@ proxies:
   ws-opts:
     headers:
       Host: sni.111000.v6.army
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_113-2-...
-  network: ws
-  port: 2096
-  server: 185.148.105.138
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.dns.army
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|美国(yudou789.top 玉豆免费节点)_139-2
   network: ws
@@ -6250,18 +6111,6 @@ proxies:
   ws-opts:
     headers:
       Host: sni.111000.de5.net
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_146-1
-  network: ws
-  port: 2096
-  server: 185.148.107.168
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.army
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|美国(yudou789.top 玉豆免费节点)_124-1-...
   network: ws
@@ -6443,18 +6292,6 @@ proxies:
     headers:
       Host: sni.111000.de5.net
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_149-1
-  network: ws
-  port: 2096
-  server: 185.162.229.168
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.army
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|美国(yudou789.top 玉豆免费节点)_83-02
   network: ws
   port: 2096
@@ -6527,18 +6364,6 @@ proxies:
     headers:
       Host: sni.111000.v6.army
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_135-1
-  network: ws
-  port: 2096
-  server: 185.18.250.238
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.cc.cd
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|美国(yudou789.top 玉豆免费节点)_2-2
   network: ws
   port: 2013
@@ -6598,18 +6423,6 @@ proxies:
   ws-opts:
     headers:
       Host: sni.111000.dns.army
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_106-2-...
-  network: ws
-  port: 2096
-  server: 205.233.181.148
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.rocks
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|美国(yudou789.top 玉豆免费节点)_161-1
   network: ws
@@ -6707,18 +6520,6 @@ proxies:
     headers:
       Host: sni.111000.cc.cd
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_112-1-...
-  network: ws
-  port: 2096
-  server: 45.40.149.238
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.cc.cd
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|美国(yudou789.top 玉豆免费节点)_110-1
   network: ws
   port: 2096
@@ -6747,18 +6548,6 @@ proxies:
   network: ws
   port: 8443
   server: 45.77.52.102
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.de5.net
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_174
-  network: ws
-  port: 443
-  server: 46.101.185.122
   servername: ''
   tls: true
   type: vless
@@ -6923,34 +6712,10 @@ proxies:
     headers:
       Host: sni.111000.de5.net
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_97-1
-  network: ws
-  port: 443
-  server: 91.132.160.151
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.de5.net
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|美国(yudou789.top 玉豆免费节点)_58-1-1
   network: ws
   port: 8443
   server: 91.199.118.215
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.de5.net
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|美国(yudou789.top 玉豆免费节点)_6
-  network: ws
-  port: 443
-  server: 92.118.8.206
   servername: ''
   tls: true
   type: vless
@@ -7044,7 +6809,7 @@ proxies:
       Host: go-79m.pages.dev
     path: '%2F'
 - client-fingerprint: chrome
-  name: '400|🇺🇸_美国 #1'
+  name: '400|🇺🇸_美国 #2'
   network: tcp
   port: 443
   server: 144.31.1.121
@@ -7053,7 +6818,7 @@ proxies:
   tls: true
   type: vless
   uuid: 21f8d9aa-8ec7-4340-aa0a-7ce19f244adc
-- name: '400|🇺🇸_美国 #2'
+- name: '400|🇺🇸_美国 #3'
   network: tcp
   port: 443
   server: plcdn17.suio.me
@@ -7076,7 +6841,7 @@ proxies:
     path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|🇺🇸_美国 #3'
+  name: '400|🇺🇸_美国 #4'
   network: tcp
   port: 443
   reality-opts:
@@ -7087,21 +6852,9 @@ proxies:
   tls: false
   type: vless
   uuid: 274691f9-e6c0-46ff-82f2-3a9062872a04
-- name: 400|美国(yudou789.top 玉豆免费节点)_129
-  network: ws
-  port: 443
-  server: blackshadow.dpdns.org
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  ws-opts:
-    headers:
-      Host: blackshadow.dpdns.org
-    path: '%2F44.209.52.7-443'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|🇺🇸_美国 #4'
+  name: '400|🇺🇸_美国 #5'
   network: tcp
   port: 47365
   reality-opts:
@@ -7172,30 +6925,6 @@ proxies:
     headers:
       Host: ssssssssssssfffffffgh.2032.pp.ua
     path: '%2FeAbAcRHV1QuhyXWGxgFnoFPw1'
-- name: 400|美国(yudou789.top 玉豆免费节点)_108
-  network: ws
-  port: 443
-  server: skk.moe
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 42c62a5a-cd31-4551-e0ef-908732370287
-  ws-opts:
-    headers:
-      Host: cm.6691888.xyz
-    path: '%2Fstar%2F'
-- name: 400|美国(yudou789.top 玉豆免费节点)_113
-  network: ws
-  port: 443
-  server: www.gco.gov.qa
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 42c62a5a-cd31-4551-e0ef-908732370287
-  ws-opts:
-    headers:
-      Host: cm.6691888.xyz
-    path: '%2Ftravel%2Fdoc%2F'
 - name: 400|US VLESS-131 | free-nodes
   network: tcp
   port: 23576
@@ -7229,19 +6958,7 @@ proxies:
   tls: false
   type: vless
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- name: 400|美國 7-01
-  network: ws
-  port: 443
-  server: 435f-8550-7b7588cc4678.008880888.xyz
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 55821780-6970-49df-8a23-800c2c9b7d3a
-  ws-opts:
-    headers:
-      Host: 435F-8550-7B7588CC4678.008880888.XyZ
-    path: '%2F4kMdPPOPDnAtNtvgyaVXm'
-- name: '400|🇺🇸_美国 #5'
+- name: '400|🇺🇸_美国 #6'
   network: ws
   port: 8080
   server: 173.245.59.254
@@ -7261,17 +6978,6 @@ proxies:
   uuid: 600b472f-3e43-43a0-8815-a890a607891c
   ws-opts:
     path: '%2F'
-- name: 400|美國 8
-  network: grpc
-  port: 22955
-  reality-opts:
-    public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-    short-id: 6ba85179e30d4fc2
-  server: 178.156.215.142
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
 - name: 400|美國 25
   network: grpc
   port: 22955
@@ -7301,17 +7007,6 @@ proxies:
     public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
     short-id: 6ba85179e30d4fc2
   server: 178.156.215.152
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-- name: 400|美國 3
-  network: grpc
-  port: 22955
-  reality-opts:
-    public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-    short-id: 6ba85179e30d4fc2
-  server: 178.156.215.218
   servername: ''
   tls: false
   type: vless
@@ -7363,17 +7058,6 @@ proxies:
   tls: false
   type: vless
   uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-- name: 400|美国(yudou789.top 玉豆免费节点)_145-1
-  network: ws
-  port: 80
-  server: webbingsolutions.com
-  tls: false
-  type: vless
-  uuid: 6cad2795-da0e-4b2a-806f-b61c9ee6c7f8
-  ws-opts:
-    headers:
-      Host: outlook.microsoftwindows10.workers.dev
-    path: '%2Fm.gameone.com'
 - name: 400|美國-06
   network: ws
   port: 443
@@ -7386,17 +7070,6 @@ proxies:
     headers:
       Host: sni.520cf.dns.army
     path: '%2Fproxyip%253Dsjc.o00o.ooo'
-- name: 400|美国(橘子电报频道@juzibaipiao)_75
-  network: ws
-  port: 2086
-  server: 172.67.203.94
-  tls: false
-  type: vless
-  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
-  ws-opts:
-    headers:
-      Host: iioo.iioou.workers.dev
-    path: '%2F'
 - name: 400|美国(yudou789.top 玉豆免费节点)_80-1
   network: ws
   port: 8880
@@ -7429,6 +7102,17 @@ proxies:
   ws-opts:
     headers:
       Host: testdvpnhub69.95f425b718.workers.dev
+    path: '%2F'
+- name: 400|美国 1135
+  network: ws
+  port: 2095
+  server: blog.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: freedom.pusytroller.cf
     path: '%2F'
 - name: 400|美国 1136
   network: ws
@@ -7493,7 +7177,7 @@ proxies:
     path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|🇺🇸_美国 #6'
+  name: '400|🇺🇸_美国 #7'
   network: tcp
   port: 59750
   reality-opts:
@@ -7505,7 +7189,7 @@ proxies:
   uuid: 9e76cfb8-b7a6-40f6-c2aa-9905aa19f31b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|🇺🇸_美国 #7'
+  name: '400|🇺🇸_美国 #8'
   network: tcp
   port: 443
   reality-opts:
@@ -7518,7 +7202,7 @@ proxies:
   uuid: a11ab9c5-4155-430b-9efc-7a7122531382
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|🇺🇸_美国 #8'
+  name: '400|🇺🇸_美国 #9'
   network: tcp
   port: 443
   reality-opts:
@@ -7551,18 +7235,6 @@ proxies:
   uuid: aef9ab0f-fb0e-40ce-bb9b-beacaf6a2db6
   ws-opts:
     path: /
-- name: 400|美国 1053
-  network: ws
-  port: 443
-  server: 017.electrocellco-cf-017.workers.dev
-  servername: ''
-  tls: true
-  type: vless
-  uuid: b74bbaca-8bbe-41e1-9af9-18d467836282
-  ws-opts:
-    headers:
-      Host: 017.electrocellco-cf-017.workers.dev
-    path: '%2FeyJqdW5rIjoibnhUbllUVXY1OWIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119'
 - name: '400|🇺🇸_US_美国 #5'
   network: ws
   port: 443
@@ -7585,7 +7257,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|🇺🇸_美国 #9'
+  name: '400|🇺🇸_美国 #10'
   network: tcp
   port: 4443
   reality-opts:
@@ -7596,7 +7268,7 @@ proxies:
   tls: false
   type: vless
   uuid: d5d5b641-dd56-4f39-9754-8d3c45cc2c5e
-- name: '400|🇺🇸_美国 #10'
+- name: '400|🇺🇸_美国 #11'
   network: ws
   port: 80
   server: 151.101.3.8
@@ -7715,7 +7387,7 @@ proxies:
     headers:
       Host: www.allxniu.qzz.io
     path: '%2F'
-- name: '400|美国(yudou789.top 玉豆免费节点)_106-2-... #1'
+- name: 400|美国(yudou789.top 玉豆免费节点)_106-2-...
   network: ws
   port: 443
   server: 188.164.248.131
@@ -7763,7 +7435,7 @@ proxies:
     headers:
       Host: ww1.allxniu.qzz.io
     path: '%2F'
-- name: 400|美国(yudou789.top 玉豆免费节点)_118-01
+- name: 400|美国(yudou789.top 玉豆免费节点)_118
   network: ws
   port: 443
   server: 188.164.248.147
@@ -7823,6 +7495,18 @@ proxies:
     headers:
       Host: tw.aniusnippets.qzz.io
     path: '%2F'
+- name: 400|美國-03
+  network: ws
+  port: 443
+  server: 50.62.172.13
+  servername: ''
+  tls: true
+  type: vless
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: ww2.allxniu.qzz.io
+    path: '%2F'
 - name: 400|US_b7cc6_0032
   network: ws
   port: 443
@@ -7867,7 +7551,7 @@ proxies:
   uuid: f90b7a19-0b71-44b6-b95b-baab85af4d51
 - alterId: 0
   cipher: auto
-  name: '400|🇺🇸_美国 #11'
+  name: '400|🇺🇸_美国 #12'
   network: tcp
   port: '25210'
   server: ncgddx.gdsxrk.com
@@ -7993,17 +7677,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 400|🇺🇸 US_164
-  network: none
-  port: 22524
-  server: 47.253.228.138
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 80845fcc-f862-45fe-c1d3-0a7120373712
-- alterId: 0
-  cipher: auto
-  name: 400|🇺🇸 US_165
+  name: 400|🇺🇸 US_185
   network: ws
   port: 443
   server: 148.113.176.192
@@ -8017,7 +7691,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|🇺🇸 US_167
+  name: 400|🇺🇸 US_186
   network: ws
   port: 443
   server: 15.235.50.172
@@ -8031,21 +7705,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|🇺🇸 US_168
-  network: ws
-  port: 6542
-  server: cgroup.node5.v.nodelist-airport.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 400|🇺🇸 US_169
+  name: 400|🇺🇸 US_188
   network: ws
   port: 443
   server: n1753598452.wpg27.xyz
@@ -8059,7 +7719,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|🇺🇸 US_170
+  name: 400|🇺🇸 US_190
   network: ws
   port: 443
   server: 15.235.83.227
@@ -8114,7 +7774,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|美国_0110182531
+  name: 400|美国_0111042358
   network: tcp
   port: '19724'
   server: 154.44.14.244
@@ -8124,7 +7784,7 @@ proxies:
   uuid: c393d530-034b-4df7-a90d-fb4cbc553a99
 - alterId: 0
   cipher: auto
-  name: 400|美国_0110182530 L0
+  name: 400|美国_0111042357 L0
   network: tcp
   port: '443'
   server: 165.140.216.141
@@ -8134,7 +7794,7 @@ proxies:
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
 - alterId: 0
   cipher: auto
-  name: 400|美国_011018225
+  name: 400|美国_011104220
   network: tcp
   port: '10001'
   server: 172.234.132.232
@@ -8144,7 +7804,7 @@ proxies:
   uuid: a6b99c05-8e0a-4f7e-bf7b-e4b9febb9589
 - alterId: 0
   cipher: auto
-  name: 400|美国_0110182532 L0
+  name: 400|美国_0111042359 L0
   network: tcp
   port: '7100'
   server: 206.119.191.9
@@ -8152,6 +7812,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 10853485-26e1-477b-d257-58a3f4873db3
+- alterId: 32
+  cipher: auto
+  name: 400|美国_011104266
+  network: ws
+  port: '443'
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
 - name: 404|🇺🇸 美国 | USA
   password: 29254c67-8ae9-45d3-b256-983eb4024c70
   port: 25501
