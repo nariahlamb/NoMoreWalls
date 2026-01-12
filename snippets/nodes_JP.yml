@@ -1004,7 +1004,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '227,261,382,391,399|12,13|日本|@ripaojiedian #1'
+- name: '227,261,391,399|12,13|日本|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 2053
@@ -1012,7 +1012,8 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '227,261,382,391,399|12,13|日本2|@ripaojiedian #1'
+- country: JP
+  name: '227,261,352,391,399|12,13|日本2|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
@@ -1020,7 +1021,9 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,261,382,391,399|12,13|日本3|@ripaojiedian #1'
+  udp: true
+- country: JP
+  name: '227,261,352,391,399|12,13|日本3|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
@@ -1028,8 +1031,9 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - country: JP
-  name: '227,261,352,382,391,399|12,13|新加坡|@ripaojiedian #1'
+  name: '227,261,352,391,399|12,13|新加坡|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3901
@@ -1039,7 +1043,7 @@ proxies:
   type: trojan
   udp: true
 - country: JP
-  name: '227,261,352,382,391,399|12,13|新加坡2|@ripaojiedian #1'
+  name: '227,261,352,391,399|12,13|新加坡2|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3076
@@ -1056,7 +1060,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,261,382,391,399|12,13|美国2|@ripaojiedian #1'
+- name: '227,261,391,399|12,13|美国2|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1281
@@ -1064,7 +1068,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,394,396,397|日本|@ripaojiedian #1'
+- name: '227,382,394,396,397|日本|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 11945
@@ -1072,7 +1076,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '227,394,396,397|日本2|@ripaojiedian #1'
+- name: '227,382,394,396,397|日本2|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 4006
@@ -1080,7 +1084,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,394,396,397|日本3|@ripaojiedian #1'
+- name: '227,382,394,396,397|日本3|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 4006
@@ -1088,7 +1092,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,394,396,397|新加坡|@ripaojiedian #1'
+- name: '227,382,394,396,397|新加坡|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3901
@@ -1096,7 +1100,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,394,396,397|新加坡2|@ripaojiedian #1'
+- name: '227,382,394,396,397|新加坡2|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3076
@@ -1104,7 +1108,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: '227,394,396,397|新加坡3|@ripaojiedian #1'
+- name: '227,382,394,396,397|新加坡3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 3579
@@ -1112,7 +1116,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '227,394,396,397|美国2|@ripaojiedian #1'
+- name: '227,382,394,396,397|美国2|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 5076
@@ -1394,6 +1398,23 @@ proxies:
     headers:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 349| JP_77
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
   ws-path: /
 - name: '364|日本_Osaka #1'
   network: ws

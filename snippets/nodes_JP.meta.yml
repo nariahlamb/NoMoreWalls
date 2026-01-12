@@ -1137,7 +1137,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '227,261,382,391,399|12,13|日本|@ripaojiedian #1'
+- name: '227,261,391,399|12,13|日本|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 2053
@@ -1145,7 +1145,8 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '227,261,382,391,399|12,13|日本2|@ripaojiedian #1'
+- country: JP
+  name: '227,261,352,391,399|12,13|日本2|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
@@ -1153,7 +1154,9 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,261,382,391,399|12,13|日本3|@ripaojiedian #1'
+  udp: true
+- country: JP
+  name: '227,261,352,391,399|12,13|日本3|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
@@ -1161,8 +1164,9 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - country: JP
-  name: '227,261,352,382,391,399|12,13|新加坡|@ripaojiedian #1'
+  name: '227,261,352,391,399|12,13|新加坡|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3901
@@ -1172,7 +1176,7 @@ proxies:
   type: trojan
   udp: true
 - country: JP
-  name: '227,261,352,382,391,399|12,13|新加坡2|@ripaojiedian #1'
+  name: '227,261,352,391,399|12,13|新加坡2|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3076
@@ -1189,7 +1193,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,261,382,391,399|12,13|美国2|@ripaojiedian #1'
+- name: '227,261,391,399|12,13|美国2|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1281
@@ -1197,7 +1201,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,394,396,397|日本|@ripaojiedian #1'
+- name: '227,382,394,396,397|日本|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 11945
@@ -1205,7 +1209,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '227,394,396,397|日本2|@ripaojiedian #1'
+- name: '227,382,394,396,397|日本2|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 4006
@@ -1213,7 +1217,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,394,396,397|日本3|@ripaojiedian #1'
+- name: '227,382,394,396,397|日本3|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 4006
@@ -1221,7 +1225,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,394,396,397|新加坡|@ripaojiedian #1'
+- name: '227,382,394,396,397|新加坡|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3901
@@ -1229,7 +1233,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,394,396,397|新加坡2|@ripaojiedian #1'
+- name: '227,382,394,396,397|新加坡2|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3076
@@ -1237,7 +1241,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: '227,394,396,397|新加坡3|@ripaojiedian #1'
+- name: '227,382,394,396,397|新加坡3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 3579
@@ -1245,7 +1249,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '227,394,396,397|美国2|@ripaojiedian #1'
+- name: '227,382,394,396,397|美国2|@ripaojiedian #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 5076
@@ -1683,6 +1687,23 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 349| JP_77
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
+  ws-path: /
 - client-fingerprint: random
   name: 364|日本_东京
   network: ws
@@ -2158,22 +2179,6 @@ proxies:
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - client-fingerprint: chrome
-  delay: 623
-  name: 384|日本 - 成田市 - Cloudflare, Inc. - ...
-  network: ws
-  port: 443
-  server: 162.159.45.232
-  servername: l.ayovo.netlib.re
-  tls: true
-  type: vless
-  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: l.ayovo.netlib.re
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
   delay: 843
   name: '384|日本 - 成田市 - Cloudflare, Inc. - ... #1'
   network: ws
@@ -2211,7 +2216,7 @@ proxies:
   skip-cert-verify: true
   sni: login-staticjpc.jasmine-douyin.top
   type: trojan
-- name: '394,399|JP12｜机房｜低风险 #1'
+- name: 394,399,403|🇯🇵 日本 | JPN
   password: b9de051e-90b0-4b46-81a0-680707ef15c7
   port: 11451
   server: hy2-hk1.dhh.moe
