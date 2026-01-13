@@ -61,6 +61,45 @@ proxies:
   server: gy.666666222.shop
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  delay: 764
+  name: 64,265,385|日本 - 东京 - Amazon Technologies ...
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 8989
+  server: 13.113.82.98
+  type: ss
+  udp: true
+- delay: 1062
+  name: '64,265,385|日本 - 东京 - Amazon Technologies ... #1'
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6688
+  server: 13.113.82.98
+  skip-cert-verify: true
+  sni: baidu.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  delay: 977
+  name: 64,265,385|日本 - 東京都 - Akari Networks - 6
+  network: tcp
+  password: 906d3f51-f9fd-4901-9666-f917babec7a3
+  port: 50021
+  server: v1dytv.lalakw.com
+  skip-cert-verify: true
+  sni: v1dytv.lalakw.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  delay: 537
+  name: 64,265,385|日本 - 東京都 - Akari Networks - 7
+  network: tcp
+  password: 906d3f51-f9fd-4901-9666-f917babec7a3
+  port: 50039
+  server: v1dytv.lalakw.com
+  skip-cert-verify: true
+  sni: v1dytv.lalakw.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 85|🇯🇵 No.379_JP_x0.50_AWS_东京@qing...
@@ -1058,6 +1097,14 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- name: 228,395,400|🇯🇵_日本
+  network: tcp
+  password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
+  port: 443
+  server: tuntro003.instconn.com
+  skip-cert-verify: false
+  sni: login-staticjpc.jasmine-douyin.top
+  type: trojan
 - name: '243,244,245|日本05 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -1335,25 +1382,33 @@ proxies:
   ws-path: /
 - cipher: aes-256-gcm
   country: ' JP'
-  name: 350| JP_72
+  name: 350| JP_84
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 10079
   server: ss.027.node-for-bigairport.win
   type: ss
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| JP_85
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
+  ws-path: /
 - country: JP
   name: 353,400|日本_011318004+L0
   password: 61d8077bfb174e171b8283f155a555ad
   port: 4006
   server: 153.121.39.240
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: JP
-  name: 353,400|日本_011318002+L0
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 1933
-  server: 160.16.130.66
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -1372,6 +1427,15 @@ proxies:
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
   server: 153.121.38.213
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- country: JP
+  name: 353,400|日本_011318002+L0
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 1933
+  server: 160.16.130.66
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -1526,81 +1590,6 @@ proxies:
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - cipher: chacha20-ietf-poly1305
-  delay: 764
-  name: 385|日本 - 东京 - Amazon Technologies ...
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 8989
-  server: 13.113.82.98
-  type: ss
-  udp: true
-- delay: 1062
-  name: '385|日本 - 东京 - Amazon Technologies ... #1'
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 6688
-  server: 13.113.82.98
-  skip-cert-verify: true
-  sni: baidu.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  delay: 977
-  name: 385|日本 - 東京都 - Akari Networks - 6
-  network: tcp
-  password: 906d3f51-f9fd-4901-9666-f917babec7a3
-  port: 50021
-  server: v1dytv.lalakw.com
-  skip-cert-verify: true
-  sni: v1dytv.lalakw.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  delay: 537
-  name: 385|日本 - 東京都 - Akari Networks - 7
-  network: tcp
-  password: 906d3f51-f9fd-4901-9666-f917babec7a3
-  port: 50039
-  server: v1dytv.lalakw.com
-  skip-cert-verify: true
-  sni: v1dytv.lalakw.com
-  type: trojan
-  udp: true
-- name: '395,400|JP4｜机房｜低风险 #1'
-  password: 53d6503b-e420-4d85-a67f-4c8f9d00e48a
-  port: 41273
-  server: xiaozhu.gisorty.cn
-  skip-cert-verify: true
-  sni: xiaozhu.gisorty.cn
-  type: trojan
-- name: '395,400|JP7｜机房｜低风险 #1'
-  password: 99eec1a2-9d1d-4475-8dfa-db6effe71dde
-  port: 41273
-  server: xiaozhu1.kkieo555.cn
-  skip-cert-verify: true
-  sni: xiaozhu1.kkieo555.cn
-  type: trojan
-- name: 395,400|🇯🇵_日本
-  network: tcp
-  password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
-  port: 443
-  server: tuntro003.instconn.com
-  skip-cert-verify: false
-  sni: login-staticjpc.jasmine-douyin.top
-  type: trojan
-- name: 395|JP14｜机房｜低风险
-  password: 53d6503b-e420-4d85-a67f-4c8f9d00e48a
-  port: 41273
-  server: xiaozhu.gisorty.cn
-  skip-cert-verify: true
-  sni: douyin.com
-  type: trojan
-- name: 395|JP15｜机房｜低风险
-  password: 99eec1a2-9d1d-4475-8dfa-db6effe71dde
-  port: 41273
-  server: xiaozhu1.kkieo555.cn
-  skip-cert-verify: true
-  sni: douyin.com
-  type: trojan
-- cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31111
@@ -1684,6 +1673,13 @@ proxies:
   server: 202.181.103.246
   sni: www.nintendogames.net
   type: trojan
+- name: '400|JP4｜机房｜低风险 #1'
+  password: 53d6503b-e420-4d85-a67f-4c8f9d00e48a
+  port: 41273
+  server: xiaozhu.gisorty.cn
+  skip-cert-verify: true
+  sni: xiaozhu.gisorty.cn
+  type: trojan
 - name: 400|日本_011318048
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
@@ -1731,6 +1727,13 @@ proxies:
   port: 4006
   server: 160.16.87.174
   sni: www.nintendogames.net
+  type: trojan
+- name: 400|JP7｜机房｜低风险
+  password: 99eec1a2-9d1d-4475-8dfa-db6effe71dde
+  port: 41273
+  server: xiaozhu1.kkieo555.cn
+  skip-cert-verify: true
+  sni: xiaozhu1.kkieo555.cn
   type: trojan
 - name: '400|🇯🇵 日本|@stairnode #1'
   password: BxceQaOe
