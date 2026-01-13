@@ -175,7 +175,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: ' GB'
-  name: 278,279,350| GB_51
+  name: 278,279,350| GB_50
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -439,6 +439,13 @@ proxies:
   ws-path: /
 - cipher: chacha20-ietf-poly1305
   country: ' GB'
+  name: 350| GB_51
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.237.38
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' GB'
   name: 350| GB_52
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
@@ -449,22 +456,23 @@ proxies:
   name: 350| GB_53
   password: f8f7aCzcPKbsF8p3
   port: 990
-  server: 185.126.237.38
+  server: 185.47.253.227
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' GB'
   name: 350| GB_54
   password: f8f7aCzcPKbsF8p3
   port: 990
-  server: 185.47.253.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' GB'
-  name: 350| GB_55
-  password: f8f7aCzcPKbsF8p3
-  port: 990
   server: 185.47.255.22
   type: ss
+- country: ' GB'
+  name: 350| GB_56
+  password: dd6dcb10-4683-11f0-ae79-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - country: ' GB'
   name: 350| GB_57
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
@@ -473,16 +481,8 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: ' GB'
-  name: 350| GB_58
-  password: dd6dcb10-4683-11f0-ae79-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - country: GB
-  name: 350|GB_59
+  name: 350|GB_58
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
@@ -1123,7 +1123,7 @@ proxies:
   skip-cert-verify: false
   sni: ultimate-civet.adder289.quest
   type: trojan
-- name: 395,400|🇳🇱 荷兰 | NLD
+- name: 395,400|🇳🇱 荷兰 | NLD-1
   password: dongtaiwang.com
   port: 33550
   server: 89.144.35.25
@@ -1145,51 +1145,19 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|GB13｜机房｜低风险
-  password: 61800eb2-9603-4b96-a3ac-2f7154f66731
-  port: 21415
-  server: fq-uk.mxtn.net
-  skip-cert-verify: true
-  sni: fq-uk.mxtn.net
-  tls: false
-  type: hysteria2
-- name: 400|GB12｜机房｜低风险
-  password: 61800eb2-9603-4b96-a3ac-2f7154f66731
-  port: 21521
-  server: fq-uk.mxtn.net
-  skip-cert-verify: true
-  sni: fq-uk.mxtn.net
-  tls: false
-  type: hysteria2
-- name: 400|GB1｜机房｜低风险
-  password: 61800eb2-9603-4b96-a3ac-2f7154f66731
-  port: 21720
-  server: fq-uk.mxtn.net
-  skip-cert-verify: true
-  sni: fq-uk.mxtn.net
-  tls: false
-  type: hysteria2
-- name: 400|GB2｜机房｜低风险
-  password: 61800eb2-9603-4b96-a3ac-2f7154f66731
-  port: 21880
-  server: fq-uk.mxtn.net
-  skip-cert-verify: true
-  sni: fq-uk.mxtn.net
-  tls: false
-  type: hysteria2
-- name: 400|🇬🇧 GB_54
+- name: 400|🇬🇧 GB_56
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
   sni: 51.38.65.155
   type: trojan
-- name: 400|🇬🇧GB_55
+- name: 400|🇬🇧GB_57
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
   sni: uk2-full.privateip.net
   type: trojan
-- name: 400|英国_011218262
+- name: 400|英国_011304275
   network: tcp
   password: Iisy37ABxOJ8Ha_cb5fpXKkm-WSFV
   port: 24293
@@ -1197,7 +1165,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 400|英国_011218261
+- name: 400|英国_011304274
   network: tcp
   password: Iisy37ABxOJ8Ha_cb5fpXKkm-WSFV
   port: 24293
@@ -1205,7 +1173,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 400|🇬🇧 GB_53
+- name: 400|🇬🇧 GB_55
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -1223,6 +1191,24 @@ proxies:
   server: 23.81.34.186
   sni: tianjiu.pages.dev
   type: trojan
+- name: 400|英国 - 豪恩斯洛 - 1-02
+  password: trojan
+  port: 2053
+  server: 51.89.226.133
+  sni: tianjiu.pages.dev
+  type: trojan
+- name: 400|英国(yudou789.top 玉豆免费节点)_11
+  network: ws
+  port: 2096
+  server: 185.156.19.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  ws-opts:
+    headers:
+      Host: sni.111000.dns.army
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|英国(yudou789.top 玉豆免费节点)_13
   network: ws
   port: 2096
@@ -1259,34 +1245,10 @@ proxies:
     headers:
       Host: sni.111000.v6.army
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|英国(yudou789.top 玉豆免费节点)_6
-  network: ws
-  port: 2096
-  server: 185.156.19.238
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.cc.cd
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|英国(yudou789.top 玉豆免费节点)-1
   network: ws
   port: 2096
   server: 5.10.244.238
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.cc.cd
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|英国(yudou789.top 玉豆免费节点)_7
-  network: ws
-  port: 2096
-  server: 5.10.245.238
   servername: ''
   tls: true
   type: vless
@@ -1368,16 +1330,6 @@ proxies:
     headers:
       Host: ww20.allxniu.qzz.io
     path: '%2F'
-- alterId: 0
-  cipher: auto
-  name: 400|英国 007
-  network: tcp
-  port: 443
-  server: 89.31.120.192
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
 - name: 411|韩国-三网优化2
   password: d681df3e-fe9b-4a37-abdf-dcb93682c0da
   port: 44732
