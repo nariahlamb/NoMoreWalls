@@ -848,7 +848,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 262,383,395|SG
+- name: '262,383,395,400|9|SG #2'
   password: e7965e64-e001-4e8c-8273-39c61ff4a094
   port: 30000
   server: sg3.oomz.ru
@@ -858,12 +858,16 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '262,400|14|SG_speednode_0010 #1'
+  name: 262,400|🇸🇬SG_6|623KB/s
+  network: tcp
   port: 25863
+  reality-opts:
+    public-key: LLou1BsPSrrNXOJOb7-YZ159F_MAdrTSmP8loWG6GhE
+    short-id: ''
   server: 146.190.89.69
-  servername: aws.amazon.com
+  servername: ''
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   uuid: 58f206da-752d-4750-a2ac-b72d0cab8032
 - name: 278|🇸🇬1 |  9.0MB/s
@@ -887,7 +891,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: SG
-  name: 278,353|SG_18
+  name: 278,353|SG_25
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -1179,7 +1183,7 @@ proxies:
   country: ' SG'
   h2-opts: {}
   http-opts: {}
-  name: 350,400|🇸🇬 SG_161
+  name: 350,400|🇸🇬 SG_142
   network: none
   port: 52752
   server: 8.218.105.196
@@ -1191,23 +1195,10 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: ' SG'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| SG_148
-  network: none
-  port: 43425
-  server: 8.210.248.133
-  skip-cert-verify: true
-  type: vmess
-  uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
-  ws-path: /
-- alterId: 0
-  cipher: auto
   country: SG
   h2-opts: {}
   http-opts: {}
-  name: 353|SG_19
+  name: 353|SG_26
   network: none
   port: 55976
   server: 8.218.208.153
@@ -2299,20 +2290,45 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: trojan
-- alterId: 32
-  cipher: auto
-  name: 392,400|美国_011304006
+- client-fingerprint: chrome
+  delay: 374
+  name: 385|新加坡 - 新加坡 - Cloudflare, Inc. -...
   network: ws
-  port: '443'
-  server: vc.fly.dev
-  servername: ''
+  port: 443
+  server: 162.159.16.63
+  servername: l.ayovo.netlib.re
   tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  type: vless
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: l.ayovo.netlib.re
+    max-early-data: 2560
+    path: /
+- client-fingerprint: chrome
+  delay: 1100
+  name: '385|新加坡 - 新加坡 - Cloudflare, Inc. -... #1'
+  network: ws
+  port: 443
+  server: vip3.kaixincloud.top
+  servername: cornsilk.qzz.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: d15305f0-ad4f-4424-88d5-53e0b593fbe4
   ws-opts:
     headers:
-      Host: vc.fly.dev
-    path: /vc
+      Host: cornsilk.qzz.io
+    path: /134.195.137.107:22473
+- cipher: aes-128-gcm
+  country: 🇨🇳CN
+  delay: 1529
+  name: 385|新加坡 - 新加坡 - Nearoute Limited -...
+  password: b637f2e47b7827b308ebf399008075d2
+  port: 25819
+  server: 223.95.183.132
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2355,26 +2371,19 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: '400|12,13|新加坡3|@ripaojiedian #2'
-  network: tcp
+- name: '400|🇸🇬 新加坡3|@stairnode #1'
   password: BxceQaOe
   port: 3579
   server: 54.95.61.147
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '400|🇸🇬 新加坡3|@stairnode #1'
+- name: '400|🇸🇬 新加坡3|@stairnode #2'
   password: BxceQaOe
   port: 2673
   server: 95.40.111.8
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 400|新加坡 - 新加坡 - 1-01
-  password: trojan
-  port: 443
-  server: kinsta.com
-  sni: doufeng.pages.dev
   type: trojan
 - name: 400|🇸🇬_新加坡
   network: ws
@@ -2417,18 +2426,6 @@ proxies:
   network: ws
   port: 2096
   server: 104.129.165.238
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
-  ws-opts:
-    headers:
-      Host: sni.111000.cc.cd
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|新加坡(yudou789.top 玉豆免费节点)_2-1-1
-  network: ws
-  port: 443
-  server: 139.177.185.88
   servername: ''
   tls: true
   type: vless
@@ -2539,7 +2536,7 @@ proxies:
     path: '%2F'
 - alterId: 0
   cipher: auto
-  name: 400|新加坡_011304027
+  name: 400|新加坡_011318027
   network: ws
   port: '443'
   server: n1747624267.4u9ma.icu
@@ -2553,7 +2550,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|新加坡_011304192
+  name: 400|新加坡_011318192
   network: ws
   port: '443'
   server: n1747624282.lie5d.cyou
@@ -2567,7 +2564,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|新加坡_011304194
+  name: 400|新加坡_011318194
   network: ws
   port: '443'
   server: ovh-sg.rtxconfigz.com
@@ -2579,6 +2576,13 @@ proxies:
     headers:
       Host: ovh-sg.rtxconfigz.com
     path: /t.me/RtxEhi
+- name: '404|🇸🇬 新加坡 | SGP #2'
+  password: de192f2c-c3c3-4050-8ba4-3743f5bd7bf9
+  port: 16666
+  server: sg.zuomomo.top
+  skip-cert-verify: false
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: '411|新加坡NO.1 #4'
