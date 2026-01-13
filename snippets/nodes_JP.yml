@@ -994,7 +994,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '228,371,372,383,392,395,397,398|日本|@ripaojiedian #1'
+- name: '228,383,392,395,397,398|日本|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 3760
@@ -1353,21 +1353,38 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- country: JP
-  name: 353,400|日本_011304047
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 1933
-  server: 153.121.38.213
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| JP_82
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
+  ws-path: /
 - country: JP
   name: 353,400|日本_011304002+L0
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
   server: 160.16.130.66
   skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- country: JP
+  name: 353,400|日本_011304047
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 1933
+  server: 153.121.38.213
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
   udp: true
@@ -1520,6 +1537,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+- alterId: 0
+  cipher: auto
+  name: '371,372|日本 V2CROSS.COM #1'
+  network: tcp
+  port: 53113
+  server: cgroup.node2.v.nodelist-airport.com
+  tls: false
+  type: vmess
+  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
 - name: '395,400|JP4｜机房｜低风险 #1'
   password: 53d6503b-e420-4d85-a67f-4c8f9d00e48a
   port: 41273
@@ -1772,15 +1798,6 @@ proxies:
     headers:
       Host: n1753598451.74qxv.top
     path: /
-- alterId: 1
-  cipher: auto
-  name: '404|🇯🇵 日本 | JPN #2'
-  network: tcp
-  port: '21584'
-  server: 350l379-g04.jp03-j7-vm0.entry.fr0528.art
-  tls: true
-  type: vmess
-  uuid: c6ce2658-c3b3-310b-afd6-df8c1d72ac40
 - alterId: 0
   cipher: auto
   name: '411|日本NO.1 #4'
