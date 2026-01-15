@@ -2439,21 +2439,7 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- name: '89,343|🇭🇰 HK_1|5.4MB/s|GPT|YT-HK|D+|4... #1'
-  network: ws
-  port: 443
-  server: 104.16.250.22
-  servername: l.ayovo.netlib.re
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-  ws-opts:
-    headers:
-      Host: l.ayovo.netlib.re
-    path: /?ed=2560
-- name: '89,343|🇯🇵 JP_1|6.2MB/s|GPT⁺|YT-JP|NF|... #1'
+- name: '89,343|🇯🇵 JP_1|6.9MB/s|GPT⁺|YT-JP|NF|... #1'
   network: ws
   port: 443
   server: 162.159.45.232
@@ -2467,34 +2453,20 @@ proxies:
     headers:
       Host: l.ayovo.netlib.re
     path: /?ed=2560
-- name: '89,343|🇸🇬 SG_1|8.9MB/s|GPT|YT-SG|D+|G... #1'
+- alterId: 0
+  cipher: auto
+  name: '89,343|🇨🇳 TW_1|6.2MB/s|GPT⁺|YT-CN|NF|... #1'
   network: ws
-  port: 443
-  server: store.ubi.com
-  servername: kb.as129394.me
+  port: 12888
+  server: gtm1.ktmwan.net
   skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: b5dbd0aa-22f6-4a00-9bcc-3606fa8fc56d
+  tls: false
+  type: vmess
+  uuid: 1ec49aaf-2990-4c7b-a45c-d190e6ea5438
   ws-opts:
     headers:
-      Host: kb.as129394.me
-    path: /?ed=2560
-- name: '89,343|❓Other_1|6.9MB/s #1'
-  network: ws
-  port: 443
-  server: 8.223.63.150
-  servername: www.sgxaniu.qzz.io
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    headers:
-      Host: www.sgxaniu.qzz.io
-    path: /?ed=2560
+      Host: gtm1.ktmwan.net
+    path: /
 - alterId: 0
   cipher: auto
   name: '90,345|台湾2 #1'
@@ -4744,7 +4716,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '168,313|❗️请续费使用❗️ #1'
+  name: '167,313|❗️请续费使用❗️ #1'
   password: fake_node_password
   port: '1080'
   server: 1.1.1.1
@@ -4826,7 +4798,8 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: 227,383,392,395,397,398,400|11,12|日本3|@ripaojiedian
+- country: JP
+  name: 227,353,383,392,395,397,398,400|11,12|日本3|@ripaojiedian
   network: tcp
   password: 4843e94d205f3893f588255a591abe94
   port: 1933
@@ -4834,6 +4807,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - cipher: aes-128-gcm
   name: '227,265,397|🇯🇵 日本4|@ripaojiedian #1'
   password: b637f2e47b7827b308ebf399008075d2
@@ -4901,11 +4875,15 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: 227,262,383,392,395,398,400|11|🇭🇰 香港|@ripaojiedian
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 227,262,353,383,392,395,398,400|11|🇭🇰 香港|@ripaojiedian
   network: tcp
   port: 30807
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -5045,7 +5023,7 @@ proxies:
     path: '%2F%3FBIA_TELEGRAM(%40AZARBAYJAB1)TM(%40AZARBAYJAB1)TM(%40AZARBAYJAB1)TM(%40AZARBAYJAB1)TM(%40AZARBAYJAB1)TM(%40AZARBAYJAB1)'
 - alterId: 0
   cipher: auto
-  name: '227,371,372,395,400,544|【机场推荐：https://a0a.xyz/】2 #1'
+  name: '227,395,400,544|【机场推荐：https://a0a.xyz/】2 #1'
   network: ws
   port: '443'
   server: sv2.wy888.us
@@ -5059,7 +5037,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '227,395,400|🇨🇳_中国 #18'
+  name: '227,371,372,395,400|🇨🇳_中国 #18'
   network: tcp
   port: '47084'
   server: tunnel1.qqa678.com
@@ -7315,7 +7293,7 @@ proxies:
   tls: true
   type: vless
   uuid: d684cb56-e4b8-4453-8a7b-a1ad8c81935a
-- name: 262,383,395,400|13|TR_speednode_0027
+- name: 262,371,372,383,395,400|13|TR_speednode_0027
   port: 2053
   server: 92.60.70.36
   skip-cert-verify: false
@@ -7399,8 +7377,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  country: KR
-  name: 265,353|KR_30
+  name: 265|🇰🇷 韩国 - Gwacheon - SK Broadban...
   password: qwerREWQ@@
   port: 45833
   server: 221.139.79.20
@@ -7439,7 +7416,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: US
-  name: 265,353|US_35
+  name: 265,353|US_37
   password: 98f7aedd8adda6fe
   port: 45995
   server: 207.244.226.239
@@ -7471,7 +7448,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 265,278,350|_08
+  name: 265,278|🇺🇸89 |  14.8MB/s
   password: gYCYXfkUQEs2TaJQ
   port: 9038
   server: 194.116.173.21
@@ -7543,7 +7520,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: ' ZZ'
-  name: 265,350| ZZ_175
+  name: 265,350| ZZ_187
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.36
@@ -7551,7 +7528,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: ' ZZ'
-  name: 265,350| ZZ_199
+  name: 265,350| ZZ_208
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.25
@@ -7573,7 +7550,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: ZZ
-  name: 265,353|ZZ_43
+  name: 265,353|ZZ_48
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.132
@@ -7602,7 +7579,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: ' ZZ'
-  name: 265,350| ZZ_200
+  name: 265,350| ZZ_213
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.25
@@ -7617,7 +7594,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: ZZ
-  name: 265,353|ZZ_44
+  name: 265,353|ZZ_54
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.205
@@ -11346,7 +11323,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: ' US'
-  name: 278,279,350| US_153
+  name: 278,279,350| US_163
   password: shadowsocks
   port: 443
   server: 156.146.38.167
@@ -11391,7 +11368,7 @@ proxies:
   server: 51.77.53.200
   type: ss
 - cipher: aes-256-cfb
-  name: 278,350|_05
+  name: 278,350|_04
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 192.36.27.94
@@ -11421,7 +11398,7 @@ proxies:
   server: 172.232.171.192
   type: ss
 - cipher: aes-256-cfb
-  name: 278,350|_03
+  name: 278,350|_05
   password: dU3DSNS8wYPXzEKw
   port: 9029
   server: 5.188.181.201
@@ -11458,7 +11435,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
-  name: 278,350| LT_86
+  name: 278,350| LT_124
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.164
@@ -11507,7 +11484,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' NL'
-  name: 278,350| NL_134
+  name: 278,350| NL_142
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 193.29.139.179
@@ -11821,7 +11798,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
-  name: 278,350| LT_118
+  name: 278,350| LT_93
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.166
@@ -12017,7 +11994,7 @@ proxies:
   server: 38.121.43.71
   type: ss
 - cipher: aes-128-cfb
-  name: 278,279,292,350|_04
+  name: 278,279,292,350|_01
   password: shadowsocks
   port: 443
   server: 109.201.152.181
@@ -12471,7 +12448,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: ' GB'
-  name: 278,279,350| GB_54
+  name: 278,279,350| GB_53
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -12714,7 +12691,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: ' US'
-  name: 278,279,350| US_157
+  name: 278,279,350| US_162
   password: shadowsocks
   port: 443
   server: 156.146.38.170
@@ -12758,14 +12735,14 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: CA
-  name: 278,350|CA_35
+  name: 278,350|CA_37
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: rc4-md5
   country: SG
-  name: 278,353|SG_33
+  name: 278,353|SG_34
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -12971,7 +12948,7 @@ proxies:
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-cfb
-  name: 278|🌀50-ES |  1.5MB/s
+  name: 278,350|_06
   password: KnJGad3FqTvjqbaX
   port: 9014
   server: 5.188.181.201
@@ -12996,7 +12973,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' CZ'
-  name: 278,350| CZ_38
+  name: 278,350| CZ_39
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 195.181.160.6
@@ -13156,13 +13133,14 @@ proxies:
   server: 216.250.97.118
   type: ss
 - cipher: chacha20-ietf
-  name: 278|🇺🇸119 |  8.9MB/s
+  country: ' HK'
+  name: 278,350| HK_66
   password: asd123456
   port: 8388
   server: 103.36.91.23
   type: ss
 - cipher: aes-256-cfb
-  name: 278,350|_10
+  name: 278,350|_12
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 192.71.249.78
@@ -25926,39 +25904,57 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 350|_01
+  name: 350|_02
+  password: KBGjZYcy4SyRShmA
+  port: 9044
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  name: 350|_03
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 350|_02
-  password: GA9KzeEgvfxNrgmM
-  port: 9019
-  server: 217.30.10.18
+  name: 350|_07
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
+  server: 5.188.181.201
   type: ss
 - cipher: aes-256-cfb
-  name: 350|_06
+  name: 350|_08
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
+  server: 5.188.181.201
+  type: ss
+- cipher: aes-256-cfb
+  name: 350|_09
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 171.22.254.17
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 350|_07
+  name: 350|_10
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
 - cipher: aes-256-cfb
-  name: 350|_09
-  password: ueLXVkvh4hckhErQ
-  port: 9060
+  name: 350|_11
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 5.188.181.201
+  type: ss
+- cipher: aes-256-cfb
+  name: 350|_13
+  password: GA9KzeEgvfxNrgmM
+  port: 9019
   server: 217.30.10.18
   type: ss
 - alpn:
   - h3%2Ch2%2Chttp%2F1.1
-  name: 350|_11
+  name: 350|_14
   password: dreDeMpIQpnv
   port: 2053
   server: 104.21.44.185
@@ -25968,17 +25964,7 @@ proxies:
   udp: true
 - alpn:
   - http%2F1.1
-  name: 350|_12
-  password: psycho
-  port: 443
-  server: 104.21.80.1
-  skip-cert-verify: true
-  sni: PSYchO.SueX12.Ir
-  type: trojan
-  udp: true
-- alpn:
-  - http%2F1.1
-  name: 350|_13
+  name: 350|_15
   password: psycho
   port: 443
   server: 104.21.112.1
@@ -25988,7 +25974,7 @@ proxies:
   udp: true
 - alpn:
   - http%2F1.1
-  name: 350|_14
+  name: 350|_16
   password: 2fec7227-9abe-46f2-af18-78302b836c45
   port: 443
   server: 104.21.30.167
@@ -25996,41 +25982,27 @@ proxies:
   sni: 3y.2032.pp.ua
   type: trojan
   udp: true
-- name: 350|_15
+- alpn:
+  - http%2F1.1
+  name: 350|_17
+  password: psycho
+  port: 443
+  server: 104.21.80.1
+  skip-cert-verify: true
+  sni: PSYchO.SueX12.Ir
+  type: trojan
+  udp: true
+- name: 350|_18
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
   server: ca-full.privateip.net
   type: trojan
-- cipher: aes-256-gcm
-  country: ' AU'
-  name: 350| AU_16
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 15199
-  server: ss.021.node-for-bigairport.win
-  type: ss
 - alterId: 0
   cipher: auto
   country: ' BE'
   h2-opts: {}
   http-opts: {}
-  name: 350| BE_17
-  network: ws
-  port: 443
-  server: 57.129.24.125
-  servername: aveiror.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: aveiror.com
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: ' BE'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| BE_18
+  name: 350| BE_19
   network: ws
   port: 443
   server: 57.128.189.253
@@ -26042,43 +26014,12 @@ proxies:
   ws-headers:
     HOST: kapelleng.com
   ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: ' BE'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| BE_19
-  network: ws
-  port: 443
-  server: 57.129.24.124
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: ' BE'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| BE_20
-  network: ws
-  port: 443
-  server: 57.128.189.240
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-path: /linkvws
 - alterId: 1
   cipher: auto
   country: ' BE'
   h2-opts: {}
   http-opts: {}
-  name: 350| BE_21
+  name: 350| BE_20
   network: ws
   port: 443
   server: 57.129.25.20
@@ -26095,7 +26036,7 @@ proxies:
   country: ' BE'
   h2-opts: {}
   http-opts: {}
-  name: 350| BE_22
+  name: 350| BE_21
   network: ws
   port: 443
   server: 57.129.25.23
@@ -26112,92 +26053,24 @@ proxies:
   country: ' BE'
   h2-opts: {}
   http-opts: {}
-  name: 350| BE_23
+  name: 350| BE_22
   network: ws
   port: 443
-  server: 57.129.64.238
-  servername: kapelleng.com
+  server: 57.129.64.157
+  servername: lammaland.org
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-headers:
-    HOST: kapelleng.com
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: ' BE'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| BE_24
-  network: ws
-  port: 443
-  server: 57.129.25.22
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: ' BE'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| BE_25
-  network: ws
-  port: 443
-  server: 57.129.28.212
-  servername: fapeng.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: fapeng.org
+    HOST: lammaland.org
   ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: ' BE'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| BE_26
-  network: ws
-  port: 443
-  server: 57.129.28.213
-  servername: fapeng.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: fapeng.org
-  ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: ' BE'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| BE_27
-  network: ws
-  port: 443
-  server: 57.129.25.25
-  servername: f.khilei.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: f.khilei.com
-  ws-path: /linkvws
 - alterId: 1
   cipher: auto
   country: ' BE'
   h2-opts: {}
   http-opts: {}
-  name: 350| BE_28
+  name: 350| BE_23
   network: ws
   port: 443
   server: 57.129.24.131
@@ -26214,41 +26087,7 @@ proxies:
   country: ' BE'
   h2-opts: {}
   http-opts: {}
-  name: 350| BE_29
-  network: ws
-  port: 443
-  server: 57.129.64.157
-  servername: lammaland.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: lammaland.org
-  ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: ' BE'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| BE_30
-  network: ws
-  port: 443
-  server: 57.129.28.69
-  servername: baradiha.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: baradiha.com
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: ' BE'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| BE_31
+  name: 350| BE_24
   network: ws
   port: 443
   server: 57.129.59.199
@@ -26265,24 +26104,7 @@ proxies:
   country: ' BE'
   h2-opts: {}
   http-opts: {}
-  name: 350| BE_32
-  network: ws
-  port: 443
-  server: 57.129.64.199
-  servername: pelang.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: pelang.org
-  ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: ' BE'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| BE_33
+  name: 350| BE_25
   network: ws
   port: 443
   server: 57.129.24.130
@@ -26299,7 +26121,109 @@ proxies:
   country: ' BE'
   h2-opts: {}
   http-opts: {}
-  name: 350| BE_34
+  name: 350| BE_26
+  network: ws
+  port: 443
+  server: 57.129.25.22
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: ' BE'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| BE_27
+  network: ws
+  port: 443
+  server: 57.129.28.212
+  servername: fapeng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: fapeng.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: ' BE'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| BE_28
+  network: ws
+  port: 443
+  server: 57.129.24.124
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: ' BE'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| BE_29
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  servername: aveiror.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: aveiror.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: ' BE'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| BE_30
+  network: ws
+  port: 443
+  server: 57.129.64.238
+  servername: kapelleng.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: kapelleng.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: ' BE'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| BE_31
+  network: ws
+  port: 443
+  server: 57.129.25.25
+  servername: f.khilei.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: f.khilei.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: ' BE'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| BE_32
   network: ws
   port: 443
   server: 57.129.28.64
@@ -26311,8 +26235,73 @@ proxies:
   ws-headers:
     HOST: serkat.org
   ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: ' BE'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| BE_33
+  network: ws
+  port: 443
+  server: 57.129.28.69
+  servername: baradiha.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: baradiha.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: ' BE'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| BE_34
+  network: ws
+  port: 443
+  server: 57.128.189.240
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: ' BE'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| BE_35
+  network: ws
+  port: 443
+  server: 57.129.64.199
+  servername: pelang.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: pelang.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: ' BE'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| BE_36
+  network: ws
+  port: 443
+  server: 57.129.28.213
+  servername: fapeng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: fapeng.org
+  ws-path: linkvws
 - country: ' CN'
-  name: 350| CN_36
+  name: 350| CN_38
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
@@ -26324,7 +26313,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_39
+  name: 350| DE_41
   network: ws
   port: 443
   server: 141.95.126.134
@@ -26341,7 +26330,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_40
+  name: 350| DE_42
   network: none
   port: 18355
   server: 92.246.87.170
@@ -26354,7 +26343,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_41
+  name: 350| DE_43
   network: ws
   port: 443
   server: 141.94.155.224
@@ -26377,14 +26366,14 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: ' ES'
-  name: 350| ES_43
+  name: 350| ES_45
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 134.255.210.49
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' ES'
-  name: 350| ES_44
+  name: 350| ES_46
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 37.143.130.203
@@ -26394,7 +26383,7 @@ proxies:
   country: ' FR'
   h2-opts: {}
   http-opts: {}
-  name: 350| FR_45
+  name: 350| FR_47
   network: ws
   port: 443
   server: 91.134.8.101
@@ -26404,23 +26393,15 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
 - country: FR
-  name: 350|FR_46
+  name: 350|FR_48
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: uk-full.privateip.net
+  server: 198.244.190.189
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_47
-  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
-  port: 443
-  server: fr-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: FR
-  name: 350|FR_48
+  name: 350|FR_49
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -26428,47 +26409,68 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_49
+  name: 350|FR_50
+  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  port: 443
+  server: fr-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: FR
+  name: 350|FR_51
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: 198.244.190.189
+  server: uk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: ' GB'
-  name: 350| GB_50
+  name: 350| GB_52
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.253.227
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' GB'
-  name: 350| GB_51
+  name: 350| GB_54
   password: f8f7aCzcPKbsF8p3
   port: 990
-  server: 185.126.237.38
+  server: 185.47.255.22
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' GB'
-  name: 350| GB_52
+  name: 350| GB_55
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.179
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' GB'
-  name: 350| GB_53
+  name: 350| GB_56
   password: f8f7aCzcPKbsF8p3
   port: 990
-  server: 185.47.255.22
+  server: 185.126.237.38
   type: ss
+- alterId: 0
+  cipher: auto
+  country: ' GB'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| GB_57
+  network: ws
+  port: 12883
+  server: gtm1.ktmwan.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1ec49aaf-2990-4c7b-a45c-d190e6ea5438
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: GB
   h2-opts: {}
   http-opts: {}
-  name: 350,353,392,400,544|【机场推荐：https://a0a.xyz/】18
+  name: 350,353,371,372,392,400,544|【机场推荐：https://a0a.xyz/】18
   network: tcp
   port: '180'
   server: 82.198.246.97
@@ -26479,7 +26481,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   ws-path: /
 - country: ' GB'
-  name: 350| GB_56
+  name: 350| GB_59
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -26487,7 +26489,7 @@ proxies:
   type: trojan
   udp: true
 - country: ' GB'
-  name: 350| GB_57
+  name: 350| GB_60
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -26495,7 +26497,7 @@ proxies:
   type: trojan
   udp: true
 - country: GB
-  name: 350|GB_58
+  name: 350|GB_61
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
@@ -26503,7 +26505,7 @@ proxies:
   type: trojan
   udp: true
 - country: GI
-  name: 350|GI_59
+  name: 350|GI_62
   password: 4d5cc30d-df0f-4d9a-ab3c-6a70ab0ce361
   port: 443
   server: tr-full.privateip.net
@@ -26512,38 +26514,25 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: ' HK'
-  name: 350| HK_60
+  name: 350| HK_63
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
 - cipher: aes-256-cfb
   country: ' HK'
-  name: 350| HK_61
+  name: 350| HK_64
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
 - cipher: aes-256-gcm
   country: ' HK'
-  name: 350| HK_62
+  name: 350| HK_65
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 10079
-  server: ss.030.node-for-bigairport.win
+  port: 15099
+  server: ss.026.node-for-bigairport.win
   type: ss
-- alterId: 2
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| HK_63
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-  ws-path: /
 - alterId: 0
   cipher: auto
   country: ' HK'
@@ -26559,208 +26548,223 @@ proxies:
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
+- alterId: 2
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| HK_68
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   country: ' HU'
-  name: 350| HU_65
+  name: 350| HU_69
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 109.61.39.28
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' ID'
-  name: 350| ID_66
+  name: 350| ID_70
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
   type: ss
+- alterId: 0
+  cipher: auto
+  country: ' IL'
+  h2-opts: {}
+  http-opts: {}
+  name: 350,400|🇮🇱 IL_66
+  network: none
+  port: 35760
+  server: 149.88.95.94
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 17e96792-d8c3-4741-9c34-e5d1c11d754f
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' IL'
+  h2-opts: {}
+  http-opts: {}
+  name: 350,400|🇮🇱 IL_68
+  network: none
+  port: 40741
+  server: 149.88.95.217
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1b8a751b-4909-4fec-f019-907d92e6c47f
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' IL'
+  h2-opts: {}
+  http-opts: {}
+  name: 350,400|🇮🇱 IL_65
+  network: none
+  port: 18937
+  server: 149.88.95.217
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ebaa1ae1-fa4d-40d8-958f-d4524d551218
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' IL'
+  h2-opts: {}
+  http-opts: {}
+  name: 350,400|🇮🇱 IL_64
+  network: none
+  port: 35760
+  server: 149.88.95.217
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 17e96792-d8c3-4741-9c34-e5d1c11d754f
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' IL'
+  h2-opts: {}
+  http-opts: {}
+  name: 350,400|🇮🇱 IL_67
+  network: none
+  port: 40741
+  server: 149.88.95.94
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1b8a751b-4909-4fec-f019-907d92e6c47f
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   country: ' IN'
-  name: 350| IN_67
+  name: 350| IN_76
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 134.209.147.198
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' IR'
-  name: 350| IR_68
+  name: 350| IR_77
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 151.242.251.142
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' IR'
+  name: 350| IR_78
   password: o5osZg269v5zHpYjr1xY9s
   port: 8080
   server: 151.242.251.137
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' IR'
-  name: 350| IR_69
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 151.242.251.147
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' IR'
-  name: 350| IR_70
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 151.242.251.153
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: IR
-  name: 350,353|Relay_IR-NL_11
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 151.242.251.131
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' IR'
-  name: 350| IR_72
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 151.242.251.144
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' IR'
-  name: 350| IR_73
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 151.242.251.133
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' IR'
-  name: 350| IR_74
+  name: 350| IR_79
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 151.242.251.152
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' IR'
-  name: 350| IR_75
+  name: 350| IR_80
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 151.242.251.142
+  server: 151.242.251.133
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
+  country: ' IR'
+  name: 350| IR_81
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.147
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' IR'
+  name: 350| IR_82
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.153
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: IR
+  name: 350,353|Relay_IR-NL_12
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' IR'
+  name: 350| IR_84
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 151.242.251.144
+  type: ss
+- cipher: aes-256-gcm
   country: ' JP'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| JP_76
-  network: ws
-  port: 443
-  server: seoul03.zgjok.com
-  servername: seoul03.zgjok.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
-  ws-headers:
-    HOST: seoul03.zgjok.com
-  ws-path: /
-- cipher: aes-256-cfb
-  country: ' KR'
-  name: 350| KR_77
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
+  name: 350| JP_85
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 10079
+  server: ss.027.node-for-bigairport.win
   type: ss
 - cipher: aes-256-cfb
   country: ' KR'
-  name: 350| KR_78
+  name: 350| KR_86
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_79
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.177
+- cipher: aes-256-cfb
+  country: ' KR'
+  name: 350| KR_87
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
-  name: 350| LT_80
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_81
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.183
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_82
+  name: 350| LT_88
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: beesyar.org
+  server: 45.87.175.164
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
-  name: 350| LT_83
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+  name: 350| LT_89
+  password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: beesyar.org
+  server: 45.87.175.174
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
-  name: 350| LT_84
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: beesyar.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_85
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.192
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_87
-  password: QCXDxuDlTTMD7jtgHUjIoj
+  name: 350| LT_90
+  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.178
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
-  name: 350| LT_88
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.188
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_89
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_90
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
   name: 350| LT_91
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_92
-  password: QCXDxuDlTTMD7jtgHUjIoj
+  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.192
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
-  name: 350| LT_93
+  name: 350| LT_92
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.87.175.65
@@ -26770,291 +26774,368 @@ proxies:
   name: 350| LT_94
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
-  server: 45.87.175.171
+  server: 45.87.175.178
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
   name: 350| LT_95
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: 45.87.175.181
+  server: 45.87.175.199
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
   name: 350| LT_96
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
-  server: 45.87.175.154
+  server: 45.87.175.199
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
   name: 350| LT_97
-  password: cvII85TrW6n0OGyfpHVS1u
+  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: 45.87.175.187
+  server: 45.87.175.154
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
   name: 350| LT_98
-  password: cvII85TrW6n0OGyfpHVS1u
+  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.188
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
   name: 350| LT_99
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
-  server: 45.87.175.197
+  server: 45.87.175.181
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
   name: 350| LT_100
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: 45.87.175.155
+  server: 45.87.175.166
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
   name: 350| LT_101
-  password: cvII85TrW6n0OGyfpHVS1u
+  password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
-  server: 45.87.175.192
+  server: 45.87.175.178
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
   name: 350| LT_102
-  password: QCXDxuDlTTMD7jtgHUjIoj
+  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.181
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
   name: 350| LT_103
-  password: 4a2rfixophdjffa8KVA4Aa
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.164
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
   name: 350| LT_104
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.174
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_105
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.193
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_106
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.171
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
-  name: 350| LT_107
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 443
-  server: 45.87.175.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_108
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.164
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_109
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_110
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_111
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_112
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_113
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.188
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_114
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_115
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.70
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_116
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_117
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_119
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.192
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_120
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.69
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_121
+  name: 350| LT_105
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
-  server: 45.87.175.199
+  server: beesyar.org
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
-  name: 350| LT_122
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.35
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_123
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.28
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_124
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.92
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' LT'
-  name: 350| LT_125
+  name: 350| LT_106
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.87.175.58
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
-  name: 350| LT_126
+  name: 350| LT_107
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.187
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_108
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.87.175.199
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_109
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 45.87.175.197
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_110
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 45.87.175.155
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_111
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.192
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_112
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.188
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_113
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.171
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' LT'
-  name: 350| LT_127
-  password: 4a2rfixophdjffa8KVA4Aa
+  name: 350| LT_114
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.193
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_115
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.154
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_116
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 443
+  server: 45.87.175.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_117
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_118
+  password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.87.175.178
   type: ss
 - cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_119
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.171
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_120
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.177
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_121
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_122
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.199
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_123
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.188
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_125
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.192
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_126
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.70
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_127
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.87.175.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_128
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_129
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.87.175.154
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_130
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: beesyar.org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_131
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.87.175.192
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_132
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: beesyar.org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_133
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.69
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_134
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.35
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_135
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: beesyar.org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_136
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.28
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_137
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.183
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' LT'
+  name: 350| LT_138
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.92
+  type: ss
+- cipher: chacha20-ietf-poly1305
   country: ' LV'
-  name: 350| LV_128
+  name: 350| LV_139
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 46.183.217.204
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' MD'
-  name: 350| MD_129
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 188.214.157.58
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' MD'
-  name: 350| MD_130
+  name: 350| MD_140
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 185.93.173.60
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: ' NL'
-  name: 350| NL_131
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.141
+  country: ' MD'
+  name: 350| MD_141
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 188.214.157.58
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' NL'
-  name: 350| NL_132
+  name: 350| NL_143
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 193.29.139.189
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' NL'
-  name: 350| NL_133
+  name: 350| NL_144
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 193.29.139.189
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' NL'
-  name: 350| NL_135
+  name: 350| NL_145
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 193.29.139.227
   type: ss
 - cipher: chacha20-ietf-poly1305
+  country: ' NL'
+  name: 350| NL_146
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.141
+  type: ss
+- cipher: chacha20-ietf-poly1305
   country: NL
-  name: 350|NL_136
+  name: 350|NL_147
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 193.29.139.202
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: NL
-  name: 350|NL_137
+  name: 350|NL_148
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 193.29.139.251
@@ -27064,7 +27145,7 @@ proxies:
   country: ' NO'
   h2-opts: {}
   http-opts: {}
-  name: 350| NO_138
+  name: 350| NO_149
   network: ws
   port: 443
   server: 146.59.55.50
@@ -27078,21 +27159,21 @@ proxies:
   ws-path: /linkvws
 - cipher: chacha20-ietf-poly1305
   country: ' RU'
-  name: 350| RU_139
+  name: 350| RU_150
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' SE'
-  name: 350| SE_140
+  name: 350| SE_151
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 45.154.206.192
   type: ss
 - cipher: aes-128-cfb
   country: ' SE'
-  name: 350| SE_141
+  name: 350| SE_152
   obfs: http_post
   password: $$Turb0VPN$$
   port: 443
@@ -27104,7 +27185,7 @@ proxies:
   country: ' SG'
   h2-opts: {}
   http-opts: {}
-  name: 350| SG_142
+  name: 350| SG_153
   network: none
   port: 43425
   server: 8.210.248.133
@@ -27129,113 +27210,103 @@ proxies:
   ws-path: /
 - cipher: chacha20-ietf-poly1305
   country: ' UA'
-  name: 350| UA_144
+  name: 350| UA_155
   password: 9tqhMdIrTkgQ46PvhyAtMH
   port: 443
   server: switcher-nick-croquet.freesocks.work
   type: ss
 - country: UA
-  name: 350|UA_145
+  name: 350|UA_156
   password: 8d16a256-42d7-4431-8039-da1eb06cafbc
   port: 443
   server: it-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 350| US_146
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 38.165.233.18
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 350| US_147
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.165.231.25
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 350| US_148
-  password: HfAiyrdFbKJuKIQkGjvJrDFefmH8YDSC
-  port: 443
-  server: 45.83.131.43
-  type: ss
 - cipher: aes-256-cfb
   country: ' US'
-  name: 350| US_149
+  name: 350| US_157
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
-- cipher: aes-256-gcm
-  country: ' US'
-  name: 350| US_150
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 36885
-  server: ss.031.node-for-bigairport.win
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 350| US_151
-  password: e2y6gJdTZqyXNFb5qrVta0
-  port: 50690
-  server: 64.227.144.190
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 350| US_152
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 104.192.226.106
-  type: ss
 - cipher: aes-256-cfb
   country: ' US'
-  name: 350| US_154
+  name: 350| US_158
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 38.54.57.90
+  server: 154.90.62.168
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
-  name: 350| US_155
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 193.135.174.135
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 350| US_156
+  name: 350| US_159
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 38.54.45.129
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
-  name: 350| US_158
+  name: 350| US_160
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 154.205.159.100
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_159
-  network: ws
+  name: 350| US_161
+  password: e2y6gJdTZqyXNFb5qrVta0
+  port: 50690
+  server: 64.227.144.190
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 350| US_164
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 38.165.233.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 350| US_165
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 104.192.226.106
+  type: ss
+- cipher: aes-256-gcm
+  country: ' US'
+  name: 350| US_166
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 19888
+  server: ss.008.node-for-bigairport.win
+  type: ss
+- cipher: aes-256-cfb
+  country: ' US'
+  name: 350| US_167
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.165.233.93
+  type: ss
+- cipher: aes-256-cfb
+  country: ' US'
+  name: 350| US_168
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 350| US_169
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 38.165.231.25
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 350| US_170
+  password: HfAiyrdFbKJuKIQkGjvJrDFefmH8YDSC
   port: 443
-  server: 15.235.83.227
-  servername: mankadmu.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: mankadmu.com
-  ws-path: /linkvws
+  server: 45.83.131.43
+  type: ss
 - alterId: 0
   cipher: auto
   country: ' US'
@@ -27256,7 +27327,7 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350| US_161
+  name: 350| US_172
   network: none
   port: 7100
   server: 206.119.191.9
@@ -27269,18 +27340,35 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350| US_162
+  name: 350| US_173
   network: ws
   port: 443
-  server: 148.113.176.192
-  servername: fapeng.org
+  server: 15.235.83.227
+  servername: mankadmu.com
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-headers:
-    HOST: fapeng.org
-  ws-path: linkvws
+    HOST: mankadmu.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| US_174
+  network: ws
+  port: 443
+  server: n1753598452.wpg27.xyz
+  servername: n1753598452.wpg27.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
+  ws-headers:
+    HOST: n1753598452.wpg27.xyz
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: ' US'
@@ -27301,7 +27389,24 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350| US_164
+  name: 350| US_176
+  network: ws
+  port: 443
+  server: 15.235.50.172
+  servername: baradiha.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: baradiha.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| US_177
   network: ws
   port: 443
   server: 15.235.83.228
@@ -27333,41 +27438,7 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350| US_166
-  network: ws
-  port: 443
-  server: cf.090227.xyz
-  servername: sgal.dagrate.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
-  ws-headers:
-    HOST: sgal.dagrate.eu.org
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_167
-  network: ws
-  port: 443
-  server: 15.235.50.172
-  servername: baradiha.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: baradiha.com
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_168
+  name: 350| US_179
   network: none
   port: 27502
   server: 216.238.87.47
@@ -27375,16 +27446,33 @@ proxies:
   type: vmess
   uuid: b8155ce4-7e08-4c40-800f-8671312b7124
   ws-path: /
-- country: ' US'
-  name: 350| US_169
-  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| US_180
+  network: ws
   port: 443
-  server: hinet.mjt000.com
+  server: 148.113.176.192
+  servername: fapeng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: fapeng.org
+  ws-path: linkvws
+- country: ' US'
+  name: 350| US_181
+  password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
+  port: 443
+  server: usla.mjt000.com
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: ' US'
-  name: 350| US_170
+  name: 350| US_182
   password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
   port: 443
   server: 154.17.24.29
@@ -27392,221 +27480,222 @@ proxies:
   type: trojan
   udp: true
 - country: ' US'
-  name: 350| US_171
-  password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
+  name: 350| US_183
+  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
-  server: usla.mjt000.com
+  server: hinet.mjt000.com
   skip-cert-verify: true
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: US
-  name: 350|US_172
+  name: 350|US_184
+  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+  port: 52952
+  server: exchange.gameaurela.click
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: US
+  name: 350|US_185
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.66
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' ZA'
-  name: 350| ZA_173
+  name: 350| ZA_186
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 156.38.168.58
   type: ss
 - cipher: aes-256-cfb
   country: ' ZZ'
-  name: 350| ZZ_174
+  name: 350| ZZ_188
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.19
   type: ss
 - cipher: aes-256-cfb
   country: ' ZZ'
-  name: 350| ZZ_176
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.22
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 350| ZZ_177
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.31
-  type: ss
-- cipher: aes-256-cfb
-  country: ZZ
-  name: 350,353|ZZ_54
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.28
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 350| ZZ_179
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.18
-  type: ss
-- cipher: aes-256-cfb
-  country: ZZ
-  name: 350,353|ZZ_47
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.35
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 350| ZZ_181
+  name: 350| ZZ_189
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.20
   type: ss
 - cipher: aes-256-cfb
   country: ' ZZ'
-  name: 350| ZZ_182
+  name: 350| ZZ_190
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.37
   type: ss
 - cipher: aes-256-cfb
   country: ZZ
-  name: 350,353|ZZ_57
+  name: 350,353|ZZ_60
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.24
   type: ss
 - cipher: aes-256-cfb
   country: ' ZZ'
-  name: 350| ZZ_184
+  name: 350| ZZ_192
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.29
   type: ss
 - cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 350| ZZ_185
+  country: PT
+  name: 350,353|PT_33
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.112
   type: ss
 - cipher: aes-256-cfb
   country: ' ZZ'
-  name: 350| ZZ_186
+  name: 350| ZZ_194
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.33
   type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 350| ZZ_187
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.30
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 350| ZZ_188
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.19
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 350| ZZ_189
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.21
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 350| ZZ_190
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.38
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 350| ZZ_191
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.21
-  type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' ZZ'
-  name: 350| ZZ_192
+  name: 350| ZZ_195
   password: VpKABcOpNNA0l5G2AVOmw8
   port: 62685
   server: 213.109.147.242
   type: ss
 - cipher: aes-256-cfb
   country: ' ZZ'
-  name: 350| ZZ_193
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.26
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 350| ZZ_194
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.32
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' ZZ'
-  name: 350| ZZ_195
-  password: uo7EbtqIwgZXXHmMv5LbLcOxptyPlNkh
-  port: 443
-  server: 178.23.190.238
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
   name: 350| ZZ_196
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.24
+  server: 103.186.154.30
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
   country: ' ZZ'
   name: 350| ZZ_197
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 103.163.218.2
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.19
   type: ss
 - cipher: aes-256-cfb
   country: ' ZZ'
   name: 350| ZZ_198
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.133
+  server: 103.186.154.22
+  type: ss
+- cipher: aes-256-cfb
+  country: ZZ
+  name: 350,353|ZZ_52
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.35
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 350| ZZ_200
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.38
   type: ss
 - cipher: aes-256-cfb
   country: ' ZZ'
   name: 350| ZZ_201
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
+  server: 103.186.155.21
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 350| ZZ_202
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.26
+  type: ss
+- cipher: aes-256-cfb
+  country: ZZ
+  name: 350,353|ZZ_63
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.28
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 350| ZZ_204
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.32
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 350| ZZ_205
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.24
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 350| ZZ_206
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.133
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' ZZ'
+  name: 350| ZZ_207
+  password: uo7EbtqIwgZXXHmMv5LbLcOxptyPlNkh
+  port: 443
+  server: 178.23.190.238
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 350| ZZ_209
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.31
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 350| ZZ_210
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.23
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 350| ZZ_211
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
   server: 103.186.154.27
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' ZZ'
+  name: 350| ZZ_212
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 103.163.218.2
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 350| ZZ_214
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.21
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 350| ZZ_215
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.18
   type: ss
 - alterId: 0
   cipher: auto
   country: ' ZZ'
   h2-opts: {}
   http-opts: {}
-  name: 350| ZZ_202
-  network: none
-  port: 42507
-  server: 23.138.148.47
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4db07b13-6524-49d2-b432-1f312c0e9c7c
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' ZZ'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| ZZ_203
+  name: 350| ZZ_216
   network: ws
   port: 443
   server: 134.195.198.147
@@ -27648,17 +27737,17 @@ proxies:
   uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
 - cipher: chacha20-ietf
   country: HK
-  name: 353|HK_05
+  name: 353|Relay_HK-HK_05
   password: asd123456
   port: 8388
-  server: 103.149.182.158
+  server: 103.149.182.105
   type: ss
 - alterId: 0
   cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 353|HK_06
+  name: 353|HK_07
   network: none
   port: 52190
   server: 47.242.192.233
@@ -27670,7 +27759,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_HK-HK_07
+  name: 353|Relay_HK-HK_08
   network: ws
   port: 443
   server: sv2.wy888.us
@@ -27693,10 +27782,28 @@ proxies:
   type: trojan
   udp: true
 - country: JP
-  name: 353,400|日本_011518021
+  name: 353,400|日本_011518017+L0
   password: 61d8077bfb174e171b8283f155a555ad
-  port: 544
-  server: 160.16.124.55
+  port: 4006
+  server: 153.121.39.240
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- country: JP
+  name: 353,400|日本_011518004+L0
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 1933
+  server: 160.16.117.182
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- country: JP
+  name: 353,400|日本_011518002
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 1933
+  server: 153.121.65.107
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -27720,10 +27827,28 @@ proxies:
   type: trojan
   udp: true
 - country: JP
+  name: 353,400|日本_011518012
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 3901
+  server: 153.121.65.107
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- country: JP
   name: 353,400|日本_011518014+L0
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3901
   server: 153.121.45.139
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- country: JP
+  name: 353,400|日本_011518021
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 544
+  server: 160.16.124.55
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -27738,33 +27863,6 @@ proxies:
   type: trojan
   udp: true
 - country: JP
-  name: 353,400|日本_011518012
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 3901
-  server: 153.121.65.107
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: JP
-  name: 353,400|日本_011518020+L0
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 1933
-  server: 160.16.130.66
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: JP
-  name: 353,400|日本_011518017+L0
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 4006
-  server: 153.121.39.240
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: JP
   name: 353,400|日本_011518027
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3076
@@ -27773,18 +27871,9 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- country: JP
-  name: 353,400|日本_011518006
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 1933
-  server: 153.121.38.213
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
   country: KR
-  name: 353|KR_29
+  name: 353|KR_31
   password: qwerREWQ@@
   port: 13979
   server: 221.139.79.57
@@ -27794,7 +27883,7 @@ proxies:
   country: KR
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_KR-KR_31
+  name: 353|Relay_KR-KR_32
   network: ws
   port: 2087
   server: lv4.789900.xyz
@@ -27808,15 +27897,8 @@ proxies:
       HOST: lv4.789900.xyz
     path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
 - cipher: chacha20-ietf-poly1305
-  country: NL
-  name: 353|NL_32
-  password: gKYygTcRYhc3skc2x6tZ073lYz0DnieX
-  port: 443
-  server: 5.181.21.246
-  type: ss
-- cipher: chacha20-ietf-poly1305
   country: US
-  name: 353|US_34
+  name: 353|US_35
   password: bddd79c7386646d6
   port: 11201
   server: 163.171.181.29
@@ -27830,7 +27912,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: US
-  name: 353|Relay_US-US_37
+  name: 353|Relay_US-US_38
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -27842,7 +27924,7 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 353|US_38
+  name: 353|US_40
   network: tcp
   port: 12056
   server: 47.253.197.26
@@ -27851,45 +27933,52 @@ proxies:
   uuid: dd7be7f1-38ff-45e6-f1e5-b20c2190f527
 - cipher: aes-256-cfb
   country: ZZ
-  name: 353|ZZ_40
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.78
-  type: ss
-- cipher: aes-256-cfb
-  country: ZZ
   name: 353|ZZ_41
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.55
+  server: 103.186.155.29
   type: ss
 - cipher: aes-256-cfb
   country: ZZ
   name: 353|ZZ_42
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.70
+  server: 103.186.155.52
+  type: ss
+- cipher: aes-256-cfb
+  country: ZZ
+  name: 353|ZZ_43
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.47
+  type: ss
+- cipher: aes-256-cfb
+  country: ZZ
+  name: 353|ZZ_44
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.123
   type: ss
 - cipher: aes-256-cfb
   country: ZZ
   name: 353|ZZ_45
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.142
+  server: 103.186.155.78
   type: ss
 - cipher: aes-256-cfb
   country: ZZ
   name: 353|ZZ_46
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.61
+  server: 103.186.155.55
   type: ss
 - cipher: aes-256-cfb
   country: ZZ
-  name: 353|ZZ_48
+  name: 353|ZZ_47
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.65
+  server: 103.186.155.70
   type: ss
 - cipher: aes-256-cfb
   country: ZZ
@@ -27903,18 +27992,11 @@ proxies:
   name: 353|ZZ_50
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.47
+  server: 103.186.155.221
   type: ss
 - cipher: aes-256-cfb
   country: ZZ
   name: 353|ZZ_51
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.5
-  type: ss
-- cipher: aes-256-cfb
-  country: ZZ
-  name: 353|ZZ_52
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.128
@@ -27924,74 +28006,74 @@ proxies:
   name: 353|ZZ_53
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.29
+  server: 103.186.155.65
   type: ss
 - cipher: aes-256-cfb
   country: ZZ
   name: 353|ZZ_55
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.58
+  server: 103.186.155.101
   type: ss
 - cipher: aes-256-cfb
   country: ZZ
   name: 353|ZZ_56
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.219
+  server: 103.186.155.142
   type: ss
 - cipher: aes-256-cfb
   country: ZZ
-  name: 353|ZZ_58
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.176
-  type: ss
-- cipher: aes-256-cfb
-  country: ZZ
-  name: 353|ZZ_59
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.143
-  type: ss
-- cipher: aes-256-cfb
-  country: ZZ
-  name: 353|ZZ_60
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.221
-  type: ss
-- cipher: aes-256-cfb
-  country: ZZ
-  name: 353|ZZ_61
+  name: 353|ZZ_57
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.195
   type: ss
 - cipher: aes-256-cfb
   country: ZZ
-  name: 353|ZZ_62
+  name: 353|ZZ_58
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.52
+  server: 103.186.154.219
   type: ss
 - cipher: aes-256-cfb
   country: ZZ
-  name: 353|ZZ_63
+  name: 353|ZZ_59
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.101
+  server: 103.186.154.176
+  type: ss
+- cipher: aes-256-cfb
+  country: ZZ
+  name: 353|ZZ_61
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.143
+  type: ss
+- cipher: aes-256-cfb
+  country: ZZ
+  name: 353|ZZ_62
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.58
   type: ss
 - cipher: aes-256-cfb
   country: ZZ
   name: 353|ZZ_64
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.123
+  server: 103.186.154.61
   type: ss
 - cipher: aes-256-cfb
   country: ZZ
   name: 353|ZZ_65
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.5
+  type: ss
+- cipher: aes-256-cfb
+  country: ZZ
+  name: 353|ZZ_66
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.119
@@ -46696,6 +46778,12 @@ proxies:
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
+- name: 400|日本_011518006
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 1933
+  server: 153.121.38.213
+  sni: www.nintendogames.net
+  type: trojan
 - name: 400|日本_011518022
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
@@ -46708,16 +46796,10 @@ proxies:
   server: 153.121.51.29
   sni: www.nintendogames.net
   type: trojan
-- name: 400|日本_011518002
+- name: 400|日本_011518020+L0
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
-  server: 153.121.65.107
-  sni: www.nintendogames.net
-  type: trojan
-- name: 400|日本_011518004+L0
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 1933
-  server: 160.16.117.182
+  server: 160.16.130.66
   sni: www.nintendogames.net
   type: trojan
 - name: 400|日本_011518010
@@ -56747,56 +56829,6 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 400|🇮🇱 IL_64
-  network: none
-  port: 35760
-  server: 149.88.95.217
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 17e96792-d8c3-4741-9c34-e5d1c11d754f
-- alterId: 0
-  cipher: auto
-  name: 400|🇮🇱 IL_65
-  network: none
-  port: 18937
-  server: 149.88.95.217
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ebaa1ae1-fa4d-40d8-958f-d4524d551218
-- alterId: 0
-  cipher: auto
-  name: 400|🇮🇱 IL_66
-  network: none
-  port: 35760
-  server: 149.88.95.94
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 17e96792-d8c3-4741-9c34-e5d1c11d754f
-- alterId: 0
-  cipher: auto
-  name: 400|🇮🇱 IL_67
-  network: none
-  port: 40741
-  server: 149.88.95.94
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1b8a751b-4909-4fec-f019-907d92e6c47f
-- alterId: 0
-  cipher: auto
-  name: 400|🇮🇱 IL_68
-  network: none
-  port: 40741
-  server: 149.88.95.217
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1b8a751b-4909-4fec-f019-907d92e6c47f
 - alterId: 0
   cipher: auto
   name: 400|🇯🇵 JP_78
