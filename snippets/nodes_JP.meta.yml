@@ -1314,7 +1314,8 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 261,400,404|🇯🇵 日本 | JPN
+- country: JP
+  name: 261,353,400,404|🇯🇵 日本 | JPN
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 4006
@@ -1322,7 +1323,9 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '261,400,404|🇯🇵 日本 | JPN #4'
+  udp: true
+- country: JP
+  name: '261,353,400,404|🇯🇵 日本 | JPN #4'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 4006
@@ -1330,6 +1333,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - cipher: aes-128-gcm
   delay: 2544
   name: 264,385|日本 - 东京 - BrainStorm Network, ...
@@ -1604,7 +1608,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '340,341,342|日本-优化2 #3'
+  name: '339,340,341|日本-优化2 #3'
   network: ws
   port: 16617
   server: m.cnmjin.net
@@ -1620,7 +1624,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '340,341,342|日本-优化3 #3'
+  name: '339,340,341|日本-优化3 #3'
   network: ws
   port: 16617
   server: t.cnmjcn.cyou
@@ -1635,7 +1639,7 @@ proxies:
     path: /
   ws-path: /
 - down: 10000
-  name: '340,341,342|日本JP-HY2 #3'
+  name: '339,340,341|日本JP-HY2 #3'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1443
   server: jp.mjhy2.com
@@ -1647,7 +1651,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '340,341,342|日本JP-A #3'
+  name: '339,340,341|日本JP-A #3'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1663
   server: a.mjanyt.com
@@ -1659,7 +1663,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '340,341,342|尼日利亚NG-A #3'
+  name: '339,340,341|尼日利亚NG-A #3'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1681
   server: a.mjanyt.com
@@ -1667,19 +1671,12 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- cipher: aes-256-gcm
-  country: ' JP'
-  name: 350| JP_79
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 10079
-  server: ss.027.node-for-bigairport.win
-  type: ss
 - alterId: 0
   cipher: auto
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 350| JP_80
+  name: 350| JP_78
   network: ws
   port: 443
   server: seoul03.zgjok.com
@@ -1701,28 +1698,37 @@ proxies:
   type: trojan
   udp: true
 - country: JP
-  name: 353,400|日本_011504002
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 1933
-  server: 153.121.65.107
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: JP
-  name: 353,400|日本_011504003+L0
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 1933
-  server: 160.16.117.182
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: JP
   name: 353,400|日本_011504013+L0
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
   server: 160.16.130.66
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- country: JP
+  name: 353,400|日本_011504007
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 4006
+  server: 160.16.57.238
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- country: JP
+  name: 353,400|日本_011504049+L0
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 4006
+  server: 153.121.39.240
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- country: JP
+  name: 353,400|日本_011504002
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 1933
+  server: 153.121.65.107
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -2350,12 +2356,6 @@ proxies:
   skip-cert-verify: false
   sni: login-staticjpc.jasmine-douyin.top
   type: trojan
-- name: 400|日本_011504049+L0
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 4006
-  server: 153.121.39.240
-  sni: www.nintendogames.net
-  type: trojan
 - name: 400|日本_011504014
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
@@ -2368,16 +2368,16 @@ proxies:
   server: 153.121.51.29
   sni: www.nintendogames.net
   type: trojan
+- name: 400|日本_011504003+L0
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 1933
+  server: 160.16.117.182
+  sni: www.nintendogames.net
+  type: trojan
 - name: 400|日本_011504054
   password: 61d8077bfb174e171b8283f155a555ad
   port: 544
   server: 160.16.150.76
-  sni: www.nintendogames.net
-  type: trojan
-- name: 400|日本_011504007
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 4006
-  server: 160.16.57.238
   sni: www.nintendogames.net
   type: trojan
 - name: 400|日本_011504055+L0
@@ -2721,3 +2721,13 @@ proxies:
     headers:
       Host: a.xiaomayi.nyc.mn
     path: /?ed%3D2560
+- name: 544|节点日期：01-15
+  network: ws
+  port: 443
+  server: betty.ns.cloudflare.com
+  servername: 639031180460930556.altima-amsjq.info
+  tls: true
+  type: vless
+  uuid: d851e68a-af64-4dfc-a85a-7ffad2483230
+  ws-opts:
+    path: '%2Foqxdqtws'
