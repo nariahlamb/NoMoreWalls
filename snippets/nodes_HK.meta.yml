@@ -794,35 +794,13 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf
-  name: 228|Hong Kong_None_ss_11227
-  password: asd123456
-  port: 8388
-  server: 103.149.182.79
-  type: ss
-- name: '228,262,392,400|12,13|香港3|@ripaojiedian #1'
+- name: '228,383,392,395,397,398|香港3|@ripaojiedian #1'
   network: tcp
   password: 4843e94d205f3893f588255a591abe94
   port: 443
-  server: 58.152.110.111
+  server: 58.152.18.147
   skip-cert-verify: false
   sni: www.nintendogames.net
-  type: trojan
-- name: '228,262,371,372,392,400|12,13|香港5|@ripaojiedian #1'
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.219
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '228,262,392,400|12,13|新加坡3|@ripaojiedian #1'
-  network: tcp
-  password: BxceQaOe
-  port: 1691
-  server: 43.199.73.206
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 2
   cipher: auto
@@ -2107,6 +2085,30 @@ proxies:
   sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   tls: false
   type: hysteria2
+- name: '262,400|12,13|香港3|@ripaojiedian #1'
+  network: tcp
+  password: 4843e94d205f3893f588255a591abe94
+  port: 443
+  server: 58.152.110.111
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '262,400|12,13|香港4|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 52.196.143.203
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '262,371,372,392,400|12,13|香港5|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.219
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 278|🇭🇰1 |  3.5MB/s
   password: WfmxKX2FBJRU0Ie9VLIYDL
@@ -2605,50 +2607,52 @@ proxies:
   ws-path: /
 - cipher: chacha20-ietf-poly1305
   country: ' HK'
-  name: 350| HK_56
+  name: 350| HK_57
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
+  type: ss
+- cipher: aes-256-gcm
+  country: ' HK'
+  name: 350| HK_59
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 15099
+  server: ss.026.node-for-bigairport.win
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 350,400|🇭🇰 HK_67
+  network: none
+  port: 13852
+  server: 45.207.157.29
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+  ws-path: /
+- cipher: chacha20-ietf
+  country: HK
+  name: 353|HK_04
+  password: asd123456
+  port: 8388
+  server: 103.149.182.158
   type: ss
 - alterId: 0
   cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 353|HK_04
+  name: 353|HK_05
   network: none
   port: 52190
   server: 47.242.192.233
   skip-cert-verify: true
   type: vmess
   uuid: 98689724-deb2-4a3d-b83b-602221995baf
-- alterId: 0
-  cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 353|Relay_HK-HK_05
-  network: ws
-  port: 443
-  server: sv2.wy888.us
-  servername: sv2.wy888.us
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: cda69512-ad1b-4f85-b547-b1d545e7cc90
-  ws-opts:
-    headers:
-      HOST: sv2.wy888.us
-    path: /vmess
-- country: HK
-  name: 353|HK_07
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.219
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
 - name: 365|香港_香港
   network: ws
   port: 2053
@@ -3026,93 +3030,6 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
-- name: '383,395,397,398|香港3|@ripaojiedian #1'
-  network: tcp
-  password: 4843e94d205f3893f588255a591abe94
-  port: 443
-  server: 58.152.18.147
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '383,395,397,398|香港4|@ripaojiedian #1'
-  network: tcp
-  password: BxceQaOe
-  port: 3830
-  server: 95.40.93.39
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '383,395,397,398|香港5|@ripaojiedian #1'
-  network: tcp
-  password: BxceQaOe
-  port: 3830
-  server: 95.40.53.47
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '392,400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #68'
-  network: tcp
-  port: '49312'
-  server: cees.owwoedu.com
-  tls: false
-  type: vmess
-  uuid: 48b61901-f4d6-4017-960e-216099acf04d
-- alterId: 0
-  cipher: auto
-  name: '392,400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #65'
-  network: tcp
-  port: '49301'
-  server: cees.owwoedu.com
-  tls: false
-  type: vmess
-  uuid: 1515710e-7130-43bb-9ad1-57b0c981d42b
-- alterId: 0
-  cipher: auto
-  name: '392,400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #69'
-  network: tcp
-  port: '49317'
-  server: cees.owwoedu.com
-  tls: false
-  type: vmess
-  uuid: 48b61901-f4d6-4017-960e-216099acf04d
-- alterId: 0
-  cipher: auto
-  name: '392,400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #70'
-  network: tcp
-  port: '59517'
-  server: ffiw.owwoedu.com
-  tls: false
-  type: vmess
-  uuid: c08ecc4f-1eb3-4c47-96f7-f2650b01b4cd
-- alterId: 0
-  cipher: auto
-  name: '392,400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #67'
-  network: tcp
-  port: '49310'
-  server: cees.owwoedu.com
-  tls: false
-  type: vmess
-  uuid: 7be5a733-ba04-4437-88f6-2ccaa4d7df04
-- alterId: 0
-  cipher: auto
-  name: '392,400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #66'
-  network: tcp
-  port: '49303'
-  server: cees.owwoedu.com
-  tls: false
-  type: vmess
-  uuid: 1ab5f0bc-388c-4664-bc14-e82f88d53fcd
-- alterId: 0
-  cipher: auto
-  name: '392,400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #64'
-  network: tcp
-  port: '47081'
-  server: 120.198.71.187
-  tls: false
-  type: vmess
-  uuid: e49b8721-f124-4999-814a-fc777c0ae190
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -3599,14 +3516,67 @@ proxies:
     path: /aa
 - alterId: 0
   cipher: auto
-  name: 400|🇭🇰 HK_67
-  network: none
-  port: 13852
-  server: 45.207.157.29
-  servername: ''
+  name: '400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #22'
+  network: tcp
+  port: '47081'
+  server: 120.198.71.187
   tls: false
   type: vmess
-  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+  uuid: e49b8721-f124-4999-814a-fc777c0ae190
+- alterId: 0
+  cipher: auto
+  name: '400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #23'
+  network: tcp
+  port: '49301'
+  server: cees.owwoedu.com
+  tls: false
+  type: vmess
+  uuid: 1515710e-7130-43bb-9ad1-57b0c981d42b
+- alterId: 0
+  cipher: auto
+  name: '400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #24'
+  network: tcp
+  port: '49303'
+  server: cees.owwoedu.com
+  tls: false
+  type: vmess
+  uuid: 1ab5f0bc-388c-4664-bc14-e82f88d53fcd
+- alterId: 0
+  cipher: auto
+  name: '400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #25'
+  network: tcp
+  port: '49310'
+  server: cees.owwoedu.com
+  tls: false
+  type: vmess
+  uuid: 7be5a733-ba04-4437-88f6-2ccaa4d7df04
+- alterId: 0
+  cipher: auto
+  name: '400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #26'
+  network: tcp
+  port: '49312'
+  server: cees.owwoedu.com
+  tls: false
+  type: vmess
+  uuid: 48b61901-f4d6-4017-960e-216099acf04d
+- alterId: 0
+  cipher: auto
+  name: '400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #27'
+  network: tcp
+  port: '49317'
+  server: cees.owwoedu.com
+  tls: false
+  type: vmess
+  uuid: 48b61901-f4d6-4017-960e-216099acf04d
+- alterId: 0
+  cipher: auto
+  name: '400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #28'
+  network: tcp
+  port: '59517'
+  server: ffiw.owwoedu.com
+  tls: false
+  type: vmess
+  uuid: c08ecc4f-1eb3-4c47-96f7-f2650b01b4cd
 - alterId: 2
   cipher: auto
   name: 400|🇭🇰 香港 | HKG 46
