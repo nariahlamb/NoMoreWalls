@@ -794,8 +794,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- country: HK
-  name: '228,262,353,383,392,395,397,398,400|12,13|香港3|@ripaojiedian #2'
+- name: '228,262,383,392,395,397,398,400|12,13|香港3|@ripaojiedian #2'
   network: tcp
   password: 4843e94d205f3893f588255a591abe94
   port: 443
@@ -803,7 +802,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - name: '228,262,383,392,395,397,398,400|12,13|香港4|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
@@ -812,7 +810,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '228,262,371,372,383,392,395,397,398,400,404|🇭🇰 香港 | HKG #9'
+- name: '228,262,383,392,395,397,398,400,404|🇭🇰 香港 | HKG #9'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -856,7 +854,7 @@ proxies:
   skip-cert-verify: true
   sni: hkip5.686911.xyz
   type: trojan
-- name: 228,395|HK30｜家宽｜非常安全
+- name: 228,371,372,395|HK30｜家宽｜非常安全
   password: BxceQaOe
   port: 443
   server: 58.152.110.50
@@ -1425,19 +1423,19 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- cipher: aes-256-gcm
-  country: ' HK'
-  name: 350| HK_51
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 10079
-  server: ss.030.node-for-bigairport.win
-  type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' HK'
-  name: 350| HK_53
+  name: 350| HK_51
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
+  type: ss
+- cipher: aes-256-gcm
+  country: ' HK'
+  name: 350| HK_52
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 36888
+  server: ss.007.node-for-bigairport.win
   type: ss
 - alterId: 0
   cipher: auto
@@ -1459,7 +1457,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 353|HK_07
+  name: 353|HK_08
   network: none
   port: 52190
   server: 47.242.192.233
@@ -1471,7 +1469,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_HK-HK_08
+  name: 353|Relay_HK-HK_09
   network: ws
   port: 80
   server: 5545a4de-t8lts0-tasors-1tdqt.hkt.gotochinatown.net
@@ -1484,7 +1482,7 @@ proxies:
       HOST: 5545a4de-t8lts0-tasors-1tdqt.hkt.gotochinatown.net
     path: /
 - country: HK
-  name: 353|HK_11
+  name: 353|HK_10
   password: BxceQaOe
   port: 443
   server: 58.152.46.246
@@ -1493,10 +1491,19 @@ proxies:
   type: trojan
   udp: true
 - country: HK
-  name: 353|HK_12
+  name: 353|HK_11
   password: BxceQaOe
   port: 443
   server: 58.152.110.50
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
+- country: HK
+  name: 353|HK_12
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.219
   skip-cert-verify: true
   sni: t.me/ripaojiedian
   type: trojan
@@ -1878,6 +1885,15 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '371,372|香港 电讯盈科有限公司 #1'
+  network: ''
+  port: 30830
+  server: v30.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: '392|🇭🇰 香港 电讯盈科有限公司 #2'
   password: BxceQaOe
   port: 443
@@ -2322,6 +2338,34 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
+  name: 400|香港_011818180
+  network: ws
+  port: '80'
+  server: 011b0339-t8ysg0-tc9wl2-py5w.hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ae5338ae-9a70-58c9-3d47-7d54a5675715
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 400|香港_011818173
+  network: ws
+  port: '80'
+  server: 1384913f-t8lts0-t9lm1q-1p1b.hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 1384913f-t8lts0-t9lm1q-1p1b.hkt.gotochinatown.net
+    path: /
+- alterId: 2
+  cipher: auto
   name: 400|香港_011818184
   network: ws
   port: '80'
@@ -2434,6 +2478,20 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
+  name: 400|香港_011818191
+  network: ws
+  port: '80'
+  server: a3cefe89-t8ysg0-ta42cg-1phla.hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 467f2940-77cd-11ee-b5ed-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
   name: 400|香港_011818203
   network: ws
   port: '80'
@@ -2459,6 +2517,20 @@ proxies:
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 400|香港_011818192
+  network: ws
+  port: '80'
+  server: a2bc10d7-t8ysg0-t8xdsu-nx3b.hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 32315324-cf6b-11ed-979b-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 2
   cipher: auto
@@ -2504,6 +2576,20 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
+  name: 400|香港_011818165
+  network: ws
+  port: '80'
+  server: b07b7851-t8ysg0-tc2x42-n09f.hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: b07b7851-t8ysg0-tc2x42-n09f.hkt.gotochinatown.net
+    path: /
+- alterId: 2
+  cipher: auto
   name: 400|香港_011818168
   network: ws
   port: '80'
@@ -2512,6 +2598,20 @@ proxies:
   tls: false
   type: vmess
   uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 400|香港_011818189
+  network: ws
+  port: '80'
+  server: c55918de-t8ysg0-t9x9zr-1lkt0.hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
