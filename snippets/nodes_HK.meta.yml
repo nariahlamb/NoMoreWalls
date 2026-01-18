@@ -802,7 +802,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '228,262,383,392,395,397,398,400|12,13|香港4|@ripaojiedian #2'
+- name: '228,262,371,372,383,392,395,397,398,400|12,13|香港4|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -810,7 +810,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '228,262,383,392,395,397,398,400,404|🇭🇰 香港 | HKG #9'
+- name: '228,262,383,392,395,397,398,400|12,13,14|HK_speednode_0014 #2'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -847,14 +847,14 @@ proxies:
   skip-cert-verify: true
   sni: 58.152.53.219
   type: trojan
-- name: '228,392,395,400,404|🇭🇰 香港 | HKG #2'
+- name: 228,392,395,400|🇭🇰HK香港2
   password: 30077070-596e-48ea-9400-14c8ed07bd97
   port: 443
   server: tuntro000.instconn.com
   skip-cert-verify: true
   sni: hkip5.686911.xyz
   type: trojan
-- name: 228,371,372,395|HK30｜家宽｜非常安全
+- name: 228,395|HK30｜家宽｜非常安全
   password: BxceQaOe
   port: 443
   server: 58.152.110.50
@@ -879,7 +879,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: '228,395,400|US108｜机房｜低风险 #1'
+  name: '228,395,400,404|🇺🇸 美国 | USA #13'
   network: tcp
   port: '30824'
   server: v24.hdacd.com
@@ -895,7 +895,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '228,395,400|US136｜机房｜低风险 #1'
+  name: '228,395,400,404|🇺🇸 美国 | USA #17'
   network: tcp
   port: '30804'
   server: v4.hdacd.com
@@ -1423,19 +1423,19 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  country: ' HK'
-  name: 350| HK_51
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 - cipher: aes-256-gcm
   country: ' HK'
-  name: 350| HK_52
+  name: 350| HK_56
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 36888
   server: ss.007.node-for-bigairport.win
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' HK'
+  name: 350| HK_58
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
   type: ss
 - alterId: 0
   cipher: auto
@@ -1452,12 +1452,19 @@ proxies:
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
+- cipher: chacha20-ietf
+  country: HK
+  name: 353|HK_06
+  password: asd123456
+  port: 8388
+  server: 103.149.182.79
+  type: ss
 - alterId: 0
   cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 353|HK_08
+  name: 353|HK_07
   network: none
   port: 52190
   server: 47.242.192.233
@@ -1481,33 +1488,6 @@ proxies:
     headers:
       HOST: 5545a4de-t8lts0-tasors-1tdqt.hkt.gotochinatown.net
     path: /
-- country: HK
-  name: 353|HK_10
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.246
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
-- country: HK
-  name: 353|HK_11
-  password: BxceQaOe
-  port: 443
-  server: 58.152.110.50
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
-- country: HK
-  name: 353|HK_12
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.219
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
 - name: 365|香港_香港
   network: ws
   port: 2053
@@ -1885,15 +1865,6 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '371,372|香港 电讯盈科有限公司 #1'
-  network: ''
-  port: 30830
-  server: v30.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: '392|🇭🇰 香港 电讯盈科有限公司 #2'
   password: BxceQaOe
   port: 443
@@ -2784,95 +2755,178 @@ proxies:
     headers:
       Host: n1761214919.mv7wh.tech
     path: /
-- name: '404|🇭🇰 香港 | HKG #1'
-  password: cc578037-cc21-4e0b-b57d-32cb77d79399
-  port: 21101
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: '404|🇭🇰 香港 | HKG #3'
-  password: 6e2a34fc-574f-45d3-8584-2b7d87623bd2
-  port: 31103
+- name: 404|🇭🇰 香港 | HKG
+  password: b8d5a7c6-84fc-4683-af05-bf3afa7a636b
+  port: 31102
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇭🇰 香港 | HKG #2'
+  password: 092cc803-585e-49ee-b936-29b3f2ca1d9f
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
 - name: '404|🇭🇰 香港 | HKG #4'
-  password: cc578037-cc21-4e0b-b57d-32cb77d79399
-  port: 21103
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: '404|🇭🇰 香港 | HKG #5'
-  password: 7ba1a0b8-4d6c-4293-9317-187caf132dcd
-  port: 31103
+  password: 3b95536d-2620-4734-aace-5b3fc671fe54
+  port: 31102
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: '404|🇭🇰 香港 | HKG #6'
-  password: 4ea7a8da-56ce-4da3-b251-514ecaabe32b
+- name: '404|🇭🇰 香港 | HKG #5'
+  password: 2d259b0f-7639-45f0-b2fe-8b26773741f0
   port: 21101
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: false
   sni: cdnfire.xiaomispeed.com
   type: trojan
 - name: '404|🇭🇰 香港 | HKG #7'
-  password: 98faa6e4-fc78-4b20-8c1f-c7f9c8cd8185
-  port: 31103
+  password: b99f17f7-38f7-48e7-af00-b260a65d007d
+  port: 31101
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: '404|🇭🇰 香港 | HKG #8'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.219
-  skip-cert-verify: true
-  sni: 🔒+[By+EbraSha]+b2n.ir/v2ray-configs+|+111+
+- alterId: 0
+  cipher: auto
+  name: '404|🇭🇰 香港 | HKG #8'
+  network: ws
+  port: '16632'
+  server: planb.mojcn.com
+  tls: false
+  type: vmess
+  uuid: ba2b0e94-a180-4c1b-9a83-0e9f6c665dff
+  ws-opts:
+    headers:
+      Host: 88f7643333ac491b4fc17b25b5d1abee.mobgslb.tbcache.com
+    path: /
+- name: '404|🇭🇰 香港 | HKG #9'
+  password: 761a3023-9c06-4197-a0d5-1f0c96337d8c
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
   type: trojan
 - name: '404|🇭🇰 香港 | HKG #10'
-  password: f142d136-ed67-463c-aeca-507305324611
+  password: 1e071e05-b6b4-4966-9a78-3a98e6c0e984
+  port: 21101
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: false
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+- name: '404|🇭🇰 香港 | HKG #11'
+  password: 688abcd9-0ff0-49f8-baa1-6a23403bd0e7
   port: 21102
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: true
   sni: cdnfire.xiaomispeed.com
   type: trojan
-- name: '404|🇭🇰 香港 | HKG #11'
-  password: bbd26247-dc4c-4073-a051-94155e762ab1
+- name: '404|🇭🇰 香港 | HKG #12'
+  password: 3031d3bc-1d28-4e79-a770-111d1e72f44b
+  port: 21102
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+- name: '404|🇭🇰 香港 | HKG #13'
+  password: b8d5a7c6-84fc-4683-af05-bf3afa7a636b
   port: 31103
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: '404|🇭🇰 香港 | HKG #12'
-  password: b9244b12-17ea-40b3-af90-c17b36af648f
+- name: '404|🇭🇰 香港 | HKG #15'
+  password: 1d2d37ba-7625-4fdd-ad58-515783b2c48a
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇭🇰 香港 | HKG #16'
+  password: b8d5a7c6-84fc-4683-af05-bf3afa7a636b
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇭🇰 香港 | HKG #17'
+  password: c449b06b-ab4a-4e2e-9800-816766efe6f4
+  port: 21101
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: false
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+- name: '404|🇭🇰 香港 | HKG #20'
+  password: 47f867f8-45bb-43be-aa13-b99ed8f55c7d
   port: 31101
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: '404|🇭🇰 香港 | HKG #13'
-  password: c61ed8b2-fb7c-48f6-a953-5c49888b8944
+- name: '404|🇭🇰 香港 | HKG #21'
+  password: ad0925d3-2e3c-481f-9eb4-9ef5d6bb39d7
   port: 21103
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: true
   sni: cdnfire.xiaomispeed.com
   type: trojan
-- name: '404|🇭🇰 香港 | HKG #14'
+- name: '404|🇭🇰 香港 | HKG #24'
+  password: 30282342-fe04-46d3-b18b-63ba8ce3097e
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇭🇰 香港 | HKG #25'
+  password: 615d4129-6b22-4194-a2ae-5610607f6c26
+  port: 21103
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+- name: '404|🇭🇰 香港 | HKG #26'
+  password: 47f867f8-45bb-43be-aa13-b99ed8f55c7d
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇭🇰 香港 | HKG #27'
   password: 98faa6e4-fc78-4b20-8c1f-c7f9c8cd8185
   port: 31101
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: '404|🇭🇰 香港 | HKG #15'
-  password: 582ea0f7-e408-4bf8-be96-77535858ffe3
+- name: '404|🇭🇰 香港 | HKG #28'
+  password: 88eabf9a-9b6b-4370-ac42-0d32edfec735
   port: 21101
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: false
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+- name: '404|🇭🇰 香港 | HKG #29'
+  password: 9ae80174-57b2-4176-a913-1101cb3226d5
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇭🇰 香港 | HKG #31'
+  password: c051a422-69f1-4e62-aa28-6a8e49d547d6
+  port: 21102
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+- name: '404|🇭🇰 香港 | HKG #32'
+  password: 88eabf9a-9b6b-4370-ac42-0d32edfec735
+  port: 21103
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
   sni: cdnfire.xiaomispeed.com
   type: trojan
 - alterId: 0
