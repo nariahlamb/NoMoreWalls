@@ -281,12 +281,12 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: '227,397|tg频道:@ripaojiedian #2'
+  name: '228,397|tg频道:@ripaojiedian #2'
   password: amazonskr05
   port: 443
   server: 63.180.254.10
   type: ss
-- name: '227,383,392,395,397,398,400|12,13|美国2|@ripaojiedian #2'
+- name: '228,383,392,395,397,398,400|12,13|美国2|@ripaojiedian #2'
   network: tcp
   password: 4843e94d205f3893f588255a591abe94
   port: 5076
@@ -298,7 +298,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '242,243,244|美国01 #3'
+  name: '243,244,245|美国01 #3'
   network: grpc
   port: 20230
   reality-opts:
@@ -315,7 +315,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: '242,243,244|美国02 #3'
+  name: '243,244,245|美国02 #3'
   network: grpc
   port: 20230
   reality-opts:
@@ -328,7 +328,7 @@ proxies:
   type: vless
   udp: true
   uuid: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-- name: '242,243,244|美国03 #3'
+- name: '243,244,245|美国03 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
   port: 20230
@@ -337,7 +337,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '242,243,244|美国04 #3'
+- name: '243,244,245|美国04 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
   port: 20230
@@ -485,7 +485,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: ' US'
-  name: 278,279,350| US_139
+  name: 278,279,350| US_142
   password: shadowsocks
   port: 443
   server: 156.146.38.167
@@ -1058,7 +1058,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: ' US'
-  name: 278,279,350| US_142
+  name: 278,279,350| US_136
   password: shadowsocks
   port: 443
   server: 156.146.38.170
@@ -2192,20 +2192,6 @@ proxies:
   sni: us.mjanyt.com
   type: anytls
   udp: true
-- cipher: aes-256-cfb
-  country: ' US'
-  name: 350| US_135
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
-- cipher: aes-256-cfb
-  country: ' US'
-  name: 350| US_136
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
   name: 350| US_137
@@ -2213,61 +2199,41 @@ proxies:
   port: 990
   server: 193.135.174.135
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
   country: ' US'
   name: 350| US_138
-  password: HfAiyrdFbKJuKIQkGjvJrDFefmH8YDSC
-  port: 443
-  server: 45.83.131.43
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
   type: ss
 - cipher: aes-256-cfb
   country: ' US'
-  name: 350| US_140
+  name: 350| US_139
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.165.233.93
   type: ss
+- cipher: aes-256-gcm
+  country: ' US'
+  name: 350| US_140
+  password: b0c9d775-32f7-459a-b24d-ecda7c9f3720
+  port: 11688
+  server: ss.020.node-for-bigairport.win
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
   name: 350| US_141
+  password: HfAiyrdFbKJuKIQkGjvJrDFefmH8YDSC
+  port: 443
+  server: 45.83.131.43
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 350| US_143
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.165.231.25
   type: ss
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_143
-  network: ws
-  port: 443
-  server: 15.235.83.227
-  servername: mankadmu.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: mankadmu.com
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_144
-  network: ws
-  port: 443
-  server: 15.235.50.172
-  servername: baradiha.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: baradiha.com
-  ws-path: /linkvws
 - alterId: 0
   cipher: auto
   country: ' US'
@@ -2285,10 +2251,93 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 350,353,400|🇺🇸 US_169
+  network: none
+  port: 27641
+  server: 192.227.249.227
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3b134252-e7c2-43df-98b7-da204104aa79
+  ws-path: /
+- alterId: 0
+  cipher: auto
   country: ' US'
   h2-opts: {}
   http-opts: {}
   name: 350| US_146
+  network: ws
+  port: 443
+  server: 148.113.176.192
+  servername: fapeng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: fapeng.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| US_147
+  network: ws
+  port: 443
+  server: 15.235.83.227
+  servername: mankadmu.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: mankadmu.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| US_148
+  network: ws
+  port: 443
+  server: 15.235.50.172
+  servername: baradiha.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: baradiha.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| US_149
+  network: ws
+  port: 443
+  server: cf.090227.xyz
+  servername: sgal.dagrate.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-headers:
+    HOST: sgal.dagrate.eu.org
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| US_150
   network: none
   port: 27502
   server: 216.238.87.47
@@ -2301,31 +2350,18 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350| US_147
-  network: none
-  port: 7100
-  server: 206.119.191.9
-  skip-cert-verify: true
-  type: vmess
-  uuid: 10853485-26e1-477b-d257-58a3f4873db3
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_148
+  name: 350| US_151
   network: ws
   port: 443
-  server: 148.113.176.192
-  servername: fapeng.org
+  server: 15.235.83.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-headers:
-    HOST: fapeng.org
-  ws-path: linkvws
+    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ws-path: /linkvws
 - alterId: 0
   cipher: auto
   country: ' US'
@@ -2346,80 +2382,27 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350| US_150
-  network: ws
-  port: 443
-  server: 15.235.83.228
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_151
-  network: ws
-  port: 443
-  server: n1753598452.wpg27.xyz
-  servername: n1753598452.wpg27.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
-  ws-headers:
-    HOST: n1753598452.wpg27.xyz
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_152
-  network: ws
-  port: 443
-  server: cf.090227.xyz
-  servername: sgal.dagrate.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
-  ws-headers:
-    HOST: sgal.dagrate.eu.org
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: 350,353,400|🇺🇸 US_169
+  name: 350| US_153
   network: none
-  port: 27641
-  server: 192.227.249.227
-  servername: ''
+  port: 7100
+  server: 206.119.191.9
   skip-cert-verify: true
-  tls: false
   type: vmess
-  uuid: 3b134252-e7c2-43df-98b7-da204104aa79
+  uuid: 10853485-26e1-477b-d257-58a3f4873db3
   ws-path: /
 - country: ' US'
   name: 350| US_154
-  password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
+  password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
   port: 443
-  server: usla.mjt000.com
+  server: 154.17.24.29
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: ' US'
   name: 350| US_155
-  password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
+  password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
   port: 443
-  server: 154.17.24.29
+  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.9d8f269f96b25232-759cbb36d6548597.kaufen
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -2433,9 +2416,9 @@ proxies:
   udp: true
 - country: ' US'
   name: 350| US_157
-  password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
+  password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
-  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.9d8f269f96b25232-759cbb36d6548597.kaufen
+  server: usla.mjt000.com
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -2455,13 +2438,37 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: US
-  name: 353|Relay_US-US_39
+  name: 353|Relay_US-US_37
   obfs: http_simple
   password: Uk92CS
   port: 13000
   protocol: auth_aes128_sha1
   server: nm3.boom.party
   type: ssr
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 353|US_39
+  network: tcp
+  port: 12056
+  server: 47.253.197.26
+  skip-cert-verify: true
+  type: vmess
+  uuid: dd7be7f1-38ff-45e6-f1e5-b20c2190f527
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 353|US_40
+  network: tcp
+  port: 34460
+  server: 216.238.86.158
+  skip-cert-verify: true
+  type: vmess
+  uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
 - alterId: 0
   cipher: auto
   country: US
@@ -2481,30 +2488,6 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 353|Pool_US_41
-  network: tcp
-  port: 35760
-  server: 149.88.95.217
-  skip-cert-verify: true
-  type: vmess
-  uuid: 17e96792-d8c3-4741-9c34-e5d1c11d754f
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: 353|US_42
-  network: tcp
-  port: 12056
-  server: 47.253.197.26
-  skip-cert-verify: true
-  type: vmess
-  uuid: dd7be7f1-38ff-45e6-f1e5-b20c2190f527
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
   name: 353,400|美国_0119182611
   network: tcp
   port: '40741'
@@ -2519,13 +2502,31 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 353|US_45
+  name: 353|Pool_US_43
   network: tcp
-  port: 34460
-  server: 216.238.86.158
+  port: 35760
+  server: 149.88.95.217
   skip-cert-verify: true
   type: vmess
-  uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
+  uuid: 17e96792-d8c3-4741-9c34-e5d1c11d754f
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 353|Relay_ZZ-US_73
+  network: ws
+  port: 443
+  server: 104.19.61.72
+  servername: hk.nbee.pp.ua
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
+  ws-opts:
+    headers:
+      HOST: hk.nbee.pp.ua
+    path: /aa
 - name: 365|美国_洛杉矶
   network: ws
   password: NISHIKUITAN222
@@ -5362,6 +5363,47 @@ proxies:
   server: kfjdi.pages.dev
   skip-cert-verify: false
   type: trojan
+- name: 392|🇺🇸 _US_美国
+  password: trojan
+  port: 443
+  server: ip.sb
+  skip-cert-verify: false
+  sni: nixian.pages.dev
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '392,400|🇭🇰_香港 #4'
+  network: tcp
+  port: '30812'
+  server: v12.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 392,400|🇺🇸US美国2
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: false
+  sni: epge.muarua.filegear-sg.me
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: '392,400|🇭🇰_香港 #3'
+  network: tcp
+  port: '30809'
+  server: v9.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 392,400|🇺🇸US美国9
+  password: f363c8b4-45cc-463b-959d-9ff613cbe2cd
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 399|_US_
   password: DLW8QqdfAvfUHSeucMIF4E
@@ -5457,12 +5499,6 @@ proxies:
   server: hinet.mjt000.com
   sni: hinet.mjt000.com
   type: trojan
-- name: 400|🇺🇸US美国2
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  sni: epge.muarua.filegear-sg.me
-  type: trojan
 - name: '400|🇺🇸 美国3|@stairnode #2'
   password: BxceQaOe
   port: 4569
@@ -5475,12 +5511,6 @@ proxies:
   port: 443
   server: usla.mjt000.com
   sni: usla.mjt000.com
-  type: trojan
-- name: 400|🇺🇸US美国9
-  password: f363c8b4-45cc-463b-959d-9ff613cbe2cd
-  port: 31102
-  server: green2.cdntencentmusic.com
-  sni: green2.cdntencentmusic.com
   type: trojan
 - name: 400|🇺🇸_美国
   network: tcp
@@ -7394,66 +7424,51 @@ proxies:
   tls: false
   type: vmess
   uuid: 10853485-26e1-477b-d257-58a3f4873db3
-- alterId: 32
+- name: 404|🇺🇸 美国 | USA
+  password: 4dd859b3-c9f6-477e-95f5-283abb3129e5
+  port: 16666
+  server: los.zuomomo.top
+  skip-cert-verify: false
+  tls: false
+  type: hysteria2
+- alterId: 0
   cipher: auto
-  name: 400|美国_011918007
+  name: '404|🇺🇸 美国 | USA #1'
   network: ws
-  port: '443'
-  server: vc.fly.dev
-  servername: ''
-  tls: true
+  port: '16056'
+  server: mlbackupaaa.7yq.top
+  tls: false
   type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  uuid: b6cfe5d2-19e9-436d-b862-1935c62dcb14
   ws-opts:
     headers:
-      Host: vc.fly.dev
-    path: /vc
-- name: 404|🇺🇸 美国 | USA
-  password: 9ae80174-57b2-4176-a913-1101cb3226d5
-  port: 35501
+      Host: shoutingtoutiao3.10010.com
+    path: /
+- name: '404|🇺🇸 美国 | USA #2'
+  password: 486c8db0-9d40-4e43-9acc-f9d0b078fd53
+  port: 35502
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '404|🇺🇸 美国 | USA #1'
-  password: 97b365f9-fb05-47fc-a6fd-a97a3fdce8ee
-  port: 25502
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
   type: trojan
 - name: '404|🇺🇸 美国 | USA #3'
-  password: 259dc1a9-d8f5-4db5-924d-d846ec7fbd9b
-  port: 35501
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '404|🇺🇸 美国 | USA #4'
-  password: c61ed8b2-fb7c-48f6-a953-5c49888b8944
+  password: 8e375838-e015-4c23-a6e9-0f8e4abc2267
   port: 25501
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: true
   sni: cdnfire.xiaomispeed.com
   type: trojan
-- name: '404|🇺🇸 美国 | USA #5'
-  password: 0d982421-42ab-4eef-bb67-3682dee8080c
-  port: 35501
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: '404|🇺🇸 美国 | USA #6'
+  name: '404|🇺🇸 美国 | USA #4'
   network: tcp
-  port: '30804'
-  server: v4.hdacd.com
+  port: '30000'
+  server: 14.215.39.80
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 907a1b44-2c95-40c1-933c-825ab9670da5
 - name: '404|🇺🇸 美国 | USA #7'
-  password: 5a159d26-4490-4984-a343-df65c7cd0547
+  password: 1479d061-5f76-4ba4-b640-8e675b735595
   port: 35501
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
@@ -7473,18 +7488,53 @@ proxies:
       Host: 6B-4F68-8D87-7c4aaDd12ab9.664.QZz.iO
     path: /pyyY4ZVTyJV3vr9noOhn
 - name: '404|🇺🇸 美国 | USA #9'
-  password: abe81309-c37c-4ee8-9b2b-2e1b1073dd6c
+  password: b794b7fe-d0b3-4d33-98ea-0e3cfc3be3b7
   port: 35501
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
 - name: '404|🇺🇸 美国 | USA #10'
-  password: 98faa6e4-fc78-4b20-8c1f-c7f9c8cd8185
+  password: b3c721c4-3c1d-4a87-bdce-9d11f8c57b96
   port: 35501
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #11'
+  password: 27c8cb66-d0c0-4a87-8ef6-177e12f70c80
+  port: 35501
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #12'
+  password: 73a0bb88-1a71-4a58-a510-c232474eaaed
+  port: 25501
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #13'
+  password: 9ab8fa39-7e45-43b1-8572-378fc62fe801
+  port: 35502
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #14'
+  password: 29f942d6-41b9-406e-84c5-77b9991ab58b
+  port: 35501
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #15'
+  password: 0623c4c7-1157-4ae6-9333-ad5907c2a768
+  port: 25501
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
   type: trojan
 - client-fingerprint: firefox
   encryption: none
