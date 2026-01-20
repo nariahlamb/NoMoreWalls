@@ -1,15 +1,23 @@
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 262,400|🇷🇺_俄罗斯
-  network: tcp
-  port: 443
-  server: 91.217.10.68
-  servername: kz.fasti.win
+  name: '262,383,395,400|14|RU_speednode_0020 #2'
+  port: 8443
+  server: 51.250.42.73
+  servername: api-maps.yandex.ru
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
-  uuid: 0d93b787-b66b-4696-a036-a0f549764f69
+  uuid: 71031aa1-067e-425e-97f5-37875f838a10
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '262,383,395,400|14|RU_speednode_0021 #2'
+  port: 443
+  server: 217.12.40.76
+  servername: sun9-38.userapi.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 4371ad14-b981-4699-bedf-83fb79bde3e6
 - cipher: chacha20-ietf-poly1305
   name: 278|🇷🇺1 |  5.2MB/s
   password: 0zyDRZ1XmNXaaCAN7KEA8a
@@ -234,7 +242,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: ' RU'
-  name: 350| RU_130
+  name: 350| RU_136
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
@@ -973,32 +981,26 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: '371,372|俄罗斯+V2CROSS.COM #1'
-  network: tcp
-  port: 2584
-  server: 94.141.161.83
+- name: 371|俄罗斯+V2CROSS.COM
+  password: ZblhWr0mqMakCPg.N
+  port: 36158
+  server: 212.193.18.144
+  skip-cert-verify: true
+  sni: ya.ru
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 372|俄罗斯 V2CROSS.COM
+  network: ws
+  port: 51649
+  server: 91.107.252.110
   tls: false
-  type: vless
-  uuid: 038a50c3-229c-41ef-a7ef-7abb504e4f33
-- client-fingerprint: chrome
-  name: '383,395,400|14|RU_speednode_0020 #1'
-  port: 8443
-  server: 51.250.42.73
-  servername: api-maps.yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 71031aa1-067e-425e-97f5-37875f838a10
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '383,395,400|14|RU_speednode_0021 #1'
-  port: 443
-  server: 217.12.40.76
-  servername: sun9-38.userapi.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 4371ad14-b981-4699-bedf-83fb79bde3e6
+  type: vmess
+  uuid: 6507fcbd-9fb0-4470-8ec4-22f2df436047
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1013,14 +1015,21 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|俄罗斯联邦_011918552
-  network: tcp
-  password: ZblhWr0mqMakCPg.N
-  port: 36158
-  server: 212.193.18.144
-  skip-cert-verify: true
-  sni: api.avito.ru
+- name: 400|俄羅斯_33
+  password: trojan
+  port: 8443
+  server: 109.234.211.66
+  sni: store.timimi.dpdns.org
   type: trojan
+- flow: xtls-rprx-vision
+  name: 400|🇷🇺_俄罗斯
+  network: tcp
+  port: 443
+  server: 91.217.10.68
+  servername: kz.fasti.win
+  tls: false
+  type: vless
+  uuid: 0d93b787-b66b-4696-a036-a0f549764f69
 - flow: xtls-rprx-vision
   name: '400|🇷🇺_俄罗斯 #1'
   network: tcp
@@ -1094,12 +1103,19 @@ proxies:
   tls: false
   type: vless
   uuid: 62770d79-dc4d-07d0-b01c-ea30399725aa
-- name: 400|RU VLESS-28 | free-nodes
-  port: 443
-  server: 95.163.250.213
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|RU VLESS-10 | free-nodes
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: gKP71Sngd6wzxOmzLdjsU-VW8BGKAS6AZSCrvUCASyk
+    short-id: c5ae63ea7da57035
+  server: 84.201.168.61
+  servername: api-maps.yandex.ru
   tls: false
   type: vless
-  uuid: 62770d79-dc4d-07d0-b01c-ea30399725aa
+  uuid: 65c4cd17-f05e-4759-bac2-8a447282a584
 - name: 400|RU_6eeb3_0020
   network: tcp
   port: 443
@@ -1129,18 +1145,18 @@ proxies:
   tls: false
   type: vless
   uuid: 7fc953d6-ae75-46fb-a970-10b57d513487
-- client-fingerprint: qq
-  name: 400|RU VLESS-06 | free-nodes
+- client-fingerprint: chrome
+  name: 400|RU VLESS-68 | free-nodes
   network: tcp
-  port: 2040
+  port: 48868
   reality-opts:
-    public-key: 1RJ2ulM9UyAC8PFy194dV0RTZI6xF6U4CGClhNz9fTg
-    short-id: 50ed6f6007515d63
-  server: spb-node.genadata.online
-  servername: tradingview.com
+    public-key: QU6XzGL-1O93-UxkJYiV364sy30S5bI5EOahJL2blnE
+    short-id: f2e878
+  server: 195.2.76.224
+  servername: apple.com
   tls: false
   type: vless
-  uuid: 89f99086-e244-41dc-ab20-c1d8763399d0
+  uuid: 94f729b1-5e1c-474f-a952-b8816a04e2fc
 - name: 400|俄罗斯-01
   network: grpc
   port: 2083

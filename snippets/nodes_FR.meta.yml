@@ -398,7 +398,7 @@ proxies:
   country: ' FR'
   h2-opts: {}
   http-opts: {}
-  name: 350| FR_38
+  name: 350| FR_41
   network: ws
   port: 443
   server: 91.134.8.101
@@ -408,15 +408,7 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
 - country: FR
-  name: 350|FR_39
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: FR
-  name: 350|FR_40
+  name: 350|FR_42
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -424,7 +416,15 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_41
+  name: 350|FR_43
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: 198.244.190.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: FR
+  name: 350|FR_44
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -432,10 +432,10 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_42
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  name: 350|FR_45
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
-  server: 198.244.190.189
+  server: de-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -618,25 +618,33 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- name: 400|🇫🇷FR_44
+- name: 400|法国 上法兰西大区
+  password: a516b408-e06d-4278-9e6d-5271571ecab5
+  port: 20248
+  server: 51.75.118.149
+  skip-cert-verify: true
+  sni: dash.cloudflare.com
+  tls: false
+  type: hysteria2
+- name: 400|🇫🇷FR_42
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 400|🇫🇷FR_46
+- name: 400|🇫🇷FR_43
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: 400|🇫🇷FR_43
+- name: 400|🇫🇷FR_41
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 400|🇫🇷FR_45
+- name: 400|🇫🇷FR_44
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -685,7 +693,7 @@ proxies:
   tls: false
   type: vless
   uuid: 5695e906-fd40-45e7-b261-7bc605af614c
-- name: 400|FR VLESS-37 | free-nodes
+- name: 400|FR VLESS-48 | free-nodes
   port: 2087
   server: 188.114.98.224
   tls: false
@@ -693,6 +701,20 @@ proxies:
   uuid: 8443822d-6b68-4af2-d096-c03207ed880d
   ws-opts:
     path: '%2Frahh'
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: UpdateService
+  name: 400|FR VLESS-03 | free-nodes
+  network: grpc
+  port: 2083
+  reality-opts:
+    public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
+    short-id: 6da16b1335651b38
+  server: 213.176.73.206
+  servername: apple.com
+  tls: false
+  type: vless
+  uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
 - name: 400|法國-01-1
   network: ws
   port: 2052
@@ -704,20 +726,6 @@ proxies:
     headers:
       Host: chosenflyesqt-q3y28ipf-v2.chosen-fly-esqt.workers.dev
     path: '%2F'
-- alterId: 0
-  cipher: auto
-  name: 400|法国 140
-  network: ws
-  port: 443
-  server: 91.134.8.93
-  servername: pelang.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: pelang.org
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 400|法国 141
@@ -734,7 +742,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 400|🇫🇷 FR_42
+  name: 400|🇫🇷 FR_40
   network: ws
   port: 443
   server: 91.134.8.101
@@ -748,7 +756,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|法国_011918063
+  name: 400|法国_012004058
   network: tcp
   port: '550'
   server: 162.19.248.238
@@ -758,7 +766,7 @@ proxies:
   uuid: ede27a79-b039-490b-932c-495de4b68880
 - alterId: 0
   cipher: auto
-  name: 400|法国_011918065
+  name: 400|法国_012004060
   network: tcp
   port: '443'
   server: 217.69.5.32
