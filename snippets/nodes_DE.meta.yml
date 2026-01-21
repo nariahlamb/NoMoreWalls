@@ -64,7 +64,7 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- name: '261,383,395,400|8|DE #1'
+- name: 261,383,395,400|8|DE
   password: a084933d-0b41-4571-ae0c-7163b8c71ed1
   port: 2056
   server: de.eyucdn.xyz
@@ -74,7 +74,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '261,383,395,400|13|DE_speednode_0003 #1'
+  name: 261,383,395,400|13|DE_speednode_0003
   port: 443
   server: 185.94.29.250
   servername: apple.com
@@ -651,7 +651,7 @@ proxies:
       Host: go.daluquan.top
     path: /
 - down: 10000
-  name: 335|德国DE-HY2
+  name: 334|德国DE-HY2
   password: ba001863-ddd0-4beb-8933-8a75a898c7ec
   port: 1443
   server: de.mjhy2.com
@@ -660,7 +660,7 @@ proxies:
   up: 10000
 - alterId: 0
   cipher: auto
-  name: 335|德国-优化
+  name: 334|德国-优化
   network: ws
   port: 16644
   server: planb.mojcn.com
@@ -676,7 +676,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 335|德国-优化2
+  name: 334|德国-优化2
   network: ws
   port: 16644
   server: m.cnmjin.net
@@ -691,7 +691,7 @@ proxies:
     path: /
   ws-path: /
 - down: 10000
-  name: '340,341,342|德国DE-HY2 #3'
+  name: '339,340,341|德国DE-HY2 #3'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1443
   server: de.mjhy2.com
@@ -700,7 +700,7 @@ proxies:
   up: 10000
 - alterId: 0
   cipher: auto
-  name: '340,341,342|德国-优化 #3'
+  name: '339,340,341|德国-优化 #3'
   network: ws
   port: 16644
   server: planb.mojcn.com
@@ -716,7 +716,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '340,341,342|德国-优化2 #3'
+  name: '339,340,341|德国-优化2 #3'
   network: ws
   port: 16644
   server: m.cnmjin.net
@@ -735,7 +735,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_36
+  name: 349| DE_34
   network: ws
   port: 443
   server: 141.94.155.224
@@ -752,7 +752,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_37
+  name: 349| DE_35
   network: ws
   port: 443
   server: 141.95.126.134
@@ -769,7 +769,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350,400|🇩🇪 DE_33
+  name: 349,371,372,392,400|🇩🇪 DE_33
   network: none
   port: 18355
   server: 92.246.87.170
@@ -780,7 +780,7 @@ proxies:
   uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
   ws-path: /
 - country: DE
-  name: 350,400|🇩🇪DE_34
+  name: 349,400|🇩🇪DE_34
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -793,7 +793,7 @@ proxies:
   country: DE
   h2-opts: {}
   http-opts: {}
-  name: 353|DE_04
+  name: 352|DE_04
   network: tcp
   port: 18355
   server: 92.246.87.170
@@ -801,11 +801,11 @@ proxies:
   type: vmess
   uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
 - country: DE
-  name: 353,400|德国+黑森州法兰克福Choopa数据中心
+  name: 352,392,400|德国+黑森州法兰克福Choopa数据中心
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
   server: 45.32.158.138
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ads.x5.ru
   type: trojan
   udp: true
@@ -1152,14 +1152,15 @@ proxies:
   skip-cert-verify: false
   sni: awaited-chicken.adder289.quest
   type: trojan
-- name: '395,400|DE63｜商宽｜非常安全 #1'
-  password: dongtaiwang.com
-  port: 33550
-  server: 89.144.35.25
-  skip-cert-verify: true
-  sni: apple.com
+- alterId: 2
+  cipher: auto
+  name: 395|DE46｜机房｜低风险
+  network: tcp
+  port: '30833'
+  server: v33.hdacd.com
   tls: false
-  type: hysteria2
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1181,6 +1182,14 @@ proxies:
   port: 8443
   server: 85.209.53.178
   skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- name: 400|DE63｜商宽｜非常安全
+  password: dongtaiwang.com
+  port: 33550
+  server: 89.144.35.25
+  skip-cert-verify: true
+  sni: apple.com
   tls: false
   type: hysteria2
 - name: 400|防失效github+SubCrawler德国_0121048...
