@@ -1,17 +1,16 @@
 proxies:
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 228,395,400|🇨🇳 CN_32
+  name: '227,395,400|CN3｜家宽｜非常安全 #1'
   network: tcp
-  port: 59003
+  port: '59003'
   server: 183.236.51.36
-  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 228,395|HK168｜原生/疑似家宽｜非常安全
+  name: '227,395,400|HK168｜原生/疑似家宽｜非常安全 #1'
   network: tcp
   port: '47081'
   server: oss-4.qqa678.com
@@ -50,15 +49,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - country: ' CN'
-  name: 350| CN_30
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30534
-  server: 36.151.251.36
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: ' CN'
-  name: 350| CN_31
+  name: 350| CN_28
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
@@ -449,7 +440,14 @@ proxies:
   server: scloud50.jafiyun.ltd
   sni: scloud50.jafiyun.ltd
   type: trojan
-- name: 392|_CN_中国
+- name: '392,404|🇭🇰 香港 | HKG #11'
+  password: 4843e94d205f3893f588255a591abe94
+  port: 443
+  server: 58.152.18.124
+  skip-cert-verify: true
+  sni: 58.152.18.124
+  type: trojan
+- name: '392|_CN_中国 #1'
   password: trojan
   port: 8443
   server: 45.192.222.112
@@ -693,12 +691,30 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
-- name: 400|🇨🇳 CN_33
+- name: 400|🇨🇳 CN_31
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
   sni: a03.taipeicitygovernment.cn.ua
   type: trojan
+- name: 400|🇨🇳 CN_30
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 30534
+  server: 36.151.251.36
+  sni: 36.151.251.36
+  type: trojan
+- name: '400|🇭🇰_香港 #1'
+  network: ws
+  password: trojan
+  port: 8443
+  server: 45.192.222.112
+  skip-cert-verify: false
+  sni: store.timimi.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: store.timimi.dpdns.org
+    path: '%2F%3Fed%3D2560'
 - alterId: 0
   cipher: auto
   name: 400|github.com/freefq - 广东省移动 7

@@ -104,7 +104,7 @@ proxies:
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 262,383,395|FR_speednode_0007
+  name: '262,383,395,400|14|FR_speednode_0007 #2'
   port: 443
   server: 185.126.67.73
   servername: apple.com
@@ -413,14 +413,14 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: chacha20-ietf-poly1305
   country: ' FR'
-  name: 350| FR_37
+  name: 350| FR_34
   password: caac660070728d6c
   port: 11201
   server: 54.37.78.252
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' FR'
-  name: 350| FR_38
+  name: 350| FR_35
   password: 5bbe7bf7a282ad8b
   port: 11201
   server: 51.178.114.93
@@ -430,7 +430,7 @@ proxies:
   country: ' FR'
   h2-opts: {}
   http-opts: {}
-  name: 350| FR_39
+  name: 350| FR_36
   network: ws
   port: 443
   server: 91.134.8.101
@@ -440,7 +440,7 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
 - country: FR
-  name: 350|FR_40
+  name: 350|FR_37
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -448,15 +448,15 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_41
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  name: 350|FR_38
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
-  server: 198.244.190.189
+  server: de-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_42
+  name: 350|FR_39
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -464,10 +464,10 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_43
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  name: 350|FR_40
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: de-full.privateip.net
+  server: 198.244.190.189
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -650,55 +650,39 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- name: 400|FR2｜机房｜低风险
-  password: a516b408-e06d-4278-9e6d-5271571ecab5
-  port: 20248
-  server: 51.75.118.149
-  skip-cert-verify: true
-  sni: dash.cloudflare.com
-  tls: false
-  type: hysteria2
-- name: 400|🇫🇷FR_45
+- name: 400|🇫🇷FR_42
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 400|🇫🇷FR_44
+- name: 400|🇫🇷FR_41
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: 400|🇫🇷FR_43
+- name: 400|🇫🇷FR_40
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 400|🇫🇷FR_42
+- name: 400|🇫🇷FR_43
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   sni: de-full.privateip.net
   type: trojan
-- name: 400|🇫🇷_法国
+- alpn:
+  - http/1.1
+  name: 400|FR TROJAN-02 | free-nodes
   network: tcp
-  password: zL7CpPYxhvFtYqm2yAbHrw
-  port: 7494
-  server: 137.74.41.156
-  skip-cert-verify: true
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.37.174.80
+  sni: trojan.burgerip.co.uk
   type: trojan
-- name: 400|FR VLESS-04 | free-nodes
-  network: ws
-  port: 22224
-  server: 13.39.44.23
-  servername: trojan.burgerip.co.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
 - name: 400|法國-01-1-1
   network: ws
   port: 2082
@@ -742,37 +726,40 @@ proxies:
   tls: false
   type: vless
   uuid: 5695e906-fd40-45e7-b261-7bc605af614c
-- name: 400|法國-01-1
+- name: 400|🇫🇷_法国
   network: ws
-  port: 2052
-  server: www.visa.com.sg
-  tls: false
-  type: vless
-  uuid: cdec8542-a21f-4377-9da3-ea60bb6d3a30
-  ws-opts:
-    headers:
-      Host: chosenflyesqt-q3y28ipf-v2.chosen-fly-esqt.workers.dev
-    path: '%2F'
-- name: '400|🇫🇷_法国 #2'
-  network: ws
-  port: 443
-  server: 57.128.179.254
-  servername: all.aniuge.qzz.io
+  port: 8443
+  server: 51.195.102.180
+  servername: kuangbao.xiejiang.dpdns.org
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
   ws-opts:
-    path: '%2F'
-- alterId: 2
-  cipher: auto
-  name: 400|FR3｜机房｜低风险
-  network: tcp
-  port: '30835'
-  server: v35.hdacd.com
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+    path: '%2F%3Fed%3D2560'
+- name: '400|🇫🇷_法国 #1'
+  network: ws
+  port: 8443
+  server: 51.195.43.174
+  servername: kuangbao.xiejiang.dpdns.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  ws-opts:
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+    path: '%2F%3Fed%3D2560'
+- name: 400|FR VLESS-66 | free-nodes
+  port: 2087
+  server: 188.114.98.224
   tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  type: vless
+  uuid: 8443822d-6b68-4af2-d096-c03207ed880d
+  ws-opts:
+    path: '%2Frahh'
 - alterId: 0
   cipher: auto
   name: 400|法国 140
@@ -803,7 +790,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 400|🇫🇷 FR_41
+  name: 400|🇫🇷 FR_39
   network: ws
   port: 443
   server: 91.134.8.101
@@ -817,7 +804,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|法国_012204054
+  name: 400|法国_012218053
   network: tcp
   port: '550'
   server: 162.19.248.238
@@ -827,7 +814,7 @@ proxies:
   uuid: ede27a79-b039-490b-932c-495de4b68880
 - alterId: 0
   cipher: auto
-  name: 400|法国_012204056
+  name: 400|法国_012218055
   network: tcp
   port: '443'
   server: 217.69.5.32
