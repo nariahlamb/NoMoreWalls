@@ -53,22 +53,7 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- name: '227,262,400|14|DE_speednode_0002 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.196.155.223
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 227,262|14|DE_speednode_0004
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.196.155.223
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: '262,383,395,400|9|DE #1'
+- name: '262,383,395,400|9|DE #2'
   password: a084933d-0b41-4571-ae0c-7163b8c71ed1
   port: 2056
   server: de.eyucdn.xyz
@@ -76,6 +61,13 @@ proxies:
   sni: de.eyucdn.xyz
   tls: false
   type: hysteria2
+- name: '262,400|14|DE_speednode_0002 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.196.155.223
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '262,400|14|DE_speednode_0003 #1'
@@ -86,6 +78,12 @@ proxies:
   tls: true
   type: vless
   uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
+- name: 262|14|DE_speednode_0004
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.196.155.223
+  skip-cert-verify: true
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 278|🇩🇪1 |  1.6MB/s
   password: oXGp1+ihlfKg826H
@@ -739,7 +737,24 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_33
+  name: 350| DE_30
+  network: ws
+  port: 443
+  server: 141.95.126.134
+  servername: jamekk.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: jamekk.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: ' DE'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| DE_31
   network: ws
   port: 443
   server: 141.94.155.224
@@ -766,23 +781,6 @@ proxies:
   type: vmess
   uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
   ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' DE'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| DE_35
-  network: ws
-  port: 443
-  server: 141.95.126.134
-  servername: jamekk.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: jamekk.org
-  ws-path: linkvws
 - country: DE
   name: 350,400|🇩🇪DE_37
   password: 665c944d-047d-4659-80d5-3eaac70241a9
@@ -1157,6 +1155,66 @@ proxies:
   skip-cert-verify: false
   sni: awaited-chicken.adder289.quest
   type: trojan
+- name: 395|DE43｜机房｜低风险
+  network: ws
+  password: 2c6bd338-237b-42f2-bf90-9fc3be812e82
+  port: 2096
+  server: bestcdn1.868863.xyz
+  skip-cert-verify: true
+  sni: 17691448613129.206353.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17691448617439.206353.xyz
+    path: '%2Fagrbniuh'
+- name: 395|DE44｜机房｜低风险
+  network: ws
+  password: 2c6bd338-237b-42f2-bf90-9fc3be812e82
+  port: 2087
+  server: bestcdn2.868863.xyz
+  skip-cert-verify: true
+  sni: 17691448617051.206353.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17691448616258.206353.xyz
+    path: '%2Fagrbniuh'
+- name: 395|DE45｜机房｜低风险
+  network: ws
+  password: 2c6bd338-237b-42f2-bf90-9fc3be812e82
+  port: 2083
+  server: bestcdn3.868863.xyz
+  skip-cert-verify: true
+  sni: 17691448618426.206353.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17691448614452.206353.xyz
+    path: '%2Fagrbniuh'
+- name: 395|DE46｜机房｜低风险
+  network: ws
+  password: 2c6bd338-237b-42f2-bf90-9fc3be812e82
+  port: 8443
+  server: bestcdn4.868863.xyz
+  skip-cert-verify: true
+  sni: 17691448611322.206353.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17691448615350.206353.xyz
+    path: '%2Fagrbniuh'
+- name: 395|DE47｜机房｜低风险
+  network: ws
+  password: 2c6bd338-237b-42f2-bf90-9fc3be812e82
+  port: 2053
+  server: bestcdn5.868863.xyz
+  skip-cert-verify: true
+  sni: 17691448612018.206353.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17691448615813.206353.xyz
+    path: '%2Fagrbniuh'
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1631,3 +1689,10 @@ proxies:
   tls: false
   type: vmess
   uuid: 42e25353-b1ae-59f3-bd59-d86d2737b814
+- name: '404|🇩🇪 德国 | DEU #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.70.150.185
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
