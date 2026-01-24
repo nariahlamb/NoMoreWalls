@@ -51,7 +51,7 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- name: 261,382,394,399|9|DE
+- name: '261,382,394,399|8|DE #2'
   password: a084933d-0b41-4571-ae0c-7163b8c71ed1
   port: 2056
   server: de.eyucdn.xyz
@@ -61,7 +61,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 261,382,394|DE_speednode_0010
+  name: '261,382,394,399|13|DE_speednode_0010 #2'
   port: 443
   server: 45.145.43.147
   servername: apple.com
@@ -73,7 +73,7 @@ proxies:
   - h2
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 261,382,394|DE_speednode_0011
+  name: '261,382,394,399|13|DE_speednode_0011 #2'
   port: 443
   server: 185.163.116.239
   servername: live.com
@@ -83,12 +83,8 @@ proxies:
   uuid: 8fcaebab-d39a-46eb-b1cc-20ea883c4183
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '261,382,394,399|🇳🇱_荷兰 #2'
-  network: tcp
+  name: '261,382,394,399|13|DE_speednode_0012 #2'
   port: 443
-  reality-opts:
-    public-key: 9ajY_OBOn5CCPnCJTPjxg6J3IWE8uJYAiWQvG9CBGjU
-    short-id: 00684d2eae2cdd16
   server: 185.94.29.250
   servername: apple.com
   skip-cert-verify: false
@@ -748,7 +744,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 349| DE_27
+  name: 349| DE_32
   network: ws
   port: 443
   server: 141.95.126.134
@@ -765,7 +761,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 349| DE_28
+  name: 349| DE_33
   network: ws
   port: 443
   server: 141.94.155.224
@@ -782,7 +778,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 349,399|🇩🇪 DE_31
+  name: 349,399|🇩🇪 DE_29
   network: none
   port: 18355
   server: 92.246.87.170
@@ -793,7 +789,7 @@ proxies:
   uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
   ws-path: /
 - country: DE
-  name: 349,399|🇩🇪DE_32
+  name: 349,399|🇩🇪DE_30
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -802,12 +798,11 @@ proxies:
   type: trojan
   udp: true
 - country: DE
-  name: 352,399|德国_012404018
-  network: tcp
+  name: 352,391,399|DE TROJAN-42 | free-nodes
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
   server: 45.32.158.138
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ads.x5.ru
   type: trojan
   udp: true
@@ -1166,7 +1161,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 391|🇩🇪 机场推荐:dafei.de 德国 09
+  name: '391,399|🇩🇪 机场推荐:dafei.de 德国 09 #1'
   network: ws
   port: '8080'
   server: 104.21.69.44
@@ -1191,7 +1186,7 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 399,403|🇩🇪 德国 | DEU
+- name: 399|🇩🇪 德国 | DEU 2
   password: fe793ec6-b7a9-4f30-b623-d3c9ca6eb37c
   port: 18349
   server: ssr-de-152.rosena.ggff.net
@@ -1259,14 +1254,23 @@ proxies:
     headers:
       Host: 17691448615813.206353.xyz
     path: '%2Fagrbniuh'
-- name: 399|DE TROJAN-19 | free-nodes
-  password: d51abb35-94a4-4529-9244-2808beaa4624
-  port: 35837
-  server: de.yiciyuanquicken.online
-  skip-cert-verify: false
-  sni: de.yiciyuanquicken.online
+- alpn:
+  - http/1.1
+  name: 399|DE TROJAN-15 | free-nodes
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 3.70.150.185
+  sni: trojan.burgerip.co.uk
   type: trojan
-- name: 399|德国_012404556
+- name: 399|德国_012418560
+  password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  port: 20994
+  server: 140.82.35.244
+  skip-cert-verify: true
+  sni: ads.x5.ru
+  type: trojan
+- name: 399|德国_012418559
   network: tcp
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
@@ -1274,37 +1278,51 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 399|DE VLESS-26 | free-nodes
+- name: 399|DE VLESS-46 | free-nodes
   network: tcp
   port: 2584
   server: 193.233.85.244
   tls: false
   type: vless
   uuid: 038a50c3-229c-41ef-a7ef-7abb504e4f33
-- name: 399|DE VLESS-28 | free-nodes
-  network: tcp
-  port: 2584
-  server: 94.141.161.83
-  tls: false
-  type: vless
-  uuid: 038a50c3-229c-41ef-a7ef-7abb504e4f33
-- name: 399|DE VLESS-16 | free-nodes
+- name: 399|SCP-DEV
   network: ws
-  port: 22224
-  server: 3.76.159.25
-  servername: trojan.burgerip.co.uk
+  port: 443
+  server: mianfeijiedianscp.buzz
+  servername: ''
   tls: true
   type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  uuid: 0b3ad86e-1818-49bb-949d-4e85d137a16d
   ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
-- name: 399|DE VLESS-63 | free-nodes
-  network: grpc
-  port: 58153
-  server: doprax.fxgoldensignals.com
-  tls: false
+    headers:
+      Host: mianfeijiedianscp.buzz
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 399|DE VLESS-29 | free-nodes
+  network: ws
+  port: 443
+  server: chatgpt.com
+  servername: kosmos.darkmod.sbs
+  tls: true
   type: vless
-  uuid: 14fe2c89-af11-4b7d-cc08-9641f0f2d8ee
+  uuid: 1fd1a427-ed60-4713-fbc1-ae9244d9790c
+  ws-opts:
+    headers:
+      Host: kosmos.darkmod.sbs
+    path: '%2F'
+- name: 399|DE VLESS-01 | free-nodes
+  network: ws
+  port: 443
+  server: 8.6.112.0
+  servername: cdn.55994421.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 22e7f0d3-8d3b-40c7-a1c5-8a912f6a16b3
+  ws-opts:
+    headers:
+      Host: cdn.55994421.xyz
+    path: '%2Fmemo'
 - name: 399|🇩🇪DE_19 | ⬇️ 4.5MB/s
   network: ws
   port: 443
@@ -1317,49 +1335,53 @@ proxies:
     headers:
       Host: korahey.xyz
     path: '%2F'
-- client-fingerprint: chrome
+- client-fingerprint: ios
   flow: xtls-rprx-vision
   name: 399|🇩🇪_德国
   network: tcp
-  port: 443
+  port: 35888
   reality-opts:
-    public-key: gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY
-    short-id: 7cad5040
-  server: 46.62.128.207
-  servername: www.cloudflare.com
+    public-key: MEuR9N9-GTtIxBURM6tujgePlg75z5F881gkuq3XpEk
+    short-id: e48d932c5b53f059
+  server: free1.lulu.autos
+  servername: swdist.apple.com
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
-- client-fingerprint: chrome
-  name: 399|DE VLESS-22 | free-nodes
-  network: ws
-  port: 2087
-  server: chat.openai.com
-  servername: hfsakjuhfvgasljhdvschat.ftacdnjkop.ir
+  uuid: 37412c37-20b9-4341-9b2c-72f5508bf3e1
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '399|🇩🇪_德国 #1'
+  network: tcp
+  port: 35888
+  reality-opts:
+    public-key: meY38577F3EMOxO0tv0TkT2VgU7-wYfQr_YB-E82wik
+    short-id: c7a445fe6c
+  server: free2.lulu.autos
+  servername: swdist.apple.com
+  skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 3ac6a403-78ef-4e82-879f-1e54a622efd3
-  ws-opts:
-    headers:
-      Host: hfsakjuhfvgasljhdvschat.ftacdnjkop.ir
-    path: '%2Fhttps%3A%2F%2Ft.me%2FNIM_VPN_ir%2Chttps%3A%2F%2Ft.me%2FNIM_VPN_ir'
-- client-fingerprint: chrome
-  name: 399|DE VLESS-07 | free-nodes
-  network: tcp
-  port: 1598
-  reality-opts:
-    public-key: GGsieU5yiXWsMeO0StA4mTO2s8OLLvt0hUivZJkJG2k
-    short-id: 0b886008af8942c3
-  server: almost.hamrahconfig.com
-  servername: tgju.org
-  tls: false
-  type: vless
-  uuid: 4ff6c0e1-1901-444a-a3e4-bb62d3f753ea
+  uuid: 37412c37-20b9-4341-9b2c-72f5508bf3e1
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: 399|DE VLESS-122 | free-nodes
+  name: 399|DE VLESS-27 | free-nodes
+  network: ws
+  port: 443
+  server: 8.6.112.0
+  servername: cdn.vpsmee.ir
+  tls: true
+  type: vless
+  uuid: 3a4ddfac-e7da-48c9-9648-4a366109fc3a
+  ws-opts:
+    headers:
+      Host: mtn.vpsmee.ir
+    path: '%2FX0PX5Vup1qlVVzhxp6ic50a'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 399|DE VLESS-130 | free-nodes
   network: ws
   port: 8443
   server: 104.18.32.47
@@ -1371,17 +1393,16 @@ proxies:
     headers:
       Host: nvm.website-game.ir
     path: /@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config
-- name: '399|🇩🇪_德国 #1'
-  network: ws
-  port: 2053
-  server: 185.103.252.54
-  servername: kuangbao.xiejiang.dpdns.org
-  skip-cert-verify: false
-  tls: true
+- name: 399|DE VLESS-70 | free-nodes
+  network: tcp
+  port: 8443
+  server: ab.fxgoldensignals.com
+  tls: false
   type: vless
-  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  uuid: 636728f4-c7b1-47a3-91b0-243b258f997e
   ws-opts:
-    path: '%2F'
+    headers:
+      Host: alibaba.com
 - name: 399|德國 25
   network: grpc
   port: 22955
@@ -1396,7 +1417,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc
-  name: 399|🇩🇪_DE_德国
+  name: 399|DE VLESS-62 | free-nodes
   network: grpc
   port: 22955
   reality-opts:
@@ -1410,7 +1431,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc
-  name: 399|DE VLESS-43 | free-nodes
+  name: 399|DE VLESS-60 | free-nodes
   network: grpc
   port: 22955
   reality-opts:
@@ -1421,15 +1442,13 @@ proxies:
   tls: false
   type: vless
   uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-  ws-opts:
-    path: '%2f'
 - client-fingerprint: chrome
-  name: 399|DE VLESS-24 | free-nodes
+  name: 399|DE VLESS-44 | free-nodes
   network: ws
   port: 2096
   server: chatgpt.com
   servername: s3d.maxriser.ir
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 7947bfb3-bb9a-4eee-a544-cb05aad24b13
@@ -1437,14 +1456,14 @@ proxies:
     headers:
       Host: s3d.maxriser.ir
     path: '%2F'
-- name: 399|DE VLESS-60 | free-nodes
+- name: 399|DE VLESS-75 | free-nodes
   network: grpc
   port: 443
   server: 91.107.148.79
   tls: false
   type: vless
   uuid: 7b148add-4438-426e-a583-50f11e7bd0e4
-- name: 399|DE VLESS-36 | free-nodes
+- name: 399|DE VLESS-53 | free-nodes
   network: tcp
   port: 7945
   server: de23.ariyanln.com
@@ -1454,34 +1473,11 @@ proxies:
   ws-opts:
     headers:
       Host: mmg.whatsapp.net
-- name: '399|🇩🇪_德国 #2'
+- name: 399|德國_5
   network: ws
   port: 443
-  server: 5.10.214.0
-  servername: GfV5t2331T.sMaRtTeChZaAl.InFo
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-  ws-opts:
-    path: '%2F'
-- name: 399|DE德国(mibei77.com 米贝节点分享)
-  network: ws
-  port: 2087
-  server: 5.10.214.5
-  servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-  tls: true
-  type: vless
-  uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-  ws-opts:
-    headers:
-      Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    path: '%2F'
-- name: '399|DE德国(mibei77.com 米贝节点分享) #1'
-  network: ws
-  port: 443
-  server: 5.10.214.5
-  servername: GfV5t2331T.sMaRtTeChZaAl.InFo
+  server: api.dark-coffe.com
+  servername: ''
   tls: true
   type: vless
   uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
@@ -1489,30 +1485,22 @@ proxies:
     headers:
       Host: GfV5t2331T.sMaRtTeChZaAl.InFo
     path: '%2F'
-- name: '399|DE德国(mibei77.com 米贝节点分享) #2'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 399|DE VLESS-30 | free-nodes
   network: ws
-  port: 2087
-  server: api.dark-coffe.com
-  servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
+  port: 443
+  server: chatgpt.com
+  servername: dns10.tehranpastor.ir
+  skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+  uuid: 7fce8c5a-790b-4ad9-abd8-7172cdfe18c3
   ws-opts:
     headers:
-      Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-    path: '%2F'
-- name: '399|DE德国(mibei77.com 米贝节点分享) #3'
-  network: ws
-  port: 2096
-  server: api.dark-coffe.com
-  servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  tls: true
-  type: vless
-  uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
-  ws-opts:
-    headers:
-      Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-    path: '%2F%3Fed%3D2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN'
+      Host: dns10.tehranpastor.ir
+    path: /ObXDTpNArb71SzIL
 - name: 399|🇩🇪[openproxylist.com] vless-DE
   network: ws
   port: 80
@@ -1535,56 +1523,76 @@ proxies:
   tls: false
   type: vless
   uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 399|DE VLESS-20 | free-nodes
+- name: 399|DE VLESS-26 | free-nodes
+  network: tcp
+  port: 47014
+  server: 84.252.138.149
+  tls: false
+  type: vless
+  uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
+- name: 399|DE VLESS-103 | free-nodes
   network: ws
   port: 443
-  server: chatgpt.com
-  servername: snaPP.athenashOppp.ir
+  server: 188.114.98.224
+  servername: hetzner.rahedarro.com
   tls: true
   type: vless
-  uuid: 9e13716d-c43d-48b3-8cab-65e02d938ab5
+  uuid: 95fd8ed6-0c48-41be-ae26-dfea82fa67ad
   ws-opts:
     headers:
-      Host: snapp.athenashoppp.ir
-    path: '%2F'
+      Host: hetzner.rahedarro.com
+    path: '%2Fdar'
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: 399|DE VLESS-68 | free-nodes
+  name: 399|DE VLESS-41 | free-nodes
   network: ws
   port: 443
-  server: rohin.ns.cloudflare.com
+  server: 104.18.32.47
+  servername: de.mrtech.com.tr
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: a4b96207-61fd-4ab3-aa1d-1e26fb02dc3b
+  ws-opts:
+    headers:
+      Host: de.mrtech.com.tr
+    path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 399|DE VLESS-81 | free-nodes
+  network: ws
+  port: 443
+  server: 8.6.112.0
   servername: forreest.info
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: c9b0932d-8d1c-43c5-b64b-e9a74719c76d
   ws-opts:
     headers:
       Host: forreest.info
-    path: /hsdgsws
-- name: '399|DE德国(mibei77.com 米贝节点分享) #4'
+    path: '%2Fhsdgsws'
+- name: 399|DE VLESS-68 | free-nodes
   network: ws
   port: 443
-  server: 45.135.160.57
-  servername: ww4.xaniujp1.qzz.io
+  server: rohin.ns.cloudflare.com
+  servername: ''
   tls: true
   type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
+  uuid: c9b0932d-8d1c-43c5-b64b-e9a74719c76d
   ws-opts:
     headers:
-      Host: ww4.xaniujp1.qzz.io
-    path: '%2F%3Fed%3D2560'
+      Host: forreest.info
+    path: '%2Fhsdgsws'
 - alpn:
   - ''
   client-fingerprint: ios
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 399|DE VLESS-152 | free-nodes
+  name: 399|DE VLESS-146 | free-nodes
   network: grpc
   port: 443
   server: s689.okgfwbackxyz.xyz
@@ -1596,38 +1604,38 @@ proxies:
     headers:
       Host: s689.okgfwbackxyz.xyz
     path: ''
-- name: 399|DE VLESS-03 | free-nodes
+- name: 399|DE VLESS-31 | free-nodes
   network: ws
-  port: 8443
-  server: 104.18.32.47
-  servername: h1.operatorstcp.com
-  skip-cert-verify: false
-  tls: true
+  port: 8080
+  server: operator.chatgpt.com
+  tls: false
   type: vless
-  uuid: e3b74792-e7bd-4413-bcba-67df6e50b543
+  uuid: e3e47430-46f4-40ea-b754-5fc30cc997af
   ws-opts:
     headers:
-      Host: h1.operatorstcp.com
-    path: '%2F'
-- name: 399|DE VLESS-84 | free-nodes
+      Host: mx5.mmd8563.ir
+    path: /
+- name: 399|DE VLESS-95 | free-nodes
   network: grpc
   port: 41647
   server: 91.107.173.252
   tls: false
   type: vless
   uuid: e50fa46f-20c6-4c0d-fa0e-d9ffd92df36f
-- name: 399|🇩🇪DE_12 | ⬇️ 3.7MB/s
-  network: ws
-  port: 2053
-  server: 103.252.90.120
-  servername: ''
-  tls: true
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice
+  name: 399|DE VLESS-08 | free-nodes
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: kgkW6Cn4c4ZBLpyUf400I_Hmdnrnq94Sr57O5TAEOnk
+    short-id: adf4bd56e5
+  server: prime.dissertationhelpspecialist.com
+  servername: tgju.org
+  tls: false
   type: vless
-  uuid: f82711cd-a620-4a59-9e8f-bdfc336c0ea9
-  ws-opts:
-    headers:
-      Host: chatgpt.drinfoo.org
-    path: '%2Fchatgpt'
+  uuid: e628c496-5b92-4fe0-8bae-c07082fbb77b
 - name: 399|🇩🇪 德国 | DEU 3
   network: ws
   port: 12922
@@ -1642,21 +1650,21 @@ proxies:
     path: '%2Ffxnzws'
 - alterId: 0
   cipher: auto
-  name: 399|🇩🇪 DE_29
+  name: 399|德国 051
   network: ws
   port: 443
-  server: 141.94.155.224
-  servername: ''
+  server: 141.94.155.229
+  servername: pelang.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: pelang.org
+    path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 399|🇩🇪 DE_30
+  name: 399|🇩🇪 DE_27
   network: ws
   port: 443
   server: 141.95.126.134
@@ -1670,17 +1678,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 399|德国_012404036
-  network: tcp
-  port: '19303'
-  server: 192.145.44.186
+  name: 399|🇩🇪 DE_28
+  network: ws
+  port: 443
+  server: 141.94.155.224
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 361342c3-0455-4cdf-8468-fc56cb437fdd
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
-  name: 399|德国_012404037
+  name: 399|德国_012418561
   network: tcp
   port: '8013'
   server: kh7.rookari.com
@@ -1690,7 +1702,7 @@ proxies:
   uuid: 4c4b6ddd-21ba-4a9c-bbd3-210c9609969e
 - alterId: 0
   cipher: auto
-  name: '399|🇩🇪_DE_德国 #1'
+  name: 399|🇩🇪_DE_德国
   network: tcp
   port: 8080
   server: 185.189.58.195

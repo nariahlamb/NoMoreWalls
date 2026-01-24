@@ -496,7 +496,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 349| DE_27
+  name: 349| DE_32
   network: ws
   port: 443
   server: 141.95.126.134
@@ -513,7 +513,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 349| DE_28
+  name: 349| DE_33
   network: ws
   port: 443
   server: 141.94.155.224
@@ -530,7 +530,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 349,399|🇩🇪 DE_31
+  name: 349,399|🇩🇪 DE_29
   network: none
   port: 18355
   server: 92.246.87.170
@@ -541,7 +541,7 @@ proxies:
   uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
   ws-path: /
 - country: DE
-  name: 349,399|🇩🇪DE_32
+  name: 349,399|🇩🇪DE_30
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -550,12 +550,11 @@ proxies:
   type: trojan
   udp: true
 - country: DE
-  name: 352,399|德国_012404018
-  network: tcp
+  name: 352,391,399|DE TROJAN-42 | free-nodes
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
   server: 45.32.158.138
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ads.x5.ru
   type: trojan
   udp: true
@@ -719,7 +718,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 391|🇩🇪 机场推荐:dafei.de 德国 09
+  name: '391,399|🇩🇪 机场推荐:dafei.de 德国 09 #1'
   network: ws
   port: '8080'
   server: 104.21.69.44
@@ -804,14 +803,23 @@ proxies:
     headers:
       Host: 17691448615813.206353.xyz
     path: '%2Fagrbniuh'
-- name: 399|DE TROJAN-19 | free-nodes
-  password: d51abb35-94a4-4529-9244-2808beaa4624
-  port: 35837
-  server: de.yiciyuanquicken.online
-  skip-cert-verify: false
-  sni: de.yiciyuanquicken.online
+- alpn:
+  - http/1.1
+  name: 399|DE TROJAN-15 | free-nodes
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 3.70.150.185
+  sni: trojan.burgerip.co.uk
   type: trojan
-- name: 399|德国_012404556
+- name: 399|德国_012418560
+  password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  port: 20994
+  server: 140.82.35.244
+  skip-cert-verify: true
+  sni: ads.x5.ru
+  type: trojan
+- name: 399|德国_012418559
   network: tcp
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
@@ -821,21 +829,21 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 399|🇩🇪 DE_29
+  name: 399|德国 051
   network: ws
   port: 443
-  server: 141.94.155.224
-  servername: ''
+  server: 141.94.155.229
+  servername: pelang.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: pelang.org
+    path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 399|🇩🇪 DE_30
+  name: 399|🇩🇪 DE_27
   network: ws
   port: 443
   server: 141.95.126.134
@@ -849,17 +857,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 399|德国_012404036
-  network: tcp
-  port: '19303'
-  server: 192.145.44.186
+  name: 399|🇩🇪 DE_28
+  network: ws
+  port: 443
+  server: 141.94.155.224
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 361342c3-0455-4cdf-8468-fc56cb437fdd
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
-  name: 399|德国_012404037
+  name: 399|德国_012418561
   network: tcp
   port: '8013'
   server: kh7.rookari.com
@@ -869,7 +881,7 @@ proxies:
   uuid: 4c4b6ddd-21ba-4a9c-bbd3-210c9609969e
 - alterId: 0
   cipher: auto
-  name: '399|🇩🇪_DE_德国 #1'
+  name: 399|🇩🇪_DE_德国
   network: tcp
   port: 8080
   server: 185.189.58.195
