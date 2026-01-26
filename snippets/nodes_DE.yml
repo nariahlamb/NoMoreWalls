@@ -489,7 +489,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 349| DE_27
+  name: 349| DE_29
   network: ws
   port: 443
   server: 141.94.155.224
@@ -506,7 +506,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 349| DE_28
+  name: 349| DE_30
   network: ws
   port: 443
   server: 141.95.126.134
@@ -523,7 +523,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 349,399|🇩🇪 DE_32
+  name: 349,399|🇩🇪 DE_30
   network: none
   port: 18355
   server: 92.246.87.170
@@ -534,7 +534,7 @@ proxies:
   uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
   ws-path: /
 - country: DE
-  name: 349,399|🇩🇪DE_33
+  name: 349,399|🇩🇪DE_32
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -543,7 +543,7 @@ proxies:
   type: trojan
   udp: true
 - country: DE
-  name: 352,399|🇩🇪 德国 黑森州法兰克福Choopa数据中心
+  name: 352|Relay_DE-DE_04
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
   server: 45.32.158.138
@@ -552,7 +552,7 @@ proxies:
   type: trojan
   udp: true
 - country: DE
-  name: '352,370,371,391,399|🇺🇸 美国 V2CROSS.COM #2'
+  name: 352,370,371,399|🇺🇸 美国 V2CROSS.COM
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
   server: 140.82.35.244
@@ -722,22 +722,25 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alpn:
-  - http/1.1
-  name: 399|DE TROJAN-15 | free-nodes
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 3.70.150.185
-  sni: trojan.burgerip.co.uk
+- name: 399|DE TROJAN-65 | free-nodes
+  password: TurbooServer
+  port: 80
+  server: cdn.turbooserver.com
   type: trojan
-- name: 399|德国_012604625
+  ws-opts:
+    path: /ed%3D25
+- name: 399|德国_012618631
   network: tcp
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
   server: 45.32.153.36
   skip-cert-verify: true
   sni: ads.x5.ru
+  type: trojan
+- name: 399|DE TROJAN-68 | free-nodes
+  password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  port: 20994
+  server: 45.32.158.138
   type: trojan
 - alterId: 0
   cipher: auto
@@ -755,21 +758,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 399|🇩🇪 DE_30
-  network: ws
-  port: 443
-  server: 141.95.126.134
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 399|🇩🇪 DE_31
+  name: 399|🇩🇪 DE_29
   network: ws
   port: 443
   server: 141.94.155.224
@@ -783,21 +772,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 399|德国 V2CROSS.COM
+  name: 399|🇩🇪 DE_31
   network: ws
-  port: 36859
-  server: 5.83.150.108
-  servername: imafake.locker
+  port: 443
+  server: 141.95.126.134
+  servername: ''
   tls: true
   type: vmess
-  uuid: 3b475934-cb2a-4d96-b260-5e50cca5d430
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: imafake.locker
-    path: /speedtest
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
-  name: '399|🇩🇪_DE_德国 #1'
+  name: 399|🇩🇪_DE_德国
   network: tcp
   port: 8080
   server: 185.189.58.195

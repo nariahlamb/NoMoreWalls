@@ -44,8 +44,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
-- delay: 2557
-  name: 64,264,384|法国 - Lauterbourg - Contabo Gmb...
+- name: '64,264|🇫🇷 法国 - Lauterbourg - Contabo ... #1'
   port: 1080
   server: 185.194.217.97
   skip-cert-verify: true
@@ -91,7 +90,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- name: '261,399|13|FR_speednode_0003 #1'
+- name: 261|13|FR_speednode_0003
   port: 25178
   server: 46.8.225.78
   servername: excoino.com
@@ -403,7 +402,7 @@ proxies:
   country: ' FR'
   h2-opts: {}
   http-opts: {}
-  name: 349| FR_32
+  name: 349| FR_34
   network: ws
   port: 443
   server: 91.134.8.101
@@ -413,15 +412,7 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
 - country: FR
-  name: 349|FR_33
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: 198.244.190.189
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: FR
-  name: 349|FR_34
+  name: 349|FR_35
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -429,7 +420,7 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 349|FR_35
+  name: 349|FR_36
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -437,16 +428,24 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 349|FR_36
+  name: 349|FR_37
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
+- country: FR
+  name: 349|FR_38
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: 198.244.190.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   country: FR
-  name: 352|FR_04
+  name: 352|FR_06
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -630,19 +629,19 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- name: 399|🇫🇷FR_38
+- name: 399|🇫🇷FR_37
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 399|🇫🇷FR_37
+- name: 399|🇫🇷FR_35
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: 399|🇫🇷FR_39
+- name: 399|🇫🇷FR_38
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -654,27 +653,46 @@ proxies:
   server: de-full.privateip.net
   sni: de-full.privateip.net
   type: trojan
-- name: 399|FR TROJAN-35 | free-nodes
+- name: 399|FR TROJAN-63 | free-nodes
   network: ws
   password: humanity
   port: 443
   server: chatgpt.com
-  skip-cert-verify: false
   sni: www.gossipglove.com
   type: trojan
   ws-opts:
     headers:
       Host: www.gossipglove.com
-    path: /assignment
+    path: '%2Fassignment'
 - alpn:
   - http/1.1
-  name: 399|FR TROJAN-11 | free-nodes
+  name: 399|FR TROJAN-03 | free-nodes
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.236.185.25
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.39.197.201
   sni: trojan.burgerip.co.uk
   type: trojan
+- client-fingerprint: chrome
+  name: 399|🇫🇷_法国
+  network: ws
+  port: 700
+  server: 51.195.199.65
+  servername: mot.saghv.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-opts:
+    headers:
+      Host: mot.saghv.filegear-sg.me
+    path: '%2F%40Marisa_kristi'
+- name: 399|FR VLESS-24 | free-nodes
+  port: 19702
+  server: sktr.berkeart.ir
+  tls: false
+  type: vless
+  uuid: 1f3b130d-7d29-45d1-b5aa-adc5cd94a885
 - name: 399|🇫🇷 France, Paris [BL]-02
   network: tcp
   port: 443
@@ -709,7 +727,66 @@ proxies:
   uuid: 5695e906-fd40-45e7-b261-7bc605af614c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 399|🇫🇷_法国
+  name: 399|FR VLESS-41 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: hbtt7X9RxXWayUR5Yvff3kzLYQui7uB0KlliIjx68Xw
+    short-id: 857cf4b3
+  server: 185.10.18.130
+  servername: www.google.com
+  tls: false
+  type: vless
+  uuid: 7e496ad4-bcbf-46e3-a1d7-f75778968a75
+- name: 399|FR VLESS-99 | free-nodes
+  port: 2087
+  server: 188.114.98.224
+  tls: false
+  type: vless
+  uuid: 8443822d-6b68-4af2-d096-c03207ed880d
+  ws-opts:
+    path: '%2Frahh'
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: UpdateService
+  name: 399|FR VLESS-75 | free-nodes
+  network: grpc
+  port: 2083
+  reality-opts:
+    public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
+    short-id: 6da16b1335651b38
+  server: 213.176.73.206
+  servername: apple.com
+  tls: false
+  type: vless
+  uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: 399|FR VLESS-50 | free-nodes
+  network: tcp
+  port: 2222
+  server: 45.154.96.51
+  servername: tcp1.speedx3net.ir
+  tls: true
+  type: vless
+  uuid: a37f349e-04b0-4967-a9e5-fb35083fa353
+- name: 399|FR VLESS-62 | free-nodes
+  network: ws
+  port: 443
+  server: zzula.ir
+  servername: zitel.digikala-aparat-zula.com
+  tls: true
+  type: vless
+  uuid: c249ca6f-1bde-479b-af96-da0e948a3800
+  ws-opts:
+    headers:
+      Host: zitel.digikala-aparat-zula.com
+    path: /admin
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '399|🇫🇷_法国 #1'
   network: tcp
   port: 443
   reality-opts:
@@ -721,39 +798,6 @@ proxies:
   tls: true
   type: vless
   uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
-- name: 399|FR VLESS-47 | free-nodes
-  network: tcp
-  port: 2024
-  server: 85.133.204.131
-  tls: false
-  type: vless
-  uuid: efdd92c0-c32d-4039-a564-374abaa5d8ce
-- name: 399|FR VLESS-34 | free-nodes
-  network: ws
-  port: 443
-  server: chatgpt.com
-  servername: zitel.digikala-aparat-zula.com
-  tls: true
-  type: vless
-  uuid: ff188c84-49a9-4cc6-b3f7-4f8bdc7571ec
-  ws-opts:
-    headers:
-      Host: zitel.digikala-aparat-zula.com
-    path: '%2Fadmin'
-- alterId: 0
-  cipher: auto
-  name: 399|法国 140
-  network: ws
-  port: 443
-  server: 91.134.8.93
-  servername: pelang.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: pelang.org
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 399|法国 141
@@ -770,7 +814,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 399|🇫🇷 FR_35
+  name: 399|🇫🇷 FR_34
   network: ws
   port: 443
   server: 91.134.8.101
@@ -784,7 +828,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 399|法国_012604287
+  name: 399|法国_012618289
   network: tcp
   port: '550'
   server: 162.19.248.238
