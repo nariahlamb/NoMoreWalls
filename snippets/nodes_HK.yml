@@ -722,15 +722,14 @@ proxies:
     path: /stream?ed=2048
 - alterId: 2
   cipher: auto
-  name: '227,396|🇭🇰 香港|@ripaojiedian #2'
+  name: '226,396|🇭🇰 香港|@ripaojiedian #2'
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- country: HK
-  name: '227,352,382,391,394,396,397,399|12,13|香港3|@ripaojiedian #1'
+- name: 226,382,391,394,396,397,399|12,13|香港3|@ripaojiedian
   network: tcp
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 443
@@ -738,8 +737,8 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
-- name: '227,382,391,394,396,397,399|12,13|新加坡|@ripaojiedian #1'
+- country: HK
+  name: 226,352,382,391,394,396,397,399|12,13|新加坡|@ripaojiedian
   network: tcp
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 443
@@ -747,12 +746,13 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: '227,261,352,382,391,394,397,399|12|🇭🇰 香港|@ripaojiedian #1'
+  name: 226,261,352,382,391,394,397,399|12|🇭🇰 香港|@ripaojiedian
   network: tcp
   port: 30807
   server: v10.hdacd.com
@@ -761,28 +761,28 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 227,394|HK3｜家宽｜非常安全
+- name: 226,394|HK3｜家宽｜非常安全
   password: BxceQaOe
   port: 443
   server: 58.152.53.45
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 227,394,399|hk|5d63|puddincat07@Telegram
+- name: 226,394,399|hk|5d63|puddincat07@Telegram
   password: BxceQaOe
   port: 443
   server: 58.152.25.130
   skip-cert-verify: true
   sni: 58.152.25.130
   type: trojan
-- name: 227,394|HK49｜家宽｜非常安全
+- name: 226,394|HK49｜家宽｜非常安全
   password: BxceQaOe
   port: 443
   server: 58.152.25.130
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 227,391,394,399|🇭🇰_香港
+- name: 226,370,371,391,394,399|🇭🇰_香港
   network: tcp
   password: BxceQaOe
   port: 443
@@ -790,28 +790,28 @@ proxies:
   skip-cert-verify: true
   sni: 219.76.135.98
   type: trojan
-- name: 227,394|HK223｜家宽｜非常安全
+- name: 226,394|HK223｜家宽｜非常安全
   password: BxceQaOe
   port: 443
   server: 58.152.25.130
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 227,394|HK159｜家宽｜非常安全
+- name: 226,394|HK159｜家宽｜非常安全
   password: BxceQaOe
   port: 443
   server: 219.76.135.98
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 227,394|HK185｜家宽｜非常安全
+- name: 226,394|HK185｜家宽｜非常安全
   password: BxceQaOe
   port: 443
   server: 58.152.25.130
   skip-cert-verify: true
   sni: t.me%25252Fripaojiedian
   type: trojan
-- name: 227,394|HK214｜家宽｜非常安全
+- name: 226,394|HK214｜家宽｜非常安全
   password: BxceQaOe
   port: 443
   server: 219.76.135.98
@@ -820,7 +820,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '227,394,399|NL4｜机房｜低风险 #1'
+  name: '226,394,399|NL4｜机房｜低风险 #1'
   network: tcp
   port: '30830'
   server: v30.hdacd.com
@@ -1304,13 +1304,35 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- cipher: aes-256-cfb
+- alterId: 2
+  cipher: auto
   country: ' HK'
+  h2-opts: {}
+  http-opts: {}
   name: 349| HK_51
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 349| HK_52
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: ' HK'
@@ -1326,37 +1348,8 @@ proxies:
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
-- alterId: 2
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 349| HK_53
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: ' HK'
-  h2-opts: {}
-  http-opts: {}
-  name: 349| HK_54
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
-  ws-path: /
 - country: HK
-  name: 352|HK_13
+  name: 352|HK_14
   password: BxceQaOe
   port: 443
   server: 219.76.135.98
@@ -1365,7 +1358,7 @@ proxies:
   type: trojan
   udp: true
 - country: HK
-  name: 352|HK_14
+  name: 352|HK_15
   password: BxceQaOe
   port: 443
   server: 58.152.53.45
@@ -1388,6 +1381,15 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '370,371|香港 电讯盈科有限公司 #1'
+  network: tcp
+  port: '30812'
+  server: v12.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 391|🇭🇰 香港 电讯盈科有限公司
   password: BxceQaOe
   port: 443
