@@ -84,14 +84,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- name: 262|13|FR_speednode_0003
-  port: 25178
-  server: 46.8.225.78
-  servername: excoino.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 7bd19c7d-8e36-4c85-9757-3066cf65046e
 - cipher: aes-256-cfb
   name: 278|🇫🇷1 |  20.9MB/s
   password: f8f7aCzcPKbsF8p3
@@ -396,7 +388,7 @@ proxies:
   country: ' FR'
   h2-opts: {}
   http-opts: {}
-  name: 350| FR_35
+  name: 350| FR_36
   network: ws
   port: 443
   server: 91.134.8.101
@@ -406,7 +398,7 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
 - country: FR
-  name: 350|FR_36
+  name: 350|FR_37
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -414,7 +406,15 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_37
+  name: 350|FR_38
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: 198.244.190.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: FR
+  name: 350|FR_39
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -422,24 +422,16 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_38
+  name: 350|FR_40
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: FR
-  name: 350|FR_39
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: 198.244.190.189
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
   country: FR
-  name: 353|FR_07
+  name: 353|FR_06
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -623,25 +615,25 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- name: 400|🇫🇷FR_37
+- name: 400|🇫🇷FR_38
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 400|🇫🇷FR_35
+- name: 400|🇫🇷FR_36
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: 400|🇫🇷FR_38
+- name: 400|🇫🇷FR_37
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 400|🇫🇷FR_36
+- name: 400|🇫🇷FR_39
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -687,17 +679,6 @@ proxies:
   tls: false
   type: vless
   uuid: 1f3b130d-7d29-45d1-b5aa-adc5cd94a885
-- name: 400|🇫🇷 France, Paris [BL]-02
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: CuLjZaOWwaC_didE-f8CZoUK0mGH75iq-0u1St_wjUU
-    short-id: 67f8515f3fa23d2f
-  server: fr.fasti.win
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 3bd011c9-c5ec-4024-8aaa-6d79db4e97d3
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
   name: 400|🇫🇷[openproxylist.com] vless-FR
@@ -794,6 +775,20 @@ proxies:
   uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
 - alterId: 0
   cipher: auto
+  name: 400|法国 140
+  network: ws
+  port: 443
+  server: 91.134.8.93
+  servername: pelang.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: pelang.org
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: 400|法国 141
   network: ws
   port: 443
@@ -808,7 +803,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 400|🇫🇷 FR_34
+  name: 400|🇫🇷 FR_35
   network: ws
   port: 443
   server: 91.134.8.101
@@ -822,7 +817,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|法国_012618289
+  name: 400|法国_012704285
   network: tcp
   port: '550'
   server: 162.19.248.238
