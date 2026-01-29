@@ -103,27 +103,18 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: ' RU'
-  name: 350| RU_131
+  name: 350| RU_139
   password: gKYygTcRYhc3skc2x6tZ073lYz0DnieX
   port: 443
   server: 5.181.21.246
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' RU'
-  name: 350| RU_132
+  name: 350| RU_140
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
-- country: RU
-  name: 353,371,372,400|🇷🇺RU俄罗斯2
-  password: ZblhWr0mqMakCPg.N
-  port: 36158
-  server: 212.193.18.144
-  skip-cert-verify: false
-  sni: ya.ru
-  type: trojan
-  udp: true
 - name: '366|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -461,61 +452,9 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|🇷🇺_俄罗斯
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 8443
-  server: 176.109.106.61
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
+- name: 400|🇷🇺RU俄罗斯2
+  password: ZblhWr0mqMakCPg.N
+  port: 36158
+  server: 212.193.18.144
+  sni: ya.ru
   type: trojan
-  ws-opts:
-    headers:
-      Host: 0000.hkvip.ip-ddns.com
-    path: '%2F%3Fed%3D2560'
-- name: '400|🇷🇺_俄罗斯 #1'
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 443
-  server: 89.169.13.12
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 0000.hkvip.ip-ddns.com
-    path: '%2F%3Fed%3D2560'
-- name: 400|俄羅斯_10-2
-  password: trojan
-  port: 8443
-  server: 109.234.211.66
-  sni: store.timimi.dpdns.org
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '400|🇷🇺_俄罗斯 #3'
-  network: ws
-  port: '443'
-  server: 212.60.5.238
-  servername: cg1c09.waimaojd.com
-  tls: true
-  type: vmess
-  uuid: d0563aa0-8fdd-481e-bf8a-ae3923c540b5
-  ws-opts:
-    headers:
-      Host: cg1c09.waimaojd.com
-    path: /api/v1/graphql
-- alterId: 0
-  cipher: auto
-  name: '400|🇷🇺_俄罗斯 #4'
-  network: ws
-  port: '443'
-  server: 46.17.43.220
-  servername: cg1c08.waimaojd.com
-  tls: true
-  type: vmess
-  uuid: d0563aa0-8fdd-481e-bf8a-ae3923c540b5
-  ws-opts:
-    headers:
-      Host: cg1c08.waimaojd.com
-    path: /api/v1/graphql

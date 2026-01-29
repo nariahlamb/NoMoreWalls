@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '262,383,395,400|14|RU_speednode_0020 #1'
+  name: 262,400|14|RU_speednode_0020
   port: 443
   server: 217.12.40.76
   servername: sun9-38.userapi.com
@@ -233,27 +233,18 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: ' RU'
-  name: 350| RU_131
+  name: 350| RU_139
   password: gKYygTcRYhc3skc2x6tZ073lYz0DnieX
   port: 443
   server: 5.181.21.246
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' RU'
-  name: 350| RU_132
+  name: 350| RU_140
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
-- country: RU
-  name: 353,371,372,400|🇷🇺RU俄罗斯2
-  password: ZblhWr0mqMakCPg.N
-  port: 36158
-  server: 212.193.18.144
-  skip-cert-verify: false
-  sni: ya.ru
-  type: trojan
-  udp: true
 - name: 365|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1002,85 +993,49 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|俄罗斯1
-  password: c8087154-ee07-41d7-97db-a849784884ba
-  port: 21142
-  server: ru.xiongchumo.shop
-  sni: ru.xiongchumo.shop
-  tls: false
-  type: hysteria2
-- name: 400|俄罗斯2-2
-  password: c8087154-ee07-41d7-97db-a849784884ba
-  port: 21350
-  server: ru.xiongchumo.shop
-  sni: ru.xiongchumo.shop
-  tls: false
-  type: hysteria2
-- name: 400|俄罗斯2-1
-  password: c8087154-ee07-41d7-97db-a849784884ba
-  port: 21394
-  server: ru.xiongchumo.shop
-  sni: ru.xiongchumo.shop
-  tls: false
-  type: hysteria2
-- name: 400|俄罗斯2
-  password: c8087154-ee07-41d7-97db-a849784884ba
-  port: 21577
-  server: ru.xiongchumo.shop
-  sni: ru.xiongchumo.shop
-  tls: false
-  type: hysteria2
-- name: 400|俄罗斯1-2
-  password: c8087154-ee07-41d7-97db-a849784884ba
-  port: 21990
-  server: ru.xiongchumo.shop
-  sni: ru.xiongchumo.shop
-  tls: false
-  type: hysteria2
+- name: 400|🇷🇺RU俄罗斯2
+  password: ZblhWr0mqMakCPg.N
+  port: 36158
+  server: 212.193.18.144
+  sni: ya.ru
+  type: trojan
 - name: 400|🇷🇺_俄罗斯
   network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 8443
-  server: 176.109.106.61
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 0000.hkvip.ip-ddns.com
-    path: '%2F%3Fed%3D2560'
-- name: '400|🇷🇺_俄罗斯 #1'
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 443
-  server: 89.169.13.12
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 0000.hkvip.ip-ddns.com
-    path: '%2F%3Fed%3D2560'
-- name: 400|俄羅斯_10-2
-  password: trojan
-  port: 8443
-  server: 109.234.211.66
-  sni: store.timimi.dpdns.org
-  type: trojan
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #2'
-  network: tcp
-  port: 7443
-  reality-opts:
-    public-key: BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA
-    short-id: fd88bd27db4cc661
-  server: 45.139.26.152
-  servername: eh.vk.com
+  port: 12020
+  server: 94.159.106.227
+  servername: mot.luyuju.dpdns.org
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 7fc953d6-ae75-46fb-a970-10b57d513487
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-opts:
+    headers:
+      Host: mot.luyuju.dpdns.org
+    path: '%2F%40Marisa_kristi'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|RU VLESS-42 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: QhnA9aLmUkAz5CeeRE_1w5KyNtn-GeckBtGSavpgUgk
+    short-id: 24ca1a5ebf4e7a85
+  server: 37.18.14.235
+  servername: rutube.ru
+  tls: false
+  type: vless
+  uuid: 047bc9c2-7adc-47b6-9515-ae335714ff6c
+- name: 400|RU VLESS-53 | free-nodes
+  network: ws
+  port: 2082
+  server: 25.129.199.2
+  tls: false
+  type: vless
+  uuid: 22180bd5-7d26-4e1b-ef93-6329eef37709
+  ws-opts:
+    headers:
+      Host: mx5.mmd8563.ir
+    path: '%2Fassets%2Fjs%2Fapp.min.js'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 400|🇷🇺_RU_俄罗斯
@@ -1105,34 +1060,20 @@ proxies:
   tls: true
   type: vless
   uuid: cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f
-- alterId: 0
-  cipher: auto
-  name: '400|🇷🇺_俄罗斯 #3'
-  network: ws
-  port: '443'
-  server: 212.60.5.238
-  servername: cg1c09.waimaojd.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇷🇺_俄罗斯 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: O2ttHpVFmwoAf-E1rHgOlv7NggcwxcWkHHen7jkIBjY
+    short-id: f5390f7c74c4ea5c
+  server: 94.141.123.137
+  servername: de2.mcqueenconnection.ru
+  skip-cert-verify: false
   tls: true
-  type: vmess
-  uuid: d0563aa0-8fdd-481e-bf8a-ae3923c540b5
-  ws-opts:
-    headers:
-      Host: cg1c09.waimaojd.com
-    path: /api/v1/graphql
-- alterId: 0
-  cipher: auto
-  name: '400|🇷🇺_俄罗斯 #4'
-  network: ws
-  port: '443'
-  server: 46.17.43.220
-  servername: cg1c08.waimaojd.com
-  tls: true
-  type: vmess
-  uuid: d0563aa0-8fdd-481e-bf8a-ae3923c540b5
-  ws-opts:
-    headers:
-      Host: cg1c08.waimaojd.com
-    path: /api/v1/graphql
+  type: vless
+  uuid: f3f6f19f-c68a-462c-a534-9b388663fffa
 - name: 413| RUN-UnReal-argo
   network: ws
   port: 80
