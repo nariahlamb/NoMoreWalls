@@ -1148,7 +1148,8 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: '228,262,383,392,395,397,398,400|12,13|日本3|@ripaojiedian #1'
+- country: JP
+  name: '228,262,353,383,392,395,397,398,400|12,13|日本3|@ripaojiedian #1'
   network: tcp
   password: c1d83c0c7d57cead4379ba14a82df69b
   port: 3423
@@ -1156,6 +1157,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - country: JP
   name: '228,262,353,383,392,395,397,398,400|12,13|新加坡|@ripaojiedian #1'
   network: tcp
@@ -1202,22 +1204,20 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: 228,400|US TROJAN-29 | free-nodes
-  password: 869e9086806483ca4744a4cb0f3d6e16
-  port: 491
-  server: 52.195.170.6
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- country: JP
-  name: 228,353,400|日本_012918006+L0
-  password: 869e9086806483ca4744a4cb0f3d6e16
-  port: 3901
-  server: 160.16.87.174
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 228,395|JP26｜机房｜低风险
+  network: ws
+  port: '443'
+  server: n1753598446.wpg27.xyz
+  servername: n1753598446.wpg27.xyz
+  tls: true
+  type: vmess
+  uuid: a5047d95-24b8-451a-93e3-f2a387b93d5a
+  ws-opts:
+    headers:
+      Host: n1753598446.wpg27.xyz
+    path: /
 - client-fingerprint: firefox
   flow: ''
   grpc-opts:
@@ -1663,7 +1663,7 @@ proxies:
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 350| JP_71
+  name: 350| JP_79
   network: ws
   port: 443
   server: seoul03.zgjok.com
@@ -1680,7 +1680,7 @@ proxies:
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 350| JP_72
+  name: 350| JP_80
   network: ws
   port: 443
   server: n1753598448.74qxv.top
@@ -2192,50 +2192,6 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 395|JP19｜商宽｜非常安全
-  password: 407b6b2e-59e5-4466-9911-08f6f1263bc9
-  port: 54225
-  server: ptxl01.xsaym.com
-  skip-cert-verify: true
-  sni: www.volcengine.com
-  type: trojan
-- name: 395|JP20｜机房｜低风险
-  password: 407b6b2e-59e5-4466-9911-08f6f1263bc9
-  port: 54032
-  server: ptxl01.xsaym.com
-  skip-cert-verify: true
-  sni: www.volcengine.com
-  type: trojan
-- name: 395|JP21｜机房｜低风险
-  password: 407b6b2e-59e5-4466-9911-08f6f1263bc9
-  port: 54029
-  server: ptxl02.xsaym.com
-  skip-cert-verify: true
-  sni: www.volcengine.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 395|JP22｜机房｜低风险
-  network: tcp
-  port: '30806'
-  server: v6.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 395|JP26｜机房｜低风险
-  network: ws
-  port: '443'
-  server: n1753598446.wpg27.xyz
-  servername: n1753598446.wpg27.xyz
-  tls: true
-  type: vmess
-  uuid: a5047d95-24b8-451a-93e3-f2a387b93d5a
-  ws-opts:
-    headers:
-      Host: n1753598446.wpg27.xyz
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2306,17 +2262,18 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: hysteria2
+- name: 400|JP3｜机房｜低风险
+  password: 6c4cd8b6-2524-4dbc-97b2-f832ffd83687
+  port: 41273
+  server: xiaozhu1.kkieo555.cn
+  skip-cert-verify: true
+  sni: xiaozhu1.kkieo555.cn
+  type: trojan
 - name: '400|🇯🇵 日本2|@stairnode #1'
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 1933
   server: 153.121.39.240
   skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 400|日本_012918007
-  password: 869e9086806483ca4744a4cb0f3d6e16
-  port: 3901
-  server: 160.16.150.76
   sni: www.nintendogames.net
   type: trojan
 - name: 400|🇯🇵JP-18.179.118.202-4851 | 21....
@@ -2332,12 +2289,33 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- name: 400|JP TROJAN-31 | free-nodes
+  password: BxceQaOe
+  port: 2595
+  server: 13.158.129.83
+  skip-cert-verify: true
+  sni: 13.158.129.83
+  type: trojan
 - name: '400|🇯🇵 日本|@stairnode #1'
   password: BxceQaOe
   port: 3760
   server: 13.159.16.204
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 400|JP2｜机房｜低风险
+  password: cdfb1e22-e278-4eca-8030-916b906a3169
+  port: 41273
+  server: xiaozhu1.kkieo555.cn
+  skip-cert-verify: true
+  sni: xiaozhu1.kkieo555.cn
+  type: trojan
+- name: 400|JP4｜机房｜低风险
+  password: d1505dbc-d89e-4c4d-8a7e-de95ec332de5
+  port: 41273
+  server: xiaozhu1.kkieo555.cn
+  skip-cert-verify: true
+  sni: xiaozhu1.kkieo555.cn
   type: trojan
 - name: '400|🇯🇵_日本 #1'
   network: ws

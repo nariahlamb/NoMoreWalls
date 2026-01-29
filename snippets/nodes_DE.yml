@@ -1,19 +1,13 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '64,265,392,400|美国 CloudFlare节点 #4'
-  network: ws
-  port: '8080'
-  server: 172.67.204.84
+- country: 🇩🇪DE
+  delay: 1885
+  name: 64,265,385|德国 - Frankfurt am Main - Amazo...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.28.25.58
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  type: trojan
   udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: nasnet-511952424.mcitel.co
-    path: /nasnet/cdn
 - alterId: 0
   cipher: auto
   name: 85|No.941_DE_x0.50_natseek@我为*人_联...
@@ -499,12 +493,34 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  country: ' DE'
+  name: 350| DE_36
+  password: 54c303c2866c8399
+  port: 11201
+  server: 141.95.105.216
+  type: ss
 - alterId: 0
   cipher: auto
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_31
+  name: 350,400|🇩🇪 DE_28
+  network: none
+  port: 18355
+  server: 92.246.87.170
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' DE'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| DE_38
   network: ws
   port: 443
   server: 141.94.155.224
@@ -521,7 +537,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_32
+  name: 350| DE_39
   network: ws
   port: 443
   server: 141.95.126.134
@@ -533,21 +549,6 @@ proxies:
   ws-headers:
     HOST: jamekk.org
   ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: ' DE'
-  h2-opts: {}
-  http-opts: {}
-  name: 350,400|🇩🇪 DE_28
-  network: none
-  port: 18355
-  server: 92.246.87.170
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
-  ws-path: /
 - country: DE
   name: 350,400|🇩🇪DE_31
   password: 665c944d-047d-4659-80d5-3eaac70241a9
@@ -558,20 +559,20 @@ proxies:
   type: trojan
   udp: true
 - country: DE
-  name: 353,400|🇩🇪DE德国
-  password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
-  port: 20994
-  server: 45.32.158.138
-  skip-cert-verify: true
-  sni: ads.x5.ru
-  type: trojan
-  udp: true
-- country: DE
   name: 353,392,400|🇺🇸 美国 V2CROSS.COM-2-1
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
   server: 140.82.35.244
   skip-cert-verify: false
+  sni: ads.x5.ru
+  type: trojan
+  udp: true
+- country: DE
+  name: 353,400|🇩🇪DE德国
+  password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  port: 20994
+  server: 45.32.158.138
+  skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
   udp: true
@@ -723,15 +724,13 @@ proxies:
   skip-cert-verify: false
   sni: awaited-chicken.adder289.quest
   type: trojan
-- country: 🇩🇪DE
-  delay: 1885
-  name: 385|德国 - Frankfurt am Main - Amazo...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.28.25.58
+- name: 392,400|加拿大_012918009
+  password: 30077070-596e-48ea-9400-14c8ed07bd97
+  port: 443
+  server: tuntro006.instconn.com
   skip-cert-verify: true
+  sni: torontorm1.686911.xyz
   type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -764,6 +763,18 @@ proxies:
   server: 80.66.85.115
   sni: 0000.hkvip.ip-ddns.com
   type: trojan
+- name: 400|DE38｜机房｜低风险
+  network: ws
+  password: iwangjie
+  port: 2053
+  server: 135.125.232.253
+  skip-cert-verify: true
+  sni: nodes.830901.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nodes.830901.xyz
+    path: '%2F'
 - name: 400|德国_012918551
   network: tcp
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
