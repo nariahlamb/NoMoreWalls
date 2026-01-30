@@ -82,24 +82,24 @@ proxies:
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - cipher: aes-128-gcm
-  name: 278|🇨🇦1 |  14.1MB/s
+  name: 277|🇨🇦1 |  14.1MB/s
   password: shadowsocks
   port: 443
   server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 278|🇨🇦2 |  8.9MB/s
+  name: 277|🇨🇦2 |  8.9MB/s
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '278,410|SS--NF-ChatGPT-TikTok-YouTube-... #6'
+  name: '277,410|SS--NF-ChatGPT-TikTok-YouTube-... #6'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
   type: ss
-- name: 283|SPECAIL|1.5X WIFI
+- name: 282|SPECAIL|1.5X WIFI
   password: bf9a43a1-c449-4c77-b712-9265efe3ebc8
   port: 17739
   server: jpss.pptv-tv.store
@@ -107,7 +107,7 @@ proxies:
   sni: data.52daishu.life
   type: trojan
   udp: true
-- name: '283|SPECAIL|1.5X WIFI #1'
+- name: '282|SPECAIL|1.5X WIFI #1'
   password: bf9a43a1-c449-4c77-b712-9265efe3ebc8
   port: 17728
   server: gbs.pptv-tv.store
@@ -117,7 +117,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '294|🇨🇦 加拿大1 #1'
+  name: '293|🇨🇦 加拿大1 #1'
   port: 45064
   server: haa.dashuai.cyou
   tls: false
@@ -126,7 +126,7 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - alterId: 0
   cipher: auto
-  name: '294|🇨🇦 加拿大2 #1'
+  name: '293|🇨🇦 加拿大2 #1'
   port: 45065
   server: xdd.dashuai.cyou
   tls: false
@@ -230,16 +230,16 @@ proxies:
     path: /
   ws-path: /
 - country: CA
-  name: 353,371,372,400|🇨🇦 加拿大 V2CROSS.COM
+  name: 353,371,372,400|🇨🇦CA加拿大3
   password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
   port: 10889
   server: 167.17.185.228
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: web.max
   type: trojan
   udp: true
 - country: CA
-  name: 353,400|🇨🇦CA加拿大2
+  name: 353|Pool_CA_05
   password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
   port: 10889
   server: 167.17.185.172
@@ -2906,7 +2906,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 366,400|未知7
+  name: 366,400|未知22
   network: ws
   port: '443'
   server: 172.67.131.108
@@ -3544,7 +3544,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 366,400|未知21
+  name: 366,400|未知24
   network: ws
   port: '443'
   server: 104.21.83.208
@@ -4535,13 +4535,6 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- name: 392,400|🇩🇪DE德国2
-  password: 30077070-596e-48ea-9400-14c8ed07bd97
-  port: 443
-  server: tuntro006.instconn.com
-  skip-cert-verify: false
-  sni: torontorm1.686911.xyz
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -4556,6 +4549,12 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
+- name: 400|🇨🇦CA加拿大4
+  password: 30077070-596e-48ea-9400-14c8ed07bd97
+  port: 443
+  server: tuntro006.instconn.com
+  sni: torontorm1.686911.xyz
+  type: trojan
 - name: 400|🇨🇦CA_1 | ⬇️ 3.0MB/s
   network: ws
   port: 80
@@ -4567,18 +4566,39 @@ proxies:
     headers:
       Host: GLORiOUS-MouNtaiNk9cZ8WOv4a.EcotourISs.co.uK.
     path: '%2F%253Fed'
-- name: 400|加拿大(yudou789.top 玉豆免费节点)
+- name: 400|CA VLESS-54 | free-nodes
   network: ws
-  port: 2096
-  server: 205.233.181.168
-  servername: ''
-  tls: true
+  port: 80
+  server: nodejs.org
+  tls: false
   type: vless
-  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  uuid: 1a94fbd9-79d2-4aa7-bf1d-074f678d27ab
   ws-opts:
     headers:
-      Host: sni.111000.v6.army
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+      Host: EqUiPPed-phOToZkoA7K5e6P.eCoTOuRiss.Co.uk.
+    path: /?ed
+- name: 400|CA VLESS-91 | free-nodes
+  network: ws
+  port: 80
+  server: nodejs.org
+  tls: false
+  type: vless
+  uuid: 6abc2840-25fd-4dd7-b1aa-0892fe98f2d9
+  ws-opts:
+    headers:
+      Host: MySterIOUS-chECk94Bl5oXQ6C.eCoTOUriSs.cO.uK.
+    path: /?ed
+- name: 400|CA VLESS-113 | free-nodes
+  network: ws
+  port: 80
+  server: nodejs.org
+  tls: false
+  type: vless
+  uuid: babc17e3-5e67-4e5d-8b34-d1fdf263a144
+  ws-opts:
+    headers:
+      Host: FeArlesS-bASEez2aTgpLFr.EcotOURISs.cO.UK.
+    path: /?ed
 - alterId: 0
   cipher: auto
   name: '400|🇨🇦_CA_加拿大 #1'
