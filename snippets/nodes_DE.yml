@@ -495,7 +495,7 @@ proxies:
   ws-path: /
 - cipher: chacha20-ietf-poly1305
   country: ' DE'
-  name: 350| DE_34
+  name: 350| DE_32
   password: 54c303c2866c8399
   port: 11201
   server: 141.95.105.216
@@ -505,7 +505,7 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_35
+  name: 350| DE_33
   network: ws
   port: 443
   server: 141.94.155.224
@@ -522,7 +522,22 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_36
+  name: 350,400|🇩🇪 DE_34
+  network: none
+  port: 18355
+  server: 92.246.87.170
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' DE'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| DE_35
   network: ws
   port: 443
   server: 141.95.126.134
@@ -534,23 +549,8 @@ proxies:
   ws-headers:
     HOST: jamekk.org
   ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: ' DE'
-  h2-opts: {}
-  http-opts: {}
-  name: 350,400|🇩🇪 DE_28
-  network: none
-  port: 18355
-  server: 92.246.87.170
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
-  ws-path: /
 - country: DE
-  name: 350,400|🇩🇪DE_31
+  name: 350,400|🇩🇪DE_37
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -559,19 +559,19 @@ proxies:
   type: trojan
   udp: true
 - country: DE
-  name: 353,392,400|🇺🇸 美国 V2CROSS.COM-2-1
+  name: 353,392|🇩🇪 德国 黑森州法兰克福Choopa数据中心
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
-  server: 140.82.35.244
+  server: 45.32.158.138
   skip-cert-verify: false
   sni: ads.x5.ru
   type: trojan
   udp: true
 - country: DE
-  name: 353,371,372,400|🇩🇪DE德国
+  name: 353,400|🇺🇸US美国24
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
-  server: 45.32.158.138
+  server: 140.82.35.244
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
@@ -724,13 +724,6 @@ proxies:
   skip-cert-verify: false
   sni: awaited-chicken.adder289.quest
   type: trojan
-- name: 392,400|加拿大_012918009
-  password: 30077070-596e-48ea-9400-14c8ed07bd97
-  port: 443
-  server: tuntro006.instconn.com
-  skip-cert-verify: true
-  sni: torontorm1.686911.xyz
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -745,6 +738,18 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
+- name: 400|🇩🇪DE德国2
+  password: 30077070-596e-48ea-9400-14c8ed07bd97
+  port: 443
+  server: tuntro006.instconn.com
+  sni: torontorm1.686911.xyz
+  type: trojan
+- name: 400|德國 18
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  port: 54443
+  server: 173.249.201.109
+  sni: 0000.hkvip.ip-ddns.com
+  type: trojan
 - name: 400|德國 10
   password: 42bbf526-5530-470a-aeec-3b919b21c58d
   port: 443
@@ -757,25 +762,7 @@ proxies:
   server: 5.39.249.146
   sni: 0000.hkvip.ip-ddns.com
   type: trojan
-- name: 400|德國 13
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 8443
-  server: 80.66.85.115
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-- name: 400|DE38｜机房｜低风险
-  network: ws
-  password: iwangjie
-  port: 2053
-  server: 135.125.232.253
-  skip-cert-verify: true
-  sni: nodes.830901.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: nodes.830901.xyz
-    path: '%2F'
-- name: 400|德国_012918551
+- name: 400|德国_013004616
   network: tcp
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
@@ -783,20 +770,11 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 400|德国 051
-  network: ws
-  port: 443
-  server: 141.94.155.229
-  servername: pelang.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: pelang.org
-    path: /linkvws
+- name: 400|🇩🇪DE德国
+  password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  port: 20994
+  server: 45.32.158.138
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 400|德国 011
@@ -809,10 +787,10 @@ proxies:
   uuid: f3d4167e-b15e-4e46-82e9-9286ef93fda7
 - alterId: 0
   cipher: auto
-  name: 400|🇩🇪 DE_29
+  name: 400|🇩🇪 DE_35
   network: ws
   port: 443
-  server: 141.95.126.134
+  server: 141.94.155.224
   servername: ''
   tls: true
   type: vmess
@@ -823,10 +801,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|🇩🇪 DE_30
+  name: 400|🇩🇪 DE_36
   network: ws
   port: 443
-  server: 141.94.155.224
+  server: 141.95.126.134
   servername: ''
   tls: true
   type: vmess

@@ -388,7 +388,7 @@ proxies:
   country: ' FR'
   h2-opts: {}
   http-opts: {}
-  name: 350| FR_40
+  name: 350| FR_38
   network: ws
   port: 443
   server: 91.134.8.101
@@ -398,10 +398,26 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
 - country: FR
-  name: 350|FR_41
+  name: 350|FR_39
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: uk-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: FR
+  name: 350|FR_40
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: FR
+  name: 350|FR_41
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  port: 443
+  server: de-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -410,22 +426,6 @@ proxies:
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: FR
-  name: 350|FR_43
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: uk-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: FR
-  name: 350|FR_44
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -615,7 +615,7 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- name: 395|FR2｜机房｜低风险
+- name: '395,400|FR2｜机房｜低风险 #1'
   password: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
   port: 443
   server: 129.151.251.122
@@ -623,29 +623,35 @@ proxies:
   sni: www.lamer.com.hk
   tls: false
   type: hysteria2
-- name: 400|🇫🇷FR_34
+- name: 400|🇫🇷FR_42
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 400|🇫🇷FR_35
+- name: 400|🇫🇷FR_40
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: 400|🇫🇷FR_36
+- name: 400|🇫🇷FR_43
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 400|🇫🇷FR_37
+- name: 400|🇫🇷FR_41
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   sni: de-full.privateip.net
+  type: trojan
+- name: 400|🇫🇷 FR TROJAN-45 | free-nodes-1
+  password: humanity
+  port: 443
+  server: chatgpt.com
+  sni: www.gossipglove.com
   type: trojan
 - name: 400|FR TROJAN-37 | free-nodes
   password: humanity
@@ -654,12 +660,17 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: 400|FR5｜机房｜高风险 (黑名单)
-  password: iwangjie
-  port: 2053
-  server: 141.94.68.216
-  sni: nodes.830901.xyz
-  type: trojan
+- name: 400|🇫🇷FR_1 | ⬇️ 3.0MB/s
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: fr-1.bot-iphone.ru
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 123d4832-db2b-4376-be63-f60858cc328e
 - name: 400|FR VLESS-52 | free-nodes
   port: 19702
   server: sktr.berkeart.ir
@@ -687,6 +698,42 @@ proxies:
   tls: false
   type: vless
   uuid: 5695e906-fd40-45e7-b261-7bc605af614c
+- name: 400|法國 2
+  network: ws
+  port: 2053
+  server: 51.89.175.144
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6979dbcd-de74-d99c-1b11-783cd233cca8
+  ws-opts:
+    headers:
+      Host: af27a118-0d37-451a-a2c9-8a59211605a9.lfree.ccwu.cc
+    path: '%2Fsocks5%253D6226604a%253A9ca2df1bf22a%254038.57.76.31%253A33375'
+- name: 400|法國 5
+  network: ws
+  port: 8443
+  server: 57.128.182.21
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6979dbcd-de74-d99c-1b11-783cd233cca8
+  ws-opts:
+    headers:
+      Host: af27a118-0d37-451a-a2c9-8a59211605a9.lfree.ccwu.cc
+    path: '%2Fsocks5%253D6226604a%253A9ca2df1bf22a%254038.57.76.31%253A33375'
+- name: 400|法國 3
+  network: ws
+  port: 443
+  server: 57.129.137.66
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6979dbcd-de74-d99c-1b11-783cd233cca8
+  ws-opts:
+    headers:
+      Host: af27a118-0d37-451a-a2c9-8a59211605a9.lfree.ccwu.cc
+    path: '%2Fsocks5%253D6226604a%253A9ca2df1bf22a%254038.57.76.31%253A33375'
 - name: 400|🇫🇷_法国
   network: tcp
   port: 48185
@@ -763,7 +810,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 400|🇫🇷 FR_33
+  name: 400|🇫🇷 FR_39
   network: ws
   port: 443
   server: 91.134.8.101
@@ -777,7 +824,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|法国_012918255
+  name: 400|法国_013004243
   network: tcp
   port: '550'
   server: 162.19.248.238
