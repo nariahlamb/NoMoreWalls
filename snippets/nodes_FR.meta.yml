@@ -388,7 +388,7 @@ proxies:
   country: ' FR'
   h2-opts: {}
   http-opts: {}
-  name: 350| FR_35
+  name: 350| FR_34
   network: ws
   port: 443
   server: 91.134.8.101
@@ -397,6 +397,14 @@ proxies:
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
+- country: FR
+  name: 350|FR_35
+  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  port: 443
+  server: fr-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - country: FR
   name: 350|FR_36
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
@@ -407,9 +415,9 @@ proxies:
   udp: true
 - country: FR
   name: 350|FR_37
-  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: fr-full.privateip.net
+  server: 198.244.190.189
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -421,17 +429,9 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: FR
-  name: 350|FR_39
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: 198.244.190.189
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
   country: FR
-  name: 353|FR_09
+  name: 353|FR_07
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -615,6 +615,30 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 383|14|FR_speednode_0007
+  port: 443
+  server: fr2.miyazono-kaori.com
+  servername: www.edf.fr
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: fbf28ef0-3981-4ac6-ab33-95e599afdd99
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 383,400|法國 8
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 175d
+  server: 195.154.190.119
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
 - name: '392|🇪🇸 西班牙(mibei77.com 米贝节点分享) #2'
   password: trojan
   port: 2087
@@ -666,17 +690,6 @@ proxies:
   tls: false
   type: vless
   uuid: 3bc9c90e-dd6c-400d-bfb0-1d06b13fe46c
-- name: 400|法國 8
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-    short-id: 175d
-  server: 195.154.190.119
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
   name: 400|🇫🇷[openproxylist.com] vless-FR

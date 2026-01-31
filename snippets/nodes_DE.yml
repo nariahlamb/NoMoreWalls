@@ -498,24 +498,22 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_30
-  network: ws
-  port: 443
-  server: 141.94.155.224
-  servername: fapeng.org
+  name: 350,400|🇩🇪 DE_33
+  network: none
+  port: 18355
+  server: 92.246.87.170
+  servername: ''
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: fapeng.org
-  ws-path: linkvws
+  uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_31
+  name: 350| DE_30
   network: ws
   port: 443
   server: 141.95.126.134
@@ -532,16 +530,18 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350,400|🇩🇪 DE_33
-  network: none
-  port: 18355
-  server: 92.246.87.170
-  servername: ''
+  name: 350| DE_31
+  network: ws
+  port: 443
+  server: 141.94.155.224
+  servername: fapeng.org
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
-  ws-path: /
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: fapeng.org
+  ws-path: linkvws
 - country: DE
   name: 350,400|🇩🇪DE_36
   password: 665c944d-047d-4659-80d5-3eaac70241a9
@@ -552,20 +552,20 @@ proxies:
   type: trojan
   udp: true
 - country: DE
-  name: 353|DE_07
-  password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
-  port: 20994
-  server: 140.82.35.244
-  skip-cert-verify: true
-  sni: ads.x5.ru
-  type: trojan
-  udp: true
-- country: DE
   name: 353,400|🇩🇪 德国 黑森州法兰克福Choopa数据中心
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
   server: 45.32.158.138
   skip-cert-verify: false
+  sni: ads.x5.ru
+  type: trojan
+  udp: true
+- country: DE
+  name: '353,371,372|美国+V2CROSS.COM #1'
+  password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  port: 20994
+  server: 140.82.35.244
+  skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
   udp: true
@@ -800,3 +800,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 42e25353-b1ae-59f3-bd59-d86d2737b814
+- alterId: 0
+  cipher: auto
+  name: 404|🇩🇪 德国 | DEU
+  network: tcp
+  port: '35222'
+  server: dzgz.tcity8.monster
+  tls: false
+  type: vmess
+  uuid: 3841535d-486a-4ab9-961d-bf098adca39b
+- name: '404|🇩🇪 德国 | DEU #3'
+  password: telegram-id-directvpn
+  port: 22223
+  server: 3.76.228.153
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
