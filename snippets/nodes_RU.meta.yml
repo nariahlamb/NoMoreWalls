@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '262,383,395,400|14|RU_speednode_0017 #2'
+  name: '262,400|14|RU_speednode_0017 #1'
   port: 443
   server: 84.201.167.199
   servername: ads.x5.ru
@@ -11,7 +11,7 @@ proxies:
   uuid: d26a9be3-023a-557a-a41e-b3d3841c4018
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '262,383,395,400|14|RU_speednode_0018 #2'
+  name: '262,383,395,400|14|RU_speednode_0018 #1'
   port: 8443
   server: 89.169.162.214
   servername: yandex.ru
@@ -21,7 +21,7 @@ proxies:
   uuid: 2ad6bd90-51fd-41d2-985b-b7aab5cd77c8
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '262,383,395,400|14|RU_speednode_0019 #2'
+  name: '262,383,395,400|14|RU_speednode_0019 #1'
   port: 443
   server: russia7.yourbot.me
   servername: ftp.debian.org
@@ -253,11 +253,20 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: ' RU'
-  name: 350| RU_162
+  name: 350| RU_159
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
+- country: RU
+  name: 353,371,372,400|🇷🇺RU俄罗斯2
+  password: ZblhWr0mqMakCPg.N
+  port: 36158
+  server: 212.193.18.144
+  skip-cert-verify: true
+  sni: ya.ru
+  type: trojan
+  udp: true
 - name: 365|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -992,6 +1001,30 @@ proxies:
     headers:
       Host: ''
     path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '383,395,400|🇷🇺_俄罗斯 #3'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+    short-id: 887c0d72e771a934
+  server: 158.160.221.132
+  servername: yandex.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d4d031ec-0ba6-486a-aa0c-dce2b7cb8933
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 383,395|RU_speednode_0006
+  port: 8443
+  server: 84.252.143.25
+  servername: yandex.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 1e4649f5-f5d6-4896-9be0-4c6725d4106e
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1006,12 +1039,6 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|🇷🇺RU俄罗斯2
-  password: ZblhWr0mqMakCPg.N
-  port: 36158
-  server: 212.193.18.144
-  sni: ya.ru
-  type: trojan
 - name: 400|🇷🇺_俄罗斯
   network: ws
   port: 80
@@ -1060,20 +1087,6 @@ proxies:
   tls: true
   type: vless
   uuid: 7fc953d6-ae75-46fb-a970-10b57d513487
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #3'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-    short-id: 887c0d72e771a934
-  server: 158.160.221.132
-  servername: yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d4d031ec-0ba6-486a-aa0c-dce2b7cb8933
 - client-fingerprint: chrome
   name: '400|🇷🇺_俄罗斯 #4'
   network: tcp
