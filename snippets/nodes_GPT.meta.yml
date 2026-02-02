@@ -1,17 +1,53 @@
 proxies:
-- name: '89,343|NL_1|2.5MB/s|GPT⁺|17% #1'
+- client-fingerprint: chrome
+  name: '89,343|🇳🇱 NL_1|3.0MB/s|GPT⁺|YT-NL|NF|... #1'
   network: ws
-  port: 80
-  server: fastly.com
+  port: 2053
+  server: legion.lenovo.com
+  servername: snippet.danfeng21.ndjp.net
   skip-cert-verify: true
   tfo: false
-  tls: false
+  tls: true
   type: vless
-  uuid: c805b05e-339d-40e0-8787-432d97a27345
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
   ws-opts:
     headers:
-      Host: mihan-nether2.global.ssl.fastly.net
+      Host: snippet.danfeng21.ndjp.net
+    path: /danfeng?ed=2560
+- client-fingerprint: chrome
+  name: '89,343|🇳🇱 NL_2|2.3MB/s|GPT⁺|YT-NL|NF|... #1'
+  network: ws
+  port: 2053
+  server: 8.6.112.0
+  servername: ir7.hnbyme.online
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 48792731-6fc9-4415-8b51-6007825daf82
+  ws-opts:
+    headers:
+      Host: ir7.hnbyme.online
     path: /
+- cipher: aes-256-cfb
+  country: PT
+  name: 89,343,350,353|PT_44
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: '89,343|TH_1|2.2MB/s|GPT⁺|YT-TH|NF|D+|... #1'
+  network: tcp
+  port: 443
+  server: s464.ccgfw.top
+  servername: u729804u6a9ds464.ccgfw.top
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: c2b6ef4f-58b5-34df-a9b2-b9423df641d9
 - cipher: chacha20-ietf-poly1305
   name: 410|SS--NF-ChatGPT-TikTok-YouTube-...
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
