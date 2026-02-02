@@ -1,5 +1,5 @@
 proxies:
-- name: '261,383,395,400|14|SE_speednode_0009 #2'
+- name: '262,383,400|14|SE_speednode_0009 #2'
   port: 443
   server: secdn13.suio.me
   servername: secdn13.suio.me
@@ -7,7 +7,7 @@ proxies:
   tls: true
   type: vless
   uuid: ba9ddd0d-5ffd-4d40-b76d-df32ecb092a1
-- name: '261,383,395,400|14|SE_speednode_0010 #2'
+- name: '262,383,400|14|SE_speednode_0010 #2'
   port: 443
   server: secdn11.suio.me
   servername: secdn11.suio.me
@@ -16,13 +16,22 @@ proxies:
   type: vless
   uuid: a7a9f670-44c0-45a9-8047-69db0203c142
 - client-fingerprint: chrome
-  name: 291|🇸🇪 Sweden 1 TG:@nodpai
+  name: 292|🇸🇪 Sweden 1 TG:@nodpai
   password: telegram-id-directvpn
   port: 22222
   server: 51.21.57.23
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
+- cipher: aes-128-cfb
+  country: ' SE'
+  name: 350| SE_141
+  obfs: http_post
+  password: $$Turb0VPN$$
+  port: 443
+  protocol: auth_aes128_md5
+  server: ssca.irundns.net
+  type: ssr
 - name: 370|瑞典_021805001+L30
   password: telegram-id-privatevpns
   port: 22222
@@ -38,6 +47,36 @@ proxies:
   server: 13.60.149.22
   sni: trojan.burgerip.co.uk
   type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|瑞典
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: GgiY38LjRI1hS1LKhdqvtJ5SDDO436GvihG-TzEI2XE
+    short-id: aabbccdd
+  server: 176.125.240.166
+  servername: apple.com
+  tls: false
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: apple.com
+- client-fingerprint: randomized
+  flow: xtls-rprx-vision
+  name: 400|🇸🇪_瑞典
+  network: tcp
+  port: 503
+  reality-opts:
+    public-key: aNLPNNyjIC7QYLe7MpF4nxxHhO421dBSZaQgsDd1szs
+    short-id: 1d64e9805b4f9ae3
+  server: dd.openaccessnode.com
+  servername: Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
   name: 400|🇸🇪[openproxylist.com] vless-SE

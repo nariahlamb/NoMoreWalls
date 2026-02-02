@@ -1,31 +1,95 @@
 proxies:
 - cipher: aes-128-gcm
-  name: '277,278|4 #4'
+  name: '278,279|4 #4'
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  name: '277,278|1 #10'
+  name: '278,279|1 #10'
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
-  name: '277,278|3 #1'
+  name: '278,279|3 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.163
   type: ss
 - cipher: aes-256-cfb
-  name: 277|🌀29-CH |  12.1MB/s
+  name: 278|🌀29-CH |  12.1MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 84.17.53.160
   type: ss
 - cipher: aes-256-cfb
-  name: 277|🌀37-CH |  2.6MB/s
+  name: 278|🌀37-CH |  2.6MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.15.82
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 395|CH_speednode_0001
+  port: 443
+  server: 138.124.79.9
+  servername: sun6-21.userapi.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
+- name: 400|🇨🇭_瑞士
+  network: ws
+  password: humanity
+  port: 443
+  server: 185.18.250.252
+  skip-cert-verify: true
+  sni: www.gossipglove.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.gossipglove.com
+    path: '%2Fassignment'
+- client-fingerprint: chrome
+  name: '400|🇨🇭_瑞士 #1'
+  network: ws
+  port: 443
+  server: 185.18.250.252
+  servername: pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 396c904b-4b62-4334-b793-ee25fc0c61cc
+  ws-opts:
+    headers:
+      Host: 8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev
+    path: '%2FeyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇨🇭_瑞士 #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws
+    short-id: '31'
+  server: gbr-0001-xr.packet-drop-society.net
+  servername: hls-svod.itunes.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ba77276e-9939-4c6c-a73e-90e02b6faf13
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇨🇭_瑞士 #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: f79448a30d
+  server: cze01-vlr01.tcp-reset-club.net
+  servername: hls-svod.itunes.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e363cb8f-1a5a-4357-b058-d5ffa91cc6ca
