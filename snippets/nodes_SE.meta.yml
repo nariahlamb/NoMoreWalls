@@ -1,20 +1,29 @@
 proxies:
 - client-fingerprint: chrome
-  name: 290|🇸🇪 Sweden 1 TG:@nodpai
+  name: 291|🇸🇪 Sweden 1 TG:@nodpai
   password: telegram-id-directvpn
   port: 22222
   server: 51.21.57.23
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
+- cipher: aes-128-cfb
+  country: ' SE'
+  name: 349| SE_156
+  obfs: http_post
+  password: $$Turb0VPN$$
+  port: 443
+  protocol: auth_aes128_md5
+  server: ssca.irundns.net
+  type: ssr
 - cipher: aes-256-cfb
   country: SE
-  name: 351|SE_54
+  name: 352|SE_52
   password: amazonskr05
   port: 443
   server: 16.170.155.107
   type: ss
-- name: 368|瑞典_021805001+L30
+- name: 370|瑞典_021805001+L30
   password: telegram-id-privatevpns
   port: 22222
   server: 13.61.203.191
@@ -22,7 +31,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 368|瑞典_021805031+L30
+  name: 370|瑞典_021805031+L30
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -31,7 +40,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 398|瑞典
+  name: 400|瑞典
   network: tcp
   port: 443
   reality-opts:
@@ -47,7 +56,7 @@ proxies:
       Host: apple.com
 - client-fingerprint: randomized
   flow: xtls-rprx-vision
-  name: 398|🇸🇪_瑞典
+  name: 400|🇸🇪_瑞典
   network: tcp
   port: 503
   reality-opts:
@@ -61,23 +70,14 @@ proxies:
   uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 398|🇸🇪[openproxylist.com] vless-SE
+  name: 400|🇸🇪[openproxylist.com] vless-SE
   network: grpc
   port: 48499
   server: 141.227.160.195
   tls: false
   type: vless
   uuid: 34e01c8f-673f-43a3-b4dc-45f7f3121c16
-- name: 543|SE【机场推荐：https://a0a.xyz】5
-  network: tcp
-  port: 443
-  server: secdn17.suio.me
-  servername: secdn17.suio.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: a7a9f670-44c0-45a9-8047-69db0203c142
-- name: 543|SE【机场推荐：https://a0a.xyz】13
+- name: 544|SE【机场推荐：https://a0a.xyz】10
   network: tcp
   port: 50
   server: dd.openaccessnode.com
