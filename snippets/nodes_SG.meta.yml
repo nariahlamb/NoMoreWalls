@@ -772,7 +772,7 @@ proxies:
   type: trojan
   udp: true
 - country: SG
-  name: '228,262,353,383,392,395,397,400|12,13|新加坡2|@ripaojiedian #2'
+  name: '228,262,353,392,400|12,13|新加坡2|@ripaojiedian #2'
   network: tcp
   password: c1d83c0c7d57cead4379ba14a82df69b
   port: 443
@@ -1181,23 +1181,6 @@ proxies:
   country: ' SG'
   h2-opts: {}
   http-opts: {}
-  name: 350| SG_177
-  network: ws
-  port: 443
-  server: n1761214911.74qxv.top
-  servername: n1761214911.74qxv.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
-  ws-headers:
-    HOST: n1761214911.74qxv.top
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' SG'
-  h2-opts: {}
-  http-opts: {}
   name: 350,400|🇸🇬 SG_177
   network: none
   port: 43425
@@ -1210,9 +1193,16 @@ proxies:
   ws-path: /
 - cipher: chacha20-ietf-poly1305
   country: SG
-  name: 353|SG_67
+  name: 353|SG_66
   password: ljqdalu13..
   port: 8313
+  server: 3.1.195.148
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: SG
+  name: 353|SG_67
+  password: ljqdalu13..
+  port: 8319
   server: 3.1.195.148
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -1234,6 +1224,24 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: cf1ad6c7-5987-4314-82bb-b4399040d047
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 353,400|🇺🇸 US_197
+  network: ws
+  port: 443
+  server: cf.090227.xyz
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - name: 365|新加坡_新加坡
   network: ws
   port: 32101
@@ -2319,21 +2327,6 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: trojan
-- name: '395,398|新加坡|@ripaojiedian #1'
-  network: tcp
-  password: c1d83c0c7d57cead4379ba14a82df69b
-  port: 390
-  server: 160.16.87.174
-  sni: www.nintendogames.net
-  type: trojan
-- name: '395,398|新加坡3|@ripaojiedian #1'
-  network: tcp
-  password: BxceQaOe
-  port: 3579
-  server: 18.182.62.89
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2693,14 +2686,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: '404|🇸🇬 新加坡 | SGP #1'
-  password: ae845cbd-08fb-4346-929a-e28a6f3960a8
-  port: 2056
-  server: sg2.shiyuandian.shop
-  skip-cert-verify: true
-  sni: sg2.shiyuandian.shop
-  tls: false
-  type: hysteria2
 - alterId: 0
   cipher: auto
   name: '411|新加坡NO.1 #4'
