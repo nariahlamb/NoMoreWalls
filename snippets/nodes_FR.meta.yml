@@ -56,21 +56,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 89,343,371,372,400|🇺🇸US美国2
-  network: ws
-  port: '8080'
-  server: 104.21.69.44
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: nasnet-511952424.mcitel.co
-    path: /nasnet/cdn
-- alterId: 0
-  cipher: auto
   name: '90,345|法国1 #2'
   port: 45072
   server: hxa.dashuai.help
@@ -111,7 +96,7 @@ proxies:
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '262,383,395,400|14|FR_speednode_0012 #1'
+  name: '262,383,395,400|14|FR_speednode_0012 #2'
   port: 443
   server: srv16.outlinekeys.com
   servername: srv16.outlinekeys.com
@@ -423,7 +408,7 @@ proxies:
   country: ' FR'
   h2-opts: {}
   http-opts: {}
-  name: 350| FR_40
+  name: 350| FR_37
   network: ws
   port: 443
   server: 91.134.8.101
@@ -433,15 +418,23 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
 - country: FR
-  name: 350|FR_41
+  name: 350|FR_38
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: 198.244.190.189
+  server: uk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_42
+  name: 350|FR_39
+  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  port: 443
+  server: fr-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: FR
+  name: 350|FR_40
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -449,26 +442,33 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_43
-  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  name: 350|FR_41
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: fr-full.privateip.net
+  server: 198.244.190.189
   skip-cert-verify: true
   type: trojan
   udp: true
 - cipher: aes-256-cfb
   country: FR
-  name: 353|FR_04
+  name: 353|FR_02
+  password: amazonskr05
+  port: 443
+  server: 13.38.75.96
+  type: ss
+- cipher: aes-256-cfb
+  country: FR
+  name: 353|FR_03
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
   type: ss
-- cipher: aes-256-cfb
-  country: NL
-  name: 353|Relay_NL-FR_29
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.63
+- cipher: chacha20-ietf-poly1305
+  country: FR
+  name: 353|FR_04
+  password: hnITSVgdQOQF6aCT4YIizv
+  port: 5223
+  server: 51.254.142.162
   type: ss
 - name: 365|法国_巴黎
   network: ws
