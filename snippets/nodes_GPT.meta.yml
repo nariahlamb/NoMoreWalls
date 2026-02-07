@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '89,343|ES_1|2.3MB/s|GPT⁺|YT-ES|NF|GM|... #1'
+  name: '89,343|🇪🇸 ES_1|2.3MB/s|GPT⁺|YT-ES|NF|... #1'
   network: tcp
   port: 443
   reality-opts:
@@ -10,7 +10,8 @@ proxies:
   server: 158.160.223.36
   servername: yandex.ru
   skip-cert-verify: true
-  tls: false
+  tfo: false
+  tls: true
   type: vless
   uuid: 8009bc13-0c64-4ae9-9a74-24ce12cc71e8
 - client-fingerprint: chrome
@@ -24,23 +25,25 @@ proxies:
   server: 89.169.128.105
   servername: yandex.ru
   skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   uuid: 00c01f55-e31a-41cd-872b-938cda90afc3
 - client-fingerprint: chrome
-  name: '89,343|NL_10|2.3MB/s|GPT⁺|YT-NL|NF|D+ #1'
+  name: '89,343|🇳🇱 NL_10|2.3MB/s|GPT⁺|YT-NL|NF... #1'
   network: ws
   port: 2053
   server: 51.158.146.213
   servername: sni.111000.indevs.in
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
       Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560'
+    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 89,343,383,395,400|日期：02-06
@@ -52,23 +55,25 @@ proxies:
   server: nl01-gmn02-vlr01.tcp-reset-club.net
   servername: hls-svod.itunes.apple.com
   skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   uuid: e108f3eb-4d3a-4e20-a09b-7008e333bc23
 - client-fingerprint: chrome
-  name: '89,343|NL_13|2.3MB/s|GPT⁺|YT-NL|NF|D+... #1'
+  name: '89,343|🇳🇱 NL_13|2.3MB/s|GPT⁺|YT-NL|NF... #1'
   network: ws
   port: 8443
   server: 91.84.111.44
   servername: sni.111000.indevs.in
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
       Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560'
+    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '89,343,400|🇳🇱_荷兰 #10'
@@ -80,132 +85,143 @@ proxies:
   server: nl03-vlr01.tcp-reset-club.net
   servername: hls-svod.itunes.apple.com
   skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   uuid: e108f3eb-4d3a-4e20-a09b-7008e333bc23
-- name: '89,343,400|🇳🇱_荷兰 #2'
+- name: '89,343|🇳🇱 NL_17|2.5MB/s|GPT⁺|YT-NL|D+ #1'
   network: ws
   port: 8443
   server: 176.222.55.24
   servername: sni.111000.indevs.in
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
       Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
 - client-fingerprint: chrome
-  name: '89,343,400|US美国(mibei77.com 米贝节点分享) #1'
+  name: '89,343|🇳🇱 NL_18|2.6MB/s|GPT⁺|YT-NL|NF... #1'
   network: ws
   port: 443
   server: blackshadow.dpdns.org
   servername: blackshadow.dpdns.org
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
   ws-opts:
-    path: '%2F44.209.52.7-443'
+    headers:
+      Host: blackshadow.dpdns.org
+    path: /44.209.52.7-443
 - client-fingerprint: chrome
-  name: '89,343|NL_1|2.3MB/s|GPT⁺|YT-NL|NF|D+|... #1'
+  name: '89,343|🇳🇱 NL_1|2.3MB/s|GPT⁺|YT-NL|NF|... #1'
   network: ws
   port: 8443
   server: 185.193.158.71
   servername: sni.111000.indevs.in
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
       Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560'
+    path: /?ed=2560
 - client-fingerprint: chrome
-  name: '89,343|NL_2|2.5MB/s|GPT⁺|YT-NL|NF|D+|... #1'
+  name: '89,343|🇳🇱 NL_2|2.5MB/s|GPT⁺|YT-NL|NF|... #1'
   network: ws
   port: 443
   server: 91.84.101.53
   servername: sni.111000.indevs.in
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
       Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40app_bedal'
-- name: '89,343,400|🇺🇸_美国 #56'
+    path: /?ed=2560&Telegram🇨🇳 @app_bedal
+- name: '89,343|🇳🇱 NL_3|2.4MB/s|GPT⁺|YT-NL #1'
   network: ws
   port: 2052
   server: nodejs.org
   skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: f8ae018b-b84d-4c9b-b03b-4642c3a25977
   ws-opts:
     headers:
       Host: ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.
-    path: '%2F%3Fed'
+    path: /?ed
 - client-fingerprint: chrome
-  name: 89,343,400|🇦🇹_奥地利
+  name: '89,343|🇳🇱 NL_5|2.3MB/s|GPT⁺|YT-NL|NF|... #1'
   network: ws
   port: 2053
   server: 8.6.112.0
   servername: ir7.hnbyme.online
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 48792731-6fc9-4415-8b51-6007825daf82
   ws-opts:
     headers:
       Host: ir7.hnbyme.online
-    path: '%2F'
+    path: /
 - client-fingerprint: chrome
-  name: '89,343|NL_6|2.6MB/s|GPT|YT-NL|NF|D+ #1'
+  name: '89,343|🇳🇱 NL_6|2.6MB/s|GPT|YT-NL|NF|D... #1'
   network: ws
   port: 443
   server: nazar.ac.ir
   servername: we.ir-sub.fun
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: dd0cfef0-fda9-47ec-8a65-49d7bc004f82
   ws-opts:
     headers:
       Host: we.ir-sub.fun
-    path: '%2F--Telegram---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN'
+    path: /--Telegram---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN
 - client-fingerprint: chrome
-  flow: ''
-  name: '89,343,400,544|CA【机场推荐：https://a0a.xyz】11 #1'
+  name: '89,343|🇳🇱 NL_7|2.4MB/s|GPT⁺|YT-NL|NF|... #1'
   network: ws
   port: 443
   server: mianfeijiedianscp.buzz
   servername: mianfeijiedianscp.buzz
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   uuid: 0b3ad86e-1818-49bb-949d-4e85d137a16d
   ws-opts:
     headers:
       Host: mianfeijiedianscp.buzz
-    path: '%2F'
-- name: '89,343|NL_8|3.7MB/s|GPT⁺|YT-NL|NF|D+|... #1'
+    path: /
+- name: '89,343|🇳🇱 NL_8|3.7MB/s|GPT⁺|YT-NL|NF|... #1'
   network: ws
   port: 80
   server: cf.0sm.com
   skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
   ws-opts:
     headers:
       Host: lucky-voice-d6f3.difat89954-0c6.workers.dev
-    path: '%2F%3Fed%3D2048'
+    path: /?ed=2048
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '89,343|NL_9|2.2MB/s|GPT⁺|YT-NL|NF|6% #1'
+  name: '89,343|🇳🇱 NL_9|2.2MB/s|GPT⁺|YT-NL|NF|... #1'
   network: tcp
   port: 4443
   reality-opts:
@@ -214,12 +230,13 @@ proxies:
   server: 89.110.80.96
   servername: github.com
   skip-cert-verify: true
-  tls: false
+  tfo: false
+  tls: true
   type: vless
   uuid: ad6ae351-8306-4fa3-a2e4-2d7c4f954a30
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '89,343|PL_1|2.1MB/s|GPT⁺|YT-NL|NF|7% #1'
+  name: '89,343|🇳🇱 PL_1|2.1MB/s|GPT⁺|YT-NL|NF|... #1'
   network: tcp
   port: 843
   reality-opts:
@@ -228,37 +245,10 @@ proxies:
   server: 144.31.2.154
   servername: hls-svod.itunes.apple.com
   skip-cert-verify: true
-  tls: false
+  tfo: false
+  tls: true
   type: vless
   uuid: 32465a00-e9c1-4b2c-a57f-42f9ccaf64eb
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '89,343|PL_2|2.3MB/s|GPT⁺|YT-PL|NF|20% #1'
-  network: tcp
-  port: 51102
-  reality-opts:
-    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-    short-id: 8f222b3475800821
-  server: 158.160.105.121
-  servername: yandex.ru
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: 4603e54d-b023-4947-83e7-70025416f306
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '89,343|PL_3|2.3MB/s|GPT⁺|YT-PL|NF|20% #1'
-  network: tcp
-  port: 51102
-  reality-opts:
-    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-    short-id: 8f222b3475800821
-  server: 158.160.221.132
-  servername: yandex.ru
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: 4603e54d-b023-4947-83e7-70025416f306
 - cipher: chacha20-ietf-poly1305
   name: 410|SS--NF-ChatGPT-TikTok-YouTube-...
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
