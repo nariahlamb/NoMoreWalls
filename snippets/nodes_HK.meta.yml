@@ -255,7 +255,7 @@ proxies:
     path: /download
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '89,343|🇭🇰 HK_1|10.0MB/s|YT-HK|NF|0% #1'
+  name: '89,343,400|🇭🇰_香港 #1'
   network: tcp
   port: 443
   reality-opts:
@@ -263,7 +263,7 @@ proxies:
     short-id: de392136
   server: hk4.miyazono-kaori.com
   servername: www.ikea.com.hk
-  skip-cert-verify: true
+  skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
@@ -814,7 +814,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 227,261,353,383,392,395,398,400|10|🇭🇰 香港|@ripaojiedian
+  name: '227,261,353,383,392,395,398,400|12|🇭🇰 香港|@ripaojiedian #2'
   network: tcp
   port: 30807
   server: v10.hdacd.com
@@ -824,7 +824,7 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - country: HK
-  name: 227,353,383,395|HK_speednode_0030
+  name: '227,261,353,383,395,400|14|HK_speednode_0030 #2'
   password: BxceQaOe
   port: 443
   server: 112.120.31.36
@@ -832,15 +832,14 @@ proxies:
   sni: t.me/ripaojiedian
   type: trojan
   udp: true
-- name: 227,383,395|HK_speednode_0031
+- name: 227,261,383,395|HK_speednode_0031
   password: BxceQaOe
   port: 443
   server: 112.120.31.36
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '227,261,383,395,400,404|🇭🇰 香港 | HKG #1'
-  network: tcp
+- name: 227,261,383,392,395|HK_speednode_0034
   password: BxceQaOe
   port: 443
   server: 112.120.31.36
@@ -848,14 +847,14 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
   udp: true
-- name: 227,371,372,395|HK20｜家宽｜非常安全
+- name: 227,395,400,404|🇭🇰 香港 | HKG
   password: BxceQaOe
   port: 443
   server: 219.76.135.98
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 227,395,400|🇭🇰HK香港
+- name: 227,395|HK2｜家宽｜非常安全
   password: BxceQaOe
   port: 443
   server: 219.76.135.98
@@ -883,7 +882,7 @@ proxies:
   skip-cert-verify: true
   sni: 219.76.135.98
   type: trojan
-- name: 227,395|HK10｜家宽｜非常安全
+- name: 227,371,372,395|HK10｜家宽｜非常安全
   password: BxceQaOe
   port: 443
   server: 219.76.135.98
@@ -903,29 +902,33 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: 261,383,395,400|7| HK
+- name: '261,383,395,400|9| HK #2'
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
   server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   tls: false
   type: hysteria2
-- name: 261,400|10,11|香港3|@ripaojiedian
-  network: tcp
-  password: 5fb072e0ddd631cf66cf752b09210480
-  port: 3373
-  server: 18.179.142.141
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 261,400|10,11|香港4|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 1820
-  server: 13.112.171.80
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: '261,383,395,400|14|HK_speednode_0032 #2'
+  port: 443
+  server: 2.hk.2.cdn-bilibili.cn
+  servername: www.icloud.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: '261,383,395,400|14|HK_speednode_0033 #2'
+  port: 443
+  server: 2.hk.1.cdn-bilibili.cn
+  servername: www.icloud.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
 - cipher: chacha20-ietf-poly1305
   name: 277|🇭🇰1 |  3.5MB/s
   password: WfmxKX2FBJRU0Ie9VLIYDL
@@ -1422,12 +1425,19 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: aes-256-cfb
+  country: ' HK'
+  name: 350| HK_66
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
 - alterId: 2
   cipher: auto
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 350| HK_65
+  name: 350| HK_67
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -1435,18 +1445,6 @@ proxies:
   type: vmess
   uuid: e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9
   ws-path: /
-- alterId: 0
-  cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 353|HK_12
-  network: tcp
-  port: 52190
-  server: 47.242.192.233
-  skip-cert-verify: true
-  type: vmess
-  uuid: 98689724-deb2-4a3d-b83b-602221995baf
 - alterId: 0
   cipher: auto
   country: HK
@@ -1471,6 +1469,18 @@ proxies:
   h2-opts: {}
   http-opts: {}
   name: 353|HK_14
+  network: tcp
+  port: 52190
+  server: 47.242.192.233
+  skip-cert-verify: true
+  type: vmess
+  uuid: 98689724-deb2-4a3d-b83b-602221995baf
+- alterId: 0
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 353|HK_16
   network: ws
   port: 55185
   server: 47.243.135.74
@@ -1480,7 +1490,7 @@ proxies:
   ws-opts:
     path: /Notif_Chat
 - country: HK
-  name: 353|HK_15
+  name: 353|HK_18
   password: BxceQaOe
   port: 443
   server: 58.152.53.45
@@ -1489,7 +1499,7 @@ proxies:
   type: trojan
   udp: true
 - country: HK
-  name: 353|HK_16
+  name: 353|HK_19
   password: BxceQaOe
   port: 443
   server: 219.76.135.98
@@ -1874,29 +1884,6 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 383,395|HK_speednode_0032
-  port: 443
-  server: 2.hk.2.cdn-bilibili.cn
-  servername: www.icloud.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: '383,395,400|🇭🇰_香港 #5'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 4cfuj5otn8-uhPUe23OhB6KY8I42AxxJNt4lWIpg_AU
-  server: 2.hk.1.cdn-bilibili.cn
-  servername: www.icloud.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
 - cipher: aes-256-gcm
   name: 387|HK 9902
   password: 8165b1cd-8ee5-4d43-be44-0d52bf968efd
@@ -1904,20 +1891,6 @@ proxies:
   server: 165.1.70.69
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_020704029
-  network: ws
-  port: '80'
-  server: gf.usa2030.indevs.in
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5196aae7-1479-4f3c-978b-68e74977b509
-  ws-opts:
-    headers:
-      Host: gf.usa2030.indevs.in
-    path: /kl01iHu1vgbJmQ5IKMBivnR3
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1960,7 +1933,7 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|香港_020704152
+- name: 400|香港_020718204
   password: 407b6b2e-59e5-4466-9911-08f6f1263bc9
   port: 20000
   server: hk01.poke-mon.xyz
@@ -1983,11 +1956,25 @@ proxies:
 - name: '400|🇭🇰 香港3|@stairnode #1'
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3373
+  server: 18.179.142.141
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: '400|🇭🇰 香港3|@stairnode #2'
+  password: 5fb072e0ddd631cf66cf752b09210480
+  port: 3373
   server: 3.112.45.123
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: '400|🇭🇰 香港4|@stairnode #1'
+  password: BxceQaOe
+  port: 1820
+  server: 13.112.171.80
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '400|🇭🇰 香港4|@stairnode #2'
   password: BxceQaOe
   port: 1820
   server: 13.115.128.246
@@ -2038,19 +2025,20 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 400|🇭🇰_香港
-  network: ws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|🇭🇰_香港
+  network: tcp
   port: 443
-  server: 103.213.245.185
-  servername: 5465765525.ccfly.tech
+  reality-opts:
+    public-key: ECRQVRVmBxGeyrIkNy4NWckjbLDeWJgjTURE7Qnzmi0
+    short-id: 1a9904c26653
+  server: hk3.miyazono-kaori.com
+  servername: www.hysan.com.hk
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 4c642cae-1a6d-4e51-a1c3-fa5892437aa3
-  ws-opts:
-    headers:
-      Host: 5465765525.ccfly.tech
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+  uuid: 2e82cda5-e020-4c63-8271-e58a00831447
 - name: '400|HK香港(mibei77.com 米贝节点分享) #1'
   network: ws
   port: 10588
@@ -2063,19 +2051,18 @@ proxies:
     headers:
       Host: 5465765525.ccfly.tech
     path: '%2F%3Fed%3D2048'
-- name: '400|🇭🇰_香港 #1'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #2'
   network: ws
   port: 443
-  server: 43.161.225.77
-  servername: 5465765525.ccfly.tech
-  skip-cert-verify: false
+  server: s1.db-link.in
+  servername: dabaihk.webn.cc
   tls: true
   type: vless
-  uuid: 4c642cae-1a6d-4e51-a1c3-fa5892437aa3
+  uuid: 53cddd30-34a1-32dd-b598-c1c4c8a0f813
   ws-opts:
     headers:
-      Host: 5465765525.ccfly.tech
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+      Host: dabaihk.webn.cc
+    path: '%2Fdb1024a105975707'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '400|🇭🇰_香港 #2'
@@ -2087,33 +2074,7 @@ proxies:
   tls: true
   type: vless
   uuid: 5a9a33eb-546c-4ffa-aadc-1c75b3ac084b
-- name: '400|🇭🇰_香港 #3'
-  network: ws
-  port: 443
-  server: 103.213.245.185
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇭🇰_香港 #4'
-  network: ws
-  port: 2053
-  server: 103.228.171.5
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #2'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #3'
   network: ws
   port: 443
   server: 109.120.179.99
@@ -2125,7 +2086,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #3'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #4'
   network: ws
   port: 2096
   server: 141.11.203.238
@@ -2137,7 +2098,33 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #4'
+- name: '400|🇭🇰_香港 #3'
+  network: ws
+  port: 443
+  server: 149.104.30.110
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|🇭🇰_香港 #4'
+  network: ws
+  port: 443
+  server: 149.104.30.91
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #5'
   network: ws
   port: 2053
   server: 150.230.146.170
@@ -2173,7 +2160,7 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #5'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #6'
   network: ws
   port: 2096
   server: 156.255.123.138
@@ -2185,7 +2172,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #6'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #7'
   network: ws
   port: 443
   server: 164.52.2.99
@@ -2197,7 +2184,7 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #7'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #8'
   network: ws
   port: 2096
   server: 167.68.42.238
@@ -2209,7 +2196,7 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #8'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #9'
   network: ws
   port: 443
   server: 168.138.189.91
@@ -2221,7 +2208,7 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #9'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #10'
   network: ws
   port: 443
   server: 185.66.165.51
@@ -2233,7 +2220,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #10'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #11'
   network: ws
   port: 2096
   server: 185.7.240.238
@@ -2245,7 +2232,7 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #11'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #12'
   network: ws
   port: 57783
   server: 192.9.157.150
@@ -2257,7 +2244,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: 400|香港(yudou789.top 玉豆免费节点)_1
+- name: 400|香港(yudou789.top 玉豆免费节点)_1-1
   network: ws
   port: 443
   server: 2.58.65.28
@@ -2269,7 +2256,20 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #12'
+- name: '400|🇭🇰_香港 #5'
+  network: ws
+  port: 7000
+  server: 202.85.53.54
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #13'
   network: ws
   port: 443
   server: 212.193.4.209
@@ -2281,6 +2281,30 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #14'
+  network: ws
+  port: 443
+  server: 23.165.200.241
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|🇭🇰 香港 | HKG 4-1
+  network: ws
+  port: 21415
+  server: 43.132.244.52
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|🇭🇰HK
   network: ws
   port: 443
@@ -2294,7 +2318,7 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #13'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #15'
   network: ws
   port: 2443
   server: 43.252.41.204
@@ -2306,7 +2330,7 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #14'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #16'
   network: ws
   port: 443
   server: 45.149.235.119
@@ -2318,7 +2342,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #15'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #17'
   network: ws
   port: 2096
   server: 45.85.119.238
@@ -2330,7 +2354,7 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #16'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #18'
   network: ws
   port: 443
   server: 46.101.185.122
@@ -2342,7 +2366,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #17'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #19'
   network: ws
   port: 8443
   server: 46.249.101.56
@@ -2354,7 +2378,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #18'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #20'
   network: ws
   port: 443
   server: 47.76.218.163
@@ -2392,7 +2416,7 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #19'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #21'
   network: ws
   port: 41528
   server: 8.218.245.116
@@ -2404,7 +2428,7 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #20'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #22'
   network: ws
   port: 443
   server: 87.251.77.76
@@ -2416,7 +2440,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #21'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #23'
   network: ws
   port: 2053
   server: 87.251.88.140
@@ -2428,7 +2452,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #22'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #24'
   network: ws
   port: 2053
   server: 93.115.175.140
@@ -2440,7 +2464,46 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|HK香港(mibei77.com 米贝节点分享) #23'
+- name: '400|🇭🇰_香港 #6'
+  network: ws
+  port: 443
+  server: 149.104.28.147
+  servername: 9ae825f8.lfree.cn.mt
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6985e16e-48fd-55a7-f0e3-5202e8b1d5b2
+  ws-opts:
+    headers:
+      Host: 9ae825f8.lfree.cn.mt
+    path: '%2Fsocks5%3D6226604a%3A9ca2df1bf22a%4038.57.76.31%3A33375'
+- name: '400|🇭🇰_香港 #7'
+  network: ws
+  port: 8443
+  server: 149.104.29.191
+  servername: 9ae825f8.lfree.cn.mt
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6985e16e-48fd-55a7-f0e3-5202e8b1d5b2
+  ws-opts:
+    headers:
+      Host: 9ae825f8.lfree.cn.mt
+    path: '%2Fsocks5%3D6226604a%3A9ca2df1bf22a%4038.57.76.31%3A33375'
+- name: '400|🇭🇰_香港 #8'
+  network: ws
+  port: 443
+  server: 149.104.30.236
+  servername: 9ae825f8.lfree.cn.mt
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6985e16e-48fd-55a7-f0e3-5202e8b1d5b2
+  ws-opts:
+    headers:
+      Host: 9ae825f8.lfree.cn.mt
+    path: '%2Fsocks5%3D6226604a%3A9ca2df1bf22a%4038.57.76.31%3A33375'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #25'
   network: ws
   port: 80
   server: 104.16.158.162
@@ -2451,6 +2514,17 @@ proxies:
     headers:
       Host: mute-violet-c674.poviy66273.workers.dev
     path: '%2F%3Fed%3D2048'
+- name: '400|HK香港(mibei77.com 米贝节点分享) #26'
+  network: ws
+  port: 80
+  server: llloooiu.191292.xyz
+  tls: false
+  type: vless
+  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+  ws-opts:
+    headers:
+      Host: llloooiu.191292.xyz
+    path: '%2F8Midq8kt5Q2GkKGWRMg'
 - alpn:
   - ''
   client-fingerprint: random
@@ -2541,15 +2615,56 @@ proxies:
     headers:
       Host: s458.okgg.top
     path: ''
-- alterId: 0
+- name: '400|HK香港(mibei77.com 米贝节点分享) #27'
+  network: ws
+  port: 443
+  server: s1.db-link.in
+  servername: s6.oboob.cn
+  tls: true
+  type: vless
+  uuid: d2efa18a-9e8a-3057-91fe-90c8e620e49f
+  ws-opts:
+    headers:
+      Host: s6.oboob.cn
+    path: '%2Fdb10242a4797a252'
+- alterId: 2
   cipher: auto
-  name: 400|🇭🇰 香港 阿里云
-  network: none
-  port: '52190'
-  server: 47.242.192.233
+  name: 400|🇭🇰 HK_65
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: ''
   tls: false
   type: vmess
-  uuid: 98689724-deb2-4a3d-b83b-602221995baf
+  uuid: e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 400|🇭🇰 HK_66
+  network: none
+  port: 13852
+  server: 45.207.157.29
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+- alterId: 0
+  cipher: auto
+  name: 400|香港_020718005
+  network: ws
+  port: '443'
+  server: n1761214910.74qxv.top
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 011c4670-cdde-44fb-b9be-8a1e27af26c9
+  ws-opts:
+    headers:
+      Host: n1761214910.74qxv.top
+    path: /
 - alterId: 0
   cipher: auto
   name: 411|香港（直连）

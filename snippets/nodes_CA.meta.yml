@@ -81,7 +81,8 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- name: '227,395,400,404|🇨🇦 加拿大 | CAN #1'
+- name: 227,395,400|🇨🇦_加拿大
+  network: tcp
   password: 63b21d86-a49c-4936-a634-0b5af3e30433
   port: 443
   server: tuntro006.instconn.com
@@ -236,6 +237,15 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- country: CA
+  name: 353|Pool_CA_01
+  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+  port: 10889
+  server: 167.17.185.172
+  skip-cert-verify: true
+  sni: web.max.ru
+  type: trojan
+  udp: true
 - name: 365|加拿大_多伦多
   network: ws
   port: 443
@@ -4522,13 +4532,18 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+- name: '371,372|加拿大+V2CROSS.COM #1'
+  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+  port: 10889
+  server: 167.17.185.228
+  sni: web.max
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '392,400|CA加拿大(mibei77.com 米贝节点分享) #3'
+  name: '392,400|🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #3'
   network: ws
   port: '443'
   server: YyYYuUI.iRAn1912.dpDNs.oRG
-  servername: YYYYuuI.IRan1912.dPDns.oRg
   tls: true
   type: vmess
   uuid: 4a7baca1-8048-4a91-8316-595b36657a54
@@ -4536,7 +4551,7 @@ proxies:
     headers:
       Host: YYyYUui.iran1912.dpdNS.OrG
     path: /TaBvkrUbsyvsvinsGGg
-- name: 392,400|🇬🇧GB英国
+- name: 392,400|🇨🇦CA加拿大2
   password: 98b419ef-83a2-4d1b-a23d-566b7f24477b
   port: 443
   server: ooiuyt.890699.xyz
@@ -4557,40 +4572,76 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|🇨🇦CA加拿大4
+- name: 400|CA加拿大(mibei77.com 米贝节点分享)
+  network: ws
   password: T9BpZIVMNv
   port: 8443
   server: vip2.kaixincloud.top
   sni: sweden.vmaxpanel.com
   type: trojan
-- name: 400|🇨🇦CA加拿大5
+  ws-opts:
+    headers:
+      Host: sweden.vmaxpanel.com
+    path: '%2Famd'
+- alpn:
+  - http/1.1
+  name: '400|CA加拿大(mibei77.com 米贝节点分享) #1'
+  network: ws
   password: b9bb332d-5e0d-41af-adac-49362dde8661
   port: 443
   server: lll9.7777198.xyz
   sni: lll9.7777198.xyz
   type: trojan
-- flow: ''
-  name: 400|SCP-DEV
-  network: ws
-  port: 443
-  server: mianfeijiedianscp.buzz
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 0b3ad86e-1818-49bb-949d-4e85d137a16d
   ws-opts:
     headers:
-      Host: mianfeijiedianscp.buzz
-    path: '%2F'
-- name: 400|CA加拿大(mibei77.com 米贝节点分享)
+      Host: lll9.7777198.xyz
+    path: '%2FQmR662lkasAQbt5Q2GkKGWRMg'
+- name: '400|CA加拿大(mibei77.com 米贝节点分享) #3'
   network: tcp
-  port: 50
-  server: dd.openaccessnode.com
+  port: 10468
+  server: 185.113.10.198
   tls: false
   type: vless
-  uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
-- name: '400|CA加拿大(mibei77.com 米贝节点分享) #1'
+  uuid: 3b12e953-96f0-40da-ac32-3038dadf20f7
+  ws-opts:
+    headers:
+      Host: Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
+- name: '400|CA加拿大(mibei77.com 米贝节点分享) #4'
+  network: ws
+  port: 443
+  server: 104.17.76.224
+  servername: 5465765525.ccfly.tech
+  tls: true
+  type: vless
+  uuid: 4c642cae-1a6d-4e51-a1c3-fa5892437aa3
+  ws-opts:
+    headers:
+      Host: 5465765525.ccfly.tech
+    path: '%2F%3Fed%3D2048'
+- name: '400|CA加拿大(mibei77.com 米贝节点分享) #5'
+  network: ws
+  port: 80
+  server: nodejs.org
+  tls: false
+  type: vless
+  uuid: 5eb9b54d-3c4e-4588-97f7-e53fe3e92c90
+  ws-opts:
+    headers:
+      Host: GLOrioUs-aRriVALHCRtzt96gb.sPORtlANd.cOMPAnY.
+    path: '%2F%3Fed'
+- name: '400|CA加拿大(mibei77.com 米贝节点分享) #6'
+  network: ws
+  port: 2053
+  server: 104.17.71.206
+  servername: snippet.sheilabelinda.ndjp.net
+  tls: true
+  type: vless
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.sheilabelinda.ndjp.net
+    path: '%2Fdanfeng%3Fed%3D2560'
+- name: '400|CA加拿大(mibei77.com 米贝节点分享) #7'
   network: ws
   port: 2083
   server: v3.dabache.top
@@ -4602,7 +4653,7 @@ proxies:
     headers:
       Host: hajames.amirconfigpaanelllll.com
     path: '%2F'
-- name: '400|CA加拿大(mibei77.com 米贝节点分享) #2'
+- name: '400|CA加拿大(mibei77.com 米贝节点分享) #8'
   network: ws
   port: 443
   server: ffvbg.7777125.xyz
@@ -4614,6 +4665,20 @@ proxies:
     headers:
       Host: ffvbg.7777125.xyz
     path: '%2FD5oXRDxFepMpfNkCk8'
+- alterId: 0
+  cipher: auto
+  name: '400|CA加拿大(mibei77.com 米贝节点分享) #9'
+  network: ws
+  port: '443'
+  server: bbbnmkl.2030.pp.ua
+  servername: bbbnmkl.2030.pp.ua
+  tls: true
+  type: vmess
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-opts:
+    headers:
+      Host: bbbnmkl.2030.pp.ua
+    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
 - alterId: 0
   cipher: auto
   name: '400|🇨🇦_CA_加拿大 #1'

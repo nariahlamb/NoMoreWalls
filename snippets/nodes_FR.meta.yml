@@ -44,6 +44,16 @@ proxies:
   type: vmess
   udp: true
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
+- country: 🇫🇷FR
+  delay: 1172
+  name: 64,264,385|法国 - 巴黎 - Amazon Technologies ...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.127.100
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '90,345|法国1 #2'
@@ -84,6 +94,15 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- client-fingerprint: chrome
+  name: '261,383,395,400|14|FR_speednode_0019 #2'
+  port: 3032
+  server: fr.locations-service.com
+  servername: refersion.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e59083aa-d933-4952-8cf0-eec74f718705
 - cipher: aes-256-cfb
   name: 277|🇫🇷1 |  20.9MB/s
   password: f8f7aCzcPKbsF8p3
@@ -388,7 +407,7 @@ proxies:
   country: ' FR'
   h2-opts: {}
   http-opts: {}
-  name: 350| FR_38
+  name: 350| FR_39
   network: ws
   port: 443
   server: 91.134.8.101
@@ -398,7 +417,7 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
 - country: FR
-  name: 350|FR_39
+  name: 350|FR_40
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -406,7 +425,7 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_40
+  name: 350|FR_41
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -414,7 +433,7 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_41
+  name: 350|FR_42
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -423,24 +442,24 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: FR
-  name: 353|FR_02
-  password: amazonskr05
-  port: 443
-  server: 13.38.75.96
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: FR
   name: 353|FR_03
-  password: e7yQKOelKM4UIJCZYLrzQX
-  port: 59724
-  server: 162.19.214.191
-  type: ss
-- cipher: aes-256-cfb
-  country: FR
-  name: 353|FR_04
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: FR
+  name: 353|FR_04
+  password: hnITSVgdQOQF6aCT4YIizv
+  port: 5223
+  server: 51.254.142.162
+  type: ss
+- cipher: aes-256-cfb
+  country: FR
+  name: 353|FR_05
+  password: amazonskr05
+  port: 443
+  server: 13.38.75.96
   type: ss
 - name: 365|法国_巴黎
   network: ws
@@ -621,38 +640,23 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- client-fingerprint: chrome
-  name: 383,395|FR_speednode_0019
-  port: 3032
-  server: fr.locations-service.com
-  servername: refersion.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e59083aa-d933-4952-8cf0-eec74f718705
-- name: 400|🇫🇷FR_42
+- name: 400|🇫🇷FR_41
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: 400|🇫🇷FR_44
+- name: 400|🇫🇷FR_43
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 400|🇫🇷FR_43
+- name: 400|🇫🇷FR_42
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   sni: de-full.privateip.net
-  type: trojan
-- name: 400|🇫🇷 FR TROJAN-40 | free-nodes
-  password: humanity
-  port: 443
-  server: 172.64.152.23
-  sni: www.gossipglove.com
   type: trojan
 - alpn:
   - http/1.1
@@ -663,6 +667,31 @@ proxies:
   server: 35.181.17.83
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 400|FR VLESS-46 | free-nodes
+  network: ws
+  port: 80
+  server: ov-france1.09vpn.com
+  tls: false
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  ws-opts:
+    headers:
+      Host: OV-France1.09vpn.com
+    path: '%2Fvless%2F'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|🇫🇷_法国
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: NbZDyyn7jiy3X59fcoVyL6WsCkE4K-sfOKQ383JAHD8
+    short-id: 04c9953800
+  server: fr2.miyazono-kaori.com
+  servername: www.edf.fr
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 2e82cda5-e020-4c63-8271-e58a00831447
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
   name: 400|🇫🇷[openproxylist.com] vless-FR
@@ -748,32 +777,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 400|🇫🇷_法国
-  network: ws
-  port: 443
-  server: 146.70.32.24
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #1'
-  network: ws
-  port: 443
-  server: 146.70.32.51
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: 400|FR法国(mibei77.com 米贝节点分享)-010
   network: ws
   port: 8443
@@ -786,110 +789,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: '400|🇫🇷_法国 #2'
-  network: ws
-  port: 8443
-  server: 158.178.206.197
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #3'
-  network: ws
-  port: 2053
-  server: 162.19.243.106
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #4'
-  network: ws
-  port: 8443
-  server: 162.19.243.173
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #5'
-  network: ws
-  port: 2053
-  server: 162.19.243.46
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #6'
-  network: ws
-  port: 8443
-  server: 162.19.243.46
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #7'
-  network: ws
-  port: 2053
-  server: 162.19.246.248
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #8'
-  network: ws
-  port: 2053
-  server: 162.19.253.192
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #9'
-  network: ws
-  port: 2053
-  server: 162.19.254.52
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: 400|FR法国(mibei77.com 米贝节点分享)
   network: ws
   port: 8443
@@ -927,6 +826,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 400|官网520.juanwangjc.top法国 免费使用-06...
+  network: ws
+  port: 8443
+  server: 192.248.186.10
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: '400|🇫🇷FR #5'
   network: ws
   port: 443
@@ -968,8 +879,8 @@ proxies:
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
 - name: '400|🇫🇷FR #8'
   network: ws
-  port: 2053
-  server: 217.60.36.183
+  port: 8443
+  server: 217.60.36.58
   servername: sni.111000.indevs.in
   skip-cert-verify: false
   tls: true
@@ -995,7 +906,7 @@ proxies:
 - name: '400|🇫🇷FR #10'
   network: ws
   port: 2053
-  server: 31.59.121.155
+  server: 31.59.120.161
   servername: sni.111000.indevs.in
   skip-cert-verify: false
   tls: true
@@ -1031,18 +942,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 400|🇫🇷FR_18
-  network: ws
-  port: 8443
-  server: 31.59.121.227
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: '400|🇫🇷FR #13'
   network: ws
   port: 443
@@ -1082,6 +981,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
+- name: 400|官网520.juanwangjc.top法国 免费使用-04
+  network: ws
+  port: 8443
+  server: 45.82.161.175
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|FR法国(mibei77.com 米贝节点分享)-003
   network: ws
   port: 2053
@@ -1097,19 +1008,6 @@ proxies:
 - name: '400|🇫🇷FR #16'
   network: ws
   port: 8443
-  server: 46.8.224.150
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '400|🇫🇷FR #17'
-  network: ws
-  port: 8443
   server: 46.8.225.24
   servername: sni.111000.indevs.in
   skip-cert-verify: false
@@ -1120,36 +1018,34 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '400|🇫🇷_法国 #10'
+- name: 400|官网520.juanwangjc.top法国 免费使用-07
   network: ws
   port: 8443
   server: 51.158.205.160
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
+  servername: ''
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
       Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #11'
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: '400|官网520.juanwangjc.top法国 免费使用-06... #1'
   network: ws
   port: 2053
   server: 51.158.205.192
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
+  servername: ''
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
       Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #12'
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: '400|🇫🇷_法国 #1'
   network: ws
   port: 2053
-  server: 51.195.118.15
+  server: 51.195.119.195
   servername: sni.111000.indevs.in
   skip-cert-verify: false
   tls: true
@@ -1159,10 +1055,10 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #13'
+- name: '400|🇫🇷_法国 #2'
   network: ws
-  port: 443
-  server: 51.38.98.202
+  port: 2053
+  server: 51.195.42.9
   servername: sni.111000.indevs.in
   skip-cert-verify: false
   tls: true
@@ -1172,6 +1068,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|法国(yudou789.top 玉豆免费节点)_3
+  network: ws
+  port: 2053
+  server: 51.75.77.148
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|FR法国(mibei77.com 米贝节点分享)-012
   network: ws
   port: 2053
@@ -1208,10 +1116,153 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: '400|🇫🇷_法国 #14'
+- name: '400|🇫🇷_法国 #3'
   network: ws
   port: 8443
-  server: 54.37.73.185
+  server: 57.128.178.196
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|🇫🇷_法国 #4'
+  network: ws
+  port: 8443
+  server: 57.128.182.234
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|🇫🇷_法国 #5'
+  network: ws
+  port: 8443
+  server: 57.128.182.27
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|🇫🇷_法国 #6'
+  network: ws
+  port: 8443
+  server: 57.128.183.142
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|🇫🇷_法国 #7'
+  network: ws
+  port: 443
+  server: 57.128.183.3
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|🇫🇷_法国 #8'
+  network: ws
+  port: 8443
+  server: 57.129.137.197
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|🇫🇷_法国 #9'
+  network: ws
+  port: 443
+  server: 57.129.137.200
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|🇫🇷_法国 #10'
+  network: ws
+  port: 8443
+  server: 57.129.137.202
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|🇫🇷_法国 #11'
+  network: ws
+  port: 443
+  server: 57.129.137.207
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|🇫🇷_法国 #12'
+  network: ws
+  port: 8443
+  server: 57.129.137.218
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|🇫🇷_法国 #13'
+  network: ws
+  port: 8443
+  server: 57.129.137.221
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|🇫🇷_法国 #14'
+  network: ws
+  port: 443
+  server: 57.129.137.225
   servername: sni.111000.indevs.in
   skip-cert-verify: false
   tls: true
@@ -1223,8 +1274,8 @@ proxies:
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: '400|🇫🇷_法国 #15'
   network: ws
-  port: 2053
-  server: 54.37.74.239
+  port: 443
+  server: 57.129.137.231
   servername: sni.111000.indevs.in
   skip-cert-verify: false
   tls: true
@@ -1237,7 +1288,7 @@ proxies:
 - name: '400|🇫🇷_法国 #16'
   network: ws
   port: 8443
-  server: 57.129.14.56
+  server: 57.129.137.61
   servername: sni.111000.indevs.in
   skip-cert-verify: false
   tls: true
@@ -1249,8 +1300,8 @@ proxies:
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: '400|🇫🇷_法国 #17'
   network: ws
-  port: 2053
-  server: 57.129.47.11
+  port: 8443
+  server: 57.129.137.75
   servername: sni.111000.indevs.in
   skip-cert-verify: false
   tls: true
@@ -1262,21 +1313,8 @@ proxies:
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: '400|🇫🇷_法国 #18'
   network: ws
-  port: 2053
-  server: 57.129.47.12
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #19'
-  network: ws
   port: 8443
-  server: 57.129.47.14
+  server: 57.129.137.89
   servername: sni.111000.indevs.in
   skip-cert-verify: false
   tls: true
@@ -1286,73 +1324,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #20'
-  network: ws
-  port: 2053
-  server: 57.129.47.58
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #21'
-  network: ws
-  port: 8443
-  server: 57.129.47.67
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #22'
-  network: ws
-  port: 8443
-  server: 57.129.63.145
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #23'
-  network: ws
-  port: 8443
-  server: 57.129.63.149
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇫🇷_法国 #24'
-  network: ws
-  port: 2053
-  server: 57.129.63.60
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- client-fingerprint: chrome
-  name: '400|🇫🇷_法国 #25'
+- name: '400|🇫🇷FR #17'
   network: ws
   port: 8443
   server: 89.168.43.31
@@ -1364,7 +1336,7 @@ proxies:
   ws-opts:
     headers:
       Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
 - name: 400|FR法国(mibei77.com 米贝节点分享)-006
   network: ws
   port: 2053
@@ -1380,7 +1352,7 @@ proxies:
 - name: '400|🇫🇷FR #18'
   network: ws
   port: 443
-  server: 94.131.9.241
+  server: 94.131.9.202
   servername: sni.111000.indevs.in
   skip-cert-verify: false
   tls: true
@@ -1393,7 +1365,7 @@ proxies:
 - name: '400|🇫🇷FR #19'
   network: ws
   port: 443
-  server: 94.131.9.65
+  server: 94.131.9.241
   servername: sni.111000.indevs.in
   skip-cert-verify: false
   tls: true
@@ -1403,6 +1375,19 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
+- name: '400|🇫🇷_法国 #19'
+  network: ws
+  port: 443
+  server: 94.131.9.65
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: 400|🇫🇷FR_27
   network: ws
   port: 2053
@@ -1429,7 +1414,7 @@ proxies:
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|🇫🇷_法国 #26'
+  name: '400|🇫🇷_法国 #20'
   network: tcp
   port: 47030
   reality-opts:
@@ -1453,6 +1438,13 @@ proxies:
     headers:
       Host: snippet.fgfw.cc.cd
     path: '%2Fdanfeng'
+- name: 400|FR VLESS-89 | free-nodes
+  network: tcp
+  port: 46248
+  server: kurd-fr.tawana.online
+  tls: false
+  type: vless
+  uuid: a571b94c-a9f3-407a-a8ef-da608dab5472
 - client-fingerprint: chrome
   name: 400|FR VLESS-98 | free-nodes
   network: ws
@@ -1510,14 +1502,6 @@ proxies:
   tls: false
   type: vless
   uuid: f0f7551e-32f2-420f-a1bd-6d3d77e096a6
-- name: 400|法國-03
-  network: tcp
-  port: 443
-  server: 162.19.10.94
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
   name: 400|法国 140
@@ -1548,7 +1532,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 400|🇫🇷 FR_41
+  name: 400|🇫🇷 FR_40
   network: ws
   port: 443
   server: 91.134.8.101
@@ -1562,7 +1546,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|法国_020704302
+  name: 400|法国_020718038
   network: tcp
   port: '550'
   server: 162.19.248.238

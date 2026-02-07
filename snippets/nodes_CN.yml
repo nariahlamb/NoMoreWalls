@@ -1,5 +1,21 @@
 proxies:
-- name: '227,383,392,395,397,398|美国|@ripaojiedian #1'
+- alterId: 0
+  cipher: auto
+  name: '64,264|🇨🇳 中国 - 深圳 - Hangzhou Alibaba ... #1'
+  network: ws
+  port: 80
+  server: hn.xn--wlqw1swrj04ju56d.com
+  servername: tms.dingtalk.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f9ddefc5-d121-486f-9e2f-0c2cd1a3decc
+  ws-opts:
+    headers:
+      Host: hn.xn--wlqw1swrj04ju56d.com
+    path: /
+- name: '227,261,383,392,395,397,398,400|12,13|美国|@ripaojiedian #2'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 2760
@@ -36,7 +52,7 @@ proxies:
   uuid: e404a24f-cb43-4cec-abf1-7b7783ce8316
 - alterId: 2
   cipher: auto
-  name: '227,395,400,404|🇺🇸 美国 | USA #7'
+  name: 227,395,400,404|🇺🇸 美国 | USA
   network: tcp
   port: '30824'
   server: v24.hdacd.com
@@ -45,7 +61,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: '227,395,400,404|🇫🇷 法国 | FRA #2'
+  name: '227,395,400,404|🇫🇷 法国 | FRA #1'
   network: tcp
   port: '30835'
   server: v35.hdacd.com
@@ -54,7 +70,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 227,395,400,404|🇭🇰 香港 | HKG
+  name: '227,395,400|HK33｜机房｜低风险 #1'
   network: tcp
   port: '30809'
   server: v9.hdacd.com
@@ -63,10 +79,14 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: '227,395,400,404|🇺🇸 美国 | USA #2'
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: '227,343,353,395,400|US21｜机房｜低风险 #1'
   network: tcp
   port: '30808'
   server: v8.hdacd.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -102,18 +122,10 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - country: ' CN'
-  name: 350| CN_30
+  name: 350| CN_32
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: ' CN'
-  name: 350| CN_31
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30534
-  server: 36.151.251.36
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -127,6 +139,24 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳CN
+  delay: 1756
+  h2-opts: {}
+  http-opts: {}
+  name: 385|中国 - 深圳 - Hangzhou Alibaba Adv...
+  network: ws
+  port: 80
+  server: hn.xn--wlqw1swrj04ju56d.com
+  servername: tms.dingtalk.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: f9ddefc5-d121-486f-9e2f-0c2cd1a3decc
+  ws-opts:
+    headers:
+      HOST: tms.dingtalk.com
+    path: /
 - name: 388|🇨🇳CN-183.56.247.206-000
   password: f441a2b0-31ef-490d-bd91-9b1cd960f4ce
   port: 29482
@@ -503,19 +533,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 392|🇨🇳 中国 阿里云
-  network: ws
-  port: '443'
-  server: n1761214910.74qxv.top
-  tls: true
-  type: vmess
-  uuid: 011c4670-cdde-44fb-b9be-8a1e27af26c9
-  ws-opts:
-    headers:
-      Host: n1761214910.74qxv.top
-    path: /
-- alterId: 0
-  cipher: auto
   name: 399|2|24 |  4.8MB/s
   network: tcp
   port: 5229
@@ -777,15 +794,6 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- alterId: 0
-  cipher: auto
-  name: '400,544|CN【机场推荐：https://a0a.xyz】10 #1'
-  network: tcp
-  port: '30812'
-  server: v12.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
   name: 400|🇨🇳_CN_中国_4

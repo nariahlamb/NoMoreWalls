@@ -57,7 +57,8 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- name: '227,395,400,404|🇨🇦 加拿大 | CAN #1'
+- name: 227,395,400|🇨🇦_加拿大
+  network: tcp
   password: 63b21d86-a49c-4936-a634-0b5af3e30433
   port: 443
   server: tuntro006.instconn.com
@@ -212,6 +213,15 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- country: CA
+  name: 353|Pool_CA_01
+  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+  port: 10889
+  server: 167.17.185.172
+  skip-cert-verify: true
+  sni: web.max.ru
+  type: trojan
+  udp: true
 - name: '365|加拿大_多伦多 #42'
   network: ws
   password: NISHIKUITAN222
@@ -2738,13 +2748,18 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+- name: '371,372|加拿大+V2CROSS.COM #1'
+  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+  port: 10889
+  server: 167.17.185.228
+  sni: web.max
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '392,400|CA加拿大(mibei77.com 米贝节点分享) #3'
+  name: '392,400|🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #3'
   network: ws
   port: '443'
   server: YyYYuUI.iRAn1912.dpDNs.oRG
-  servername: YYYYuuI.IRan1912.dPDns.oRg
   tls: true
   type: vmess
   uuid: 4a7baca1-8048-4a91-8316-595b36657a54
@@ -2752,7 +2767,7 @@ proxies:
     headers:
       Host: YYyYUui.iran1912.dpdNS.OrG
     path: /TaBvkrUbsyvsvinsGGg
-- name: 392,400|🇬🇧GB英国
+- name: 392,400|🇨🇦CA加拿大2
   password: 98b419ef-83a2-4d1b-a23d-566b7f24477b
   port: 443
   server: ooiuyt.890699.xyz
@@ -2773,18 +2788,44 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|🇨🇦CA加拿大4
+- name: 400|CA加拿大(mibei77.com 米贝节点分享)
+  network: ws
   password: T9BpZIVMNv
   port: 8443
   server: vip2.kaixincloud.top
   sni: sweden.vmaxpanel.com
   type: trojan
-- name: 400|🇨🇦CA加拿大5
+  ws-opts:
+    headers:
+      Host: sweden.vmaxpanel.com
+    path: '%2Famd'
+- alpn:
+  - http/1.1
+  name: '400|CA加拿大(mibei77.com 米贝节点分享) #1'
+  network: ws
   password: b9bb332d-5e0d-41af-adac-49362dde8661
   port: 443
   server: lll9.7777198.xyz
   sni: lll9.7777198.xyz
   type: trojan
+  ws-opts:
+    headers:
+      Host: lll9.7777198.xyz
+    path: '%2FQmR662lkasAQbt5Q2GkKGWRMg'
+- alterId: 0
+  cipher: auto
+  name: '400|CA加拿大(mibei77.com 米贝节点分享) #9'
+  network: ws
+  port: '443'
+  server: bbbnmkl.2030.pp.ua
+  servername: bbbnmkl.2030.pp.ua
+  tls: true
+  type: vmess
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-opts:
+    headers:
+      Host: bbbnmkl.2030.pp.ua
+    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
 - alterId: 0
   cipher: auto
   name: '400|🇨🇦_CA_加拿大 #1'

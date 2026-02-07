@@ -123,7 +123,7 @@ proxies:
       Host: download.cloud.189.cn
     path: /
 - client-fingerprint: chrome
-  name: '89,343|🇸🇬 SG_1|4.7MB/s|YT-SG|NF|D+|GM #1'
+  name: 89|🇸🇬 SG_1|4.7MB/s|YT-SG|NF|D+|GM
   network: ws
   port: 443
   server: 162.159.12.151
@@ -872,7 +872,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 261,383,395,400|7|SG
+- name: '261,383,395,400|9|SG #2'
   password: e7965e64-e001-4e8c-8273-39c61ff4a094
   port: 30000
   server: sg3.oomz.ru
@@ -880,34 +880,6 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- country: JP
-  name: 261,353,400|10,11|新加坡|@ripaojiedian
-  network: tcp
-  password: 5fb072e0ddd631cf66cf752b09210480
-  port: 3076
-  server: 160.16.89.176
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: JP
-  name: 261,353,400|10,11|新加坡2|@ripaojiedian
-  network: tcp
-  password: 5fb072e0ddd631cf66cf752b09210480
-  port: 3901
-  server: 160.16.236.32
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- name: 261,400|10,11|新加坡3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 8041
-  server: 3.112.215.135
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - name: 277|🇸🇬1 |  9.0MB/s
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -1190,12 +1162,41 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- client-fingerprint: chrome
+  name: 343|SG_1|4.7MB/s|YT-SG|NF|D+|GM
+  network: ws
+  port: 443
+  server: 162.159.12.151
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560'
 - alterId: 0
   cipher: auto
   country: ' SG'
   h2-opts: {}
   http-opts: {}
-  name: 350| SG_84
+  name: 350,400|🇸🇬 SG_87
+  network: none
+  port: 43425
+  server: 8.210.248.133
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' SG'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| SG_90
   network: ws
   port: 443
   server: n1761214911.74qxv.top
@@ -1207,31 +1208,16 @@ proxies:
   ws-headers:
     HOST: n1761214911.74qxv.top
   ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' SG'
-  h2-opts: {}
-  http-opts: {}
-  name: 350,400|🇸🇬 SG_90
-  network: none
-  port: 43425
-  server: 8.210.248.133
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
-  ws-path: /
 - cipher: chacha20-ietf-poly1305
   country: SG
-  name: 353|SG_35
+  name: 353|SG_39
   password: ljqdalu13..
-  port: 8319
+  port: 8316
   server: 3.1.195.148
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: SG
-  name: 353|SG_36
+  name: 353|SG_40
   password: ljqdalu13..
   port: 8313
   server: 3.1.195.148
@@ -1241,18 +1227,18 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_ZZ-SG_85
+  name: 353,400|🇺🇸 US_104
   network: ws
   port: 443
   server: cf.090227.xyz
-  servername: sgal.dagrate.eu.org
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
   ws-opts:
     headers:
-      HOST: sgal.dagrate.eu.org
+      Host: ''
     path: /
 - name: 365|新加坡_新加坡
   network: ws
@@ -2383,22 +2369,17 @@ proxies:
   udp: true
 - name: '400|🇸🇬 新加坡3|@stairnode #1'
   password: BxceQaOe
+  port: 8041
+  server: 3.112.215.135
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: '400|🇸🇬 新加坡3|@stairnode #2'
+  password: BxceQaOe
   port: 532
   server: 57.181.30.136
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 400|新加坡_020704260
-  password: aZsk43TyWBpjt@A
-  port: 443
-  server: vpn.qinfen180.cn
-  type: trojan
-- name: 400|🇸🇬SG新加坡4
-  network: tcp
-  password: c1d83c0c7d57cead4379ba14a82df69b
-  port: 443
-  server: 178.128.114.70
-  sni: www.nintendogames.net
   type: trojan
 - name: 400|🇸🇬SG
   network: ws
@@ -2425,19 +2406,18 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: 400|🇸🇬_新加坡
+- name: 400|官网520.juanwangjc.top新加坡 免费使用-0...
   network: ws
   port: 443
   server: 139.177.185.88
-  servername: sni.jpmj.dev
-  skip-cert-verify: false
+  servername: ''
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
       Host: sni.jpmj.dev
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: '400|SG新加坡(mibei77.com 米贝节点分享) #1'
   network: ws
   port: 2096
@@ -2450,30 +2430,32 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: 400|🇸🇬SG_1|13.3MB/s
+- client-fingerprint: chrome
+  name: '400|🇸🇬_新加坡 #1'
   network: ws
-  port: 443
-  server: 162.159.12.151
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F'
-- name: '400|🇸🇬_新加坡 #1'
-  network: ws
-  port: 24467
-  server: 194.127.193.124
-  servername: sni.jpmj.dev
+  port: 8443
+  server: 194.36.178.36
+  servername: sni.111000.indevs.in
   skip-cert-verify: false
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: sni.jpmj.dev
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
+- name: '400|🇸🇬_新加坡 #2'
+  network: ws
+  port: 443
+  server: 20.6.12.145
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: '400|SG新加坡(mibei77.com 米贝节点分享) #2'
   network: ws
@@ -2500,6 +2482,59 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
+- name: '400|🇸🇬_新加坡 #3'
+  network: ws
+  port: 443
+  server: 4.194.113.191
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- client-fingerprint: chrome
+  name: '400|🇸🇬_新加坡 #4'
+  network: ws
+  port: 443
+  server: 43.165.183.43
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
+- name: 400|SG新加坡(mibei77.com 米贝节点分享)-004
+  network: ws
+  port: 443
+  server: 45.149.235.28
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- client-fingerprint: chrome
+  name: '400|🇸🇬_新加坡 #5'
+  network: ws
+  port: 81
+  server: 5.34.176.119
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
 - name: '400|🇸🇬SG #2'
   network: ws
   port: 25435
@@ -2513,6 +2548,32 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
+- name: '400|🇸🇬_新加坡 #6'
+  network: ws
+  port: 443
+  server: 8.223.63.150
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|🇸🇬_新加坡 #7'
+  network: ws
+  port: 8080
+  server: 20.191.143.151
+  servername: 9ae825f8.lfree.cn.mt
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6985e16e-48fd-55a7-f0e3-5202e8b1d5b2
+  ws-opts:
+    headers:
+      Host: 9ae825f8.lfree.cn.mt
+    path: '%2Fsocks5%3D6226604a%3A9ca2df1bf22a%4038.57.76.31%3A33375'
 - name: 400|🇸🇬SG_1 | ⬇️ 1.9MB/s
   network: tcp
   port: 443
@@ -2521,6 +2582,18 @@ proxies:
   tls: true
   type: vless
   uuid: 7f86227e-c630-4a24-9160-b80d16bb37c8
+- name: 400|🇸🇬SG_41 | ⬇️ 5.5MB/s
+  network: ws
+  port: 2053
+  server: 104.18.11.192
+  servername: ''
+  tls: true
+  type: vless
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.danfeng21.ndjp.net
+    path: '%2Fdanfeng'
 - name: 400|🇸🇬SG_1 | ⬇️ 3.9MB/s
   network: ws
   port: 443
@@ -2556,18 +2629,6 @@ proxies:
   ws-opts:
     headers:
       Host: snippet.danfeng21.ndjp.net
-    path: '%2Fdanfeng'
-- name: 400|🇸🇬 新加坡 | SGP-2
-  network: ws
-  port: 2053
-  server: convera.com
-  servername: ''
-  tls: true
-  type: vless
-  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.de5.net
     path: '%2Fdanfeng'
 - name: 400|🇸🇬SG_1 | ⬇️ 1.1MB/s
   network: ws
@@ -2617,18 +2678,6 @@ proxies:
     headers:
       Host: snippet.danfeng21.ndjp.net
     path: '%2Fdanfeng'
-- name: 400|🇸🇬SG_10 | ⬇️ 1.6MB/s
-  network: ws
-  port: 2053
-  server: v2.dabache.top
-  servername: ''
-  tls: true
-  type: vless
-  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.de5.net
-    path: '%2Fdanfeng'
 - name: 400|🇸🇬SG_5 | ⬇️ 4.9MB/s
   network: ws
   port: 2053
@@ -2659,7 +2708,7 @@ proxies:
     headers:
       Host: s420.okgfw.top
     path: ''
-- name: 400|官网520.juanwangjc.top新加坡 免费使用-0...
+- name: '400|官网520.juanwangjc.top新加坡 免费使用-0... #1'
   network: ws
   port: 11441
   server: 167.172.83.42
@@ -2682,6 +2731,20 @@ proxies:
   tls: false
   type: vless
   uuid: fa7ea4ac-1ed6-467a-ae18-2099ed2bb4ae
+- alterId: 0
+  cipher: auto
+  name: 400|🇸🇬 SG_86
+  network: ws
+  port: 443
+  server: n1761214911.74qxv.top
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: '411|新加坡NO.1 #4'
