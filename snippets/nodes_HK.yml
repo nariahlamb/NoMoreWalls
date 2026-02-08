@@ -775,7 +775,7 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 227,261,370,371,382,394|HK_speednode_0034
+- name: 227,261,382,394|HK_speednode_0034
   password: BxceQaOe
   port: 443
   server: 112.120.31.36
@@ -1294,34 +1294,70 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: aes-256-cfb
+  country: ' HK'
+  name: 349| HK_62
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 349| HK_63
+  network: none
+  port: 13852
+  server: 45.207.157.29
+  skip-cert-verify: true
+  type: vmess
+  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 352|HK_09
+  name: 352|HK_11
+  network: tcp
+  port: 13852
+  server: 45.207.157.29
+  skip-cert-verify: true
+  type: vmess
+  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+- alterId: 0
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 352|Relay_HK-HK_12
+  network: ws
+  port: 443
+  server: n1761214904.wpg27.xyz
+  servername: n1761214904.wpg27.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7f6f64ae-3778-434c-adfc-95cb67ee8b73
+  ws-opts:
+    headers:
+      HOST: n1761214904.wpg27.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 352|HK_13
   network: tcp
   port: 52190
   server: 47.242.192.233
   skip-cert-verify: true
   type: vmess
   uuid: 98689724-deb2-4a3d-b83b-602221995baf
-- alterId: 0
-  cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 352|HK_10
-  network: ws
-  port: 55185
-  server: 47.243.135.74
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1375985e-334a-4c25-8f64-52a182bc8037
-  ws-opts:
-    path: /Notif_Chat
 - country: HK
-  name: 352|HK_13
+  name: 352|HK_17
   password: BxceQaOe
   port: 443
   server: 58.152.53.45
@@ -1330,7 +1366,7 @@ proxies:
   type: trojan
   udp: true
 - country: HK
-  name: 352|HK_14
+  name: 352|HK_18
   password: BxceQaOe
   port: 443
   server: 219.76.135.98
