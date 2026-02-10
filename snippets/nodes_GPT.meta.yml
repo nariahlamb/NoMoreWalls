@@ -1,11 +1,39 @@
 proxies:
-- name: '89,343|🇮🇳 IN_1|2.5MB/s|GPT⁺|YT-IN|NF|... #1'
-  password: M7v%w11Se*
-  port: 443
-  server: amanm.wsone.icu
+- cipher: chacha20-ietf-poly1305
+  name: '89,343|🇮🇳 IN_1|2.1MB/s|GPT⁺|YT-IN|NF|... #1'
+  password: b2ca8061-cf93-403f-a150-c26fb26610f7
+  port: 43611
+  server: 151.242.180.25
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '89,343|🇮🇳 IN_2|2.4MB/s|GPT⁺|YT-IN|NF|... #1'
+  network: ws
+  port: 16626
+  server: 103.181.165.104
   skip-cert-verify: true
-  sni: amanm.wsone.icu
-  type: trojan
+  tls: false
+  type: vmess
+  uuid: 23f4d251-d346-43f8-a59f-5ea41c454a0b
+  ws-opts:
+    headers:
+      Host: a2c9b05f120d7e6a27ed8a027731604d.mobgslb.tbcache.com
+    path: /
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: '89,343|NL_1|2.5MB/s|GPT⁺ #1'
+  network: tcp
+  port: 20509
+  reality-opts:
+    public-key: y_QoV2eb_mIz0MWS31k1_4olJPc69IACYlz4k9_2Dw8
+    short-id: e40a9fed
+  server: 151.242.183.120
+  servername: buylite.tv.apple.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: f0493f84-1ce9-4845-a454-4839bca98943
 - cipher: chacha20-ietf-poly1305
   name: 410|SS--NF-ChatGPT-TikTok-YouTube-...
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
