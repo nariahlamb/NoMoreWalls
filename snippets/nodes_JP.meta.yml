@@ -1195,7 +1195,8 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '228,383,392,395,397,398|日本2|@ripaojiedian #1'
+- country: JP
+  name: '228,353,383,392,395,397,398|日本2|@ripaojiedian #1'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
@@ -1203,6 +1204,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: '228,383,392,395,397,398|日本3|@ripaojiedian #1'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
@@ -1211,7 +1213,8 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '228,383,392,395,397,398|新加坡|@ripaojiedian #1'
+- country: JP
+  name: '228,353,383,392,395,397,398|新加坡|@ripaojiedian #1'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3901
@@ -1219,7 +1222,9 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '228,383,392,395,397,398|新加坡2|@ripaojiedian #1'
+  udp: true
+- country: JP
+  name: '228,353,383,392,395,397,398|新加坡2|@ripaojiedian #1'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3901
@@ -1227,6 +1232,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: '228,383,392,395,397,398|新加坡3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
@@ -1711,7 +1717,24 @@ proxies:
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 350| JP_71
+  name: 350| JP_66
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| JP_67
   network: ws
   port: 443
   server: n1753598448.74qxv.top
@@ -1725,13 +1748,6 @@ proxies:
   ws-path: /
 - cipher: chacha20-ietf-poly1305
   country: JP
-  name: 353|JP_31
-  password: ljqdalu13..
-  port: 8319
-  server: 3.112.130.53
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: JP
   name: 353|JP_32
   password: ljqdalu13..
   port: 8313
@@ -1741,38 +1757,11 @@ proxies:
   country: JP
   name: 353|JP_33
   password: ljqdalu13..
-  port: 8316
+  port: 8319
   server: 3.112.130.53
   type: ss
 - country: JP
   name: 353|Relay_JP-JP_34
-  password: 5fb072e0ddd631cf66cf752b09210480
-  port: 4006
-  server: 160.16.68.250
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: JP
-  name: 353|Relay_JP-JP_36
-  password: 5fb072e0ddd631cf66cf752b09210480
-  port: 4006
-  server: 160.16.138.24
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: JP
-  name: 353|Relay_JP-JP_39
-  password: 5fb072e0ddd631cf66cf752b09210480
-  port: 3423
-  server: 160.16.214.104
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: JP
-  name: 353|Relay_JP-JP_42
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
   server: 202.181.103.246
@@ -1781,16 +1770,16 @@ proxies:
   type: trojan
   udp: true
 - country: JP
-  name: 353|Relay_JP-JP_44
+  name: 353|Relay_JP-JP_36
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
-  server: 160.16.63.16
+  server: 160.16.214.104
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
   udp: true
 - country: JP
-  name: 353|Relay_JP-JP_45
+  name: 353|Relay_JP-JP_37
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
   server: 160.16.124.55
@@ -1799,10 +1788,19 @@ proxies:
   type: trojan
   udp: true
 - country: JP
-  name: 353|Relay_JP-JP_46
+  name: 353|Relay_JP-JP_38
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
-  server: 160.16.116.227
+  server: 160.16.63.16
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- country: JP
+  name: 353|Relay_JP-JP_42
+  password: 5fb072e0ddd631cf66cf752b09210480
+  port: 4006
+  server: 160.16.138.24
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -2300,16 +2298,6 @@ proxies:
     headers:
       HOST: tokyo01.zgjok.com
     path: /
-- name: 395|JP8｜机房｜低风险
-  obfs: salamander
-  obfs-password: MDViOWY4ZmE1MjkwYzkwOA%3D%3D
-  password: c7730b65-c3c7-44a6-b1be-9d72d36679d1
-  port: 14759
-  server: rbd.pddwdf.store
-  skip-cert-verify: true
-  sni: rbd.pddwdf.store
-  tls: false
-  type: hysteria2
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2353,29 +2341,33 @@ proxies:
   type: ss
   udp: true
 - name: 404|🇯🇵 日本 | JPN
-  password: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
-  port: 21647
-  server: kjp.sanmaojichang.com
-  skip-cert-verify: false
-  tls: false
-  type: hysteria2
-- name: '404|🇯🇵 日本 | JPN #1'
-  password: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
-  port: 21926
-  server: kjp.sanmaojichang.com
-  skip-cert-verify: false
-  tls: false
-  type: hysteria2
-- name: '404|🇯🇵 日本 | JPN #2'
-  password: b8282c32-7e90-4367-b8bc-5dcf8e1e3da1
-  port: 8461
+  password: eee2cdc2-aac7-49f6-a3bf-ef5eb707cb37
+  port: 8463
   server: hmjp.my169vip.top
   skip-cert-verify: false
   sni: hmjp.my169vip.top
   tls: false
   type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: '404|🇯🇵 日本 | JPN #1'
+  network: tcp
+  port: '62231'
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  uuid: f08f0555-679b-4d33-b1dc-7601b4e1e76a
+- alterId: 0
+  cipher: auto
+  name: '404|🇯🇵 日本 | JPN #2'
+  network: tcp
+  port: '62231'
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  uuid: 86fd1e39-95c5-4309-aff2-ff877f480ad7
 - name: '404|🇯🇵 日本 | JPN #3'
-  password: 68cbf964-cd44-4399-a2bd-8b6a12582459
+  password: b82db024-28ab-49f5-9d0e-df919e38e153
   port: 8463
   server: hmjp.my169vip.top
   skip-cert-verify: false
@@ -2383,39 +2375,40 @@ proxies:
   tls: false
   type: hysteria2
 - name: '404|🇯🇵 日本 | JPN #4'
-  password: 846a1633-f4be-4e9c-b6a9-1f0a82393ef9
-  port: 8461
+  password: 4639e8fb-a1ce-4346-8727-c1529fe48487
+  port: 8463
   server: hmjp.my169vip.top
   skip-cert-verify: false
   sni: hmjp.my169vip.top
   tls: false
   type: hysteria2
 - name: '404|🇯🇵 日本 | JPN #5'
-  password: 61b1430b-5195-495d-ae48-9199ec6ca654
+  password: a8f3a996-cf27-4bfc-bed4-098549c08376
   port: 8463
   server: hmjp.my169vip.top
   skip-cert-verify: false
   sni: hmjp.my169vip.top
   tls: false
   type: hysteria2
-- name: '404|🇯🇵 日本 | JPN #6'
-  password: 68cbf964-cd44-4399-a2bd-8b6a12582459
+- alterId: 0
+  cipher: auto
+  name: '404|🇯🇵 日本 | JPN #6'
+  network: tcp
+  port: '62231'
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  uuid: d244d501-565c-420b-800a-3c00f17d624a
+- name: '404|🇯🇵 日本 | JPN #7'
+  password: a8f3a996-cf27-4bfc-bed4-098549c08376
   port: 8461
   server: hmjp.my169vip.top
   skip-cert-verify: false
   sni: hmjp.my169vip.top
   tls: false
   type: hysteria2
-- name: '404|🇯🇵 日本 | JPN #7'
-  password: 5cf528c4-2358-4f0f-9d24-d0efe9dda315
-  port: 8463
-  server: hmjp.my169vip.top
-  skip-cert-verify: false
-  sni: hmjp.my169vip.top
-  tls: false
-  type: hysteria2
 - name: '404|🇯🇵 日本 | JPN #8'
-  password: 69b26999-a007-4dda-a5ac-4f6bd4c19ec5
+  password: fcd36cae-c45a-4d79-a9fd-5554a94bf4e5
   port: 8463
   server: hmjp.my169vip.top
   skip-cert-verify: false
@@ -2423,16 +2416,16 @@ proxies:
   tls: false
   type: hysteria2
 - name: '404|🇯🇵 日本 | JPN #9'
-  password: b8282c32-7e90-4367-b8bc-5dcf8e1e3da1
-  port: 8463
+  password: 7062d220-e9e6-465e-a771-3388814548de
+  port: 8461
   server: hmjp.my169vip.top
   skip-cert-verify: false
   sni: hmjp.my169vip.top
   tls: false
   type: hysteria2
 - name: '404|🇯🇵 日本 | JPN #10'
-  password: fc32fb1b-da18-4ea6-b9d7-607e86d98399
-  port: 8461
+  password: 136ad289-ee56-42b2-b76d-8211c57c0a15
+  port: 8463
   server: hmjp.my169vip.top
   skip-cert-verify: false
   sni: hmjp.my169vip.top
@@ -2440,25 +2433,67 @@ proxies:
   type: hysteria2
 - name: '404|🇯🇵 日本 | JPN #11'
   password: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
-  port: 21025
+  port: 21764
   server: kjp.sanmaojichang.com
   skip-cert-verify: false
   tls: false
   type: hysteria2
 - name: '404|🇯🇵 日本 | JPN #12'
-  password: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
-  port: 21732
-  server: kjp.sanmaojichang.com
+  password: 36ed4318-f589-4338-a168-65e0be6a4e54
+  port: 8463
+  server: hmjp.my169vip.top
   skip-cert-verify: false
+  sni: hmjp.my169vip.top
   tls: false
   type: hysteria2
 - name: '404|🇯🇵 日本 | JPN #13'
+  password: b9d85c0f-bcf8-4d0f-9f71-ef4da3023aed
+  port: 8461
+  server: hmjp.my169vip.top
+  skip-cert-verify: false
+  sni: hmjp.my169vip.top
+  tls: false
+  type: hysteria2
+- name: '404|🇯🇵 日本 | JPN #14'
   password: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
-  port: 21454
+  port: 21200
+  server: kjp.sanmaojichang.com
+  skip-cert-verify: false
+  sni: kjp.sanmaojichang.com
+  tls: false
+  type: hysteria2
+- name: '404|🇯🇵 日本 | JPN #15'
+  password: f0b5b1ff-3e49-44ad-9154-8934511004e0
+  port: 8463
+  server: hmjp.my169vip.top
+  skip-cert-verify: false
+  sni: hmjp.my169vip.top
+  tls: false
+  type: hysteria2
+- name: '404|🇯🇵 日本 | JPN #16'
+  password: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
+  port: 21383
   server: kjp.sanmaojichang.com
   skip-cert-verify: false
   tls: false
   type: hysteria2
+- name: '404|🇯🇵 日本 | JPN #18'
+  password: b9d85c0f-bcf8-4d0f-9f71-ef4da3023aed
+  port: 8463
+  server: hmjp.my169vip.top
+  skip-cert-verify: false
+  sni: hmjp.my169vip.top
+  tls: false
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: '404|🇯🇵 日本 | JPN #19'
+  network: tcp
+  port: '62235'
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  uuid: f08f0555-679b-4d33-b1dc-7601b4e1e76a
 - alterId: 0
   cipher: auto
   name: '411|日本NO.1 #4'

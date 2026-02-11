@@ -738,7 +738,7 @@ proxies:
   type: trojan
   udp: true
 - country: JP
-  name: 262,353|Relay_JP-US_43
+  name: 262,353|Relay_JP-US_39
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3901
   server: 160.16.106.99
@@ -1000,7 +1000,7 @@ proxies:
   country: ' SG'
   h2-opts: {}
   http-opts: {}
-  name: 350| SG_86
+  name: 350| SG_84
   network: none
   port: 43425
   server: 8.210.248.133
@@ -1008,23 +1008,14 @@ proxies:
   type: vmess
   uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
   ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' SG'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| SG_87
-  network: ws
+- country: SG
+  name: 350|SG_85
+  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
   port: 443
-  server: n1761214911.74qxv.top
-  servername: n1761214911.74qxv.top
+  server: sg-full.privateip.net
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
-  ws-headers:
-    HOST: n1761214911.74qxv.top
-  ws-path: /
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: SG
   name: 353|SG_53
@@ -1277,6 +1268,15 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 404|🇸🇬 新加坡 | SGP
+  network: tcp
+  port: '62233'
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  uuid: d244d501-565c-420b-800a-3c00f17d624a
 - alterId: 0
   cipher: auto
   name: '411|新加坡NO.1 #4'
