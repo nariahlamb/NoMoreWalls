@@ -794,7 +794,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 228,262,383,392,395,397,398,404|🇭🇰 香港 | HKG
+- name: 228,262,383,392,404|🇭🇰 香港 | HKG
   network: tcp
   password: BxceQaOe
   port: 443
@@ -802,7 +802,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '228,262,383,392,395,397,398|香港5|@ripaojiedian #1'
+- name: 228,262,383,392|🇭🇰 香港5|@stairnode
   network: tcp
   password: BxceQaOe
   port: 443
@@ -810,7 +810,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '228,262,383,392,395,397,398|美国3|@ripaojiedian #1'
+- name: 228,262,383,392|🇺🇸 美国3|@stairnode
   network: tcp
   password: BxceQaOe
   port: 3159
@@ -848,7 +848,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 228,392,395|HK33｜家宽｜非常安全
+- name: 228,395|HK33｜家宽｜非常安全
   network: tcp
   password: BxceQaOe
   port: 443
@@ -884,46 +884,6 @@ proxies:
   sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   tls: false
   type: hysteria2
-- name: 262|14|HK_speednode_0030
-  password: BxceQaOe
-  port: 443
-  server: 112.120.31.36
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-- name: 262|14|HK_speednode_0031
-  password: BxceQaOe
-  port: 443
-  server: 112.120.31.36
-  skip-cert-verify: true
-  type: trojan
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 262|14|HK_speednode_0032
-  port: 443
-  server: 2.hk.2.cdn-bilibili.cn
-  servername: www.icloud.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 262|14|HK_speednode_0033
-  port: 443
-  server: 2.hk.1.cdn-bilibili.cn
-  servername: www.icloud.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
-- name: 262|14|HK_speednode_0034
-  password: BxceQaOe
-  port: 443
-  server: 112.120.31.36
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 278|🇭🇰1 |  3.5MB/s
   password: WfmxKX2FBJRU0Ie9VLIYDL
@@ -1420,24 +1380,46 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: aes-256-cfb
+  country: ' HK'
+  name: 350| HK_73
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
 - alterId: 0
   cipher: auto
-  country: HK
+  country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 353|HK_11
-  network: tcp
-  port: 52190
-  server: 47.242.192.233
+  name: 350| HK_74
+  network: none
+  port: 13852
+  server: 45.207.157.29
   skip-cert-verify: true
   type: vmess
-  uuid: 98689724-deb2-4a3d-b83b-602221995baf
+  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_HK-HK_16
+  name: 353|HK_13
+  network: ws
+  port: 55185
+  server: 47.243.135.74
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1375985e-334a-4c25-8f64-52a182bc8037
+  ws-opts:
+    path: /Notif_Chat
+- alterId: 0
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 353|Relay_HK-HK_15
   network: ws
   port: 443
   server: n1761214904.wpg27.xyz
@@ -1450,17 +1432,29 @@ proxies:
     headers:
       HOST: n1761214904.wpg27.xyz
     path: /
-- country: HK
+- alterId: 0
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
   name: 353|HK_17
+  network: tcp
+  port: 52190
+  server: 47.242.192.233
+  skip-cert-verify: true
+  type: vmess
+  uuid: 98689724-deb2-4a3d-b83b-602221995baf
+- country: HK
+  name: 353|HK_20
   password: BxceQaOe
   port: 443
-  server: 219.76.135.98
+  server: 58.152.18.130
   skip-cert-verify: true
   sni: t.me/ripaojiedian
   type: trojan
   udp: true
 - country: HK
-  name: 353|HK_18
+  name: 353|HK_21
   password: BxceQaOe
   port: 443
   server: 203.198.123.162
@@ -1469,19 +1463,19 @@ proxies:
   type: trojan
   udp: true
 - country: HK
-  name: 353|HK_19
+  name: 353|HK_22
   password: BxceQaOe
   port: 443
-  server: 58.152.53.45
+  server: 219.76.135.98
   skip-cert-verify: true
   sni: t.me/ripaojiedian
   type: trojan
   udp: true
 - country: HK
-  name: 353|HK_20
+  name: 353|HK_23
   password: BxceQaOe
   port: 443
-  server: 58.152.18.130
+  server: 58.152.53.45
   skip-cert-verify: true
   sni: t.me/ripaojiedian
   type: trojan
@@ -2007,3 +2001,13 @@ proxies:
   skip-cert-verify: true
   sni: hk12.bilibili.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 544|HK【机场推荐：https://a0a.xyz】15
+  network: tcp
+  port: '31769'
+  server: 8.217.13.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cf1ad6c7-5987-4314-82bb-b4399040d047
