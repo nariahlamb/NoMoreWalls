@@ -1,5 +1,54 @@
 proxies:
 - client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  name: '89,343|🇷🇺 RU_1|2.2MB/s|YT-RU #1'
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: kz54nOxv8IOst-C_GQO5cf6106be0UakNbCEXiDuhHA
+    short-id: 3863adb3
+  server: 87.239.111.227
+  servername: m.vk.ru
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 895f94cb-5567-4731-bc2c-2f89a54bafe4
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 89,262,343,383,395|RU_speednode_0034
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: tYFlc_8tzrwDisZbxlHj06rw_YE154TVYeEBuwOQZHE
+    short-id: 8a6605e7
+  server: 45.139.26.213
+  servername: www.yandex.ru
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 8ff544c5-303c-46f4-80fe-8e8e166fd981
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  name: '89,343|🇷🇺 RU_3|2.9MB/s|YT-RU #1'
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: 4NjqiB_FliKff9bP2ASI3WWuhfuyviPeKoz1DyZJQDE
+    short-id: 574aa52c
+  server: 185.86.144.32
+  servername: www.vk.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 895f94cb-5567-4731-bc2c-2f89a54bafe4
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 262,383,395|RU_speednode_0026
   port: 443
@@ -51,26 +100,6 @@ proxies:
   uuid: c0afdbe5-e506-4fd4-b838-6f9ee6fc3a5f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 262,383,395|RU_speednode_0031
-  port: 443
-  server: 158.160.105.121
-  servername: yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e8accc46-c511-42fb-919b-9283799a88a1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 262,383,395|RU_speednode_0032
-  port: 51102
-  server: 158.160.221.132
-  servername: yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e8accc46-c511-42fb-919b-9283799a88a1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: 262,383,395|RU_speednode_0033
   port: 51102
   server: 158.160.105.121
@@ -79,16 +108,6 @@ proxies:
   tls: true
   type: vless
   uuid: c9246b70-3eca-4825-84b0-16c32e3124a7
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 262,383,395|RU_speednode_0034
-  port: 443
-  server: 45.139.26.213
-  servername: www.yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 8ff544c5-303c-46f4-80fe-8e8e166fd981
 - cipher: chacha20-ietf-poly1305
   name: 278|🇷🇺1 |  5.2MB/s
   password: 0zyDRZ1XmNXaaCAN7KEA8a
@@ -313,17 +332,17 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: ' RU'
-  name: 350| RU_102
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 45.159.250.190
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' RU'
-  name: 350| RU_103
+  name: 350| RU_98
   password: bSFMvNLHapp4ZrcGIXy9Vt
   port: 43248
   server: 5.181.2.73
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' RU'
+  name: 350| RU_99
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 45.159.250.190
   type: ss
 - name: 365|俄罗斯_新西伯利亚
   network: ws
@@ -1059,7 +1078,7 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 392|🇷🇺 俄罗斯 V2CROSS.COM
+- name: 371,372,392|🇷🇺 俄罗斯 V2CROSS.COM
   password: ZblhWr0mqMakCPg.N
   port: 36158
   server: 212.193.18.144
