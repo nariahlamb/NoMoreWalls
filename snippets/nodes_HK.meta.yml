@@ -253,23 +253,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- alpn:
-  - h2%2Chttp%2F1.1
-  client-fingerprint: chrome
-  name: '89,343|🇭🇰 HK_1|2.7MB/s|YT-HK #1'
-  network: ws
-  port: 443
-  server: h.zzula.ir
-  servername: gErmANy1-8yd.PAGES.dEv
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: c2fc0e03-471b-4c84-a8a7-a22ca097d6b9
-  ws-opts:
-    headers:
-      Host: gErmANy1-8yd.PAGES.dEv
-    path: /I5L10Eb9cWdR6MYe/MTQ3LjQ1LjczLjI0NQ==?ed=2560
 - alterId: 0
   cipher: auto
   name: '90,345|香港NO.2 #1'
@@ -813,11 +796,15 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: '228,262,383,392,395,398|香港|@ripaojiedian #1'
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: '228,262,353,383,392,395,398|香港|@ripaojiedian #1'
   network: tcp
   port: '30807'
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -855,14 +842,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 228,353|HK_22
+  name: 228|Hong Kong_Hong Kong_vmess_1181
   network: tcp
-  port: 13852
+  port: '13852'
   server: 45.207.157.29
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
@@ -1392,7 +1375,7 @@ proxies:
   ws-path: /
 - cipher: chacha20-ietf-poly1305
   country: ' HK'
-  name: 350| HK_62
+  name: 350| HK_60
   password: yRdxvK32gcKq8xxNguwU99
   port: 62763
   server: 62.60.233.226
@@ -1402,7 +1385,7 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 350| HK_64
+  name: 350| HK_61
   network: none
   port: 13852
   server: 45.207.157.29
@@ -1412,50 +1395,7 @@ proxies:
   ws-path: /
 - cipher: chacha20-ietf
   country: HK
-  name: 353|Relay_HK-HK_12
-  password: asd123456
-  port: 8388
-  server: 103.149.182.105
-  type: ss
-- cipher: chacha20-ietf
-  country: HK
-  name: 353|Relay_HK-HK_13
-  obfs: plain
-  password: Mv4e0QHWPwdbKiCF
-  port: 49434
-  protocol: auth_aes128_sha1
-  server: manga.bilibilicloud01.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: HK
-  name: 353|Relay_HK-HK_14
-  obfs: plain
-  password: Mv4e0QHWPwdbKiCF
-  port: 53845
-  protocol: auth_aes128_sha1
-  server: live.bilibilicloud01.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: HK
-  name: 353|Relay_HK-HK_15
-  obfs: plain
-  password: Mv4e0QHWPwdbKiCF
-  port: 54115
-  protocol: auth_aes128_sha1
-  server: show.bilibilicloud01.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: HK
-  name: 353|Relay_HK-HK_16
-  obfs: plain
-  password: Mv4e0QHWPwdbKiCF
-  port: 54112
-  protocol: auth_aes128_sha1
-  server: live.bilibilicloud01.com
-  type: ssr
-- cipher: chacha20-ietf
-  country: HK
-  name: 353|Relay_HK-HK_17
+  name: 353|Relay_HK-HK_10
   obfs: plain
   password: Mv4e0QHWPwdbKiCF
   port: 54113
@@ -1464,7 +1404,16 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: HK
-  name: 353|Relay_HK-HK_18
+  name: 353|Relay_HK-HK_11
+  obfs: plain
+  password: Mv4e0QHWPwdbKiCF
+  port: 49434
+  protocol: auth_aes128_sha1
+  server: manga.bilibilicloud01.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: HK
+  name: 353|Relay_HK-HK_12
   obfs: plain
   password: Mv4e0QHWPwdbKiCF
   port: 54101
@@ -1473,7 +1422,7 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: HK
-  name: 353|Relay_HK-HK_19
+  name: 353|Relay_HK-HK_13
   obfs: plain
   password: Mv4e0QHWPwdbKiCF
   port: 54103
@@ -1482,7 +1431,34 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: HK
-  name: 353|Relay_HK-HK_20
+  name: 353|Relay_HK-HK_14
+  obfs: plain
+  password: Mv4e0QHWPwdbKiCF
+  port: 54112
+  protocol: auth_aes128_sha1
+  server: live.bilibilicloud01.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: HK
+  name: 353|Relay_HK-HK_15
+  obfs: plain
+  password: Mv4e0QHWPwdbKiCF
+  port: 53845
+  protocol: auth_aes128_sha1
+  server: live.bilibilicloud01.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: HK
+  name: 353|Relay_HK-HK_16
+  obfs: plain
+  password: Mv4e0QHWPwdbKiCF
+  port: 54102
+  protocol: auth_aes128_sha1
+  server: show.bilibilicloud01.com
+  type: ssr
+- cipher: chacha20-ietf
+  country: HK
+  name: 353|Relay_HK-HK_17
   obfs: plain
   password: Mv4e0QHWPwdbKiCF
   port: 54114
@@ -1491,10 +1467,10 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf
   country: HK
-  name: 353|Relay_HK-HK_21
+  name: 353|Relay_HK-HK_18
   obfs: plain
   password: Mv4e0QHWPwdbKiCF
-  port: 54102
+  port: 54115
   protocol: auth_aes128_sha1
   server: show.bilibilicloud01.com
   type: ssr
@@ -1503,7 +1479,19 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 353|HK_23
+  name: 353|HK_19
+  network: tcp
+  port: 52190
+  server: 47.242.192.233
+  skip-cert-verify: true
+  type: vmess
+  uuid: 98689724-deb2-4a3d-b83b-602221995baf
+- alterId: 0
+  cipher: auto
+  country: HK
+  h2-opts: {}
+  http-opts: {}
+  name: 353|HK_20
   network: ws
   port: 55185
   server: 47.243.135.74
@@ -1517,7 +1505,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_HK-HK_24
+  name: 353|Relay_HK-HK_21
   network: ws
   port: 443
   server: n1761214904.wpg27.xyz
@@ -1530,38 +1518,8 @@ proxies:
     headers:
       HOST: n1761214904.wpg27.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 353|HK_25
-  network: tcp
-  port: 52190
-  server: 47.242.192.233
-  skip-cert-verify: true
-  type: vmess
-  uuid: 98689724-deb2-4a3d-b83b-602221995baf
 - country: HK
-  name: 353|HK_26
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.45
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
-- country: HK
-  name: 353|HK_27
-  password: BxceQaOe
-  port: 443
-  server: 58.152.18.130
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
-- country: HK
-  name: 353|HK_28
+  name: 353|HK_23
   password: BxceQaOe
   port: 443
   server: 219.76.135.98
@@ -1570,10 +1528,28 @@ proxies:
   type: trojan
   udp: true
 - country: HK
-  name: 353|HK_29
+  name: 353|HK_24
   password: BxceQaOe
   port: 443
   server: 203.198.123.162
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
+- country: HK
+  name: 353|HK_25
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.45
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
+- country: HK
+  name: 353|HK_26
+  password: BxceQaOe
+  port: 443
+  server: 58.152.18.130
   skip-cert-verify: true
   sni: t.me/ripaojiedian
   type: trojan
