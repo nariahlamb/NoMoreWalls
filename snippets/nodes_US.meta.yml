@@ -345,7 +345,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 228,371,372,395|NL44｜机房｜低风险
+  name: 228,371,372,392,395|NL44｜机房｜低风险
   network: ws
   port: '2053'
   server: nextmi.hajmyab.ir
@@ -620,7 +620,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: ' US'
-  name: 278,279,350| US_108
+  name: 278,279,350| US_106
   password: shadowsocks
   port: 443
   server: 156.146.38.167
@@ -874,7 +874,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: US
-  name: 278,279,353|US_61
+  name: 278,279,353|US_52
   password: shadowsocks
   port: 443
   server: 37.19.198.236
@@ -1194,7 +1194,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: ' US'
-  name: 278,279,350| US_109
+  name: 278,279,350| US_105
   password: shadowsocks
   port: 443
   server: 156.146.38.170
@@ -2329,17 +2329,52 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: ' US'
-  name: 350| US_105
+  name: 350| US_98
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.54.57.90
   type: ss
+- cipher: aes-256-cfb
+  country: ' US'
+  name: 350| US_99
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.165.233.93
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
-  name: 350| US_106
+  name: 350| US_100
   password: dAHM1pm8ag7KdlrUylQi6t
   port: 443
   server: promo18v.bystrivpn.ru
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 350| US_101
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 38.165.231.25
+  type: ss
+- cipher: aes-256-cfb
+  country: ' US'
+  name: 350| US_102
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 350| US_103
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 38.54.59.180
+  type: ss
+- cipher: aes-256-gcm
+  country: ' US'
+  name: 350| US_104
+  password: b0c9d775-32f7-459a-b24d-ecda7c9f3720
+  port: 11688
+  server: ss.020.node-for-bigairport.win
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
@@ -2348,41 +2383,100 @@ proxies:
   port: 990
   server: 38.89.142.56
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 350| US_110
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.54.59.180
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 350| US_111
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.165.231.25
-  type: ss
 - cipher: aes-256-cfb
   country: ' US'
-  name: 350| US_112
+  name: 350| US_108
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
-- cipher: aes-256-cfb
+- alterId: 0
+  cipher: auto
   country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| US_109
+  network: none
+  port: 44329
+  server: 156.233.232.177
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1ba1fb56-e235-419e-c193-1c291adad4a7
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| US_110
+  network: ws
+  port: 8443
+  server: 172.64.152.23
+  servername: frsys.fl-dl.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
+  ws-headers:
+    HOST: frsys.fl-dl.com
+  ws-path: /gbt
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| US_111
+  network: ws
+  port: 443
+  server: 15.235.83.227
+  servername: mankadmu.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: mankadmu.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| US_112
+  network: none
+  port: 27641
+  server: 192.227.249.227
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3b134252-e7c2-43df-98b7-da204104aa79
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
   name: 350| US_113
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- cipher: aes-256-cfb
+  network: none
+  port: 44329
+  server: 156.233.232.192
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1ba1fb56-e235-419e-c193-1c291adad4a7
+  ws-path: /
+- alterId: 0
+  cipher: auto
   country: ' US'
+  h2-opts: {}
+  http-opts: {}
   name: 350| US_114
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.165.233.93
-  type: ss
+  network: ws
+  port: 443
+  server: n1761214908.wpg27.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3514a93f-bb26-4442-8f99-971b2ff3388a
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: ' US'
@@ -2391,14 +2485,14 @@ proxies:
   name: 350| US_115
   network: ws
   port: 443
-  server: n1761214919.mv7wh.tech
-  servername: n1761214919.mv7wh.tech
+  server: cf.090227.xyz
+  servername: sgal.dagrate.eu.org
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: c592f040-faff-47dc-a464-9bccf2dd4e7b
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
   ws-headers:
-    HOST: n1761214919.mv7wh.tech
+    HOST: sgal.dagrate.eu.org
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -2423,79 +2517,6 @@ proxies:
   h2-opts: {}
   http-opts: {}
   name: 350| US_117
-  network: none
-  port: 24004
-  server: 156.233.232.192
-  skip-cert-verify: true
-  type: vmess
-  uuid: 582fcb35-20a0-452c-e179-4c759c62c494
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_118
-  network: ws
-  port: 8443
-  server: 172.64.152.23
-  servername: frsys.fl-dl.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
-  ws-headers:
-    HOST: frsys.fl-dl.com
-  ws-path: /gbt
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_119
-  network: ws
-  port: 443
-  server: 15.235.83.228
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_120
-  network: none
-  port: 27641
-  server: 192.227.249.227
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3b134252-e7c2-43df-98b7-da204104aa79
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_121
-  network: none
-  port: 24004
-  server: 156.233.232.177
-  skip-cert-verify: true
-  type: vmess
-  uuid: 582fcb35-20a0-452c-e179-4c759c62c494
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_122
   network: ws
   port: 443
   server: 15.235.50.172
@@ -2512,36 +2533,20 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350| US_123
+  name: 350| US_118
   network: ws
   port: 443
-  server: 15.235.83.227
-  servername: mankadmu.com
+  server: 15.235.83.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-headers:
-    HOST: mankadmu.com
+    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   ws-path: /linkvws
 - country: ' US'
-  name: 350| US_124
-  password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
-  port: 443
-  server: 154.17.24.29
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: ' US'
-  name: 350| US_125
-  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
-  port: 443
-  server: hinet.mjt000.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: ' US'
-  name: 350| US_126
+  name: 350| US_119
   password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
   port: 443
   server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.9d8f269f96b25232-759cbb36d6548597.kaufen
@@ -2549,22 +2554,38 @@ proxies:
   type: trojan
   udp: true
 - country: ' US'
-  name: 350| US_127
+  name: 350| US_120
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
   skip-cert-verify: true
   type: trojan
   udp: true
+- country: ' US'
+  name: 350| US_121
+  password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
+  port: 443
+  server: 154.17.24.29
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: ' US'
+  name: 350| US_122
+  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
+  port: 443
+  server: hinet.mjt000.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: US
-  name: 350|US_128
+  name: 350|US_123
   password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
   port: 52952
   server: exchange.gameaurela.click
   type: ss
 - country: US
-  name: 350|US_129
+  name: 350|US_124
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
@@ -2573,14 +2594,14 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: US
-  name: 353|Pool_US_60
+  name: 353|Pool_US_53
   password: 523z2fgrd7jx0z5xv6o5
   port: 11475
   server: 167.160.90.51
   type: ss
 - cipher: aes-256-cfb
   country: US
-  name: 353|Relay_US-US_62
+  name: 353|Relay_US-US_54
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -2592,42 +2613,25 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_US-US_63
+  name: 353|US_55
   network: ws
-  port: 2083
-  server: 8.6.112.0
-  servername: hgtrojan.zabc.net
+  port: 2053
+  server: nextmi.hajmyab.ir
+  servername: app.hajmyab.ir
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
+  uuid: 9585636a-54bc-419a-90a1-76c5c6ec74df
   ws-opts:
     headers:
-      HOST: hgtrojan.zabc.net
-    path: /e6395c20
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: 353|US_64
-  network: ws
-  port: 80
-  server: turk1.net.net
-  servername: tr1-smart.adelping.com.
-  skip-cert-verify: true
-  type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-  ws-opts:
-    headers:
-      HOST: tr1-smart.adelping.com.
+      HOST: app.hajmyab.ir
     path: /
 - alterId: 0
   cipher: auto
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 353|US_66
+  name: 353|US_57
   network: tcp
   port: 2052
   server: 38.54.98.110
@@ -2635,40 +2639,8 @@ proxies:
   tls: true
   type: vmess
   uuid: 665d9b8f-153d-4907-adac-de12afd9c851
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: 353,544|US【机场推荐：https://a0a.xyz】16
-  network: tcp
-  port: '27641'
-  server: 192.227.249.227
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3b134252-e7c2-43df-98b7-da204104aa79
 - country: US
-  name: 353|Relay_US-US_70
-  password: BxceQaOe
-  port: 381
-  server: 43.198.233.56
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-  udp: true
-- country: US
-  name: 353|Relay_US-US_71
-  password: BxceQaOe
-  port: 2569
-  server: 43.199.47.199
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
-- country: US
-  name: 353|Pool_US_72
+  name: 353|Pool_US_58
   password: kkzh2prsyr2ik47as615
   port: 57142
   server: 64.94.95.118
@@ -2681,25 +2653,7 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: '353,410|VMESS->-NF-ChatGPT-TikTok-YouT... #3'
-  network: ws
-  port: 2083
-  server: hgtrojan.zabc.net
-  servername: hgtrojan.zabc.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
-  ws-opts:
-    headers:
-      HOST: hgtrojan.zabc.net
-    path: /e6395c20
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 353|Relay_ZZ-US_136
+  name: 353|Relay_ZZ-US_115
   network: ws
   port: 443
   server: 162.159.152.4
@@ -5429,9 +5383,37 @@ proxies:
     path: /dyajvws
 - alterId: 0
   cipher: auto
-  name: '371,372,392|🇺🇸 美国 CloudFlare节点 #4'
+  name: 371,372,392|🇺🇸 美国 CloudFlare节点
   network: ws
   port: '80'
+  server: bbnj.wc9.ccwu.cc
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
+  ws-opts:
+    headers:
+      Host: bbnj.wc9.ccwu.cc
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
+- alterId: 0
+  cipher: auto
+  name: '371,372,392|🇺🇸 美国 CloudFlare节点 #1'
+  network: ws
+  port: '8080'
+  server: tgju.org
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: nasnet-571296497.iranpress.co
+    path: /nasnet/cdn?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '371,372|美国 CloudFlare节点 #6'
+  network: ws
+  port: 80
   server: turk1.net.net
   servername: ''
   tls: false
@@ -5443,46 +5425,18 @@ proxies:
     path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
 - alterId: 0
   cipher: auto
-  name: '371,372,392|🇺🇸 美国 CloudFlare节点 #5'
+  name: '371,372,392|🇺🇸 美国 CloudFlare节点 #3'
   network: ws
-  port: '8080'
-  server: 104.21.69.44
+  port: '80'
+  server: mk.tc0.ccwu.cc
   servername: ''
   tls: false
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
+  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
   ws-opts:
     headers:
-      Host: nasnet-511952424.mcitel.co
-    path: /nasnet/cdn
-- alterId: 0
-  cipher: auto
-  name: '371,372|美国 CloudFlare节点 #6'
-  network: ws
-  port: '8080'
-  server: 172.64.149.182
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: nasnet-5712964102.sharghdaily.co
-    path: /nasnet/cdn?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '371,372|美国 CloudFlare节点 #7'
-  network: ws
-  port: '8080'
-  server: 172.67.204.84
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: nasnet-511952424.mcitel.co
-    path: /nasnet/cdn
+      Host: mk.tc0.ccwu.cc
+    path: /kFK9O5cl8ZycyrxcJWNVFC21
 - alterId: 0
   cipher: auto
   name: '374|美国 CloudFlare节点 #8'
@@ -5551,56 +5505,17 @@ proxies:
   uuid: 3bfbe00c-6973-44fa-ac83-966023c1cca1
 - alterId: 0
   cipher: auto
-  name: 392|🇺🇸 美国 CloudFlare节点
-  network: ws
-  port: '80'
-  server: bbnmji.tc5.ccwu.cc
-  tls: false
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  ws-opts:
-    headers:
-      Host: bbnmji.tc5.ccwu.cc
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
-- alterId: 0
-  cipher: auto
-  name: '392|🇺🇸 美国 CloudFlare节点 #1'
-  network: ws
-  port: '80'
-  server: nju.bb4.indevs.in
-  tls: false
-  type: vmess
-  uuid: b020865b-7404-4894-ba65-a7414b10cda3
-  ws-opts:
-    headers:
-      Host: nju.bb4.indevs.in
-    path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-- alterId: 0
-  cipher: auto
   name: '392|🇺🇸 美国 CloudFlare节点 #2'
   network: ws
   port: '80'
-  server: nju.bb4.indevs.in
+  server: turk1.net.net
   tls: false
   type: vmess
-  uuid: b020865b-7404-4894-ba65-a7414b10cda3
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
   ws-opts:
     headers:
-      Host: nju.bb4.indevs.in
+      Host: tr1-smart.adelping.com.
     path: /
-- alterId: 0
-  cipher: auto
-  name: '392|🇺🇸 美国 CloudFlare节点 #3'
-  network: ws
-  port: '80'
-  server: bbnj.wc9.ccwu.cc
-  tls: false
-  type: vmess
-  uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-  ws-opts:
-    headers:
-      Host: bbnj.wc9.ccwu.cc
-    path: /kFK9O5cl8ZycyrxcJWNVFC21
 - name: 392|🇺🇸 _US_美国
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
   port: 443
@@ -5708,3 +5623,13 @@ proxies:
       Host: railway.leochina.nyc.mn
     max-early-data: 2560
     path: /vless-argo
+- alterId: 0
+  cipher: auto
+  name: 544|US【机场推荐：https://a0a.xyz】16
+  network: tcp
+  port: '27641'
+  server: 192.227.249.227
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3b134252-e7c2-43df-98b7-da204104aa79
