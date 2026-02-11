@@ -737,15 +737,13 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- country: JP
-  name: 262,353|Relay_JP-US_34
+- name: 262|11,12|新加坡|@ripaojiedian
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3901
   server: 160.16.106.99
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - name: 262|11,12|新加坡2|@ripaojiedian
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 544
@@ -995,45 +993,51 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' SG'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| SG_91
+  network: ws
+  port: 443
+  server: n1761214911.74qxv.top
+  servername: n1761214911.74qxv.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+  ws-headers:
+    HOST: n1761214911.74qxv.top
+  ws-path: /
+- country: SG
+  name: 350|SG_92
+  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
+  port: 443
+  server: sg-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: SG
-  name: 353|SG_54
-  password: ljqdalu13..
-  port: 8319
-  server: 3.1.195.148
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: SG
-  name: 353|SG_55
+  name: 353|SG_48
   password: ljqdalu13..
   port: 8313
   server: 3.1.195.148
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: SG
-  name: 353|SG_56
+  name: 353|SG_49
   password: ljqdalu13..
-  port: 8316
+  port: 8319
   server: 3.1.195.148
   type: ss
-- alterId: 0
-  cipher: auto
-  country: SG
-  h2-opts: {}
-  http-opts: {}
-  name: 353|SG_57
-  network: none
-  port: 31769
-  server: 8.217.13.74
-  skip-cert-verify: true
-  type: vmess
-  uuid: cf1ad6c7-5987-4314-82bb-b4399040d047
 - alterId: 0
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_ZZ-SG_137
+  name: 353|Relay_ZZ-SG_123
   network: ws
   port: 443
   server: cf.090227.xyz
@@ -1277,15 +1281,6 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 404|🇸🇬 新加坡 | SGP
-  network: tcp
-  port: '62233'
-  server: gdcn.coloss.cn
-  tls: false
-  type: vmess
-  uuid: d244d501-565c-420b-800a-3c00f17d624a
 - alterId: 0
   cipher: auto
   name: '411|新加坡NO.1 #4'
