@@ -1,49 +1,4 @@
 proxies:
-- auth: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
-  name: 47|🇫🇷 法国IPV6-09
-  password: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
-  port: 40149
-  server: fr09.sulian.life
-  skip-cert-verify: true
-  sni: fr09.sulian.life
-  type: hysteria2
-  udp: true
-- auth: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
-  name: 47|🇫🇷 法国IPV6-10
-  password: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
-  port: 41148
-  server: fr10.sulink.one
-  skip-cert-verify: true
-  sni: fr10.sulink.one
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 47|🇫🇷 法国1
-  port: 45072
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
-- alterId: 0
-  cipher: auto
-  name: 47|🇫🇷 CM 隧道 法国 NO1
-  port: 52108
-  server: sh3.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
-- alterId: 0
-  cipher: auto
-  name: 47|🇫🇷 法国2
-  port: 45071
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
   name: '90,345|法国1 #2'
@@ -367,7 +322,7 @@ proxies:
   uuid: c0f8303b-32d7-4c34-88b2-84b0501b02d5
 - alterId: 0
   cipher: auto
-  name: '294|🇫🇷 法国1 #1'
+  name: 294|🇫🇷 法国1
   port: 45072
   server: haa.dashuai.cyou
   tls: false
@@ -376,7 +331,7 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - alterId: 0
   cipher: auto
-  name: '294|🇫🇷 法国2 #1'
+  name: 294|🇫🇷 法国2
   port: 45071
   server: xdd.dashuai.cyou
   tls: false
@@ -658,13 +613,20 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 400|FR TROJAN-55 | free-nodes
+  name: 400|FR TROJAN-40 | free-nodes
   network: tcp
   password: telegram-id-directvpn
   port: 22223
-  server: 13.38.165.175
+  server: 35.181.242.3
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 400|🇫🇷_法国
+  network: tcp
+  port: 2345
+  server: go.adslimit.info
+  tls: false
+  type: vless
+  uuid: 0331b690-79fc-49d5-85f0-54faa4eff89f
 - name: 400|FR VLESS-33 | free-nodes
   network: ws
   port: 22224
@@ -675,20 +637,9 @@ proxies:
   uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
   ws-opts:
     path: '%2Ftelegram-channel-vlessconfig'
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  name: 400|FR VLESS-61 | free-nodes
-  network: tcp
-  port: 443
-  server: fr.1323.world
-  servername: b12a6eea4807ca4e.1323.world
-  tls: true
-  type: vless
-  uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|FR VLESS-67 | free-nodes
+  name: 400|FR VLESS-56 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -699,17 +650,6 @@ proxies:
   tls: false
   type: vless
   uuid: 18f72be7-0651-4037-928b-8a309d685796
-- name: 400|🇫🇷FR_7 | ⬇️ 4.7MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
-    short-id: ''
-  server: 45.132.96.60
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 1ca56379-e44b-4694-bee8-9874ca8fd248
 - name: 400|FR VLESS-46 | free-nodes
   network: ws
   port: 80
@@ -733,30 +673,144 @@ proxies:
     headers:
       Host: WangCai.443888.xyz
     path: '%2Fdanfeng%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|法国(yudou789.top 玉豆免费节点)_4-2
-  network: ws
-  port: 8443
-  server: 57.129.137.236
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: WangCai.443888.xyz
-    path: '%2Fdanfeng%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|🇫🇷FR法国
+- client-fingerprint: chrome
+  name: '400|🇫🇷_法国 #1'
   network: ws
   port: 443
-  server: 217.60.5.200
-  servername: ''
+  server: 57.129.137.56
+  servername: o00o.snip.qzz.io
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 3321a819-889d-40b3-b8fa-f34208827ef1
   ws-opts:
-    headers:
-      Host: o00o.snip.qzz.io
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+    path: '%2FTel-%40V2rayAlpha'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇫🇷_法国 #2'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.12
+  servername: fuck.rkn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇫🇷_法国 #3'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.20
+  servername: fuck.rkn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇫🇷_法国 #4'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.25
+  servername: fuck.rkn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇫🇷_法国 #5'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.86
+  servername: fuck.rkn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇫🇷_法国 #6'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.8
+  servername: fuck.rkn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇫🇷_法国 #7'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.97
+  servername: fuck.rkn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇫🇷_法国 #8'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.98
+  servername: fuck.rkn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇫🇷_法国 #9'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 57.129.53.182
+  servername: fuck.rkn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇫🇷_法国 #10'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  servername: fuck.rkn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
   name: 400|🇫🇷[openproxylist.com] vless-FR
@@ -900,6 +954,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- client-fingerprint: chrome
+  name: '400|🇫🇷_法国 #11'
+  network: ws
+  port: 2053
+  server: 141.95.127.132
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|YouTube顺丰资源 法国_133
   network: ws
   port: 2053
@@ -916,18 +982,6 @@ proxies:
   network: ws
   port: 8443
   server: 146.59.159.111
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 400|🇫🇷 法国 | FRA 8-1
-  network: ws
-  port: 8443
-  server: 146.59.225.19
   servername: ''
   tls: true
   type: vless
@@ -973,6 +1027,17 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: '400|🇫🇷_法国 #12'
+  network: ws
+  port: 2053
+  server: 162.19.254.52
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|🇫🇷FR_16
   network: ws
   port: 443
@@ -997,6 +1062,28 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: '400|🇫🇷_法国 #13'
+  network: ws
+  port: 443
+  server: 185.16.110.0
+  servername: sni.111000.v6.navy
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
+- name: '400|🇫🇷_法国 #14'
+  network: ws
+  port: 2096
+  server: 185.16.110.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|🇫🇷FR-030
   network: ws
   port: 8443
@@ -1117,9 +1204,9 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 400|🇫🇷FR_9
+- name: 400|🇫🇷FR_15
   network: ws
-  port: 8443
+  port: 2053
   server: 31.59.121.155
   servername: ''
   tls: true
@@ -1129,10 +1216,10 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 400|🇫🇷FR_2
+- name: 400|🇫🇷FR_9
   network: ws
   port: 8443
-  server: 31.59.121.188
+  server: 31.59.121.155
   servername: ''
   tls: true
   type: vless
@@ -1298,6 +1385,17 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|🇫🇷_法国 #15'
+  network: ws
+  port: 8443
+  server: 51.77.213.238
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|FR法国(mibei77.com 米贝节点分享)-012
   network: ws
   port: 2053
@@ -1395,6 +1493,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|🇫🇷FR_28
+  network: ws
+  port: 8443
+  server: 51.91.251.198
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 400|YouTube顺丰资源 法国_146
   network: ws
   port: 443
@@ -1411,18 +1521,6 @@ proxies:
   network: ws
   port: 8443
   server: 51.91.253.174
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 400|🇫🇷 法国 | FRA 13-1
-  network: ws
-  port: 443
-  server: 51.91.254.189
   servername: ''
   tls: true
   type: vless
@@ -1479,6 +1577,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- client-fingerprint: chrome
+  name: '400|🇫🇷_法国 #16'
+  network: ws
+  port: 2053
+  server: 57.129.63.154
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|🇫🇷FR_14
   network: ws
   port: 8443
@@ -1491,18 +1601,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 400|FR法国(mibei77.com 米贝节点分享)-006
-  network: ws
-  port: 2053
-  server: 92.42.110.142
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|🇫🇷FR_20
   network: ws
   port: 443
@@ -1551,6 +1649,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 400|🇫🇷FR_7
+  network: ws
+  port: 8443
+  server: 95.182.97.147
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 400|🇫🇷FR_10
   network: ws
   port: 8443
@@ -1576,6 +1686,19 @@ proxies:
   tls: false
   type: vless
   uuid: 6f192450-a1ed-4072-898b-0dd55c4e3437
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|FR VLESS-87 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: u2EbbN6nSieQdOlr1IaND9mfIuOkuLP8tgTHNjmJZ04
+    short-id: 0239282ae10047c8
+  server: frserv.zaubex.online
+  servername: frserv.zaubex.online
+  tls: false
+  type: vless
+  uuid: 77da92aa-12ad-4370-b9be-25a86bc58c39
 - name: 400|FR VLESS-88
   network: ws
   port: 2087
@@ -1590,7 +1713,7 @@ proxies:
       Host: vds.rahedarro.com
     path: '%2Frahh'
 - client-fingerprint: chrome
-  name: 400|FR VLESS-107 | free-nodes
+  name: 400|FR VLESS-105 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1613,9 +1736,20 @@ proxies:
   tls: false
   type: vless
   uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+- name: 400|FR法国(mibei77.com 米贝节点分享)-016
+  network: ws
+  port: 80
+  server: l098.zem.indevs.in
+  tls: false
+  type: vless
+  uuid: c558328b-eb46-424c-b9e0-574770f0b072
+  ws-opts:
+    headers:
+      Host: l098.zem.indevs.in
+    path: '%2Fv8clafFSnPXNC0BXGtJ'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|🇫🇷_法国
+  name: '400|🇫🇷_法国 #17'
   network: tcp
   port: 443
   reality-opts:
@@ -1629,7 +1763,7 @@ proxies:
   uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|FR VLESS-107 | free-nodes #1'
+  name: 400|FR VLESS-107 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1639,15 +1773,29 @@ proxies:
   tls: false
   type: vless
   uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
-- name: 400|🇫🇷FR_8 | ⬇️ 2.4MB/s
+- name: 400|🇫🇷FR_3 | ⬇️ 1.7MB/s
   network: tcp
   port: 443
   reality-opts:
     public-key: 8LWgKu6h8cXgOAixKaKPdGponKkAeQaq-IszDEQ4ojM
     short-id: 3bdec72a5a0ffd84
-  server: 95.182.97.115
+  server: fr.cdn.stun.su
   servername: ''
   tls: false
+  type: vless
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇫🇷_法国 #19'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: sxyxV0_y1o09gKJBL9AJJyRSEg6MiYK0j-kb5unzHh4
+    short-id: 6bb3c7f9f97b45b8
+  server: nl.jojack.ru
+  servername: nl.jojack.ru
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
 - name: 400|FR VLESS-119 | free-nodes
@@ -1663,11 +1811,25 @@ proxies:
   tls: false
   type: vless
   uuid: f7ddcea8-95e3-48de-909f-bb5d3c47696b
-- name: 400|法國-03
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇫🇷_法国 #20'
   network: tcp
   port: 443
   server: 162.19.10.94
-  servername: ''
+  servername: nasnet-162191094-direct.sharghdaily.co
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇫🇷_法国 #21'
+  network: tcp
+  port: 443
+  server: 57.129.64.102
+  servername: nasnet-5712964102-direct.sharghdaily.co
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
@@ -1715,7 +1877,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|法国_021704001
+  name: 400|法国_0217181019
+  network: tcp
+  port: '2085'
+  server: 51.83.52.172
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2c72c667-093c-47a5-a108-493c93282b57
+- alterId: 0
+  cipher: auto
+  name: 400|法国_0217181005
   network: tcp
   port: '550'
   server: 162.19.248.238
@@ -1723,6 +1895,13 @@ proxies:
   tls: false
   type: vmess
   uuid: ede27a79-b039-490b-932c-495de4b68880
+- name: 404|🇫🇷 法国 | FRA
+  password: telegram-id-directvpn
+  port: 22223
+  server: 35.181.242.3
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '411|法国1 #4'
@@ -1741,13 +1920,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
-- client-fingerprint: chrome
-  name: 544|FR【机场推荐：https://a0a.xyz】10
-  network: tcp
-  port: 443
-  server: fr.1323.world
-  servername: b12a6eea4807ca4e.1323.world
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4

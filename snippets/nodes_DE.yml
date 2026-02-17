@@ -487,7 +487,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇶IQ
   delay: 2324
-  name: 350,385|芬兰 - 赫尔辛基 - WAIcore Ltd - 1
+  name: 350,353,385|芬兰 - 赫尔辛基 - WAIcore Ltd - 1
   password: qS3skwmolrQ70q842irQD0
   port: 5790
   server: 178.17.61.67
@@ -712,66 +712,15 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|DE3｜机房｜低风险
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2096
-  server: bestcdn1.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527843306.206353.xyz
+- alpn:
+  - http/1.1
+  name: 400|DE TROJAN-39 | free-nodes
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 3.126.233.247
+  sni: trojan.burgerip.co.uk
   type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527849494.206353.xyz
-    path: '%2Fagrbniuh'
-- name: 400|DE4｜机房｜低风险
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2087
-  server: bestcdn2.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527843673.206353.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527847383.206353.xyz
-    path: '%2Fagrbniuh'
-- name: '400|DE5｜机房｜低风险 #1'
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2083
-  server: bestcdn3.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527846479.206353.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527846832.206353.xyz
-    path: '%2Fagrbniuh'
-- name: 400|DE6｜机房｜低风险
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 8443
-  server: bestcdn4.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527849389.206353.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527845673.206353.xyz
-    path: '%2Fagrbniuh'
-- name: 400|DE7｜机房｜低风险
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2053
-  server: bestcdn5.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527849779.206353.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527847573.206353.xyz
-    path: '%2Fagrbniuh'
 - alpn:
   - http/1.1
   name: 400|DE TROJAN-31 | free-nodes
@@ -781,19 +730,6 @@ proxies:
   server: 35.157.96.104
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 400|DE9｜机房｜低风险
-  network: ws
-  port: '8080'
-  server: 104.19.37.10
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: nasnet-571299667.rahavard365.co
-    path: /NASNET/cdn?ed=2560
 - alterId: 0
   cipher: auto
   name: 400|德国 051
@@ -836,6 +772,20 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 400|德国_0217181086
+  network: ws
+  port: '80'
+  server: 185.104.189.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  ws-opts:
+    headers:
+      Host: 185.104.189.38
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
 - alterId: 0
   cipher: auto
   name: '400|🇩🇪_DE_德国 #1'

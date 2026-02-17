@@ -501,10 +501,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  country: GB
+  country: ' GB'
   h2-opts: {}
   http-opts: {}
-  name: '350,353,392,400|🇬🇧_英国 #2'
+  name: '350,371,372,392,400|🇬🇧_英国 #15'
   network: tcp
   port: '180'
   server: 82.198.246.97
@@ -1191,17 +1191,22 @@ proxies:
   server: uk2-full.privateip.net
   sni: uk2-full.privateip.net
   type: trojan
-- name: 400|GB TROJAN-31 | free-nodes
-  password: 76yTlnTIsjCTlmqnUJ5Tzc1rM
+- name: 400|GB TROJAN-38 | free-nodes
+  password: Tn2Bf0iRwJkJQgDk6gX6x81RB
   port: 443
-  server: hl-freedom-0.undef.network
-  sni: hl-freedom-0.undef.network
+  server: hl-freedom-2.undef.network
   type: trojan
 - name: 400|GB英国(mibei77.com 米贝节点分享)-024
   password: c558328b-eb46-424c-b9e0-574770f0b072
   port: 443
   server: ki9.666470.xyz
   sni: ki9.666470.xyz
+  type: trojan
+- name: 400|GB英国(mibei77.com 米贝节点分享)-027
+  password: c558328b-eb46-424c-b9e0-574770f0b072
+  port: 443
+  server: njki.222856.xyz
+  sni: njki.222856.xyz
   type: trojan
 - name: 400|GB英国(mibei77.com 米贝节点分享)-022
   password: c558328b-eb46-424c-b9e0-574770f0b072
@@ -1215,13 +1220,6 @@ proxies:
   server: 51.38.65.155
   sni: 51.38.65.155
   type: trojan
-- name: 400|GB VLESS-56 | free-nodes
-  network: tcp
-  port: 2345
-  server: go.adslimit.info
-  tls: false
-  type: vless
-  uuid: 0331b690-79fc-49d5-85f0-54faa4eff89f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 400|GB VLESS-40 | free-nodes
@@ -1238,24 +1236,26 @@ proxies:
 - alpn:
   - h2
   client-fingerprint: chrome
-  name: 400|GB VLESS-62 | free-nodes
+  name: 400|GB VLESS-49 | free-nodes
   network: tcp
   port: 443
   server: uk.1323.world
-  servername: 1323.world
   skip-cert-verify: false
   tls: true
   type: vless
   uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
-- name: 400|🇬🇧GB_1 | ⬇️ 7.9MB/s
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|🇬🇧_英国
   network: tcp
   port: 23411
   reality-opts:
     public-key: 0Z7LFqDUF568Df972BbYorpeykKnN-Z98jHjDBnRbCE
     short-id: b69808
   server: icshstor.site
-  servername: ''
-  tls: false
+  servername: icshstor.site
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: 1eea1e0b-6388-491c-b310-5524e8384808
 - name: 400|GB英国(mibei77.com 米贝节点分享)
@@ -1269,45 +1269,41 @@ proxies:
     headers:
       Host: cvsoidswg.k3ckfz151a.workers.dev
     path: '%2F'
-- name: '400|GB英国(mibei77.com 米贝节点分享) #1'
+- name: '400|🇬🇧_英国 #1'
   network: ws
-  port: 8880
-  server: africa.visa.com
-  tls: false
+  port: 2096
+  server: 104.239.72.138
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: 5b002005-7fb1-413e-8cbd-08e50c87c2ea
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
+- client-fingerprint: chrome
+  name: '400|🇬🇧_英国 #2'
+  network: ws
+  port: 2096
+  server: 104.239.72.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
+- name: 400|GB英国(mibei77.com 米贝节点分享)-007
+  network: ws
+  port: 443
+  server: 109.169.76.23
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: wetfleagidc-8tsbi8xd-v3.wet-flea-gidc.workers.dev
-    path: '%2F%3Fed%3D2560Join---V2rayBaaz---%40V2rayBaaz---%40V2rayBaaz---%40V2rayBaaz---%40V2rayBaaz---%40V2rayBaaz---%40V2rayBaaz---%40V2rayBaaz---%40V2rayBaaz---%40V2rayBaaz---%40V2rayBaaz---%40V2rayBaaz'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 400|🇬🇧_英国
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: _dsOu_vxEU7pY3sIeGJxIpR0Ac2KoqIyBor2Bx0CwGA
-    short-id: d923
-  server: uk1.miyazono-kaori.com
-  servername: www.bp.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5dc07e5e-59dd-41f2-96b1-e8a8133a0dbc
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '400|🇬🇧_英国 #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk
-    short-id: '20'
-  server: uk2.miyazono-kaori.com
-  servername: www.bp.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5dc07e5e-59dd-41f2-96b1-e8a8133a0dbc
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|英国(yudou789.top 玉豆免费节点)_39
   network: ws
   port: 8443
@@ -1332,6 +1328,17 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|🇬🇧_英国 #3'
+  network: ws
+  port: 2096
+  server: 156.243.246.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|GB英国(mibei77.com 米贝节点分享)-008
   network: ws
   port: 8443
@@ -1356,6 +1363,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- client-fingerprint: chrome
+  name: '400|🇬🇧_英国 #4'
+  network: ws
+  port: 2096
+  server: 185.170.166.138
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|GB_橘子电报频道@juzibaipiao-02
   network: ws
   port: 2096
@@ -1428,18 +1447,28 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 400|🇬🇧GB_1-1
+- name: '400|🇬🇧_英国 #5'
   network: ws
-  port: 443
-  server: 2.56.179.89
-  servername: ''
+  port: 2053
+  server: 216.173.71.69
+  servername: sni.111000.v6.navy
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+    path: '%2F'
+- name: '400|🇬🇧_英国 #6'
+  network: ws
+  port: 443
+  server: 217.163.76.254
+  servername: sni.111000.v6.navy
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|YouTube顺丰资源 英国_265
   network: ws
   port: 443
@@ -1452,18 +1481,51 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: 400|YouTube顺丰资源 英国_65
+- name: '400|🇬🇧_英国 #7'
   network: ws
   port: 2096
-  server: 45.12.30.138
-  servername: ''
+  server: 25.25.25.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+    path: '%2F'
+- name: '400|🇬🇧_英国 #8'
+  network: ws
+  port: 2096
+  server: 5.10.245.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
+- client-fingerprint: chrome
+  name: '400|🇬🇧_英国 #9'
+  network: ws
+  port: 2096
+  server: 5.10.246.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
+- name: '400|🇬🇧_英国 #10'
+  network: ws
+  port: 2096
+  server: 5.10.247.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|YouTube顺丰资源 英国_239
   network: ws
   port: 2053
@@ -1694,18 +1756,18 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 400|GB英国(mibei77.com 米贝节点分享)-001
+- client-fingerprint: chrome
+  name: '400|🇬🇧_英国 #11'
   network: ws
   port: 2096
   server: 77.75.199.138
-  servername: ''
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+    path: '%2F'
 - name: 400|YouTube顺丰资源 英国_286
   network: ws
   port: 443
@@ -1734,18 +1796,6 @@ proxies:
   network: ws
   port: 8443
   server: 83.147.192.189
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: '400|🇬🇧GB #2'
-  network: ws
-  port: 443
-  server: 83.147.192.71
   servername: ''
   tls: true
   type: vless
@@ -1802,6 +1852,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- client-fingerprint: chrome
+  name: '400|🇬🇧_英国 #12'
+  network: ws
+  port: 2096
+  server: 94.247.142.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|🇬🇧GB_7
   network: ws
   port: 8443
@@ -1814,6 +1876,20 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇬🇧_英国 #13'
+  network: tcp
+  port: 50855
+  reality-opts:
+    public-key: 3iQ5QX52pIjouDXoPSfrQRvpqaOTqG26IJLctU7McAY
+    short-id: '02'
+  server: tes1.api-tel.xyz
+  servername: ea.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 853d23ee-38c6-41bb-a51c-8aea6a25b0bd
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 400|GB VLESS-80 | free-nodes
@@ -1840,9 +1916,21 @@ proxies:
   tls: false
   type: vless
   uuid: aee46a49-c99e-4c58-b443-4fff31f10ff4
+- name: '400|GB英国(mibei77.com 米贝节点分享) #1'
+  network: ws
+  port: 443
+  server: ko.890604.filegear-sg.me
+  servername: ko.890604.filegear-sg.me
+  tls: true
+  type: vless
+  uuid: b020865b-7404-4894-ba65-a7414b10cda3
+  ws-opts:
+    headers:
+      Host: ko.890604.filegear-sg.me
+    path: '%2F15ZYK3adOPjqSc7fzeJr'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|GB VLESS-110 | free-nodes
+  name: 400|GB VLESS-107 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1867,7 +1955,7 @@ proxies:
   uuid: e3682df7-e8ec-4705-b5ef-3bbaa7007c94
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|GB VLESS-121 | free-nodes
+  name: 400|GB VLESS-125 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1878,11 +1966,12 @@ proxies:
   tls: false
   type: vless
   uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-- name: 400|GB VLESS-128 | free-nodes
+- name: 400|GB VLESS-121 | free-nodes
   network: ws
   port: 443
-  server: 104.20.1.252
-  servername: ''
+  server: nodejs.org
+  servername: dev.nestandneighbours.com
+  skip-cert-verify: true
   tls: true
   type: vless
   uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
@@ -1890,12 +1979,16 @@ proxies:
     headers:
       Host: dev.nestandneighbours.com
     path: '%2F'
-- name: 400|GB VLESS-130 | free-nodes
-  port: 443
-  server: nodejs.org
+- alterId: 0
+  cipher: auto
+  name: '400|🇬🇧_英国 #14'
+  network: tcp
+  port: '18937'
+  server: 149.88.95.217
+  servername: ''
   tls: false
-  type: vless
-  uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
+  type: vmess
+  uuid: ebaa1ae1-fa4d-40d8-958f-d4524d551218
 - alterId: 0
   cipher: auto
   name: 400|英国 007

@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: chrome
-  name: '262,383,395,400|14|RU_speednode_0007 #1'
+  name: '262,383,395,400|14|RU_speednode_0007 #2'
   port: 8443
   server: meow-msc.nethcloud.top
   servername: wikihow.com
@@ -10,7 +10,7 @@ proxies:
   uuid: bf9931be-a7fd-46b3-9919-b858299e9f65
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '262,383,395,400|14|RU_speednode_0008 #1'
+  name: '262,383,395,400|14|RU_speednode_0008 #2'
   port: 8443
   server: 158.160.223.36
   servername: yandex.ru
@@ -20,7 +20,7 @@ proxies:
   uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '262,383,395,400|14|RU_speednode_0009 #1'
+  name: '262,383,395,400|14|RU_speednode_0009 #2'
   port: 8443
   server: 89.169.128.105
   servername: yandex.ru
@@ -30,7 +30,7 @@ proxies:
   uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '262,383,395,400|14|RU_speednode_0010 #1'
+  name: '262,383,395,400|14|RU_speednode_0010 #2'
   port: 443
   server: 158.160.105.121
   servername: yandex.ru
@@ -40,7 +40,7 @@ proxies:
   uuid: e8accc46-c511-42fb-919b-9283799a88a1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '262,383,395,400|14|RU_speednode_0011 #1'
+  name: '262,383,395,400|14|RU_speednode_0011 #2'
   port: 443
   server: 45.139.26.213
   servername: www.yandex.ru
@@ -279,7 +279,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: RU
-  name: 353|Relay_RU-RU_20
+  name: 353|Relay_RU-RU_27
   password: awYDSj3KrIKEQ3RrpRCKDqVMX
   port: 41056
   server: 176.123.168.79
@@ -1018,7 +1018,14 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 392,400|🇷🇺RU俄罗斯
+- name: '371,372,392,400|俄罗斯+V2CROSS.COM #2'
+  password: ZblhWr0mqMakCPg.N
+  port: 36158
+  server: 212.193.18.144
+  skip-cert-verify: false
+  sni: ya.ru
+  type: trojan
+- name: 392,400|🇷🇺RU俄罗斯2
   password: trojan
   port: 8443
   server: 109.234.211.66
@@ -1039,12 +1046,6 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|🇷🇺RU俄罗斯3
-  password: ZblhWr0mqMakCPg.N
-  port: 36158
-  server: 212.193.18.144
-  sni: ya.ru
-  type: trojan
 - client-fingerprint: qq
   flow: xtls-rprx-vision
   name: 400|RU VLESS-37 | free-nodes
@@ -1085,48 +1086,27 @@ proxies:
   tls: true
   type: vless
   uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
-    short-id: 48fccabc158a4c22
-  server: 158.160.223.36
-  servername: yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
-    short-id: 205748bc0f24a747
-  server: 89.169.162.214
-  servername: yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 1a5b443d-42f3-4e8e-b980-2ebf9e74a45d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #3'
-  network: tcp
+- name: '400|🇷🇺_俄罗斯 #1'
+  network: ws
   port: 8443
-  reality-opts:
-    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
-    short-id: c6ef72e4635d15a5
-  server: 89.169.162.214
-  servername: yandex.ru
+  server: rus3.worldunlocked.org
+  servername: rus3.worldunlocked.org
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 1a5b443d-42f3-4e8e-b980-2ebf9e74a45d
+  uuid: 0e4865bf-811e-44e8-90ce-233ecf209b0b
+  ws-opts:
+    path: '%2Fws-vless%2F'
+- client-fingerprint: chrome
+  name: 400,544|FR【机场推荐：https://a0a.xyz】10
+  network: tcp
+  port: 443
+  server: fr.1323.world
+  servername: b12a6eea4807ca4e.1323.world
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 400|RU VLESS-49 | free-nodes
@@ -1154,46 +1134,68 @@ proxies:
     path: '%2Fdanfeng%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #4'
+  name: '400|🇷🇺_俄罗斯 #3'
   network: tcp
-  port: 443
+  port: 19747
   reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 8ba12e75110b7a9c
-  server: 84.23.52.70
-  servername: m.vk.ru
+    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+    short-id: '2001'
+  server: 77.73.232.61
+  servername: '%2F'
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
+  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #5'
+  name: '400|🇷🇺_俄罗斯 #4'
   network: tcp
   port: 8443
   reality-opts:
-    public-key: ZwKaXjLLamsHDmkPmUwvfnmx-Om4Drtmz97Mi16z6R0
-    short-id: 88f48f30271d
-  server: 45.138.157.25
-  servername: www.2gis.kz
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: ss.sps1.sbs
+  servername: dropbox.com
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 44e4d068-22ca-4a82-bc7b-774ea879abc5
+  uuid: 2b519523-4ed0-4a22-95f1-d6d495278a7c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #6'
+  name: 400|RU VLESS-76 | free-nodes
   network: tcp
   port: 443
   reality-opts:
-    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-    short-id: 887c0d72e771a934
-  server: 158.160.105.121
-  servername: yandex.ru
+    public-key: PGccrEdFmBaB1rQFJqM-a9jJ1pFsxhUP2sD9KTw5Oz4
+    short-id: f69d7af2d5fc5e0c
+  server: 85.192.32.30
+  servername: eh.vk.com
+  tls: false
+  type: vless
+  uuid: 50b95deb-6394-46c5-b88a-583e5b3ca7ee
+- client-fingerprint: chrome
+  name: '400|🇷🇺_俄罗斯 #5'
+  network: ws
+  port: 443
+  server: 45.67.215.233
+  servername: rAyAn-cOnFiG-sg-1.pAriSa.dPdNs.oRg
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 56e1592c-cae7-4ff1-b9d9-07ee111968b5
+  uuid: 55b0463c-e27f-455b-a25a-70123297b9f4
+  ws-opts:
+    path: '%2Fws'
+- client-fingerprint: chrome
+  name: '400|🇷🇺_俄罗斯 #6'
+  network: ws
+  port: 2096
+  server: 176.124.223.138
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|🇷🇺RU
   network: ws
   port: 443
@@ -1219,18 +1221,17 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: 400|YouTube顺丰资源 俄罗斯_49
+- name: '400|🇷🇺_俄罗斯 #7'
   network: ws
   port: 2096
   server: 185.176.24.138
-  servername: ''
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+    path: '%2F'
 - name: 400|俄罗斯(yudou789.top 玉豆免费节点)-2
   network: ws
   port: 443
@@ -1243,6 +1244,28 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: '400|🇷🇺_俄罗斯 #8'
+  network: ws
+  port: 443
+  server: 193.168.227.151
+  servername: sni.111000.v6.navy
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
+- name: '400|🇷🇺_俄罗斯 #9'
+  network: ws
+  port: 2096
+  server: 193.233.21.138
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|YouTube顺丰资源 俄罗斯_230
   network: ws
   port: 2053
@@ -1291,6 +1314,17 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|🇷🇺_俄罗斯 #10'
+  network: ws
+  port: 443
+  server: 31.128.32.98
+  servername: sni.111000.v6.navy
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|YouTube顺丰资源 俄罗斯_35
   network: ws
   port: 2096
@@ -1327,6 +1361,17 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|🇷🇺_俄罗斯 #11'
+  network: ws
+  port: 443
+  server: 77.221.140.42
+  servername: sni.111000.v6.navy
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|YouTube顺丰资源 俄罗斯_81
   network: ws
   port: 2053
@@ -1351,6 +1396,17 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|🇷🇺_俄罗斯 #12'
+  network: ws
+  port: 2096
+  server: 8.34.146.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: '400|🇷🇺RU #2'
   network: ws
   port: 443
@@ -1364,18 +1420,17 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 400|YouTube顺丰资源 俄罗斯_33
+- name: '400|🇷🇺_俄罗斯 #13'
   network: ws
-  port: 2096
-  server: 92.243.74.138
-  servername: ''
+  port: 443
+  server: 90.156.254.74
+  servername: sni.111000.v6.navy
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+    path: '%2F'
 - name: 400|YouTube顺丰资源 俄罗斯_45
   network: ws
   port: 2096
@@ -1400,18 +1455,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%258E%2596%2540AliXTso'
-- name: 400|俄罗斯(yudou789.top 玉豆免费节点)_2
-  network: ws
-  port: 2053
-  server: 93.183.126.123
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|YouTube顺丰资源 俄罗斯_272
   network: ws
   port: 443
@@ -1462,7 +1505,20 @@ proxies:
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|RU VLESS-76 | free-nodes
+  name: 400|RU VLESS-88 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: zycPuQeYGVffYGghLODxpyE3eexkEHk4_G84IaMjYCY
+    short-id: fa5394a97158b82b
+  server: yserv.zaubex.online
+  servername: yserv.zaubex.online
+  tls: false
+  type: vless
+  uuid: 77da92aa-12ad-4370-b9be-25a86bc58c39
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|RU VLESS-76 | free-nodes #1'
   network: tcp
   port: 1488
   reality-opts:
@@ -1492,102 +1548,94 @@ proxies:
   uuid: 895f94cb-5567-4731-bc2c-2f89a54bafe4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #7'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-    short-id: 8f222b3475800821
-  server: 158.160.105.121
-  servername: yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e8accc46-c511-42fb-919b-9283799a88a1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #8'
+  name: 400|RU VLESS-104 | free-nodes
   network: tcp
   port: 443
   reality-opts:
-    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-    short-id: 8f222b3475800821
-  server: 158.160.221.132
-  servername: yandex.ru
-  skip-cert-verify: false
-  tls: true
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: d3b13f31
+  server: ru02-vlr01.tcp-reset-club.net
+  servername: hls-svod.itunes.apple.com
+  tls: false
   type: vless
-  uuid: e8accc46-c511-42fb-919b-9283799a88a1
-- client-fingerprint: chrome
+  uuid: 9fdd70da-b710-48b7-945a-642fe8937861
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #9'
+  name: '400|🇷🇺_俄罗斯 #14'
   network: tcp
-  port: 51102
-  reality-opts:
-    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-    short-id: 8f222b3475800821
-  server: 158.160.221.132
-  servername: yandex.ru
+  port: 443
+  server: mlb.tunnelguard.ru
+  servername: mlb.tunnelguard.ru
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: e8accc46-c511-42fb-919b-9283799a88a1
+  uuid: a619d576-1380-4aac-8732-99e8dfe8df0f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #10'
+  name: '400|🇷🇺_俄罗斯 #15'
   network: tcp
-  port: 8443
+  port: 443
   reality-opts:
-    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-    short-id: 8f222b3475800821
-  server: 158.160.221.132
-  servername: yandex.ru
+    public-key: tF_qba3yih0v2pPCFcwjQXi0HsEevZOGG8hozoS0IEs
+    short-id: fcd2ba5b8fc1
+  server: 2.59.218.62
+  servername: bg.strelkavpn.com
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: e8accc46-c511-42fb-919b-9283799a88a1
+  uuid: b469974b-4319-452a-94de-46b314ac1a8e
+- name: 400,544|DE【机场推荐：https://a0a.xyz】11
+  network: tcp
+  port: 443
+  server: decdn9.suio.me
+  servername: decdn9.suio.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: da11d62c-1996-4d2c-b2e6-e89c7a1265e9
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|RU VLESS-122 | free-nodes
+  name: '400|🇷🇺_俄罗斯 #17'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ICOdUjV4l0pQKechbg5GIDyo0mvDH373CR1dcWxXCXg
+    short-id: 7baebcace7b4d3a6
+  server: yandex.plansv.tech
+  servername: yandex.plansv.tech
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e5ef4914-5a87-46c1-a62b-0b8dfb3dbcb8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇷🇺_俄罗斯 #18'
+  network: tcp
+  port: 40478
+  reality-opts:
+    public-key: lcJ0LSh015XRfz5-7wB_hln3-bq5ZatFgPugSUCrdR0
+    short-id: 3c
+  server: 37.233.82.140
+  servername: yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e977d854-33f3-4345-abee-bf3fa9a6d880
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|RU VLESS-128 | free-nodes
   network: tcp
   port: 443
   reality-opts:
     public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
-    short-id: 95ec618532fa065e
-  server: 81.200.151.14
-  servername: m.vk.com
+    short-id: cd57a927f6b72d81
+  server: 95.163.211.13
+  servername: max.ru
   tls: false
   type: vless
   uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 400|RU VLESS-124 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: hSTtlpXKAYVVu5ybX3hQfq8dfsUrO_HoFVgfGGoCHVw
-    short-id: a7ab02dfcc1f2c04
-  server: pl.jojack.ru
-  servername: pl.jojack.ru
-  tls: false
-  type: vless
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #11'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TvWJyoXLia5sOkNEQFXyOBquJJZ3MR06vi_9y9LT5Rw
-    short-id: 13c84f9d95d681d4
-  server: pvl.cdn.stun.su
-  servername: pvl.cdn.stun.su
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-- client-fingerprint: chrome
-  name: '400|🇷🇺_俄罗斯 #12'
+  name: '400|🇷🇺_俄罗斯 #19'
   network: tcp
   port: 52042
   reality-opts:
@@ -1601,34 +1649,18 @@ proxies:
   uuid: f557eadb-1715-4c0b-aaae-f9b9577d827d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #13'
+  name: '400|🇷🇺_俄罗斯 #20'
   network: tcp
   port: 443
   reality-opts:
-    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
-    short-id: 3f200574d011010f
-  server: 51.250.0.147
-  servername: ads.x5.ru
+    public-key: 2rjzbqQ49m-jpfzhiuBNb8Izwwjw0dIg5JAKdv-B2kE
+    short-id: d1d42381ba35
+  server: 185.120.59.245
+  servername: apple.com
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: f625ba3b-93dc-4a87-9e69-f39a2f16ff98
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 400|RU VLESS-129 | free-nodes
-  network: ws
-  port: 443
-  server: es2.vpnbyvinarsky.ru
-  servername: es2.vpnbyvinarsky.ru
-  tls: true
-  type: vless
-  uuid: fb27b6f5-bb5c-45a6-8bc2-265fcfd2b658
-  ws-opts:
-    headers:
-      Host: es2.vpnbyvinarsky.ru
-    path: /chat
+  uuid: 88888888-8888-8888-8888-888888888888
 - name: 413| RUN-UnReal-argo
   network: ws
   port: 80
