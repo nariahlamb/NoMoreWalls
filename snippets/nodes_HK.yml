@@ -683,14 +683,14 @@ proxies:
     path: /stream?ed=2048
 - alterId: 2
   cipher: auto
-  name: '228,397|🇭🇰 香港|@ripaojiedian #2'
+  name: '227,397|🇭🇰 香港|@ripaojiedian #2'
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '228,262,383,392,395,397,398,400|12,13|香港4|@ripaojiedian #2'
+- name: '227,261,383,392,400|12,13|香港4|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 2826
@@ -698,7 +698,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '228,262,383,392,395,397,398,400|12,13|香港5|@ripaojiedian #2'
+- name: '227,261,383,392,400|12,13|香港5|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 54548
@@ -706,7 +706,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '228,262,383,392,395,397,398,400|12,13|新加坡3|@ripaojiedian #2'
+- name: '227,261,383,392,400|12,13|新加坡3|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 3127
@@ -714,7 +714,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '228,262,383,392,395,397,398,400|12,13|美国3|@ripaojiedian #2'
+- name: '227,261,383,392,400|12,13|美国3|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 2569
@@ -727,7 +727,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: '228,262,353,383,392,395,398,400|12|🇭🇰 香港|@ripaojiedian #2'
+  name: '227,261,353,383,392,395,398,400|12|🇭🇰 香港|@ripaojiedian #2'
   network: tcp
   port: 30807
   server: v10.hdacd.com
@@ -738,7 +738,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: '228,395,400|SG1｜商宽｜非常安全 #1'
+  name: '227,395,400|SG1｜商宽｜非常安全 #1'
   network: ws
   port: '47790'
   server: 36.50.90.241
@@ -750,13 +750,21 @@ proxies:
     headers:
       Host: sg.dalxy.eu.org
     path: /a88a71fa-ed7c-48d3-89e0-74a00d605d88-vm
-- name: 228,395|HK11｜家宽｜非常安全
+- name: 227,395,400|香港_021704005
   network: tcp
   password: BxceQaOe
   port: 443
   server: 58.152.25.208
   skip-cert-verify: true
   sni: 58.152.25.208
+  type: trojan
+- name: '227,395,397,398|新加坡3|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 2673
+  server: 43.199.161.245
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 278|🇭🇰1 |  3.5MB/s
@@ -1226,23 +1234,32 @@ proxies:
   country: ' HK'
   h2-opts: {}
   http-opts: {}
-  name: 350| HK_59
+  name: 350,400|🇭🇰 HK_59
   network: none
   port: 13852
   server: 45.207.157.29
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
 - cipher: aes-256-cfb
   country: HK
-  name: 353|HK_18
+  name: 353|HK_20
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 203.23.128.33
   type: ss
+- cipher: chacha20-ietf
+  country: HK
+  name: 353|HK_21
+  password: asd123456
+  port: 8388
+  server: 103.149.183.200
+  type: ss
 - country: HK
-  name: 353,400|HK TROJAN-57 | free-nodes
+  name: 353|HK_23
   password: BxceQaOe
   port: 443
   server: 58.152.25.208
@@ -1307,12 +1324,6 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|HK香港(mibei77.com 米贝节点分享)-022
-  password: 4c205c81-5694-43fe-a287-af563a2ebc05
-  port: 443
-  server: 3er.8900604.xyz
-  sni: 3er.8900604.xyz
-  type: trojan
 - name: 400|🇭🇰 香港3|@stairnode
   password: 9372cb81c7b0ad903f91f2f8a4d3f02b
   port: 3373

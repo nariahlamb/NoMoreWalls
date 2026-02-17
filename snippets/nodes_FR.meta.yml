@@ -595,7 +595,7 @@ proxies:
     path: /nasnet/cdn?ed=2560
 - alterId: 0
   cipher: auto
-  name: 392,400,544|CN【机场推荐：https://a0a.xyz】1
+  name: 392,400,544|CN【机场推荐：https://a0a.xyz】3
   network: tcp
   port: '30830'
   server: v30.hdacd.com
@@ -603,23 +603,32 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 400|🇫🇷FR_44
+- name: 400|🇫🇷FR_41
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 400|🇫🇷FR_45
+- name: 400|🇫🇷FR_42
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 400|🇫🇷FR_43
+- name: 400|🇫🇷FR_40
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   sni: de-full.privateip.net
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 400|FR TROJAN-55 | free-nodes
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.38.165.175
+  sni: trojan.burgerip.co.uk
   type: trojan
 - name: 400|FR VLESS-33 | free-nodes
   network: ws
@@ -634,7 +643,7 @@ proxies:
 - alpn:
   - h2
   client-fingerprint: chrome
-  name: '400,544|FR【机场推荐：https://a0a.xyz】15 #1'
+  name: 400,544|FR【机场推荐：https://a0a.xyz】9
   network: tcp
   port: 443
   server: fr.1323.world
@@ -642,6 +651,41 @@ proxies:
   tls: true
   type: vless
   uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|FR VLESS-67 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
+    short-id: 9eb31eb7572c0882
+  server: fr.pineappled.org
+  servername: google.com
+  tls: false
+  type: vless
+  uuid: 18f72be7-0651-4037-928b-8a309d685796
+- name: 400|🇫🇷FR_7 | ⬇️ 4.7MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+    short-id: ''
+  server: 45.132.96.60
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 1ca56379-e44b-4694-bee8-9874ca8fd248
+- name: 400|FR VLESS-46 | free-nodes
+  network: ws
+  port: 80
+  server: ov-france1.09vpn.com
+  tls: false
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  ws-opts:
+    headers:
+      Host: OV-France1.09vpn.com
+    path: '%2Fvless%2F'
 - name: 400|法国(yudou789.top 玉豆免费节点)_2
   network: ws
   port: 443
@@ -942,7 +986,7 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F'
-- name: 400|FR法国(mibei77.com 米贝节点分享)-013
+- name: 400|FR法国(mibei77.com 米贝节点分享)-013-1
   network: ws
   port: 8443
   server: 192.248.186.10
@@ -1066,18 +1110,6 @@ proxies:
   network: ws
   port: 8443
   server: 31.59.121.227
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 400|🇫🇷FR_3
-  network: ws
-  port: 443
-  server: 31.59.121.39
   servername: ''
   tls: true
   type: vless
@@ -1484,18 +1516,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 400|🇫🇷FR_7
-  network: ws
-  port: 8443
-  server: 95.182.97.147
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 400|🇫🇷FR_10
   network: ws
   port: 8443
@@ -1535,6 +1555,18 @@ proxies:
       Host: vds.rahedarro.com
     path: '%2Frahh'
 - client-fingerprint: chrome
+  name: 400|FR VLESS-107 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: YyRIZiLux0R8BZfaM3BseFoDRzoZ9ErRTbAvDATd-mI
+    short-id: '16'
+  server: 94.183.186.118
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: a7b4fe0c-2577-4aa3-9e0d-573fec207c65
+- client-fingerprint: chrome
   name: 400|FR VLESS-92 | free-nodes
   network: tcp
   port: 17401
@@ -1562,7 +1594,7 @@ proxies:
   uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|FR VLESS-107 | free-nodes
+  name: '400|FR VLESS-107 | free-nodes #1'
   network: tcp
   port: 443
   reality-opts:
@@ -1572,6 +1604,17 @@ proxies:
   tls: false
   type: vless
   uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
+- name: 400|🇫🇷FR_8 | ⬇️ 2.4MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 8LWgKu6h8cXgOAixKaKPdGponKkAeQaq-IszDEQ4ojM
+    short-id: 3bdec72a5a0ffd84
+  server: 95.182.97.115
+  servername: ''
+  tls: false
+  type: vless
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
 - name: 400|FR VLESS-119 | free-nodes
   port: 8080
   server: maxb10.server1home.ir
@@ -1623,7 +1666,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 400|🇫🇷 FR_42
+  name: 400|🇫🇷 FR_39
   network: ws
   port: 443
   server: 91.134.8.101
@@ -1637,8 +1680,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|法国_0216181024
-  network: ''
+  name: 400|法国_021704001
+  network: tcp
   port: '550'
   server: 162.19.248.238
   servername: ''
