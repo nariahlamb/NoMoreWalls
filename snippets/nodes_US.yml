@@ -89,6 +89,13 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- name: '89,343|🇺🇸 US_2|4.1MB/s|YT-US|NF|D+|GM #1'
+  password: 347ca311-8fc2-499c-8fe1-bd0ecb50f1b3
+  port: 43642
+  server: 5.34.222.4
+  skip-cert-verify: true
+  sni: iepl.usq1.cat.bilibili.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '90,345|美国NO.1 #1'
@@ -135,14 +142,18 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: '227,392,395,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #105'
+  country: IR
+  h2-opts: {}
+  http-opts: {}
+  name: '227,353,392,395,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #105'
   network: tcp
   port: '30836'
   server: v36.hdacd.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '227,395,397,398|日本|@ripaojiedian #1'
+- name: '227,383,395,397,398|日本|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 2595
@@ -504,7 +515,8 @@ proxies:
   server: 169.197.142.187
   type: ss
 - cipher: aes-128-gcm
-  name: '277,278|3 #5'
+  country: US
+  name: 277,278,353|US_43
   password: shadowsocks
   port: 443
   server: 37.19.198.236
@@ -1823,12 +1835,50 @@ proxies:
   port: 52952
   server: exchange.gameaurela.click
   type: ss
+- alterId: 2
+  cipher: auto
+  country: IR
+  h2-opts: {}
+  http-opts: {}
+  name: '353,392,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #102'
+  network: tcp
+  port: '30808'
+  server: v8.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  country: IR
+  h2-opts: {}
+  http-opts: {}
+  name: 353|Relay_IR-US_16
+  network: tcp
+  port: 30809
+  server: 151.242.183.218
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  country: IR
+  h2-opts: {}
+  http-opts: {}
+  name: '353,404|🇺🇸 美国 | USA #8'
+  network: tcp
+  port: '30829'
+  server: v29.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   country: MT
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_MT-US_26
+  name: 353|Relay_MT-US_32
   network: ws
   port: 443
   server: 193.227.99.199
@@ -1843,7 +1893,7 @@ proxies:
     path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
 - cipher: aes-256-cfb
   country: US
-  name: 353|Relay_US-US_32
+  name: 353|Relay_US-US_44
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -1855,7 +1905,25 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_US-US_33
+  name: 353|US_45
+  network: ws
+  port: 8443
+  server: dll.avaaaal.ir
+  servername: cdge.avaaaal.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 725f5fcd-721d-40a0-ba6b-3c7477633110
+  ws-opts:
+    headers:
+      HOST: cdge.avaaaal.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 353|Relay_US-US_46
   network: ws
   port: 443
   server: 209.46.30.199
@@ -1873,60 +1941,7 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 353|US_34
-  network: ws
-  port: 80
-  server: turk1.net.net
-  servername: tr1-smart.adelping.com.
-  skip-cert-verify: true
-  type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-  ws-opts:
-    headers:
-      HOST: tr1-smart.adelping.com.
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: 353|Relay_US-US_35
-  network: ws
-  port: 443
-  server: 166.62.110.199
-  servername: ous3.dean52.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
-  ws-opts:
-    headers:
-      HOST: ous3.dean52.top
-    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: 353|Relay_US-US_36
-  network: ws
-  port: 443
-  server: 198.71.191.199
-  servername: ous3.dean52.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
-  ws-opts:
-    headers:
-      HOST: ous3.dean52.top
-    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: 353|Relay_US-US_38
+  name: 353|Relay_US-US_47
   network: ws
   port: 443
   server: 198.62.62.199
@@ -1944,7 +1959,60 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 353|US_39
+  name: 353|US_48
+  network: ws
+  port: 80
+  server: turk1.net.net
+  servername: tr1-smart.adelping.com.
+  skip-cert-verify: true
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  ws-opts:
+    headers:
+      HOST: tr1-smart.adelping.com.
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 353|Relay_US-US_50
+  network: ws
+  port: 443
+  server: 166.62.110.199
+  servername: ous3.dean52.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
+  ws-opts:
+    headers:
+      HOST: ous3.dean52.top
+    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 353|Relay_US-US_51
+  network: ws
+  port: 443
+  server: 198.71.191.199
+  servername: ous3.dean52.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
+  ws-opts:
+    headers:
+      HOST: ous3.dean52.top
+    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 353|US_52
   network: ws
   port: 80
   server: TM_AZARBAYJAB1.SERV.9.pagES.DEV
@@ -2731,12 +2799,25 @@ proxies:
     path: /dyajvws
 - alterId: 0
   cipher: auto
+  name: 371,372,400|未知11
+  network: ws
+  port: '80'
+  server: turk1.net.net
+  servername: TM_AZARBAYJAB1.new.99.workers.dev
+  tls: false
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  ws-opts:
+    headers:
+      Host: tr1-smart.adelping.com.
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
+- alterId: 0
+  cipher: auto
   delay: 1869
   name: '371,372,385,392|🇺🇸 US美国(mibei77.com 米贝节点分享) #28'
   network: ws
   port: '80'
   server: turk1.net.net
-  servername: TM_AZARBAYJAB1.new.99.workers.dev
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -2748,52 +2829,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '371,372|美国 CloudFlare节点 #5'
+  name: 371,372,400|未知3
   network: ws
   port: '8080'
-  server: 172.64.149.182
+  server: 104.21.69.44
   servername: ''
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
-      Host: nasnet-5712964102.sharghdaily.co
+      Host: nasnet-511952424.mcitel.co
     path: /nasnet/cdn
 - alterId: 0
   cipher: auto
-  name: 371,372,400|美国_021804197
-  network: ws
-  port: '8443'
-  server: dll.avaaaal.ir
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 725f5fcd-721d-40a0-ba6b-3c7477633110
-  ws-opts:
-    headers:
-      Host: cdge.avaaaal.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 371,372,392,400,410|VMESS->-NF-ChatGPT-YouTube-t1....
-  network: ws
-  port: 8443
-  server: t1.620720.xyz
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      Host: t1.620720.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '374|美国 CloudFlare节点 #8'
+  name: '374|美国 CloudFlare节点 #6'
   network: ws
   port: 2095
   server: 172.64.194.234
@@ -2806,7 +2856,7 @@ proxies:
     path: /hgcefomn
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #9'
+  name: '374|美国 CloudFlare节点 #7'
   network: ws
   port: 8880
   server: 141.101.123.18
@@ -2819,7 +2869,7 @@ proxies:
     path: /qwer
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #10'
+  name: '374|美国 CloudFlare节点 #8'
   network: ws
   port: 8080
   server: 198.41.218.144
@@ -2833,7 +2883,7 @@ proxies:
     path: /qwer01
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #11'
+  name: '374|美国 CloudFlare节点 #9'
   network: ws
   port: 8080
   server: 162.159.241.157
@@ -3012,15 +3062,6 @@ proxies:
     headers:
       Host: jjki.ae1autumn.us.ci
     path: /djA07iUsSp0K2Fo4gds7cXpDB5nO5
-- alterId: 2
-  cipher: auto
-  name: '392,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #102'
-  network: tcp
-  port: '30808'
-  server: v8.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: 392,400|未知_0218047129
@@ -3430,7 +3471,7 @@ proxies:
     path: /KHtPvNZl371C8NsbbZ1wwDhJ3
 - alterId: 0
   cipher: auto
-  name: '400|美国 CloudFlare节点 #12'
+  name: '400|美国 CloudFlare节点 #10'
   network: ws
   port: '443'
   server: jjjmki.930.pp.ua
@@ -3727,7 +3768,7 @@ proxies:
     path: /NASNET/cdn
 - alterId: 0
   cipher: auto
-  name: '400|美国 CloudFlare节点 #13'
+  name: '400|美国 CloudFlare节点 #11'
   network: ws
   port: 443
   server: 172.67.178.212
@@ -3818,16 +3859,77 @@ proxies:
     headers:
       Host: llllllllo.890404.indevs.in
     path: /vitRvGVofV7ia41dH
-- name: 404|🇺🇸 美国 | USA
-  password: becdd31e-1c8c-4969-9e6c-d8bc9f084911
-  port: 25501
+- name: '404|🇺🇸 美国 | USA #1'
+  password: 4250b3bb-d1ae-4e77-bf71-4069e0d2c383
+  port: 35502
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #2'
+  password: ba222255-00e9-434d-88f0-e0c22ac529f4
+  port: 35501
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #4'
+  password: 87ef3106-bf19-4f1c-b5e9-2fb51ed25f92
+  port: 25502
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: true
   sni: cdnfire.xiaomispeed.com
   type: trojan
-- name: '404|🇺🇸 美国 | USA #3'
-  password: 1f79c194-37cf-419d-994e-8d17136abb45
-  port: 35502
+- name: '404|🇺🇸 美国 | USA #5'
+  password: fe040a20-827e-42eb-994f-ec16d4ae5aa4
+  port: 35501
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #6'
+  password: adf2550f-8b87-4ea1-aa80-e7fc8f65a68a
+  port: 35501
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '404|🇺🇸 美国 | USA #7'
+  network: ws
+  port: '80'
+  server: x3e.o09.indevs.in
+  tls: false
+  type: vmess
+  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+  ws-opts:
+    headers:
+      Host: X3e.O09.inDEVS.In
+    path: /GgigazFGDLgFWDItkD5XgXAL
+- alterId: 0
+  cipher: auto
+  name: '404|🇺🇸 美国 | USA #9'
+  network: ws
+  port: '80'
+  server: zs.o1o.indevs.in
+  tls: false
+  type: vmess
+  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+  ws-opts:
+    headers:
+      Host: ZS.O1o.iNdEvs.IN
+    path: /GgigazFGDLgFWDItkD5XgXAL
+- name: '404|🇺🇸 美国 | USA #10'
+  password: f063dee0-f33c-4e6c-83f9-4d884b62ba9e
+  port: 443
+  server: h7uj.iran2026.indevs.in
+  skip-cert-verify: false
+  sni: h7uj.iran2026.indevs.in
+  type: trojan
+- name: '404|🇺🇸 美国 | USA #11'
+  password: 04e5b584-1850-483d-a844-9ad624a4ca8e
+  port: 35501
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
@@ -3836,39 +3938,49 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: ZIVRTHcp4rPi9Y6FZ1lQ3tm2QKVY
-  name: '404|🇺🇸 美国 | USA #4'
+  name: '404|🇺🇸 美国 | USA #12'
   network: grpc
   port: '443'
-  server: nmkh.iran2026.indevs.in
+  server: h7uj.iran2026.indevs.in
   tls: true
   type: vmess
   uuid: f063dee0-f33c-4e6c-83f9-4d884b62ba9e
-- name: '404|🇺🇸 美国 | USA #5'
-  password: 852a0251-7fbd-4a07-a365-352695af950c
-  port: 35502
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '404|🇺🇸 美国 | USA #6'
-  password: 4250b3bb-d1ae-4e77-bf71-4069e0d2c383
-  port: 35501
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: '404|🇺🇸 美国 | USA #8'
-  network: tcp
-  port: '30804'
-  server: 144.48.186.104
+  name: '404|🇺🇸 美国 | USA #13'
+  network: ws
+  port: '80'
+  server: t65.o1o.indevs.in
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '404|🇺🇸 美国 | USA #10'
-  password: 36325a98-46a4-4770-977a-9a9570e0bcc6
+  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+  ws-opts:
+    headers:
+      Host: t65.o1O.inDEVS.In
+    path: /GgigazFGDLgFWDItkD5XgXAL
+- name: '404|🇺🇸 美国 | USA #15'
+  password: 47d9af53-24a8-4593-a439-a73b88ad53ae
   port: 35501
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '404|🇺🇸 美国 | USA #16'
+  network: ws
+  port: '443'
+  server: vvvbnhj.191288.xyz
+  tls: true
+  type: vmess
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-opts:
+    headers:
+      Host: VvvbnhJ.191288.xyZ
+    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
+- name: '404|🇺🇸 美国 | USA #18'
+  password: 6f038cee-6ba1-4941-bce5-de1969f37405
+  port: 35502
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
