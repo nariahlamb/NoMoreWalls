@@ -1,6 +1,54 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 47|🇸🇬 新加坡NO.1
+  port: 45054
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
+- alterId: 0
+  cipher: auto
+  name: 47|🇸🇬 新加坡NO.2
+  port: 45055
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
+- auth: 36771992-8df4-4d2c-b4f1-36f5c584f406
+  name: 47|🇸🇬 新加坡-1
+  password: 36771992-8df4-4d2c-b4f1-36f5c584f406
+  port: 30001
+  server: oracle-amd-singapore1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: main.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 47|🇸🇬 新加坡05极速节点|油管速度优化
+  network: ws
+  port: 80
+  server: yx.sulink.one
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
+  ws-opts:
+    headers:
+      Host: sg05.sulink.one
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇸🇬 新加坡1SS移动直连
+  password: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
+  port: 12343
+  server: sg6.sulink.one
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
   name: 85|🇸🇬 No.683_SG_x1.00_Amazon_新加坡@...
   network: ws
   port: 8080
@@ -800,7 +848,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '262,383,395,400|9|SG #2'
+- name: 262,383,395|SG
   password: e7965e64-e001-4e8c-8273-39c61ff4a094
   port: 30000
   server: sg3.oomz.ru
@@ -996,7 +1044,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 294|🇸🇬 新加坡NO.2
+  name: '294|🇸🇬 新加坡NO.2 #1'
   port: 45055
   server: xdd.dashuai.cyou
   tls: false
@@ -1019,7 +1067,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 294|🇸🇬 新加坡NO.1
+  name: '294|🇸🇬 新加坡NO.1 #1'
   port: 45054
   server: haa.dashuai.cyou
   tls: false
@@ -1115,18 +1163,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 2
-  cipher: auto
-  country: IR
-  h2-opts: {}
-  http-opts: {}
-  name: 353|Relay_IR-SG_18
-  network: tcp
-  port: 30845
-  server: 151.242.183.218
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 365|新加坡_新加坡
   network: ws
   port: 32101
@@ -2213,11 +2249,11 @@ proxies:
   sni: ''
   type: trojan
 - delay: 1170
-  name: 385,400|🇸🇬 新加坡2|@stairnode
+  name: 385|新加坡 - 新加坡 - M247 Europe SRL - ...
   password: 9372cb81c7b0ad903f91f2f8a4d3f02b
   port: 3901
   server: 153.121.39.240
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
   udp: true
@@ -2272,429 +2308,31 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|🇸🇬 新加坡|@stairnode
-  password: 9372cb81c7b0ad903f91f2f8a4d3f02b
-  port: 3901
-  server: 160.16.89.176
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 400|🇸🇬 新加坡3|@stairnode
-  password: BxceQaOe
-  port: 3127
-  server: 43.207.67.101
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 400|🇸🇬SG_81
-  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
-  port: 443
-  server: sg-full.privateip.net
-  sni: sg-full.privateip.net
-  type: trojan
-- name: 400|🇸🇬 新加坡 | SGP 3
-  network: ws
-  port: 443
-  server: 104.18.46.78
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 0194f069-ebfd-49c2-b90f-bd9b1412c2b0
-  ws-opts:
-    headers:
-      Host: pa-7oa.pages.dev
-    path: '%2F'
-- name: 400|🇸🇬SG
-  network: ws
-  port: 35549
-  server: 151.242.183.220
-  servername: WangCai.443888.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: WangCai.443888.xyz
-    path: '%2Fdanfeng%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
-- name: '400|🇸🇬SG #1'
-  network: ws
-  port: 443
-  server: 165.22.99.110
-  servername: WangCai.443888.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: WangCai.443888.xyz
-    path: '%2Fdanfeng%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
-- name: 400|🇸🇬SG_8 | ⬇️ 1.5MB/s
-  network: ws
-  port: 443
-  server: 193.124.189.103
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: WangCai.443888.xyz
-    path: '%2Fdanfeng%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|🇸🇬SG_13 | ⬇️ 4.2MB/s
-  network: ws
-  port: 443
-  server: 212.22.76.14
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: WangCai.443888.xyz
-    path: '%2Fdanfeng%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|🇸🇬SG_11 | ⬇️ 1.2MB/s
-  network: ws
-  port: 443
-  server: 212.22.76.17
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: WangCai.443888.xyz
-    path: '%2Fdanfeng%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|🇸🇬SG_10 | ⬇️ 3.7MB/s
-  network: ws
-  port: 443
-  server: 212.22.76.18
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: WangCai.443888.xyz
-    path: '%2Fdanfeng%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|🇸🇬SG_12 | ⬇️ 4.3MB/s
-  network: ws
-  port: 443
-  server: 212.22.76.20
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: WangCai.443888.xyz
-    path: '%2Fdanfeng%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|🇸🇬SG_14 | ⬇️ 4.7MB/s
-  network: ws
-  port: 443
-  server: 217.163.76.127
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: WangCai.443888.xyz
-    path: '%2Fdanfeng%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: '400|🇸🇬SG #2'
-  network: ws
-  port: 8443
-  server: 104.234.151.10
-  servername: sni.jpmj.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 400|🇸🇬SG_1
-  network: ws
-  port: 443
-  server: 13.250.31.132
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: '400|🇸🇬SG #3'
-  network: ws
-  port: 443
-  server: 134.209.96.76
-  servername: sni.jpmj.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 400|SG新加坡(mibei77.com 米贝节点分享)-002
-  network: ws
-  port: 17465
-  server: 138.2.95.33
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|YouTube顺丰资源 新加坡_23
-  network: ws
-  port: 443
-  server: 139.162.9.101
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: '400|🇸🇬SG #4'
-  network: ws
-  port: 443
-  server: 158.178.229.178
-  servername: sni.jpmj.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 400|YouTube顺丰资源 新加坡_9
-  network: ws
-  port: 443
-  server: 159.138.138.87
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: 400|YouTube顺丰资源 新加坡_6
-  network: ws
-  port: 443
-  server: 167.71.192.89
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: 400|SG新加坡(mibei77.com 米贝节点分享)-005
-  network: ws
-  port: 2096
-  server: 185.159.247.138
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: '400|🇸🇬SG #5'
-  network: ws
-  port: 50791
-  server: 194.127.193.240
-  servername: sni.jpmj.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- client-fingerprint: chrome
-  name: 400|🇸🇬_新加坡
-  network: ws
-  port: 2096
-  server: 27.50.48.138
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    path: '%2F'
-- name: 400|SG_橘子电报频道@juzibaipiao-006
-  network: ws
-  port: 2096
-  server: 27.50.48.238
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: 400|🇸🇬SG_2
-  network: ws
-  port: 443
-  server: 38.180.249.123
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 400|🇸🇬SG-006-2
-  network: ws
-  port: 443
-  server: 43.160.195.223
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 400|🇸🇬SG-008
-  network: ws
-  port: 443
-  server: 43.163.90.17
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- client-fingerprint: chrome
-  name: '400|🇸🇬_新加坡 #1'
-  network: ws
-  port: 443
-  server: 43.165.183.43
-  servername: sni.111000.dynv6.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    path: '%2F'
-- name: 400|🇸🇬SG-014
-  network: ws
-  port: 443
-  server: 45.77.35.218
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: '400|🇸🇬SG #6'
-  network: ws
-  port: 8443
-  server: 51.79.158.58
-  servername: sni.jpmj.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 400|SG VLESS-105 | free-nodes
-  network: tcp
-  port: 59100
-  server: 47.82.1.12
-  tls: false
-  type: vless
-  uuid: ca0e8520-42cd-49db-cfec-1295834b9e21
-- alterId: 32
+- alterId: 0
   cipher: auto
-  name: 400|SG新加坡(mibei77.com 米贝节点分享)
+  name: 404|🇸🇬 新加坡 | SGP
   network: ws
   port: '443'
-  server: vc.fly.dev
-  servername: vc.fly.dev
+  server: sg.ok12345.ggff.net
   tls: true
   type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  uuid: f14838ee-8ed6-449f-ab12-6059d96133a6
   ws-opts:
     headers:
-      Host: vc.fly.dev
-    path: /vc
-- alterId: 0
-  cipher: auto
-  name: '400|🇸🇬_新加坡 #2'
-  network: tcp
-  port: '35034'
-  server: 165.154.195.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-- alterId: 0
-  cipher: auto
-  name: 400|🇸🇬 SG_80
-  network: ws
-  port: 443
-  server: n1761214911.74qxv.top
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
-  ws-opts:
-    headers:
-      Host: ''
+      Host: duiahw.1buigujj.ggff.net
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|🇸🇬_SG_新加坡
-  network: ws
-  port: 443
-  server: 128.199.128.117
-  servername: sg.dalxy.eu.org
-  tls: true
-  type: vmess
-  uuid: a88a71fa-ed7c-48d3-89e0-74a00d605d88
-  ws-opts:
-    headers:
-      Host: sg.dalxy.eu.org
-    path: a88a71fa-ed7c-48d3-89e0-74a00d605d88-vm
-- alterId: 0
-  cipher: auto
-  name: 400|新加坡_021918364
+  name: '404|🇸🇬 新加坡 | SGP #2'
   network: ws
   port: '443'
-  server: n1747624271.lie5d.cyou
-  servername: ''
+  server: sg.ok12345.ggff.net
   tls: true
   type: vmess
-  uuid: a231ba8b-8871-416c-813b-e2240bc66bb2
+  uuid: def25d80-96fd-441c-b86e-1ae33acc1348
   ws-opts:
     headers:
-      Host: n1747624271.lie5d.cyou
+      Host: duiahw.1buigujj.ggff.net
     path: /
 - alterId: 0
   cipher: auto
