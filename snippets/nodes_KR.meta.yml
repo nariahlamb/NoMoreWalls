@@ -207,7 +207,7 @@ proxies:
   sni: appsvs.shop
   type: trojan
 - down: 10000
-  name: 335|韩国KR-HY2
+  name: 334|韩国KR-HY2
   password: ba001863-ddd0-4beb-8933-8a75a898c7ec
   port: 1443
   server: kr.mjhy2.com
@@ -219,7 +219,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 335|韩国KR-A
+  name: 334|韩国KR-A
   password: ba001863-ddd0-4beb-8933-8a75a898c7ec
   port: 1664
   server: a.mjanyt.com
@@ -228,7 +228,7 @@ proxies:
   type: anytls
   udp: true
 - down: 10000
-  name: '340,341,342|韩国KR-HY2 #3'
+  name: '339,340,341|韩国KR-HY2 #3'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1443
   server: kr.mjhy2.com
@@ -240,7 +240,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '340,341,342|韩国KR-A #3'
+  name: '339,340,341|韩国KR-A #3'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1664
   server: a.mjanyt.com
@@ -753,47 +753,6 @@ proxies:
     headers:
       Host: WangCai.443888.xyz
     path: '%2Fdanfeng%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 400|🇰🇷_韩国
-  network: tcp
-  port: 15416
-  reality-opts:
-    public-key: H0oYX4GJe45zWXvrPdMzSKhmmrd2aqKFEk1Z2Dy9SBM
-    short-id: bd997a55
-  server: 3.34.255.72
-  servername: www.lamer.com.sg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 399a4aac-e5ed-44b6-ac00-4f0d02f72537
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '400|🇰🇷_韩国 #1'
-  network: tcp
-  port: 15416
-  reality-opts:
-    public-key: H0oYX4GJe45zWXvrPdMzSKhmmrd2aqKFEk1Z2Dy9SBM
-    short-id: bd997a55
-  server: 54.180.239.170
-  servername: www.lamer.com.sg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 399a4aac-e5ed-44b6-ac00-4f0d02f72537
-- client-fingerprint: chrome
-  name: 400|KR VLESS-55 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 47.80.11.87
-  servername: api.company-target.com
-  tls: false
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-  ws-opts:
-    path: /
 - name: 400|YouTube顺丰资源 韩国_40
   network: ws
   port: 65432
@@ -806,19 +765,6 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: '400|🇰🇷_韩国 #2'
-  network: ws
-  port: 30075
-  server: 106.248.211.16
-  servername: sni.111000.v6.navy
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40wangcai2'
 - name: '400|🇰🇷KR #2'
   network: ws
   port: 443
@@ -836,18 +782,6 @@ proxies:
   network: ws
   port: 16058
   server: 14.32.3.193
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: 400|🇰🇷KR_9
-  network: ws
-  port: 25565
-  server: 150.109.236.191
   servername: ''
   tls: true
   type: vless
@@ -880,6 +814,18 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- client-fingerprint: chrome
+  name: 400|🇰🇷_韩国
+  network: ws
+  port: 12312
+  server: 211.48.77.114
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
 - name: 400|🇰🇷韩国节点
   network: ws
   port: 50001

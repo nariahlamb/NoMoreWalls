@@ -422,7 +422,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 335|德国-优化
+  name: 334|德国-优化
   network: ws
   port: 16644
   server: planb.mojcn.com
@@ -438,7 +438,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 335|德国-优化2
+  name: 334|德国-优化2
   network: ws
   port: 16644
   server: m.cnmjin.net
@@ -454,7 +454,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '340,341,342|德国-优化 #3'
+  name: '339,340,341|德国-优化 #3'
   network: ws
   port: 16644
   server: planb.mojcn.com
@@ -470,7 +470,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '340,341,342|德国-优化2 #3'
+  name: '339,340,341|德国-优化2 #3'
   network: ws
   port: 16644
   server: m.cnmjin.net
@@ -514,11 +514,13 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_34
+  name: 350,400|🇩🇪 DE_34
   network: none
   port: 18355
   server: 92.246.87.170
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
   ws-path: /
@@ -712,15 +714,6 @@ proxies:
   udp: true
 - alpn:
   - http/1.1
-  name: 400|DE TROJAN-49 | free-nodes
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 3.124.221.203
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
   name: 400|DE TROJAN-31 | free-nodes
   network: tcp
   password: telegram-id-directvpn
@@ -728,26 +721,29 @@ proxies:
   server: 35.157.96.104
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '400|🇩🇪_德国 #22'
-  network: xhttp
-  port: '80'
-  server: 94.130.132.223
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0ecc93f5-f30d-47a2-a763-3efeb2a00cc8
-- alterId: 0
-  cipher: auto
-  name: '400|🇩🇪_德国 #23'
+- alpn:
+  - http/1.1
+  name: 400|DE TROJAN-50 | free-nodes
   network: tcp
-  port: '18355'
-  server: 92.246.87.170
+  password: telegram-id-directvpn
+  port: 22223
+  server: 63.183.70.214
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '400|🇩🇪_德国 #9'
+  network: ws
+  port: '80'
+  server: 185.104.189.38
   servername: ''
   tls: false
   type: vmess
-  uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  ws-opts:
+    headers:
+      Host: 185.104.189.38
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
 - alterId: 0
   cipher: auto
   name: 400|德国 051
