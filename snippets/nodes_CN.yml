@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '227,397|🇭🇰 香港2|@ripaojiedian #2'
+  name: '226,397|🇭🇰 香港2|@ripaojiedian #2'
   port: 9006
   server: select-hk.ddnskunlun.com
   skip-cert-verify: false
@@ -10,9 +10,9 @@ proxies:
   uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
 - alterId: 0
   cipher: auto
-  name: '227,383,392,395,398|香港2|@ripaojiedian #1'
+  name: '226,260,383,392,395,398,400|12|🇭🇰 香港2|@ripaojiedian #2'
   network: tcp
-  port: '9006'
+  port: 9006
   server: select-hk.ddnskunlun.com
   servername: ''
   tls: false
@@ -20,7 +20,7 @@ proxies:
   uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
 - alterId: 2
   cipher: auto
-  name: 227,395|US4｜机房｜低风险
+  name: '226,392,395,400|US4｜机房｜低风险 #1'
   network: tcp
   port: '30808'
   server: v8.hdacd.com
@@ -29,7 +29,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 227,395|US7｜机房｜低风险
+  name: '226,392,395,400|US7｜机房｜低风险 #1'
   network: tcp
   port: '30829'
   server: v29.hdacd.com
@@ -38,7 +38,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 227,395|US20｜机房｜低风险
+  name: '226,392,395,400|US20｜机房｜低风险 #1'
   network: tcp
   port: '30809'
   server: v9.hdacd.com
@@ -47,7 +47,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 227,395|FR9｜机房｜低风险
+  name: '226,395,400|FR9｜机房｜低风险 #1'
   network: tcp
   port: '30835'
   server: v35.hdacd.com
@@ -56,7 +56,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 227,395|GB18｜机房｜低风险
+  name: '226,395,400,404|🇬🇧 英国 | GBR #1'
   network: tcp
   port: '30836'
   server: v36.hdacd.com
@@ -65,7 +65,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: '227,395,404|🇺🇸 美国 | USA #8'
+  name: '226,395,400|US54｜机房｜低风险 #1'
   network: tcp
   port: '30804'
   server: v4.hdacd.com
@@ -74,7 +74,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: 283|🇨🇳 CN 030 |  18.0MB/s
+  name: 282|🇨🇳 CN 030 |  18.0MB/s
   port: 26122
   server: ppy-boardv2.02ijp4uos1.download
   skip-cert-verify: true
@@ -84,7 +84,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 291| 🇨🇳 China 1 TG:@nodpai
+  name: 290| 🇨🇳 China 1 TG:@nodpai
   port: 43920
   server: 183.238.90.3
   skip-cert-verify: true
@@ -95,7 +95,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 291| 🇨🇳 China 2 TG:@nodpai
+  name: 290| 🇨🇳 China 2 TG:@nodpai
   port: 34965
   server: 120.232.153.71
   skip-cert-verify: true
@@ -119,13 +119,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  country: CN
-  name: 353|CN_02
-  password: ec8a5fb8-3a94-48a6-890a-4a80aa70b501
-  port: 39322
-  server: 120.233.205.20
-  type: ss
 - alterId: 64
   cipher: auto
   name: '367|中国_广州市 #1'
@@ -747,13 +740,29 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
+- name: 400|🇨🇳 CN_30
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: a03.taipeicitygovernment.cn.ua
+  sni: a03.taipeicitygovernment.cn.ua
+  type: trojan
+- name: 400|🇨🇳 CN_31
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 30534
+  server: 36.151.251.36
+  sni: 36.151.251.36
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 544|CN【机场推荐：https://a0a.xyz】8
-  network: tcp
-  port: '30830'
-  server: v30.hdacd.com
+  name: 400|github.com/freefq - 广东省移动 7
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
   servername: ''
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
