@@ -1374,29 +1374,22 @@ proxies:
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
-- cipher: chacha20-ietf
-  country: HK
-  name: 353|Relay_HK-HK_07
-  password: asd123456
-  port: 8388
-  server: 103.149.182.105
-  type: ss
-- cipher: chacha20-ietf
-  country: HK
-  name: 353|Pool_HK_08
-  password: asd123456
-  port: 8388
-  server: 103.141.221.124
-  type: ss
 - cipher: aes-256-cfb
   country: HK
-  name: 353|HK_09
+  name: 353|HK_07
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 203.23.128.33
   type: ss
+- cipher: chacha20-ietf
+  country: HK
+  name: 353|HK_08
+  password: asd123456
+  port: 8388
+  server: 103.149.183.200
+  type: ss
 - country: HK
-  name: 353|HK_11
+  name: 353|HK_10
   password: BxceQaOe
   port: 443
   server: 58.152.25.208
@@ -1780,6 +1773,13 @@ proxies:
   server: v1.littlexing.eu.org
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
+  type: trojan
+- name: 392,400|🇨🇳广东2
+  password: 736cd94d-7b94-3e44-8106-3419f64eaf09
+  port: 3462
+  server: a12.taipeicitygovernment.org.ua
+  skip-cert-verify: false
+  sni: 45.32.28.232
   type: trojan
 - name: '392|🇭🇰 HK香港(mibei77.com 米贝节点分享) #4'
   password: bef1e608-83df-4935-8169-8a345f5643e9
@@ -2249,27 +2249,6 @@ proxies:
     headers:
       Host: n1761214910.74qxv.top
     path: /
-- name: 404|🇭🇰 香港 | HKG
-  password: ba91057d-2ad0-41f0-b87b-9c4113838d10
-  port: 21115
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: '404|🇭🇰 香港 | HKG #5'
-  password: ba91057d-2ad0-41f0-b87b-9c4113838d10
-  port: 21103
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: '404|🇭🇰 香港 | HKG #6'
-  password: 1d4d896c-9d29-4a8f-8f26-eff82759e650
-  port: 21102
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 411|香港（直连）
