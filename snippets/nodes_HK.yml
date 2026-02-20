@@ -722,19 +722,19 @@ proxies:
     path: /stream?ed=2048
 - alterId: 2
   cipher: auto
-  name: '228,397|🇭🇰 香港|@ripaojiedian #2'
+  name: '227,397|🇭🇰 香港|@ripaojiedian #2'
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '228,262,383,392,395,397,398|香港3|@ripaojiedian #1'
+- name: '227,262,383,392,395|🇭🇰 香港3|@ripaojiedian #1'
   network: tcp
   password: 64a59181551b5773e390bd717a7b7c06
   port: 443
   server: 58.152.53.227
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - alterId: 2
@@ -742,7 +742,7 @@ proxies:
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: '228,262,353,383,392,395,398|香港|@ripaojiedian #1'
+  name: '227,262,353,383,392,395,398|香港|@ripaojiedian #1'
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -751,6 +751,14 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '227,395,397,398|香港4|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 3292
+  server: 43.198.82.55
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 278|🇭🇰1 |  3.5MB/s
   password: WfmxKX2FBJRU0Ie9VLIYDL
@@ -1227,13 +1235,6 @@ proxies:
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
-- cipher: aes-256-cfb
-  country: HK
-  name: 353|HK_10
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 203.23.128.33
-  type: ss
 - cipher: chacha20-ietf
   country: HK
   name: 353|Pool_HK_11
@@ -1248,8 +1249,22 @@ proxies:
   port: 8388
   server: 103.149.182.105
   type: ss
+- cipher: chacha20-ietf
+  country: HK
+  name: 353|HK_13
+  password: asd123456
+  port: 8388
+  server: 103.149.183.200
+  type: ss
+- cipher: aes-256-cfb
+  country: HK
+  name: 353|HK_14
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 203.23.128.33
+  type: ss
 - country: HK
-  name: 353|HK_15
+  name: 353|HK_17
   password: BxceQaOe
   port: 443
   server: 58.152.25.208
@@ -1272,6 +1287,15 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '397|🇭🇰 香港2|@ripaojiedian #2'
+  port: 9006
+  server: select-hk.ddnskunlun.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1338,17 +1362,3 @@ proxies:
   skip-cert-verify: true
   sni: hk12.bilibili.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 544|HK【机场推荐：https://a0a.xyz】36
-  network: ws
-  port: '443'
-  server: n1761214915.mv7wh.tech
-  servername: n1761214915.mv7wh.tech
-  tls: true
-  type: vmess
-  uuid: 1f2daf43-ff90-4df9-9276-dfb8486d72bc
-  ws-opts:
-    headers:
-      Host: n1761214915.mv7wh.tech
-    path: /

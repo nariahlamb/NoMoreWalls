@@ -230,7 +230,25 @@ proxies:
     path: /
   ws-path: /
 - country: CA
-  name: 353|Pool_CA_01
+  name: 353|CA_01
+  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+  port: 10889
+  server: 167.17.185.228
+  skip-cert-verify: true
+  sni: web.max
+  type: trojan
+  udp: true
+- country: CA
+  name: 353|Pool_CA_02
+  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+  port: 10889
+  server: 167.17.185.172
+  skip-cert-verify: true
+  sni: web.max.ru
+  type: trojan
+  udp: true
+- country: CA
+  name: 353|Pool_CA_03
   password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
   port: 10889
   server: 167.17.185.169
@@ -238,18 +256,9 @@ proxies:
   sni: ya.ru
   type: trojan
   udp: true
-- country: CA
-  name: 353|Pool_CA_02
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  port: 10889
-  server: 167.17.185.152
-  skip-cert-verify: true
-  sni: ozon.ru
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   country: IR
-  name: 353|Relay_IR-CA_19
+  name: 353|Relay_IR-CA_25
   password: 13df5feb-756e-4627-bcee-497f3c81bab4
   port: 42295
   server: f.sdnlv0.cn
@@ -4572,17 +4581,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
-- alterId: 0
-  cipher: auto
-  name: 544|CA【机场推荐：https://a0a.xyz】12
-  network: ws
-  port: '443'
-  server: usa.spacegate.ir
-  servername: usa.spacegate.ir
-  tls: true
-  type: vmess
-  uuid: a9402592-434d-4599-974d-5f46f9fe205b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
