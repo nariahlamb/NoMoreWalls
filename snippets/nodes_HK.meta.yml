@@ -253,12 +253,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- name: '89,343|🇭🇰 HK_1|6.7MB/s|YT-HK|NF|D+|4% #1'
-  password: b2ca8061-cf93-403f-a150-c26fb26610f7
-  port: 11264
-  server: 141.11.148.100
-  skip-cert-verify: true
-  type: anytls
 - alterId: 0
   cipher: auto
   name: '90,345|香港NO.2 #1'
@@ -814,7 +808,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: 262,371,372,400|11|🇭🇰 香港2|@ripaojiedian
+  name: 262,400|11|🇭🇰 香港2|@ripaojiedian
   network: tcp
   port: 9006
   server: select-hk.ddnskunlun.com
@@ -1374,19 +1368,19 @@ proxies:
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
-- cipher: chacha20-ietf
-  country: HK
-  name: 353|Pool_HK_08
-  password: asd123456
-  port: 8388
-  server: 103.141.221.124
-  type: ss
 - cipher: aes-256-cfb
   country: HK
-  name: 353|HK_09
+  name: 353|HK_08
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 203.23.128.33
+  type: ss
+- cipher: chacha20-ietf
+  country: HK
+  name: 353|Pool_HK_09
+  password: asd123456
+  port: 8388
+  server: 103.149.183.113
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: HK
@@ -1395,15 +1389,8 @@ proxies:
   port: 18685
   server: 62.60.233.220
   type: ss
-- cipher: chacha20-ietf
-  country: HK
-  name: 353|HK_11
-  password: asd123456
-  port: 8388
-  server: 103.149.183.200
-  type: ss
 - country: HK
-  name: 353|HK_13
+  name: 353|HK_12
   password: BxceQaOe
   port: 443
   server: 58.152.25.208
@@ -2281,34 +2268,30 @@ proxies:
     headers:
       Host: n1761214910.74qxv.top
     path: /
-- name: '404|🇭🇰 香港 | HKG #1'
-  password: 05253b1b-4edf-4e28-9333-2cf2f3f7abd4
+- name: 404|🇭🇰 香港 | HKG
+  password: 20e100a2-b1d3-463a-8313-a40441fc32b9
   port: 21115
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: true
   sni: cdnfire.xiaomispeed.com
   type: trojan
-- name: '404|🇭🇰 香港 | HKG #2'
-  password: 404a30bd-e140-4462-a53c-26b23de6db9f
-  port: 21101
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: '404|🇭🇰 香港 | HKG #4'
-  password: 6aae0bd4-0507-41f7-aeb7-e5d203d29d5b
+- name: '404|🇭🇰 香港 | HKG #3'
+  password: 8fbc8af5-01b1-4825-a42d-9e190287248f
   port: 21115
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: true
   sni: cdnfire.xiaomispeed.com
   type: trojan
 - name: '404|🇭🇰 香港 | HKG #5'
-  password: 404a30bd-e140-4462-a53c-26b23de6db9f
-  port: 21115
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
+  obfs: salamander
+  obfs-password: salamander
+  password: 6dfbef3b-f718-4053-806f-c9657e2fd943
+  port: 12344
+  server: hkfree.jljd.xyz
+  skip-cert-verify: false
+  sni: hkfree.jljd.xyz
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: 411|香港（直连）
