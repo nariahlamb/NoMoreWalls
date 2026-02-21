@@ -791,29 +791,19 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- alterId: 2
-  cipher: auto
-  name: '228,397|🇭🇰 香港|@ripaojiedian #2'
-  port: 30807
-  server: v10.hdacd.com
-  skip-cert-verify: false
+- name: 262,383,395,400|8| HK
+  password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
+  port: 443
+  server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
+  sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 228,262,392,400|11,12|香港4|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 3292
-  server: 43.198.82.55
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
+  type: hysteria2
 - alterId: 2
   cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 228,262,353,383,392,395,398,400|11|🇭🇰 香港|@ripaojiedian
+  name: 262,353,383,392,395,398,400|11|🇭🇰 香港|@ripaojiedian
   network: tcp
   port: 30807
   server: v10.hdacd.com
@@ -822,13 +812,40 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 262,383,395,400|8| HK
-  password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-  port: 443
-  server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
-  sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
+- alterId: 0
+  cipher: auto
+  name: 262,371,372,400|11|🇭🇰 香港2|@ripaojiedian
+  network: tcp
+  port: 9006
+  server: select-hk.ddnskunlun.com
+  servername: ''
   tls: false
-  type: hysteria2
+  type: vmess
+  uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+- name: 262,400|11,12|香港3|@ripaojiedian
+  network: tcp
+  password: 64a59181551b5773e390bd717a7b7c06
+  port: 2255
+  server: 57.180.15.244
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 262,400|11,12|香港4|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 3292
+  server: 43.198.82.55
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 262,400|11,12|香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 3292
+  server: 52.195.228.102
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - client-fingerprint: random
   flow: xtls-rprx-vision
   name: 262,383,395,400|13|HK_speednode_0002
@@ -1357,22 +1374,36 @@ proxies:
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
+- cipher: chacha20-ietf
+  country: HK
+  name: 353|Pool_HK_08
+  password: asd123456
+  port: 8388
+  server: 103.141.221.124
+  type: ss
 - cipher: aes-256-cfb
   country: HK
-  name: 353|HK_13
+  name: 353|HK_09
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 203.23.128.33
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: HK
-  name: 353|HK_14
+  name: 353|HK_10
   password: ixfXBq6dfMQQFiEz6PBcTy
   port: 18685
   server: 62.60.233.220
   type: ss
+- cipher: chacha20-ietf
+  country: HK
+  name: 353|HK_11
+  password: asd123456
+  port: 8388
+  server: 103.149.183.200
+  type: ss
 - country: HK
-  name: 353|HK_16
+  name: 353|HK_13
   password: BxceQaOe
   port: 443
   server: 58.152.25.208
@@ -1757,7 +1788,7 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
-- name: '383,395,397,398|香港3|@ripaojiedian #1'
+- name: '383,392,395,397,398|香港3|@ripaojiedian #1'
   network: tcp
   password: 64a59181551b5773e390bd717a7b7c06
   port: 4856
@@ -1765,7 +1796,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '383,395,397,398|香港4|@ripaojiedian #1'
+- name: '383,392,395,397,398|香港4|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 2826
@@ -1773,7 +1804,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '383,395,397,398|香港5|@ripaojiedian #1'
+- name: '383,392,395,397,398|香港5|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 54548
@@ -1781,85 +1812,9 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 392,400|台湾_022104003+L0
-  password: 852a0251-7fbd-4a07-a365-352695af950c
-  port: 31103
-  server: 220.130.58.136
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '392,400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #30'
-  password: bef1e608-83df-4935-8169-8a345f5643e9
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 392,400|🇭🇰HK香港
-  password: trojan
-  port: 8443
-  server: 109.234.211.66
-  skip-cert-verify: false
-  sni: store.timimi.dpdns.org
-  type: trojan
-- name: 392,395,400|🇭🇰HK香港3
-  password: 858fc0a5-69ad-48e3-8c6d-e4375cca8fc9
-  port: 31102
-  server: 220.130.58.136
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '392,400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #31'
-  network: ws
-  port: '12883'
-  server: gtm1.ktmwan.net
-  tls: false
-  type: vmess
-  uuid: 3ac9d436-f213-421d-9644-a94686ee9fba
-  ws-opts:
-    headers:
-      Host: gtm1.ktmwan.net
-    path: /
-- name: 392,400|台湾_022104007+L0
-  password: 20a3d819-ca7f-48a6-ba20-f7021e8dbbbe
-  port: 31103
-  server: 220.130.58.136
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '392,400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #33'
-  network: tcp
-  port: '30824'
-  server: v24.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: '392,395,400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #32'
-  network: tcp
-  port: '30809'
-  server: v9.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '395,400|HK29｜机房｜低风险 #1'
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D
-  password: 395b3e3c-5713-4852-99b8-3d4702e5a5e6
-  port: 443
-  server: wqxg.wqtd.mom
-  skip-cert-verify: true
-  sni: wqxg.wqtd.mom
-  tls: false
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: '395,400|HK57｜机房｜低风险 #1'
+  name: 395,400|HK57｜机房｜低风险
   network: tcp
   port: '32975'
   server: 47.242.225.0
@@ -1868,18 +1823,31 @@ proxies:
   uuid: ebaad525-e2cf-4c18-8ae9-41af29ac4b9c
 - alterId: 0
   cipher: auto
-  name: 395,400|香港_022104003
-  network: ws
-  port: '443'
-  server: n1761214906.wpg27.xyz
-  servername: n1761214906.wpg27.xyz
-  tls: true
+  name: 395|HK108｜机房｜低风险
+  network: tcp
+  port: '43525'
+  server: faq1.lieerr222.cn
+  tls: false
   type: vmess
-  uuid: c28a6258-7baa-40fc-8a51-87f59c847cd7
-  ws-opts:
-    headers:
-      Host: n1761214906.wpg27.xyz
-    path: /
+  uuid: 69612a2a-4b95-4518-a357-e3ed0f32f65c
+- alterId: 0
+  cipher: auto
+  name: 395|HK110｜机房｜低风险
+  network: tcp
+  port: '43525'
+  server: faq1.lieerr222.cn
+  tls: false
+  type: vmess
+  uuid: 8817e1de-9a45-42a9-827a-ad78d6df0c4d
+- alterId: 2
+  cipher: auto
+  name: '397|🇭🇰 香港|@ripaojiedian #2'
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1922,6 +1890,16 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
+- name: 400|HK29｜机房｜低风险
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D
+  password: 395b3e3c-5713-4852-99b8-3d4702e5a5e6
+  port: 443
+  server: wqxg.wqtd.mom
+  skip-cert-verify: true
+  sni: wqxg.wqtd.mom
+  tls: false
+  type: hysteria2
 - name: 400|香港_022104291
   password: 407b6b2e-59e5-4466-9911-08f6f1263bc9
   port: 20000
@@ -1992,6 +1970,12 @@ proxies:
   server: 58.152.46.60
   skip-cert-verify: true
   sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
+  type: trojan
+- name: 400|🇭🇰HK香港
+  password: trojan
+  port: 8443
+  server: 109.234.211.66
+  sni: store.timimi.dpdns.org
   type: trojan
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
@@ -2230,10 +2214,37 @@ proxies:
   uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
 - alterId: 0
   cipher: auto
+  name: '400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #21'
+  network: ws
+  port: '12883'
+  server: gtm1.ktmwan.net
+  tls: false
+  type: vmess
+  uuid: 3ac9d436-f213-421d-9644-a94686ee9fba
+  ws-opts:
+    headers:
+      Host: gtm1.ktmwan.net
+    path: /
+- alterId: 0
+  cipher: auto
   name: 400|香港_022104288
   network: ws
   port: '443'
   server: 47.243.95.187
+  servername: n1761214906.wpg27.xyz
+  tls: true
+  type: vmess
+  uuid: c28a6258-7baa-40fc-8a51-87f59c847cd7
+  ws-opts:
+    headers:
+      Host: n1761214906.wpg27.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 400|香港_022104003
+  network: ws
+  port: '443'
+  server: n1761214906.wpg27.xyz
   servername: n1761214906.wpg27.xyz
   tls: true
   type: vmess

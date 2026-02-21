@@ -166,12 +166,6 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: '228,397|tg频道:@ripaojiedian #2'
-  password: amazonskr05
-  port: 443
-  server: 63.180.254.10
-  type: ss
 - name: '243,244,245|美国03 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -190,6 +184,30 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
+- name: 262,400|11,12|美国|@ripaojiedian
+  network: tcp
+  password: 64a59181551b5773e390bd717a7b7c06
+  port: 1281
+  server: 160.16.106.99
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 262,400|11,12|美国2|@ripaojiedian
+  network: tcp
+  password: 64a59181551b5773e390bd717a7b7c06
+  port: 1281
+  server: 160.16.72.205
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 262,400|11,12|美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 38780
+  server: 54.238.211.1
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - cipher: aes-128-gcm
   name: '278,279|2 #6'
   password: shadowsocks
@@ -527,7 +545,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: US
-  name: 278,279,353|US_32
+  name: 278,279,353|US_23
   password: shadowsocks
   port: 443
   server: 37.19.198.236
@@ -1685,7 +1703,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: GB
-  name: 350,353|Relay_GB-GB_10
+  name: 350,353|Relay_GB-GB_05
   password: W74XFALLLuw6m5IA
   port: 443
   server: series-a1.samanehha.co
@@ -1851,7 +1869,7 @@ proxies:
   country: MT
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_MT-US_20
+  name: 353|Relay_MT-US_17
   network: ws
   port: 443
   server: 193.227.99.199
@@ -1874,7 +1892,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: US
-  name: 353|Relay_US-US_33
+  name: 353|Relay_US-US_25
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -1886,59 +1904,7 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_US-US_34
-  network: ws
-  port: 80
-  server: nnmj.1x5.indevs.in
-  servername: nnmj.1x5.indevs.in
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      HOST: nnmj.1x5.indevs.in
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: 353|Relay_US-US_35
-  network: ws
-  port: 443
-  server: 198.71.191.199
-  servername: ous3.dean52.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
-  ws-opts:
-    headers:
-      HOST: ous3.dean52.top
-    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: 353|US_36
-  network: ws
-  port: 80
-  server: turk1.net.net
-  servername: tr1-smart.adelping.com.
-  skip-cert-verify: true
-  type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-  ws-opts:
-    headers:
-      HOST: tr1-smart.adelping.com.
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: 353|Relay_US-US_37
+  name: 353|Relay_US-US_26
   network: ws
   port: 443
   server: 166.62.110.199
@@ -1956,7 +1922,24 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_US-US_38
+  name: 353|US_27
+  network: ws
+  port: 80
+  server: TM_AZARBAYJAB1.SERV.9.pagES.DEV
+  servername: tr1-smart.adelping.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  ws-opts:
+    headers:
+      HOST: tr1-smart.adelping.com
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 353|Relay_US-US_28
   network: ws
   port: 443
   server: 198.62.62.199
@@ -1974,7 +1957,42 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_US-US_39
+  name: 353|US_29
+  network: ws
+  port: 80
+  server: turk1.net.net
+  servername: tr1-smart.adelping.com.
+  skip-cert-verify: true
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  ws-opts:
+    headers:
+      HOST: tr1-smart.adelping.com.
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 353|Relay_US-US_30
+  network: ws
+  port: 443
+  server: 198.71.191.199
+  servername: ous3.dean52.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
+  ws-opts:
+    headers:
+      HOST: ous3.dean52.top
+    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 353|Relay_US-US_31
   network: ws
   port: 443
   server: 209.46.30.199
@@ -1992,7 +2010,24 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_US-US_40
+  name: 353|Relay_US-US_32
+  network: ws
+  port: 80
+  server: nnmj.1x5.indevs.in
+  servername: nnmj.1x5.indevs.in
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  ws-opts:
+    headers:
+      HOST: nnmj.1x5.indevs.in
+    path: /iSRWSKUJKNuXvVzsYHmsMrnO
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 353|Relay_US-US_33
   network: ws
   port: 80
   server: vfgty6.2nn.ccwu.cc
@@ -2006,30 +2041,32 @@ proxies:
     path: /iSRWSKUJKNuXvVzsYHmsMrnO
 - alterId: 0
   cipher: auto
-  country: US
+  country: 🏁ZZ
+  delay: 1336
   h2-opts: {}
   http-opts: {}
-  name: 353|US_41
+  name: 353,385|美国 - 圣路易斯 - Contabo Inc. - 4
   network: ws
-  port: 80
-  server: TM_AZARBAYJAB1.SERV.9.pagES.DEV
-  servername: tr1-smart.adelping.com
+  port: 8443
+  server: 104.17.77.77
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   ws-opts:
     headers:
-      HOST: tr1-smart.adelping.com
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
+      HOST: v2ray1.dozapp.xyz
+    path: /lMnsZUN4/
 - alterId: 0
   cipher: auto
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_ZZ-US_77
+  name: 353|Relay_ZZ-US_72
   network: ws
   port: 8080
-  server: 104.18.168.30
+  server: 104.17.23.43
   servername: buyvmus2.6bnw.top
   skip-cert-verify: true
   type: vmess
@@ -2043,7 +2080,7 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_ZZ-US_78
+  name: 353|Relay_ZZ-US_73
   network: ws
   port: 80
   server: yyynm.2nn.ccwu.cc
@@ -2060,10 +2097,10 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_ZZ-US_82
+  name: 353|Relay_ZZ-US_74
   network: ws
   port: 8080
-  server: 104.18.1.45
+  server: 104.18.168.30
   servername: buyvmus2.6bnw.top
   skip-cert-verify: true
   type: vmess
@@ -2077,10 +2114,10 @@ proxies:
   country: ZZ
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_ZZ-US_83
+  name: 353|Relay_ZZ-US_75
   network: ws
   port: 8080
-  server: 104.17.23.43
+  server: 104.18.1.45
   servername: buyvmus2.6bnw.top
   skip-cert-verify: true
   type: vmess
@@ -2845,88 +2882,91 @@ proxies:
     path: /dyajvws
 - alterId: 0
   cipher: auto
-  name: '371,372|美国 CloudFlare节点 #6'
-  network: ws
-  port: '8080'
-  server: 104.19.37.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: nasnet-571299667.rahavard365.co
-    path: /NASNET/cdn
-- alterId: 0
-  cipher: auto
-  name: 371,372,400|未知_022104036
+  delay: 1869
+  name: '371,372,385,392|🇺🇸 US美国(mibei77.com 米贝节点分享) #56'
   network: ws
   port: '80'
   server: turk1.net.net
-  servername: ''
+  servername: TM_AZARBAYJAB1.new.99.workers.dev
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
   ws-opts:
     headers:
       Host: tr1-smart.adelping.com.
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
+    path: /
 - alterId: 0
   cipher: auto
-  name: '371,372|美国 CloudFlare节点 #8'
+  name: '371,372|美国 CloudFlare节点 #7'
   network: ws
-  port: 8443
-  server: 172.64.152.23
-  servername: frsys.fl-dl.com
-  tls: true
-  type: vmess
-  uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
-  ws-opts:
-    headers:
-      Host: ''
-    path: /gbt
-- alterId: 0
-  cipher: auto
-  name: 371,372,400|未知21
-  network: ws
-  port: '8080'
-  server: 172.64.149.182
+  port: 8080
+  server: 104.26.15.85
   servername: ''
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
-      Host: nasnet-5712964102.sharghdaily.co
-    path: /nasnet/cdn?ed=2560
+      Host: nasnet-571296497.iranpress.co
+    path: /nasnet/cdn
 - alterId: 0
   cipher: auto
-  name: 371,372,400|未知_022104011
+  name: 371,372,392,400|未知_022104042
+  network: ws
+  port: '443'
+  server: mki.dddc.ccwu.cc
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  ws-opts:
+    headers:
+      Host: mki.dddc.ccwu.cc
+    path: /LDTpW8UIEnTAiN9LMya
+- alterId: 0
+  cipher: auto
+  name: '371,372|美国 CloudFlare节点 #9'
+  network: ws
+  port: 443
+  server: cf.090227.xyz
+  servername: sgal.dagrate.eu.org
+  tls: true
+  type: vmess
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-opts:
+    headers:
+      Host: sgal.dagrate.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 371,372,400|未知37
+  network: ws
+  port: '8080'
+  server: 104.26.14.85
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  ws-opts:
+    headers:
+      Host: nasnet-162191099.sharghdaily.co
+    path: /nasnet/cdn
+- alterId: 0
+  cipher: auto
+  name: 371,372,400|未知_022104025
   network: ws
   port: '80'
-  server: m9o0.1xq.indevs.in
+  server: nnmj.1x5.indevs.in
   servername: ''
   tls: false
   type: vmess
   uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
   ws-opts:
     headers:
-      Host: m9o0.1xq.indevs.in
+      Host: nnmj.1x5.indevs.in
     path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- alterId: 0
-  cipher: auto
-  name: 371,372,400|CF中转_02210412920
-  network: ws
-  port: '80'
-  server: 104.26.15.137
-  servername: TM_AZARBAYJAB1.new.99.workers.dev
-  tls: false
-  type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-  ws-opts:
-    headers:
-      Host: tr1-smart.adelping.com.
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
 - alterId: 0
   cipher: auto
   name: '374|美国 CloudFlare节点 #12'
@@ -2980,7 +3020,7 @@ proxies:
     headers:
       Host: ecc.vtcss.top
     path: /qwer01
-- name: '383,395,397,398|美国|@ripaojiedian #1'
+- name: '383,392,395,397,398|美国|@ripaojiedian #1'
   network: tcp
   password: 64a59181551b5773e390bd717a7b7c06
   port: 4920
@@ -2988,7 +3028,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '383,395,397,398|美国2|@ripaojiedian #1'
+- name: '383,392,395,397,398|美国2|@ripaojiedian #1'
   network: tcp
   password: 64a59181551b5773e390bd717a7b7c06
   port: 4920
@@ -2996,7 +3036,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '383,395,397,398|美国3|@ripaojiedian #1'
+- name: '383,392,395,397,398|美国3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 9718
@@ -3047,25 +3087,6 @@ proxies:
     headers:
       Host: bnmj.wc6.ccwu.cc
     path: /kFK9O5cl8ZycyrxcJWNVFC21
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 1336
-  h2-opts: {}
-  http-opts: {}
-  name: 385|美国 - 圣路易斯 - Contabo Inc. - 4
-  network: ws
-  port: 8443
-  server: 104.17.77.77
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  ws-opts:
-    headers:
-      HOST: v2ray1.dozapp.xyz
-    path: /lMnsZUN4/
 - client-fingerprint: chrome
   delay: 1972
   name: 385|美国 - 聖荷西 - Eons Data Communica...
@@ -3115,40 +3136,246 @@ proxies:
     path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
 - alterId: 0
   cipher: auto
-  name: 392|🇺🇸 美国 CloudFlare节点
+  name: 392,400|未知_022104065
   network: ws
   port: '443'
-  server: nmjk.1hh.ccwu.cc
+  server: yhj.huangshang2026.indevs.in
+  servername: ''
   tls: true
+  type: vmess
+  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  ws-opts:
+    headers:
+      Host: yhj.huangshang2026.indevs.in
+    path: /LDTpW8UIEnTAiN9LMya
+- alterId: 0
+  cipher: auto
+  name: 392,400|未知_022104011
+  network: ws
+  port: '80'
+  server: m9o0.1xq.indevs.in
+  servername: ''
+  tls: false
   type: vmess
   uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
   ws-opts:
     headers:
-      Host: nmjk.1hh.ccwu.cc
+      Host: m9o0.1xq.indevs.in
+    path: /iSRWSKUJKNuXvVzsYHmsMrnO
+- alterId: 0
+  cipher: auto
+  name: '392|🇺🇸 美国 CloudFlare节点 #2'
+  network: ws
+  port: '443'
+  server: 104.21.42.250
+  tls: true
+  type: vmess
+  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+  ws-opts:
+    headers:
+      Host: BBNMJ.191268.XYZ
     path: /
-- name: '392,395,400|🇺🇸 美国 AT&T #1'
-  password: hSA6YXe15O
+- alterId: 0
+  cipher: auto
+  name: 392,400|未知23
+  network: ws
+  port: '8080'
+  server: 172.67.73.163
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: nasnet-571296497.iranpress.co
+    path: /nasnet/cdn?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 392,400|未知_022104074
+  network: ws
+  port: '443'
+  server: gh.iran2028.indevs.in
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  ws-opts:
+    headers:
+      Host: gh.iran2028.indevs.in
+    path: /LDTpW8UIEnTAiN9LMya
+- name: '392,395,400|🇨🇳 TW台湾(mibei77.com 米贝节点分享) #15'
+  password: 5f6ded93-4ab8-4a99-9c84-b19b9993f27c
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 392,400|🇺🇸US美国5
+  password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
   port: 443
-  server: 104.11.86.252
+  server: vbhk.999864.xyz
+  skip-cert-verify: false
+  sni: vbHK.999864.xYz
+  type: trojan
+- name: 392,400|🇺🇸US美国3
+  password: d5604db8-1f31-403d-a315-d8bafc70f7d2
+  port: 443
+  server: nju.taipei104.indevs.in
+  skip-cert-verify: false
+  sni: nju.taipei104.indevs.in
+  type: trojan
+- name: 392,400|🇺🇸US美国31
+  password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+  port: 443
+  server: xxd.nu0.de5.net
+  skip-cert-verify: false
+  sni: xxD.nU0.De5.Net
+  type: trojan
+- name: 392,400|🇺🇸US美国23
+  password: d5604db8-1f31-403d-a315-d8bafc70f7d2
+  port: 443
+  server: mhju.h2e.indevs.in
+  skip-cert-verify: false
+  sni: mhju.h2e.indevs.in
+  type: trojan
+- name: '392|🇺🇸 US美国(mibei77.com 米贝节点分享) #9'
+  password: 11cfbea5-eae4-4654-8aa9-a9481f38dc42
+  port: 31101
+  server: 220.130.58.136
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: '392,395,400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #23'
+  network: tcp
+  port: '30824'
+  server: v24.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: '392|🇺🇸 US美国(mibei77.com 米贝节点分享) #12'
+  network: ws
+  port: '80'
+  server: 4rrt5.oo1.ccwu.cc
+  tls: false
+  type: vmess
+  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
+  ws-opts:
+    headers:
+      Host: 4rrt5.oo1.ccwu.cc
+    path: /DatH8bwo7YKaAHx8c
+- name: 392,395,400|🇹🇼TW台湾2
+  password: 26635779-8ce6-4c07-ae5d-f3769ec95ddd
+  port: 31101
+  server: green2.cdntencentmusic.com
   skip-cert-verify: true
-  sni: Telegram%20%20%20%20%20%20%20%20%20%20%20%20%2B%40WangCai2
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 392,395,400|台湾_022104005+L0
+  password: 36325a98-46a4-4770-977a-9a9570e0bcc6
+  port: 31103
+  server: 220.130.58.136
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 392,395|HK78｜原生/疑似家宽｜非常安全
+  password: fdeb5068-b9c7-486c-8ccf-8d2b744bd839
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '392,395,400|🇨🇳 TW台湾(mibei77.com 米贝节点分享) #23'
+  password: bbde1e79-49d4-448a-a81d-38bfbba3480d
+  port: 35501
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 392,395|US87｜家宽｜非常安全
+  password: 11cfbea5-eae4-4654-8aa9-a9481f38dc42
+  port: 35501
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '392|🇺🇸 US美国(mibei77.com 米贝节点分享) #31'
+  password: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
+  port: 443
+  server: yui9.0ok.ccwu.cc
+  skip-cert-verify: false
+  sni: yui9.0ok.ccwu.cc
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '392,400|🇺🇸 美国 CloudFlare节点 #4'
+  name: '392|🇺🇸 US美国(mibei77.com 米贝节点分享) #32'
   network: ws
   port: '443'
-  server: jjjmki.930.pp.ua
+  server: 4rrt5.oo1.ccwu.cc
   tls: true
   type: vmess
-  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
   ws-opts:
     headers:
-      Host: jjjmki.930.pp.ua
-    path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
+      Host: 4rrt5.oo1.ccwu.cc
+    path: /DatH8bwo7YKaAHx8c
+- alterId: 2
+  cipher: auto
+  name: 392,395,400|GB18｜机房｜低风险
+  network: tcp
+  port: '30836'
+  server: v36.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: 392,395,400|未知24
+  name: 392,400|未知_022104076
+  network: ws
+  port: '443'
+  server: hjk.freevpn2027.dpdns.org
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  ws-opts:
+    headers:
+      Host: hjk.freevpn2027.dpdns.org
+    path: /LDTpW8UIEnTAiN9LMya
+- name: '392|🇺🇸 US美国(mibei77.com 米贝节点分享) #37'
+  password: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
+  port: 443
+  server: ghju.0ok.ccwu.cc
+  skip-cert-verify: false
+  sni: ghju.0ok.ccwu.cc
+  type: trojan
+- name: '392,400|🇨🇳 TW台湾(mibei77.com 米贝节点分享) #17'
+  password: 6790a94c-4ea8-4a1e-979e-31716839427a
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '392|🇺🇸 US美国(mibei77.com 米贝节点分享) #40'
+  password: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
+  port: 443
+  server: zzzxs.0j0.ccwu.cc
+  skip-cert-verify: false
+  sni: zzzxs.0j0.ccwu.cc
+  type: trojan
+- name: 392,395,400|🇺🇸US美国36
+  password: 4250b3bb-d1ae-4e77-bf71-4069e0d2c383
+  port: 31101
+  server: 220.130.58.136
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 392,400|未知24
   network: ws
   port: '8443'
   server: dll.avaaaal.ir
@@ -3162,333 +3389,51 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '392|🇺🇸 美国 CloudFlare节点 #3'
-  network: ws
-  port: '80'
-  server: hju.ae1autumn.cc.cd
-  tls: false
-  type: vmess
-  uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
-  ws-opts:
-    headers:
-      Host: hju.ae1autumn.cc.cd
-    path: /
-- name: 392,400|🇺🇸US美国8
-  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  port: 443
-  server: nnmj.1x5.indevs.in
-  skip-cert-verify: false
-  sni: nnmj.1x5.indevs.in
-  type: trojan
-- name: 392,400|🇺🇸US美国21
-  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  port: 443
-  server: nhj.1jj.ccwu.cc
-  skip-cert-verify: false
-  sni: nhj.1jj.ccwu.cc
-  type: trojan
-- name: 392,400,404|🇺🇸 美国 | USA
-  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  port: 443
-  server: nmki.1qq.ccwu.cc
-  skip-cert-verify: true
-  sni: nmki.1qq.ccwu.cc
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104040
+  name: '392|🇺🇸 US美国(mibei77.com 米贝节点分享) #47'
   network: ws
   port: '443'
-  server: nmju.1jj.ccwu.cc
-  servername: ''
+  server: dvgb.oo1.ccwu.cc
   tls: true
   type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  uuid: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
   ws-opts:
     headers:
-      Host: nmju.1jj.ccwu.cc
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- name: 392,400|🇺🇸US美国9
-  password: 98b419ef-83a2-4d1b-a23d-566b7f24477b
-  port: 443
-  server: eefrt.890699.xyz
-  skip-cert-verify: false
-  sni: eEFRt.890699.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104021
-  network: ws
-  port: '443'
-  server: mkjhu.2nn.ccwu.cc
-  servername: mkjhu.2nn.ccwu.cc
-  tls: true
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: mkjhu.2nn.ccwu.cc
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104042
-  network: ws
-  port: '443'
-  server: mki.dddc.ccwu.cc
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  ws-opts:
-    headers:
-      Host: mki.dddc.ccwu.cc
-    path: /LDTpW8UIEnTAiN9LMya
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104017
-  network: ws
-  port: '80'
-  server: nnmkl.2nn.ccwu.cc
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: nnmkl.2nn.ccwu.cc
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104018
-  network: ws
-  port: '80'
-  server: kklo.1xq.indevs.in
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: kklo.1xq.indevs.in
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104024
-  network: ws
-  port: '443'
-  server: nhj.1jj.ccwu.cc
-  servername: nhj.1jj.ccwu.cc
-  tls: true
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: nhj.1jj.ccwu.cc
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- name: 392,400|🇺🇸US美国18
-  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  port: 443
-  server: nmk9o.1yy.ccwu.cc
-  skip-cert-verify: false
-  sni: nmk9o.1yy.ccwu.cc
-  type: trojan
-- name: 392,395,400|🇺🇸US美国36
-  password: 4250b3bb-d1ae-4e77-bf71-4069e0d2c383
-  port: 31101
+      Host: dvgb.oo1.ccwu.cc
+    path: /DatH8bwo7YKaAHx8c
+- name: '392,395,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #146'
+  password: 125f929b-dbde-43b9-b498-695f1cd45d68
+  port: 31102
   server: 220.130.58.136
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 392,395,400|🇫🇷FR法国2
+  password: 5f6ded93-4ab8-4a99-9c84-b19b9993f27c
+  port: 31102
+  server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104023
-  network: ws
-  port: '443'
-  server: bgn.1dd.ccwu.cc
-  servername: bgn.1dd.ccwu.cc
-  tls: true
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: bgn.1dd.ccwu.cc
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- name: 392,400|🇺🇸US美国10
-  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  port: 443
-  server: mmmk.288288.shop
+- name: '392,395,400|🇨🇳 TW台湾(mibei77.com 米贝节点分享) #13'
+  password: 0a169d7d-a30f-4d90-af1b-55f6ef6afcb7
+  port: 35501
+  server: green2.cdntencentmusic.com
   skip-cert-verify: false
-  sni: Mmmk.288288.shoP
+  sni: green2.cdntencentmusic.com
   type: trojan
-- name: 392,400|🇺🇸US美国40
-  password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
-  port: 443
-  server: tyu.bb1.ccwu.cc
+- name: '392,400|🇫🇷 FR法国(mibei77.com 米贝节点分享) #7'
+  password: b2e15b49-6606-4c62-baff-7015390b3c6a
+  port: 31101
+  server: 220.130.58.136
   skip-cert-verify: false
-  sni: tYu.BB1.Ccwu.cC
+  sni: green2.cdntencentmusic.com
   type: trojan
-- name: 392,400|🇺🇸US美国5
-  password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
-  port: 443
-  server: vbhk.999864.xyz
-  skip-cert-verify: false
-  sni: vbHK.999864.xYz
-  type: trojan
-- name: 392,400|🇺🇸US美国
+- name: 392,400|🇺🇸US美国2
   password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
   port: 443
-  server: hj.huangshang.qzz.io
-  skip-cert-verify: false
-  sni: hj.huangshang.qzz.io
-  type: trojan
-- name: 392,400|🇺🇸US美国11
-  password: 98b419ef-83a2-4d1b-a23d-566b7f24477b
-  port: 443
-  server: kkkkki.231.pp.ua
-  skip-cert-verify: false
-  sni: KkKkki.231.PP.Ua
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 392,400,544|CN【机场推荐：https://a0a.xyz】13
-  network: tcp
-  port: '30830'
-  server: v30.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104049
-  network: ws
-  port: '443'
-  server: jki.huangdi.indevs.in
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  ws-opts:
-    headers:
-      Host: jki.huangdi.indevs.in
-    path: /LDTpW8UIEnTAiN9LMya
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104050
-  network: ws
-  port: '443'
-  server: dffgg.2no.ccwu.cc
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
-  ws-opts:
-    headers:
-      Host: dffgg.2no.ccwu.cc
-    path: /PGsqb2SHJfbCLo
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104051
-  network: ws
-  port: '80'
-  server: fbg.1x3.indevs.in
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: fbg.1x3.indevs.in
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104052
-  network: ws
-  port: '443'
-  server: jjjki.dddct.us.ci
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  ws-opts:
-    headers:
-      Host: jjjki.dddct.us.ci
-    path: /LDTpW8UIEnTAiN9LMya
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104015
-  network: ws
-  port: '80'
-  server: vfgty6.2nn.ccwu.cc
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: vfgty6.2nn.ccwu.cc
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- name: 392,400|🇺🇸US美国24
-  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  port: 443
-  server: kklo.1xq.indevs.in
-  skip-cert-verify: false
-  sni: kklo.1xq.indevs.in
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104054
-  network: ws
-  port: '443'
-  server: ggnju.iran2027.indevs.in
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  ws-opts:
-    headers:
-      Host: ggnju.iran2027.indevs.in
-    path: /LDTpW8UIEnTAiN9LMya
-- name: 392,400|🇺🇸US美国23
-  password: d5604db8-1f31-403d-a315-d8bafc70f7d2
-  port: 443
-  server: mhju.h2e.indevs.in
-  skip-cert-verify: false
-  sni: mhju.h2e.indevs.in
-  type: trojan
-- name: 392,400|🇺🇸US美国37
-  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  port: 443
-  server: hjk.freevpn2027.dpdns.org
-  skip-cert-verify: false
-  sni: hjk.freevpn2027.dpdns.org
-  type: trojan
-- name: 392,400|🇺🇸US美国6
-  password: d5604db8-1f31-403d-a315-d8bafc70f7d2
-  port: 443
-  server: mkl.2oo.ccwu.cc
-  skip-cert-verify: false
-  sni: mkl.2oo.ccwu.cc
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104058
-  network: ws
-  port: '443'
   server: rt.freevpn.qzz.io
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  ws-opts:
-    headers:
-      Host: rt.freevpn.qzz.io
-    path: /LDTpW8UIEnTAiN9LMya
-- name: 392,400|🇺🇸US美国34
-  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  port: 443
-  server: ggnju.iran2027.indevs.in
   skip-cert-verify: false
-  sni: ggnju.iran2027.indevs.in
+  sni: rt.freevpn.qzz.io
   type: trojan
 - alterId: 0
   cipher: auto
@@ -3503,211 +3448,6 @@ proxies:
   ws-opts:
     headers:
       Host: tgh.iran2029.indevs.in
-    path: /LDTpW8UIEnTAiN9LMya
-- name: 392,400|🇺🇸US美国27
-  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  port: 443
-  server: yhj.huangshang2026.indevs.in
-  skip-cert-verify: false
-  sni: yhj.huangshang2026.indevs.in
-  type: trojan
-- name: 392,400|🇺🇸US美国2
-  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  port: 443
-  server: rt.freevpn.qzz.io
-  skip-cert-verify: false
-  sni: rt.freevpn.qzz.io
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104019
-  network: ws
-  port: '80'
-  server: mmhhj.2nn.ccwu.cc
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: mmhhj.2nn.ccwu.cc
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- name: 392,400|🇺🇸US美国14
-  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  port: 443
-  server: tgh.iran2029.indevs.in
-  skip-cert-verify: false
-  sni: tgh.iran2029.indevs.in
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104064
-  network: ws
-  port: '443'
-  server: mmkj.dddc.de5.net
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  ws-opts:
-    headers:
-      Host: mmkj.dddc.de5.net
-    path: /LDTpW8UIEnTAiN9LMya
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104065
-  network: ws
-  port: '443'
-  server: yhj.huangshang2026.indevs.in
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  ws-opts:
-    headers:
-      Host: yhj.huangshang2026.indevs.in
-    path: /LDTpW8UIEnTAiN9LMya
-- name: 392,400|🇺🇸US美国13
-  password: d5604db8-1f31-403d-a315-d8bafc70f7d2
-  port: 443
-  server: nhju.h2e.indevs.in
-  skip-cert-verify: false
-  sni: nhju.h2e.indevs.in
-  type: trojan
-- name: 392,400|🇺🇸US美国3
-  password: d5604db8-1f31-403d-a315-d8bafc70f7d2
-  port: 443
-  server: nju.taipei104.indevs.in
-  skip-cert-verify: false
-  sni: nju.taipei104.indevs.in
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '392,395,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #101'
-  network: tcp
-  port: '30829'
-  server: v29.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 392,395,400|台湾_022104002+L0
-  password: 0a169d7d-a30f-4d90-af1b-55f6ef6afcb7
-  port: 31103
-  server: 220.130.58.136
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104025
-  network: ws
-  port: '80'
-  server: nnmj.1x5.indevs.in
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: nnmj.1x5.indevs.in
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- name: 392,400|🇺🇸US美国28
-  password: 98b419ef-83a2-4d1b-a23d-566b7f24477b
-  port: 443
-  server: nnmjkio.taipei101.indevs.in
-  skip-cert-verify: false
-  sni: NnmjKIO.taIPEI101.iNDevS.IN
-  type: trojan
-- name: 392,400|🇺🇸US美国31
-  password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
-  port: 443
-  server: xxd.nu0.de5.net
-  skip-cert-verify: false
-  sni: xxD.nU0.De5.Net
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104069
-  network: ws
-  port: '80'
-  server: jjju.1x5.indevs.in
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: jjju.1x5.indevs.in
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- name: 392,400|🇺🇸US美国35
-  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  port: 443
-  server: hhjk.huangzi.cfd
-  skip-cert-verify: false
-  sni: hhjk.huangzi.cfd
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104071
-  network: ws
-  port: '80'
-  server: mghnnbj.1yy.ccwu.cc
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: mghnnbj.1yy.ccwu.cc
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104006
-  network: ws
-  port: '443'
-  server: bnj.0nn.ccwu.cc
-  servername: bnj.0nn.ccwu.cc
-  tls: true
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: bnj.0nn.ccwu.cc
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- name: 392,400|🇺🇸US美国19
-  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  port: 443
-  server: mmkj.dddc.de5.net
-  skip-cert-verify: false
-  sni: mmkj.dddc.de5.net
-  type: trojan
-- name: 392,400,404|🇭🇰 香港 | HKG
-  password: 125f929b-dbde-43b9-b498-695f1cd45d68
-  port: 31101
-  server: 220.130.58.136
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 392,400|🇺🇸US美国15
-  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  port: 443
-  server: ghj.husngahng.click
-  skip-cert-verify: false
-  sni: ghj.husngahng.click
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104074
-  network: ws
-  port: '443'
-  server: gh.iran2028.indevs.in
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  ws-opts:
-    headers:
-      Host: gh.iran2028.indevs.in
     path: /LDTpW8UIEnTAiN9LMya
 - alterId: 0
   cipher: auto
@@ -3725,97 +3465,323 @@ proxies:
     path: /LDTpW8UIEnTAiN9LMya
 - alterId: 0
   cipher: auto
-  name: 392,400|未知_022104076
+  name: 392,400|未知_022104049
   network: ws
   port: '443'
-  server: hjk.freevpn2027.dpdns.org
+  server: jki.huangdi.indevs.in
   servername: ''
   tls: true
   type: vmess
   uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
   ws-opts:
     headers:
-      Host: hjk.freevpn2027.dpdns.org
+      Host: jki.huangdi.indevs.in
     path: /LDTpW8UIEnTAiN9LMya
+- name: 392,400|🇺🇸US美国19
+  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  port: 443
+  server: mmkj.dddc.de5.net
+  skip-cert-verify: false
+  sni: mmkj.dddc.de5.net
+  type: trojan
+- name: 392,400|🇺🇸US美国37
+  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  port: 443
+  server: hjk.freevpn2027.dpdns.org
+  skip-cert-verify: false
+  sni: hjk.freevpn2027.dpdns.org
+  type: trojan
+- name: '392,400|🇫🇷 FR法国(mibei77.com 米贝节点分享) #6'
+  password: adf2550f-8b87-4ea1-aa80-e7fc8f65a68a
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '392|🇺🇸 US美国(mibei77.com 米贝节点分享) #71'
+  password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+  port: 443
+  server: aq.voa.ccwu.cc
+  skip-cert-verify: false
+  sni: aQ.voA.cCWu.cc
+  type: trojan
+- name: 392,400|🇺🇸US美国
+  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  port: 443
+  server: hj.huangshang.qzz.io
+  skip-cert-verify: false
+  sni: hj.huangshang.qzz.io
+  type: trojan
+- name: 392,395,400|台湾_022104002+L0
+  password: 0a169d7d-a30f-4d90-af1b-55f6ef6afcb7
+  port: 31103
+  server: 220.130.58.136
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 392,400|🇺🇸US美国40
+  password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+  port: 443
+  server: tyu.bb1.ccwu.cc
+  skip-cert-verify: false
+  sni: tYu.BB1.Ccwu.cC
+  type: trojan
+- name: 392,400|🇺🇸US美国11
+  password: 98b419ef-83a2-4d1b-a23d-566b7f24477b
+  port: 443
+  server: kkkkki.231.pp.ua
+  skip-cert-verify: false
+  sni: KkKkki.231.PP.Ua
+  type: trojan
+- name: 392,400|🇺🇸US美国13
+  password: d5604db8-1f31-403d-a315-d8bafc70f7d2
+  port: 443
+  server: nhju.h2e.indevs.in
+  skip-cert-verify: false
+  sni: nhju.h2e.indevs.in
+  type: trojan
+- name: 392,400|🇺🇸US美国34
+  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  port: 443
+  server: ggnju.iran2027.indevs.in
+  skip-cert-verify: false
+  sni: ggnju.iran2027.indevs.in
+  type: trojan
+- name: 392,400|🇺🇸US美国9
+  password: 98b419ef-83a2-4d1b-a23d-566b7f24477b
+  port: 443
+  server: eefrt.890699.xyz
+  skip-cert-verify: false
+  sni: eEFRt.890699.xyz
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 392,400|未知_022104026
+  name: 392,400|未知_022104054
   network: ws
-  port: '80'
-  server: gbnh.0nn.ccwu.cc
+  port: '443'
+  server: ggnju.iran2027.indevs.in
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
   ws-opts:
     headers:
-      Host: gbnh.0nn.ccwu.cc
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- name: '392,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #95'
-  password: 04e5b584-1850-483d-a844-9ad624a4ca8e
-  port: 31101
+      Host: ggnju.iran2027.indevs.in
+    path: /LDTpW8UIEnTAiN9LMya
+- name: 392,400|🇺🇸US美国15
+  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  port: 443
+  server: ghj.husngahng.click
+  skip-cert-verify: false
+  sni: ghj.husngahng.click
+  type: trojan
+- name: 392,400|🇺🇸US美国14
+  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  port: 443
+  server: tgh.iran2029.indevs.in
+  skip-cert-verify: false
+  sni: tgh.iran2029.indevs.in
+  type: trojan
+- name: 392,400|🇺🇸US美国27
+  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  port: 443
+  server: yhj.huangshang2026.indevs.in
+  skip-cert-verify: false
+  sni: yhj.huangshang2026.indevs.in
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 392,400|未知_022104064
+  network: ws
+  port: '443'
+  server: mmkj.dddc.de5.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  ws-opts:
+    headers:
+      Host: mmkj.dddc.de5.net
+    path: /LDTpW8UIEnTAiN9LMya
+- name: 392,400,404|🇺🇸 美国 | USA
+  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  port: 443
+  server: nmki.1qq.ccwu.cc
+  skip-cert-verify: true
+  sni: nmki.1qq.ccwu.cc
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 392,400|未知_022104058
+  network: ws
+  port: '443'
+  server: rt.freevpn.qzz.io
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  ws-opts:
+    headers:
+      Host: rt.freevpn.qzz.io
+    path: /LDTpW8UIEnTAiN9LMya
+- name: 392,395,400|🇭🇰HK香港3
+  password: 858fc0a5-69ad-48e3-8c6d-e4375cca8fc9
+  port: 31102
   server: 220.130.58.136
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 392,400|🇺🇸US美国35
+  password: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
+  port: 443
+  server: hhjk.huangzi.cfd
+  skip-cert-verify: false
+  sni: hhjk.huangzi.cfd
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '392|🇺🇸 US美国(mibei77.com 米贝节点分享) #95'
+  network: ws
+  port: '443'
+  server: vvbnhju.191292.xyz
+  tls: true
+  type: vmess
+  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+  ws-opts:
+    headers:
+      Host: vvbnhju.191292.xyz
+    path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
+- name: '392,395,400|🇨🇳 TW台湾(mibei77.com 米贝节点分享) #20'
+  password: 987525bc-99a3-461e-a50f-a0a667d06ed7
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 392,400|🇺🇸US美国6
+  password: d5604db8-1f31-403d-a315-d8bafc70f7d2
+  port: 443
+  server: mkl.2oo.ccwu.cc
+  skip-cert-verify: false
+  sni: mkl.2oo.ccwu.cc
+  type: trojan
+- name: '392,400|🇨🇳 TW台湾(mibei77.com 米贝节点分享) #12'
+  password: 0a169d7d-a30f-4d90-af1b-55f6ef6afcb7
+  port: 31101
+  server: green2.cdntencentmusic.com
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 392,400|未知_022104078
-  network: ws
-  port: '80'
-  server: nmju.1jj.ccwu.cc
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: nmju.1jj.ccwu.cc
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- alterId: 0
-  cipher: auto
-  name: 392,400|未知_022104079
+  name: 392,400|未知_022104052
   network: ws
   port: '443'
-  server: vvVBNhJ.191288.xyZ
+  server: jjjki.dddct.us.ci
   servername: ''
   tls: true
   type: vmess
-  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
   ws-opts:
     headers:
-      Host: VvvbnhJ.191288.xyZ
-    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
+      Host: jjjki.dddct.us.ci
+    path: /LDTpW8UIEnTAiN9LMya
+- name: '392,400|🇨🇳 TW台湾(mibei77.com 米贝节点分享) #21'
+  password: a1a00c82-5356-4a49-8944-1cd0f94168bb
+  port: 35501
+  server: 220.130.58.136
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 392,395,400|🇹🇼_中国台湾省
+  network: tcp
+  password: 4250b3bb-d1ae-4e77-bf71-4069e0d2c383
+  port: 31102
+  server: 220.130.58.136
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 392,395,400|台湾_022104007+L0
+  password: 20a3d819-ca7f-48a6-ba20-f7021e8dbbbe
+  port: 31103
+  server: 220.130.58.136
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: '392,395,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #100'
+  name: '392,395,400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #22'
   network: tcp
-  port: '30808'
-  server: v8.hdacd.com
+  port: '30809'
+  server: v9.hdacd.com
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 392,400|🇺🇸US美国20
-  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  port: 443
-  server: m9o0.1xq.indevs.in
+- name: '392,395,400|🇭🇰 HK香港(mibei77.com 米贝节点分享) #20'
+  password: bef1e608-83df-4935-8169-8a345f5643e9
+  port: 31101
+  server: green2.cdntencentmusic.com
   skip-cert-verify: false
-  sni: m9o0.1xq.indevs.in
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 392,400|台湾_022104035+L0
+  password: c5355528-55a2-45df-b8fd-a48ce3c41413
+  port: 35502
+  server: 220.130.58.136
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: '392,395,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #150'
+  network: tcp
+  port: '30829'
+  server: v29.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '392,395,400|🇺🇸 US美国(mibei77.com 米贝节点分享) #148'
+  password: 92953fc6-f497-43af-9d6d-f3b5589df318
+  port: 31102
+  server: 220.130.58.136
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 392,395,400,404|🇭🇰 香港 | HKG
+  password: 125f929b-dbde-43b9-b498-695f1cd45d68
+  port: 31101
+  server: 220.130.58.136
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 392,400|未知_022104081
+  name: 392,400|未知_022104050
   network: ws
   port: '443'
-  server: nnh.1x0.indevs.in
+  server: dffgg.2no.ccwu.cc
   servername: ''
   tls: true
   type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
   ws-opts:
     headers:
-      Host: nnh.1x0.indevs.in
-    path: /iSRWSKUJKNuXvVzsYHmsMrnO
+      Host: dffgg.2no.ccwu.cc
+    path: /PGsqb2SHJfbCLo
+- name: '392,400|🇨🇳 TW台湾(mibei77.com 米贝节点分享) #16'
+  password: 66c62e1a-8037-4154-ad0b-7a0ec415f46c
+  port: 35501
+  server: 220.130.58.136
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '392|🇺🇸 US美国(mibei77.com 米贝节点分享) #139'
+  password: '!!str 123456'
+  port: 8443
+  server: bpbg.anguswen.top
+  skip-cert-verify: false
+  sni: BpBg.ANGusWeN.top
+  type: trojan
 - name: 392,400|🇺🇸US美国39
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
   port: 443
@@ -3823,103 +3789,84 @@ proxies:
   skip-cert-verify: false
   sni: afrcloud1.mmv.kr
   type: trojan
-- alpn:
-  - http/1.1
-  name: 395|US13｜机房｜低风险
-  network: ws
-  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  port: 443
-  server: nmki.1qq.ccwu.cc
-  skip-cert-verify: true
-  sni: nmki.1qq.ccwu.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: nmki.1qq.ccwu.cc
-    path: '%2Fy1moM5CyNvYMZlzsYHmsMrnO'
-- alpn:
-  - http/1.1
-  name: '395,400|US14｜机房｜低风险 #1'
-  network: ws
-  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  port: 443
-  server: bgt.1x2.indevs.in
-  skip-cert-verify: true
-  sni: bgt.1x2.indevs.in
-  type: trojan
-  ws-opts:
-    headers:
-      Host: bgt.1x2.indevs.in
-    path: '%2Fy1moM5CyNvYMZlzsYHmsMrnO'
-- name: 395|US31｜机房｜低风险
-  network: ws
-  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  port: 443
-  server: nmki.1qq.ccwu.cc
-  skip-cert-verify: true
-  sni: nmki.1qq.ccwu.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: nmki.1qq.ccwu.cc
-    path: '%2Fy1moM5CyNvYMZlzsYHmsMrnO'
-- name: 395|US32｜机房｜低风险
-  network: ws
-  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  port: 443
-  server: bgt.1x2.indevs.in
-  skip-cert-verify: true
-  sni: bgt.1x2.indevs.in
-  type: trojan
-  ws-opts:
-    headers:
-      Host: bgt.1x2.indevs.in
-    path: '%2Fy1moM5CyNvYMZlzsYHmsMrnO'
+- alterId: 0
+  cipher: auto
+  name: 395|US1｜机房｜低风险
+  network: tcp
+  port: '2085'
+  server: cpannel.iranucshop.ir
+  tls: false
+  type: vmess
+  uuid: 2c72c667-093c-47a5-a108-493c93282b57
 - alterId: 2
   cipher: auto
-  name: '395,400|US54｜机房｜低风险 #1'
+  name: 395,400|US54｜机房｜低风险
   network: tcp
   port: '30804'
   server: v4.hdacd.com
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 395|US55｜机房｜高风险 (黑名单)
+- alpn:
+  - http/1.1
+  name: 395|US114｜机房｜低风险
   network: ws
-  password: trojan
+  password: '!!str 123456'
   port: 8443
-  server: 109.234.211.66
+  server: bpbg.anguswen.top
   skip-cert-verify: true
-  sni: store.timimi.dpdns.org
+  sni: BpBg.ANGusWeN.top
   type: trojan
   ws-opts:
     headers:
-      Host: store.timimi.dpdns.org
-    path: '%2F'
-- name: 395|US76｜机房｜低风险
+      Host: BpBg.ANGusWeN.top
+    path: '%2FeyJqdW5rIjoiTUp4VFNoMTRLbSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0%3D'
+- name: 395|US75｜机房｜高风险 (黑名单)
   network: ws
-  password: trojan
-  port: 2087
-  server: 109.234.211.66
+  password: '!!str 123456'
+  port: 8443
+  server: bpbg.anguswen.top
   skip-cert-verify: true
-  sni: store.timimi.dpdns.org
+  sni: BpBg.ANGusWeN.top
   type: trojan
   ws-opts:
     headers:
-      Host: store.timimi.dpdns.org
-    path: '%2F%3FBIA_TELEGRAM(%40AZARBAYJAB1)TM(%40AZARBAYJAB1)TM(%40AZARBAYJAB1)TM(%40AZARBAYJAB1)TM(%40AZARBAYJAB1)TM(%40AZARBAYJAB1)'
-- name: 395|US80｜机房｜低风险
+      Host: BpBg.ANGusWeN.top
+    path: '%2FeyJqdW5rIjoiTUp4VFNoMTRLbSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0%3D%3Fed%3D2560'
+- name: 395|US129｜机房｜高风险 (黑名单)
   network: ws
-  password: trojan
-  port: 2087
-  server: 109.234.211.66
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  port: 443
+  server: blackshadow.dpdns.org
   skip-cert-verify: true
-  sni: store.timimi.dpdns.org
+  sni: blackshadow.dpdns.org
   type: trojan
   ws-opts:
     headers:
-      Host: store.timimi.dpdns.org
-    path: '%2F%3FBIA_TELEGRAM%2B(%40AZARBAYJAB1)%2BTM%2B(%40AZARBAYJAB1)%2BTM%2B(%40AZARBAYJAB1)%2BTM%2B(%40AZARBAYJAB1)%2BTM%2B(%40AZARBAYJAB1)%2BTM%2B(%40AZARBAYJAB1)'
+      Host: blackshadow.dpdns.org
+    path: '%2F195.123.218.174-443'
+- alpn:
+  - http/1.1
+  name: 395|US113｜机房｜低风险
+  network: ws
+  password: '!!str 123456'
+  port: 8443
+  server: bpbg.anguswen.top
+  skip-cert-verify: true
+  sni: BpBg.ANGusWeN.top
+  type: trojan
+  ws-opts:
+    path: '%2FeyJqdW5rIjoiTUp4VFNoMTRLbSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0%3D'
+- name: 395|US130｜机房｜高风险 (黑名单)
+  network: ws
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  port: 443
+  server: blackshadow.dpdns.org
+  skip-cert-verify: true
+  sni: blackshadow.dpdns.org
+  type: trojan
+  ws-opts:
+    path: '%2F195.123.218.174-443'
 - cipher: chacha20-ietf-poly1305
   name: 399|_US_
   password: DLW8QqdfAvfUHSeucMIF4E
@@ -4026,6 +3973,50 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
+  name: 400|US14｜机房｜低风险
+  network: ws
+  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  port: 443
+  server: bgt.1x2.indevs.in
+  skip-cert-verify: true
+  sni: bgt.1x2.indevs.in
+  type: trojan
+  ws-opts:
+    headers:
+      Host: bgt.1x2.indevs.in
+    path: '%2Fy1moM5CyNvYMZlzsYHmsMrnO'
+- name: 400|🇺🇸US美国24
+  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  port: 443
+  server: kklo.1xq.indevs.in
+  sni: kklo.1xq.indevs.in
+  type: trojan
+- name: 400|🇺🇸US美国20
+  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  port: 443
+  server: m9o0.1xq.indevs.in
+  sni: m9o0.1xq.indevs.in
+  type: trojan
+- name: 400|🇺🇸US美国21
+  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  port: 443
+  server: nhj.1jj.ccwu.cc
+  sni: nhj.1jj.ccwu.cc
+  type: trojan
+- name: 400|🇺🇸US美国18
+  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  port: 443
+  server: nmk9o.1yy.ccwu.cc
+  sni: nmk9o.1yy.ccwu.cc
+  type: trojan
+- name: 400|🇺🇸US美国8
+  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  port: 443
+  server: nnmj.1x5.indevs.in
+  sni: nnmj.1x5.indevs.in
+  type: trojan
+- alpn:
+  - http/1.1
   name: 400|🇺🇸_美国
   network: ws
   password: 4ed4ac41-4b56-42c4-b31c-4d7bc36f74ce
@@ -4038,6 +4029,12 @@ proxies:
     headers:
       Host: hnm.huangdi2025.dpdns.org
     path: '%2F4e633j8uZI4BWzwNzcYz'
+- name: 400|🇺🇸US美国10
+  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  port: 443
+  server: mmmk.288288.shop
+  sni: Mmmk.288288.shoP
+  type: trojan
 - alpn:
   - http/1.1
   name: '400|🇺🇸_美国 #1'
@@ -4132,6 +4129,12 @@ proxies:
   server: 54.64.61.41
   skip-cert-verify: false
   sni: www.nintendogames.net
+  type: trojan
+- name: 400|🇺🇸US美国28
+  password: 98b419ef-83a2-4d1b-a23d-566b7f24477b
+  port: 443
+  server: nnmjkio.taipei101.indevs.in
+  sni: NnmjKIO.taIPEI101.iNDevS.IN
   type: trojan
 - name: 400|🇺🇸 美国3|@stairnode
   password: BxceQaOe
@@ -4239,6 +4242,13 @@ proxies:
     headers:
       Host: jmkg.818185.xyz
     path: '%2F8uSIAS1cIyvZXFAbvQEN'
+- name: 400|🇺🇸 美国 AT&T
+  password: hSA6YXe15O
+  port: 443
+  server: 104.11.86.252
+  skip-cert-verify: true
+  sni: Telegram%20%20%20%20%20%20%20%20%20%20%20%20%2B%40WangCai2
+  type: trojan
 - name: 400|美国节点
   network: ws
   password: iwangjie
@@ -4437,16 +4447,6 @@ proxies:
     path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
 - alterId: 0
   cipher: auto
-  name: '400|US美国(mibei77.com 米贝节点分享) #26'
-  network: tcp
-  port: '30812'
-  server: v12.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
   name: '400|US美国(mibei77.com 米贝节点分享) #27'
   network: ws
   port: '80'
@@ -4584,6 +4584,28 @@ proxies:
     headers:
       Host: www.darkroom.lol
     path: /
+- alterId: 0
+  cipher: auto
+  name: '400|🇺🇸 美国 CloudFlare节点 #5'
+  network: ws
+  port: '443'
+  server: jjjmki.930.pp.ua
+  tls: true
+  type: vmess
+  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+  ws-opts:
+    headers:
+      Host: jjjmki.930.pp.ua
+    path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
+- alterId: 2
+  cipher: auto
+  name: '400|🇺🇸 US美国(mibei77.com 米贝节点分享) #149'
+  network: tcp
+  port: '30808'
+  server: v8.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: 400|🇺🇸US美国16
