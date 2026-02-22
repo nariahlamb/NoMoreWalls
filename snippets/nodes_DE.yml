@@ -485,9 +485,8 @@ proxies:
     path: /
   ws-path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇮🇶IQ
-  delay: 2324
-  name: 350,353,385|芬兰 - 赫尔辛基 - WAIcore Ltd - 1
+  country: IQ
+  name: 350,353|IQ_14
   password: qS3skwmolrQ70q842irQD0
   port: 5790
   server: 178.17.61.67
@@ -514,11 +513,13 @@ proxies:
   country: ' DE'
   h2-opts: {}
   http-opts: {}
-  name: 350| DE_34
+  name: 350,400|🇩🇪 DE_34
   network: none
   port: 18355
   server: 92.246.87.170
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
   ws-path: /
@@ -540,7 +541,7 @@ proxies:
     HOST: jamekk.org
   ws-path: linkvws
 - country: DE
-  name: 350|DE_36
+  name: 350,400|🇩🇪DE_36
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -696,6 +697,28 @@ proxies:
   skip-cert-verify: false
   sni: awaited-chicken.adder289.quest
   type: trojan
+- delay: 2155
+  name: 385|德国 - Frankfurt Am Main - HZ Ho...
+  network: ws
+  password: pYIoKUPGpWeTYXEx3HjR7s97B
+  port: 443
+  server: free-de-2.undef.network
+  skip-cert-verify: true
+  sni: free-de-2.undef.network
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: free-de-2.undef.network
+    path: '%2Ff2fc2a1f'
+- cipher: aes-256-cfb
+  country: 🇪🇸 ES
+  delay: 673
+  name: 385|西班牙 - 马德里 - Melbikomas UAB - 1
+  password: EXN3S3eQpjE7EJu8
+  port: 9027
+  server: 5.188.181.201
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -710,3 +733,72 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
+- alpn:
+  - http/1.1
+  name: 400|DE TROJAN-31 | free-nodes
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 35.157.96.104
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 400|DE TROJAN-27 | free-nodes
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.29.75.76
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 400|德国 051
+  network: ws
+  port: 443
+  server: 141.94.155.229
+  servername: pelang.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: pelang.org
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 400|🇩🇪 DE_35
+  network: ws
+  port: 443
+  server: 141.95.126.134
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 400|🇩🇪 DE_33
+  network: ws
+  port: 443
+  server: 141.94.155.224
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '400|🇩🇪_DE_德国 #1'
+  network: tcp
+  port: 8080
+  server: 185.189.58.195
+  tls: false
+  type: vmess
+  uuid: 42e25353-b1ae-59f3-bd59-d86d2737b814
