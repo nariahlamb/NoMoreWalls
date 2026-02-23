@@ -501,10 +501,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  country: ' GB'
+  country: GB
   h2-opts: {}
   http-opts: {}
-  name: 350,392,395,400,544|US【机场推荐：https://a0a.xyz】1
+  name: 350,353,392,395,400,544|节点日期：2026-02-23
   network: tcp
   port: '180'
   server: 82.198.246.97
@@ -1178,15 +1178,26 @@ proxies:
   tls: true
   type: vless
   uuid: f0b15f64-db59-438c-b1b6-f1b83db52240
-- delay: 1291
-  name: 385|英国 - Poplar - The Constant Com...
-  password: 0b869f32-657e-11ee-a90c-f23c9313b177
-  port: 3261
-  server: 3ca066cd-taz0g0-tfmj6h-24c4.h2ukdc1.cdnbytescm.com
-  sni: 3ca066cd-taz0g0-tfmj6h-24c4.h2ukdc1.cdnbytescm.com
-  tls: true
-  type: http
-  username: 0b869f32-657e-11ee-a90c-f23c9313b177
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  delay: 569
+  http-opts:
+    headers:
+      Host:
+      - fast.com
+    method: GET
+    path:
+    - /
+  name: 385|英国 - 伦敦 - Global Connectivity ...
+  network: http
+  port: 2086
+  server: 87.120.219.124
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6a866ca-1756-44ed-9866-a9949f2bad38
 - alterId: 2
   cipher: auto
   name: '395,400|🇨🇳_中国 #6'
@@ -1197,15 +1208,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- client-fingerprint: chrome
-  name: 395|GB_speednode_0010
-  port: 8443
-  server: 109.176.229.97
-  servername: tgju.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: cdeedd27-4b50-4f5b-b0c4-1967cc972f93
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x UK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1573,14 +1575,14 @@ proxies:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - flow: ''
-  name: '400,544|GB【机场推荐：https://a0a.xyz】23 #1'
+  name: 400|GB【机场推荐：https://a0a.xyz】23
   network: tcp
   port: 2345
   server: 57.129.133.88
   tls: false
   type: vless
   uuid: 7007111a-c28b-4ab1-8d28-bc7b42681028
-- name: 400,544|GB【机场推荐：https://a0a.xyz】24
+- name: 400|GB VLESS-82 | free-nodes
   network: tcp
   port: 2345
   server: wolf2.adslimit.info
@@ -1680,14 +1682,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- name: 404|🇬🇧 英国 | GBR
-  password: 44451991-6f7b-4c68-8523-d5b362a2f629
-  port: 443
-  server: gb-loc01.lada.mom
-  skip-cert-verify: false
-  sni: gb-loc01.lada.mom
-  tls: false
-  type: hysteria2
 - name: 411|韩国-三网优化2
   password: d681df3e-fe9b-4a37-abdf-dcb93682c0da
   port: 44732

@@ -121,15 +121,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- delay: 1744
-  name: 89,343,385|美国 - 聖荷西 - Radishcloud Technol...
-  password: 347ca311-8fc2-499c-8fe1-bd0ecb50f1b3
-  port: 43642
-  server: 5.34.222.4
-  skip-cert-verify: true
-  sni: iepl.usq1.cat.bilibili.com
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '90,345|美国NO.1 #1'
@@ -1661,9 +1652,8 @@ proxies:
   server: 154.90.63.177
   type: ss
 - cipher: aes-256-cfb
-  country: 🇺🇸 US
-  delay: 1009
-  name: 350,385|巴西 - 圣保罗 - Kaopu Cloud HK Limi...
+  country: ' US'
+  name: 350| US_86
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.54.57.90
@@ -1868,7 +1858,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: US
-  name: 353|Relay_US-US_03
+  name: 353|Relay_US-US_04
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -1880,7 +1870,24 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 353|Relay_US-US_04
+  name: 353|US_05
+  network: ws
+  port: 80
+  server: turk1.net.net
+  servername: tr1-smart.adelping.com.
+  skip-cert-verify: true
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  ws-opts:
+    headers:
+      HOST: tr1-smart.adelping.com.
+    path: /
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: 353|Relay_US-US_06
   network: ws
   port: 443
   server: n1753356378.4u9ma.icu
@@ -1892,24 +1899,6 @@ proxies:
   ws-opts:
     headers:
       HOST: n1753356378.4u9ma.icu
-    path: /
-- alterId: 0
-  cipher: auto
-  country: US
-  h2-opts: {}
-  http-opts: {}
-  name: 353|Relay_US-US_05
-  network: ws
-  port: 443
-  server: n1753101272.lie5d.cyou
-  servername: n1753101272.lie5d.cyou
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 568a3e7a-c13e-4205-af30-e75ec3e5c778
-  ws-opts:
-    headers:
-      HOST: n1753101272.lie5d.cyou
     path: /
 - name: 365|美国_洛杉矶
   network: ws
@@ -2667,45 +2656,46 @@ proxies:
     path: /dyajvws
 - alterId: 0
   cipher: auto
-  name: 371,372,400|未知_0223047805
+  name: 371,372,400|CF中转_02230412564
   network: ws
-  port: '443'
-  server: bghy.1x9.indevs.in
+  port: '8080'
+  server: 104.26.14.85
   servername: ''
-  tls: true
+  tls: false
+  type: vmess
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  ws-opts:
+    headers:
+      Host: nasnet-162191099.sharghdaily.co
+    path: /nasnet/cdn
+- alterId: 0
+  cipher: auto
+  name: '371,372|美国 CloudFlare节点 #11'
+  network: ws
+  port: 8080
+  server: digitalocean.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  ws-opts:
+    headers:
+      Host: nasnet-571299667.rahavard365.co
+    path: /NASNET/cdn
+- alterId: 0
+  cipher: auto
+  name: 371,372,400|未知_022304004
+  network: ws
+  port: '80'
+  server: vfgty6.2nn.ccwu.cc
+  servername: vfgty6.2nn.ccwu.cc
+  tls: false
   type: vmess
   uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
   ws-opts:
     headers:
-      Host: bghy.1x9.indevs.in
+      Host: vfgty6.2nn.ccwu.cc
     path: /iSRWSKUJKNuXvVzsYHmsMrnO
-- alterId: 0
-  cipher: auto
-  name: '371,372|美国 CloudFlare节点 #5'
-  network: ws
-  port: 80
-  server: turk1.net.net
-  servername: TM_AZARBAYJAB1.new.99.workers.dev
-  tls: false
-  type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-  ws-opts:
-    headers:
-      Host: tr1-smart.adelping.com.
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '371,372|美国 CloudFlare节点 #6'
-  network: ws
-  port: '443'
-  server: ggnju.iran2027.indevs.in
-  tls: true
-  type: vmess
-  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  ws-opts:
-    headers:
-      Host: ggnju.iran2027.indevs.in
-    path: /LDTpW8UIEnTAiN9LMya
 - alterId: 0
   cipher: auto
   name: 371,372,392,400|未知27 2.2MB/s
@@ -2722,7 +2712,90 @@ proxies:
     path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #8'
+  name: '371,372|美国 CloudFlare节点 #14'
+  network: ws
+  port: 8080
+  server: 172.67.73.163
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  ws-opts:
+    headers:
+      Host: nasnet-571296497.iranpress.co
+    path: /nasnet/cdn
+- alterId: 0
+  cipher: auto
+  name: '371,372,404|🇺🇸 美国 | USA #3'
+  network: ws
+  port: '80'
+  server: turk1.net.net
+  tls: false
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  ws-opts:
+    headers:
+      Host: tr1-smart.adelping.com.
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 371,372,400|未知_0223047793
+  network: ws
+  port: '443'
+  server: nnh.1x0.indevs.in
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  ws-opts:
+    headers:
+      Host: nnh.1x0.indevs.in
+    path: /iSRWSKUJKNuXvVzsYHmsMrnO
+- alterId: 0
+  cipher: auto
+  name: '371,372|美国 CloudFlare节点 #17'
+  network: ws
+  port: 8080
+  server: 104.19.174.68
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  ws-opts:
+    headers:
+      Host: nasnet-571299667.rahavard365.co
+    path: /NASNET/cdn
+- alterId: 0
+  cipher: auto
+  name: 371,372,400|🇺🇸US_15 | ⬇️ 2.8MB/s
+  network: ws
+  port: 80
+  server: jjkm.zem.indevs.in
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c558328b-eb46-424c-b9e0-574770f0b072
+  ws-opts:
+    headers:
+      Host: jjkm.zem.indevs.in
+    path: /7sOz0p4SzU1D6XNC0BXGtJ
+- alterId: 0
+  cipher: auto
+  name: '371,372|美国 CloudFlare节点 #19'
+  network: ws
+  port: 8080
+  server: 104.26.14.85
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: nasnet-162191099.sharghdaily.co
+    path: /nasnet/cdn?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '374|美国 CloudFlare节点 #20'
   network: ws
   port: 2095
   server: 172.64.194.234
@@ -2735,7 +2808,7 @@ proxies:
     path: /hgcefomn
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #9'
+  name: '374|美国 CloudFlare节点 #21'
   network: ws
   port: 8880
   server: 141.101.123.18
@@ -2748,7 +2821,7 @@ proxies:
     path: /qwer
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #10'
+  name: '374|美国 CloudFlare节点 #22'
   network: ws
   port: 8080
   server: 198.41.218.144
@@ -2762,7 +2835,7 @@ proxies:
     path: /qwer01
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #11'
+  name: '374|美国 CloudFlare节点 #23'
   network: ws
   port: 8080
   server: 162.159.241.157
@@ -2773,8 +2846,23 @@ proxies:
     headers:
       Host: ecc.vtcss.top
     path: /qwer01
-- delay: 1168
-  name: '383,385,392,395,397,398|美国3|@ripaojiedian #1'
+- name: '383,392,395,397,398|美国|@ripaojiedian #1'
+  network: tcp
+  password: 64a59181551b5773e390bd717a7b7c06
+  port: 1281
+  server: 160.16.89.176
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '383,392,395,397,398|美国2|@ripaojiedian #1'
+  network: tcp
+  password: 64a59181551b5773e390bd717a7b7c06
+  port: 4920
+  server: 52.192.108.21
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '383,392,395,397,398|美国3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 23287
@@ -2782,31 +2870,9 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  delay: 1946
-  name: 385|美国 - 华盛顿特区 - HostPapa - 8
-  port: 30804
-  server: v4.hdacd.com
-  servername: v4.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- country: 🇬🇧 GB
-  delay: 574
-  name: 385|美国 - 洛杉矶 - Clouvider Limited -...
-  password: d30ab83dbde4480082048fb315bedebd
-  port: 443
-  server: 77.247.126.137
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  delay: 1070
+  delay: 1910
   name: 385|美国 - 洛杉矶 - Datacamp Limited - ...
   port: 180
   server: 82.198.246.97
@@ -2815,17 +2881,8 @@ proxies:
   type: vmess
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- country: 🇺🇸 US
-  delay: 1105
-  name: 385|美国 - 希尔斯伯勒 - OVH SAS - 10
-  password: d30ab83dbde4480082048fb315bedebd
-  port: 443
-  server: 15.204.56.75
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  delay: 523
+  delay: 2281
   name: 385|美国 - Somers - Fourplex Telecom...
   password: hbGrpfvNrJsUmKmPbR3iY2
   port: 443
@@ -3081,17 +3138,17 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|US美国(mibei77.com 米贝节点分享)-183
-  password: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
-  port: 443
-  server: ghju.0ok.ccwu.cc
-  sni: ghju.0ok.ccwu.cc
-  type: trojan
 - name: '400,404|🇺🇸 美国 | USA #1'
   password: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
   port: 443
-  server: yui9.0ok.ccwu.cc
+  server: ghju.0ok.ccwu.cc
   skip-cert-verify: false
+  sni: ghju.0ok.ccwu.cc
+  type: trojan
+- name: 400|US美国(mibei77.com 米贝节点分享)-180
+  password: 077a4330-7cb0-4d4b-8feb-7ceb3cd43f69
+  port: 443
+  server: yui9.0ok.ccwu.cc
   sni: yui9.0ok.ccwu.cc
   type: trojan
 - alpn:
@@ -3561,6 +3618,19 @@ proxies:
     path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
 - alterId: 0
   cipher: auto
+  name: '400|🇺🇸 美国 CloudFlare节点 #8'
+  network: ws
+  port: '80'
+  server: 104.26.15.137
+  tls: false
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  ws-opts:
+    headers:
+      Host: tr1-smart.adelping.com.
+    path: /
+- alterId: 0
+  cipher: auto
   name: '400|🇺🇸 美国 CloudFlare节点 #9'
   network: ws
   port: '8080'
@@ -3588,7 +3658,7 @@ proxies:
     path: /NASNET/cdn?ed=2560
 - alterId: 0
   cipher: auto
-  name: 400,404|🇫🇷 法国 | FRA
+  name: 400|🇺🇸US美国7
   network: ws
   port: '8443'
   server: dll.avaaaal.ir
@@ -3789,20 +3859,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|🇺🇸US_15 | ⬇️ 2.8MB/s
-  network: ws
-  port: 80
-  server: jjkm.zem.indevs.in
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c558328b-eb46-424c-b9e0-574770f0b072
-  ws-opts:
-    headers:
-      Host: jjkm.zem.indevs.in
-    path: /7sOz0p4SzU1D6XNC0BXGtJ
-- alterId: 0
-  cipher: auto
   name: 400|🇺🇸US_31 | ⬇️ 2.1MB/s
   network: ws
   port: 443
@@ -3831,7 +3887,7 @@ proxies:
     path: /KHtPvNZl371C8NsbbZ1wwDhJ3
 - alterId: 0
   cipher: auto
-  name: '400|美国 CloudFlare节点 #12'
+  name: '400|美国 CloudFlare节点 #24'
   network: ws
   port: 8080
   server: 104.26.15.85
@@ -3936,17 +3992,14 @@ proxies:
     headers:
       Host: llllllllo.890404.indevs.in
     path: /vitRvGVofV7ia41dH
-- name: '404|🇺🇸 美国 | USA #2'
-  password: 827beb2a-f97a-4b23-b733-adef30c98e17
-  port: 443
-  server: mmjhggtr.un2026.indevs.in
-  skip-cert-verify: false
-  sni: mmjhggtr.un2026.indevs.in
-  type: trojan
-- name: '404|🇺🇸 美国 | USA #3'
-  password: 827beb2a-f97a-4b23-b733-adef30c98e17
-  port: 443
-  server: ccvbg.un2026.indevs.in
-  skip-cert-verify: false
-  sni: ccvbg.un2026.indevs.in
-  type: trojan
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: HISLfofvAHRSadQhnQr
+  name: '404|🇺🇸 美国 | USA #2'
+  network: grpc
+  port: '443'
+  server: kkiuyt.un2026.indevs.in
+  tls: true
+  type: vmess
+  uuid: 827beb2a-f97a-4b23-b733-adef30c98e17

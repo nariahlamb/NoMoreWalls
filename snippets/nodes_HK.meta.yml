@@ -253,12 +253,15 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: chacha20-ietf
-  name: '89,343|🇭🇰 HK_1|3.3MB/s|YT-HK #1'
-  password: asd123456
-  port: 8388
-  server: 103.149.183.200
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: '89,343|🇭🇰 MU_1|5.3MB/s|YT-HK|NF|D+|4% #1'
+  port: 443
+  server: 45.196.235.171
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ac6e19f8-4852-41e1-c120-c7261ee8f6e5
 - alterId: 0
   cipher: auto
   name: '90,345|香港NO.2 #1'
@@ -1360,24 +1363,13 @@ proxies:
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf
   country: HK
-  h2-opts: {}
-  http-opts: {}
-  name: 353|Relay_HK-HK_01
-  network: ws
-  port: 443
-  server: n1761296880.lie5d.cyou
-  servername: n1761296880.lie5d.cyou
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1effac4a-cdb8-4717-a10c-da97263c802c
-  ws-opts:
-    headers:
-      HOST: n1761296880.lie5d.cyou
-    path: /
+  name: 353|HK_02
+  password: asd123456
+  port: 8388
+  server: 103.149.183.200
+  type: ss
 - name: 365|香港_香港
   network: ws
   port: 2053
@@ -1755,8 +1747,15 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
-- delay: 465
-  name: '383,385,392,395,397,398|香港4|@ripaojiedian #1'
+- name: '383,392,395,397,398|香港3|@ripaojiedian #1'
+  network: tcp
+  password: 64a59181551b5773e390bd717a7b7c06
+  port: 4856
+  server: 13.112.42.244
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '383,392,395,397,398|香港4|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 1491
@@ -1764,9 +1763,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-  udp: true
-- delay: 533
-  name: '383,385,392,395,397,398|香港5|@ripaojiedian #1'
+- name: '383,392,395,397,398|香港5|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 2399
@@ -1774,25 +1771,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-  udp: true
-- delay: 2076
-  name: 385|菲律宾 - 马尼拉 - Kaopu Cloud HK Lim...
-  password: 0b869f32-657e-11ee-a90c-f23c9313b177
-  port: 3243
-  server: 8a640e94-taz0g0-tfmj6h-24c4.sksapisrv.com
-  sni: 8a640e94-taz0g0-tfmj6h-24c4.sksapisrv.com
-  tls: true
-  type: http
-  username: 0b869f32-657e-11ee-a90c-f23c9313b177
-- delay: 1593
-  name: 385|泰国 - 曼谷 - Kaopu Cloud HK Limit...
-  password: 0b869f32-657e-11ee-a90c-f23c9313b177
-  port: 3242
-  server: 8a640e94-taz0g0-tfmj6h-24c4.sksapisrv.com
-  sni: 8a640e94-taz0g0-tfmj6h-24c4.sksapisrv.com
-  tls: true
-  type: http
-  username: 0b869f32-657e-11ee-a90c-f23c9313b177
 - alterId: 0
   cipher: auto
   name: '395,400|HK51｜机房｜低风险 #1'
@@ -2318,7 +2296,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400,404|🇭🇰 香港 | HKG
+  name: 400|香港_022304003
   network: ws
   port: '443'
   server: n1753101277.4u9ma.icu
@@ -2400,11 +2378,18 @@ proxies:
     headers:
       Host: n1761214906.wpg27.xyz
     path: /
+- name: 404|🇭🇰 香港 | HKG
+  password: 69b64eb6-b2cb-4e32-b6c3-711022ba0237
+  port: 21115
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
 - name: '404|🇭🇰 香港 | HKG #1'
   password: 34ae50b1-3cab-4aea-b834-f3b1f8a42cc1
-  port: 20190
+  port: 20191
   server: hk.chifanbieshuohua.club
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: hysteria2
 - alterId: 0
