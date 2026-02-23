@@ -4515,13 +4515,6 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- name: 392|🇨🇦 加拿大 V2CROSS.COM
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  port: 10889
-  server: 167.17.185.228
-  skip-cert-verify: false
-  sni: web.max
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -4536,19 +4529,20 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|🇨🇦CA_1 | ⬇️ 3.4MB/s
-  password: 795ef99b-3260-4d18-ac98-5130bba9f168
-  port: 443
-  server: nji9768.006660666.xyz
-  sni: nji9768.006660666.xyz
-  type: trojan
-- name: 400|加拿大_022304088
+- name: 400|加拿大_022318082
   network: tcp
   password: adb13850-7e70-492e-85b2-01184801d587
   port: 443
   server: ca05.oportal.cc
   type: trojan
-- name: 400|CA VLESS-63 | free-nodes
+- name: 400|🇨🇦CA加拿大2
+  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+  port: 10889
+  server: 167.17.185.228
+  sni: web.max
+  type: trojan
+- name: 400|CA VLESS-61 | free-nodes
+  network: tcp
   port: 30238
   server: 144.217.133.97
   tls: false
@@ -4566,6 +4560,18 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 加拿大_150
+  network: ws
+  port: 2096
+  server: 205.233.181.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - name: 400|YouTube顺丰资源 加拿大_285
   network: ws
   port: 2096

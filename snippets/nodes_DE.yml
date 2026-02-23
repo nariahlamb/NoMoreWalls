@@ -727,8 +727,7 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 392,400|🇩🇪_德国
-  network: tcp
+- name: 392,400,404|🇩🇪 德国 | DEU
   password: pYIoKUPGpWeTYXEx3HjR7s97B
   port: 443
   server: free-de-2.undef.network
@@ -760,11 +759,11 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 400|DE TROJAN-47 | free-nodes
+  name: 400|DE TROJAN-42 | free-nodes
   network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 52.28.169.181
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.181.24.193
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
@@ -783,6 +782,20 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: 400|🇩🇪 DE_35
+  network: ws
+  port: 443
+  server: 141.95.126.134
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: 400|🇩🇪 DE_33
   network: ws
   port: 443
@@ -797,7 +810,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|德国_0223041154
+  name: 400|德国_0223181150
   network: tcp
   port: '46585'
   server: irc.echo-license.gr
