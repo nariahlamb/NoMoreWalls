@@ -600,6 +600,47 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
+- client-fingerprint: chrome
+  name: 383,395,400|🇮🇳_印度
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
+    short-id: 3ca620a7ed5f3196
+  server: fr.prod.n7.homes
+  servername: sun6-21.userapi.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 010c8bf7-0a43-404f-a6c5-2427acb4d476
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '383,395,400|🇫🇷_法国 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
+  server: 185.171.202.55
+  servername: fran.scroogethebest.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '383,395,400|🇫🇷_法国 #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
+  server: fran.scroogethebest.com
+  servername: fran.scroogethebest.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
 - name: 400|🇫🇷FR_41
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
@@ -618,37 +659,15 @@ proxies:
   server: de-full.privateip.net
   sni: de-full.privateip.net
   type: trojan
-- name: 400|FR TROJAN-30 | free-nodes
-  network: ws
-  password: humanity
-  port: 443
-  server: www.calmlunch.com
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
 - alpn:
   - http/1.1
-  name: 400|FR TROJAN-33 | free-nodes
+  name: 400|FR TROJAN-30 | free-nodes
   network: tcp
   password: telegram-id-directvpn
   port: 22223
-  server: 35.181.234.50
+  server: 51.44.96.183
   sni: trojan.burgerip.co.uk
   type: trojan
-- client-fingerprint: chrome
-  name: 400|FR VLESS-36 | free-nodes
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
-    short-id: 3ca620a7ed5f3196
-  server: fr.prod.n7.homes
-  servername: sun6-21.userapi.com
-  tls: false
-  type: vless
-  uuid: 010c8bf7-0a43-404f-a6c5-2427acb4d476
 - name: 400|FR VLESS-33 | free-nodes
   network: ws
   port: 22224
@@ -755,30 +774,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 400|FR法国(mibei77.com 米贝节点分享)-010-1
-  network: ws
-  port: 8443
-  server: 152.228.135.204
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 400|🇫🇷FR-015
-  network: ws
-  port: 8443
-  server: 162.19.79.57
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 400|🇫🇷FR_16
   network: ws
   port: 443
@@ -887,6 +882,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 400|🇫🇷FR_1
+  network: ws
+  port: 2053
+  server: 31.59.120.161
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 400|🇫🇷FR_15
   network: ws
   port: 2053
@@ -935,29 +942,29 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 400|🇫🇷 法国 | FRA 7
-  network: ws
-  port: 8443
-  server: 37.59.97.139
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 400|🇫🇷 法国 | FRA
+- name: 400|🇫🇷FR_3
   network: ws
   port: 443
-  server: 46.105.39.5
+  server: 31.59.121.39
   servername: ''
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: sni.111000.v6.navy
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 400|🇫🇷FR_12
+  network: ws
+  port: 443
+  server: 45.63.114.83
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 400|🇫🇷 法国 | FRA 2
   network: ws
@@ -970,6 +977,18 @@ proxies:
   ws-opts:
     headers:
       Host: sni.111000.v6.navy
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 400|🇫🇷FR_5
+  network: ws
+  port: 8443
+  server: 46.8.224.150
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 400|🇫🇷FR-010
   network: ws
@@ -1201,6 +1220,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 400|🇫🇷FR_27
+  network: ws
+  port: 2053
+  server: 94.23.120.129
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 400|🇫🇷FR-002
   network: ws
   port: 8443
@@ -1250,6 +1281,19 @@ proxies:
   tls: false
   type: vless
   uuid: 6f192450-a1ed-4072-898b-0dd55c4e3437
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|🇫🇷_法国
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+  server: 193.160.130.112
+  servername: yimg.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 70b49349-9c87-497e-818c-46006e1c3ce0
 - name: 400|FR VLESS-88
   network: ws
   port: 2087
@@ -1263,14 +1307,20 @@ proxies:
     headers:
       Host: vds.rahedarro.com
     path: '%2Frahh'
-- name: 400|FR VLESS-100 | free-nodes
+- client-fingerprint: chrome
+  name: 400|FR VLESS-93 | free-nodes
+  network: ws
   port: 2087
   server: ip-data.turkserver.ir
-  tls: false
+  servername: all-fm2.netsnap.ir.
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: ad8a28d6-a327-4ccc-9335-41fdd9738437
   ws-opts:
-    path: '%2F'
+    headers:
+      Host: all-fm2.netsnap.ir.
+    path: /
 - client-fingerprint: chrome
   name: 400|FR VLESS-92 | free-nodes
   network: tcp
@@ -1283,47 +1333,17 @@ proxies:
   tls: false
   type: vless
   uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-- client-fingerprint: chrome
-  name: 400|🇫🇷_法国
-  network: tcp
-  port: 6870
-  reality-opts:
-    public-key: sGkQutu-jNzzINkigXEr4zm6us4c5KvT6FRSOKEliyY
-    short-id: a3ec090d35b64be8
-  server: mtn2-fr.ip-venzo.com
-  servername: ip-venzo.com
-  skip-cert-verify: false
-  tls: true
+- name: 400|FR法国(mibei77.com 米贝节点分享)-014
+  network: ws
+  port: 80
+  server: l098.zem.indevs.in
+  tls: false
   type: vless
-  uuid: c805b05e-339d-40e0-8787-432d97a27345
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '400|🇫🇷_法国 #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: 4fa44664f6a566d3
-  server: 185.171.202.55
-  servername: fran.scroogethebest.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '400|🇫🇷_法国 #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: 4fa44664f6a566d3
-  server: fran.scroogethebest.com
-  servername: fran.scroogethebest.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+  uuid: c558328b-eb46-424c-b9e0-574770f0b072
+  ws-opts:
+    headers:
+      Host: l098.zem.indevs.in
+    path: '%2Fv8clafFSnPXNC0BXGtJ'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 400|FR VLESS-107 | free-nodes
@@ -1349,15 +1369,9 @@ proxies:
   tls: false
   type: vless
   uuid: f7ddcea8-95e3-48de-909f-bb5d3c47696b
-- client-fingerprint: chrome
-  name: 400|FR VLESS-124 | free-nodes
-  network: tcp
+- name: '400|FR VLESS-119 | free-nodes #1'
   port: 19547
-  reality-opts:
-    public-key: -zsPOGrZY1Dlb6eypa5V_OPaLBpT66FX3cSo0mNX8SI
-    short-id: 47ee5c592c1672cf
   server: 109.172.55.157
-  servername: yandex.ru
   tls: false
   type: vless
   uuid: f9cdb2e1-939c-4470-b322-14b7313dec48
@@ -1371,19 +1385,10 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: 400|FR13｜机房｜低风险
-  network: tcp
-  port: '2085'
-  server: 82.152.98.198
-  tls: false
-  type: vmess
-  uuid: 052ceb67-79c7-45da-ba4b-42e659bb81fa
-- alterId: 0
-  cipher: auto
-  name: 400|法国 141
+  name: 400|法国 140
   network: ws
   port: 443
-  server: 146.59.85.226
+  server: 91.134.8.93
   servername: pelang.org
   tls: true
   type: vmess
@@ -1408,7 +1413,27 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|法国_022404683
+  name: 400|法国_022418036
+  network: tcp
+  port: '2086'
+  server: 82.152.98.198
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5da10a90-dd83-4300-bb9c-ad50765fa8e2
+- alterId: 0
+  cipher: auto
+  name: 400|法国_022418691
+  network: tcp
+  port: '2086'
+  server: 82.152.98.88
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8aa8d990-dea8-431f-b62d-cc70f3ba4de8
+- alterId: 0
+  cipher: auto
+  name: 400|法国_022418001
   network: tcp
   port: '550'
   server: 162.19.248.238

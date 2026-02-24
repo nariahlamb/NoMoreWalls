@@ -775,11 +775,10 @@ proxies:
     method: GET
     path:
     - /
-  name: 385,400,404|🇬🇧 英国 | GBR
+  name: 385|英国 - 伦敦 - Global Connectivity ...
   network: http
-  port: '2086'
+  port: 2086
   server: 87.120.219.124
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -824,16 +823,12 @@ proxies:
   server: uk2-full.privateip.net
   sni: uk2-full.privateip.net
   type: trojan
-- name: 400|GB TROJAN-29 | free-nodes
-  network: ws
+- name: 400|GB TROJAN-52 | free-nodes
   password: Tn2Bf0iRwJkJQgDk6gX6x81RB
   port: 443
   server: hl-freedom-2.undef.network
+  sni: hl-freedom-2.undef.network
   type: trojan
-  ws-opts:
-    headers:
-      Host: hl-freedom-2.undef.network
-    path: /f2fc2a1f
 - alpn:
   - http/1.1
   name: '400|GB英国(mibei77.com 米贝节点分享) #1'
@@ -863,6 +858,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
+- alterId: 0
+  cipher: auto
+  name: 400|英国_022418062
+  network: ws
+  port: '443'
+  server: 94.247.142.199
+  servername: ous3.dean52.top
+  tls: true
+  type: vmess
+  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
+  ws-opts:
+    headers:
+      Host: ous3.dean52.top
+    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
 - name: 411|韩国-三网优化2
   password: d681df3e-fe9b-4a37-abdf-dcb93682c0da
   port: 44732
