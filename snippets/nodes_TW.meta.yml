@@ -296,23 +296,28 @@ proxies:
   ws-path: /
 - cipher: aes-256-cfb
   country: TW
-  name: 353|TW_06
+  name: 353|TW_04
   password: qwerREWQ@@
   port: 41632
   server: 185.189.160.105
   type: ss
 - name: '371,372|台湾省台中市+中华电信 #2'
-  password: a1a00c82-5356-4a49-8944-1cd0f94168bb
+  password: 92953fc6-f497-43af-9d6d-f3b5589df318
   port: 35501
   server: 220.130.58.136
   sni: 220.130.58.136
   type: trojan
 - name: '371,372|台湾省台中市+中华电信 #3'
-  password: 04e5b584-1850-483d-a844-9ad624a4ca8e
-  port: 31101
+  password: 54952640-8e23-4faa-96ae-061e431a9913
+  port: 31102
   server: 220.130.58.136
-  skip-cert-verify: true
-  sni: 220.130.58.136
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '371,372|台湾省+中华电信(HiNet)数据中心 #1'
+  password: 736cd94d-7b94-3e44-8106-3419f64eaf09
+  port: 3462
+  server: 60.250.152.209
+  sni: 45.32.28.232
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x TW
@@ -356,10 +361,11 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|🇹🇼TW台湾
+- name: '400,404|🇺🇸 美国 | USA #1'
   password: 415e1712-0170-42dd-a4cd-5e95bef256db
   port: 35502
   server: green2.cdntencentmusic.com
+  skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
 - name: 400|TW台湾(mibei77.com 米贝节点分享)-006
