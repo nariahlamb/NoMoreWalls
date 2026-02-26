@@ -1030,7 +1030,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: 147|日本01
+  name: 146|日本01
   network: grpc
   port: 20230
   reality-opts:
@@ -1047,7 +1047,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: 147|日本02
+  name: 146|日本02
   network: grpc
   port: 20230
   reality-opts:
@@ -1064,7 +1064,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: 147|日本03
+  name: 146|日本03
   network: grpc
   port: 20230
   reality-opts:
@@ -1081,7 +1081,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: tj
-  name: 147|日本04
+  name: 146|日本04
   network: grpc
   port: 20230
   reality-opts:
@@ -1094,7 +1094,7 @@ proxies:
   type: vless
   udp: true
   uuid: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
-- name: 147|日本05
+- name: 146|日本05
   network: ws
   password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
   port: 20230
@@ -1103,7 +1103,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 147|日本06
+- name: 146|日本06
   network: ws
   password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
   port: 20230
@@ -1112,7 +1112,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 147|日本07
+- name: 146|日本07
   network: ws
   password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
   port: 20230
@@ -1121,7 +1121,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 147|日本08
+- name: 146|日本08
   network: ws
   password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
   port: 20230
@@ -1162,12 +1162,28 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- name: '228,383,392,395,397,398|日本3|@ripaojiedian #1'
+  network: tcp
+  password: 262f1d150049457ac1d6e66b020fa980
+  port: 3423
+  server: 54.250.241.85
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - name: '228,383,392,395,397,398|新加坡|@ripaojiedian #1'
   network: tcp
   password: 262f1d150049457ac1d6e66b020fa980
   port: 3419
   server: 153.121.65.107
   skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '228,383,392,395,397,398|新加坡2|@ripaojiedian #1'
+  network: tcp
+  password: 262f1d150049457ac1d6e66b020fa980
+  port: 3901
+  server: 35.77.90.248
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: '228,383,392,395,397,398|美国|@ripaojiedian #1'
@@ -1650,6 +1666,40 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| JP_66
+  network: ws
+  port: 443
+  server: 47.74.52.195
+  servername: n1753598448.74qxv.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3cd6f849-078e-4da9-8080-a2791b51b766
+  ws-headers:
+    HOST: n1753598448.74qxv.top
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| JP_67
+  network: ws
+  port: 443
+  server: n1753598448.74qxv.top
+  servername: n1753598448.74qxv.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3cd6f849-078e-4da9-8080-a2791b51b766
+  ws-headers:
+    HOST: n1753598448.74qxv.top
+  ws-path: /
 - client-fingerprint: random
   name: 365|日本_东京
   network: ws
@@ -2181,16 +2231,6 @@ proxies:
     headers:
       HOST: jp006.japansb3.ggff.net
     path: /
-- name: '395,400|JP38｜机房｜低风险 #1'
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D
-  password: de0c4b78-82d5-4f30-8d57-5302748b6af9
-  port: 35685
-  server: afeiosaka.54141528.xyz
-  skip-cert-verify: true
-  sni: afeiosaka.54141528.xyz
-  tls: false
-  type: hysteria2
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2259,6 +2299,16 @@ proxies:
   port: 15040
   server: 2.6rguyesfdhvbz.uk
   skip-cert-verify: false
+  tls: false
+  type: hysteria2
+- name: 400|JP38｜机房｜低风险
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D
+  password: de0c4b78-82d5-4f30-8d57-5302748b6af9
+  port: 35685
+  server: afeiosaka.54141528.xyz
+  skip-cert-verify: true
+  sni: afeiosaka.54141528.xyz
   tls: false
   type: hysteria2
 - name: 400|日本_022604019+L0
@@ -2538,7 +2588,7 @@ proxies:
   server: sg.ok12345.ggff.net
   tls: true
   type: vmess
-  uuid: 06bf39d5-34ef-40f8-ba75-f2e16a279beb
+  uuid: 32bd64ba-f8fc-4ef2-8cc5-15e8aa7bb6e8
   ws-opts:
     headers:
       Host: jp006.japansb3.ggff.net
@@ -2551,7 +2601,7 @@ proxies:
   server: sg.ok12345.ggff.net
   tls: true
   type: vmess
-  uuid: 25638d5e-4ce8-4e95-aec5-b0af3ef61207
+  uuid: 768d4f16-ae54-4655-aca7-92809b043ed7
   ws-opts:
     headers:
       Host: jp006.japansb3.ggff.net
@@ -2564,7 +2614,7 @@ proxies:
   server: sg.ok12345.ggff.net
   tls: true
   type: vmess
-  uuid: 2df8b584-d8c6-4964-a0d3-4bac6fb13161
+  uuid: 8924b0f4-2f59-4ed5-a68e-05247fc98c28
   ws-opts:
     headers:
       Host: jp006.japansb3.ggff.net
@@ -2577,7 +2627,7 @@ proxies:
   server: sg.ok12345.ggff.net
   tls: true
   type: vmess
-  uuid: 329b1b11-41e4-4f28-9652-80f8479ead04
+  uuid: 03ef4d2a-e68b-4297-9fe3-b916c3bb3d95
   ws-opts:
     headers:
       Host: jp006.japansb3.ggff.net
@@ -2590,7 +2640,7 @@ proxies:
   server: sg.ok12345.ggff.net
   tls: true
   type: vmess
-  uuid: 6f2db5b5-0736-421d-9a42-bfbcc8b2faf2
+  uuid: d92b05ee-a346-48ce-8a08-ed0dca0f3a7c
   ws-opts:
     headers:
       Host: jp006.japansb3.ggff.net
@@ -2603,7 +2653,7 @@ proxies:
   server: sg.ok12345.ggff.net
   tls: true
   type: vmess
-  uuid: 0e43d77c-6483-4703-bf3f-1de963f3e348
+  uuid: 5e7f4780-c695-4de9-a11f-6dda8b55b948
   ws-opts:
     headers:
       Host: jp006.japansb3.ggff.net
@@ -2616,7 +2666,7 @@ proxies:
   server: sg.ok12345.ggff.net
   tls: true
   type: vmess
-  uuid: 1e35e1ec-89cb-4515-90ea-d931bd1366fe
+  uuid: c153c21e-0cba-4e3f-a303-7c5abacfc99b
   ws-opts:
     headers:
       Host: jp006.japansb3.ggff.net
@@ -2629,7 +2679,7 @@ proxies:
   server: sg.ok12345.ggff.net
   tls: true
   type: vmess
-  uuid: 5ff0f0e7-7c1e-4d93-bd51-508eaa3554d4
+  uuid: f9b07c31-1fa4-4eb9-844d-e5ed5e08225f
   ws-opts:
     headers:
       Host: jp006.japansb3.ggff.net
@@ -2642,7 +2692,7 @@ proxies:
   server: sg.ok12345.ggff.net
   tls: true
   type: vmess
-  uuid: 6ba62094-ab9f-445a-a083-eafcde47aff6
+  uuid: 458763d4-9bcd-4a4c-9f73-f074f4f4ad0c
   ws-opts:
     headers:
       Host: jp006.japansb3.ggff.net
@@ -2655,7 +2705,7 @@ proxies:
   server: sg.ok12345.ggff.net
   tls: true
   type: vmess
-  uuid: 6ed4f5f2-f97b-4d98-9618-ee53894bb666
+  uuid: 3e7f0531-be99-4ca8-bcf2-cc105de333e0
   ws-opts:
     headers:
       Host: jp006.japansb3.ggff.net
@@ -2668,7 +2718,20 @@ proxies:
   server: sg.ok12345.ggff.net
   tls: true
   type: vmess
-  uuid: 0e09879f-a8d3-48eb-9440-1ab7da509d85
+  uuid: c9b9fc25-49b6-4a3f-bd20-ed7a3bcab08e
+  ws-opts:
+    headers:
+      Host: jp006.japansb3.ggff.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '404|🇯🇵 日本 | JPN #11'
+  network: ws
+  port: '443'
+  server: sg.ok12345.ggff.net
+  tls: true
+  type: vmess
+  uuid: 9aaa6261-ce1c-4135-8c62-82c20b9e0286
   ws-opts:
     headers:
       Host: jp006.japansb3.ggff.net
