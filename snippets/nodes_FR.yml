@@ -342,7 +342,7 @@ proxies:
   country: ' FR'
   h2-opts: {}
   http-opts: {}
-  name: 350| FR_36
+  name: 350| FR_35
   network: ws
   port: 443
   server: 91.134.8.101
@@ -352,7 +352,7 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
 - country: FR
-  name: 350|FR_37
+  name: 350|FR_36
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -360,7 +360,7 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_38
+  name: 350|FR_37
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -368,7 +368,7 @@ proxies:
   type: trojan
   udp: true
 - country: FR
-  name: 350|FR_39
+  name: 350|FR_38
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -498,44 +498,58 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- country: 🇺🇸US
-  delay: 2328
-  name: 385|法国 - 巴黎 - Amazon.com, Inc. - 1
+- country: 🇫🇷FR
+  delay: 745
+  name: 385|法国 - Paris - 1
   password: telegram-id-privatevpns
   port: 22222
-  server: 51.44.27.45
+  server: 13.39.61.161
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇫🇷FR
+  delay: 723
+  name: 385|法国 - Paris - 2
+  password: telegram-id-directvpn
+  port: 22223
+  server: 15.236.44.47
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 400|🇫🇷FR_38
+- country: 🇫🇷FR
+  delay: 2405
+  name: 385|法国 - Paris - 3
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.39.61.161
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 400|🇫🇷FR_36
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 400|🇫🇷FR_39
+- name: 400|🇫🇷FR_37
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 400|🇫🇷FR_40
+- name: 400|🇫🇷FR_35
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   sni: de-full.privateip.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 400,544|CN【机场推荐：https://a0a.xyz】5
-  network: tcp
-  port: '30830'
-  server: v30.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 400|FR TROJAN-39 | free-nodes
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.47.37.116
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 400|法国 140
@@ -566,7 +580,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 400|🇫🇷 FR_37
+  name: 400|🇫🇷 FR_34
   network: ws
   port: 443
   server: 91.134.8.101
@@ -580,27 +594,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|法国_022704694
-  network: tcp
-  port: '2086'
-  server: 82.152.98.198
+  name: 400|法国_030518002
+  network: ws
+  port: '20104'
+  server: 51.158.151.24
   servername: ''
   tls: false
   type: vmess
-  uuid: 5da10a90-dd83-4300-bb9c-ad50765fa8e2
+  uuid: 40e306a6-7cab-40ac-a085-a961895eb11b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki
 - alterId: 0
   cipher: auto
-  name: 400|法国_022704695
-  network: tcp
-  port: '2086'
-  server: 82.152.98.88
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8aa8d990-dea8-431f-b62d-cc70f3ba4de8
-- alterId: 0
-  cipher: auto
-  name: 400|法国_022704691
+  name: 400|法国_030518003
   network: tcp
   port: '550'
   server: 162.19.248.238

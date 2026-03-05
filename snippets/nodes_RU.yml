@@ -101,6 +101,14 @@ proxies:
   uuid: a867b90f-0ed1-401a-9088-bf852f6636db
   ws-opts:
     path: /
+- country: RU
+  name: 350|RU_86
+  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
+  port: 443
+  server: 194.246.114.54
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: '366|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -424,11 +432,12 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 371,372,400|🇷🇺RU俄罗斯2
-  password: ZblhWr0mqMakCPg.N
-  port: 36158
-  server: 212.193.18.144
-  sni: ya.ru
+- name: '392|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享) #3'
+  password: trojan
+  port: 8443
+  server: 109.234.211.66
+  skip-cert-verify: false
+  sni: store.timimi.dpdns.org
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x RU
@@ -444,14 +453,15 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|RU俄罗斯(mibei77.com 米贝节点分享)
-  network: ws
-  password: trojan
-  port: 8443
-  server: 109.234.211.66
-  sni: store.timimi.dpdns.org
+- name: 400|🇷🇺RU俄罗斯
+  password: ZblhWr0mqMakCPg.N
+  port: 36158
+  server: 212.193.18.144
+  sni: ya.ru
   type: trojan
-  ws-opts:
-    headers:
-      Host: store.timimi.dpdns.org
-    path: '%2F'
+- name: 400|🇷🇺RU_84
+  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
+  port: 443
+  server: 194.246.114.54
+  sni: 194.246.114.54
+  type: trojan

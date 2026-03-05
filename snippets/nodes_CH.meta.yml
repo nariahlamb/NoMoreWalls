@@ -1,17 +1,15 @@
 proxies:
-- name: '261,383,395,400|9|HP71 (5) #1'
+- name: '261,383,395,400|9,10|کانال تلگرام : Free_VPN_C... #1'
   obfs: salamander
   obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
   password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
   port: 35000
-  server: 206.71.158.40
+  server: 181.214.99.162
   skip-cert-verify: false
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- alpn:
-  - h3
-  name: '261,383,395,400|10|کانال تلگرام : Free_VPN_CH@... #3'
+- name: '261,383,395,400|10|کانال تلگرام : Free_VPN_CH@... #5'
   obfs: salamander
   obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
   password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
@@ -21,7 +19,9 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- name: '261,383,395|کانال تلگرام : Free_VPN_CH@ #2'
+- alpn:
+  - h3
+  name: '261,383,395|کانال تلگرام : Free_VPN_CH@ #1'
   obfs: salamander
   obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
   password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
@@ -71,35 +71,16 @@ proxies:
   port: 989
   server: 51.15.15.82
   type: ss
-- name: '383,395|کانال تلگرام : Free_VPN_CH@'
-  obfs: salamander
-  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-  port: 35000
-  server: 181.214.99.162
-  skip-cert-verify: false
-  sni: api.kermanshahi.org
-  tls: false
-  type: hysteria2
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  delay: 964
-  name: 385|瑞士 - 苏黎世 - Private Layer INC -...
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 38.180.161.123
-  type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 400|🇨🇭_瑞士
-  network: tcp
+- name: 400|🇨🇭_瑞士
+  network: ws
   port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  server: 185.227.149.123
-  servername: mycatcollection.com
+  server: 2.56.179.4
+  servername: sni.111000.dynv6.net
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 7c3f08c8-7b3b-4028-91d8-378a18c2b62a
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
