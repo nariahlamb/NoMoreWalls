@@ -222,7 +222,7 @@ proxies:
   type: anytls
   udp: true
 - country: RU
-  name: 350|RU_84
+  name: 350|RU_94
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: 194.246.114.54
@@ -963,13 +963,14 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 371,372,400|🇷🇺RU俄罗斯
+- name: '392,400|🇷🇺 俄罗斯 V2CROSS.COM #1'
   password: ZblhWr0mqMakCPg.N
   port: 36158
   server: 212.193.18.144
+  skip-cert-verify: false
   sni: ya.ru
   type: trojan
-- name: '392|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享) #3'
+- name: 392,400|🇷🇺RU俄罗斯2
   password: trojan
   port: 8443
   server: 109.234.211.66
@@ -990,14 +991,7 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|俄罗斯2
-  password: aa509a7e-18da-4461-a48c-2a39441c58d2
-  port: 21960
-  server: jp.sanmaojichang.com
-  sni: jp.sanmaojichang.com
-  tls: false
-  type: hysteria2
-- name: 400|🇷🇺RU_84
+- name: 400|🇷🇺RU_91
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: 194.246.114.54
@@ -1017,26 +1011,6 @@ proxies:
   tls: true
   type: vless
   uuid: 1218c022-dca8-49e5-b7d4-a04f3023db81
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 400|14|RU_speednode_0014
-  port: 8443
-  server: 109.120.181.190
-  servername: rbc.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 2bd8a29f-e024-4cdd-b714-53678cecaf79
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 400|14|RU_speednode_0015
-  port: 51192
-  server: 84.23.52.62
-  servername: max.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 4292f5ab-8963-2328-8052-3615895ce4f1
 - name: '400|🇷🇺_俄罗斯 #1'
   network: ws
   port: 8443
@@ -1063,18 +1037,6 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: 400|YouTube顺丰资源 俄罗斯_49
-  network: ws
-  port: 2096
-  server: 185.176.24.138
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - name: '400|🇷🇺_俄罗斯 #3'
   network: ws
   port: 443
@@ -1186,18 +1148,6 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: 400|YouTube顺丰资源 俄罗斯_272
-  network: ws
-  port: 443
-  server: 94.159.101.36
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - name: 400|YouTube顺丰资源 俄罗斯_284
   network: ws
   port: 443
@@ -1210,8 +1160,33 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 俄罗斯_279
+  network: ws
+  port: 443
+  server: 94.159.97.108
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - client-fingerprint: chrome
-  name: 400|RU VLESS-70 | free-nodes
+  name: 400|RU VLESS-61 | free-nodes
+  network: ws
+  port: 443
+  server: 212.193.157.118
+  servername: lk-cdn.deploy-assure.ru
+  tls: true
+  type: vless
+  uuid: 642e5ad8-bd76-07d0-8b5c-b4d0628f07bc
+  ws-opts:
+    headers:
+      Host: lk-cdn.deploy-assure.ru
+    path: '%2F%2F'
+- client-fingerprint: chrome
+  name: 400|RU VLESS-68 | free-nodes
   network: grpc
   port: 443
   reality-opts:
@@ -1223,29 +1198,6 @@ proxies:
   tls: false
   type: vless
   uuid: 68ac194a-0313-41a1-89fb-903a6fa3c795
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 400|RU VLESS-83 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: djTtGqd0XWqtt_WHukU7BTPQSn9o7gIpAosAxMy8tUo
-    short-id: ea1058117be12087
-  server: ru.crunch-crunch.com
-  servername: ru.crunch-crunch.com
-  tls: false
-  type: vless
-  uuid: 95be7de0-2394-47b8-aa2c-27773d61807f
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 400|14|RU_speednode_0016
-  port: 8443
-  server: 109.120.181.190
-  servername: rbc.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 9e59f6bb-27b9-49b8-ba44-3f23afd367ca
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: xyz
@@ -1262,7 +1214,7 @@ proxies:
   uuid: cc69278f-b497-4518-a346-5c0e11f1e9ae
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|RU VLESS-107 | free-nodes
+  name: 400|RU VLESS-104 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1274,7 +1226,7 @@ proxies:
   uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|RU VLESS-108 | free-nodes
+  name: 400|RU VLESS-107 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1284,25 +1236,32 @@ proxies:
   tls: false
   type: vless
   uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
-- name: 400|RU VLESS-125 | free-nodes
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|RU VLESS-121 | free-nodes
   network: tcp
   port: 443
   reality-opts:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 8dc4fccb2bcfc99d
   server: at.jojack.ru
-  servername: ''
+  servername: at.jojack.ru
   tls: false
   type: vless
   uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-- name: '400|RU VLESS-125 | free-nodes #1'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|RU VLESS-120 | free-nodes
+  network: tcp
   port: 8443
-  server: 45.12.114.73
+  reality-opts:
+    public-key: urvTdWo4dZxKfyZPbqMnVhX319f-6W_7pZtHITljvy4
+    short-id: aca9
+  server: 217.16.25.94
+  servername: max.ru
   tls: false
   type: vless
-  uuid: f1e74548-4c0b-463b-b68d-0d1ec48c965d
-  ws-opts:
-    path: '%2Fws-vless%2F'
+  uuid: edc9daf2-fc2e-435b-a87b-8427020b1d40
 - name: 413| RUN-UnReal-argo
   network: ws
   port: 80
