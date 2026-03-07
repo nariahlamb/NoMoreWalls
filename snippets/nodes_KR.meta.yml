@@ -359,6 +359,20 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
+- cipher: aes-256-cfb
+  country: ' KR'
+  name: 350| KR_70
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
+- cipher: aes-256-cfb
+  country: ' KR'
+  name: 350| KR_71
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
 - name: 365|韩国_首尔特别市
   network: ws
   port: 8443
@@ -791,7 +805,16 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|🇰🇷KR_1 | ⬇️ 5.1MB/s
+- name: 400|🇰🇷KR_2 | ⬇️ 5.3MB/s
+  obfs: salamander
+  obfs-password: MKsqfibVxwhZ3pCf
+  password: f6c7016b-6f94-4a32-975c-013f2494d312
+  port: 48306
+  server: kr1.miyazono-kaori.com
+  sni: kr1.miyazono-kaori.com
+  tls: false
+  type: hysteria2
+- name: 400|🇰🇷KR_7 | ⬇️ 5.1MB/s
   obfs: salamander
   obfs-password: rVYx28ncsHBinunc
   password: f6c7016b-6f94-4a32-975c-013f2494d312
@@ -800,6 +823,12 @@ proxies:
   sni: kr2.miyazono-kaori.com
   tls: false
   type: hysteria2
+- name: 400|韩国 - Yeongdong-gun - 18
+  password: trojan
+  port: 10035
+  server: 223.222.74.163
+  sni: jflsjlaf.pages.dev
+  type: trojan
 - name: 400|🇰🇷_韩国
   network: ws
   port: 50001
@@ -821,43 +850,17 @@ proxies:
   tls: true
   type: vless
   uuid: 337bf72e-bb79-4d5f-be3f-7822eb77100c
-- name: '400|🇰🇷_韩国 #1'
-  network: ws
-  port: 12126
-  server: 116.44.53.251
-  servername: sni.111000.dynv6.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: 400|🇰🇷KR-003
-  network: ws
-  port: 8443
-  server: 129.154.222.63
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: 400|🇰🇷KR-001
-  network: ws
+- name: 400|🇰🇷KR_12 | ⬇️ 3.5MB/s
+  network: tcp
   port: 443
-  server: 130.162.130.105
+  reality-opts:
+    public-key: RxiZyt1TiGizOaVLvMCvWkiYUhpHjDB6idK_CGsSFEE
+    short-id: a7a7d27e
+  server: 140.245.77.88
   servername: ''
-  tls: true
+  tls: false
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+  uuid: 35647c8c-08cd-4363-b578-d7c0995d987a
 - name: '400|KR韩国(mibei77.com 米贝节点分享) #1'
   network: ws
   port: 39567
@@ -870,19 +873,7 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: 400|YouTube顺丰资源 韩国_151
-  network: ws
-  port: 16058
-  server: 14.32.3.193
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: '400|🇰🇷_韩国 #2'
+- name: '400|🇰🇷_韩国 #1'
   network: ws
   port: 12312
   server: 211.48.77.114
@@ -907,7 +898,7 @@ proxies:
     headers:
       Host: 6f221d78.mfree.ccwu.cc
     path: '%2Fsocks5%3D4b2c7676%3A6f0f4cbba5bb%4038.111.30.111%3A26433'
-- name: '400|🇰🇷_韩国 #3'
+- name: '400|🇰🇷_韩国 #2'
   network: ws
   port: 11000
   server: 59.27.133.60
@@ -918,7 +909,7 @@ proxies:
   uuid: 69a647a9-c60f-1366-ec63-1332eb2d2105
   ws-opts:
     path: '%2F'
-- name: '400|🇰🇷_韩国 #4'
+- name: '400|🇰🇷_韩国 #3'
   network: ws
   port: 50000
   server: kr-tls01.gunyoung.top
@@ -967,10 +958,10 @@ proxies:
     headers:
       Host: qtto.6xp.snl.cc.cd
     path: '%2F'
-- name: 400|🇰🇷KR_12 | ⬇️ 2.6MB/s
+- name: 400|🇰🇷KR_11 | ⬇️ 4.0MB/s
   network: ws
-  port: 10200
-  server: 222.106.133.238
+  port: 443
+  server: 104.19.40.82
   servername: ''
   tls: true
   type: vless
@@ -979,7 +970,31 @@ proxies:
     headers:
       Host: fvso.9zz.snl.cc.cd
     path: '%2F'
-- name: '400|🇰🇷_韩国 #5'
+- name: 400|🇰🇷KR_10 | ⬇️ 3.9MB/s
+  network: ws
+  port: 443
+  server: 104.20.59.200
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
+  ws-opts:
+    headers:
+      Host: w5xo.gc7.snl.cc.cd
+    path: '%2F'
+- name: 400|🇰🇷KR_9 | ⬇️ 3.9MB/s
+  network: ws
+  port: 443
+  server: 108.162.198.96
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
+  ws-opts:
+    headers:
+      Host: qtto.6xp.snl.cc.cd
+    path: '%2F'
+- name: '400|🇰🇷_韩国 #4'
   network: ws
   port: 8443
   server: 59.3.3.161

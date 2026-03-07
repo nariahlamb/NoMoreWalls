@@ -446,15 +446,20 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|🇷🇺RU_86
+- name: 400|🇷🇺RU_89
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: 194.246.114.54
   sni: 194.246.114.54
   type: trojan
-- name: 400|🇷🇺RU俄罗斯2
+- name: '400|RU俄罗斯(mibei77.com 米贝节点分享) #1'
+  network: ws
   password: trojan
   port: 8443
   server: 109.234.211.66
   sni: store.timimi.dpdns.org
   type: trojan
+  ws-opts:
+    headers:
+      Host: store.timimi.dpdns.org
+    path: '%2F'
