@@ -136,7 +136,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
-- name: 228,395|US59｜家宽｜非常安全
+- name: '228,395,400|US59｜家宽｜非常安全 #1'
   network: tcp
   password: adf2550f-8b87-4ea1-aa80-e7fc8f65a68a
   port: 35502
@@ -144,7 +144,7 @@ proxies:
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: '262,383,395,400|8|TW #1'
+- name: '262,383,395,400|9|TW #2'
   password: e7965e64-e001-4e8c-8273-39c61ff4a094
   port: 30000
   server: tw.oomz.ru
@@ -303,7 +303,7 @@ proxies:
     path: /
   ws-path: /
 - country: ' TW'
-  name: 350| TW_85
+  name: 350| TW_81
   password: 736cd94d-7b94-3e44-8106-3419f64eaf09
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
@@ -352,78 +352,102 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|台湾_030704004+L0
+- name: 400|🇹🇼TW台湾2
   password: 04e5b584-1850-483d-a844-9ad624a4ca8e
   port: 35501
-  server: 220.130.58.136
-  skip-cert-verify: true
+  server: green2.cdntencentmusic.com
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: 400|台湾_030704007+L0
-  network: tcp
-  password: 47d9af53-24a8-4593-a439-a73b88ad53ae
-  port: 35501
-  server: 220.130.58.136
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 400|台湾_030704008+L0
-  network: tcp
-  password: 66c62e1a-8037-4154-ad0b-7a0ec415f46c
-  port: 35501
-  server: 220.130.58.136
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 400|🇹🇼 TW_93
+- name: 400|🇹🇼 TW_85
   password: 736cd94d-7b94-3e44-8106-3419f64eaf09
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
   sni: a03.taipeicitygovernment.cn.ua
   type: trojan
-- name: 400|台湾_030704001+L0
-  password: 8595b855-e4c4-40cd-834d-d34bb65ec928
-  port: 35501
-  server: 220.130.58.136
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 400|台湾_030704003+L0
-  password: 92953fc6-f497-43af-9d6d-f3b5589df318
-  port: 35501
-  server: 220.130.58.136
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 400|台湾_030704006+L0
-  network: tcp
-  password: a1a00c82-5356-4a49-8944-1cd0f94168bb
-  port: 35501
-  server: 220.130.58.136
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 400|台湾_030704002+L0
-  password: c5355528-55a2-45df-b8fd-a48ce3c41413
-  port: 35502
-  server: 220.130.58.136
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 400|台湾_030704009+L0
-  network: tcp
-  password: f976ac58-b52a-4a54-9c8e-3d49fd365232
-  port: 35501
-  server: 220.130.58.136
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 400|台湾02
-  network: tcp
-  port: '47082'
-  server: tunnel1.qqa678.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 161ad227-d462-46c0-b4d2-44a6cd225f5d
+- name: 400|TW台湾(mibei77.com 米贝节点分享)
+  network: ws
+  port: 443
+  server: video.livecuts.de
+  servername: video.livecuts.de
+  tls: true
+  type: vless
+  uuid: 11ffccca-bab6-423f-ae75-1084b18fffd0
+  ws-opts:
+    headers:
+      Host: video.livecuts.de
+    path: '%2Fvideo'
+- name: '400|TW台湾(mibei77.com 米贝节点分享) #1'
+  network: ws
+  port: 10443
+  server: 203.69.248.40
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|TW台湾(mibei77.com 米贝节点分享) #2'
+  network: ws
+  port: 16000
+  server: 203.69.248.40
+  servername: 6f221d78.mfree.ccwu.cc
+  tls: true
+  type: vless
+  uuid: 69a647a9-c60f-1366-ec63-1332eb2d2105
+  ws-opts:
+    headers:
+      Host: 6f221d78.mfree.ccwu.cc
+    path: '%2Fsocks5%3D4b2c7676%3A6f0f4cbba5bb%4038.111.30.111%3A26433'
+- name: '400|TW台湾(mibei77.com 米贝节点分享) #3'
+  network: ws
+  port: 80
+  server: 43.167.186.55
+  servername: 6f221d78.mfree.ccwu.cc
+  tls: true
+  type: vless
+  uuid: 69a647a9-c60f-1366-ec63-1332eb2d2105
+  ws-opts:
+    headers:
+      Host: 6f221d78.mfree.ccwu.cc
+    path: '%2Fsocks5%3D4b2c7676%3A6f0f4cbba5bb%4038.111.30.111%3A26433'
+- name: '400|TW台湾(mibei77.com 米贝节点分享) #4'
+  network: ws
+  port: 12755
+  server: 60.248.139.106
+  servername: 6f221d78.mfree.ccwu.cc
+  tls: true
+  type: vless
+  uuid: 69a647a9-c60f-1366-ec63-1332eb2d2105
+  ws-opts:
+    headers:
+      Host: 6f221d78.mfree.ccwu.cc
+    path: '%2Fsocks5%3D4b2c7676%3A6f0f4cbba5bb%4038.111.30.111%3A26433'
+- name: '400|TW台湾(mibei77.com 米贝节点分享) #5'
+  network: ws
+  port: 443
+  server: 114.33.57.170
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  type: vless
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  ws-opts:
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|TW台湾(mibei77.com 米贝节点分享) #6'
+  network: ws
+  port: 2083
+  server: 125.227.233.197
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  type: vless
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  ws-opts:
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - client-fingerprint: randomized
   name: 412|TS-13-01-TW
   network: ws

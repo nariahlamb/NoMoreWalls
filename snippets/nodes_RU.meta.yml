@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: chrome
-  name: '262,383,395,400|13|RU_speednode_0032 #1'
+  name: '262,383,395,400|14|RU_speednode_0032 #2'
   port: 8081
   server: 51.250.75.255
   servername: eh.vk.com
@@ -231,7 +231,7 @@ proxies:
   type: anytls
   udp: true
 - country: RU
-  name: 350|RU_80
+  name: 350|RU_78
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: 194.246.114.54
@@ -972,7 +972,14 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 392|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享)
+- name: 392,400|🇷🇺RU俄罗斯3
+  password: ZblhWr0mqMakCPg.N
+  port: 36158
+  server: 212.193.18.144
+  skip-cert-verify: false
+  sni: ya.ru
+  type: trojan
+- name: 392,400|🇷🇺RU俄罗斯2
   password: trojan
   port: 8443
   server: 109.234.211.66
@@ -993,103 +1000,67 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|🇷🇺RU_89
+- name: 400|🇷🇺RU_81
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: 194.246.114.54
   sni: 194.246.114.54
   type: trojan
-- name: '400|RU俄罗斯(mibei77.com 米贝节点分享) #1'
-  network: ws
-  password: trojan
-  port: 8443
-  server: 109.234.211.66
-  sni: store.timimi.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: store.timimi.dpdns.org
-    path: '%2F'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
+- flow: xtls-rprx-vision
   name: 400|🇷🇺_俄罗斯
   network: tcp
-  port: 17910
+  port: 443
   reality-opts:
-    public-key: KUhrhiJBplVCVCrAKP2KjIA_asOgkkvEEAxUJVofjgc
-    short-id: 8c09fb78b12f
-  server: 83.222.20.64
-  servername: yahoo.com
+    public-key: 6r6uq4tZym5wRhJ5uti-h-UvN6uatQodMcG8rBU79Q4
+  server: 5.188.88.164
+  servername: booking.com
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 079c1b04-7ef9-4c49-8a7a-849a18ba7b9b
+  uuid: 0509acee-63e3-4364-95cc-21c601f059be
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|🇷🇺_RU_俄罗斯
+  name: 400|RU VLESS-43 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik
+    short-id: d8c6b58bcbb0c323
+  server: 109.120.189.87
+  servername: max.ru
+  tls: false
+  type: vless
+  uuid: 0d3e2d21-f31b-07d0-b418-54cacd0be7c4
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|RU VLESS-44 | free-nodes
+  network: tcp
   port: 443
   reality-opts:
     public-key: 2ryk_zFs_pzxv-bL9FkOk0Jb5oQw1jAbyXjp6oh96R0
     short-id: 4e249e62
   server: nr-01.opsvpnvless.ru
   servername: stats.vk-portal.net
-  tls: true
+  tls: false
   type: vless
   uuid: 1218c022-dca8-49e5-b7d4-a04f3023db81
-- name: '400|RU俄罗斯(mibei77.com 米贝节点分享) #2'
-  network: ws
-  port: 8443
-  server: 109.107.164.64
-  servername: sni.111000.dynv6.net
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|RU俄罗斯(mibei77.com 米贝节点分享) #3'
-  network: ws
+- flow: xtls-rprx-vision
+  name: '400|🇷🇺_俄罗斯 #1'
+  network: tcp
   port: 443
-  server: 109.107.167.104
-  servername: sni.111000.dynv6.net
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|RU俄罗斯(mibei77.com 米贝节点分享) #4'
-  network: ws
-  port: 443
-  server: 185.244.49.38
-  servername: sni.111000.dynv6.net
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|RU俄罗斯(mibei77.com 米贝节点分享) #5'
-  network: ws
-  port: 443
-  server: 77.238.247.93
-  servername: sni.111000.dynv6.net
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|🇷🇺_俄罗斯 #1'
-  network: ws
-  port: 443
-  server: 94.141.123.231
-  servername: sni.111000.dynv6.net
+  reality-opts:
+    public-key: LCxSn-zcFxBKKztCytR-Wzjt3VwezZs2jN6FtZPQ3n0
+  server: 51.250.103.29
+  servername: ads.x5.ru
   skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 5aa188ea-db1b-4121-82f8-4eb1452cc052
+- name: 400|RU俄罗斯(mibei77.com 米贝节点分享)
+  network: ws
+  port: 443
+  server: 45.153.230.220
+  servername: sni.111000.dynv6.net
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
@@ -1099,19 +1070,6 @@ proxies:
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - client-fingerprint: chrome
   name: 400|RU VLESS-74 | free-nodes
-  network: ws
-  port: 443
-  server: 212.193.157.118
-  servername: lk-cdn.deploy-assure.ru
-  tls: true
-  type: vless
-  uuid: 642e5ad8-bd76-07d0-8b5c-b4d0628f07bc
-  ws-opts:
-    headers:
-      Host: lk-cdn.deploy-assure.ru
-    path: '%2F%2F'
-- client-fingerprint: chrome
-  name: 400|RU VLESS-66 | free-nodes
   network: grpc
   port: 443
   reality-opts:
@@ -1119,27 +1077,12 @@ proxies:
     short-id: c5b7244c0fef441a
   server: 64.188.90.93
   servername: a.primarymaster.online
-  skip-cert-verify: true
   tls: false
   type: vless
   uuid: 68ac194a-0313-41a1-89fb-903a6fa3c795
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '400|🇷🇺_俄罗斯 #2'
-  network: tcp
-  port: 51114
-  reality-opts:
-    public-key: lf7NJGZAcj3b-YdbsmD6oEISr0dZRjp_gM8ZhLHwb0U
-    short-id: 772e
-  server: 90.156.255.198
-  servername: yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 8b575b35-3c7c-42b0-ac80-2aa6b0d7717c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 400|RU VLESS-77 | free-nodes
+  name: 400|RU VLESS-80 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1151,9 +1094,23 @@ proxies:
   type: vless
   uuid: 95be7de0-2394-47b8-aa2c-27773d61807f
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 400|🇧🇾_白俄罗斯
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 0L6FE1vTechnKhN9LxFgmcDzqGVIfEQz8ZBGfvzKGzg
+    short-id: 79400b6f0813381c
+  server: hb-by2.cdns.su
+  servername: hb-by2.cdns.su
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: c67f81df-34e8-4cb3-ab43-599585775fa9
+- client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: xyz
-  name: '400|🇷🇺_RU_俄罗斯 #1'
+  name: 400|🇷🇺_RU_俄罗斯
   network: grpc
   port: 47407
   reality-opts:
@@ -1166,7 +1123,7 @@ proxies:
   uuid: cc69278f-b497-4518-a346-5c0e11f1e9ae
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|RU VLESS-106 | free-nodes
+  name: 400|RU VLESS-115 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1178,7 +1135,7 @@ proxies:
   uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|RU VLESS-107 | free-nodes
+  name: 400|RU VLESS-116 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1188,35 +1145,9 @@ proxies:
   tls: false
   type: vless
   uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
-- name: '400|🇷🇺_俄罗斯 #3'
-  network: ws
-  port: 443
-  server: 109.120.176.90
-  servername: 002.ljk-clouflare.dns.army
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
-  ws-opts:
-    headers:
-      Host: 002.ljk-clouflare.dns.army
-    path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2'
-- name: '400|🇷🇺_俄罗斯 #4'
-  network: ws
-  port: 8443
-  server: 109.120.176.90
-  servername: 002.ljk-clouflare.dns.army
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
-  ws-opts:
-    headers:
-      Host: 002.ljk-clouflare.dns.army
-    path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|RU VLESS-111 | free-nodes
+  name: 400|RU VLESS-121 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1229,30 +1160,44 @@ proxies:
   uuid: e5a33157-a449-4a25-8bd4-d2b02d66aa38
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|RU VLESS-121 | free-nodes
+  name: 400|RU VLESS-117 | free-nodes
   network: tcp
-  port: 8443
+  port: 443
   reality-opts:
-    public-key: urvTdWo4dZxKfyZPbqMnVhX319f-6W_7pZtHITljvy4
-    short-id: aca9
-  server: 217.16.25.94
-  servername: max.ru
+    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+    short-id: 8dc4fccb2bcfc99d
+  server: at.jojack.ru
+  servername: at.jojack.ru
   tls: false
   type: vless
-  uuid: edc9daf2-fc2e-435b-a87b-8427020b1d40
-- client-fingerprint: random
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+- name: 400|RU VLESS-120 | free-nodes
+  network: ws
+  port: 8443
+  server: 45.12.114.73
+  servername: rus21.unboundworld.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: f1e74548-4c0b-463b-b68d-0d1ec48c965d
+  ws-opts:
+    headers:
+      Host: rus21.unboundworld.org
+    path: /ws-vless/
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 400|俄羅斯
+  name: '400|🇷🇺_俄罗斯 #2'
   network: tcp
-  port: 8443
+  port: 443
   reality-opts:
-    public-key: pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4
-    short-id: 58c512b4422e2517
-  server: 78.153.139.68
-  servername: images.apple.com
-  tls: false
+    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+    short-id: 1ed136481e0ede74
+  server: 91.243.82.95
+  servername: premium-ru-khv.geodema.network
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: fd8972d7-cf5e-11f0-9970-45e1d80c4039
+  uuid: f9c72c6d-8d6e-4032-9f29-9c7c0bb9c24b
 - name: 413| RUN-UnReal-argo
   network: ws
   port: 80

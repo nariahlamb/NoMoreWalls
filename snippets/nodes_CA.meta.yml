@@ -4515,25 +4515,18 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- name: 371,372,400|🇨🇦CA加拿大5
+- name: '371,372|加拿大+V2CROSS.COM #2'
   password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
   port: 10889
-  server: 167.17.185.228
-  sni: web.max
+  server: 167.17.185.152
+  sni: ozon.ru
   type: trojan
-- name: 392,400|🇨🇦CA加拿大6
+- name: 371,372,392,400|🇨🇦CA加拿大3
   password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
   port: 10889
   server: 167.17.185.169
   skip-cert-verify: false
   sni: ya.ru
-  type: trojan
-- name: 392,400|🇨🇦CA加拿大
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  port: 10889
-  server: 167.17.185.172
-  skip-cert-verify: false
-  sni: web.max.ru
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x CA
@@ -4549,11 +4542,23 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|🇨🇦CA加拿大7
+- name: 400|🇨🇦CA加拿大2
   password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
   port: 10889
-  server: 167.17.185.152
-  sni: ozon.ru
+  server: 167.17.185.172
+  sni: web.max.ru
+  type: trojan
+- name: '400|加拿大+V2CROSS.COM #4'
+  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+  port: 10889
+  server: 167.17.185.228
+  sni: web.max
+  type: trojan
+- name: 400|加拿大 - 蒙特利尔 - 1
+  password: trojan
+  port: 8989
+  server: 158.69.192.34
+  sni: jflsjlaf.pages.dev
   type: trojan
 - name: 400|加拿大 - 密西沙加 - 2
   password: trojan
@@ -4561,19 +4566,28 @@ proxies:
   server: 217.197.97.121
   sni: jflsjlaf.pages.dev
   type: trojan
-- name: 400|CA VLESS-64 | free-nodes
+- name: 400|CA VLESS-58 | free-nodes
   network: ws
-  port: 443
-  server: 198.62.62.122
-  servername: sni.111000.v6.navy
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 104.17.138.160
+  tls: false
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
   ws-opts:
     headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%3FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2%3D'
+      Host: vip.yaml7.ggff.net
+    path: '%2F'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇨🇦_CA_加拿大 #1'
+  port: 443
+  reality-opts:
+    public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
+  server: 142.248.80.157
+  servername: apple.com
+  tls: true
+  type: vless
+  uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
 - name: 400|🇨🇦CA-031-1
   network: ws
   port: 443
@@ -4646,18 +4660,6 @@ proxies:
     headers:
       Host: tn1rr.qzz.io
     path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_22
-  network: ws
-  port: 443
-  server: 149.56.14.62
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
 - name: 400|🇨🇦CA加拿大節點-001
   network: ws
   port: 16504
@@ -4706,6 +4708,18 @@ proxies:
     headers:
       Host: tn1rr.qzz.io
     path: '%2Fsg-lnd'
+- name: 400|🇨🇦CA_26
+  network: ws
+  port: 443
+  server: 158.69.213.193
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: tn1rr.qzz.io
+    path: '%2Fsg-lnd'
 - name: 400|🇨🇦CA-009-2
   network: ws
   port: 443
@@ -4718,34 +4732,10 @@ proxies:
     headers:
       Host: tn1rr.qzz.io
     path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-028
-  network: ws
-  port: 443
-  server: 165.227.42.240
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
 - name: 400|🇨🇦CA-041
   network: ws
   port: 8443
   server: 167.160.188.181
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-011
-  network: ws
-  port: 443
-  server: 172.105.26.161
   servername: ''
   tls: true
   type: vless
@@ -4778,10 +4768,10 @@ proxies:
     headers:
       Host: tn1rr.qzz.io
     path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-021
+- name: 400|🇨🇦CA-033
   network: ws
   port: 443
-  server: 192.99.127.218
+  server: 192.99.169.176
   servername: ''
   tls: true
   type: vless
@@ -4790,10 +4780,10 @@ proxies:
     headers:
       Host: tn1rr.qzz.io
     path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-033
+- name: 400|🇨🇦CA_45
   network: ws
-  port: 443
-  server: 192.99.169.176
+  port: 8443
+  server: 192.99.55.53
   servername: ''
   tls: true
   type: vless
@@ -4814,34 +4804,22 @@ proxies:
     headers:
       Host: tn1rr.qzz.io
     path: '%2Fsg-lnd'
+- name: 400|🇨🇦CA_35
+  network: ws
+  port: 443
+  server: 204.216.107.15
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: tn1rr.qzz.io
+    path: '%2Fsg-lnd'
 - name: 400|🇨🇦CA_32
   network: ws
   port: 2053
   server: 35.183.216.163
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-021-1
-  network: ws
-  port: 8443
-  server: 35.183.216.163
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-029
-  network: ws
-  port: 2053
-  server: 38.180.13.8
   servername: ''
   tls: true
   type: vless
@@ -4910,22 +4888,10 @@ proxies:
     headers:
       Host: tn1rr.qzz.io
     path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_5
+- name: 400|🇨🇦CA_5-1
   network: ws
   port: 443
   server: 40.233.71.238
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-009-1
-  network: ws
-  port: 443
-  server: 40.233.77.216
   servername: ''
   tls: true
   type: vless
@@ -4982,7 +4948,7 @@ proxies:
     headers:
       Host: tn1rr.qzz.io
     path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_21
+- name: 400|🇨🇦CA_21-1
   network: ws
   port: 443
   server: 51.222.15.197
@@ -5066,30 +5032,21 @@ proxies:
     headers:
       Host: tn1rr.qzz.io
     path: '%2Fsg-lnd'
-- name: 400|CA VLESS-83 | free-nodes
+- name: 400|CA加拿大(mibei77.com 米贝节点分享)
   network: ws
   port: 443
-  server: labeller.neonime83.workers.dev
-  servername: labeller.neonime83.workers.dev
-  skip-cert-verify: true
+  server: 142.248.151.78
+  servername: 002.ljk-clouflare.dns.army
   tls: true
   type: vless
-  uuid: a73b8135-ec7a-4f70-bac6-81fbccad4515
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
   ws-opts:
     headers:
-      Host: labeller.neonime83.workers.dev
-    path: '%2F'
-- name: 400|CA VLESS-100 | free-nodes
-  port: 443
-  server: 172.67.110.232
-  tls: false
-  type: vless
-  uuid: d0298536-d670-4045-bbb1-ddd5ea68683e
-  ws-opts:
-    path: '%2Fazadnet-919.pages.dev%2F%3Fed%3D2560%26prot_type%3Dvless'
+      Host: 002.ljk-clouflare.dns.army
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - alterId: 0
   cipher: auto
-  name: '400|🇨🇦_CA_加拿大 #1'
+  name: '400|🇨🇦_CA_加拿大 #2'
   network: ws
   port: 80
   server: 108.181.10.17
@@ -5099,6 +5056,20 @@ proxies:
   ws-opts:
     headers:
       Host: teams.microsoft.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '400,544|CA【机场推荐：https://a9a.xyz】4 #1'
+  network: ws
+  port: '443'
+  server: udtzy.cmvvb.online
+  servername: udtzy.cmvvb.online
+  tls: true
+  type: vmess
+  uuid: 9fc9b94d-6b44-4029-bc41-09e4ac92e508
+  ws-opts:
+    headers:
+      Host: udtzy.cmvvb.online
     path: /
 - alterId: 0
   cipher: auto
