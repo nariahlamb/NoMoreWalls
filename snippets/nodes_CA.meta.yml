@@ -82,24 +82,24 @@ proxies:
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - cipher: aes-128-gcm
-  name: 278|🇨🇦1 |  14.1MB/s
+  name: 277|🇨🇦1 |  14.1MB/s
   password: shadowsocks
   port: 443
   server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 278|🇨🇦2 |  8.9MB/s
+  name: 277|🇨🇦2 |  8.9MB/s
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '278,410|SS--NF-ChatGPT-TikTok-YouTube-... #6'
+  name: '277,410|SS--NF-ChatGPT-TikTok-YouTube-... #6'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
   type: ss
-- name: 283|SPECAIL|1.5X WIFI
+- name: 282|SPECAIL|1.5X WIFI
   password: bf9a43a1-c449-4c77-b712-9265efe3ebc8
   port: 17739
   server: jpss.pptv-tv.store
@@ -107,7 +107,7 @@ proxies:
   sni: data.52daishu.life
   type: trojan
   udp: true
-- name: '283|SPECAIL|1.5X WIFI #1'
+- name: '282|SPECAIL|1.5X WIFI #1'
   password: bf9a43a1-c449-4c77-b712-9265efe3ebc8
   port: 17728
   server: gbs.pptv-tv.store
@@ -117,7 +117,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '294|🇨🇦 加拿大1 #1'
+  name: '293|🇨🇦 加拿大1 #1'
   port: 45064
   server: haa.dashuai.cyou
   tls: false
@@ -126,7 +126,7 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - alterId: 0
   cipher: auto
-  name: '294|🇨🇦 加拿大2 #1'
+  name: '293|🇨🇦 加拿大2 #1'
   port: 45065
   server: xdd.dashuai.cyou
   tls: false
@@ -4515,19 +4515,6 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- name: 371,372,400|🇨🇦CA加拿大3
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  port: 10889
-  server: 167.17.185.172
-  sni: web.max.ru
-  type: trojan
-- name: '392,400|加拿大+V2CROSS.COM #2'
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  port: 10889
-  server: 167.17.185.152
-  skip-cert-verify: false
-  sni: ozon.ru
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -4548,17 +4535,24 @@ proxies:
   server: bestcf.030101.xyz
   sni: sni.111000.dynv6.net
   type: trojan
-- name: 400|🇨🇦CA_57 | ⬇️ 3.6MB/s
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+- name: 400|加拿大_030818699
+  password: adb13850-7e70-492e-85b2-01184801d587
   port: 443
-  server: jp.111000.cc.cd
-  sni: sni.111000.dynv6.net
+  server: 166.88.130.226
+  skip-cert-verify: true
+  sni: ca05.oportal.cc
   type: trojan
-- name: 400|🇨🇦CA加拿大2
+- name: 400|🇨🇦CA加拿大3
   password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
   port: 10889
-  server: 167.17.185.169
-  sni: ya.ru
+  server: 167.17.185.152
+  sni: ozon.ru
+  type: trojan
+- name: 400|加拿大+V2CROSS.COM
+  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+  port: 10889
+  server: 167.17.185.172
+  sni: web.max.ru
   type: trojan
 - name: 400|加拿大 - 蒙特利尔 - 1
   password: trojan
@@ -4572,9 +4566,35 @@ proxies:
   server: 217.197.97.121
   sni: jflsjlaf.pages.dev
   type: trojan
+- alpn:
+  - http/1.1
+  name: 400|CA VLESS-53 | free-nodes
+  network: ws
+  port: 443
+  server: poe.com
+  servername: 80bab3a2.gon-7ye.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 081efe27-f6b8-4f60-aedb-3c9effe9c67d
+  ws-opts:
+    headers:
+      Host: 80bab3a2.gon-7ye.pages.dev
+    path: /
+- name: 400|CA VLESS-48 | free-nodes
+  network: ws
+  port: 80
+  server: 104.17.138.164
+  tls: false
+  type: vless
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  ws-opts:
+    headers:
+      Host: vip.yaml7.ggff.net
+    path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|🇨🇦_CA_加拿大
+  name: '400|🇨🇦_CA_加拿大 #1'
   port: 443
   reality-opts:
     public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
@@ -4607,6 +4627,18 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%253Fed%253D2560%2526'
+- name: 400|🇨🇦CA_25 | ⬇️ 2.9MB/s
+  network: ws
+  port: 443
+  server: 135.84.64.66
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
 - name: 400|🇨🇦 CA 009 | ⬇️ 1MB/s
   network: ws
   port: 443
@@ -4631,6 +4663,18 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%253Fed%253D2560%2526'
+- name: 400|🇨🇦 CA 004 | ⬇️ 6MB/s
+  network: ws
+  port: 443
+  server: 135.84.67.96
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|🇨🇦CA_70 | ⬇️ 4.4MB/s
   network: ws
   port: 443
@@ -4667,7 +4711,7 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%253Fed%253D2560%2526'
-- name: 400|🇨🇦 CA 034 | ⬇️ 4MB/s
+- name: 400|🇨🇦CA_67 | ⬇️ 3.1MB/s
   network: ws
   port: 443
   server: 135.84.73.100
@@ -4678,7 +4722,7 @@ proxies:
   ws-opts:
     headers:
       Host: sni.111000.dynv6.net
-    path: '%2F%25253Fed%25253D2560%252526Telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%25252B%252540WangCai2'
+    path: '%2F%253Fed%253D2560%2526'
 - name: 400|🇨🇦CA_53 | ⬇️ 4.2MB/s
   network: ws
   port: 443
@@ -4691,6 +4735,18 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%253Fed%253D2560%2526'
+- name: 400|🇨🇦CA_29 | ⬇️ 3.7MB/s
+  network: ws
+  port: 443
+  server: 135.84.73.123
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
 - name: 400|🇨🇦CA_65 | ⬇️ 1.4MB/s
   network: ws
   port: 443
@@ -4715,6 +4771,18 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%253Fed%253D2560%2526'
+- name: 400|🇨🇦CA_36 | ⬇️ 3.4MB/s
+  network: ws
+  port: 443
+  server: 135.84.73.222
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
 - name: 400|🇨🇦 CA 035 | ⬇️ 4MB/s
   network: ws
   port: 443
@@ -4727,6 +4795,74 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%25253Fed%25253D2560%252526Telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%25252B%252540WangCai2'
+- name: 400|🇨🇦CA_30 | ⬇️ 3.7MB/s
+  network: ws
+  port: 443
+  server: 135.84.74.152
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
+- name: 400|🇨🇦CA_68 | ⬇️ 4.3MB/s
+  network: ws
+  port: 443
+  server: 135.84.74.171
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526'
+- name: 400|🇨🇦CA_28 | ⬇️ 2.8MB/s
+  network: ws
+  port: 443
+  server: 135.84.74.190
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
+- name: 400|🇨🇦 CA 039 | ⬇️ 6MB/s
+  network: ws
+  port: 443
+  server: 135.84.74.203
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|🇨🇦 CA 015 | ⬇️ 11MB/s
+  network: ws
+  port: 443
+  server: 135.84.74.55
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|CA VLESS-63 | free-nodes
+  port: 2096
+  server: 141.11.203.238
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: 400|🇨🇦CA_23 | ⬇️ 3.0MB/s
   network: ws
   port: 8881
@@ -4739,6 +4875,30 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|🇨🇦 CA 051 | ⬇️ 1MB/s
+  network: ws
+  port: 443
+  server: 143.20.160.195
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|🇨🇦CA_46 | ⬇️ 5.4MB/s
+  network: ws
+  port: 8443
+  server: 143.20.213.130
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
 - name: 400|🇨🇦CA_40 | ⬇️ 4.2MB/s
   network: ws
   port: 443
@@ -4823,6 +4983,18 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%253Fed%253D2560%2526'
+- name: 400|🇨🇦 CA 099 | ⬇️ 7MB/s
+  network: ws
+  port: 443
+  server: 199.107.164.217
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|🇨🇦CA_63 | ⬇️ 1.7MB/s
   network: ws
   port: 443
@@ -4835,6 +5007,18 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%253Fed%253D2560%2526'
+- name: 400|🇨🇦 CA 105 | ⬇️ 6MB/s
+  network: ws
+  port: 443
+  server: 199.34.230.158
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 400|YouTube顺丰资源 加拿大_150
   network: ws
   port: 2096
@@ -4859,6 +5043,18 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|🇨🇦CA_16 | ⬇️ 3.3MB/s
+  network: ws
+  port: 443
+  server: 209.177.165.17
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
 - name: 400|🇨🇦CA_50 | ⬇️ 5.1MB/s
   network: ws
   port: 443
@@ -4871,10 +5067,46 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F'
+- name: 400|🇨🇦CA_64 | ⬇️ 2.6MB/s
+  network: ws
+  port: 443
+  server: 216.24.57.1
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526'
 - name: 400|🇨🇦 CA 080 | ⬇️ 10MB/s
   network: ws
   port: 443
   server: 217.60.39.10
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|🇨🇦 CA 079 | ⬇️ 34MB/s
+  network: ws
+  port: 47790
+  server: 36.50.90.241
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|🇨🇦 CA 107 | ⬇️ 4MB/s
+  network: ws
+  port: 2053
+  server: 5.178.110.202
   servername: ''
   tls: true
   type: vless
@@ -4943,521 +5175,43 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%253Fed%253D2560%2526'
-- name: 400|🇨🇦CA-031-1
-  network: ws
-  port: 443
-  server: 138.197.161.103
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_3
-  network: ws
-  port: 443
-  server: 140.238.144.211
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-042
-  network: ws
-  port: 443
-  server: 142.4.215.110
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-013-1
-  network: ws
-  port: 443
-  server: 147.182.144.228
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-031
-  network: ws
-  port: 443
-  server: 149.248.56.22
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-024-2
-  network: ws
-  port: 443
-  server: 149.56.130.35
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_22
-  network: ws
-  port: 443
-  server: 149.56.14.62
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA加拿大節點-001
-  network: ws
-  port: 16504
-  server: 150.230.27.23
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-005
-  network: ws
-  port: 443
-  server: 155.138.128.135
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-030
-  network: ws
-  port: 443
-  server: 155.138.156.4
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-028-1
+- name: 400|🇨🇦 CA 133 | ⬇️ 2MB/s
   network: ws
   port: 8443
-  server: 158.69.201.4
+  server: 95.182.97.125
   servername: ''
   tls: true
   type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_26
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|CA VLESS-85 | free-nodes
   network: ws
-  port: 443
-  server: 158.69.213.193
-  servername: ''
+  port: 2096
+  server: 104.17.74.206
+  servername: INdex.HArmony702.WoRkeRS.Dev
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
   ws-opts:
     headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-009-2
+      Host: index.harmony702.workers.dev
+    path: '%2Faxcp1cm75o7digvt'
+- name: 400|🇨🇦_加拿大
   network: ws
-  port: 443
-  server: 159.203.35.153
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_42
-  network: ws
-  port: 443
-  server: 165.227.42.240
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-041
-  network: ws
-  port: 8443
-  server: 167.160.188.181
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-025-2
-  network: ws
-  port: 443
-  server: 172.98.207.58
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA加拿大-003
-  network: ws
-  port: 443
-  server: 178.128.227.189
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-033
-  network: ws
-  port: 443
-  server: 192.99.169.176
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_45
-  network: ws
-  port: 8443
-  server: 192.99.55.53
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-035
-  network: ws
-  port: 443
-  server: 198.27.67.95
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_35
-  network: ws
-  port: 443
-  server: 204.216.107.15
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_32
-  network: ws
-  port: 2053
-  server: 35.183.216.163
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_20
-  network: ws
-  port: 8443
-  server: 35.183.216.163
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_38
-  network: ws
-  port: 2053
-  server: 38.180.13.8
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_37-1
-  network: ws
-  port: 8443
-  server: 38.180.13.8
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-001-2
-  network: ws
-  port: 443
-  server: 40.177.65.8
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_11
-  network: ws
-  port: 443
-  server: 40.233.103.212
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_9-1
-  network: ws
-  port: 443
-  server: 40.233.110.251
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_5-1
-  network: ws
-  port: 443
-  server: 40.233.71.238
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_8
-  network: ws
-  port: 443
-  server: 40.233.77.216
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-014
-  network: ws
-  port: 443
-  server: 40.233.87.120
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_25
-  network: ws
-  port: 443
-  server: 40.233.99.248
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_19
-  network: ws
-  port: 443
-  server: 45.133.18.31
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_44
-  network: ws
-  port: 443
-  server: 51.161.32.195
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_21-1
-  network: ws
-  port: 443
-  server: 51.222.15.197
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-037-2
-  network: ws
-  port: 443
-  server: 51.79.49.152
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_14
-  network: ws
-  port: 443
-  server: 68.183.207.130
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA_23
-  network: ws
-  port: 443
-  server: 69.28.82.253
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-001-1
-  network: ws
-  port: 2087
-  server: 72.11.145.130
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-012-2
-  network: ws
-  port: 2053
-  server: 96.44.136.186
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|🇨🇦CA-023
-  network: ws
-  port: 443
-  server: 96.9.226.188
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: tn1rr.qzz.io
-    path: '%2Fsg-lnd'
-- name: 400|CA VLESS-105 | free-nodes
-  port: 443
-  server: 172.67.110.232
+  port: 80
+  server: pq-albania1.09vpn.com
   tls: false
   type: vless
-  uuid: d0298536-d670-4045-bbb1-ddd5ea68683e
+  uuid: b4819c49-6c7e-4b57-9b9b-c73031e1de11
   ws-opts:
-    path: '%2Fazadnet-919.pages.dev%2F%3Fed%3D2560%26prot_type%3Dvless'
-- name: 400|CA加拿大(mibei77.com 米贝节点分享)
-  network: ws
-  port: 443
-  server: 142.248.151.78
-  servername: 002.ljk-clouflare.dns.army
-  tls: true
-  type: vless
-  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
-  ws-opts:
-    headers:
-      Host: 002.ljk-clouflare.dns.army
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+    path: '%2Fvless%2F'
 - alterId: 0
   cipher: auto
-  name: '400|🇨🇦_CA_加拿大 #1'
+  name: '400|🇨🇦_CA_加拿大 #2'
   network: ws
   port: 80
   server: 108.181.10.17
