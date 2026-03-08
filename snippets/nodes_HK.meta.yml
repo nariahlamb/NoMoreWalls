@@ -794,7 +794,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '228,262,383,392,395,397,398,400|12,13|美国3|@ripaojiedian #1'
+- name: '228,262,383,392,395,400|12,13|美国3|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 2960
@@ -804,7 +804,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '228,262,383,392,395,398,400|12|🇭🇰 香港|@ripaojiedian #1'
+  name: '228,262,383,392,395,398,400|12|🇭🇰 香港|@ripaojiedian #2'
   network: tcp
   port: 30807
   server: v10.hdacd.com
@@ -816,8 +816,9 @@ proxies:
   cipher: auto
   name: '228,395,400|HK29｜家宽｜非常安全 #1'
   network: ws
-  port: '80'
+  port: 80
   server: d7d6992d-t5bb40-tdvaex-1ixuf.hkt.gotochinatown.net
+  servername: ''
   tls: false
   type: vmess
   uuid: dcbaee4d-2204-11ed-b659-f23c91cfbbc9
@@ -837,23 +838,13 @@ proxies:
   tls: true
   type: vmess
   uuid: d5359b9e-4f4f-49e4-ab8b-f6a0d19bce28
-- name: '262,383,395,400|9| HK #1'
+- name: '262,383,395,400|9| HK #2'
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
   server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '262,400|14|HK_speednode_0018 #1'
-  port: 443
-  server: hk1.miyazono-kaori.com
-  servername: www.microsoft.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
 - cipher: chacha20-ietf-poly1305
   name: 278|🇭🇰1 |  3.5MB/s
   password: WfmxKX2FBJRU0Ie9VLIYDL
@@ -1350,6 +1341,13 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: aes-256-cfb
+  country: ' HK'
+  name: 350| HK_63
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
 - name: 365|香港_香港
   network: ws
   port: 2053
@@ -1727,6 +1725,30 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
+- name: '397,398|香港3|@ripaojiedian #1'
+  network: tcp
+  password: f7dbed8b1ca85124e793ba6c0bcfd0db
+  port: 443
+  server: 58.152.18.2
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '397,398|香港4|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 1792
+  server: 18.162.54.136
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '397,398|香港5|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.253
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 399|0| 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1769,12 +1791,32 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|香港_030718466
+- name: 400|香港_030804464
   password: 407b6b2e-59e5-4466-9911-08f6f1263bc9
   port: 20000
   server: hk01.poke-mon.xyz
   skip-cert-verify: true
   sni: www.apple.com
+  tls: false
+  type: hysteria2
+- name: 400|🇭🇰 香港 | HKG 5
+  obfs: salamander
+  obfs-password: Sv8OhESVUYqC7KrI
+  password: ae845cbd-08fb-4346-929a-e28a6f3960a8
+  port: 2056
+  server: hk1.shiyuandian.shop
+  skip-cert-verify: true
+  sni: hk1.shiyuandian.shop
+  tls: false
+  type: hysteria2
+- name: 400|🇭🇰 香港 | HKG 6
+  obfs: salamander
+  obfs-password: vzbsyah3Y%255%252fPz
+  password: ae845cbd-08fb-4346-929a-e28a6f3960a8
+  port: 30000
+  server: hk2.shiyuandian.shop
+  skip-cert-verify: true
+  sni: hk2.shiyuandian.shop
   tls: false
   type: hysteria2
 - name: 400|HK TROJAN-32 | free-nodes
@@ -1822,12 +1864,24 @@ proxies:
   skip-cert-verify: true
   sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
   type: trojan
-- name: 400|香港_030718001
+- name: 400|香港_030804001
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   port: 443
   server: 58.152.18.189
   sni: www.nintendogames.net
   type: trojan
+- name: 400|HK_922f4_0019
+  network: ws
+  port: 443
+  server: 103.177.249.122
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: k7ryegiaeu.chinam.eu.org
+    path: '%2Fdanfeng'
 - name: 400|🇭🇰_香港
   network: ws
   port: 7000
@@ -1841,6 +1895,18 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.dpdns.org
     path: '%2F%3Fed%3D2560'
+- name: 400|🇭🇰HK_2-1
+  network: ws
+  port: 10201
+  server: 223.16.138.113
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 400|HK香港(mibei77.com 米贝节点分享)
   network: ws
   port: 10002
@@ -2121,51 +2187,28 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 400|香港_030718008
-  network: ws
-  port: '80'
-  server: 4179ad58-t8ysg0-t8w16f-1j6h0.hkt.gotochinatown.net
+  name: 400|🇭🇰 HK_68
+  network: tcp
+  port: 30003
+  server: a.cdn-bilibili.cn
   servername: ''
   tls: false
   type: vmess
-  uuid: dcccacba-fa44-11ef-8400-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+  uuid: 69de9a52-36b0-4265-a3cf-d06bcefe713d
 - alterId: 0
   cipher: auto
-  name: 400|香港_030718003
-  network: ws
-  port: '443'
-  server: n1752248951.lie5d.cyou
-  servername: ''
-  tls: true
+  name: 400|香港 V2CROSS.COM
+  network: none
+  port: 36678
+  server: 154.219.119.183
+  tls: false
   type: vmess
-  uuid: bf2ce3c2-339f-4926-b92d-b7d83af1b3b6
-  ws-opts:
-    headers:
-      Host: n1752248951.lie5d.cyou
-    path: /
+  uuid: 728de689-3287-47b7-ad70-4764660e9b90
 - alterId: 0
   cipher: auto
-  name: 400|香港_030718002
-  network: ws
-  port: '443'
-  server: n1753101277.4u9ma.icu
-  servername: n1753101277.4u9ma.icu
-  tls: true
-  type: vmess
-  uuid: 6ea48dfe-7de2-45dc-9267-d4d9effad9fc
-  ws-opts:
-    headers:
-      Host: n1753101277.4u9ma.icu
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 400|香港_030718462
+  name: 400|香港_030804460
   network: ws
   port: '443'
   server: n1753348736.lie5d.cyou
@@ -2179,7 +2222,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|香港_030718461
+  name: 400|香港_030804002
+  network: ws
+  port: '443'
+  server: n1753356378.4u9ma.icu
+  servername: n1753356378.4u9ma.icu
+  tls: true
+  type: vmess
+  uuid: 37b20639-0d6e-46f2-9db5-472201b10cdd
+  ws-opts:
+    headers:
+      Host: n1753356378.4u9ma.icu
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 400|香港_030804459
   network: ws
   port: '443'
   server: n1761296877.lie5d.cyou
@@ -2193,7 +2250,49 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|香港_030718460
+  name: 400|香港_030804004
+  network: ws
+  port: '443'
+  server: n1761296880.lie5d.cyou
+  servername: n1761296880.lie5d.cyou
+  tls: true
+  type: vmess
+  uuid: 1effac4a-cdb8-4717-a10c-da97263c802c
+  ws-opts:
+    headers:
+      Host: n1761296880.lie5d.cyou
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 400|香港_030804003
+  network: ws
+  port: '443'
+  server: n1761214905.wpg27.xyz
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: b1d3007c-441a-42d5-84b5-20301c46fa2c
+  ws-opts:
+    headers:
+      Host: n1761214905.wpg27.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 400|香港_030804012
+  network: ws
+  port: '443'
+  server: n1761214910.74qxv.top
+  servername: n1761214910.74qxv.top
+  tls: true
+  type: vmess
+  uuid: 011c4670-cdde-44fb-b9be-8a1e27af26c9
+  ws-opts:
+    headers:
+      Host: n1761214910.74qxv.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 400|香港_030804458
   network: ws
   port: '443'
   server: n1761214918.74qxv.top

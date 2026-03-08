@@ -286,6 +286,18 @@ proxies:
   port: 443
   server: 63.180.254.10
   type: ss
+- name: 228,395|US62｜机房｜低风险
+  network: ws
+  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  port: 443
+  server: mjki.1nn.ccwu.cc
+  skip-cert-verify: true
+  sni: mjki.1nn.ccwu.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: mjki.1nn.ccwu.cc
+    path: '%2Fy1moM5CyNvYMZlzsYHmsMrnO'
 - client-fingerprint: firefox
   flow: ''
   grpc-opts:
@@ -340,44 +352,14 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '262,400|14|US_speednode_0066 #1'
+  name: '262,383,395,400|14|US_speednode_0005 #2'
   port: 443
-  server: us1.miyazono-kaori.com
-  servername: download-porter.hoyoverse.com
+  server: 143.20.236.51
+  servername: yahoo.com
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '262,400|14|US_speednode_0067 #1'
-  port: 443
-  server: us4.miyazono-kaori.com
-  servername: download-porter.hoyoverse.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '262,400|14|US_speednode_0068 #1'
-  port: 443
-  server: us2.miyazono-kaori.com
-  servername: download-porter.hoyoverse.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: '262,400|14|US_speednode_0069 #1'
-  port: 443
-  server: us.netvora.space
-  servername: us.netvora.space
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 2baffe9c-099d-481b-8d9c-7eb351c9bf35
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - cipher: aes-128-gcm
   name: '278,279|2 #6'
   password: shadowsocks
@@ -461,7 +443,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: ' US'
-  name: 278,279,350| US_92
+  name: 278,279,350| US_100
   password: shadowsocks
   port: 443
   server: 156.146.38.167
@@ -1034,7 +1016,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: ' US'
-  name: 278,279,350| US_93
+  name: 278,279,350| US_104
   password: shadowsocks
   port: 443
   server: 156.146.38.170
@@ -2167,68 +2149,61 @@ proxies:
   sni: us.mjanyt.com
   type: anytls
   udp: true
-- cipher: aes-128-gcm
-  country: ' US'
-  name: 350| US_89
-  password: fa593414-7a76-4975-909b-7a7c46be123b
-  port: 18829
-  server: 154.17.31.189
-  type: ss
 - cipher: aes-256-cfb
   country: ' US'
-  name: 350| US_90
+  name: 350| US_97
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.54.57.90
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
-  name: 350| US_91
+  name: 350| US_98
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
-  server: 38.54.59.180
+  server: 38.89.142.56
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-128-gcm
   country: ' US'
-  name: 350| US_94
-  password: dAHM1pm8ag7KdlrUylQi6t
-  port: 443
-  server: promo18v.bystrivpn.ru
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 350| US_95
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: series-a1.samanehha.co
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 350| US_96
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 193.135.174.135
+  name: 350| US_99
+  password: fa593414-7a76-4975-909b-7a7c46be123b
+  port: 18829
+  server: 154.17.31.189
   type: ss
 - cipher: aes-256-cfb
   country: ' US'
-  name: 350| US_97
+  name: 350| US_101
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.165.233.93
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
-  name: 350| US_98
+  name: 350| US_102
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.165.231.25
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 350| US_103
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 38.54.59.180
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 350| US_105
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a1.samanehha.co
   type: ss
 - alterId: 0
   cipher: auto
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350| US_99
+  name: 350| US_106
   network: ws
   port: 443
   server: 15.235.83.227
@@ -2245,24 +2220,7 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350| US_100
-  network: ws
-  port: 443
-  server: cf.090227.xyz
-  servername: sgal.dagrate.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
-  ws-headers:
-    HOST: sgal.dagrate.eu.org
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_101
+  name: 350| US_107
   network: ws
   port: 443
   server: 148.113.176.192
@@ -2279,7 +2237,7 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350| US_102
+  name: 350| US_108
   network: ws
   port: 443
   server: n1753101272.lie5d.cyou
@@ -2296,7 +2254,7 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350| US_103
+  name: 350| US_109
   network: ws
   port: 443
   server: 15.235.83.228
@@ -2313,7 +2271,7 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350| US_104
+  name: 350| US_110
   network: ws
   port: 443
   server: n1761214912.wpg27.xyz
@@ -2327,21 +2285,7 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350| US_105
-  network: ws
-  port: 443
-  server: n1761214908.wpg27.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3514a93f-bb26-4442-8f99-971b2ff3388a
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 350| US_106
+  name: 350| US_111
   network: ws
   port: 443
   server: n1761214919.mv7wh.tech
@@ -2358,7 +2302,7 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 350| US_107
+  name: 350| US_112
   network: ws
   port: 443
   server: 15.235.50.172
@@ -2370,16 +2314,47 @@ proxies:
   ws-headers:
     HOST: baradiha.com
   ws-path: /linkvws
-- country: ' US'
-  name: 350| US_108
-  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| US_113
+  network: ws
   port: 443
-  server: hinet.mjt000.com
+  server: n1761214908.wpg27.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3514a93f-bb26-4442-8f99-971b2ff3388a
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 350| US_114
+  network: ws
+  port: 443
+  server: cf.090227.xyz
+  servername: sgal.dagrate.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-headers:
+    HOST: sgal.dagrate.eu.org
+  ws-path: /
+- country: ' US'
+  name: 350| US_115
+  password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
+  port: 443
+  server: 154.17.24.29
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: ' US'
-  name: 350| US_109
+  name: 350| US_116
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
@@ -2387,52 +2362,31 @@ proxies:
   type: trojan
   udp: true
 - country: ' US'
-  name: 350| US_110
-  password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
+  name: 350| US_117
+  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
-  server: 154.17.24.29
+  server: hinet.mjt000.com
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: US
-  name: 350|US_111
+  name: 350|US_118
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  country: IR
-  h2-opts: {}
-  http-opts: {}
-  name: 353,400|英国_030718014
-  network: tcp
-  port: '30003'
-  server: a.cdn-bilibili.cn
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 69de9a52-36b0-4265-a3cf-d06bcefe713d
-- cipher: chacha20-ietf-poly1305
-  country: US
-  name: 353|US_15
-  password: yoNzQ7Q6qbC1Mx5QpGvdPsHpRsqkvQxk
-  port: 9443
-  server: 144.31.131.32
-  type: ss
 - cipher: rc4-md5
   country: US
-  name: 353|US_16
+  name: 353|US_10
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 137.184.174.93
   type: ss
 - cipher: aes-256-cfb
   country: US
-  name: 353|Relay_US-US_17
+  name: 353|Relay_US-US_11
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -5156,48 +5110,7 @@ proxies:
     path: /dyajvws
 - alterId: 0
   cipher: auto
-  name: 371,372,400|未知_0307188079
-  network: ws
-  port: '80'
-  server: dcvfr546.0ou.ccwu.cc
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  ws-opts:
-    headers:
-      Host: dcvfr546.0ou.ccwu.cc
-    path: /y3ME81hpTJWwd4RJBAQ5Ah
-- alterId: 0
-  cipher: auto
-  name: 371,372,392,400|未知_030718015
-  network: ws
-  port: '80'
-  server: gbnhju.7no.ccwu.cc
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f9b2ba3-77c1-400f-9b72-76b9b0829e51
-  ws-opts:
-    headers:
-      Host: gbnhju.7no.ccwu.cc
-    path: /5PVvw26jj0Fy6bojk
-- alterId: 0
-  cipher: auto
-  name: '371,372|美国 CloudFlare节点 #6'
-  network: ws
-  port: '8443'
-  server: c7.620720.xyz
-  tls: true
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '371,372,400|美国 CloudFlare节点 #12'
+  name: '371,372|美国 CloudFlare节点 #3'
   network: ws
   port: 80
   server: 104.21.7.101
@@ -5211,7 +5124,52 @@ proxies:
     path: /iSRWSKUJKNuXvVzsYHmsMrnO
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #8'
+  h2-opts: {}
+  http-opts: {}
+  name: '371,372,392,400,410|VMESS->-NF-ChatGPT-TikTok-YouT... #2'
+  network: ws
+  port: 443
+  server: sy4.620720.xyz
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: sy4.620720.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 371,372,392,400|未知_030804007
+  network: ws
+  port: '80'
+  server: gbnhju.7no.ccwu.cc
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f9b2ba3-77c1-400f-9b72-76b9b0829e51
+  ws-opts:
+    headers:
+      Host: gbnhju.7no.ccwu.cc
+    path: /5PVvw26jj0Fy6bojk
+- alterId: 0
+  cipher: auto
+  name: '371,372|美国 得克萨斯州达拉斯Cloudflare Warp节点 #1'
+  network: ws
+  port: 2083
+  server: 8.6.112.0
+  servername: hgtrojan.zabc.net
+  tls: true
+  type: vmess
+  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
+  ws-opts:
+    headers:
+      Host: ''
+    path: /e6395c20
+- alterId: 0
+  cipher: auto
+  name: '374|美国 CloudFlare节点 #6'
   network: ws
   port: 2095
   server: 172.64.194.234
@@ -5224,7 +5182,7 @@ proxies:
     path: /hgcefomn
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #9'
+  name: '374|美国 CloudFlare节点 #7'
   network: ws
   port: 8880
   server: 141.101.123.18
@@ -5237,7 +5195,7 @@ proxies:
     path: /qwer
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #10'
+  name: '374|美国 CloudFlare节点 #8'
   network: ws
   port: 8080
   server: 198.41.218.144
@@ -5251,7 +5209,7 @@ proxies:
     path: /qwer01
 - alterId: 0
   cipher: auto
-  name: '374|美国 CloudFlare节点 #11'
+  name: '374|美国 CloudFlare节点 #9'
   network: ws
   port: 8080
   server: 162.159.241.157
@@ -5262,20 +5220,6 @@ proxies:
     headers:
       Host: ecc.vtcss.top
     path: /qwer01
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '383,395,400|🇺🇸_美国 #36'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 143.20.236.51
-  servername: yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
   delay: 636
@@ -5294,11 +5238,25 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 392,400|未知_030718003
+  name: 392,400|未知_030804006
+  network: ws
+  port: '80'
+  server: dcvfr546.0ou.ccwu.cc
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
+  ws-opts:
+    headers:
+      Host: dcvfr546.0ou.ccwu.cc
+    path: /y3ME81hpTJWwd4RJBAQ5Ah
+- alterId: 0
+  cipher: auto
+  name: 392,400|未知_030804005
   network: ws
   port: '8443'
   server: c7.620720.xyz
-  servername: ''
+  servername: c7.620720.xyz
   tls: true
   type: vmess
   uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
@@ -5306,9 +5264,22 @@ proxies:
     headers:
       Host: c7.620720.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: '392,400|🇺🇸 美国 CloudFlare节点 #4'
+  network: ws
+  port: '80'
+  server: 104.21.7.101
+  tls: false
+  type: vmess
+  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  ws-opts:
+    headers:
+      Host: gbnh.0nn.ccwu.cc
+    path: /
 - alterId: 2
   cipher: auto
-  name: '392,400|🇨🇳_中国 #1'
+  name: '392,400|🇨🇳_中国 #2'
   network: tcp
   port: '30808'
   server: v8.hdacd.com
@@ -5316,14 +5287,14 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 392,400|🇺🇸US美国6
+- name: 392,400|🇺🇸US美国8
   password: trojan
   port: 2087
   server: 109.234.211.66
   skip-cert-verify: false
   sni: store.timimi.dpdns.org
   type: trojan
-- name: 392,400|🇹🇼TW台湾
+- name: 392,400|🇺🇸US美国10
   password: 6f038cee-6ba1-4941-bce5-de1969f37405
   port: 35502
   server: 220.130.58.136
@@ -5332,7 +5303,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '392,400|🇬🇧_英国 #5'
+  name: '392,400|🇬🇧_英国 #6'
   network: ws
   port: '443'
   server: 94.247.142.199
@@ -5346,7 +5317,7 @@ proxies:
     path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
 - alterId: 0
   cipher: auto
-  name: '392,400|🇺🇸_美国 #40'
+  name: '392,400|🇺🇸_美国 #41'
   network: ws
   port: '443'
   server: 130.250.137.199
@@ -5358,12 +5329,28 @@ proxies:
     headers:
       Host: ous3.dean52.top
     path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
-- name: 392,400|🇺🇸US美国10
+- name: 392,400|🇺🇸US美国7
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
   port: 443
   server: 216.24.57.250
   skip-cert-verify: false
   sni: afrcloud1.mmv.kr
+  type: trojan
+- name: '397,398|美国|@ripaojiedian #1'
+  network: tcp
+  password: f7dbed8b1ca85124e793ba6c0bcfd0db
+  port: 3057
+  server: 160.16.72.33
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '397,398|美国3|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 28680
+  server: 13.115.170.99
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 399|_US_
@@ -5413,7 +5400,7 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 400|美国_0307184790
+- name: 400|美国_0308044801
   password: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
   port: 443
   server: ca-hy2.onetaplink.app
@@ -5421,7 +5408,7 @@ proxies:
   sni: hy2-ca.onetaplink.app
   tls: false
   type: hysteria2
-- name: 400|美国_0307184791
+- name: 400|美国_0308044802
   password: alvin9999.com
   port: 30088
   server: 157.254.223.24
@@ -5429,7 +5416,14 @@ proxies:
   sni: apple.com
   tls: false
   type: hysteria2
-- name: 400|🇺🇸US_110
+- name: 400|🇺🇸 美国 | USA 9
+  password: bfebea8b-c7ad-4825-8c67-b0041243ed6a
+  port: 21676
+  server: us.xn--ehqa22b.site
+  sni: us.xn--ehqa22b.site
+  tls: false
+  type: hysteria2
+- name: 400|🇺🇸US_123
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
@@ -5481,7 +5475,7 @@ proxies:
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: 400|美国_0307184781
+- name: 400|美国_0308044788
   password: 4b3adac3-f886-4b56-b0e3-10faee7440db
   port: 42277
   server: www.ssrenjiushiwo3033.xyz
@@ -5505,7 +5499,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: '%2Ftro8sFW1S91B6sZrM1%3Fed%3D2560'
-- name: 400|🇺🇸 US_107
+- name: 400|🇺🇸 US_120
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: hinet.mjt000.com
@@ -5540,19 +5534,19 @@ proxies:
   skip-cert-verify: true
   sni: us08.oportal.cc
   type: trojan
-- name: 400|美国_0307184780
+- name: 400|美国_0308044787
   network: tcp
   password: adb13850-7e70-492e-85b2-01184801d587
   port: 443
   server: hk27.oportal.cc
   type: trojan
-- name: 400|US TROJAN-30 | free-nodes
+- name: 400|US TROJAN-29 | free-nodes
   password: c5355528-55a2-45df-b8fd-a48ce3c41413
   port: 35502
   server: 220.130.58.136
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: 400|🇺🇸 US_108
+- name: 400|🇺🇸 US_121
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
@@ -5634,12 +5628,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 400|美国 - 聖荷西 - 1
-  password: trojan
-  port: 40001
-  server: 128.241.251.81
-  sni: jflsjlaf.pages.dev
-  type: trojan
 - name: 400|美国 - 东洛杉矶 - 3
   password: trojan
   port: 54321
@@ -5656,6 +5644,12 @@ proxies:
   password: trojan
   port: 443
   server: 154.194.0.101
+  sni: jflsjlaf.pages.dev
+  type: trojan
+- name: 400|美国 - 东洛杉矶 - 5
+  password: trojan
+  port: 8001
+  server: 178.157.50.221
   sni: jflsjlaf.pages.dev
   type: trojan
 - name: 400|美国 - 东洛杉矶 - 2
@@ -5688,13 +5682,7 @@ proxies:
   server: 38.95.73.40
   sni: jflsjlaf.pages.dev
   type: trojan
-- name: 400|亚美尼亚 - Yerevan - 2
-  password: trojan
-  port: 7777
-  server: 92.223.2.148
-  sni: jflsjlaf.pages.dev
-  type: trojan
-- name: 400|🇺🇸 US_109
+- name: 400|🇺🇸 US_122
   password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
   port: 443
   server: 154.17.24.29
@@ -5755,7 +5743,7 @@ proxies:
       Host: x1.mwu.de5.net
     path: '%2Fproxyip%3Dsjc.o00o.ooo'
 - client-fingerprint: chrome
-  name: 400|US VLESS-45 | free-nodes
+  name: 400|US VLESS-42 | free-nodes
   network: tcp
   port: 2040
   reality-opts:
@@ -5814,18 +5802,6 @@ proxies:
     headers:
       Host: lirpeuijr.chinav.indevs.in
     path: '%2Fdanfeng'
-- name: 400|🇺🇸 美国 | USA 11-2
-  network: ws
-  port: 2096
-  server: 104.24.217.126
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: fqrf5tlc.chinav.eu.org
-    path: '%2Fdanfeng'
 - name: 400|🇺🇸 美国 | USA 12-2
   network: ws
   port: 2087
@@ -5850,22 +5826,10 @@ proxies:
     headers:
       Host: lirpeuijr.chinav.indevs.in
     path: '%2Fdanfeng'
-- name: 400|🇺🇸 美国 | USA 20-1
+- name: 400|🇺🇸 美国 | USA 20
   network: ws
   port: 443
   server: 162.159.241.98
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: k7ryegiaeu.chinam.eu.org
-    path: '%2Fdanfeng'
-- name: 400|🇺🇸 美国 | USA 20-2
-  network: ws
-  port: 443
-  server: 162.159.5.240
   servername: ''
   tls: true
   type: vless
@@ -5911,28 +5875,6 @@ proxies:
     headers:
       Host: blackshadow.dpdns.org
     path: '%2F44.209.52.7-443'
-- name: 400|US美国(mibei77.com 米贝节点分享)-184-1
-  network: ws
-  port: 80
-  server: fffvvbgh.05o.ccwu.cc
-  tls: false
-  type: vless
-  uuid: 2bfded8d-6a7c-4c18-aaa5-fc65b955d50c
-  ws-opts:
-    headers:
-      Host: fffvvbgh.05o.ccwu.cc
-    path: '%2FHoBSIvRY1m5xOEJ3dX414bl'
-- name: 400|US美国(mibei77.com 米贝节点分享)-168
-  network: ws
-  port: 80
-  server: hhhnmjk.04o.ccwu.cc
-  tls: false
-  type: vless
-  uuid: 2bfded8d-6a7c-4c18-aaa5-fc65b955d50c
-  ws-opts:
-    headers:
-      Host: hhhnmjk.04o.ccwu.cc
-    path: '%2FHoBSIvRY1m5xOEJ3dX414bl'
 - name: '400|🇺🇸_美国 #14'
   network: ws
   port: 443
@@ -5994,6 +5936,18 @@ proxies:
   ws-opts:
     headers:
       Host: njk.dddc.de5.net
+    path: '%2FeDVWlsljXYWmzP5D1vsO'
+- name: 400|🇺🇸US_4 | ⬇️ 2.6MB/s
+  network: ws
+  port: 443
+  server: rt.dddc.us.ci
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
+  ws-opts:
+    headers:
+      Host: rt.dddc.us.ci
     path: '%2FeDVWlsljXYWmzP5D1vsO'
 - client-fingerprint: chrome
   name: 400|US VLESS-54 | free-nodes
@@ -6067,19 +6021,6 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   server: 15.204.97.195
-  servername: fuck.rkn
-  tls: false
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 400|US VLESS-63 | free-nodes
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.216
   servername: fuck.rkn
   tls: false
   type: vless
@@ -6161,15 +6102,6 @@ proxies:
     headers:
       Host: nnmkki9.6no.ccwu.cc
     path: '%2FF24D1rlC85bVBOSONBms'
-- name: 400|🇺🇸_US_美国_4
-  network: ws
-  port: 80
-  server: 207.90.237.199
-  tls: false
-  type: vless
-  uuid: 600b472f-3e43-43a0-8815-a890a607891c
-  ws-opts:
-    path: '%2F'
 - name: '400|US美国(mibei77.com 米贝节点分享) #6'
   network: ws
   port: 80
@@ -6206,10 +6138,70 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_166
+  network: ws
+  port: 2096
+  server: 104.129.167.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_174
+  network: ws
+  port: 2096
+  server: 104.238.68.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_207
+  network: ws
+  port: 2096
+  server: 104.238.71.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_79
+  network: ws
+  port: 2096
+  server: 104.239.72.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_93
+  network: ws
+  port: 2096
+  server: 104.254.140.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - name: '400|US美国(mibei77.com 米贝节点分享) #9'
   network: ws
   port: 443
-  server: 135.84.67.96
+  server: 135.84.64.226
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6218,10 +6210,22 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_138
+  network: ws
+  port: 443
+  server: 135.84.64.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - name: '400|US美国(mibei77.com 米贝节点分享) #10'
   network: ws
   port: 443
-  server: 135.84.72.18
+  server: 135.84.64.244
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6230,10 +6234,22 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|🇺🇸US_8
+  network: ws
+  port: 443
+  server: 135.84.64.52
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: '400|US美国(mibei77.com 米贝节点分享) #11'
   network: ws
   port: 443
-  server: 135.84.73.123
+  server: 135.84.64.66
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6245,7 +6261,7 @@ proxies:
 - name: '400|US美国(mibei77.com 米贝节点分享) #12'
   network: ws
   port: 443
-  server: 135.84.73.96
+  server: 135.84.64.74
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6257,7 +6273,7 @@ proxies:
 - name: '400|US美国(mibei77.com 米贝节点分享) #13'
   network: ws
   port: 443
-  server: 135.84.74.203
+  server: 135.84.64.79
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6266,10 +6282,34 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_123
+  network: ws
+  port: 443
+  server: 135.84.64.95
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_191
+  network: ws
+  port: 443
+  server: 135.84.67.74
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - name: '400|US美国(mibei77.com 米贝节点分享) #14'
   network: ws
   port: 443
-  server: 135.84.74.55
+  server: 135.84.67.96
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6281,7 +6321,7 @@ proxies:
 - name: '400|US美国(mibei77.com 米贝节点分享) #15'
   network: ws
   port: 443
-  server: 143.20.160.195
+  server: 135.84.72.18
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6292,8 +6332,8 @@ proxies:
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: '400|US美国(mibei77.com 米贝节点分享) #16'
   network: ws
-  port: 8443
-  server: 143.20.213.179
+  port: 443
+  server: 135.84.72.42
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6305,7 +6345,7 @@ proxies:
 - name: '400|US美国(mibei77.com 米贝节点分享) #17'
   network: ws
   port: 443
-  server: 185.236.26.30
+  server: 135.84.72.75
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6316,8 +6356,8 @@ proxies:
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: '400|US美国(mibei77.com 米贝节点分享) #18'
   network: ws
-  port: 4001
-  server: 185.94.29.156
+  port: 443
+  server: 135.84.73.122
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6328,8 +6368,8 @@ proxies:
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: '400|US美国(mibei77.com 米贝节点分享) #19'
   network: ws
-  port: 2053
-  server: 188.241.241.123
+  port: 443
+  server: 135.84.73.123
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6340,8 +6380,8 @@ proxies:
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: '400|US美国(mibei77.com 米贝节点分享) #20'
   network: ws
-  port: 2053
-  server: 188.241.241.32
+  port: 443
+  server: 135.84.73.129
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6350,10 +6390,34 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_103
+  network: ws
+  port: 443
+  server: 135.84.73.132
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_251
+  network: ws
+  port: 443
+  server: 135.84.73.140
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - name: '400|US美国(mibei77.com 米贝节点分享) #21'
   network: ws
-  port: 2053
-  server: 188.241.241.3
+  port: 443
+  server: 135.84.73.160
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6365,7 +6429,7 @@ proxies:
 - name: '400|US美国(mibei77.com 米贝节点分享) #22'
   network: ws
   port: 443
-  server: 195.133.44.199
+  server: 135.84.73.184
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6374,10 +6438,58 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_30
+  network: ws
+  port: 443
+  server: 135.84.73.220
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_153
+  network: ws
+  port: 443
+  server: 135.84.73.230
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|US_922f4_0059
+  network: ws
+  port: 443
+  server: 135.84.73.239
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
+- name: 400|YouTube顺丰资源 美国_152
+  network: ws
+  port: 443
+  server: 135.84.73.241
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - name: '400|US美国(mibei77.com 米贝节点分享) #23'
   network: ws
   port: 443
-  server: 199.107.164.217
+  server: 135.84.73.245
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6386,10 +6498,46 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|US_922f4_0044
+  network: ws
+  port: 443
+  server: 135.84.73.247
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
+- name: 400|YouTube顺丰资源 美国_115
+  network: ws
+  port: 443
+  server: 135.84.73.41
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|🇺🇸US_11
+  network: ws
+  port: 443
+  server: 135.84.73.42
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: '400|US美国(mibei77.com 米贝节点分享) #24'
   network: ws
   port: 443
-  server: 199.34.230.158
+  server: 135.84.73.96
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6398,10 +6546,46 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_113
+  network: ws
+  port: 443
+  server: 135.84.74.105
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|US_922f4_0040
+  network: ws
+  port: 443
+  server: 135.84.74.118
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
+- name: 400|YouTube顺丰资源 美国_185
+  network: ws
+  port: 443
+  server: 135.84.74.145
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - name: '400|US美国(mibei77.com 米贝节点分享) #25'
   network: ws
   port: 443
-  server: 209.177.165.17
+  server: 135.84.74.152
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6413,7 +6597,7 @@ proxies:
 - name: '400|US美国(mibei77.com 米贝节点分享) #26'
   network: ws
   port: 443
-  server: 23.169.184.123
+  server: 135.84.74.166
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6424,8 +6608,8 @@ proxies:
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: '400|US美国(mibei77.com 米贝节点分享) #27'
   network: ws
-  port: 47790
-  server: 36.50.90.241
+  port: 443
+  server: 135.84.74.190
   servername: sni.111000.dynv6.net
   tls: true
   type: vless
@@ -6437,6 +6621,1326 @@ proxies:
 - name: '400|US美国(mibei77.com 米贝节点分享) #28'
   network: ws
   port: 443
+  server: 135.84.74.203
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|US_922f4_0045
+  network: ws
+  port: 443
+  server: 135.84.74.20
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
+- name: 400|YouTube顺丰资源 美国_190
+  network: ws
+  port: 443
+  server: 135.84.74.212
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|US_922f4_0057
+  network: ws
+  port: 443
+  server: 135.84.74.34
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
+- name: '400|US美国(mibei77.com 米贝节点分享) #29'
+  network: ws
+  port: 443
+  server: 135.84.74.55
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_264
+  network: ws
+  port: 443
+  server: 135.84.74.65
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #30'
+  network: ws
+  port: 443
+  server: 135.84.74.90
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #31'
+  network: ws
+  port: 443
+  server: 135.84.75.14
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_295
+  network: ws
+  port: 443
+  server: 135.84.75.16
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_105
+  network: ws
+  port: 443
+  server: 135.84.75.76
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_110
+  network: ws
+  port: 443
+  server: 138.2.5.136
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_238
+  network: ws
+  port: 443
+  server: 139.144.77.235
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_14
+  network: ws
+  port: 29876
+  server: 141.147.183.49
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #32'
+  network: ws
+  port: 443
+  server: 143.20.160.195
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|US_922f4_0063
+  network: ws
+  port: 8443
+  server: 143.20.213.10
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
+- name: 400|YouTube顺丰资源 美国_289
+  network: ws
+  port: 8443
+  server: 143.20.213.112
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #33'
+  network: ws
+  port: 8443
+  server: 143.20.213.130
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #34'
+  network: ws
+  port: 8443
+  server: 143.20.213.179
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #35'
+  network: ws
+  port: 8443
+  server: 143.20.213.193
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_297
+  network: ws
+  port: 8443
+  server: 143.20.213.5
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_276
+  network: ws
+  port: 8443
+  server: 143.20.213.69
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #36'
+  network: ws
+  port: 8443
+  server: 143.20.213.77
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #37'
+  network: ws
+  port: 8443
+  server: 143.20.213.9
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_254
+  network: ws
+  port: 8443
+  server: 143.20.236.203
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_260
+  network: ws
+  port: 443
+  server: 149.248.7.25
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_61
+  network: ws
+  port: 443
+  server: 149.28.94.52
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_97
+  network: ws
+  port: 443
+  server: 152.228.216.146
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_72
+  network: ws
+  port: 8443
+  server: 152.53.131.209
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_31
+  network: ws
+  port: 2096
+  server: 156.243.83.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|🇺🇸US_3-1
+  network: ws
+  port: 443
+  server: 160.153.1.114
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 400|US美国(mibei77.com 米贝节点分享)-111
+  network: ws
+  port: 443
+  server: 160.153.1.146
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|US美国(mibei77.com 米贝节点分享)-124
+  network: ws
+  port: 443
+  server: 160.153.1.155
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|🇺🇸US_4
+  network: ws
+  port: 443
+  server: 160.153.1.198
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 400|🇺🇸US_1-3
+  network: ws
+  port: 443
+  server: 160.153.1.207
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 400|US美国(mibei77.com 米贝节点分享)-145
+  network: ws
+  port: 443
+  server: 160.153.1.216
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|US美国(mibei77.com 米贝节点分享)-135
+  network: ws
+  port: 443
+  server: 160.153.1.219
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|🇺🇸US_7
+  network: ws
+  port: 443
+  server: 160.153.1.22
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 400|🇺🇸US_1-1
+  network: ws
+  port: 443
+  server: 160.153.1.51
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 400|US美国(mibei77.com 米贝节点分享)-102
+  network: ws
+  port: 443
+  server: 160.153.1.54
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|US美国(mibei77.com 米贝节点分享)-112
+  network: ws
+  port: 443
+  server: 160.153.1.65
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|US美国(mibei77.com 米贝节点分享)-132-2
+  network: ws
+  port: 443
+  server: 160.153.1.70
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|🇺🇸US_6
+  network: ws
+  port: 443
+  server: 160.153.137.184
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_60
+  network: ws
+  port: 2096
+  server: 162.251.82.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_136
+  network: ws
+  port: 2096
+  server: 166.62.112.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_177
+  network: ws
+  port: 2096
+  server: 166.62.115.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|US美国(mibei77.com 米贝节点分享)-151
+  network: ws
+  port: 2053
+  server: 178.130.40.109
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_195
+  network: ws
+  port: 2096
+  server: 184.168.47.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #38'
+  network: ws
+  port: 443
+  server: 185.110.189.174
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 亚美尼亚_88
+  network: ws
+  port: 2096
+  server: 185.162.230.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #39'
+  network: ws
+  port: 443
+  server: 185.236.26.30
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #40'
+  network: ws
+  port: 4001
+  server: 185.94.29.156
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 亚美尼亚_34
+  network: ws
+  port: 2096
+  server: 188.164.159.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #41'
+  network: ws
+  port: 2053
+  server: 188.241.241.123
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #42'
+  network: ws
+  port: 2053
+  server: 188.241.241.32
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #43'
+  network: ws
+  port: 2053
+  server: 188.241.241.3
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_288
+  network: ws
+  port: 2096
+  server: 192.0.63.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_118
+  network: ws
+  port: 2096
+  server: 192.169.223.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_149
+  network: ws
+  port: 443
+  server: 192.200.160.161
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_128
+  network: ws
+  port: 443
+  server: 192.200.160.19
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_78
+  network: ws
+  port: 2096
+  server: 192.200.160.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #44'
+  network: ws
+  port: 443
+  server: 195.133.44.199
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #45'
+  network: ws
+  port: 443
+  server: 195.135.255.177
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|US_922f4_0034
+  network: ws
+  port: 2053
+  server: 198.204.227.171
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
+- name: 400|YouTube顺丰资源 美国_158
+  network: ws
+  port: 2096
+  server: 198.71.188.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_111
+  network: ws
+  port: 443
+  server: 198.71.233.69
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_144
+  network: ws
+  port: 443
+  server: 198.71.233.76
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_217
+  network: ws
+  port: 443
+  server: 199.107.164.165
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #46'
+  network: ws
+  port: 443
+  server: 199.107.164.217
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|US美国(mibei77.com 米贝节点分享)-113
+  network: ws
+  port: 443
+  server: 199.34.228.50
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #47'
+  network: ws
+  port: 443
+  server: 199.34.230.158
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|US_922f4_0056
+  network: ws
+  port: 443
+  server: 199.34.230.66
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
+- name: 400|US美国(mibei77.com 米贝节点分享)-148
+  network: ws
+  port: 443
+  server: 2.56.179.4
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_122
+  network: ws
+  port: 443
+  server: 209.102.207.120
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_145
+  network: ws
+  port: 443
+  server: 209.102.207.190
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #48'
+  network: ws
+  port: 443
+  server: 209.177.165.17
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_50
+  network: ws
+  port: 2096
+  server: 209.46.30.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_82
+  network: ws
+  port: 2096
+  server: 209.46.30.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_222
+  network: ws
+  port: 2096
+  server: 216.205.52.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_102
+  network: ws
+  port: 443
+  server: 216.24.57.2
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_142
+  network: ws
+  port: 443
+  server: 216.24.57.4
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|🇺🇸US-2
+  network: ws
+  port: 8443
+  server: 23.152.200.8
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #49'
+  network: ws
+  port: 443
+  server: 23.169.184.123
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_266
+  network: ws
+  port: 2053
+  server: 3.79.219.135
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #50'
+  network: ws
+  port: 47790
+  server: 36.50.90.241
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|US美国(mibei77.com 米贝节点分享)-107
+  network: ws
+  port: 443
+  server: 45.12.133.190
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #51'
+  network: ws
+  port: 2016
+  server: 45.145.42.211
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_69
+  network: ws
+  port: 2096
+  server: 45.149.12.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_167
+  network: ws
+  port: 12217
+  server: 45.15.124.7
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_253
+  network: ws
+  port: 2096
+  server: 45.153.7.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_77
+  network: ws
+  port: 2096
+  server: 45.153.7.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_148
+  network: ws
+  port: 443
+  server: 45.40.145.224
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_125
+  network: ws
+  port: 2096
+  server: 45.40.146.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_127
+  network: ws
+  port: 2096
+  server: 45.40.147.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_156
+  network: ws
+  port: 2096
+  server: 45.40.150.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_119
+  network: ws
+  port: 2096
+  server: 45.40.154.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|US美国(mibei77.com 米贝节点分享)-105
+  network: ws
+  port: 443
+  server: 45.40.155.106
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_120
+  network: ws
+  port: 2096
+  server: 45.40.155.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|🇺🇸US_3-2
+  network: ws
+  port: 443
+  server: 45.42.214.153
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_52
+  network: ws
+  port: 2096
+  server: 50.62.195.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_137
+  network: ws
+  port: 2096
+  server: 50.62.90.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_104
+  network: ws
+  port: 2096
+  server: 63.141.128.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #52'
+  network: ws
+  port: 443
+  server: 63.141.128.9
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_274
+  network: ws
+  port: 8443
+  server: 64.238.203.104
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_292
+  network: ws
+  port: 8443
+  server: 64.238.203.76
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|US美国(mibei77.com 米贝节点分享)-149
+  network: ws
+  port: 8443
+  server: 64.238.203.99
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_51
+  network: ws
+  port: 2096
+  server: 66.235.200.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_53
+  network: ws
+  port: 2096
+  server: 66.45.118.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|🇺🇸US_2-2
+  network: ws
+  port: 80
+  server: 67.226.221.104
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_155
+  network: ws
+  port: 2096
+  server: 69.84.182.138
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_36
+  network: ws
+  port: 2096
+  server: 69.84.182.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #53'
+  network: ws
+  port: 443
   server: 77.110.120.225
   servername: sni.111000.dynv6.net
   tls: true
@@ -6446,7 +7950,55 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #29'
+- name: 400|YouTube顺丰资源 美国_214
+  network: ws
+  port: 443
+  server: 82.115.6.21
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #54'
+  network: ws
+  port: 8443
+  server: 85.208.139.98
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|US美国(mibei77.com 米贝节点分享)-152
+  network: ws
+  port: 8443
+  server: 87.229.97.221
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 400|US美国(mibei77.com 米贝节点分享)-071
+  network: ws
+  port: 443
+  server: 89.110.102.110
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: '400|US美国(mibei77.com 米贝节点分享) #55'
   network: ws
   port: 8443
   server: 95.182.97.125
@@ -6458,6 +8010,30 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: 400|YouTube顺丰资源 美国_143
+  network: ws
+  port: 2096
+  server: v3.dabache.top
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 400|YouTube顺丰资源 美国_134
+  network: ws
+  port: 2096
+  server: vip3.kaixincloud.top
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: '400|🇺🇸_美国 #19'
   network: ws
   port: 80
@@ -6469,18 +8045,6 @@ proxies:
     headers:
       Host: sefaefawafa.ydyoeieiwhgi.workers.dev
     path: '%2FeyJqdW5rIjoiNEhiZlQ5dmVmIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiOTAuMTU2LjIyMS41NCJdfQ%3D%3D'
-- name: 400|US美国(mibei77.com 米贝节点分享)-066
-  network: ws
-  port: 443
-  server: hj.iran2030.indevs.in
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 721d3fd0-e9f1-40c3-92cd-d4405a4319d6
-  ws-opts:
-    headers:
-      Host: hj.iran2030.indevs.in
-    path: '%2F9NojP751adPiN9LMya'
 - name: '400|🇺🇸_美国 #20'
   network: ws
   port: 443
@@ -6606,42 +8170,6 @@ proxies:
     headers:
       Host: sdfgbhy7.0ou.ccwu.cc
     path: '%2FIq3945ZsqJBAQ5Ah'
-- name: 400|🇺🇸_US_美国_1
-  network: ws
-  port: 80
-  server: 199.232.196.204
-  servername: JOiN--E-L-i-V-2-R-A-Y.net
-  tls: false
-  type: vless
-  uuid: 913cdacd-2501-531a-8390-d2fcda924944
-  ws-opts:
-    headers:
-      Host: JOiN--E-L-i-V-2-R-A-Y.net
-    path: '%2FTelegram%2C%40ELiV2RAY-Telegram%2C%40ELiV2RAY-Telegram%2C%40ELiV2RAY-%3Fed%3D2560'
-- name: 400|🇺🇸 美国 | USA 9
-  network: ws
-  port: 443
-  server: 172.67.70.64
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.sh21.eu.org
-    path: '%2Fdanfeng'
-- name: 400|🇺🇸 美国 | USA 10
-  network: ws
-  port: 443
-  server: 172.67.74.214
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.sh21.eu.org
-    path: '%2Fdanfeng'
 - name: 400|🇺🇸 美国 | USA 27
   network: ws
   port: 443
@@ -6666,7 +8194,7 @@ proxies:
     headers:
       Host: vbnhhju8.988988.shop
     path: '%2FI4W63AAjPkpe1D3pAvPtZpEoeO'
-- name: '400|US美国(mibei77.com 米贝节点分享) #30'
+- name: '400|US美国(mibei77.com 米贝节点分享) #56'
   network: ws
   port: 80
   server: 104.16.158.162
@@ -6688,17 +8216,6 @@ proxies:
   ws-opts:
     headers:
       Host: 2-op.007770777.xyz
-    path: '%2FC6VXG81UQc4XWS6Csfk0uFDF'
-- name: 400|US美国(mibei77.com 米贝节点分享)-154
-  network: ws
-  port: 80
-  server: bnju8.12i.ccwu.cc
-  tls: false
-  type: vless
-  uuid: ae72f958-c1f6-4fc2-a310-1f007af3d11f
-  ws-opts:
-    headers:
-      Host: bnju8.12i.ccwu.cc
     path: '%2FC6VXG81UQc4XWS6Csfk0uFDF'
 - name: 400|US美国(mibei77.com 米贝节点分享)-132-1
   network: ws
@@ -6747,7 +8264,7 @@ proxies:
   uuid: b1267991-59ff-4b67-b141-97e3ced4e7c8
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|US VLESS-98 | free-nodes
+  name: 400|US VLESS-93 | free-nodes
   network: tcp
   port: 8443
   reality-opts:
@@ -6906,17 +8423,12 @@ proxies:
   tls: false
   type: vless
   uuid: c6be0a05-6105-4c0a-8af5-3e227f10735f
-- name: 400|SR-Compat-9444-Apple-US
-  network: tcp
-  port: 9444
-  reality-opts:
-    public-key: vQHFkbVqbMIHkMSIAKiaHK5PwIiIlJmKZPbWTtZqBX8
-    short-id: 590b3501
-  server: 172.245.19.104
-  servername: ''
+- name: 400|US VLESS-101 | free-nodes
+  port: 37016
+  server: cid.wlrus.lol
   tls: false
   type: vless
-  uuid: cbf3b4be-b3a8-4f70-bd28-988e72f7d46d
+  uuid: c6be0a05-6105-4c0a-8af5-3e227f10735f
 - client-fingerprint: chrome
   name: '400|🇺🇸_美国 #35'
   network: tcp
@@ -6932,7 +8444,7 @@ proxies:
   uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|US VLESS-113 | free-nodes
+  name: 400|US VLESS-109 | free-nodes
   network: tcp
   port: 11163
   reality-opts:
@@ -6944,7 +8456,7 @@ proxies:
   type: vless
   uuid: d9fbc365-bf98-4ff6-a66d-523cc217d56e
 - client-fingerprint: chrome
-  name: 400|US VLESS-114 | free-nodes
+  name: 400|US VLESS-110 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -6955,7 +8467,7 @@ proxies:
   tls: false
   type: vless
   uuid: ddb913e5-492f-42e8-baec-93c9c5d333d6
-- name: '400|🇺🇸_美国 #37'
+- name: '400|🇺🇸_美国 #36'
   network: ws
   port: 80
   server: mx2.tehrantolidi.ir
@@ -6966,7 +8478,7 @@ proxies:
     headers:
       Host: cdn123.global.ssl.fastly.net
     path: '%2Fsite'
-- name: '400|US美国(mibei77.com 米贝节点分享) #31'
+- name: '400|US美国(mibei77.com 米贝节点分享) #57'
   network: ws
   port: 443
   server: 103.219.194.43
@@ -6978,7 +8490,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #32'
+- name: '400|US美国(mibei77.com 米贝节点分享) #58'
   network: ws
   port: 443
   server: 146.190.91.9
@@ -6990,7 +8502,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #33'
+- name: '400|US美国(mibei77.com 米贝节点分享) #59'
   network: ws
   port: 443
   server: 162.243.131.126
@@ -7002,7 +8514,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #34'
+- name: '400|US美国(mibei77.com 米贝节点分享) #60'
   network: ws
   port: 8443
   server: 173.249.198.22
@@ -7014,7 +8526,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #35'
+- name: '400|US美国(mibei77.com 米贝节点分享) #61'
   network: ws
   port: 443
   server: 188.209.141.74
@@ -7026,7 +8538,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #36'
+- name: '400|US美国(mibei77.com 米贝节点分享) #62'
   network: ws
   port: 443
   server: 68.64.176.135
@@ -7038,7 +8550,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #37'
+- name: '400|US美国(mibei77.com 米贝节点分享) #63'
   network: ws
   port: 443
   server: 68.64.179.105
@@ -7050,7 +8562,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #38'
+- name: '400|US美国(mibei77.com 米贝节点分享) #64'
   network: ws
   port: 443
   server: 68.64.179.220
@@ -7062,7 +8574,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #39'
+- name: '400|US美国(mibei77.com 米贝节点分享) #65'
   network: ws
   port: 443
   server: 68.64.179.243
@@ -7074,7 +8586,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #40'
+- name: '400|US美国(mibei77.com 米贝节点分享) #66'
   network: ws
   port: 443
   server: 68.64.179.248
@@ -7086,7 +8598,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #41'
+- name: '400|US美国(mibei77.com 米贝节点分享) #67'
   network: ws
   port: 443
   server: 68.64.179.250
@@ -7098,7 +8610,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #42'
+- name: '400|US美国(mibei77.com 米贝节点分享) #68'
   network: ws
   port: 443
   server: 68.64.179.30
@@ -7110,7 +8622,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #43'
+- name: '400|US美国(mibei77.com 米贝节点分享) #69'
   network: ws
   port: 443
   server: 68.64.179.90
@@ -7122,7 +8634,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #44'
+- name: '400|US美国(mibei77.com 米贝节点分享) #70'
   network: ws
   port: 443
   server: 68.64.179.94
@@ -7134,7 +8646,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '400|US美国(mibei77.com 米贝节点分享) #45'
+- name: '400|US美国(mibei77.com 米贝节点分享) #71'
   network: ws
   port: 443
   server: 83.229.122.50
@@ -7146,7 +8658,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2'
-- name: 400|US VLESS-109 | free-nodes
+- name: '400|US VLESS-109 | free-nodes #1'
   network: tcp
   port: 23335
   reality-opts:
@@ -7159,7 +8671,7 @@ proxies:
   uuid: e384913f-8863-47b4-8858-a84b68abb4a6
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 400|US VLESS-118 | free-nodes
+  name: 400|US VLESS-115 | free-nodes
   network: tcp
   port: 23335
   reality-opts:
@@ -7192,19 +8704,14 @@ proxies:
   tls: true
   type: vless
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 400|YouTube顺丰资源 美国_198
-  network: ws
-  port: 2053
-  server: v3.dabache.top
-  servername: ''
-  tls: true
+- name: 400|🇺🇸 美国 | USA 8
+  network: grpc
+  port: 443
+  server: usbad.osaip.net
+  tls: false
   type: vless
-  uuid: e5f8a9f6-f164-479b-b3b5-b90f213c7145
-  ws-opts:
-    headers:
-      Host: ir1.airpanel.top
-    path: '%2F'
-- name: '400|🇺🇸_美国 #38'
+  uuid: e5b2f2a5-cdd6-4ad7-a6a2-e031cc8b6d18
+- name: '400|🇺🇸_美国 #37'
   network: ws
   port: 80
   server: fffghyu.0on.ccwu.cc
@@ -7218,7 +8725,35 @@ proxies:
     path: '%2FbMr5KXQVVEJM1JyJ'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
+  name: '400|🇺🇸_美国 #38'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: MrVc8uqpwhoXwJXD-2rOkZp-gXyIH15mYx0noP7joxM
+    short-id: 014c5bef3f
+  server: us1.miyazono-kaori.com
+  servername: download-porter.hoyoverse.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: '400|🇺🇸_美国 #39'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: OIVDQIpAT0W0VQ5E8qHlBZjXtcPOxrbWpx3CxN5L-iQ
+    short-id: 2714177825354e
+  server: us2.miyazono-kaori.com
+  servername: download-porter.hoyoverse.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '400|🇺🇸_美国 #40'
   network: tcp
   port: 443
   reality-opts:
@@ -7236,7 +8771,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-163 | free-nodes
+  name: 400|US VLESS-159 | free-nodes
   network: grpc
   port: 443
   server: 185.106.96.231
@@ -7254,7 +8789,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-143 | free-nodes
+  name: 400|US VLESS-136 | free-nodes
   network: grpc
   port: 443
   server: 195.133.52.89
@@ -7272,7 +8807,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-141 | free-nodes
+  name: 400|US VLESS-134 | free-nodes
   network: grpc
   port: 443
   server: ipv6s261.okgfw.top
@@ -7290,7 +8825,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-164 | free-nodes
+  name: 400|US VLESS-160 | free-nodes
   network: grpc
   port: 443
   server: s407.okgfw.top
@@ -7308,7 +8843,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-137 | free-nodes
+  name: 400|US VLESS-129 | free-nodes
   network: grpc
   port: 443
   server: s412.okgfw.top
@@ -7326,7 +8861,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-165 | free-nodes
+  name: 400|US VLESS-161 | free-nodes
   network: grpc
   port: 443
   server: s442.okgfw.top
@@ -7344,7 +8879,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-166 | free-nodes
+  name: 400|US VLESS-162 | free-nodes
   network: grpc
   port: 443
   server: s516.okgfw.top
@@ -7362,7 +8897,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-160 | free-nodes
+  name: 400|US VLESS-156 | free-nodes
   network: grpc
   port: 443
   server: s538.ccgfw.top
@@ -7380,7 +8915,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-146 | free-nodes
+  name: 400|US VLESS-140 | free-nodes
   network: grpc
   port: 443
   server: s539.ccgfw.top
@@ -7398,7 +8933,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-161 | free-nodes
+  name: 400|US VLESS-157 | free-nodes
   network: grpc
   port: 443
   server: s540.ccgfw.top
@@ -7416,7 +8951,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-152 | free-nodes
+  name: 400|US VLESS-147 | free-nodes
   network: grpc
   port: 443
   server: s541.ccgfw.top
@@ -7434,7 +8969,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-153 | free-nodes
+  name: 400|US VLESS-148 | free-nodes
   network: grpc
   port: 443
   server: s559.ccgfw.top
@@ -7452,7 +8987,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 400|US VLESS-170 | free-nodes
+  name: 400|US VLESS-166 | free-nodes
   network: tcp
   port: 443
   server: s686.okgfw.top
@@ -7470,7 +9005,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-169 | free-nodes
+  name: 400|US VLESS-165 | free-nodes
   network: grpc
   port: 443
   server: s701.okgfw.top
@@ -7488,7 +9023,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-138 | free-nodes
+  name: 400|US VLESS-130 | free-nodes
   network: grpc
   port: 443
   server: s702.okgfw.top
@@ -7506,7 +9041,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-154 | free-nodes
+  name: 400|US VLESS-149 | free-nodes
   network: grpc
   port: 443
   server: s703.okgfw.top
@@ -7524,7 +9059,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-167 | free-nodes
+  name: 400|US VLESS-163 | free-nodes
   network: grpc
   port: 443
   server: s716.okgfw.top
@@ -7542,7 +9077,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-168 | free-nodes
+  name: 400|US VLESS-164 | free-nodes
   network: grpc
   port: 443
   server: s717.okgfw.top
@@ -7560,7 +9095,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 400|US VLESS-149 | free-nodes
+  name: 400|US VLESS-144 | free-nodes
   network: tcp
   port: 443
   server: s733.okgfw.top
@@ -7578,7 +9113,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-162 | free-nodes
+  name: 400|US VLESS-158 | free-nodes
   network: grpc
   port: 443
   server: s848.ccgfw.top
@@ -7596,7 +9131,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ssp
-  name: 400|US VLESS-140 | free-nodes
+  name: 400|US VLESS-133 | free-nodes
   network: grpc
   port: 443
   server: s849.ccgfw.top
@@ -7751,6 +9286,20 @@ proxies:
     path: /WcCs2x2YwawFa6Csfk0uFDF
 - alterId: 0
   cipher: auto
+  name: 400|US美国(mibei77.com 米贝节点分享) 68
+  network: ws
+  port: 443
+  server: dcvbghy7.12i.ccwu.cc
+  servername: dcvbghy7.12i.ccwu.cc
+  tls: true
+  type: vmess
+  uuid: ae72f958-c1f6-4fc2-a310-1f007af3d11f
+  ws-opts:
+    headers:
+      Host: dcvbghy7.12i.ccwu.cc
+    path: /WcCs2x2YwawFa6Csfk0uFDF
+- alterId: 0
+  cipher: auto
   name: 400|US美国(mibei77.com 米贝节点分享) 99-1
   network: ws
   port: 443
@@ -7779,20 +9328,6 @@ proxies:
     path: /WcCs2x2YwawFa6Csfk0uFDF
 - alterId: 0
   cipher: auto
-  name: 400|美国 1109
-  network: ws
-  port: 443
-  server: 15.235.85.147
-  servername: pelang.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: pelang.org
-    path: /linkvws
-- alterId: 0
-  cipher: auto
   name: 400|美国(yudou789.top 玉豆免费节点)_53-1
   network: ws
   port: 80
@@ -7807,119 +9342,21 @@ proxies:
     path: /WcCs2x2YwawFa6Csfk0uFDF
 - alterId: 0
   cipher: auto
-  name: 400|🇺🇸 US_101
+  name: 400|🇺🇸 US_112
   network: ws
   port: 443
-  server: 148.113.176.192
+  server: n1761214912.wpg27.xyz
   servername: ''
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 4f86a909-836d-4643-b650-d812144a1fa9
   ws-opts:
     headers:
       Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|🇺🇸 US_102
-  network: ws
-  port: 443
-  server: n1761214908.wpg27.xyz
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 3514a93f-bb26-4442-8f99-971b2ff3388a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 400|🇺🇸 US_103
-  network: ws
-  port: 443
-  server: n1753598452.wpg27.xyz
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 400|🇺🇸 US_104
-  network: ws
-  port: 443
-  server: n1753101272.lie5d.cyou
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 568a3e7a-c13e-4205-af30-e75ec3e5c778
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 400|🇺🇸 US_105
-  network: ws
-  port: 443
-  server: cf.090227.xyz
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 400|🇺🇸 US_106
-  network: ws
-  port: 443
-  server: 15.235.83.227
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 400|🇺🇸 US_97
-  network: ws
-  port: 443
-  server: 47.243.95.187
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: c28a6258-7baa-40fc-8a51-87f59c847cd7
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 400|🇺🇸 US_98
-  network: ws
-  port: 443
-  server: n1761214919.mv7wh.tech
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: c592f040-faff-47dc-a464-9bccf2dd4e7b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 400|🇺🇸 US_99
+  name: 400|🇺🇸 US_113
   network: ws
   port: 443
   server: 15.235.50.172
@@ -7933,17 +9370,73 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|🇺🇸 美国 | USA 13
+  name: 400|🇺🇸 US_114
   network: ws
-  port: 8443
-  server: kwtgm.cmvvb.online
-  servername: kwtgm.cmvvb.online
+  port: 443
+  server: 47.243.95.187
+  servername: ''
   tls: true
   type: vmess
-  uuid: 82aa5240-ee95-427d-91b0-1ba42383d49e
+  uuid: c28a6258-7baa-40fc-8a51-87f59c847cd7
   ws-opts:
     headers:
-      Host: kwtgm.cmvvb.online
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 400|🇺🇸 US_115
+  network: ws
+  port: 443
+  server: 15.235.83.227
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 400|🇺🇸 US_116
+  network: ws
+  port: 443
+  server: cf.090227.xyz
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 400|🇺🇸 US_118
+  network: ws
+  port: 443
+  server: 148.113.176.192
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 400|🇺🇸 US_119
+  network: ws
+  port: 443
+  server: n1761214919.mv7wh.tech
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: c592f040-faff-47dc-a464-9bccf2dd4e7b
+  ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -8002,7 +9495,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400,544|UN【机场推荐：https://a9a.xyz】5
+  name: 400|美国_0308044791
   network: tcp
   port: '31976'
   server: 49.51.184.74
@@ -8012,7 +9505,7 @@ proxies:
   uuid: cde69f5b-2641-469d-8930-fd290d084adf
 - alterId: 0
   cipher: auto
-  name: 400|美国_030718100
+  name: 400|美国_030804096
   network: tcp
   port: '13485'
   server: 66.103.210.150
@@ -8022,21 +9515,7 @@ proxies:
   uuid: 10f0133c-39c5-4224-f53d-ec4491114a59
 - alterId: 0
   cipher: auto
-  name: 400|美国_030718022
-  network: ws
-  port: '24943'
-  server: 69.63.210.35
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a89feda9-ec30-48c1-ae6b-1a6f5b573f6b
-  ws-opts:
-    headers:
-      Host: www.bing.com
-    path: /a89feda9-ec30-48c1-ae6b-1a6f5b573f6b-vm
-- alterId: 0
-  cipher: auto
-  name: 400|美国_030718021 L0
+  name: 400|美国_030804019 L0
   network: tcp
   port: '443'
   server: 165.140.216.141
@@ -8046,7 +9525,7 @@ proxies:
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
 - alterId: 0
   cipher: auto
-  name: 400|美国_0307184755
+  name: 400|美国_0308044764
   network: ws
   port: '443'
   server: 38.55.194.138
@@ -8060,7 +9539,7 @@ proxies:
     path: /vvip
 - alterId: 0
   cipher: auto
-  name: 400|美国_030718122
+  name: 400|美国_030804119
   network: ws
   port: '2053'
   server: usaapp1.jisuyun.top
@@ -8074,11 +9553,11 @@ proxies:
     path: /usavm
 - alterId: 32
   cipher: auto
-  name: 400|美国_030718006
+  name: 400|美国_030804018
   network: ws
   port: '443'
   server: vc.fly.dev
-  servername: ''
+  servername: vc.fly.dev
   tls: true
   type: vmess
   uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
@@ -8088,7 +9567,7 @@ proxies:
     path: /vc
 - alterId: 0
   cipher: auto
-  name: 400|美国_0307184782
+  name: 400|美国_0308044789
   network: ws
   port: '38212'
   server: www.ssrenjiushiwo3033.xyz
