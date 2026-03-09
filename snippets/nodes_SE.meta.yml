@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: chrome
-  name: 292|🇸🇪 Sweden 1 TG:@nodpai
+  name: 291|🇸🇪 Sweden 1 TG:@nodpai
   password: telegram-id-directvpn
   port: 22222
   server: 51.21.57.23
@@ -9,7 +9,7 @@ proxies:
   type: trojan
 - cipher: aes-128-cfb
   country: ' SE'
-  name: 350| SE_71
+  name: 350| SE_67
   obfs: http_post
   password: $$Turb0VPN$$
   port: 443
@@ -30,6 +30,13 @@ proxies:
   port: 22222
   server: 13.60.149.22
   sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 395|SE2｜机房｜低风险
+  password: af4b064a9c39472fb34ad8b113acdc6b
+  port: 443
+  server: 45.145.154.8
+  skip-cert-verify: true
+  sni: 45.145.154.8
   type: trojan
 - name: 400|瑞典 - Steninge - 1
   password: trojan
@@ -58,3 +65,17 @@ proxies:
   tls: false
   type: vless
   uuid: 34e01c8f-673f-43a3-b4dc-45f7f3121c16
+- alterId: 0
+  cipher: auto
+  name: '400|🇸🇪_瑞典 #1'
+  network: ws
+  port: '443'
+  server: 46.246.126.154
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f2fd0786-1059-4f64-d54e-3f3a568c6c68
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
