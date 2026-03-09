@@ -729,7 +729,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '227,261,382,391,394,396,397,399|12,13|香港3|@ripaojiedian #1'
+- name: '227,261,382,391,394,396,397,399|12,13|香港3|@ripaojiedian #2'
   network: tcp
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   port: 443
@@ -737,7 +737,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '227,261,382,391,394,396,397,399|12,13|香港4|@ripaojiedian #1'
+- name: '227,261,382,391,399|12,13|香港4|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 1792
@@ -745,7 +745,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '227,261,382,391,394,396,397,399|12,13|香港5|@ripaojiedian #1'
+- name: '227,261,382,391,399|12,13|香港5|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -753,7 +753,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '227,261,382,391,394,396,397,399|12,13|新加坡3|@ripaojiedian #1'
+- name: '227,261,382,391,399|12,13|新加坡3|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 41973
@@ -763,7 +763,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '227,261,382,391,394,397,399|12|🇭🇰 香港|@ripaojiedian #1'
+  name: '227,261,382,391,394,397,399|12|🇭🇰 香港|@ripaojiedian #2'
   network: tcp
   port: 30807
   server: v10.hdacd.com
@@ -771,6 +771,22 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '227,394,396,397|新加坡3|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 25343
+  server: 43.199.195.181
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: '227,394,396,397|美国3|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 9718
+  server: 18.162.42.82
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 277|🇭🇰1 |  3.5MB/s
   password: WfmxKX2FBJRU0Ie9VLIYDL
@@ -1227,16 +1243,25 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: aes-256-cfb
+  country: ' HK'
+  name: 349| HK_41
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
 - alterId: 0
   cipher: auto
-  country: ' HK'
+  country: IR
   h2-opts: {}
   http-opts: {}
-  name: 349| HK_42
+  name: 349,352,399|🇭🇰 HK_46
   network: tcp
   port: 30003
   server: a.cdn-bilibili.cn
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 69de9a52-36b0-4265-a3cf-d06bcefe713d
   ws-path: /
@@ -1255,16 +1280,6 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 391,399,544|UN【机场推荐：https://a9a.xyz】4
-  network: tcp
-  port: '30830'
-  server: v30.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: chacha20-ietf-poly1305
   name: 398|0| 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1352,7 +1367,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 399|香港_030818001
+- name: 399|香港_030904001
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   port: 443
   server: 58.152.18.189
@@ -1402,7 +1417,35 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 399|香港_030818472
+  name: '399|🇭🇰_香港 #6'
+  network: ws
+  port: '443'
+  server: n1753356378.4u9ma.icu
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 37b20639-0d6e-46f2-9db5-472201b10cdd
+  ws-opts:
+    headers:
+      Host: n1753356378.4u9ma.icu
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '399|🇭🇰_香港 #7'
+  network: ws
+  port: '443'
+  server: n1761296880.lie5d.cyou
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 1effac4a-cdb8-4717-a10c-da97263c802c
+  ws-opts:
+    headers:
+      Host: n1761296880.lie5d.cyou
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 399|香港_030904465
   network: ws
   port: '443'
   server: n1753101277.4u9ma.icu
@@ -1416,7 +1459,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 399,544|HK【机场推荐：https://a9a.xyz】5
+  name: 399|香港_030904464
   network: ws
   port: '443'
   server: n1753348736.lie5d.cyou
@@ -1430,35 +1473,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 399|香港_030818010
-  network: ws
-  port: '443'
-  server: n1753356361.lie5d.cyou
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: cdfd9787-dac8-4c1e-9ae5-104e23a9d994
-  ws-opts:
-    headers:
-      Host: n1753356361.lie5d.cyou
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 399|香港_030818002
-  network: ws
-  port: '443'
-  server: n1753356378.4u9ma.icu
-  servername: n1753356378.4u9ma.icu
-  tls: true
-  type: vmess
-  uuid: 37b20639-0d6e-46f2-9db5-472201b10cdd
-  ws-opts:
-    headers:
-      Host: n1753356378.4u9ma.icu
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 399|香港_030818481
+  name: 399|香港_030904466
   network: ws
   port: '443'
   server: n1761296877.lie5d.cyou
@@ -1472,35 +1487,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 399|香港_030818003
-  network: ws
-  port: '443'
-  server: n1761296880.lie5d.cyou
-  servername: n1761296880.lie5d.cyou
-  tls: true
-  type: vmess
-  uuid: 1effac4a-cdb8-4717-a10c-da97263c802c
-  ws-opts:
-    headers:
-      Host: n1761296880.lie5d.cyou
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 399|香港_030818004
-  network: ws
-  port: '443'
-  server: n1761214905.wpg27.xyz
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: b1d3007c-441a-42d5-84b5-20301c46fa2c
-  ws-opts:
-    headers:
-      Host: n1761214905.wpg27.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 399|香港_030818470
+  name: 399|香港_030904463
   network: ws
   port: '443'
   server: n1761214918.74qxv.top
