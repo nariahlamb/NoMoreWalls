@@ -208,14 +208,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- auth: df1236a0-6caa-4078-96f2-88cd071c3970
-  name: '89,342|🇺🇸 MY_2|2.5MB/s|YT-US|NF|49% #1'
-  password: df1236a0-6caa-4078-96f2-88cd071c3970
-  port: 21108
-  server: my.xn--ehqa22b.site
-  skip-cert-verify: true
-  sni: my.xn--ehqa22b.site
-  type: hysteria2
 - alterId: 0
   cipher: auto
   name: '90,344|美国NO.1 #1'
@@ -347,27 +339,14 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 261,399|日本_031204002
-  password: f389ed926e512e15f382dc3804029474
-  port: 3057
-  server: 160.16.72.205
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 261,399|日本_031204011
-  password: f389ed926e512e15f382dc3804029474
-  port: 3057
-  server: 160.16.106.99
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '261,399|🇺🇸 美国3|@stairnode #1'
-  password: BxceQaOe
-  port: 4864
-  server: 16.163.149.149
+- name: 261,382,394,399|8|美国2
+  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  port: 2056
+  server: mg2.mangshe.xyz
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
+  sni: mg2.mangshe.xyz
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 261,382,394,399|13|US_speednode_0023
@@ -380,36 +359,44 @@ proxies:
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 261,399|电报群：https://t.me/vvkj11
-  network: tcp
-  port: 43643
-  reality-opts:
-    public-key: U_AczMjOIM-_AgDZrEtTBrInB4lcZxXpGB5CCNeqSCs
-    short-id: 0708e917
-  server: 204.197.163.238
-  servername: www.bing.com
+  name: 261,382,394,399|13|US_speednode_0027
+  port: 443
+  server: 144.31.2.248
+  servername: pl.fasti.win
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: ff111801-768c-4d23-8f46-e90ef677c80d
+  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
 - client-fingerprint: chrome
-  name: 261|13|US_speednode_0058
-  port: 8081
-  server: 64.188.64.63
-  servername: www.vk.com
+  flow: xtls-rprx-vision
+  name: 261,382,394,399|13|US_speednode_0028
+  port: 443
+  server: proxy.darknet.run
+  servername: proxy.darknet.run
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: b8e03ade-a2a1-4cbb-b002-5e1148049735
+  uuid: 420a0e21-08c6-4e94-a965-41226b38b674
 - client-fingerprint: chrome
-  name: 261|13|US_speednode_0059
-  port: 8081
-  server: gfm.vpnhub.shop
-  servername: www.vk.com
+  flow: xtls-rprx-vision
+  name: 261,382,394,399|13|US_speednode_0029
+  port: 4546
+  server: 144.31.234.7
+  servername: enterprise.api-maps.yandex.ru
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: b8e03ade-a2a1-4cbb-b002-5e1148049735
+  uuid: 7f37b28b-cfcb-4c2a-ae41-8f2ddc9325dd
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 261,382,394,399|13|US_speednode_0030
+  port: 4546
+  server: 144.31.234.7
+  servername: enterprise.api-maps.yandex.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: b52989b9-09dc-4ca0-b722-e6fe3e8a0313
 - cipher: aes-128-gcm
   name: '277,278|2 #6'
   password: shadowsocks
@@ -493,7 +480,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: ' US'
-  name: 277,278,349| US_80
+  name: 277,278,349| US_75
   password: shadowsocks
   port: 443
   server: 156.146.38.167
@@ -1066,7 +1053,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: ' US'
-  name: 277,278,349| US_82
+  name: 277,278,349| US_77
   password: shadowsocks
   port: 443
   server: 156.146.38.170
@@ -1219,7 +1206,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf
   country: ' HK'
-  name: 277,349| HK_46
+  name: 277,349| HK_45
   password: asd123456
   port: 8388
   server: 103.36.91.23
@@ -2200,33 +2187,33 @@ proxies:
   sni: us.mjanyt.com
   type: anytls
   udp: true
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   country: ' US'
-  name: 349| US_75
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
+  name: 349| US_73
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 38.165.231.25
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 349| US_74
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 38.89.142.56
   type: ss
 - cipher: aes-256-cfb
   country: ' US'
   name: 349| US_76
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 38.165.233.93
+  server: 154.90.62.168
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 349| US_77
-  password: dAHM1pm8ag7KdlrUylQi6t
-  port: 443
-  server: promo18v.bystrivpn.ru
-  type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
   country: ' US'
   name: 349| US_78
-  password: hbGrpfvNrJsUmKmPbR3iY2
-  port: 443
-  server: tinkered-pennies-puppies.freesocks.work
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
@@ -2237,65 +2224,61 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
-  name: 349| US_81
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.89.142.56
+  name: 349| US_80
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  port: 443
+  server: tinkered-pennies-puppies.freesocks.work
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
-  name: 349| US_83
+  name: 349| US_81
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 193.135.174.135
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 349| US_84
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.165.231.25
-  type: ss
 - cipher: aes-256-cfb
   country: ' US'
-  name: 349| US_85
+  name: 349| US_82
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 154.90.62.168
+  server: 38.165.233.93
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 349| US_83
+  password: dAHM1pm8ag7KdlrUylQi6t
+  port: 443
+  server: promo18v.bystrivpn.ru
   type: ss
 - alterId: 0
   cipher: auto
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 349| US_86
+  name: 349| US_84
   network: ws
   port: 443
-  server: cf.090227.xyz
-  servername: sgal.dagrate.eu.org
+  server: n1753101272.lie5d.cyou
+  servername: n1753101272.lie5d.cyou
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  uuid: 568a3e7a-c13e-4205-af30-e75ec3e5c778
   ws-headers:
-    HOST: sgal.dagrate.eu.org
+    HOST: n1753101272.lie5d.cyou
   ws-path: /
 - alterId: 0
   cipher: auto
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 349| US_87
-  network: ws
-  port: 443
-  server: 47.243.95.187
-  servername: n1761214906.wpg27.xyz
+  name: 349| US_85
+  network: none
+  port: 27502
+  server: 216.238.87.47
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: c28a6258-7baa-40fc-8a51-87f59c847cd7
-  ws-headers:
-    HOST: n1761214906.wpg27.xyz
+  uuid: b8155ce4-7e08-4c40-800f-8671312b7124
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -2316,47 +2299,20 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 349| US_89
+  name: 349| US_87
   network: ws
   port: 443
-  server: n1761214919.mv7wh.tech
-  servername: n1761214919.mv7wh.tech
+  server: n1753598452.wpg27.xyz
+  servername: n1753598452.wpg27.xyz
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: c592f040-faff-47dc-a464-9bccf2dd4e7b
+  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
   ws-headers:
-    HOST: n1761214919.mv7wh.tech
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 349| US_90
-  network: none
-  port: 27502
-  server: 216.238.87.47
-  skip-cert-verify: true
-  type: vmess
-  uuid: b8155ce4-7e08-4c40-800f-8671312b7124
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 349| US_91
-  network: ws
-  port: 443
-  server: n1761214908.wpg27.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3514a93f-bb26-4442-8f99-971b2ff3388a
+    HOST: n1753598452.wpg27.xyz
   ws-path: /
 - country: ' US'
-  name: 349| US_92
+  name: 349| US_88
   password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
   port: 443
   server: 154.17.24.29
@@ -2364,7 +2320,7 @@ proxies:
   type: trojan
   udp: true
 - country: ' US'
-  name: 349| US_93
+  name: 349| US_89
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
@@ -2372,7 +2328,7 @@ proxies:
   type: trojan
   udp: true
 - country: ' US'
-  name: 349| US_94
+  name: 349| US_90
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: hinet.mjt000.com
@@ -2380,7 +2336,7 @@ proxies:
   type: trojan
   udp: true
 - country: ' US'
-  name: 349| US_95
+  name: 349| US_91
   password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
   port: 443
   server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.9d8f269f96b25232-759cbb36d6548597.kaufen
@@ -2388,7 +2344,7 @@ proxies:
   type: trojan
   udp: true
 - country: US
-  name: 349|US_96
+  name: 349|US_92
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
@@ -2397,13 +2353,27 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: US
-  name: 352|Relay_US-US_02
+  name: 352|Relay_US-US_05
   obfs: http_simple
   password: Uk92CS
   port: 13000
   protocol: auth_aes128_sha1
   server: nm3.boom.party
   type: ssr
+- alterId: 0
+  cipher: auto
+  country: 🇹🇼 TW
+  delay: 741
+  h2-opts: {}
+  http-opts: {}
+  name: 352,384|美国 - Chicago - 1
+  network: tcp
+  port: 64014
+  server: pub.ap20260228.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: a739e782-1682-38a5-9153-aad09d779ae9
+  ws-path: /
 - country: US
   name: 352,399|US TROJAN-21 | free-nodes
   network: tcp
@@ -5182,46 +5152,6 @@ proxies:
     headers:
       Host: ecc.vtcss.top
     path: /qwer01
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 382,394,399|13|US_speednode_0027
-  port: 443
-  server: 144.31.2.248
-  servername: pl.fasti.win
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 382,394,399|13|US_speednode_0028
-  port: 443
-  server: proxy.darknet.run
-  servername: proxy.darknet.run
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 420a0e21-08c6-4e94-a965-41226b38b674
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 382,394,399|13|US_speednode_0029
-  port: 4546
-  server: 144.31.234.7
-  servername: enterprise.api-maps.yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 7f37b28b-cfcb-4c2a-ae41-8f2ddc9325dd
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 382,394,399|13|US_speednode_0030
-  port: 4546
-  server: 144.31.234.7
-  servername: enterprise.api-maps.yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: b52989b9-09dc-4ca0-b722-e6fe3e8a0313
 - cipher: chacha20-ietf-poly1305
   delay: 576
   name: 384|美国 - Boardman - 2
@@ -5239,20 +5169,6 @@ proxies:
   sni: baidu.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  country: 🇹🇼 TW
-  delay: 741
-  h2-opts: {}
-  http-opts: {}
-  name: 384|美国 - Chicago - 1
-  network: tcp
-  port: 64014
-  server: pub.ap20260228.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: a739e782-1682-38a5-9153-aad09d779ae9
-  ws-path: /
 - name: 391,399|🇺🇸US美国9
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
   port: 443
@@ -5402,6 +5318,13 @@ proxies:
     headers:
       Host: epge.muarua.filegear-sg.me
     path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
+- name: '399|🇺🇸 美国3|@stairnode #1'
+  password: BxceQaOe
+  port: 4864
+  server: 16.163.149.149
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - name: 399|🇺🇸 US_94
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
@@ -8211,19 +8134,6 @@ proxies:
       Host: s844.ccgfw.top
     path: ''
 - client-fingerprint: chrome
-  name: '399|🇺🇸_美国 #19'
-  network: tcp
-  port: 18959
-  reality-opts:
-    public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-    short-id: d557c6895d014075
-  server: 157.254.223.44
-  servername: itunes.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-- client-fingerprint: chrome
   name: 399|US VLESS-106 | free-nodes
   network: tcp
   port: 34045
@@ -8651,11 +8561,30 @@ proxies:
     headers:
       Host: vc.fly.dev
     path: /vc
-- name: '403|🇺🇸 美国 | USA #1'
-  password: df1236a0-6caa-4078-96f2-88cd071c3970
-  port: 21604
-  server: us.xn--ehqa22b.site
-  skip-cert-verify: false
+- alterId: 64
+  cipher: auto
+  name: '403|🇺🇸 美国 | USA #1'
+  network: tcp
+  port: '52283'
+  server: 103.181.164.237
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '403|🇺🇸 美国 | USA #2'
+  network: http
+  port: '443'
+  server: 132.145.154.72
+  tls: false
+  type: vmess
+  uuid: bcb7c581-3c95-4569-a4e7-918141e91ea3
+- name: '403|🇺🇸 美国 | USA #3'
+  password: hysteria2_fastlane_e4139zxuu
+  port: 443
+  server: 144.31.63.58
+  skip-cert-verify: true
+  sni: de4.h.fastlanehosting.ru
   tls: false
   type: hysteria2
 - client-fingerprint: firefox
