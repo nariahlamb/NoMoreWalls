@@ -5,17 +5,17 @@
 
 ## 主订阅
 
-- list.txt: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/17e361255122d5b9744f34fe1d83ee359722d815/list.txt
-- list.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/c716ba8698cfa7c9ebd57f6d79d0118291332d97/list.yml
-- list.meta.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/fad8b25af8040bdddcb2a60b89d440d57f21b340/list.meta.yml
+- list.txt: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/ce01bd7722a8c109f76080fdcb62b1411f57775d/list.txt
+- list.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/f9718c49b367fdd0f679784cbedd02ceb86e3f71/list.yml
+- list.meta.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/96cd4d80c1616f5af2fb6bd0b9d9e62ab3998d89/list.meta.yml
 
 ## 关键 Snippets
 
-- snippets/nodes.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/a94cd64bb701bf4ae7a59982fdb0b9fbfcd4c5be/snippets_d_nodes.yml
-- snippets/nodes.meta.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/b12043b8479e714c39eb6e1ffe245b59263f7464/snippets_d_nodes.meta.yml
-- snippets/nodes_JP.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/8ae9336211babdc0f9a85ff554cf89f667fafaa5/snippets_d_nodes__JP.yml
-- snippets/nodes_US.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/4aa9c65614f099b2f0f9ba65e557a8a0ced1e516/snippets_d_nodes__US.yml
-- snippets/nodes_GB.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/7a5fab1a4cef9711ddd22989170c72161bc527ca/snippets_d_nodes__GB.yml
-- snippets/nodes_SG.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/fdd570438bcdaea630a6d712ae84d78caadbb0e3/snippets_d_nodes__SG.yml
-- snippets/nodes_TW.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/e8f8f5f2435499074f2d04c9d921de477f0feb42/snippets_d_nodes__TW.yml
-- snippets/nodes_HK.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/24a4ea2f796d5c905f75497f9bfe3b969d1c94ff/snippets_d_nodes__HK.yml
+- snippets/nodes.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/1570e738a8f03204ea17973f53edc73ae1f24280/snippets_d_nodes.yml
+- snippets/nodes.meta.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/2352d7025c5ca1e8309b11fb95c35e02e6af5d6a/snippets_d_nodes.meta.yml
+- snippets/nodes_JP.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/a1c3635782aad968901b5fe951be722b36e30738/snippets_d_nodes__JP.yml
+- snippets/nodes_US.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/9887e59438632196b1185b5a0aad0ccf0f7bab5b/snippets_d_nodes__US.yml
+- snippets/nodes_GB.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/9c2a91ed45081c03b0df44740275ea2aa66ac0e4/snippets_d_nodes__GB.yml
+- snippets/nodes_SG.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/c563f62f6fb8f208cef3dc878de2b181d80bd583/snippets_d_nodes__SG.yml
+- snippets/nodes_TW.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/14674ac93b9bccec7bb26f69b51d8e6c7b18d0c9/snippets_d_nodes__TW.yml
+- snippets/nodes_HK.yml: https://gist.githubusercontent.com/nariahlamb/d35b3610af220f80b054ae12677c2537/raw/d6eddaf06cf2a16a592535047ebabebc566e5483/snippets_d_nodes__HK.yml
