@@ -2,13 +2,14 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from sync_gist import build_manifest, collect_sync_files, ensure_gist
+from sync_gist import build_authenticated_git_url, build_manifest, collect_sync_files, ensure_gist
 
 
 class FakeGitHubClient:
-    def __init__(self, gist=None, variable_value=None) -> None:
+    def __init__(self, gist=None, variable_value=None, viewer_login="owner") -> None:
         self.gist = gist
         self.variable_value = variable_value
+        self.viewer_login = viewer_login
         self.created = None
         self.upserts = []
 
@@ -21,11 +22,18 @@ class FakeGitHubClient:
         return None
 
     def create_gist(self, description: str, public: bool):
-        self.created = {"id": "created-gist", "html_url": "https://gist.github.com/created-gist"}
+        self.created = {
+            "id": "created-gist",
+            "html_url": "https://gist.github.com/created-gist",
+            "owner": {"login": self.viewer_login},
+        }
         return self.created
 
     def upsert_repo_variable(self, owner: str, repo: str, name: str, value: str) -> None:
         self.upserts.append((owner, repo, name, value))
+
+    def get_authenticated_login(self) -> str:
+        return self.viewer_login
 
 
 def test_collect_sync_files_only_includes_expected_outputs(tmp_path: Path) -> None:
@@ -80,7 +88,10 @@ def test_ensure_gist_creates_and_persists_when_missing() -> None:
 
 
 def test_ensure_gist_uses_existing_variable_binding() -> None:
-    client = FakeGitHubClient(gist={"id": "keep-gist", "html_url": "https://gist.github.com/keep-gist"}, variable_value="keep-gist")
+    client = FakeGitHubClient(
+        gist={"id": "keep-gist", "html_url": "https://gist.github.com/keep-gist", "owner": {"login": "owner"}},
+        variable_value="keep-gist",
+    )
 
     gist = ensure_gist(
         client=client,
@@ -94,3 +105,29 @@ def test_ensure_gist_uses_existing_variable_binding() -> None:
     assert gist["id"] == "keep-gist"
     assert client.created is None
     assert client.upserts == []
+
+
+def test_ensure_gist_recreates_when_owner_mismatches_token() -> None:
+    client = FakeGitHubClient(
+        gist={"id": "wrong-gist", "html_url": "https://gist.github.com/wrong-gist", "owner": {"login": "other-user"}},
+        variable_value="wrong-gist",
+        viewer_login="owner",
+    )
+
+    gist = ensure_gist(
+        client=client,
+        repository="owner/repo",
+        gist_id="",
+        gist_id_variable="RESULT_GIST_ID",
+        description="demo",
+        public=False,
+    )
+
+    assert gist["id"] == "created-gist"
+    assert client.upserts == [("owner", "repo", "RESULT_GIST_ID", "created-gist")]
+
+
+def test_build_authenticated_git_url_embeds_token_as_password() -> None:
+    url = build_authenticated_git_url("https://gist.github.com/abc123.git", "ghp_token")
+
+    assert url == "https://x-access-token:ghp_token@gist.github.com/abc123.git"

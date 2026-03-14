@@ -6,11 +6,13 @@ import base64
 import datetime
 import json
 import os
+import shlex
 import shutil
 import subprocess
 import tempfile
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Tuple
+from urllib.parse import quote, urlsplit, urlunsplit
 
 import requests
 
@@ -25,6 +27,10 @@ DEFAULT_DESCRIPTION = "NoMoreWalls generated outputs"
 
 
 class GitHubApiError(RuntimeError):
+    pass
+
+
+class GitCommandError(RuntimeError):
     pass
 
 
@@ -97,18 +103,56 @@ def build_git_auth_header(token: str) -> str:
     return f"Authorization: Basic {encoded}"
 
 
-def run_git(args: Sequence[str], cwd: Optional[Path] = None, auth_header: str = "") -> subprocess.CompletedProcess[str]:
+def redact_secret(text: str, secrets: Sequence[str]) -> str:
+    cleaned = text
+    for secret in secrets:
+        if secret:
+            cleaned = cleaned.replace(secret, "***")
+    return cleaned
+
+
+def build_authenticated_git_url(url: str, token: str, username: str = "x-access-token") -> str:
+    parsed = urlsplit(url)
+    if parsed.scheme != "https" or not parsed.netloc:
+        raise ValueError(f"unsupported git url: {url!r}")
+    userinfo = f"{quote(username, safe='')}:{quote(token, safe='')}"
+    return urlunsplit((parsed.scheme, f"{userinfo}@{parsed.netloc}", parsed.path, parsed.query, parsed.fragment))
+
+
+def run_git(
+    args: Sequence[str],
+    cwd: Optional[Path] = None,
+    auth_header: str = "",
+    redacted_values: Sequence[str] = (),
+) -> subprocess.CompletedProcess[str]:
     cmd = ["git"]
     if auth_header:
         cmd.extend(["-c", f"http.extraHeader={auth_header}"])
     cmd.extend(args)
-    return subprocess.run(
-        cmd,
-        cwd=str(cwd) if cwd else None,
-        check=True,
-        capture_output=True,
-        text=True,
-    )
+    env = os.environ.copy()
+    env.setdefault("GIT_TERMINAL_PROMPT", "0")
+    try:
+        return subprocess.run(
+            cmd,
+            cwd=str(cwd) if cwd else None,
+            check=True,
+            capture_output=True,
+            text=True,
+            env=env,
+        )
+    except subprocess.CalledProcessError as exc:
+        secrets = list(redacted_values)
+        if auth_header:
+            secrets.append(auth_header)
+        safe_cmd = " ".join(shlex.quote(redact_secret(str(arg), secrets)) for arg in cmd)
+        safe_stdout = redact_secret(exc.stdout or "", secrets).strip()
+        safe_stderr = redact_secret(exc.stderr or "", secrets).strip()
+        message = [f"git 命令失败（exit={exc.returncode}）: {safe_cmd}"]
+        if safe_stdout:
+            message.append(f"stdout:\n{safe_stdout}")
+        if safe_stderr:
+            message.append(f"stderr:\n{safe_stderr}")
+        raise GitCommandError("\n".join(message)) from exc
 
 
 class GitHubClient:
@@ -175,6 +219,10 @@ class GitHubClient:
         response = self._request("POST", "https://api.github.com/gists", expected=(201,), json=payload)
         return response.json()
 
+    def get_authenticated_login(self) -> str:
+        response = self._request("GET", "https://api.github.com/user", expected=(200,))
+        return str(response.json().get("login", "") or "")
+
 
 def ensure_gist(
     client: GitHubClient,
@@ -186,12 +234,20 @@ def ensure_gist(
 ) -> Dict[str, Any]:
     owner, repo = maybe_split_repository(repository)
     candidate = gist_id.strip()
+    viewer_login = client.get_authenticated_login()
     if not candidate and owner and repo:
         candidate = client.get_repo_variable(owner, repo, gist_id_variable) or ""
 
     gist: Optional[Dict[str, Any]] = None
     if candidate:
         gist = client.get_gist(candidate)
+        gist_owner = str((gist or {}).get("owner", {}).get("login", "") or "")
+        if gist is not None and gist_owner and gist_owner.lower() != viewer_login.lower():
+            print(
+                f"现有 Gist {candidate} 属于 {gist_owner}，当前 token 属于 {viewer_login}，"
+                "将创建新的 Gist 并回写仓库变量。"
+            )
+            gist = None
 
     if gist is None:
         gist = client.create_gist(description=description, public=public)
@@ -241,11 +297,21 @@ def sync_gist_repo(
     repository: str,
     dry_run: bool,
 ) -> bool:
-    auth_header = build_git_auth_header(token)
     clone_url = gist.get("git_pull_url") or f"https://gist.github.com/{gist['id']}.git"
+    push_url = gist.get("git_push_url") or clone_url
+    authenticated_clone_url = build_authenticated_git_url(clone_url, token=token)
+    authenticated_push_url = build_authenticated_git_url(push_url, token=token)
     with tempfile.TemporaryDirectory(prefix="nomorewalls-gist-") as tempdir:
         gist_root = Path(tempdir) / "gist"
-        run_git(["clone", "--depth", "1", clone_url, str(gist_root)], auth_header=auth_header)
+        run_git(
+            ["clone", "--depth", "1", authenticated_clone_url, str(gist_root)],
+            redacted_values=(token,),
+        )
+        run_git(
+            ["remote", "set-url", "origin", authenticated_push_url],
+            cwd=gist_root,
+            redacted_values=(token,),
+        )
         stage_outputs(repo_root=repo_root, gist_root=gist_root, files=files, repository=repository, gist_id=gist["id"])
 
         run_git(["config", "user.email", "actions@github.com"], cwd=gist_root)
@@ -264,7 +330,7 @@ def sync_gist_repo(
             print("Dry run 已启用，已生成 Gist 工作区但未推送。")
             return True
 
-        run_git(["push", "origin", "HEAD"], cwd=gist_root, auth_header=auth_header)
+        run_git(["push", "origin", "HEAD"], cwd=gist_root, redacted_values=(token,))
         return True
 
 
