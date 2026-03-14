@@ -1,8 +1,16 @@
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
-from sync_gist import build_authenticated_git_url, build_manifest, collect_sync_files, ensure_gist
+from sync_gist import (
+    build_authenticated_git_url,
+    build_manifest,
+    collect_sync_files,
+    ensure_gist,
+    flatten_gist_path,
+    stage_outputs,
+)
 
 
 class FakeGitHubClient:
@@ -68,7 +76,16 @@ def test_build_manifest_preserves_file_paths() -> None:
     assert manifest["repository"] == "owner/repo"
     assert manifest["gist_id"] == "gist-123"
     assert manifest["file_count"] == 2
-    assert manifest["files"] == ["list.txt", "snippets/nodes.yml"]
+    assert manifest["files"] == [
+        {"source": "list.txt", "gist": "list.txt"},
+        {"source": "snippets/nodes.yml", "gist": "snippets_d_nodes.yml"},
+    ]
+
+
+def test_flatten_gist_path_keeps_root_files_and_flattens_nested_paths() -> None:
+    assert flatten_gist_path(Path("list.txt")) == "list.txt"
+    assert flatten_gist_path(Path("snippets/nodes.yml")) == "snippets_d_nodes.yml"
+    assert flatten_gist_path(Path("artifacts/quality/source_summary.csv")) == "artifacts_d_quality_d_source__summary.csv"
 
 
 def test_ensure_gist_creates_and_persists_when_missing() -> None:
@@ -131,3 +148,31 @@ def test_build_authenticated_git_url_embeds_token_as_password() -> None:
     url = build_authenticated_git_url("https://gist.github.com/abc123.git", "ghp_token")
 
     assert url == "https://x-access-token:ghp_token@gist.github.com/abc123.git"
+
+
+def test_stage_outputs_flattens_nested_files_and_writes_manifest(tmp_path: Path) -> None:
+    repo_root = tmp_path / "repo"
+    gist_root = tmp_path / "gist"
+    repo_root.mkdir()
+    gist_root.mkdir()
+
+    (repo_root / "list.txt").write_text("list", encoding="utf-8")
+    (repo_root / "snippets").mkdir()
+    (repo_root / "snippets" / "nodes.yml").write_text("nodes", encoding="utf-8")
+
+    stage_outputs(
+        repo_root=repo_root,
+        gist_root=gist_root,
+        files=[Path("list.txt"), Path("snippets/nodes.yml")],
+        repository="owner/repo",
+        gist_id="gist-123",
+    )
+
+    assert (gist_root / "list.txt").read_text(encoding="utf-8") == "list"
+    assert (gist_root / "snippets_d_nodes.yml").read_text(encoding="utf-8") == "nodes"
+
+    manifest = json.loads((gist_root / "manifest.json").read_text(encoding="utf-8"))
+    assert manifest["files"][1] == {
+        "source": "snippets/nodes.yml",
+        "gist": "snippets_d_nodes.yml",
+    }

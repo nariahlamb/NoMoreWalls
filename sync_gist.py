@@ -24,6 +24,7 @@ DEFAULT_PATTERNS = (
 )
 DEFAULT_GIST_ID_VARIABLE = "RESULT_GIST_ID"
 DEFAULT_DESCRIPTION = "NoMoreWalls generated outputs"
+GIST_PATH_SEPARATOR = "_d_"
 
 
 class GitHubApiError(RuntimeError):
@@ -73,13 +74,26 @@ def collect_sync_files(repo_root: Path, patterns: Sequence[str]) -> List[Path]:
     return [selected[key] for key in sorted(selected)]
 
 
+def flatten_gist_path(relative: Path) -> str:
+    parts = relative.as_posix().split("/")
+    return GIST_PATH_SEPARATOR.join(part.replace("_", "__") for part in parts)
+
+
 def build_manifest(repository: str, gist_id: str, files: Sequence[Path]) -> Dict[str, Any]:
+    entries = []
+    for path in files:
+        entries.append(
+            {
+                "source": path.as_posix(),
+                "gist": flatten_gist_path(path),
+            }
+        )
     return {
         "repository": repository,
         "gist_id": gist_id,
         "generated_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "file_count": len(files),
-        "files": [path.as_posix() for path in files],
+        "files": entries,
     }
 
 
@@ -277,9 +291,15 @@ def stage_outputs(
     gist_id: str,
 ) -> None:
     reset_directory(gist_root)
+    written: Dict[str, str] = {}
     for relative in files:
-        target = gist_root / relative
-        target.parent.mkdir(parents=True, exist_ok=True)
+        gist_name = flatten_gist_path(relative)
+        if gist_name in written:
+            raise RuntimeError(
+                f"Gist 文件名冲突：{relative.as_posix()} 与 {written[gist_name]} 都映射为 {gist_name}"
+            )
+        written[gist_name] = relative.as_posix()
+        target = gist_root / gist_name
         shutil.copy2(repo_root / relative, target)
 
     manifest = build_manifest(repository=repository, gist_id=gist_id, files=files)
