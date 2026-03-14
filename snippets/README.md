@@ -8,8 +8,14 @@
 
 - [nodes.yml](./nodes.yml)：节点列表，注意**不要**和下文的 `proxy.yml` 搞混了。
 - [nodes.meta.yml](./nodes.meta.yml)：适用于 Meta 核心的节点列表。
-- [nodes_redir.yml](./nodes_redir.yml)：中转节点列表。
-- nodes_地区码.yml：相应地区的节点列表，根据名称识别，不保证准确性，也不保证使用第三方服务时是否会被判断为国区。`.meta.yml` 表示列表适用于 Meta 核心。
+- `nodes_JP.yml` / `nodes_JP.meta.yml`
+- `nodes_US.yml` / `nodes_US.meta.yml`
+- `nodes_GB.yml` / `nodes_GB.meta.yml`
+- `nodes_SG.yml` / `nodes_SG.meta.yml`
+- `nodes_TW.yml` / `nodes_TW.meta.yml`
+- `nodes_HK.yml` / `nodes_HK.meta.yml`
+
+以上 6 组为当前公开保留的地区分类片段；其它地区和非地区分类不再单独拆分输出。
 
 ## Rule Providers 规则集
 

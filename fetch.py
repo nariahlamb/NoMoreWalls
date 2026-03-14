@@ -24,7 +24,7 @@ import sys
 import os
 import copy
 from types import FunctionType as function
-from typing import Set, List, Dict, Tuple, Union, Callable, Any, Optional, Iterator, no_type_check
+from typing import Set, List, Dict, Tuple, Union, Callable, Any, Optional, Iterator, Sequence, no_type_check
 from quality.provenance import export_quality_artifacts
 
 try: PROXY = open("local_proxy.conf").read().strip()
@@ -179,6 +179,41 @@ def text_or_empty(value: Any) -> str:
     if value is None:
         return ''
     return str(value)
+
+
+def resolve_public_snippet_categories(snip_conf: Dict[str, Dict[str, Any]]) -> List[str]:
+    categories = snip_conf.get('categories', {})
+    raw = snip_conf.get('snippet_categories')
+    if not raw:
+        return [str(ctg) for ctg in categories]
+
+    allowed: List[str] = []
+    for item in raw:
+        ctg = str(item)
+        if ctg in categories and ctg not in allowed:
+            allowed.append(ctg)
+    return allowed
+
+
+def cleanup_category_snippets(allowed_categories: Sequence[str]) -> None:
+    keep = {f"nodes_{ctg}.yml" for ctg in allowed_categories}
+    keep.update({f"nodes_{ctg}.meta.yml" for ctg in allowed_categories})
+    keep.update({"nodes.yml", "nodes.meta.yml"})
+    try:
+        snippet_names = os.listdir("snippets")
+    except FileNotFoundError:
+        return
+    for name in snippet_names:
+        if not name.startswith("nodes_"):
+            continue
+        if name in keep:
+            continue
+        if not (name.endswith(".yml") or name.endswith(".meta.yml")):
+            continue
+        try:
+            os.remove(os.path.join("snippets", name))
+        except FileNotFoundError:
+            pass
 
 DEFAULT_UUID = '8'*8+'-8888'*3+'-'+'8'*12
 
@@ -1298,6 +1333,7 @@ def main():
     if snip_conf:
         print("正在按地区分类节点...")
         categories = snip_conf['categories']
+        public_ctgs = resolve_public_snippet_categories(snip_conf)
         for ctg in categories:
             ctg_nodes[ctg] = []
             ctg_nodes_meta[ctg] = []
@@ -1316,10 +1352,13 @@ def main():
                     if node.supports_clash():
                         ctg_nodes[ctgs[0]].append(node.clash_data)
                     ctg_nodes_meta[ctgs[0]].append(node.clash_data)
-        for ctg, proxies in ctg_nodes.items():
+        cleanup_category_snippets(public_ctgs)
+        for ctg in public_ctgs:
+            proxies = ctg_nodes[ctg]
             with open("snippets/nodes_"+ctg+".yml", 'w', encoding="utf-8") as f:
                 yaml.dump({'proxies': proxies}, f, allow_unicode=True)
-        for ctg, proxies in ctg_nodes_meta.items():
+        for ctg in public_ctgs:
+            proxies = ctg_nodes_meta[ctg]
             with open("snippets/nodes_"+ctg+".meta.yml", 'w', encoding="utf-8") as f:
                 yaml.dump({'proxies': proxies}, f, allow_unicode=True)
 
@@ -1388,7 +1427,8 @@ def main():
         conf['proxy-groups'][-1]['proxies'] = []
         ctg_selects: List[str] = conf['proxy-groups'][-1]['proxies']
         ctg_disp: Dict[str, str] = snip_conf['categories_disp']
-        for ctg, payload in ctg_nodes.items():
+        for ctg in resolve_public_snippet_categories(snip_conf):
+            payload = ctg_nodes[ctg]
             if ctg in ctg_disp:
                 disp = ctg_base.copy()
                 disp['name'] = ctg_disp[ctg]
@@ -1418,7 +1458,8 @@ def main():
         conf['proxy-groups'][-1]['proxies'] = []
         ctg_selects: List[str] = conf['proxy-groups'][-1]['proxies']
         ctg_disp: Dict[str, str] = snip_conf['categories_disp']
-        for ctg, payload in ctg_nodes_meta.items():
+        for ctg in resolve_public_snippet_categories(snip_conf):
+            payload = ctg_nodes_meta[ctg]
             if ctg in ctg_disp:
                 disp = ctg_base.copy()
                 disp['name'] = ctg_disp[ctg]

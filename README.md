@@ -122,6 +122,34 @@ git clone https://github.com/peasoft/NoMoreWalls.git --depth=1
 python sync_gist.py
 ```
 
+## 私有主仓库 + 公开引用模式
+
+如果你希望把 `sources` 和完整产物都放到私有仓库，而公开侧只暴露引用链接，可以使用下面的结构：
+
+1. 私有主仓库负责抓取、筛选和 `sync_gist.py` 同步。
+2. 公开仓库只保留引用文件，不直接提交 `list*` 与 `snippets` 产物。
+3. 两边通过同一个 `RESULT_GIST_ID` 关联。
+
+### Workflow 开关
+
+`fetch.yml` 新增了 `PUBLIC_REF_ONLY`（Actions Variable）：
+
+- `PUBLIC_REF_ONLY=false`（默认）：正常抓取 + 同步 Gist + 更新引用清单。
+- `PUBLIC_REF_ONLY=true`：跳过抓取与产物同步，只更新公开引用清单。
+
+### 引用清单文件
+
+工作流会生成：
+
+- `public_refs/index.json`：完整 `source -> raw_url` 映射
+- `public_refs/subscriptions.md`：常用订阅与关键 snippets 引用
+
+本地也可以手动生成：
+
+```bash
+python generate_public_refs.py --gist-id <你的_gist_id>
+```
+
 ## 一些题外话
 
 各位看一看：
