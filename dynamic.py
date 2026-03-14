@@ -73,7 +73,8 @@ def w1770946466():
     return subs
 
 def peasoft():
-    return session.get("https://gist.githubusercontent.com/peasoft/8a0613b7a2be881d1b793a6bb7536281/raw/").text
+    response = session.get("https://gist.githubusercontent.com/peasoft/8a0613b7a2be881d1b793a6bb7536281/raw/").text
+    return [line.strip() for line in response.splitlines() if '://' in line]
 
 AUTOURLS = []
 AUTOFETCH = [peasoft]

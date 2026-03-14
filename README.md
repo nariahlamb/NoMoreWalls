@@ -77,6 +77,51 @@ git clone https://github.com/peasoft/NoMoreWalls.git --depth=1
 
 如果本地仓库长期未更新，请删除仓库并重新克隆来同步最新更改，不要使用 `git pull`。
 
+## 本地节点优化
+
+项目已支持本地节点质量优化流程，入口脚本：
+
+- `python optimize_local.py --passive-only`
+- `python optimize_local.py --full-probe --mihomo-path <path> --reuse-cache`
+- `python optimize_local.py --report-only`
+
+推荐顺序：
+
+1. `python fetch.py`
+2. `python optimize_local.py --passive-only`
+3. `python optimize_local.py --full-probe --mihomo-path <path> --reuse-cache`
+
+运行脚本：
+
+- PowerShell 抓取：`./scripts/run-fetch-local.ps1`
+- PowerShell 优化：`./scripts/run-optimize-local.ps1 --passive-only`
+- WSL/Linux 优化：`./scripts/run-optimize-local.sh --passive-only`
+
+完整说明见 [docs/local-optimization.md](docs/local-optimization.md)。
+
+## Gist 同步
+
+项目已支持在 GitHub Actions 中把本次抓取生成的结果同步到同一个 Gist。
+
+需要的仓库配置：
+
+- Secret：`GIST_TOKEN`
+  - 建议使用经典 PAT，至少包含 `gist` 和 `repo` 权限
+- Actions Variable：`RESULT_GIST_ID`
+  - 可以留空，首次运行会自动创建 Gist 并写回这个变量
+
+工作流会同步这些产物：
+
+- 根目录 `list*`
+- `snippets/**/*.yml`
+- `artifacts/quality/*`
+
+本地也可以手动执行：
+
+```bash
+python sync_gist.py
+```
+
 ## 一些题外话
 
 各位看一看：
