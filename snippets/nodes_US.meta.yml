@@ -142,7 +142,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: '8,12,33,46,47,53,54,55,57,58,64|8元老牌专线机场：cczzuu.top #3'
+  name: '8,12,33,46,47,48,53,54,55,57,58,64|8元老牌专线机场：cczzuu.top #3'
   password: amazonskr05
   port: 443
   server: 63.180.254.10
@@ -154,6 +154,20 @@ proxies:
   password: 823cbccd-3a71-4248-ac3c-3c460de1552d
   port: 443
   server: 172.64.53.190
+  skip-cert-verify: true
+  sni: snll667.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snll667.pages.dev
+    path: '%2F'
+- alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  name: '8,46,55|HK67｜机房｜低风险 #1'
+  network: ws
+  password: 823cbccd-3a71-4248-ac3c-3c460de1552d
+  port: 443
+  server: cf.877774.xyz
   skip-cert-verify: true
   sni: snll667.pages.dev
   type: trojan
@@ -221,30 +235,9 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '12,42,53,64|🇺🇸 美国|@stairnode #3'
-  password: f389ed926e512e15f382dc3804029474
-  port: 4920
-  server: 54.238.23.69
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '12,42,53,64|🇺🇸 美国2|@stairnode #3'
-  password: f389ed926e512e15f382dc3804029474
-  port: 4920
-  server: 54.248.177.86
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '12,53,64|🇺🇸 美国3|@stairnode #3'
-  password: BxceQaOe
-  port: 5390
-  server: 16.163.105.149
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '12,42,46,47,55,60,64,67|US_speednode_0023 #2'
+  name: '12,46,47,48,55,60,64,67|US_speednode_0023 #2'
   network: tcp
   port: 443
   reality-opts:
@@ -259,8 +252,8 @@ proxies:
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   ws-opts:
     headers:
-      Host: PuLaVPN.Net
-- name: '12,46,47|13|US_speednode_0024 #1'
+      Host: 'speedtest.net '
+- name: '12,46,47|14|US_speednode_0024 #1'
   network: ws
   port: 443
   server: 68.64.179.96
@@ -426,7 +419,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: ' US'
-  name: 15,16,30,35,53|🇺🇸US-156.146.38.167-0186
+  name: 15,16,30,35,48,53|🇺🇸US-156.146.38.167-0186
   password: shadowsocks
   port: 443
   server: 156.146.38.167
@@ -679,7 +672,7 @@ proxies:
   server: 169.197.142.187
   type: ss
 - cipher: aes-128-gcm
-  name: 15,16,53|🇺🇸US-37.19.198.236-0190
+  name: 15,16,48,53|🇺🇸US-37.19.198.236-0190
   password: shadowsocks
   port: 443
   server: 37.19.198.236
@@ -968,7 +961,7 @@ proxies:
   server: 38.107.226.238
   type: ss
 - cipher: aes-256-cfb
-  name: 15,30|_08
+  name: 15,30|_01
   password: gYCYXfkUQEs2TaJQ
   port: 9038
   server: 194.116.173.21
@@ -992,14 +985,14 @@ proxies:
   server: 38.121.43.71
   type: ss
 - cipher: aes-128-gcm
-  name: 15,16,53|🇺🇸US-156.146.38.169-0185
+  name: 15,16,48,53|🇺🇸US-156.146.38.169-0185
   password: shadowsocks
   port: 443
   server: 156.146.38.169
   type: ss
 - cipher: aes-128-gcm
   country: ' US'
-  name: 15,16,30,53|🇺🇸US-156.146.38.170-0187
+  name: 15,16,30,48,53|🇺🇸US-156.146.38.170-0187
   password: shadowsocks
   port: 443
   server: 156.146.38.170
@@ -1055,7 +1048,7 @@ proxies:
   server: 169.197.142.187
   type: ss
 - cipher: aes-128-gcm
-  name: 15,53|🇺🇸US-173.244.56.6-0189
+  name: 15,48,53|🇺🇸US-173.244.56.6-0189
   password: shadowsocks
   port: 443
   server: 173.244.56.6
@@ -2240,9 +2233,58 @@ proxies:
   sni: us.mjanyt.com
   type: anytls
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 30,48,53|🇸🇬SG-38.89.142.56-4632
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 38.89.142.56
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: '30,40,48,53,54,64|NL荷兰(mibei77.com 米贝节点分享) #11'
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  port: 443
+  server: tinkered-pennies-puppies.freesocks.work
+  type: ss
 - cipher: aes-256-cfb
   country: ' US'
-  name: 30,53,56|yandex-2531
+  name: 30,48,53|🇵🇾PY-38.165.233.93-0262
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.165.233.93
+  type: ss
+- cipher: aes-256-cfb
+  country: ' US'
+  name: 30,48,53|🇧🇷BR-38.54.57.90-0289
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 30,48,53|🇪🇨EC-38.165.231.25-0198
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 38.165.231.25
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 30,48,53|🇪🇬EG-38.54.59.180-0323
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 38.54.59.180
+  type: ss
+- cipher: aes-256-cfb
+  country: ' US'
+  name: 30,48,53|🇰🇷KR-154.90.62.168-0322
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+- cipher: aes-256-cfb
+  country: ' US'
+  name: 30,48,53,56|yandex-3503
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
@@ -2250,83 +2292,17 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: ' US'
-  name: '30,40,53,54,64|NL荷兰(mibei77.com 米贝节点分享) #11'
-  password: hbGrpfvNrJsUmKmPbR3iY2
-  port: 443
-  server: tinkered-pennies-puppies.freesocks.work
-  type: ss
-- cipher: aes-256-cfb
-  country: ' US'
-  name: 30,53|🇰🇷KR-154.90.62.168-0322
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 30,53|🇪🇨EC-38.165.231.25-0198
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.165.231.25
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 30,53|🇫🇮FI-38.244.136.233-0243
+  name: 30,48,53|🇫🇮FI-38.244.136.233-0243
   password: dAHM1pm8ag7KdlrUylQi6t
   port: 443
   server: promo18v.bystrivpn.ru
   type: ss
-- cipher: aes-256-cfb
-  country: ' US'
-  name: 30,53|🇵🇾PY-38.165.233.93-0262
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.165.233.93
-  type: ss
-- cipher: aes-256-cfb
-  country: ' US'
-  name: 30,53|🇧🇷BR-38.54.57.90-0289
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 30,53|🇪🇬EG-38.54.59.180-0323
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.54.59.180
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: 30,53|🇱🇹LT-193.135.174.135-0272
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 193.135.174.135
-  type: ss
 - alterId: 0
   cipher: auto
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 30| US_81
-  network: ws
-  port: 443
-  server: n1761214919.mv7wh.tech
-  servername: n1761214919.mv7wh.tech
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c592f040-faff-47dc-a464-9bccf2dd4e7b
-  ws-headers:
-    HOST: n1761214919.mv7wh.tech
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 30| US_82
+  name: 30| US_76
   network: ws
   port: 443
   server: n1753101272.lie5d.cyou
@@ -2343,38 +2319,7 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 30| US_83
-  network: ws
-  port: 443
-  server: n1761214912.wpg27.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4f86a909-836d-4643-b650-d812144a1fa9
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 30| US_84
-  network: ws
-  port: 443
-  server: 47.243.95.187
-  servername: n1761214906.wpg27.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c28a6258-7baa-40fc-8a51-87f59c847cd7
-  ws-headers:
-    HOST: n1761214906.wpg27.xyz
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: ' US'
-  h2-opts: {}
-  http-opts: {}
-  name: 30| US_85
+  name: 30| US_77
   network: none
   port: 27502
   server: 216.238.87.47
@@ -2387,15 +2332,43 @@ proxies:
   country: ' US'
   h2-opts: {}
   http-opts: {}
-  name: 30| US_86
+  name: 30| US_78
   network: ws
   port: 443
-  server: n1761214908.wpg27.xyz
+  server: n1761214919.mv7wh.tech
+  servername: n1761214919.mv7wh.tech
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 3514a93f-bb26-4442-8f99-971b2ff3388a
+  uuid: c592f040-faff-47dc-a464-9bccf2dd4e7b
+  ws-headers:
+    HOST: n1761214919.mv7wh.tech
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' US'
+  h2-opts: {}
+  http-opts: {}
+  name: 30| US_79
+  network: ws
+  port: 443
+  server: n1753598452.wpg27.xyz
+  servername: n1753598452.wpg27.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
+  ws-headers:
+    HOST: n1753598452.wpg27.xyz
+  ws-path: /
+- country: ' US'
+  name: 30,53|🇺🇸US-143.110.150.197-4644
+  password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
+  port: 443
+  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.9d8f269f96b25232-759cbb36d6548597.kaufen
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - country: ' US'
   name: 30,53|🇺🇸US-154.17.24.29-4645
   password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
@@ -2409,14 +2382,6 @@ proxies:
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: ' US'
-  name: 30,53|🇺🇸US-143.110.150.197-4644
-  password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
-  port: 443
-  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.9d8f269f96b25232-759cbb36d6548597.kaufen
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -5210,8 +5175,23 @@ proxies:
     path: /dyajvws
 - alterId: 0
   cipher: auto
+  name: 39,56|yandex-366
+  network: ws
+  port: 8443
+  server: hwtqcp.uhomdex.shop
+  servername: hwtqcp.uhomdex.shop
+  tls: true
+  type: vmess
+  udp: true
+  uuid: b6182347-f6df-47e3-9ac8-d40a792f319e
+  ws-opts:
+    headers:
+      Host: hwtqcp.uhomdex.shop
+    path: /
+- alterId: 0
+  cipher: auto
   delay: 845
-  name: 40,50,56|yandex-2756
+  name: 40,50,56|yandex-363
   port: 180
   server: 82.198.246.97
   skip-cert-verify: true
@@ -5220,7 +5200,7 @@ proxies:
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - cipher: chacha20-ietf-poly1305
-  name: '40,53,54,64|JP日本(mibei77.com 米贝节点分享) #12'
+  name: '40,48,53,54,64|JP日本(mibei77.com 米贝节点分享) #12'
   password: wwzVn2ZnHfqYa6l8EWh3eY
   port: 443
   server: switcher-nick-croquet.freesocks.work
@@ -5271,7 +5251,7 @@ proxies:
   type: anytls
   udp: false
 - client-fingerprint: chrome
-  name: 41,56|yandex-3465
+  name: 41,56|yandex-541
   network: ws
   port: 443
   server: 198.41.209.105
@@ -5286,7 +5266,7 @@ proxies:
     path: /?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: 41,56|yandex-3471
+  name: 41,56|yandex-547
   network: ws
   port: 443
   server: 104.18.40.30
@@ -5302,7 +5282,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 41,56|yandex-3501
+  name: 41,56|yandex-577
   network: ws
   port: 443
   server: 172.64.147.89
@@ -5317,7 +5297,7 @@ proxies:
     path: /
   xudp: true
 - client-fingerprint: chrome
-  name: 41,56|yandex-3565
+  name: 41,56|yandex-641
   network: ws
   port: 443
   server: 104.19.58.9
@@ -5332,7 +5312,7 @@ proxies:
     path: /?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: 41,56|yandex-3569
+  name: 41,56|yandex-645
   network: ws
   port: 2087
   server: www.shopify.com
@@ -5347,7 +5327,7 @@ proxies:
     path: /?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: 41,56|yandex-3610
+  name: 41,56|yandex-686
   network: ws
   port: 443
   server: 172.64.157.102
@@ -5362,7 +5342,7 @@ proxies:
     path: /?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: 41,56|yandex-3631
+  name: 41,56|yandex-707
   network: ws
   port: 443
   server: www.shopify.com
@@ -5377,7 +5357,7 @@ proxies:
     path: /?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: 41,56|yandex-3648
+  name: 41,56|yandex-724
   network: ws
   port: 443
   server: 198.41.208.133
@@ -5392,7 +5372,7 @@ proxies:
     path: /?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: 41,56|yandex-3651
+  name: 41,56|yandex-727
   network: ws
   port: 443
   server: 198.41.208.22
@@ -5407,7 +5387,7 @@ proxies:
     path: /?ed=2560
   xudp: true
 - cipher: rc4-md5
-  name: 41,56|yandex-3652
+  name: 41,56|yandex-728
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -5418,7 +5398,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 41,56|yandex-3654
+  name: 41,56|yandex-730
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -5429,7 +5409,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 41,56|yandex-3658
+  name: 41,56|yandex-734
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -5440,7 +5420,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 41,56|yandex-3663
+  name: 41,56|yandex-739
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -5450,7 +5430,7 @@ proxies:
   server: efan9863.dns8656815.com
   type: ss
   udp: true
-- name: 41,56|yandex-3664
+- name: 41,56|yandex-740
   network: ws
   port: 80
   server: www.speedtest.net
@@ -5463,7 +5443,7 @@ proxies:
       Host: 023.electrocellco-cf-023.workers.dev
     path: /eyJqdW5rIjoiV25Ed09oeVp4TU8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
 - client-fingerprint: chrome
-  name: 41,56|yandex-3665
+  name: 41,56|yandex-741
   network: ws
   port: 443
   server: staticdelivery.nexusmods.com
@@ -5478,7 +5458,7 @@ proxies:
     path: /?ed=2560
   xudp: true
 - cipher: rc4-md5
-  name: 41,56|yandex-3668
+  name: 41,56|yandex-744
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -5489,7 +5469,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 41,56|yandex-3677
+  name: 41,56|yandex-753
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -5500,7 +5480,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 41,56|yandex-3681
+  name: 41,56|yandex-757
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -5511,14 +5491,14 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 41,56|yandex-3687
+  name: 41,56|yandex-763
   password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
   port: 43213
   server: us9.network-cdn-gw-yd.net
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 41,56|yandex-3692
+  name: 41,56|yandex-768
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -5529,7 +5509,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 41,56|yandex-3701
+  name: 41,56|yandex-777
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -5540,7 +5520,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 41,56|yandex-3702
+  name: 41,56|yandex-778
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -5550,7 +5530,7 @@ proxies:
   server: efan9863.dns8656815.com
   type: ss
   udp: true
-- name: 41,56|yandex-3706
+- name: 41,56|yandex-782
   password: c5f50b0f-3c12-40ed-b63f-74f9c88316a5
   port: 55051
   server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
@@ -5558,7 +5538,7 @@ proxies:
   sni: www.h3yun.com
   type: trojan
   udp: true
-- name: 41,56|yandex-3714
+- name: 41,56|yandex-790
   network: ws
   port: 80
   server: 188.114.98.112
@@ -5571,7 +5551,7 @@ proxies:
       Host: elenaaaaaaaaaa.cloudns.pro.
     path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
   xudp: true
-- name: 41,56|yandex-3722
+- name: 41,56|yandex-798
   network: ws
   port: 80
   server: www.visa.com
@@ -5588,7 +5568,7 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: violet
-  name: 41,56|yandex-3741
+  name: 41,56|yandex-817
   network: grpc
   port: 443
   server: usbad.osaip.net
@@ -5598,7 +5578,7 @@ proxies:
   uuid: 66945d41-c929-4ac9-8cec-e06c2d3cb635
   xudp: true
 - client-fingerprint: chrome
-  name: 41,56|yandex-3743
+  name: 41,56|yandex-819
   network: tcp
   password: 2072ff46-45f4-4de0-8099-c5bf240e0714
   port: 56017
@@ -5608,7 +5588,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 41,56|yandex-3744
+  name: 41,56|yandex-820
   network: tcp
   password: 2072ff46-45f4-4de0-8099-c5bf240e0714
   port: 56019
@@ -5617,7 +5597,7 @@ proxies:
   sni: www.volcengine.com
   type: trojan
   udp: true
-- name: 41,56|yandex-3745
+- name: 41,56|yandex-821
   password: 366efee9-09fd-4365-8873-63f77468999c
   port: 55053
   server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
@@ -5626,14 +5606,13 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 41,56|yandex-3746
+  name: 41,56|yandex-822
   password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
   port: 44403
   server: us03.network-cdn-gw-yd.net
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: 41,42,56|yandex-3747
+- name: 41,56|yandex-823
   network: ws
   port: 2052
   server: www.visa.com.sg
@@ -5646,7 +5625,7 @@ proxies:
       Host: chosenflyesqt-q3y28ipf-v3.chosen-fly-esqt.workers.dev
     path: /?ed=2560
   xudp: true
-- name: 41,56|yandex-3752
+- name: 41,56|yandex-828
   password: 366efee9-09fd-4365-8873-63f77468999c
   port: 55051
   server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
@@ -5654,7 +5633,7 @@ proxies:
   sni: www.h3yun.com
   type: trojan
   udp: true
-- name: 41,56|yandex-3756
+- name: 41,56|yandex-832
   password: 2440ddb9-14c8-429e-8c8a-d09636bb2131
   port: 55051
   server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
@@ -5662,7 +5641,7 @@ proxies:
   sni: www.h3yun.com
   type: trojan
   udp: true
-- name: 41,56|yandex-3764
+- name: 41,56|yandex-840
   password: c5f50b0f-3c12-40ed-b63f-74f9c88316a5
   port: 55053
   server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
@@ -5672,7 +5651,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 41,56|yandex-3768
+  name: 41,56|yandex-844
   network: ws
   port: 8080
   server: 104.18.1.45
@@ -5686,7 +5665,7 @@ proxies:
     headers:
       Host: buyvmus2.6bnw.top
     path: /?ed=2560
-- name: 41,56|yandex-3770
+- name: 41,56|yandex-846
   password: c5f50b0f-3c12-40ed-b63f-74f9c88316a5
   port: 55052
   server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
@@ -5694,7 +5673,7 @@ proxies:
   sni: www.h3yun.com
   type: trojan
   udp: true
-- name: 41,56|yandex-3774
+- name: 41,56|yandex-850
   password: 2440ddb9-14c8-429e-8c8a-d09636bb2131
   port: 55054
   server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
@@ -5702,7 +5681,7 @@ proxies:
   sni: www.h3yun.com
   type: trojan
   udp: true
-- name: 41,56|yandex-3775
+- name: 41,56|yandex-851
   password: 366efee9-09fd-4365-8873-63f77468999c
   port: 55052
   server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
@@ -5736,7 +5715,7 @@ proxies:
   type: hysteria
   up: 11 Mbps
 - client-fingerprint: chrome
-  name: 45,56|yandex-1256
+  name: 45,56|yandex-2228
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21332
   server: xd-js.timiwc.com
@@ -6436,6 +6415,48 @@ proxies:
       Host: www.57723972.xyz
     path: /path/1751026269450
   xudp: true
+- alterId: 0
+  cipher: auto
+  name: 48|USA01-ipv6
+  network: ws
+  port: '443'
+  server: vc-usa.181227.xyz
+  servername: vc-usa.181227.xyz
+  tls: true
+  type: vmess
+  uuid: 2ddcf12d-52fa-4e09-b4f1-c52d5cbee69b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vcus
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 48|「SCP」US-CF2
+  network: ws
+  port: 443
+  server: cf-lt.sharecentre.online
+  servername: us-st-2.sharecentre.online
+  tls: true
+  type: vmess
+  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  ws-opts:
+    headers:
+      Host: us-st-2.sharecentre.online
+    path: /shirker
+- alterId: 1
+  cipher: auto
+  name: 48|🇺🇸US-103.149.145.115-6352
+  network: ws
+  port: '64443'
+  server: sea21.nb1.fr
+  servername: sea21.nb1.fr
+  tls: true
+  type: vmess
+  uuid: cb7001c7-e495-41ac-b942-f25f60523414
+  ws-opts:
+    headers:
+      Host: sea21.nb1.fr
+    path: /clientarea
 - name: '49,64|🇺🇸_US_美国 #2'
   port: 443
   server: ae2.suio.me
@@ -6472,24 +6493,68 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: 53|🇺🇸US-104.192.226.106-0193
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 104.192.226.106
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 53|🇺🇸US-173.234.29.2-0195
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 173.234.29.2
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 53|🇺🇸US-38.135.24.131-0282
-  password: hbGrpfvNrJsUmKmPbR3iY2
+- alterId: 0
+  cipher: auto
+  name: 53|🇺🇸US-173.249.209.146-0197
+  network: ws
+  port: 20086
+  server: 173.249.209.146
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 32
+  cipher: auto
+  name: 53|🇺🇸US-77.83.141.171-4834
+  network: ws
   port: 443
-  server: 38.135.24.131
-  type: ss
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '53,54,62|VMESS--NF-ChatGPT-TikTok-YouTu... #6'
+  network: ws
+  port: 443
+  server: 209.126.84.189
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  ws-opts:
+    headers:
+      Host: 209.126.84.189
+    path: /vmessws
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '53,54,62|VMESS--NF-ChatGPT-TikTok-YouTu... #3'
+  network: ws
+  port: 443
+  server: v2ray.codefyinc.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  ws-opts:
+    headers:
+      Host: v2ray.codefyinc.com
+    path: /vmessws
 - alterId: 0
   cipher: auto
   name: 53|🇺🇸US-209.126.84.189-0263
@@ -6921,55 +6986,96 @@ proxies:
     headers:
       Host: new3.hucloud-dns.xyz
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 53,54,56,62|SS--NF-ChatGPT-TikTok-146.19.4...
-  password: ODfxioK0VkKxTdpVQJ4rv8HglAu0vzv6
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '53,54,62|VMESS--NF-ChatGPT-TikTok-YouTu... #1'
+  network: ws
+  port: 45979
+  server: 38.92.10.226
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
+  ws-opts:
+    path: /test
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '53,54,62|VMESS--NF-ChatGPT-TikTok-YouTu... #4'
+  network: ws
+  port: 20086
+  server: 198.23.174.168
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2b36304b-4f88-4ff5-9033-f4d57dbb5490
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '53,54,62|VMESS--NF-ChatGPT-TikTok-YouTu... #5'
+  network: ws
   port: 443
-  server: 146.19.49.251
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '53,54,56,62|SS--NF-ChatGPT-TikTok-YouTube-... #1'
-  password: p78naCf2EfOlRSLTX0wFVx
+  server: cg1c07.waimaojd.com
+  servername: cg1c07.waimaojd.com
+  tls: true
+  type: vmess
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  ws-opts:
+    headers:
+      Host: cg1c07.waimaojd.com
+    path: /api/v1/graphql
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '53,54,62|VMESS--NF-ChatGPT-TikTok-YouTu... #7'
+  network: ws
   port: 443
-  server: 71.19.148.143
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '53,54,56,62|SS--NF-ChatGPT-TikTok-YouTube-... #3'
-  password: qFvn2fNEvBgM5knffrN96q
-  port: 9483
-  server: 92.118.112.101
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: '53,54,56,62|SS--NF-ChatGPT-TikTok-YouTube-... #4'
-  password: 8JCsPssfgS8tiRwiMlhARg==
-  port: 12000
-  server: 15.204.247.49
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '53,54,56,62|SS--NF-ChatGPT-TikTok-YouTube-... #5'
-  password: p78naCf2EfOlRSLTX0wFVx
-  port: 443
-  server: pupas-shirting-unsung.freesocks.work
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '53,54,56,62|SS--NF-ChatGPT-TikTok-YouTube-... #7'
-  password: NDRySIABARbErNIVsCNVkyYAHiBzhveT
-  port: 443
-  server: 23.95.75.146
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '53,54,56,62|SS--NF-ChatGPT-TikTok-YouTube-... #8'
-  password: 86039b71-ba82-4ca8-838e-87086ae666de
-  port: 10011
-  server: 107.175.87.207
-  type: ss
-  udp: true
+  server: cg1c01.waimaojd.com
+  servername: cg1c01.waimaojd.com
+  tls: true
+  type: vmess
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  ws-opts:
+    headers:
+      Host: cg1c01.waimaojd.com
+    path: /api/v1/graphql
+- alterId: 0
+  cipher: auto
+  name: 53,54|🇺🇸 VMESS-美国-ChatGPT-TikTok-You...
+  network: ws
+  port: '443'
+  server: cg1c04.waimaojd.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  ws-opts:
+    headers:
+      Host: cg1c04.waimaojd.com
+    path: /api/v1/graphql
+- alterId: 0
+  cipher: auto
+  name: '53,54|🇺🇸 VMESS-美国-ChatGPT-TikTok-You... #1'
+  network: ws
+  port: '443'
+  server: cg1c14.waimaojd.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  ws-opts:
+    headers:
+      Host: cg1c14.waimaojd.com
+    path: /api/v1/graphql
 - name: 53|🇺🇸US-216.24.57.250-0868
   network: ws
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
@@ -8604,7 +8710,7 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 53,56|yandex-2449
+- name: 53,56|yandex-3421
   password: vvip-periantara
   port: 443
   server: 38.9.140.66
@@ -8973,7 +9079,7 @@ proxies:
     headers:
       Host: tw04.ssru3.casa
     path: /v2ray
-- name: 53,56|yandex-1356
+- name: 53,56|yandex-2328
   password: WpfQAbO2wg
   port: 443
   server: 45.9.10.103
@@ -14114,6 +14220,20 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 53|🇺🇸US-38.99.82.193-6988
+  network: ws
+  port: 443
+  server: 38.99.82.193
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: tilebani.com
+    path: /linkvws
 - alterId: 64
   cipher: auto
   name: 53|🇺🇸US-192.74.224.163-6992
@@ -14418,6 +14538,20 @@ proxies:
   tls: false
   type: vmess
   uuid: c3d47355-bb0f-446c-85c9-8882ce401ff6
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 53|🇺🇸US-82.29.132.9-7258
+  network: ws
+  port: 20086
+  server: 82.29.132.9
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b2c61f53-a359-429c-900e-255f02def6be
   ws-opts:
     headers:
       Host: ''
@@ -18071,6 +18205,33 @@ proxies:
     headers:
       Host: ''
     path: /path/243535322906
+- alterId: 64
+  cipher: auto
+  name: '54,64|US美国(mibei77.com 米贝节点分享) #50'
+  network: tcp
+  port: '54022'
+  server: 103.181.164.145
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  name: '54,64|US美国(mibei77.com 米贝节点分享) #147'
+  network: tcp
+  port: '30808'
+  server: v8.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 54|🇺🇸 _US_美国
+  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
+  port: 443
+  server: 216.24.57.250
+  skip-cert-verify: false
+  sni: afrcloud1.mmv.kr
+  type: trojan
 - name: '55|US_speednode_0024 #1'
   network: ws
   port: 443
@@ -18643,6 +18804,17 @@ proxies:
     headers:
       Host: ylnhh.cc.cd
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '64|🇺🇸_US_美国 #3'
+  network: ws
+  port: 2052
+  server: 104.18.32.47
+  tls: false
+  type: vless
+  uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
+  ws-opts:
+    headers:
+      Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
+    path: '%2F'
 - name: '64|KR韩国(mibei77.com 米贝节点分享) #16'
   network: ws
   port: 11176
