@@ -4,6 +4,8 @@ import json
 from pathlib import Path
 
 from sync_gist import (
+    GitHubApiError,
+    GitHubClient,
     build_authenticated_git_url,
     build_manifest,
     collect_sync_files,
@@ -14,10 +16,11 @@ from sync_gist import (
 
 
 class FakeGitHubClient:
-    def __init__(self, gist=None, variable_value=None, viewer_login="owner") -> None:
+    def __init__(self, gist=None, variable_value=None, viewer_login="owner", gist_error=None) -> None:
         self.gist = gist
         self.variable_value = variable_value
         self.viewer_login = viewer_login
+        self.gist_error = gist_error
         self.created = None
         self.upserts = []
 
@@ -25,6 +28,8 @@ class FakeGitHubClient:
         return self.variable_value
 
     def get_gist(self, gist_id: str):
+        if self.gist_error is not None:
+            raise self.gist_error
         if self.gist and self.gist["id"] == gist_id:
             return self.gist
         return None
@@ -142,6 +147,63 @@ def test_ensure_gist_recreates_when_owner_mismatches_token() -> None:
 
     assert gist["id"] == "created-gist"
     assert client.upserts == [("owner", "repo", "RESULT_GIST_ID", "created-gist")]
+
+
+def test_ensure_gist_keeps_existing_id_when_gist_metadata_api_is_unavailable() -> None:
+    client = FakeGitHubClient(
+        variable_value="keep-gist",
+        gist_error=GitHubApiError("GET failed: 500", status_code=500),
+    )
+
+    gist = ensure_gist(
+        client=client,
+        repository="owner/repo",
+        gist_id="",
+        gist_id_variable="RESULT_GIST_ID",
+        description="demo",
+        public=False,
+    )
+
+    assert gist["id"] == "keep-gist"
+    assert gist["html_url"] == "https://gist.github.com/keep-gist"
+    assert client.created is None
+    assert client.upserts == []
+
+
+class FakeResponse:
+    def __init__(self, status_code: int, payload=None, text: str = "") -> None:
+        self.status_code = status_code
+        self._payload = payload or {}
+        self.text = text
+
+    def json(self):
+        return self._payload
+
+
+class FakeSession:
+    def __init__(self, responses) -> None:
+        self.responses = list(responses)
+        self.headers = {}
+        self.calls = 0
+
+    def get(self, url: str, timeout: int):
+        self.calls += 1
+        return self.responses.pop(0)
+
+
+def test_github_client_get_gist_retries_retryable_errors(monkeypatch) -> None:
+    monkeypatch.setattr("sync_gist.time.sleep", lambda _seconds: None)
+    session = FakeSession(
+        [
+            FakeResponse(500, text="server error"),
+            FakeResponse(200, payload={"id": "keep-gist", "owner": {"login": "owner"}}),
+        ]
+    )
+
+    gist = GitHubClient(token="token", session=session).get_gist("keep-gist")
+
+    assert gist["id"] == "keep-gist"
+    assert session.calls == 2
 
 
 def test_build_authenticated_git_url_embeds_token_as_password() -> None:

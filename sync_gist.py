@@ -10,6 +10,7 @@ import shlex
 import shutil
 import subprocess
 import tempfile
+import time
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 from urllib.parse import quote, urlsplit, urlunsplit
@@ -25,14 +26,29 @@ DEFAULT_PATTERNS = (
 DEFAULT_GIST_ID_VARIABLE = "RESULT_GIST_ID"
 DEFAULT_DESCRIPTION = "NoMoreWalls generated outputs"
 GIST_PATH_SEPARATOR = "_d_"
+GITHUB_API_TIMEOUT_SECONDS = 30
+GITHUB_API_RETRY_ATTEMPTS = 3
 
 
 class GitHubApiError(RuntimeError):
-    pass
+    def __init__(self, message: str, status_code: int = 0) -> None:
+        super().__init__(message)
+        self.status_code = status_code
 
 
 class GitCommandError(RuntimeError):
     pass
+
+
+def is_retryable_status(status_code: int) -> bool:
+    return status_code >= 500
+
+
+def build_gist_stub(gist_id: str) -> Dict[str, Any]:
+    return {
+        "id": gist_id,
+        "html_url": f"https://gist.github.com/{gist_id}",
+    }
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -213,12 +229,28 @@ class GitHubClient:
 
     def get_gist(self, gist_id: str) -> Optional[Dict[str, Any]]:
         url = f"https://api.github.com/gists/{gist_id}"
-        response = self.session.get(url)
-        if response.status_code == 404:
-            return None
-        if response.status_code != 200:
-            raise GitHubApiError(f"GET {url} failed: {response.status_code} {response.text[:400]}")
-        return response.json()
+        for attempt in range(1, GITHUB_API_RETRY_ATTEMPTS + 1):
+            try:
+                response = self.session.get(url, timeout=GITHUB_API_TIMEOUT_SECONDS)
+            except requests.RequestException as exc:
+                if attempt < GITHUB_API_RETRY_ATTEMPTS:
+                    print(f"读取 Gist {gist_id} 元数据异常，将在 {attempt} 秒后重试：{exc}")
+                    time.sleep(attempt)
+                    continue
+                raise GitHubApiError(f"GET {url} failed: {exc}") from exc
+            if response.status_code == 404:
+                return None
+            if response.status_code == 200:
+                return response.json()
+            if is_retryable_status(response.status_code) and attempt < GITHUB_API_RETRY_ATTEMPTS:
+                print(f"读取 Gist {gist_id} 元数据失败（{response.status_code}），将在 {attempt} 秒后重试。")
+                time.sleep(attempt)
+                continue
+            raise GitHubApiError(
+                f"GET {url} failed: {response.status_code} {response.text[:400]}",
+                status_code=response.status_code,
+            )
+        return None
 
     def create_gist(self, description: str, public: bool) -> Dict[str, Any]:
         payload = {
@@ -248,14 +280,26 @@ def ensure_gist(
 ) -> Dict[str, Any]:
     owner, repo = maybe_split_repository(repository)
     candidate = gist_id.strip()
-    viewer_login = client.get_authenticated_login()
     if not candidate and owner and repo:
         candidate = client.get_repo_variable(owner, repo, gist_id_variable) or ""
 
     gist: Optional[Dict[str, Any]] = None
     if candidate:
-        gist = client.get_gist(candidate)
+        try:
+            gist = client.get_gist(candidate)
+        except GitHubApiError as exc:
+            if is_retryable_status(exc.status_code):
+                print(
+                    f"读取现有 Gist {candidate} 元数据连续失败（{exc.status_code}），"
+                    "将继续使用该 Gist ID 进行同步。"
+                )
+                return build_gist_stub(candidate)
+            raise
         gist_owner = str((gist or {}).get("owner", {}).get("login", "") or "")
+        if gist is not None and gist_owner:
+            viewer_login = client.get_authenticated_login()
+        else:
+            viewer_login = ""
         if gist is not None and gist_owner and gist_owner.lower() != viewer_login.lower():
             print(
                 f"现有 Gist {candidate} 属于 {gist_owner}，当前 token 属于 {viewer_login}，"

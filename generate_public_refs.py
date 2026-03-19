@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import time
 from pathlib import Path
 from typing import Any, Dict, List, Mapping
 
@@ -14,6 +15,8 @@ GIST_API_BASE = "https://api.github.com/gists"
 GIST_PATH_SEPARATOR = "_d_"
 DEFAULT_TOKEN_ENV = "GIST_TOKEN"
 DEFAULT_OUT_DIR = "public_refs"
+GITHUB_API_TIMEOUT_SECONDS = 30
+GITHUB_API_RETRY_ATTEMPTS = 3
 
 KEY_SOURCES = (
     "list.txt",
@@ -56,9 +59,26 @@ def build_headers(token: str) -> Dict[str, str]:
     return headers
 
 
+def get_with_retry(url: str, headers: Mapping[str, str]) -> requests.Response:
+    for attempt in range(1, GITHUB_API_RETRY_ATTEMPTS + 1):
+        try:
+            response = requests.get(url, headers=headers, timeout=GITHUB_API_TIMEOUT_SECONDS)
+        except requests.RequestException as exc:
+            if attempt < GITHUB_API_RETRY_ATTEMPTS:
+                print(f"读取 {url} 异常，将在 {attempt} 秒后重试：{exc}")
+                time.sleep(attempt)
+                continue
+            raise RuntimeError(f"读取 {url} 失败: {exc}") from exc
+        if response.status_code < 500 or attempt == GITHUB_API_RETRY_ATTEMPTS:
+            return response
+        print(f"读取 {url} 失败（{response.status_code}），将在 {attempt} 秒后重试。")
+        time.sleep(attempt)
+    raise RuntimeError(f"读取 {url} 失败: 超出最大重试次数")
+
+
 def fetch_gist(gist_id: str, token: str) -> Dict[str, Any]:
     url = f"{GIST_API_BASE}/{gist_id}"
-    response = requests.get(url, headers=build_headers(token), timeout=30)
+    response = get_with_retry(url, headers=build_headers(token))
     if response.status_code != 200:
         raise RuntimeError(f"拉取 Gist 失败: {response.status_code} {response.text[:300]}")
     return response.json()
@@ -77,7 +97,7 @@ def load_manifest(gist: Mapping[str, Any], token: str) -> Dict[str, Any]:
     raw_url = str(manifest_file.get("raw_url") or "")
     if not raw_url:
         return {}
-    response = requests.get(raw_url, headers=build_headers(token), timeout=30)
+    response = get_with_retry(raw_url, headers=build_headers(token))
     if response.status_code != 200:
         return {}
     try:
