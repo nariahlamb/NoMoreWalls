@@ -44,20 +44,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- alpn:
-  - h3%2Ch2%2Chttp%2F1.1
-  name: '8,46,55|TW3｜机房｜低风险 #1'
-  network: ws
-  password: 823cbccd-3a71-4248-ac3c-3c460de1552d
-  port: 14147
-  server: 203.69.248.40
-  skip-cert-verify: true
-  sni: snll667.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: snll667.pages.dev
-    path: '%2F'
 - cipher: aes-256-cfb
   name: 15|🇹🇼1 |  2.1MB/s
   password: qwerREWQ@@
@@ -144,6 +130,525 @@ proxies:
   type: vmess
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
+- cipher: aes-256-cfb
+  name: 23,53|🇹🇼TW-185.189.160.105-4842
+  password: qwerREWQ@@
+  port: 41632
+  server: 185.189.160.105
+  type: ss
+- cipher: aes-256-cfb
+  name: 23,30,48,53|🇹🇼TW-154.223.20.79-0335
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 23,53|🇹🇼TW-45.121.51.103-0723
+  network: http
+  port: 20715
+  server: 45.121.51.103
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f6406b6d-5487-46da-f793-46611269a306
+- alterId: 0
+  cipher: auto
+  name: 23,53|🇹🇼TW-165.154.246.71-1063
+  network: ws
+  port: 80
+  server: 165.154.246.71
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a
+  ws-opts:
+    headers:
+      Host: 165.154.246.71
+    path: ?ed=2048
+- alterId: 1
+  cipher: auto
+  name: 23,53|🇹🇼TW-1.161.186.146-1275
+  network: ws
+  port: 64443
+  server: 1.161.186.146
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: cb7001c7-e495-41ac-b942-f25f60523414
+  ws-opts:
+    headers:
+      Host: ''
+    path: /clientarea
+- alterId: 0
+  cipher: auto
+  name: 23,53|🇹🇼TW-61.222.202.140-1684
+  network: ws
+  port: 33792
+  server: 61.222.202.140
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e55cd182-01b0-4fb7-a510-363701a491c5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- name: 23,53|🇹🇼TW-211.72.35.155-2158
+  password: b09d2aaa443af97a
+  port: 3389
+  server: 211.72.35.155
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-60.249.3.125-2187
+  password: 3febb05ea76a940f
+  port: 3389
+  server: 60.249.3.125
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-211.72.35.157-3288
+  password: 8b475d9e868e43e0
+  port: 3389
+  server: 211.72.35.157
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-211.72.35.152-3274
+  password: b84d16a244460e09
+  port: 3389
+  server: 211.72.35.152
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-60.248.240.224-2218
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.co.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-211.72.35.158-2241
+  password: 7b06d22a8a7c764f
+  port: 3389
+  server: 211.72.35.158
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-60.249.3.227-2264
+  password: 7ac49a893e0bd10c
+  port: 3389
+  server: 60.249.3.227
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-60.249.3.231-2284
+  password: 0cc6b4268dea0ba8
+  port: 3389
+  server: 60.249.3.231
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-211.20.245.140-2287
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.kiev.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-61.221.189.243-2332
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.if.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-211.20.245.140-2354
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.org.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-60.249.3.230-2366
+  password: 182228812d1e0f23
+  port: 3389
+  server: 60.249.3.230
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-211.72.35.154-2380
+  password: 7b06d22a8a7c764f
+  port: 3389
+  server: 211.72.35.154
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-60.249.3.226-2392
+  password: 7ac49a893e0bd10c
+  port: 3389
+  server: 60.249.3.226
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-60.249.3.228-2397
+  password: 7ac49a893e0bd10c
+  port: 3389
+  server: 60.249.3.228
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-61.221.189.243-2410
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.kyiv.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-60.250.152.209-2412
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.dp.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-60.249.3.229-2423
+  password: 182228812d1e0f23
+  port: 3389
+  server: 60.249.3.229
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-61.221.189.243-2456
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.ivano-frankivsk.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-211.72.35.153-2459
+  password: 7b06d22a8a7c764f
+  port: 3389
+  server: 211.72.35.153
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-211.72.35.156-2473
+  password: 7b06d22a8a7c764f
+  port: 3389
+  server: 211.72.35.156
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-211.72.35.152-2531
+  password: b09d2aaa443af97a
+  port: 3389
+  server: 211.72.35.152
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-61.221.189.243-2568
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.biz.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-60.250.152.209-2607
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.cn.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-60.248.240.224-2626
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.chernovtsy.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-61.221.189.243-2629
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.net.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 23,53|🇹🇼TW-60.250.152.209-2675
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.com.ua
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 23,53|🇹🇼TW-211.72.35.110-3951
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: woideneu7.jsworld.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 2eb30779-2e8c-4b89-e6bd-a0ec760ca506
+  ws-opts:
+    headers:
+      Host: woideneu7.jsworld.eu.org
+    path: /nishikata
+- alterId: 0
+  cipher: auto
+  name: 23,53|🇹🇼TW-211.72.35.110-3952
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: euserv1.aifx.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 3953ce0d-25df-4427-8371-a8ac26cc36fe
+  ws-opts:
+    headers:
+      Host: euserv1.aifx.eu.org
+    path: /nishikata
+- alterId: 0
+  cipher: auto
+  name: 23,53|🇹🇼TW-211.72.35.110-3953
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: woideneu4.jsworld.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: cb6448e3-08e1-413d-bc17-d3b0dba9aae9
+  ws-opts:
+    headers:
+      Host: woideneu4.jsworld.eu.org
+    path: /nishikata
+- alterId: 0
+  cipher: auto
+  name: 23,53|🇹🇼TW-211.72.35.110-3954
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: haxeu7.jsworld.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: dfd1d80f-caf0-4b11-e0bb-733a2710a07a
+  ws-opts:
+    headers:
+      Host: haxeu7.jsworld.eu.org
+    path: /nishikata3
+- alterId: 0
+  cipher: auto
+  name: 23,53|🇹🇼TW-211.72.35.110-3955
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: woidenca1.jsworld.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: e87f326f-55ac-487f-a3d1-57c592bb663a
+  ws-opts:
+    headers:
+      Host: woidenca1.jsworld.eu.org
+    path: /nishikata3
+- name: 23,53|🇹🇼TW-2.58.242.43-4141
+  password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT
+  port: 443
+  server: 2.58.242.43
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 23,53|🇹🇼TW-220.130.80.179-4148
+  network: ws
+  port: 443
+  server: 220.130.80.179
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ceb8a7f4-a45b-48a7-8f8e-ca7124a5ebee
+  ws-opts:
+    headers:
+      Host: v2ray2.udpgw.com
+    path: /howdy
+- alterId: 0
+  cipher: auto
+  name: 23,53|🇹🇼TW-165.154.226.45-4150
+  network: ws
+  port: 80
+  server: 165.154.226.45
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23,53|🇹🇼TW-211.72.35.110-4151
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 541ca026-58d3-48f1-d6ef-3a05543ddcb7
+  ws-opts:
+    headers:
+      Host: ru.tzccifq.ga
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23,53|🇹🇼TW-165.154.253.35-4153
+  network: ws
+  port: 443
+  server: tw-1.qwqjsq.top
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b0543a3b-d690-3ed9-9a81-f24f852e74f7
+  ws-opts:
+    headers:
+      Host: tw-1.qwqjsq.top
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 23,53|🇹🇼TW-61.216.85.68-4158
+  network: ws
+  port: 443
+  server: 61.216.85.68
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5ba738e7-0abf-4935-b67e-d404a083d6a6
+  ws-opts:
+    headers:
+      Host: www.88612860.xyz
+    path: /path/243535322906
+- alterId: 0
+  cipher: auto
+  name: 23,53|🇹🇼TW-165.154.246.107-4161
+  network: ws
+  port: 80
+  server: 165.154.246.107
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23,53|🇹🇼TW-36.232.5.76-4168
+  network: ws
+  port: 11463
+  server: tw4.594888.xyz
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: dd7639cf-66dd-3038-ab0e-cefe7e9ef9fb
+  ws-opts:
+    headers:
+      Host: tw4.594888.xyz
+    path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: 23,53|🇹🇼TW-61.224.127.227-4169
+  network: ws
+  port: 25551
+  server: tw3.594888.xyz
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: dd7639cf-66dd-3038-ab0e-cefe7e9ef9fb
+  ws-opts:
+    headers:
+      Host: tw3.594888.xyz
+    path: /v2ray
+- country: ' CN'
+  name: 23,30,53|🇹🇼TW-60.248.240.224-4555
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: a03.taipeicitygovernment.cn.ua
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 23|TW-103.229.127.212-7144
+  network: ws
+  port: 32381
+  server: 103.229.127.212
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 93e463b6-af2b-437b-90f8-dba172a70d11
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '23,42|🔥Join+Telegram:@Farah_VPN🟣 #650'
+  network: ws
+  port: 20521
+  server: 103.61.139.137
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|TW-140.235.38.89-7158
+  network: ws
+  port: 20521
+  server: 140.235.38.89
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c65ef645-2172-44d1-909f-cb30a40bca1c
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|TW-103.229.124.3-7231
+  network: ws
+  port: 20521
+  server: 103.229.124.3
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 292e9c90-25b3-4ff5-b98a-9ef5877714ab
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - tw2.sdklkd.org
+    method: GET
+    path:
+    - /
+  name: 23|TW-111.249.67.82-7615
+  network: http
+  port: 1443
+  server: tw2.sdklkd.org
+  servername: tw2.sdklkd.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: fa98714c-1d2b-3b60-81e0-f7151110e801
+- cipher: aes-256-cfb
+  name: 23,53|🇹🇼TW-61.220.130.70-7144
+  password: qwerREWQ@@
+  port: 50701
+  server: 61.220.130.70
+  type: ss
 - alterId: 0
   cipher: auto
   name: '26,27,28|台湾-优化 #2'
@@ -177,345 +682,121 @@ proxies:
     path: /
   ws-path: /
 - country: ' TW'
-  name: 30| TW_63
+  name: 30| TW_75
   password: 736cd94d-7b94-3e44-8106-3419f64eaf09
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: rc4-md5
-  name: 41,56|yandex-127
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202601222350462-dVNbGD4Umj.download.microsoft.com
-    mode: http
-  port: 8745
-  server: efan9863.dns8656815.com
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 41,56|yandex-132
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202601222350462-dVNbGD4Umj.download.microsoft.com
-    mode: http
-  port: 8747
-  server: efan9863.dns8656815.com
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 41,56|yandex-133
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202601222350462-dVNbGD4Umj.download.microsoft.com
-    mode: http
-  port: 8744
-  server: efan9863.dns8656815.com
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 41,56|yandex-137
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202601222350462-dVNbGD4Umj.download.microsoft.com
-    mode: http
-  port: 8749
-  server: efan9863.dns8656815.com
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 41,56|yandex-138
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202601222350462-dVNbGD4Umj.download.microsoft.com
-    mode: http
-  port: 8750
-  server: efan9863.dns8656815.com
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 41,56|yandex-157
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202601222350462-dVNbGD4Umj.download.microsoft.com
-    mode: http
-  port: 8742
-  server: efan9863.dns8656815.com
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 41,56|yandex-161
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202601222350462-dVNbGD4Umj.download.microsoft.com
-    mode: http
-  port: 8743
-  server: efan9863.dns8656815.com
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 41,56|yandex-164
-  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
-  port: 46605
-  server: tw05.network-cdn-gw-yd.net
-  type: ss
-  udp: true
-- name: 41,56|yandex-168
-  password: 366efee9-09fd-4365-8873-63f77468999c
-  port: 55024
-  server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
-  skip-cert-verify: true
-  sni: www.h3yun.com
-  type: trojan
-  udp: true
-- cipher: rc4-md5
-  name: 41,56|yandex-171
-  password: efanccyun
+  name: '41|🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 202601222350462-dVNbGD4Umj.download.microsoft.com
-    mode: http
-  port: 8746
-  server: efan9863.dns8656815.com
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 41,56|yandex-177
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202601222350462-dVNbGD4Umj.download.microsoft.com
-    mode: http
-  port: 8741
-  server: efan9863.dns8656815.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 41,56|yandex-183
-  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
-  port: 46603
-  server: tw03.network-cdn-gw-yd.net
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 41,56|yandex-189
-  password: 36b33cb6-095c-47e7-ae83-445856a7d3ff
-  port: 23173
-  server: 183.236.97.212
-  tfo: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 41,56|yandex-193
-  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
-  port: 46604
-  server: tw04.network-cdn-gw-yd.net
+    host: (TG @WangCai2)aee97b7:155033
+    mode: tls
+  port: 2377
+  server: 61.216.165.233
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 41,56|yandex-195
-  network: tcp
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  port: 55021
-  server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
-  skip-cert-verify: true
-  sni: www.h3yun.com
-  type: trojan
+  flow: xtls-rprx-vision
+  name: 41|🔴🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001...
+  port: 443
+  reality-opts:
+    public-key: a9I2uA3NNZA6uBAe3Tui9vZ8CG5MrMaYOifWrAdc0zg
+    short-id: a8609be8
+  server: aws-link27.liangxin1.xyz
+  servername: download-porter.hoyoverse.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-- cipher: rc4-md5
-  name: 41,56|yandex-197
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202601222350462-dVNbGD4Umj.download.microsoft.com
-    mode: http
-  port: 8739
-  server: efan9863.dns8656815.com
-  type: ss
-  udp: true
+  uuid: 05d7767f-abf4-4202-ab7a-f7c653e4ad09
 - client-fingerprint: chrome
-  name: 41,56|yandex-199
-  network: tcp
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  port: 55024
-  server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
-  skip-cert-verify: true
-  sni: www.h3yun.com
-  type: trojan
+  name: 41|🔴🇹🇼[🎬📺🎭🎪]_github.com/Ruk1ng001...
+  network: ws
+  port: 443
+  server: 114.33.57.170
+  servername: ylnhh.cc.cd
+  tls: true
+  type: vless
   udp: true
-- cipher: rc4-md5
-  name: 41,56|yandex-225
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202601222350462-dVNbGD4Umj.download.microsoft.com
-    mode: http
-  port: 8748
-  server: efan9863.dns8656815.com
-  type: ss
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  ws-opts:
+    headers:
+      Host: ylnhh.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/46.0.2490.86 Safari/537.36
+    path: /Telegram🇨🇳+@WangCai2
+  xudp: true
+- client-fingerprint: random
+  name: 41|🔴🇹🇼[📺🎭🎪]_github.com/Ruk1ng001_...
+  network: ws
+  port: 443
+  server: 114.33.57.170
+  servername: snippet.fgfw.ndjp.net
+  tls: true
+  type: vless
   udp: true
-- cipher: aes-128-gcm
-  name: 41,56|yandex-229
-  password: 4cb0dea7-5e98-43f9-a578-50c12c9af8d2
-  port: 63575
-  server: k1h88ows.2228333.xyz
-  type: ss
-  udp: true
-- alterId: 0
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ndjp.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /danfeng
+  xudp: true
+- alterId: '0'
   cipher: auto
-  name: 41,56|yandex-237
-  port: 6002
-  server: cn02.365cloud5878.com
+  name: 41|🟢🇹🇼[🎬📺🔍]_github.com/Ruk1ng001_...
+  network: ws
+  port: 16616
+  server: t.cnmjcn.cyou
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  uuid: bb569882-779a-4b5e-9dbf-abc428a80cb9
+  ws-opts:
+    headers:
+      Host: ecd43b0076ced4a5030f17593ac3b4ae.mobgslb.tbcache.com
+    path: /
   xudp: true
-- name: 41,56|yandex-244
-  password: 366efee9-09fd-4365-8873-63f77468999c
-  port: 55022
-  server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
-  skip-cert-verify: true
-  sni: www.h3yun.com
-  type: trojan
-  udp: true
-- name: 41,56|yandex-257
-  password: 366efee9-09fd-4365-8873-63f77468999c
-  port: 55022
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  skip-cert-verify: true
-  sni: www.h3yun.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 41,56|yandex-3702
-  password: 2508007d-5bdc-4d7b-90d7-ab1552452d55
-  port: 34002
-  server: v1a002.78787878.top
-  type: ss
-  udp: true
-- down: ''
-  fingerprint: ''
-  name: '41|🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
-  obfs: ''
-  obfs-password: ''
-  password: fe0fda62-79ff-467e-bef4-983322c1d21b
-  port: 30102
-  server: tw.ccwink.cc
-  skip-cert-verify: true
-  sni: tw.ccwink.cc
-  type: hysteria2
-  up: ''
-- cipher: chacha20-ietf-poly1305
-  name: 41,56|yandex-3703
-  password: 2508007d-5bdc-4d7b-90d7-ab1552452d55
-  port: 34003
-  server: v2a003.78787878.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 41,56|yandex-285
-  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
-  port: 46601
-  server: tw1.network-cdn-gw-yd.net
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 41,56|yandex-290
-  password: 24b6a0f7-eccb-441e-b2da-56ec3f6880f4
-  port: 12106
-  server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
+- alterId: '0'
+  cipher: auto
+  name: '41|🔴🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  network: ws
+  port: 16616
+  server: t.cnmjcn.cyou
   skip-cert-verify: false
-  sni: 110.yuanul.com
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- client-fingerprint: chrome
-  name: 41,56|yandex-291
-  password: 24b6a0f7-eccb-441e-b2da-56ec3f6880f4
-  port: 12102
-  server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
+  uuid: 3f8ef9b2-efd9-4fbd-8893-fe50ff4e4369
+  ws-opts:
+    headers:
+      Host: cb02248ddc6c0fd6c5be014bebb73797.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: '41|🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
+  network: ws
+  port: 16616
+  server: t.cnmjcn.cyou
   skip-cert-verify: false
-  sni: 106.yuanul.com
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- client-fingerprint: chrome
-  name: 41,56|yandex-318
-  password: 24b6a0f7-eccb-441e-b2da-56ec3f6880f4
-  port: 12103
-  server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
-  skip-cert-verify: false
-  sni: 116.yuanul.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 41,56|yandex-329
-  password: 24b6a0f7-eccb-441e-b2da-56ec3f6880f4
-  port: 12105
-  server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
-  skip-cert-verify: false
-  sni: 109.yuanul.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 41,56|yandex-347
-  password: 24b6a0f7-eccb-441e-b2da-56ec3f6880f4
-  port: 12101
-  server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
-  skip-cert-verify: false
-  sni: 104.yuanul.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 41,56|yandex-389
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  port: 52664
-  server: tw01.x.kuaimaonodebgp.com
-  type: ss
-  udp: true
-- name: 41,56|yandex-396
-  password: 366efee9-09fd-4365-8873-63f77468999c
-  port: 55021
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  skip-cert-verify: true
-  sni: www.h3yun.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 41,56|yandex-398
-  password: 24b6a0f7-eccb-441e-b2da-56ec3f6880f4
-  port: 12107
-  server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
-  skip-cert-verify: false
-  sni: 199.yuanul.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 41,56|yandex-400
-  password: 24b6a0f7-eccb-441e-b2da-56ec3f6880f4
-  port: 12104
-  server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
-  skip-cert-verify: false
-  sni: 108.yuanul.com
-  type: trojan
-  udp: true
-- name: 41,56|yandex-403
-  password: 2440ddb9-14c8-429e-8c8a-d09636bb2131
-  port: 55023
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  skip-cert-verify: true
-  sni: www.h3yun.com
-  type: trojan
-  udp: true
-- name: '41|🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001... #11'
+  uuid: cf26931f-ca77-4ffa-bd1e-f843ff1f38e0
+  ws-opts:
+    headers:
+      Host: 0a3e2c08e1333ffabe3cb5bdc4182905.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- name: 41|🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001...
   password: mrwdfNTD8M79LCukCieldrqZWqs=
   port: 1443
   server: twmoon1-cdn-route.couldflare-cdn.com
@@ -524,519 +805,78 @@ proxies:
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 41,56|yandex-417
-  password: 366efee9-09fd-4365-8873-63f77468999c
-  port: 55021
-  server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
-  skip-cert-verify: true
-  sni: www.h3yun.com
-  type: trojan
-  udp: true
-- name: '41|🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001... #13'
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  udp: true
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 41,56|yandex-463
-  password: 5b6d572c-b0b0-4f21-9cb1-6fbb69a75cbf
-  port: 55021
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  skip-cert-verify: true
-  sni: www.h3yun.com
-  type: trojan
-  udp: true
-- name: 41,56|yandex-474
-  password: 366efee9-09fd-4365-8873-63f77468999c
-  port: 55024
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  skip-cert-verify: true
-  sni: www.h3yun.com
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 41,56|yandex-504
+  name: 41,60|CN_350f3_0007
   network: ws
-  port: 12888
-  server: gtm1.ktmwan.net
+  port: 16616
+  server: planb.mojcn.com
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 21324e77-b4d2-4fca-8884-5e8b75836d2a
+  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
   ws-opts:
     headers:
-      Host: baidu.com
+      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
     path: /
   xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 41,56|yandex-590
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  port: 52665
-  server: tw01.x.kuaimaonodebgp.com
-  type: ss
+- client-fingerprint: chrome
+  name: '41|🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001... #2'
+  network: ws
+  password: b1871062-eb20-47a8-b203-f941a970252d
+  port: 443
+  server: tw2.edge.sdmao.space
+  skip-cert-verify: false
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: ''
+- client-fingerprint: chrome
+  name: '41|🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001... #3'
+  network: ws
+  password: b1871062-eb20-47a8-b203-f941a970252d
+  port: 443
+  server: tw4.edge.the-best-airport.online
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Unknown; Linux) AppleWebKit/538.1 (KHTML, like Gecko)
+        Chrome/v1.0.0 Safari/538.1
+    path: ''
 - alterId: 0
   cipher: auto
-  name: 53|🇹🇼TW-45.121.51.103-0715
-  network: http
-  port: 20715
-  server: 45.121.51.103
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f6406b6d-5487-46da-f793-46611269a306
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-165.154.246.71-1039
+  name: 53|🇹🇼TW-111.243.121.201-0284
   network: ws
   port: 80
-  server: 165.154.246.71
-  servername: ''
+  server: abm96f00fby3.jkhkgj.xyz
+  servername: tms.dingtalk.com
   tls: false
   type: vmess
-  uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a
+  uuid: 0f868002-5230-45fb-be23-0fd0ed9bbdc4
   ws-opts:
     headers:
-      Host: 165.154.246.71
-    path: ?ed=2048
-- alterId: 1
-  cipher: auto
-  name: 53|🇹🇼TW-1.161.186.146-1251
-  network: ws
-  port: 64443
-  server: 1.161.186.146
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: cb7001c7-e495-41ac-b942-f25f60523414
-  ws-opts:
-    headers:
-      Host: ''
-    path: /clientarea
-- name: 53|🇹🇼TW-203.69.248.40-1632
-  password: 823cbccd-3a71-4248-ac3c-3c460de1552d
-  port: 14147
-  server: 203.69.248.40
-  sni: snll667.pages.dev
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-61.222.202.140-1677
-  network: ws
-  port: 33792
-  server: 61.222.202.140
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e55cd182-01b0-4fb7-a510-363701a491c5
-  ws-opts:
-    headers:
-      Host: ''
+      Host: abm96f00fby3.jkhkgj.xyz
     path: /
-- name: 53|🇹🇼TW-211.72.35.155-2151
-  password: b09d2aaa443af97a
-  port: 3389
-  server: 211.72.35.155
-  type: trojan
-- name: 53|🇹🇼TW-60.249.3.125-2180
-  password: 3febb05ea76a940f
-  port: 3389
-  server: 60.249.3.125
-  type: trojan
-- name: 53|🇹🇼TW-211.72.35.157-3281
-  password: 8b475d9e868e43e0
-  port: 3389
-  server: 211.72.35.157
-  type: trojan
-- name: 53|🇹🇼TW-211.72.35.152-3267
-  password: b84d16a244460e09
-  port: 3389
-  server: 211.72.35.152
-  type: trojan
-- name: 53|🇹🇼TW-61.221.189.243-2211
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.co.ua
-  type: trojan
-- name: 53|🇹🇼TW-211.72.35.158-2234
-  password: 7b06d22a8a7c764f
-  port: 3389
-  server: 211.72.35.158
-  type: trojan
-- name: 53|🇹🇼TW-60.249.3.227-2257
-  password: 7ac49a893e0bd10c
-  port: 3389
-  server: 60.249.3.227
-  type: trojan
-- name: 53|🇹🇼TW-60.249.3.231-2277
-  password: 0cc6b4268dea0ba8
-  port: 3389
-  server: 60.249.3.231
-  type: trojan
-- name: 53|🇹🇼TW-59.125.131.165-2280
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.kiev.ua
-  type: trojan
-- name: 53|🇹🇼TW-61.221.189.243-2325
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.if.ua
-  type: trojan
-- name: 53|🇹🇼TW-60.248.240.224-2347
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.org.ua
-  type: trojan
-- name: 53|🇹🇼TW-60.249.3.230-2359
-  password: 182228812d1e0f23
-  port: 3389
-  server: 60.249.3.230
-  type: trojan
-- name: 53|🇹🇼TW-211.72.35.154-2373
-  password: 7b06d22a8a7c764f
-  port: 3389
-  server: 211.72.35.154
-  type: trojan
-- name: 53|🇹🇼TW-60.249.3.226-2385
-  password: 7ac49a893e0bd10c
-  port: 3389
-  server: 60.249.3.226
-  type: trojan
-- name: 53|🇹🇼TW-60.249.3.228-2390
-  password: 7ac49a893e0bd10c
-  port: 3389
-  server: 60.249.3.228
-  type: trojan
-- name: 53|🇹🇼TW-61.221.189.243-2403
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.kyiv.ua
-  type: trojan
-- name: 53|🇹🇼TW-59.125.131.165-2405
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.dp.ua
-  type: trojan
-- name: 53|🇹🇼TW-60.249.3.229-2416
-  password: 182228812d1e0f23
-  port: 3389
-  server: 60.249.3.229
-  type: trojan
-- name: 53|🇹🇼TW-59.125.131.165-2449
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.ivano-frankivsk.ua
-  type: trojan
-- name: 53|🇹🇼TW-211.72.35.153-2452
-  password: 7b06d22a8a7c764f
-  port: 3389
-  server: 211.72.35.153
-  type: trojan
-- name: 53|🇹🇼TW-211.72.35.156-2466
-  password: 7b06d22a8a7c764f
-  port: 3389
-  server: 211.72.35.156
-  type: trojan
-- name: 53|🇹🇼TW-211.72.35.152-2524
-  password: b09d2aaa443af97a
-  port: 3389
-  server: 211.72.35.152
-  type: trojan
-- name: 53|🇹🇼TW-60.250.152.209-2561
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.biz.ua
-  type: trojan
-- name: 53|🇹🇼TW-60.248.240.224-2600
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.cn.ua
-  type: trojan
-- name: 53|🇹🇼TW-61.221.189.243-2619
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.chernovtsy.ua
-  type: trojan
-- name: 53|🇹🇼TW-59.125.131.165-2622
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.net.ua
-  type: trojan
-- name: 53|🇹🇼TW-60.250.152.209-2668
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.com.ua
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 53|🇹🇼TW-211.72.35.110-3944
-  network: ws
-  port: 443
-  server: 211.72.35.110
-  servername: woideneu7.jsworld.eu.org
-  tls: true
-  type: vmess
-  uuid: 2eb30779-2e8c-4b89-e6bd-a0ec760ca506
-  ws-opts:
-    headers:
-      Host: woideneu7.jsworld.eu.org
-    path: /nishikata
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-211.72.35.110-3945
-  network: ws
-  port: 443
-  server: 211.72.35.110
-  servername: euserv1.aifx.eu.org
-  tls: true
-  type: vmess
-  uuid: 3953ce0d-25df-4427-8371-a8ac26cc36fe
-  ws-opts:
-    headers:
-      Host: euserv1.aifx.eu.org
-    path: /nishikata
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-211.72.35.110-3946
-  network: ws
-  port: 443
-  server: 211.72.35.110
-  servername: woideneu4.jsworld.eu.org
-  tls: true
-  type: vmess
-  uuid: cb6448e3-08e1-413d-bc17-d3b0dba9aae9
-  ws-opts:
-    headers:
-      Host: woideneu4.jsworld.eu.org
-    path: /nishikata
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-211.72.35.110-3947
-  network: ws
-  port: 443
-  server: 211.72.35.110
-  servername: haxeu7.jsworld.eu.org
-  tls: true
-  type: vmess
-  uuid: dfd1d80f-caf0-4b11-e0bb-733a2710a07a
-  ws-opts:
-    headers:
-      Host: haxeu7.jsworld.eu.org
-    path: /nishikata3
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-211.72.35.110-3948
-  network: ws
-  port: 443
-  server: 211.72.35.110
-  servername: woidenca1.jsworld.eu.org
-  tls: true
-  type: vmess
-  uuid: e87f326f-55ac-487f-a3d1-57c592bb663a
-  ws-opts:
-    headers:
-      Host: woidenca1.jsworld.eu.org
-    path: /nishikata3
-- name: 53|🇹🇼TW-2.58.242.43-4134
-  password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT
-  port: 443
-  server: 2.58.242.43
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-220.130.80.179-4141
-  network: ws
-  port: 443
-  server: 220.130.80.179
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ceb8a7f4-a45b-48a7-8f8e-ca7124a5ebee
-  ws-opts:
-    headers:
-      Host: v2ray2.udpgw.com
-    path: /howdy
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-165.154.226.45-4143
+  name: 53|🇹🇼TW-111.243.121.201-0816
   network: ws
   port: 80
-  server: 165.154.226.45
+  server: abm96f00fby3.jkhkgj.xyz
   servername: ''
   tls: false
   type: vmess
-  uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-211.72.35.110-4144
-  network: ws
-  port: 443
-  server: 211.72.35.110
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 541ca026-58d3-48f1-d6ef-3a05543ddcb7
-  ws-opts:
-    headers:
-      Host: ru.tzccifq.ga
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-165.154.253.35-4146
-  network: ws
-  port: 443
-  server: tw-1.qwqjsq.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b0543a3b-d690-3ed9-9a81-f24f852e74f7
-  ws-opts:
-    headers:
-      Host: tw-1.qwqjsq.top
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 53|🇹🇼TW-61.216.85.68-4151
-  network: ws
-  port: 443
-  server: 61.216.85.68
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5ba738e7-0abf-4935-b67e-d404a083d6a6
-  ws-opts:
-    headers:
-      Host: www.88612860.xyz
-    path: /path/243535322906
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-165.154.246.107-4154
-  network: ws
-  port: 80
-  server: 165.154.246.107
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e
+  uuid: 0f868002-5230-45fb-be23-0fd0ed9bbdc4
   ws-opts:
     headers:
       Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-118.170.91.105-4161
-  network: ws
-  port: 11463
-  server: tw4.594888.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dd7639cf-66dd-3038-ab0e-cefe7e9ef9fb
-  ws-opts:
-    headers:
-      Host: tw4.594888.xyz
-    path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-61.224.127.227-4162
-  network: ws
-  port: 25551
-  server: tw3.594888.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dd7639cf-66dd-3038-ab0e-cefe7e9ef9fb
-  ws-opts:
-    headers:
-      Host: tw3.594888.xyz
-    path: /v2ray
-- cipher: aes-256-cfb
-  name: 53|🇹🇼TW-185.189.160.105-4813
-  password: qwerREWQ@@
-  port: 41632
-  server: 185.189.160.105
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-103.229.127.212-7167
-  network: ws
-  port: 32381
-  server: 103.229.127.212
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 93e463b6-af2b-437b-90f8-dba172a70d11
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-103.61.139.137-7176
-  network: ws
-  port: 20521
-  server: 103.61.139.137
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-140.235.38.89-7181
-  network: ws
-  port: 20521
-  server: 140.235.38.89
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c65ef645-2172-44d1-909f-cb30a40bca1c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-103.229.124.3-7254
-  network: ws
-  port: 20521
-  server: 103.229.124.3
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 292e9c90-25b3-4ff5-b98a-9ef5877714ab
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 53|🇹🇼TW-111.249.69.206-7638
-  network: http
-  port: 1443
-  server: tw2.sdklkd.org
-  servername: tw2.sdklkd.org
-  tls: true
-  type: vmess
-  uuid: fa98714c-1d2b-3b60-81e0-f7151110e801
-- cipher: aes-256-cfb
-  name: 53|🇹🇼TW-61.220.130.70-8029
-  password: qwerREWQ@@
-  port: 50701
-  server: 61.220.130.70
-  type: ss
+    path: /market/jp1
 - cipher: chacha20-ietf-poly1305
   name: 59|0| 01 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1103,18 +943,18 @@ proxies:
   port: 47564
   server: gy.666666222.shop
   type: ss
-- name: '64|US美国(mibei77.com 米贝节点分享) #125'
+- name: 64|TW台湾(mibei77.com 米贝节点分享)
   network: ws
-  port: 2053
-  server: 188.132.192.195
-  servername: snippet.fgfw.ccwu.cc
+  port: 443
+  server: 114.33.57.170
+  servername: ylnhh.cc.cd
   tls: true
   type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
   ws-opts:
     headers:
-      Host: snippet.fgfw.ccwu.cc
-    path: '%2Fdanfeng'
+      Host: ylnhh.cc.cd
+    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - client-fingerprint: randomized
   name: 65|TS-13-01-TW
   network: ws
