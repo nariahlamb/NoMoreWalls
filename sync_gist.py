@@ -25,6 +25,7 @@ DEFAULT_PATTERNS = (
 )
 DEFAULT_GIST_ID_VARIABLE = "RESULT_GIST_ID"
 DEFAULT_DESCRIPTION = "NoMoreWalls generated outputs"
+DEFAULT_PUBLIC_REF_METADATA_FILE = ".tmp/gist-sync-metadata.json"
 GIST_PATH_SEPARATOR = "_d_"
 GITHUB_API_TIMEOUT_SECONDS = 30
 GITHUB_API_RETRY_ATTEMPTS = 3
@@ -74,6 +75,11 @@ def build_parser() -> argparse.ArgumentParser:
         default=os.environ.get("GIST_SYNC_DESCRIPTION", DEFAULT_DESCRIPTION),
         help="Description for a newly created gist.",
     )
+    parser.add_argument(
+        "--public-ref-metadata-file",
+        default=os.environ.get("GIST_SYNC_METADATA_FILE", DEFAULT_PUBLIC_REF_METADATA_FILE),
+        help="Local metadata file for generate_public_refs.py to consume.",
+    )
     parser.add_argument("--public", action="store_true", help="Create a public gist instead of a secret gist.")
     parser.add_argument("--dry-run", action="store_true", help="Prepare files but do not push.")
     return parser
@@ -113,6 +119,13 @@ def build_manifest(repository: str, gist_id: str, files: Sequence[Path]) -> Dict
     }
 
 
+def resolve_output_path(repo_root: Path, output_path: str) -> Path:
+    path = Path(output_path)
+    if path.is_absolute():
+        return path
+    return repo_root / path
+
+
 def split_repository(repository: str) -> Tuple[str, str]:
     parts = repository.strip().split("/", 1)
     if len(parts) != 2 or not parts[0] or not parts[1]:
@@ -147,6 +160,53 @@ def build_authenticated_git_url(url: str, token: str, username: str = "x-access-
         raise ValueError(f"unsupported git url: {url!r}")
     userinfo = f"{quote(username, safe='')}:{quote(token, safe='')}"
     return urlunsplit((parsed.scheme, f"{userinfo}@{parsed.netloc}", parsed.path, parsed.query, parsed.fragment))
+
+
+def build_gist_html_url(gist: Mapping[str, Any], viewer_login: str) -> str:
+    gist_id = str(gist.get("id") or "").strip()
+    html_url = str(gist.get("html_url") or "").strip()
+    if html_url:
+        return html_url
+    if gist_id and viewer_login:
+        return f"https://gist.github.com/{viewer_login}/{gist_id}"
+    if gist_id:
+        return f"https://gist.github.com/{gist_id}"
+    return ""
+
+
+def build_gist_raw_url(owner_login: str, gist_id: str, revision: str, gist_name: str) -> str:
+    quoted_name = quote(gist_name, safe="")
+    return f"https://gist.githubusercontent.com/{owner_login}/{gist_id}/raw/{revision}/{quoted_name}"
+
+
+def build_public_ref_metadata(
+    gist: Mapping[str, Any],
+    viewer_login: str,
+    revision: str,
+    files: Sequence[Path],
+) -> Dict[str, Any]:
+    gist_id = str(gist.get("id") or "").strip()
+    if not gist_id:
+        raise RuntimeError("缺少 Gist ID，无法生成公开引用元数据。")
+    owner_login = str((gist.get("owner") or {}).get("login") or viewer_login).strip()
+    if not owner_login:
+        raise RuntimeError("缺少 Gist owner login，无法生成公开引用元数据。")
+
+    source_links: Dict[str, str] = {}
+    for relative in files:
+        gist_name = flatten_gist_path(relative)
+        source_links[relative.as_posix()] = build_gist_raw_url(owner_login, gist_id, revision, gist_name)
+    return {
+        "gist_id": gist_id,
+        "gist_url": build_gist_html_url(gist, owner_login),
+        "updated_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "source_links": dict(sorted(source_links.items())),
+    }
+
+
+def write_public_ref_metadata(path: Path, metadata: Mapping[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def run_git(
@@ -353,6 +413,10 @@ def stage_outputs(
     )
 
 
+def get_git_head_revision(gist_root: Path) -> str:
+    return run_git(["rev-parse", "HEAD"], cwd=gist_root).stdout.strip()
+
+
 def sync_gist_repo(
     repo_root: Path,
     files: Sequence[Path],
@@ -360,7 +424,7 @@ def sync_gist_repo(
     token: str,
     repository: str,
     dry_run: bool,
-) -> bool:
+) -> Tuple[bool, str]:
     clone_url = gist.get("git_pull_url") or f"https://gist.github.com/{gist['id']}.git"
     push_url = gist.get("git_push_url") or clone_url
     authenticated_clone_url = build_authenticated_git_url(clone_url, token=token)
@@ -385,17 +449,17 @@ def sync_gist_repo(
         status = run_git(["status", "--porcelain"], cwd=gist_root).stdout.strip()
         if not status:
             print("Gist 内容无变化，跳过推送。")
-            return False
+            return False, get_git_head_revision(gist_root)
 
         commit_message = datetime.datetime.now(datetime.timezone.utc).strftime("NoMoreWalls sync %Y-%m-%d %H:%M UTC")
         run_git(["commit", "-m", commit_message], cwd=gist_root)
 
         if dry_run:
             print("Dry run 已启用，已生成 Gist 工作区但未推送。")
-            return True
+            return True, get_git_head_revision(gist_root)
 
         run_git(["push", "origin", "HEAD"], cwd=gist_root, redacted_values=(token,))
-        return True
+        return True, get_git_head_revision(gist_root)
 
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
@@ -424,7 +488,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         public=args.public,
     )
 
-    changed = sync_gist_repo(
+    changed, revision = sync_gist_repo(
         repo_root=repo_root,
         files=files,
         gist=gist,
@@ -432,11 +496,18 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         repository=args.repository,
         dry_run=args.dry_run,
     )
+    viewer_login = str((gist.get("owner") or {}).get("login") or "").strip()
+    if not viewer_login:
+        viewer_login = client.get_authenticated_login()
+    metadata = build_public_ref_metadata(gist=gist, viewer_login=viewer_login, revision=revision, files=files)
+    metadata_path = resolve_output_path(repo_root, args.public_ref_metadata_file)
+    write_public_ref_metadata(metadata_path, metadata)
 
     print(f"Gist ID: {gist['id']}")
     print(f"Gist URL: {gist.get('html_url', '')}")
     print(f"同步文件数: {len(files)}")
     print(f"本次是否推送: {'是' if changed and not args.dry_run else '否'}")
+    print(f"公开引用元数据: {metadata_path}")
     return 0
 
 

@@ -15,6 +15,7 @@ GIST_API_BASE = "https://api.github.com/gists"
 GIST_PATH_SEPARATOR = "_d_"
 DEFAULT_TOKEN_ENV = "GIST_TOKEN"
 DEFAULT_OUT_DIR = "public_refs"
+DEFAULT_LOCAL_METADATA_FILE = ".tmp/gist-sync-metadata.json"
 GITHUB_API_TIMEOUT_SECONDS = 30
 GITHUB_API_RETRY_ATTEMPTS = 3
 
@@ -44,6 +45,11 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--gist-id", default=os.environ.get("RESULT_GIST_ID", ""), help="Target gist id.")
     parser.add_argument("--token", default="", help="GitHub token (optional for public/secret gist access).")
     parser.add_argument("--token-env", default=DEFAULT_TOKEN_ENV, help="Environment variable for token.")
+    parser.add_argument(
+        "--local-metadata-file",
+        default=os.environ.get("GIST_SYNC_METADATA_FILE", DEFAULT_LOCAL_METADATA_FILE),
+        help="Local metadata emitted by sync_gist.py.",
+    )
     parser.add_argument("--out-dir", default=DEFAULT_OUT_DIR, help="Directory to write reference files.")
     return parser
 
@@ -104,6 +110,36 @@ def load_manifest(gist: Mapping[str, Any], token: str) -> Dict[str, Any]:
         return response.json()
     except json.JSONDecodeError:
         return {}
+
+
+def load_local_metadata(path: Path) -> Dict[str, Any]:
+    if not path.is_file():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"读取本地公开引用元数据失败: {path}") from exc
+
+
+def resolve_gist_inputs(gist_id: str, token: str, local_metadata_file: Path) -> tuple[Dict[str, Any], Dict[str, str]]:
+    metadata = load_local_metadata(local_metadata_file)
+    if metadata:
+        metadata_gist_id = str(metadata.get("gist_id") or "").strip()
+        if gist_id and metadata_gist_id and metadata_gist_id != gist_id:
+            raise RuntimeError(f"本地公开引用元数据与当前 Gist ID 不一致: {metadata_gist_id} != {gist_id}")
+        source_links = metadata.get("source_links")
+        if not isinstance(source_links, dict):
+            raise RuntimeError(f"本地公开引用元数据缺少 source_links: {local_metadata_file}")
+        gist = {
+            "id": metadata_gist_id or gist_id,
+            "html_url": str(metadata.get("gist_url") or ""),
+            "updated_at": str(metadata.get("updated_at") or ""),
+        }
+        return gist, {str(key): str(value) for key, value in source_links.items()}
+
+    gist = fetch_gist(gist_id=gist_id, token=token)
+    manifest = load_manifest(gist=gist, token=token)
+    return gist, build_source_links(gist=gist, manifest=manifest)
 
 
 def build_source_links(gist: Mapping[str, Any], manifest: Mapping[str, Any]) -> Dict[str, str]:
@@ -202,13 +238,16 @@ def main() -> int:
     args = build_parser().parse_args()
     token = args.token.strip() or os.environ.get(args.token_env, "").strip()
     gist_id = args.gist_id.strip()
-    if not gist_id:
+    local_metadata_file = Path(args.local_metadata_file)
+    if not gist_id and not local_metadata_file.is_file():
         print("未提供 Gist ID，跳过公开引用文件生成。")
         return 0
 
-    gist = fetch_gist(gist_id=gist_id, token=token)
-    manifest = load_manifest(gist=gist, token=token)
-    source_links = build_source_links(gist=gist, manifest=manifest)
+    gist, source_links = resolve_gist_inputs(
+        gist_id=gist_id,
+        token=token,
+        local_metadata_file=local_metadata_file,
+    )
 
     out_dir = Path(args.out_dir).resolve()
     out_dir.mkdir(parents=True, exist_ok=True)

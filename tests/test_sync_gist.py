@@ -8,6 +8,7 @@ from sync_gist import (
     GitHubClient,
     build_authenticated_git_url,
     build_manifest,
+    build_public_ref_metadata,
     collect_sync_files,
     ensure_gist,
     flatten_gist_path,
@@ -210,6 +211,21 @@ def test_build_authenticated_git_url_embeds_token_as_password() -> None:
     url = build_authenticated_git_url("https://gist.github.com/abc123.git", "ghp_token")
 
     assert url == "https://x-access-token:ghp_token@gist.github.com/abc123.git"
+
+
+def test_build_public_ref_metadata_builds_latest_raw_urls() -> None:
+    metadata = build_public_ref_metadata(
+        gist={"id": "gist-123", "html_url": "https://gist.github.com/owner/gist-123"},
+        viewer_login="owner",
+        revision="abcdef123456",
+        files=[Path("list.txt"), Path("snippets/nodes.yml")],
+    )
+
+    assert metadata["gist_id"] == "gist-123"
+    assert metadata["source_links"]["list.txt"] == "https://gist.githubusercontent.com/owner/gist-123/raw/abcdef123456/list.txt"
+    assert metadata["source_links"]["snippets/nodes.yml"] == (
+        "https://gist.githubusercontent.com/owner/gist-123/raw/abcdef123456/snippets_d_nodes.yml"
+    )
 
 
 def test_stage_outputs_flattens_nested_files_and_writes_manifest(tmp_path: Path) -> None:

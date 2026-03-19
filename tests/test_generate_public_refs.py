@@ -1,6 +1,9 @@
 from __future__ import annotations
 
-from generate_public_refs import fetch_gist, load_manifest
+import json
+from pathlib import Path
+
+from generate_public_refs import fetch_gist, load_manifest, resolve_gist_inputs
 
 
 class FakeResponse:
@@ -56,3 +59,29 @@ def test_load_manifest_retries_retryable_errors(monkeypatch) -> None:
     )
 
     assert manifest["files"][0]["source"] == "list.txt"
+
+
+def test_resolve_gist_inputs_prefers_local_metadata(tmp_path: Path, monkeypatch) -> None:
+    metadata_path = tmp_path / "gist-sync-metadata.json"
+    metadata_path.write_text(
+        json.dumps(
+            {
+                "gist_id": "keep-gist",
+                "gist_url": "https://gist.github.com/owner/keep-gist",
+                "updated_at": "2026-03-20T00:00:00Z",
+                "source_links": {
+                    "list.txt": "https://example.test/list.txt",
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(
+        "generate_public_refs.fetch_gist",
+        lambda *_args, **_kwargs: (_ for _ in ()).throw(AssertionError("不应调用 Gist API")),
+    )
+
+    gist, source_links = resolve_gist_inputs("keep-gist", token="token", local_metadata_file=Path(metadata_path))
+
+    assert gist["id"] == "keep-gist"
+    assert source_links["list.txt"] == "https://example.test/list.txt"
