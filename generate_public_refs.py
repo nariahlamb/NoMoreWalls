@@ -15,7 +15,7 @@ from gist_source_config import KEY_SOURCES, PUBLIC_SOURCE_PATTERNS, matches_sour
 
 GIST_API_BASE = "https://api.github.com/gists"
 DEFAULT_TOKEN_ENV = "GIST_TOKEN"
-DEFAULT_OUT_DIR = "public_refs"
+DEFAULT_OUT_DIR = ".tmp/public_refs"
 DEFAULT_LOCAL_METADATA_FILE = ".tmp/gist-sync-metadata.json"
 GITHUB_API_TIMEOUT_SECONDS = 30
 GITHUB_API_RETRY_ATTEMPTS = 3

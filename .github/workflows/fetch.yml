@@ -1,8 +1,5 @@
 name: Fetch
 
-permissions:
-  contents: write
-
 on:
   workflow_dispatch:
   schedule:
@@ -60,26 +57,7 @@ jobs:
         --pattern list_raw.txt
         --pattern list_result.csv
         --pattern artifacts/quality/*
-    - name: 生成公开引用清单
+    - name: 生成临时引用清单
       env:
         GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
       run: python ./generate_public_refs.py
-      
-    - name: 提交更改
-      id: commit
-      run: |                 
-        git config --local user.email "actions@github.com"
-        git config --local user.name "GitHub Actions"
-        git pull origin master
-        git add public_refs/
-        if git diff --cached --quiet; then
-          echo "committed=false" >> $GITHUB_OUTPUT
-          exit 0
-        fi
-        git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 抓取节点"
-        echo "committed=true" >> $GITHUB_OUTPUT
-    - name: 推送更改
-      if: steps.commit.outputs.committed == 'true'
-      uses: ad-m/github-push-action@master
-      with:
-        branch: master

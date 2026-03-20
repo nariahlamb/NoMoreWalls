@@ -20,7 +20,7 @@
 
 为防止失联，我们建立了镜像：<https://peasoft.github.io/NWalls.html>
 
-公开仓库当前只保留引用入口；抓取配置与完整结果通过 GitHub Gist 分发，不再直接依赖仓库内的 `list*` / `snippets` 产物。
+公开仓库不再发布抓取结果直链；抓取配置、公开结果和私有诊断都只通过 GitHub Gist 分发，仓库本身不再承载 `list*`、`snippets` 或 `public_refs` 这类结果入口。
 
 此项目现已添加“反 996 许可证”，请各位使用者**不要违法违规要求别人加班，自觉遵守《中华人民共和国劳动法》及其它法律法规**！
 
@@ -34,7 +34,7 @@
 
 ## 使用方法
 
-公开订阅入口以 `public_refs/subscriptions.md` 为准。仓库不再承载直接可用的 `list.txt`、`list.meta.yml`、`snippets/*.yml` 原始产物，所有真实内容都由 GitHub Gist 分发。
+仓库不再提供公开订阅入口文件。直接可用的 `list.txt`、`list.meta.yml`、`snippets/*.yml` 等真实内容只存在于你配置的 Gist 中。
 
 ## 免责声明
 
@@ -117,26 +117,26 @@ python sync_gist.py
 
 ## 私有主仓库 + 公开引用模式
 
-如果你希望把 `sources` 和完整产物都放到私有侧，而公开仓库只暴露引用链接，可以使用下面的结构：
+如果你希望把 `sources` 和完整产物都放到 Gist 侧，而公开仓库完全不暴露结果入口，可以使用下面的结构：
 
 1. 配置通过 `CONFIG_GIST_ID` 指向的私有 Gist 在运行时恢复到工作区。
 2. 抓取后的公开结果通过 `RESULT_GIST_ID` 写入公开 Gist。
 3. 抓取后的内部诊断结果通过 `PRIVATE_RESULT_GIST_ID` 写入私有 Gist。
-4. 仓库只提交 `public_refs/` 中的引用文件，不再提交 `list*`、`snippets/`、`artifacts/quality/`。
+4. 仓库不再提交任何结果文件或引用文件，只保留 workflow 与脚本逻辑。
 
 ### Workflow 开关
 
 `fetch.yml` 新增了 `PUBLIC_REF_ONLY`（Actions Variable）：
 
-- `PUBLIC_REF_ONLY=false`（默认）：恢复私有配置 + 抓取 + 同步 Gist + 更新引用清单。
-- `PUBLIC_REF_ONLY=true`：跳过抓取，仅根据现有 `RESULT_GIST_ID` 更新公开引用清单。
+- `PUBLIC_REF_ONLY=false`（默认）：恢复私有配置 + 抓取 + 同步 Gist，并在 runner 本地生成临时引用清单。
+- `PUBLIC_REF_ONLY=true`：跳过抓取，仅根据现有 `RESULT_GIST_ID` 在 runner 本地生成临时引用清单。
 
-### 引用清单文件
+### 本地调试引用文件
 
-工作流会生成：
+如需在本地排查 Gist 内容映射，可以手动生成临时引用文件：
 
-- `public_refs/index.json`：仅公开允许分发的结果链接映射
-- `public_refs/subscriptions.md`：常用订阅与关键 snippets 引用
+- `.tmp/public_refs/index.json`
+- `.tmp/public_refs/subscriptions.md`
 
 本地也可以手动生成：
 
