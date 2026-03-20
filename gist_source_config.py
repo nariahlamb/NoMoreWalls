@@ -65,5 +65,18 @@ def flatten_gist_path(relative: Path) -> str:
     return GIST_PATH_SEPARATOR.join(part.replace("_", "__") for part in parts)
 
 
+def describe_gist_file(relative_name: str) -> str:
+    relative = Path(relative_name)
+    gist_name = flatten_gist_path(relative)
+    source_name = relative.as_posix()
+    if gist_name == source_name:
+        return gist_name
+    return f"{gist_name} -> {source_name}"
+
+
+def describe_gist_files(relative_names: Iterable[str]) -> str:
+    return "、".join(describe_gist_file(relative_name) for relative_name in relative_names)
+
+
 def matches_source_patterns(source: str, patterns: Iterable[str]) -> bool:
     return any(fnmatch(source, pattern) for pattern in patterns)

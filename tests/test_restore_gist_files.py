@@ -31,12 +31,22 @@ def test_restore_files_from_directory_raises_when_required_file_missing(tmp_path
     gist_root.mkdir()
     repo_root.mkdir()
 
-    with pytest.raises(FileNotFoundError):
+    with pytest.raises(FileNotFoundError, match="config.yml"):
         restore_files_from_directory(gist_root=gist_root, repo_root=repo_root, files=("config.yml",))
+
+
+def test_restore_files_from_directory_reports_flattened_gist_name(tmp_path: Path) -> None:
+    gist_root = tmp_path / "gist"
+    repo_root = tmp_path / "repo"
+    gist_root.mkdir()
+    repo_root.mkdir()
+
+    with pytest.raises(FileNotFoundError, match=r"snippets_d___config\.yml -> snippets/_config\.yml"):
+        restore_files_from_directory(gist_root=gist_root, repo_root=repo_root, files=("snippets/_config.yml",))
 
 
 def test_validate_gist_selection_rejects_same_config_and_result_gist(monkeypatch) -> None:
     monkeypatch.setenv("RESULT_GIST_ID", "gist-123")
 
-    with pytest.raises(RuntimeError, match="不能指向同一个 Gist"):
+    with pytest.raises(RuntimeError, match=r"snippets_d___config\.yml -> snippets/_config\.yml"):
         validate_gist_selection("gist-123", "CONFIG_GIST_ID", "RESULT_GIST_ID")

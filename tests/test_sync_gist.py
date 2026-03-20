@@ -91,6 +91,8 @@ def test_build_manifest_preserves_file_paths() -> None:
 def test_flatten_gist_path_keeps_root_files_and_flattens_nested_paths() -> None:
     assert flatten_gist_path(Path("list.txt")) == "list.txt"
     assert flatten_gist_path(Path("snippets/nodes.yml")) == "snippets_d_nodes.yml"
+    assert flatten_gist_path(Path("snippets/_config.yml")) == "snippets_d___config.yml"
+    assert flatten_gist_path(Path("snippets/example.yml")) == "snippets_d_example.yml"
     assert flatten_gist_path(Path("artifacts/quality/source_summary.csv")) == "artifacts_d_quality_d_source__summary.csv"
 
 

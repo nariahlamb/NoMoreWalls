@@ -81,7 +81,9 @@ git clone https://github.com/peasoft/NoMoreWalls.git --depth=1
 - Secret：`GIST_TOKEN`
   - 建议使用经典 PAT，至少包含 `gist` 和 `repo` 权限
 - Actions Variable：`CONFIG_GIST_ID`
-  - 私有配置 Gist，至少包含 `sources.list`、`sources.fansiphone.whitelist.list`、`config.yml`、`abpwhite.txt`、`snippets/_config.yml`、`snippets/example.yml`
+  - 私有配置 Gist 里的文件名必须使用扁平名称，不能带 `/`
+  - 至少包含 `sources.list`、`sources.fansiphone.whitelist.list`、`config.yml`、`abpwhite.txt`、`snippets_d___config.yml`、`snippets_d_example.yml`
+  - 其中 `snippets_d___config.yml` 对应仓库内 `snippets/_config.yml`，`snippets_d_example.yml` 对应 `snippets/example.yml`
 - Actions Variable：`RESULT_GIST_ID`
   - 公开结果 Gist，可以留空，首次运行会自动创建并写回
 - Actions Variable：`PRIVATE_RESULT_GIST_ID`

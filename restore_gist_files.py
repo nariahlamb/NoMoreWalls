@@ -8,7 +8,7 @@ import tempfile
 from pathlib import Path
 from typing import Iterable, Optional, Sequence
 
-from gist_source_config import PRIVATE_INPUT_FILES, flatten_gist_path
+from gist_source_config import PRIVATE_INPUT_FILES, describe_gist_file, describe_gist_files, flatten_gist_path
 from sync_gist import build_authenticated_git_url, run_git
 
 
@@ -38,7 +38,7 @@ def restore_files_from_directory(gist_root: Path, repo_root: Path, files: Iterab
         relative = Path(relative_name)
         source = gist_root / flatten_gist_path(relative)
         if not source.is_file():
-            raise FileNotFoundError(f"Gist 中缺少文件: {relative.as_posix()}")
+            raise FileNotFoundError(f"Gist 中缺少文件: {describe_gist_file(relative.as_posix())}")
         target = repo_root / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
@@ -68,7 +68,7 @@ def validate_gist_selection(gist_id: str, gist_id_env: str, result_gist_id_env: 
     if result_gist_id and gist_id == result_gist_id:
         raise RuntimeError(
             f"{gist_id_env} 与 {result_gist_id_env} 不能指向同一个 Gist。"
-            "配置 Gist 必须包含 sources.list、config.yml、abpwhite.txt、snippets/_config.yml、snippets/example.yml。"
+            f"配置 Gist 必须包含以下 Gist 文件：{describe_gist_files(PRIVATE_INPUT_FILES)}。"
         )
 
 
