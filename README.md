@@ -20,7 +20,7 @@
 
 为防止失联，我们建立了镜像：<https://peasoft.github.io/NWalls.html>
 
-我们新增了 `snippets` 文件夹来存放从 `list.meta.yml` 中拆分出的配置片段，用于将本项目提供的一些配置整合到你自己的配置中。
+公开仓库当前只保留引用入口；抓取配置与完整结果通过 GitHub Gist 分发，不再直接依赖仓库内的 `list*` / `snippets` 产物。
 
 此项目现已添加“反 996 许可证”，请各位使用者**不要违法违规要求别人加班，自觉遵守《中华人民共和国劳动法》及其它法律法规**！
 
@@ -34,34 +34,7 @@
 
 ## 使用方法
 
-注意：加速链接可能会失效，如果无法更新订阅，请把所有链接从上到下每个试一遍！你可以在电脑浏览器上安装油猴脚本 [Github 增强 - 高速下载](https://greasyfork.org/zh-CN/scripts/412245)，在目录浏览点开 `list.txt`，然后在 `Raw` 按钮边上找到最新的加速链接。
-
-添加 Base64 订阅：
-- [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
-- [GhProxy.cn](https://ghproxy.cn/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
-- [GhFast.top](https://ghfast.top/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
-
-以下链接可能不是最新：
-- [GitHub.site](https://raw.github.site/peasoft/NoMoreWalls/master/list.txt)
-- [JsDelivr 默认 (当前 Fastly)](https://cdn.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
-- [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
-- [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
-- [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
-
-或添加 Clash Meta 订阅：（如果使用的是原版 Clash，请将链接最后的 `.meta.yml` 替换成 `.yml`。如果 Meta 提示解析错误，请**更新 Meta 至最新版本**！）
-- [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml)
-- [GhProxy.cn](https://ghproxy.cn/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml)
-- [GhFast.top](https://ghfast.top/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml)
-
-以下链接可能不是最新：
-- [GitHub.site](https://raw.github.site/peasoft/NoMoreWalls/master/list.meta.yml)
-- [JsDelivr 默认 (当前 Fastly)](https://cdn.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
-- [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
-- [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
-- [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
-
-或添加 Sing-Box 订阅：（第三方提供转换，不支持本项目的节点选择和分流规则）
-- [转换链接（第三方）](https://subapi.fxxk.dedyn.io/sub?target=singbox&url=https%3A%2F%2Fraw.githubusercontent.com%2Fpeasoft%2FNoMoreWalls%2Fmaster%2Fsnippets%2Fnodes.meta.yml&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Full_NoAuto.ini&tls13=true&emoji=true&list=false&xudp=true&udp=true&tfo=false&expand=true&scv=false&fdn=false&singbox.ipv6=1)
+公开订阅入口以 `public_refs/subscriptions.md` 为准。仓库不再承载直接可用的 `list.txt`、`list.meta.yml`、`snippets/*.yml` 原始产物，所有真实内容都由 GitHub Gist 分发。
 
 ## 免责声明
 
@@ -101,19 +74,37 @@ git clone https://github.com/peasoft/NoMoreWalls.git --depth=1
 
 ## Gist 同步
 
-项目已支持在 GitHub Actions 中把本次抓取生成的结果同步到同一个 Gist。
+项目已支持在 GitHub Actions 中把抓取配置、公开结果和私有诊断结果分别通过 Gist 管理。
 
 需要的仓库配置：
 
 - Secret：`GIST_TOKEN`
   - 建议使用经典 PAT，至少包含 `gist` 和 `repo` 权限
+- Actions Variable：`CONFIG_GIST_ID`
+  - 私有配置 Gist，至少包含 `sources.list`、`sources.fansiphone.whitelist.list`、`config.yml`、`abpwhite.txt`、`snippets/_config.yml`、`snippets/example.yml`
 - Actions Variable：`RESULT_GIST_ID`
-  - 可以留空，首次运行会自动创建 Gist 并写回这个变量
+  - 公开结果 Gist，可以留空，首次运行会自动创建并写回
+- Actions Variable：`PRIVATE_RESULT_GIST_ID`
+  - 私有诊断 Gist，可选；用于保存 `list_raw.txt`、`list_result.csv`、`artifacts/quality/*`
 
-工作流会同步这些产物：
+公开结果 Gist 会同步：
 
-- 根目录 `list*`
-- `snippets/**/*.yml`
+- `list.txt`
+- `list.yml`
+- `list.meta.yml`
+- `snippets/nodes*.yml`
+- `snippets/adblock.yml`
+- `snippets/direct.yml`
+- `snippets/malware.yml`
+- `snippets/proxy.yml`
+- `snippets/region.yml`
+- `snippets/rules.yml`
+- `snippets/rules_online.yml`
+
+私有诊断 Gist 会同步：
+
+- `list_raw.txt`
+- `list_result.csv`
 - `artifacts/quality/*`
 
 本地也可以手动执行：
@@ -124,24 +115,25 @@ python sync_gist.py
 
 ## 私有主仓库 + 公开引用模式
 
-如果你希望把 `sources` 和完整产物都放到私有仓库，而公开侧只暴露引用链接，可以使用下面的结构：
+如果你希望把 `sources` 和完整产物都放到私有侧，而公开仓库只暴露引用链接，可以使用下面的结构：
 
-1. 私有主仓库负责抓取、筛选和 `sync_gist.py` 同步。
-2. 公开仓库只保留引用文件，不直接提交 `list*` 与 `snippets` 产物。
-3. 两边通过同一个 `RESULT_GIST_ID` 关联。
+1. 配置通过 `CONFIG_GIST_ID` 指向的私有 Gist 在运行时恢复到工作区。
+2. 抓取后的公开结果通过 `RESULT_GIST_ID` 写入公开 Gist。
+3. 抓取后的内部诊断结果通过 `PRIVATE_RESULT_GIST_ID` 写入私有 Gist。
+4. 仓库只提交 `public_refs/` 中的引用文件，不再提交 `list*`、`snippets/`、`artifacts/quality/`。
 
 ### Workflow 开关
 
 `fetch.yml` 新增了 `PUBLIC_REF_ONLY`（Actions Variable）：
 
-- `PUBLIC_REF_ONLY=false`（默认）：正常抓取 + 同步 Gist + 更新引用清单。
-- `PUBLIC_REF_ONLY=true`：跳过抓取与产物同步，只更新公开引用清单。
+- `PUBLIC_REF_ONLY=false`（默认）：恢复私有配置 + 抓取 + 同步 Gist + 更新引用清单。
+- `PUBLIC_REF_ONLY=true`：跳过抓取，仅根据现有 `RESULT_GIST_ID` 更新公开引用清单。
 
 ### 引用清单文件
 
 工作流会生成：
 
-- `public_refs/index.json`：完整 `source -> raw_url` 映射
+- `public_refs/index.json`：仅公开允许分发的结果链接映射
 - `public_refs/subscriptions.md`：常用订阅与关键 snippets 引用
 
 本地也可以手动生成：

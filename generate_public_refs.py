@@ -10,34 +10,15 @@ from typing import Any, Dict, List, Mapping
 
 import requests
 
+from gist_source_config import KEY_SOURCES, PUBLIC_SOURCE_PATTERNS, matches_source_patterns
+
 
 GIST_API_BASE = "https://api.github.com/gists"
-GIST_PATH_SEPARATOR = "_d_"
 DEFAULT_TOKEN_ENV = "GIST_TOKEN"
 DEFAULT_OUT_DIR = "public_refs"
 DEFAULT_LOCAL_METADATA_FILE = ".tmp/gist-sync-metadata.json"
 GITHUB_API_TIMEOUT_SECONDS = 30
 GITHUB_API_RETRY_ATTEMPTS = 3
-
-KEY_SOURCES = (
-    "list.txt",
-    "list.yml",
-    "list.meta.yml",
-    "snippets/nodes.yml",
-    "snippets/nodes.meta.yml",
-    "snippets/nodes_JP.yml",
-    "snippets/nodes_JP.meta.yml",
-    "snippets/nodes_US.yml",
-    "snippets/nodes_US.meta.yml",
-    "snippets/nodes_GB.yml",
-    "snippets/nodes_GB.meta.yml",
-    "snippets/nodes_SG.yml",
-    "snippets/nodes_SG.meta.yml",
-    "snippets/nodes_TW.yml",
-    "snippets/nodes_TW.meta.yml",
-    "snippets/nodes_HK.yml",
-    "snippets/nodes_HK.meta.yml",
-)
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -88,11 +69,6 @@ def fetch_gist(gist_id: str, token: str) -> Dict[str, Any]:
     if response.status_code != 200:
         raise RuntimeError(f"拉取 Gist 失败: {response.status_code} {response.text[:300]}")
     return response.json()
-
-
-def unflatten_gist_path(name: str) -> str:
-    parts = name.split(GIST_PATH_SEPARATOR)
-    return "/".join(part.replace("__", "_") for part in parts)
 
 
 def load_manifest(gist: Mapping[str, Any], token: str) -> Dict[str, Any]:
@@ -163,16 +139,15 @@ def build_source_links(gist: Mapping[str, Any], manifest: Mapping[str, Any]) -> 
     if source_links:
         return dict(sorted(source_links.items()))
 
-    # Fallback: manifest 缺失时尝试直接还原路径
-    for gist_name, file_info in gist_files.items():
-        if gist_name == "manifest.json":
-            continue
-        raw_url = str((file_info or {}).get("raw_url") or "").strip()
-        if not raw_url:
-            continue
-        source_links[unflatten_gist_path(gist_name)] = raw_url
-
     return dict(sorted(source_links.items()))
+
+
+def build_public_source_links(source_links: Mapping[str, str]) -> Dict[str, str]:
+    public_links: Dict[str, str] = {}
+    for source, url in source_links.items():
+        if matches_source_patterns(source, PUBLIC_SOURCE_PATTERNS):
+            public_links[source] = url
+    return dict(sorted(public_links.items()))
 
 
 def build_key_links(source_links: Mapping[str, str]) -> Dict[str, str]:
@@ -248,16 +223,17 @@ def main() -> int:
         token=token,
         local_metadata_file=local_metadata_file,
     )
+    public_links = build_public_source_links(source_links)
 
     out_dir = Path(args.out_dir).resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    key_links = build_key_links(source_links)
-    write_index(out_dir=out_dir, gist=gist, source_links=source_links, key_links=key_links)
+    key_links = build_key_links(public_links)
+    write_index(out_dir=out_dir, gist=gist, source_links=public_links, key_links=key_links)
     write_subscriptions_md(out_dir=out_dir, gist=gist, key_links=key_links)
 
     print(f"Gist ID: {gist.get('id', '')}")
-    print(f"链接总数: {len(source_links)}")
+    print(f"链接总数: {len(public_links)}")
     print(f"关键链接数: {len(key_links)}")
     print(f"输出目录: {out_dir}")
     return 0

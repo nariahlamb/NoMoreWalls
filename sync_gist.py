@@ -12,21 +12,18 @@ import subprocess
 import tempfile
 import time
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Sequence, Tuple
+from typing import Any, Dict, List, Mapping, Optional, Sequence, Tuple
 from urllib.parse import quote, urlsplit, urlunsplit
 
 import requests
 
+from gist_source_config import PUBLIC_SOURCE_PATTERNS, flatten_gist_path
 
-DEFAULT_PATTERNS = (
-    "list*",
-    "snippets/**/*.yml",
-    "artifacts/quality/*",
-)
+
+DEFAULT_PATTERNS = PUBLIC_SOURCE_PATTERNS
 DEFAULT_GIST_ID_VARIABLE = "RESULT_GIST_ID"
 DEFAULT_DESCRIPTION = "NoMoreWalls generated outputs"
 DEFAULT_PUBLIC_REF_METADATA_FILE = ".tmp/gist-sync-metadata.json"
-GIST_PATH_SEPARATOR = "_d_"
 GITHUB_API_TIMEOUT_SECONDS = 30
 GITHUB_API_RETRY_ATTEMPTS = 3
 
@@ -94,12 +91,6 @@ def collect_sync_files(repo_root: Path, patterns: Sequence[str]) -> List[Path]:
             relative = path.relative_to(repo_root)
             selected[relative.as_posix()] = relative
     return [selected[key] for key in sorted(selected)]
-
-
-def flatten_gist_path(relative: Path) -> str:
-    parts = relative.as_posix().split("/")
-    return GIST_PATH_SEPARATOR.join(part.replace("_", "__") for part in parts)
-
 
 def build_manifest(repository: str, gist_id: str, files: Sequence[Path]) -> Dict[str, Any]:
     entries = []

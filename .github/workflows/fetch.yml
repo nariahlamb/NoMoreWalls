@@ -10,12 +10,10 @@ on:
     - cron: '0 0/3 * * *'
   push:
     paths:
-      - 'sources.list'
-      - 'config.yml'
-      - 'abpwhite.txt'
       - '.github/workflows/**'
       - '**.py'
-      - 'snippets/_*'
+      - 'requirements.txt'
+      - 'README.md'
 
 jobs:
   fetch:
@@ -34,16 +32,34 @@ jobs:
         cache: 'pip'
     - name: 安装依赖
       run: pip install -r requirements.txt
+    - name: 恢复私有抓取配置
+      if: env.PUBLIC_REF_ONLY != 'true'
+      env:
+        GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+        CONFIG_GIST_ID: ${{ vars.CONFIG_GIST_ID }}
+      run: python ./restore_gist_files.py
     - name: 执行任务
       if: env.PUBLIC_REF_ONLY != 'true'
       run: python ./fetch.py
-    - name: 同步生成结果到 Gist
+    - name: 同步公开结果到 Gist
       if: env.PUBLIC_REF_ONLY != 'true'
       env:
         GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
         RESULT_GIST_ID: ${{ vars.RESULT_GIST_ID }}
         GIST_SYNC_DESCRIPTION: NoMoreWalls generated outputs
       run: python ./sync_gist.py
+    - name: 同步私有诊断结果到 Gist
+      if: env.PUBLIC_REF_ONLY != 'true' && vars.PRIVATE_RESULT_GIST_ID != ''
+      env:
+        GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+        PRIVATE_RESULT_GIST_ID: ${{ vars.PRIVATE_RESULT_GIST_ID }}
+        GIST_SYNC_DESCRIPTION: NoMoreWalls private diagnostics
+      run: >-
+        python ./sync_gist.py
+        --gist-id-variable PRIVATE_RESULT_GIST_ID
+        --pattern list_raw.txt
+        --pattern list_result.csv
+        --pattern artifacts/quality/*
     - name: 生成公开引用清单
       env:
         GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
@@ -56,13 +72,7 @@ jobs:
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git pull origin master
-        if [ "${PUBLIC_REF_ONLY}" = "true" ]; then
-          git add public_refs/
-        else
-          git add list*
-          git add snippets/
-          git add public_refs/
-        fi
+        git add public_refs/
         if git diff --cached --quiet; then
           echo "committed=false" >> $GITHUB_OUTPUT
           exit 0
@@ -74,24 +84,3 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         branch: master
-
-    - name: 计算要清除缓存的文件
-      id: purge_urls
-      if: env.PUBLIC_REF_ONLY != 'true'
-      run: |
-        sleep 5
-        baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@master"
-        urls=""
-        for f in `find snippets -name "*.yml" -type f`; do
-          urls+="${baseUrl}/${f},"
-        done
-        for f in `find . -name "list*" -type f -maxdepth 1`; do
-          urls+="${baseUrl}/${f},"
-        done
-        echo "urls=${urls%,*}" >> $GITHUB_OUTPUT
-    - name: 清除 JsDelivr CDN 缓存
-      if: env.PUBLIC_REF_ONLY != 'true'
-      uses: egad13/purge-jsdelivr-cache@v1
-      with:
-        url: ${{ steps.purge_urls.outputs.urls }}
-      continue-on-error: true

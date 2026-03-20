@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from generate_public_refs import fetch_gist, load_manifest, resolve_gist_inputs
+from generate_public_refs import build_public_source_links, fetch_gist, load_manifest, resolve_gist_inputs
 
 
 class FakeResponse:
@@ -85,3 +85,17 @@ def test_resolve_gist_inputs_prefers_local_metadata(tmp_path: Path, monkeypatch)
 
     assert gist["id"] == "keep-gist"
     assert source_links["list.txt"] == "https://example.test/list.txt"
+
+
+def test_build_public_source_links_filters_private_entries() -> None:
+    public_links = build_public_source_links(
+        {
+            "list.txt": "https://example.test/list.txt",
+            "snippets/nodes.yml": "https://example.test/nodes.yml",
+            "snippets/_config.yml": "https://example.test/_config.yml",
+            "list_raw.txt": "https://example.test/list_raw.txt",
+            "artifacts/quality/summary.md": "https://example.test/summary.md",
+        }
+    )
+
+    assert sorted(public_links) == ["list.txt", "snippets/nodes.yml"]
