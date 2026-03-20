@@ -36,7 +36,8 @@ jobs:
       if: env.PUBLIC_REF_ONLY != 'true'
       env:
         GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
-        CONFIG_GIST_ID: ${{ vars.CONFIG_GIST_ID }}
+        CONFIG_GIST_ID: ${{ vars.CONFIG_GIST_ID || secrets.CONFIG_GIST_ID || '' }}
+        RESULT_GIST_ID: ${{ vars.RESULT_GIST_ID || secrets.RESULT_GIST_ID || '' }}
       run: python ./restore_gist_files.py
     - name: 执行任务
       if: env.PUBLIC_REF_ONLY != 'true'
@@ -45,14 +46,14 @@ jobs:
       if: env.PUBLIC_REF_ONLY != 'true'
       env:
         GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
-        RESULT_GIST_ID: ${{ vars.RESULT_GIST_ID }}
+        RESULT_GIST_ID: ${{ vars.RESULT_GIST_ID || secrets.RESULT_GIST_ID || '' }}
         GIST_SYNC_DESCRIPTION: NoMoreWalls generated outputs
       run: python ./sync_gist.py
     - name: 同步私有诊断结果到 Gist
-      if: env.PUBLIC_REF_ONLY != 'true' && vars.PRIVATE_RESULT_GIST_ID != ''
+      if: env.PUBLIC_REF_ONLY != 'true' && (vars.PRIVATE_RESULT_GIST_ID != '' || secrets.PRIVATE_RESULT_GIST_ID != '')
       env:
         GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
-        PRIVATE_RESULT_GIST_ID: ${{ vars.PRIVATE_RESULT_GIST_ID }}
+        PRIVATE_RESULT_GIST_ID: ${{ vars.PRIVATE_RESULT_GIST_ID || secrets.PRIVATE_RESULT_GIST_ID || '' }}
         GIST_SYNC_DESCRIPTION: NoMoreWalls private diagnostics
       run: >-
         python ./sync_gist.py
@@ -63,7 +64,7 @@ jobs:
     - name: 生成公开引用清单
       env:
         GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
-        RESULT_GIST_ID: ${{ vars.RESULT_GIST_ID }}
+        RESULT_GIST_ID: ${{ vars.RESULT_GIST_ID || secrets.RESULT_GIST_ID || '' }}
       run: python ./generate_public_refs.py
       
     - name: 提交更改

@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from restore_gist_files import restore_files_from_directory
+from restore_gist_files import restore_files_from_directory, validate_gist_selection
 
 
 def test_restore_files_from_directory_restores_flattened_paths(tmp_path: Path) -> None:
@@ -33,3 +33,10 @@ def test_restore_files_from_directory_raises_when_required_file_missing(tmp_path
 
     with pytest.raises(FileNotFoundError):
         restore_files_from_directory(gist_root=gist_root, repo_root=repo_root, files=("config.yml",))
+
+
+def test_validate_gist_selection_rejects_same_config_and_result_gist(monkeypatch) -> None:
+    monkeypatch.setenv("RESULT_GIST_ID", "gist-123")
+
+    with pytest.raises(RuntimeError, match="不能指向同一个 Gist"):
+        validate_gist_selection("gist-123", "CONFIG_GIST_ID", "RESULT_GIST_ID")
